@@ -251,18 +251,18 @@ pipeline {
 				}
 			}
 			parallel {
-				stage('Type Checking') {
-					agent {
-						node {
-							label 'nodejs-agent-v2'
-						}
-					}
-					steps {
-						executeNpmLogin()
-						nodeCmd 'npm install'
-						nodeCmd 'npm run type-check'
-					}
-				}
+// 				stage('Type Checking') {
+// 					agent {
+// 						node {
+// 							label 'nodejs-agent-v2'
+// 						}
+// 					}
+// 					steps {                            // There is no Type-script file in this project
+// 						executeNpmLogin()
+// 						nodeCmd 'npm install'
+// 						nodeCmd 'npm run type-check'
+// 					}
+// 				}
 				stage('Linting') {
 					agent {
 						node {

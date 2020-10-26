@@ -8,6 +8,6 @@ module.exports = {
 		'@babel/plugin-transform-runtime',
 		'@babel/plugin-proposal-class-properties',
 		'babel-plugin-styled-components',
-		['i18next-extract', { outputPath: 'translations/{{ns}}.json', discardOldKeys: true, defaultNS: 'en' }]
+		['i18next-extract', { outputPath: 'translations/{{ns}}.json', discardOldKeys: true, defaultNS: 'en', jsonSpace: 4 }]
 	],
 };

@@ -1,6 +1,6 @@
 /*
  * *** BEGIN LICENSE BLOCK *****
- * Copyright (C) 2011-2019 ZeXtras
+ * Copyright (C) 2011-2020 Zextras
  *
  * The contents of this file are subject to the ZeXtras EULA;
  * you may not use this file except in compliance with the EULA.
@@ -8,13 +8,11 @@
  * http://www.zextras.com/zextras-eula.html
  * *** END LICENSE BLOCK *****
  */
-/* eslint-disable */
-import App from './app';
 
-window.__ZAPP_EXPORT__(App);
+import React from 'react';
 
-if (module.hot) {
-	module.hot.accept('./app.jsx', () => {
-		window.__ZAPP_HMR_EXPORT__(App);
-	});
+export default function WeekViewGrid() {
+	return (
+		<div />
+	);
 }
