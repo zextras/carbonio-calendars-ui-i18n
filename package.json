@@ -1,6 +1,6 @@
 {
   "name": "com_zextras_zapp_calendar",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Calendar app for Zextras",
   "main": "src/index.js",
   "scripts": {
