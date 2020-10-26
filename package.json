@@ -4,6 +4,7 @@
   "description": "Calendar app for Zextras",
   "main": "src/index.js",
   "scripts": {
+    "build": "zapp package",
     "start": "zapp watch",
     "start:e2e": "zapp watch -e",
     "test": "jest",
