@@ -38,7 +38,7 @@ module.exports = {
       "allowShortCircuit": true,
       "allowTernary": true
     }], // https://eslint.org/docs/rules/no-unused-expressions
-    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state", "appointment", "r"] }],
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state", "appointment", "r", "cache"] }],
 
     /**
      * @description rules of @typescript-eslint

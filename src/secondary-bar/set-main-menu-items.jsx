@@ -134,7 +134,7 @@ function useSetMainMenuItems() {
 
 		setMainMenuItems([{
 			id: 'calendar-main',
-			icon: 'Calendar2',
+			icon: 'CalendarOutline',
 			to: '/view',
 			label: 'calendar',
 			customComponent:

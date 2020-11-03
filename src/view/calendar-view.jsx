@@ -1,10 +1,11 @@
-import React, { Suspense, lazy, useEffect } from 'react';
+import React, {
+	Suspense, lazy, useEffect, useState, useCallback
+} from 'react';
 import { Container, Text } from '@zextras/zapp-ui';
 import { isEmpty } from 'lodash';
 import moment from 'moment';
 import { useDispatch, useSelector } from 'react-redux';
 import CalendarStyle from './calendar/calendar-style';
-import StoreProvider from '../store/store-provider';
 import {
 	selectStatus,
 	selectSyncStatus,
@@ -13,20 +14,43 @@ import {
 import {
 	selectAllFolders,
 } from '../store/calendars-slice';
+import useQueryParam from '../commons/useQueryParam';
+import AppointmentView from './preview/appointment-view/appointment-view';
+import AppointmentEditPanel from './edit/appointment-edit-panel';
 
 const CalendarComponent = lazy(() => import(/* webpackChunkName: "calendar-component" */ './calendar/calendar-component'));
 
 export default function CalendarView() {
+	const [appointmentDetail, setAppointmentDetail] = useState(null);
+	const closeAppointmentDetail = useCallback(() => {
+		setAppointmentDetail(null);
+	}, []);
+	const openAppointmentDetail = useCallback((appointment) => {
+		setAppointmentDetail(appointment);
+	}, []);
+
+	const editorId = useQueryParam('edit');
+
 	return (
-		<StoreProvider>
-			<Container background="gray6" padding={{ all: 'medium' }} style={{ overflowY: 'auto' }}>
-				<UglyNonRenderingComponent />
-				<CalendarStyle />
-				<Suspense fallback={<Text>Loading...</Text>}>
-					<CalendarComponent />
-				</Suspense>
-			</Container>
-		</StoreProvider>
+		<Container background="gray6" padding={{ all: 'medium' }} style={{ overflowY: 'auto', position: 'relative' }}>
+			<UglyNonRenderingComponent />
+			<CalendarStyle />
+			<Suspense fallback={<Text>Loading...</Text>}>
+				<CalendarComponent openAppointmentDetail={openAppointmentDetail} />
+			</Suspense>
+			{appointmentDetail && !editorId
+			&& (
+				<AppointmentView
+					inviteId={appointmentDetail.resource.inviteId}
+					idx={appointmentDetail.resource.idx}
+					close={closeAppointmentDetail}
+				/>
+			)}
+			{editorId
+			&& (
+				<AppointmentEditPanel editorId={editorId} />
+			)}
+		</Container>
 	);
 }
 
@@ -36,8 +60,6 @@ const UglyNonRenderingComponent = () => {
 	const status = useSelector(selectStatus);
 
 	const dispatch = useDispatch();
-
-	console.log(calendars, syncing, status);
 
 	useEffect(() => {
 		if (!isEmpty(calendars) && status === 'init') {

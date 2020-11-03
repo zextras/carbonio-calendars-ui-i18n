@@ -1,17 +1,19 @@
-import React, { useCallback, useEffect, useMemo } from 'react';
+import React, {
+	useCallback, useEffect, useMemo, useState
+} from 'react';
 import moment from 'moment';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import { useDispatch, useSelector } from 'react-redux';
-import { reduce, find } from 'lodash';
+import { reduce, find, findLast } from 'lodash';
 import CustomEvent from './custom-event';
 import CustomEventWrapper from './custom-event-wrapper';
 import CustomToolbar from './custom-toolbar';
 import {
 	selectAllAppointments,
-	selectFilteredAppointments,
 	setRange
 } from '../../store/appointments-slice';
 import { selectCheckedCalendars } from '../../store/calendars-slice';
+import { selectEditorPanelId } from '../../store/editor-slice';
 
 const localizer = momentLocalizer(moment);
 
@@ -25,7 +27,7 @@ const customComponents = {
 	eventWrapper: CustomEventWrapper,
 };
 
-export default function CalendarComponent() {
+export default function CalendarComponent({ openAppointmentDetail }) {
 	const appointments = useSelector(selectAllAppointments);
 	const selectedCalendars = useSelector(selectCheckedCalendars);
 	const events = useMemo(() => reduce(
@@ -55,20 +57,21 @@ export default function CalendarComponent() {
 			}));
 		}
 	}, [dispatch]);
-
-	useEffect(() => console.log('appointments changed'), [appointments]);
 	return (
-		<Calendar
-			localizer={localizer}
-			defaultView="week"
-			events={events}
-			startAccessor="start"
-			endAccessor="end"
-			style={{ width: '100%' }}
-			components={customComponents}
-			views={views}
-			tooltipAccessor={nullAccessor}
-			onRangeChange={onRangeChange}
-		/>
+		<>
+			<Calendar
+				localizer={localizer}
+				defaultView="week"
+				events={events}
+				startAccessor="start"
+				endAccessor="end"
+				style={{ width: '100%' }}
+				components={customComponents}
+				views={views}
+				tooltipAccessor={nullAccessor}
+				onRangeChange={onRangeChange}
+				onDoubleClickEvent={openAppointmentDetail}
+			/>
+		</>
 	);
 }
