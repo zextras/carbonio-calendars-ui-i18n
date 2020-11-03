@@ -13,15 +13,143 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import produce from 'immer';
 import { network } from '@zextras/zapp-shell';
 import {
-	reduce, pullAllWith, forEach, takeWhile, find
+	reduce, pullAllWith, forEach, takeWhile, find, startsWith, findIndex
 } from 'lodash';
+import moment from 'moment';
 import {
 	findCalendars,
 	selectAllCheckedCalendarsQuery,
 	selectCalendar,
 } from './calendars-slice';
+import { selectAccounts } from './accounts-slice';
 
 /* eslint no-param-reassign: "off" */
+
+function createRequest({ appt, id, account }) {
+	const isNew = startsWith(id, 'new');
+	return [
+		isNew ? 'CreateAppointment' : 'ModifyAppointment',
+		{
+			id: isNew ? null : appt.resource.inviteId,
+			m: {
+				su: appt.title,
+				l: appt.resource.calendarId,
+				inv: {
+					comp: [{
+						alarm: appt.hasAlarm ? [{
+							action: 'DISPLAY',
+							trigger: {
+								rel: {
+									m: appt.alarm,
+									related: 'START',
+									neg: '1'
+								}
+							}
+						}] : undefined,
+						at: [],
+						allDay: appt.allDay ? '1' : '0',
+						fb: appt.resource.freeBusy,
+						loc: appt.resource.location,
+						name: appt.title,
+						or: {
+							a: account.name,
+							d: account.displayName
+						},
+						status: appt.resource.status,
+						s: {
+							d: moment(appt.start).utc().format('YYYYMMDD[T]HHmmss[Z]')
+						},
+						e: {
+							d: moment(appt.end).utc().format('YYYYMMDD[T]HHmmss[Z]')
+						},
+						class: appt.resource.class
+					}]
+				}
+			},
+			_jsns: 'urn:zimbraMail',
+		},
+		isNew
+	];
+}
+
+export const saveAppointment = createAsyncThunk('editor/saveAppointment', async ({ id }, { getState, dispatch }) => {
+	const appt = getState().editor.editors[id];
+	const accounts = selectAccounts(getState());
+	const [reqType, body, isNew] = createRequest({ appt, id, account: accounts });
+	// eslint-disable-next-line @typescript-eslint/no-use-before-define
+	dispatch(updateAppointment({ appt, isNew }));
+	const resp = await network.soapFetch(reqType, body);
+	return { resp, isNew, id };
+});
+
+export function handleSaveAppointmentPending(state, action) {
+	state.status = 'syncing';
+}
+
+export function handleSaveAppointmentFulfilled(state, { payload }) {
+	state.status = 'succeeded';
+	if (payload.isNew) {
+		const index = findIndex(state.cache, ['resource.id', payload.id]);
+		state.cache[index].resource.id = payload.resp.apptId;
+		state.cache[index].resource.inviteId = payload.resp.invId;
+	}
+}
+
+export function handleSaveAppointmentRejected(state, { payload }) {
+	state.status = 'failed';
+	// state.error = action.error.message
+}
+
+function normalizeAppointmentInstance(appt, inst, idx, calendar) {
+	let role;
+	if (appt.isOrg) role = 'ORGANIZER';
+	else role = calendar.owner ? 'VISITOR' : 'ATTENDEE';
+	// eslint-disable-next-line no-nested-ternary
+	const alarm = (inst.alarm && inst.alarm.length > 0)
+		? inst.alarm[0].trigger.rel.m
+		: (appt.alarm && appt.alarm.length > 0)
+			? appt.alarm[0].trigger.rel.m
+			: null;
+	return ({
+		title: inst.name || appt.name,
+		start: inst.s,
+		end: inst.s + (inst.dur || appt.dur),
+		allDay: inst.allDay || appt.allDay || false,
+		resource: {
+			iAmOrganizer: appt.isOrg,
+			isException: inst.ex || false,
+			start: appt.d,
+			id: appt.id,
+			uid: appt.uid,
+			idx,
+			calendarId: calendar.zid,
+			calendarColor: calendar.color,
+			calendarName: calendar.name,
+			inviteId: appt.invId,
+			status: inst.status || appt.status,
+			location: inst.loc || appt.loc,
+			fragment: inst.fr || appt.fr,
+			neverSent: inst.neverSent || appt.neverSent,
+			isPrivate: (inst.class || appt.class) === 'PRI', // to deprecate
+			class: inst.class || appt.class, // use this instead
+			organizer: {
+				name: appt.or.d,
+				mail: appt.or.a,
+			},
+			freeBusy: appt.fb,
+			role,
+			hasChangesNotNotified: inst.draft || appt.draft || false,
+			changesNotNotified: inst.changes || appt.changes,
+			inviteNeverSent: inst.neverSent || appt.neverSent || false,
+			hasOtherAttendees: inst.otherAtt || appt.otherAtt,
+			hasAlarm: !!alarm,
+			alarm,
+			ridZ: inst.ridZ,
+			isRecurrent: appt.recur,
+			participationStatus: inst.ptst || appt.ptst,
+		}
+	});
+}
 
 function normalizeAppointmentsFromSearchResults({ appts, getState }) {
 	return reduce(
@@ -31,29 +159,9 @@ function normalizeAppointmentsFromSearchResults({ appts, getState }) {
 			reduce(
 				appt.inst,
 				(_acc, inst, idx) => {
-					_acc.push({
-						title: appt.name,
-						start: inst.s,
-						end: inst.s + appt.dur,
-						allDay: appt.allDay || false,
-						resource: {
-							iAmOrganizer: appt.isOrg,
-							start: appt.d,
-							id: appt.id,
-							uid: appt.uid,
-							idx,
-							calendarId: appt.l,
-							calendarColor: calendar.color,
-							calendarName: calendar.name,
-							inviteId: appt.invId,
-							status: appt.status,
-							location: appt.loc,
-							fragment: appt.fr,
-							neverSent: appt.neverSent,
-							organizer: appt.or,
-							isPrivate: appt.class === 'PRI'
-						}
-					});
+					_acc.push(
+						normalizeAppointmentInstance(appt, inst, idx, calendar)
+					);
 					return _acc;
 				},
 				acc
@@ -124,7 +232,7 @@ export const setRange = createAsyncThunk('appointments/setRange', async ({ start
 		method = 'replace';
 	}
 
-	const { appt, more, offset } = await network.soapFetch(
+	const { appt } = await network.soapFetch(
 		'Search',
 		{
 			_jsns: 'urn:zimbraMail',
@@ -195,7 +303,7 @@ function setRangeRejected(state, { error }) {
 export const handleSyncData = createAsyncThunk(
 	'appointments/handleSyncData',
 	({
-		firstSync, token, folder, deleted, appt
+		firstSync, folder, deleted, appt
 	}, { getState }) => {
 		if (!firstSync) {
 			return Promise
@@ -298,11 +406,7 @@ function handleSyncDataFulfilled(state, { payload }) {
 					state.cache.push(appt);
 				}
 				else {
-					found.resource = appt.resource;
-					found.allDay = appt.allDay;
-					found.start = appt.start;
-					found.end = appt.end;
-					found.title = appt.title;
+					Object.assign(found, appt);
 				}
 			}
 		);
@@ -314,6 +418,59 @@ function handleSyncDataRejected(state, action) {
 	state.syncing = false;
 }
 
+function updateAppointmentReducer({ cache }, { payload }) {
+	if (payload.isNew) {
+		cache.push(payload.appt);
+	}
+	else {
+		const index = findIndex(cache, ['resource.uid', payload.appt.resource.uid]);
+		cache[index] = payload.appt;
+	}
+}
+
+function handleUpdateParticipationStatus(state, { payload }) {
+	const { status, inviteId } = payload;
+	const newCache = state.cache.map(
+		(el) => (el.resource.inviteId === inviteId
+			? { ...el, resource: { ...el.resource, participationStatus: status } }
+			: el
+		)
+	);
+	return { ...state, cache: newCache };
+}
+
+export const moveAppointmentToTrash = createAsyncThunk('appointments/moveAppointmentToTrash', async ({ inviteId, t }, { getState }) => {
+	const state = getState();
+	const appointment = state.appointments.cache.filter((app) => app.resource.inviteId === inviteId);
+	const invite = state.invites.cache[inviteId];
+	const m = createMessageForDelete({ invite, t });
+	const response = await network.soapFetch(
+		'CancelAppointment',
+		{
+			_jsns: 'urn:zimbraMail',
+			id: inviteId,
+			ms: appointment.modifiedSequence,
+			rev: appointment.revision,
+			comp: 0,
+			m
+		}
+	);
+	return { response, inviteId };
+});
+
+function moveAppointmentToTrashFulfilled(state, { payload }) {
+	state.cache = state.cache.map((app) => {
+		if (app.resource.inviteId === payload.inviteId) {
+			app.resource.calendarId = '3';
+		}
+		return app;
+	});
+}
+
+function moveAppointmentToTrashRejected(state, action) {
+	console.error(action);
+}
+
 export const appointmentsSlice = createSlice({
 	name: 'appointments',
 	initialState: {
@@ -323,18 +480,26 @@ export const appointmentsSlice = createSlice({
 		end: Number.NEGATIVE_INFINITY,
 		cache: [],
 	},
-	reducers: {},
+	reducers: {
+		updateAppointment: produce(updateAppointmentReducer),
+		updateParticipationStatus: produce(handleUpdateParticipationStatus),
+	},
 	extraReducers: {
+		[saveAppointment.pending]: produce(handleSaveAppointmentPending),
+		[saveAppointment.fulfilled]: produce(handleSaveAppointmentFulfilled),
+		[saveAppointment.rejected]: produce(handleSaveAppointmentRejected),
 		[handleSyncData.pending]: produce(handleSyncDataPending),
 		[handleSyncData.fulfilled]: produce(handleSyncDataFulfilled),
 		[handleSyncData.rejected]: produce(handleSyncDataRejected),
 		[setRange.pending]: produce(setRangePending),
 		[setRange.fulfilled]: produce(setRangeFulfilled),
 		[setRange.rejected]: produce(setRangeRejected),
+		[moveAppointmentToTrash.fulfilled]: produce(moveAppointmentToTrashFulfilled),
+		[moveAppointmentToTrash.rejected]: produce(moveAppointmentToTrashRejected),
 	}
 });
 
-// export const {  } = weekSlice.actions;
+export const { updateAppointment, updateParticipationStatus } = appointmentsSlice.actions;
 
 export default appointmentsSlice.reducer;
 
@@ -356,4 +521,42 @@ export function selectAllAppointments({ appointments }) {
 
 export function selectSyncStatus({ appointments }) {
 	return appointments.syncing;
+}
+
+// Helpers methods
+function createMessageForDelete({ invite, t }) {
+	return {
+		e: getParticipants(Object.entries(invite.participants).flatMap(([_, value]) => value)),
+		su: `${t('Cancelled')}: ${invite.fullInvite.name}`,
+		mp: getMp({ t, fullInvite: invite.fullInvite }),
+	};
+}
+
+function getParticipants(participants) {
+	return participants.map((p) => ({
+		a: p.email,
+		p: p.name,
+		t: 't'
+	}));
+}
+
+function getMp({ t, fullInvite }) {
+	const meetingCanceled = `${t('The following meeting has been cancelled')}:`;
+
+	const mp = {
+		ct: 'multipart/alternative',
+		mp: [
+			{
+				ct: 'text/plain',
+				content: `${meetingCanceled}\n\n${fullInvite.desc ? fullInvite.desc[0]._content : ''}`,
+			},
+		]
+	};
+	if (fullInvite.descHtml) {
+		mp.mp.push({
+			ct: 'text/html',
+			content: `<html><h3>${meetingCanceled}</h3><br/><br/>${fullInvite.descHtml[0]._content.slice(6)}`,
+		});
+	}
+	return mp;
 }

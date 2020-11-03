@@ -6,10 +6,13 @@ import moment from 'moment';
 import styled from 'styled-components';
 
 const InviteReminder = styled.div`
-	width: 8px;
-	height: 8px;
-	top: -4px;
-	left: -4px;
+	position: absolute;
+	width: 12px;
+	minWidth: 12px;
+	height: 12px;
+	minHeight: 12px;
+	top: -2px;
+	left: -8px;
 	border-radius: 4px;
 	background-color: ${({ theme }) => theme.palette.error.regular};
 `;
@@ -28,7 +31,7 @@ export default function CustomEvent({ event }) {
 				style={{ position: 'relative' }}
 				ref={ref}
 			>
-				{event.resource.neverSent && (
+				{event.resource.inviteNeverSent && (
 					<InviteReminder />
 				)}
 				<Container
@@ -43,7 +46,7 @@ export default function CustomEvent({ event }) {
 							{`${moment(event.start).format('LT')} - ${moment(event.end).format('LT')}`}
 						</Text>
 					</Row>
-					{ event.resource.isPrivate
+					{ event.resource.class === 'PRI'
 						&& (
 							<Row padding={{ left: 'extrasmall' }}>
 								<Icon color="currentColor" icon="Lock" style={{ minWidth: '16px' }} />

@@ -1,17 +1,24 @@
-import React, { lazy, useMemo } from 'react';
+import React, { lazy, useEffect } from 'react';
 import {
 	setRoutes,
-	setMainMenuItems,
-	setAppContext
+	setCreateOptions,
+	store,
+	hooks
 } from '@zextras/zapp-shell';
-import { Provider } from 'react-redux';
-import { report } from './commons/report-exception';
+import { combineReducers } from '@reduxjs/toolkit';
 
-import createStore from './store/create-store';
-import { startSync } from './store/sync-slice';
+import { report } from './commons/report-exception';
+import syncSliceReducer, { startSync } from './store/sync-slice';
 import SetMainMenuItems from './secondary-bar/set-main-menu-items';
+import appointmentsSliceReducer from './store/appointments-slice';
+import calendarsSliceReducer from './store/calendars-slice';
+import weeksSliceReducer from './store/week-slice';
+import editorSliceReducer from './store/editor-slice';
+import invitesSliceReducer from './store/invites-slice';
+import accountsSliceReducer, { setAccounts } from './store/accounts-slice';
 
 const lazyCalendarView = lazy(() => (import(/* webpackChunkName: "calendar-view" */ './view/calendar-view')));
+const lazyEditorView = lazy(() => (import(/* webpackChunkName: "calendar-edit" */ './view/edit/appointment-edit-board')));
 
 export default function App() {
 	console.log('Hello from calendar');
@@ -19,29 +26,52 @@ export default function App() {
 		report(error);
 	};
 
-	const store = useMemo(() => {
-		const s = createStore();
-		s.dispatch(startSync());
+	useEffect(() => {
+		store.setReducer(
+			combineReducers({
+				accounts: accountsSliceReducer,
+				appointments: appointmentsSliceReducer,
+				calendars: calendarsSliceReducer,
+				sync: syncSliceReducer,
+				weeks: weeksSliceReducer,
+				editor: editorSliceReducer,
+				invites: invitesSliceReducer,
+			})
+		);
+	}, []);
 
-		setAppContext({
-			store: s
-		});
+	useEffect(() => {
+		store.store.dispatch(startSync());
 
 		setRoutes([
 			{
 				route: '/view',
 				view: lazyCalendarView
 			},
+			{
+				route: '/edit',
+				view: lazyEditorView
+			},
 		]);
 
-		return s;
+		setCreateOptions([{
+			id: 'create-appointment',
+			label: 'New Appointment',
+			app: {
+				boardPath: '/edit?id=new',
+				path: '/view?edit=new'
+			}
+		}]);
 	}, []);
 
+	const accounts = hooks.useUserAccounts();
+	useEffect(() => {
+		store.store.dispatch(
+			setAccounts(accounts)
+		);
+	}, [accounts]);
+
 	return (
-		<Provider
-			store={store}
-		>
-			<SetMainMenuItems />
-		</Provider>
+		<SetMainMenuItems />
 	);
 }

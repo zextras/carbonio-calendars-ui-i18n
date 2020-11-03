@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import {
 	Container, Text, Button, Icon, Popover, Divider, Row, Padding
 } from '@zextras/zapp-ui';
+import { hooks } from '@zextras/zapp-shell';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 
@@ -9,12 +10,19 @@ export default function SmallPreview({
 	anchorRef, open, event, onClose
 }) {
 	const { t } = useTranslation();
-	// console.log('event!', event);
+	const replaceHistory = hooks.useReplaceHistoryCallback();
+	const editAppointment = useCallback(
+		() => {
+			onClose();
+			replaceHistory({ pathname: '/view', search: `edit=${event.resource.id}` });
+		},
+		[event, onClose, replaceHistory]
+	);
 	return (
 		<Popover anchorEl={anchorRef} open={open} styleAsModal placement="left" onClose={onClose}>
 			<Container padding={{ top: 'medium', horizontal: 'small', bottom: 'extrasmall' }} width="300px">
 				<Row width="fill">
-					{event.resource.isPrivate && (
+					{event.resource.class === 'PRI' && (
 						<Row padding={{ all: 'small' }}>
 							<Icon customColor={event.resource.calendarColor.color} icon="Lock" style={{ minWidth: '16px' }} />
 						</Row>
@@ -59,8 +67,8 @@ export default function SmallPreview({
 					</Row>
 					<Row takeAvailableSpace mainAlignment="flex-start">
 						{event.resource.iAmOrganizer
-							? <Text overflow="break-word">{t('iAmOrganizer')}</Text>
-							: <Text overflow="break-word">{`${t('organizer')}: ${event.resource.organizer.d || event.resource.organizer.a}`}</Text>}
+							? <Text overflow="break-word">{t('You are the organizer')}</Text>
+							: <Text overflow="break-word">{`${t('organizer')}: ${event.resource.organizer.displayName || event.resource.organizer.name}`}</Text>}
 					</Row>
 				</Row>
 				{event.resource.fragment && event.resource.fragment.length > 0 && (
@@ -76,7 +84,7 @@ export default function SmallPreview({
 				<Divider />
 				<Row width="fill" mainAlignment="flex-end" padding={{ all: 'small' }}>
 					<Padding right="small">
-						<Button type="outlined" label="Edit" onClick={() => console.warn('not implemented yet')} />
+						<Button type="outlined" label="Edit" onClick={editAppointment} />
 					</Padding>
 					<Button type="outlined" label="Delete" onClick={() => console.warn('not implemented yet')} />
 				</Row>
