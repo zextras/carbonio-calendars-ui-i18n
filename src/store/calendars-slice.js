@@ -37,6 +37,7 @@ export function findCalendars(folder) {
 			name: folder.name,
 			parentZid: folder.l,
 			synced: true,
+			owner: folder.owner, // It's specified only if It's not the current user
 		};
 	}
 	return reduce(
@@ -238,7 +239,7 @@ export const { createLocalCalendar } = calendarsSlice.actions;
 export default calendarsSlice.reducer;
 
 export function selectAllFolders({ calendars }) {
-	return calendars.calendars;
+	return calendars ? calendars.calendars : [];
 }
 
 export function selectStatus({ calendars }) {

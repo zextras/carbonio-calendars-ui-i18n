@@ -9,17 +9,14 @@
  * *** END LICENSE BLOCK *****
  */
 
-import React from 'react';
-import { Provider } from 'react-redux';
-import { hooks } from '@zextras/zapp-shell';
+import styled from 'styled-components';
 
-// TODO: Should be moved into the shell
-export default function StoreProvider({ children }) {
-	const { store } = hooks.useAppContext();
+const StyledDivider = styled.hr`
+  border: 0px;
+  height: 0px;
+  border-top: 1px solid ${(props) => props.theme.palette.gray2.regular};
+  width: calc(100% - 32px);
+  margin: 0px;
+`;
 
-	return (
-		<Provider store={store}>
-			{ children }
-		</Provider>
-	);
-}
+export default StyledDivider;

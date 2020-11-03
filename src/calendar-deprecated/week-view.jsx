@@ -10,16 +10,15 @@
  */
 import React from 'react';
 import CalendarsList from './calendars-list';
-import StoreProvider from '../store/store-provider';
 import WeekViewList from './week-view-list';
 import AppointmentsList from './appointments-list';
 
 export default function CalendarWeekView() {
 	return (
-		<StoreProvider>
+		<>
 			<CalendarsList />
 			<AppointmentsList />
 			{/* <WeekViewList /> */}
-		</StoreProvider>
+		</>
 	);
 }

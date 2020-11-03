@@ -11,10 +11,8 @@ const MultiButton = styled(Button)`
 			default: return '0';
 		}
 	}};
-	${({ position }) => (position === 'mid') && css`
-		border-left: none;
-		border-right: none;
-	`};
+	${({ position }) => ((position === 'mid' || position === 'first') && css`border-right: none`)};
+	${({ position }) => ((position === 'mid' || position === 'last') && css`border-left: none`)};
 `;
 
 export default function CustomToolbar({

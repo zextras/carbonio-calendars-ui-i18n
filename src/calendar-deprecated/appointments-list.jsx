@@ -15,11 +15,11 @@ import { isEmpty, reduce } from 'lodash';
 import moment from 'moment';
 import { selectAllFolders } from '../store/calendars-slice';
 import {
+	selectAllAppointments,
 	selectEnd,
 	selectStart,
 	selectStatus,
 	selectSyncStatus,
-	selectVisibleAppointments,
 	setRange,
 } from '../store/appointments-slice';
 
@@ -29,7 +29,7 @@ export default function AppointmentsList() {
 	const status = useSelector(selectStatus);
 	const start = useSelector(selectStart);
 	const end = useSelector(selectEnd);
-	const appointments = useSelector(selectVisibleAppointments);
+	const appointments = useSelector(selectAllAppointments);
 	const dispatch = useDispatch();
 
 	const setPreviousWeekCbk = useCallback((ev) => {
