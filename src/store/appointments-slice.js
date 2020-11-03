@@ -75,7 +75,7 @@ function createRequest({ appt, id, account }) {
 export const saveAppointment = createAsyncThunk('editor/saveAppointment', async ({ id }, { getState, dispatch }) => {
 	const appt = getState().editor.editors[id];
 	const accounts = selectAccounts(getState());
-	const [reqType, body, isNew] = createRequest({ appt, id, account: accounts });
+	const [reqType, body, isNew] = createRequest({ appt, id, account: accounts[0] });
 	// eslint-disable-next-line @typescript-eslint/no-use-before-define
 	dispatch(updateAppointment({ appt, isNew }));
 	const resp = await network.soapFetch(reqType, body);
