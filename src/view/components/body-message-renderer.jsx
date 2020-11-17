@@ -16,24 +16,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import { Container, Text } from '@zextras/zapp-ui';
 
-export default function BodyMessageRenderer({ fullInvite, inviteId, parts }) {
-	if (!fullInvite) return null;
-
-	if (typeof fullInvite.fr === 'undefined') {
-		return <EmptyBody />;
-	}
-	if (fullInvite.descHtml) {
-		return (
-			<HtmlMessageRenderer
-				msgId={inviteId}
-				body={extractHtmlBody(fullInvite.descHtml[0]._content)}
-				parts={parts}
-			/>
-		);
-	}
-	return (<TextMessageRenderer text={extractBody(fullInvite.desc[0]._content)} />);
-};
-
 const _CI_REGEX = /^<(.*)>$/;
 const _CI_SRC_REGEX = /^cid:(.*)$/;
 
@@ -45,7 +27,7 @@ function TextMessageRenderer({ text }) {
 	}, [text]);
 
 	return (<Text ref={containerRef} />);
-};
+}
 
 function HtmlMessageRenderer({ msgId, body, parts }) {
 	const iframeRef = useRef();
@@ -115,7 +97,7 @@ function HtmlMessageRenderer({ msgId, body, parts }) {
 			style={{ border: 'none', width: '100%', display: 'none' }}
 		/>
 	);
-};
+}
 
 const EmptyBody = () => {
 	const { t } = useTranslation();
@@ -123,7 +105,7 @@ const EmptyBody = () => {
 	return (
 		<Container padding={{ bottom: 'medium' }}><Text>{`(${t('This invite has no text message')}.)`}</Text></Container>
 	);
-};
+}
 
 const divider = '*~*~*~*~*~*~*~*~*~*';
 function extractBody(body) {
@@ -140,4 +122,22 @@ function extractHtmlBody(body) {
 		htmlBody = `<html>${htmlBody.slice(10)}`;
 	}
 	return htmlBody;
+}
+
+export default function BodyMessageRenderer({ fullInvite, inviteId, parts }) {
+	if (!fullInvite) return null;
+
+	if (typeof fullInvite.fr === 'undefined') {
+		return <EmptyBody />;
+	}
+	if (fullInvite.descHtml) {
+		return (
+			<HtmlMessageRenderer
+				msgId={inviteId}
+				body={extractHtmlBody(fullInvite.descHtml[0]._content)}
+				parts={parts}
+			/>
+		);
+	}
+	return (<TextMessageRenderer text={extractBody(fullInvite.desc[0]._content)} />);
 }

@@ -1,3 +1,4 @@
+/* eslint no-param-reassign: ["error", { "ignorePropertyModificationsFor": ["cache"] }] */
 /*
  * *** BEGIN LICENSE BLOCK *****
  * Copyright (C) 2011-2020 Zextras
@@ -23,7 +24,63 @@ import {
 } from './calendars-slice';
 import { selectAccounts } from './accounts-slice';
 
-/* eslint no-param-reassign: "off" */
+export function selectStart({ appointments }) {
+	return appointments.start;
+}
+
+export function selectEnd({ appointments }) {
+	return appointments.end;
+}
+
+export function selectStatus({ appointments }) {
+	return appointments.status;
+}
+
+export function selectAllAppointments({ appointments }) {
+	return appointments.cache;
+}
+
+export function selectSyncStatus({ appointments }) {
+	return appointments.syncing;
+}
+
+function getMp({ t, fullInvite }) {
+	const meetingCanceled = `${t('The following meeting has been cancelled')}:`;
+
+	const mp = {
+		ct: 'multipart/alternative',
+		mp: [
+			{
+				ct: 'text/plain',
+				content: `${meetingCanceled}\n\n${fullInvite.desc ? fullInvite.desc[0]._content : ''}`,
+			},
+		]
+	};
+	if (fullInvite.descHtml) {
+		mp.mp.push({
+			ct: 'text/html',
+			content: `<html><h3>${meetingCanceled}</h3><br/><br/>${fullInvite.descHtml[0]._content.slice(6)}`,
+		});
+	}
+	return mp;
+}
+
+function getParticipants(participants) {
+	return participants.map((p) => ({
+		a: p.email,
+		p: p.name,
+		t: 't'
+	}));
+}
+
+function createMessageForDelete({ invite, t }) {
+	return {
+		e: getParticipants(Object.entries(invite.participants).flatMap(([_, value]) => value)),
+		su: `${t('Cancelled')}: ${invite.fullInvite.name}`,
+		mp: getMp({ t, fullInvite: invite.fullInvite }),
+	};
+}
+
 
 function createRequest({ appt, id, account }) {
 	const isNew = startsWith(id, 'new');
@@ -312,20 +369,20 @@ export const handleSyncData = createAsyncThunk(
 					updatedCalendars: [],
 					deletedIds: []
 				})
-				.then((returnData) => {
+				.then((r) => {
 					if (folder) {
-						returnData.updatedCalendars = findCalendars(folder[0]);
+						r.updatedCalendars = findCalendars(folder[0]);
 					}
-					return returnData;
+					return r;
 				})
-				.then((returnData) => {
+				.then((r) => {
 					if (deleted) {
 						// Handle deleted appointments
-						returnData.deletedIds = deleted[0].ids.split(',');
+						r.deletedIds = deleted[0].ids.split(',');
 					}
-					return returnData;
+					return r;
 				})
-				.then((returnData) => {
+				.then((r) => {
 					if (appt) {
 						// Handle new or updated appointments
 						const start = selectStart(getState());
@@ -340,11 +397,11 @@ export const handleSyncData = createAsyncThunk(
 							getState
 						})
 							.then((fetched) => {
-								returnData.updatedAppointments = fetched;
-								return returnData;
+								r.updatedAppointments = fetched;
+								return r;
 							});
 					}
-					return returnData;
+					return r;
 				});
 		}
 
@@ -382,9 +439,9 @@ function handleSyncDataFulfilled(state, { payload }) {
 						state.cache,
 						({ resource }) => resource.calendarId === calendar.zid
 					),
-					(appt) => {
-						appt.resource.calendarColor = calendar.color;
-						appt.resource.calendarName = calendar.name;
+					(r) => {
+						r.resource.calendarColor = calendar.color;
+						r.resource.calendarName = calendar.name;
 					}
 				);
 			}
@@ -459,11 +516,11 @@ export const moveAppointmentToTrash = createAsyncThunk('appointments/moveAppoint
 });
 
 function moveAppointmentToTrashFulfilled(state, { payload }) {
-	state.cache = state.cache.map((app) => {
-		if (app.resource.inviteId === payload.inviteId) {
-			app.resource.calendarId = '3';
+	state.cache = state.cache.map((r) => {
+		if (r.resource.inviteId === payload.inviteId) {
+			r.resource.calendarId = '3';
 		}
-		return app;
+		return r;
 	});
 }
 
@@ -502,61 +559,3 @@ export const appointmentsSlice = createSlice({
 export const { updateAppointment, updateParticipationStatus } = appointmentsSlice.actions;
 
 export default appointmentsSlice.reducer;
-
-export function selectStart({ appointments }) {
-	return appointments.start;
-}
-
-export function selectEnd({ appointments }) {
-	return appointments.end;
-}
-
-export function selectStatus({ appointments }) {
-	return appointments.status;
-}
-
-export function selectAllAppointments({ appointments }) {
-	return appointments.cache;
-}
-
-export function selectSyncStatus({ appointments }) {
-	return appointments.syncing;
-}
-
-// Helpers methods
-function createMessageForDelete({ invite, t }) {
-	return {
-		e: getParticipants(Object.entries(invite.participants).flatMap(([_, value]) => value)),
-		su: `${t('Cancelled')}: ${invite.fullInvite.name}`,
-		mp: getMp({ t, fullInvite: invite.fullInvite }),
-	};
-}
-
-function getParticipants(participants) {
-	return participants.map((p) => ({
-		a: p.email,
-		p: p.name,
-		t: 't'
-	}));
-}
-
-function getMp({ t, fullInvite }) {
-	const meetingCanceled = `${t('The following meeting has been cancelled')}:`;
-
-	const mp = {
-		ct: 'multipart/alternative',
-		mp: [
-			{
-				ct: 'text/plain',
-				content: `${meetingCanceled}\n\n${fullInvite.desc ? fullInvite.desc[0]._content : ''}`,
-			},
-		]
-	};
-	if (fullInvite.descHtml) {
-		mp.mp.push({
-			ct: 'text/html',
-			content: `<html><h3>${meetingCanceled}</h3><br/><br/>${fullInvite.descHtml[0]._content.slice(6)}`,
-		});
-	}
-	return mp;
-}

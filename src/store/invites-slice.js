@@ -1,3 +1,4 @@
+/* eslint no-param-reassign: ["error", { "ignorePropertyModificationsFor": ["cache"] }] */
 /*
  * *** BEGIN LICENSE BLOCK *****
  * Copyright (C) 2011-2020 Zextras
@@ -14,6 +15,15 @@ import produce from 'immer';
 import {
 	groupBy, map, uniqBy, filter
 } from 'lodash';
+
+const DAY_PER_WEEK = 7;
+const HOUR_PER_DAY = 24;
+const MINUTES_PER_HOUR = 60;
+const SECONDS_PER_MINUTE = 60;
+
+function createStringOfAlarm(number, unit) {
+	return `${number} ${unit} BEFORE`;
+}
 
 export function emptyInvite() {
 	return {
@@ -52,41 +62,6 @@ function getOneInvitePending({ cache }, { inviteId }) {
 	cache[inviteId] = { ...prevInvite, status: 'pending' };
 }
 
-function getOneInviteFulfilled({ cache }, { payload }) {
-	const { m } = payload;
-	const receivedInvite = m.inv[0];
-
-	const receivedParticipants = receivedInvite.comp[0].at || [];
-	const mappedParticipants = uniqBy(
-		map(
-			filter(
-				receivedParticipants,
-				(p) => p.cutype !== 'RES'
-			),
-			(p) => ({
-				name: p.d,
-				email: p.a,
-				isOptional: p.role === 'OPT' || false,
-				response: p.ptst,
-			})
-		),
-		'email'
-	);
-	const groupedParticipants = groupBy(mappedParticipants, (p) => p.response);
-
-	cache[payload.inviteId] = {
-		parts: map(
-			m.mp || [],
-			normalizeMailPartMapFn
-		),
-		compNum: receivedInvite.comp[0].compNum,
-		fullInvite: receivedInvite.comp[0],
-		alarm: getAlarmToString(receivedInvite.comp[0].alarm || null),
-		participants: groupedParticipants,
-		status: 'complete',
-	};
-}
-
 function normalizeMailPartMapFn(v) {
 	const ret = {
 		contentType: v.ct,
@@ -105,11 +80,6 @@ function normalizeMailPartMapFn(v) {
 	if (v.cd) ret.disposition = v.cd;
 	return ret;
 }
-
-const DAY_PER_WEEK = 7;
-const HOUR_PER_DAY = 24;
-const MINUTES_PER_HOUR = 60;
-const SECONDS_PER_MINUTE = 60;
 
 function getAlarmToString(alarm) {
 	if (alarm && alarm[0] && alarm[0].action === 'DISPLAY') {
@@ -149,8 +119,39 @@ function getAlarmToString(alarm) {
 	return null;
 }
 
-function createStringOfAlarm(number, unit) {
-	return `${number} ${unit} BEFORE`;
+function getOneInviteFulfilled({ cache }, { payload }) {
+	const { m } = payload;
+	const receivedInvite = m.inv[0];
+
+	const receivedParticipants = receivedInvite.comp[0].at || [];
+	const mappedParticipants = uniqBy(
+		map(
+			filter(
+				receivedParticipants,
+				(p) => p.cutype !== 'RES'
+			),
+			(p) => ({
+				name: p.d,
+				email: p.a,
+				isOptional: p.role === 'OPT' || false,
+				response: p.ptst,
+			})
+		),
+		'email'
+	);
+	const groupedParticipants = groupBy(mappedParticipants, (p) => p.response);
+
+	cache[payload.inviteId] = {
+		parts: map(
+			m.mp || [],
+			normalizeMailPartMapFn
+		),
+		compNum: receivedInvite.comp[0].compNum,
+		fullInvite: receivedInvite.comp[0],
+		alarm: getAlarmToString(receivedInvite.comp[0].alarm || null),
+		participants: groupedParticipants,
+		status: 'complete',
+	};
 }
 
 function getOneInviteRejected(state, action) {

@@ -18,6 +18,34 @@ import {
 	Container, Icon, IconButton, Padding, Row, Text
 } from '@zextras/zapp-ui';
 
+const AttachmentLink = styled.a`
+	text-decoration: none;
+	width: calc(50% - 4px);
+	margin-bottom: ${({ theme }) => theme.sizes.padding.small};
+`;
+const AttachmentExtension = styled(Text)`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	border-radius: ${({ theme }) => theme.borderRadius};
+	background-color: ${({ theme }) => theme.palette.primary.regular};
+	color: ${({ theme }) => theme.palette.gray6.regular};
+	font-size: calc(${({ theme }) => theme.sizes.font.small} - 2px);
+	text-transform: uppercase;
+	margin-right: ${({ theme }) => theme.sizes.padding.small};
+`;
+const AttachmentContainer = styled(Row)`
+	transition: 0.2s ease-out;
+	&:hover {
+		background-color: ${({ theme, background }) => theme.palette[background].hover};
+	}
+	&:focus {
+		background-color: ${({ theme, background }) => theme.palette[background].focus};
+	}
+`;
+
 const getSizeLabel = (size) => {
 	let value = '';
 	if (size < 1024000) {
@@ -31,6 +59,25 @@ const getSizeLabel = (size) => {
 	}
 	return value;
 };
+
+function Attachment({ filename, size, link }) {
+	const extension = filename.split('.').pop();
+	const sizeLabel = useMemo(() => getSizeLabel(size), [size]);
+	return (
+		<AttachmentLink
+			rel="noopener noreferrer"
+			href={link}
+		>
+			<AttachmentContainer padding={{ all: 'small' }} background="gray5">
+				<AttachmentExtension>{extension}</AttachmentExtension>
+				<Row orientation="vertical" crossAlignment="flex-start" takeAvailableSpace>
+					<Padding style={{ width: '100%' }} bottom="extrasmall"><Text>{filename}</Text></Padding>
+					<Text color="gray1" size="small">{sizeLabel}</Text>
+				</Row>
+			</AttachmentContainer>
+		</AttachmentLink>
+	);
+}
 
 const getAttachmentsLink = (messageId, messageSubject, attachments) => {
 	if (attachments.length > 1) {
@@ -96,51 +143,4 @@ export default function AttachmentsPart({ message, attachments }) {
 				}
 			</Container>
 		);
-}
-
-const AttachmentLink = styled.a`
-	text-decoration: none;
-	width: calc(50% - 4px);
-	margin-bottom: ${({ theme }) => theme.sizes.padding.small};
-`;
-const AttachmentExtension = styled(Text)`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 24px;
-	height: 24px;
-	border-radius: ${({ theme }) => theme.borderRadius};
-	background-color: ${({ theme }) => theme.palette.primary.regular};
-	color: ${({ theme }) => theme.palette.gray6.regular};
-	font-size: calc(${({ theme }) => theme.sizes.font.small} - 2px);
-	text-transform: uppercase;
-	margin-right: ${({ theme }) => theme.sizes.padding.small};
-`;
-const AttachmentContainer = styled(Row)`
-	transition: 0.2s ease-out;
-	&:hover {
-		background-color: ${({ theme, background }) => theme.palette[background].hover};
-	}
-	&:focus {
-		background-color: ${({ theme, background }) => theme.palette[background].focus};
-	}
-`;
-
-function Attachment({ filename, size, link }) {
-	const extension = filename.split('.').pop();
-	const sizeLabel = useMemo(() => getSizeLabel(size), [size]);
-	return (
-		<AttachmentLink
-			rel="noopener noreferrer"
-			href={link}
-		>
-			<AttachmentContainer padding={{ all: 'small' }} background="gray5">
-				<AttachmentExtension>{extension}</AttachmentExtension>
-				<Row orientation="vertical" crossAlignment="flex-start" takeAvailableSpace>
-					<Padding style={{ width: '100%' }} bottom="extrasmall"><Text>{filename}</Text></Padding>
-					<Text color="gray1" size="small">{sizeLabel}</Text>
-				</Row>
-			</AttachmentContainer>
-		</AttachmentLink>
-	);
 }

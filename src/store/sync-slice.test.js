@@ -10,6 +10,5 @@
  */
 
 describe('Hooks', () => {
-	test.skip('', () => {
-	});
+	test.skip('', () => undefined);
 });

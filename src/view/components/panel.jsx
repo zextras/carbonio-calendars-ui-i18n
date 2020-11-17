@@ -18,34 +18,6 @@ import {
 import { useTranslation } from 'react-i18next';
 import { map, slice } from 'lodash';
 
-const AppointmentCardContainer = styled(Container)`
-	z-index: 10;
-	position: absolute;
-	top: 68px;
-	right: 12px;
-	bottom: 12px;
-	left: ${({ expanded }) => (expanded ? '12px' : 'max(calc(100% - 512px), 12px)')};
-	transition: left 0.2s ease-in-out;
-	height: auto;
-	width: auto;
-	box-shadow: 0px 0px 8px 0px rgba(128,128,128,1);
-`;
-
-function Header({ title, closeAction, actions }) {
-	const { t } = useTranslation();
-	return (
-		<Row mainAlignment="flex-start" orientation="horizontal" width="fill" background="gray4">
-			<Row padding={{ all: 'medium' }}>
-				<Icon icon="CalendarOutline" />
-			</Row>
-			<Row takeAvailableSpace mainAlignment="flex-start">
-				<Text weight="bold" size="large" overflow="ellipsis">{ title || t('No Subject') }</Text>
-			</Row>
-			<ActionButtons actions={actions} closeAction={closeAction} />
-		</Row>
-	);
-}
-
 function ActionButtons({ actions, closeAction }) {
 	const actionContainerRef = useRef();
 	const [hiddenActionsCount, recalculateHiddenActions] = useHiddenCount(actionContainerRef, true);
@@ -81,6 +53,34 @@ function ActionButtons({ actions, closeAction }) {
 				</Dropdown>
 			)}
 			<IconButton icon="Close" onClick={closeAction} />
+		</Row>
+	);
+}
+
+const AppointmentCardContainer = styled(Container)`
+	z-index: 10;
+	position: absolute;
+	top: 68px;
+	right: 12px;
+	bottom: 12px;
+	left: ${({ expanded }) => (expanded ? '12px' : 'max(calc(100% - 512px), 12px)')};
+	transition: left 0.2s ease-in-out;
+	height: auto;
+	width: auto;
+	box-shadow: 0px 0px 8px 0px rgba(128,128,128,1);
+`;
+
+function Header({ title, closeAction, actions }) {
+	const { t } = useTranslation();
+	return (
+		<Row mainAlignment="flex-start" orientation="horizontal" width="fill" background="gray4">
+			<Row padding={{ all: 'medium' }}>
+				<Icon icon="CalendarOutline" />
+			</Row>
+			<Row takeAvailableSpace mainAlignment="flex-start">
+				<Text weight="bold" size="large" overflow="ellipsis">{ title || t('No Subject') }</Text>
+			</Row>
+			<ActionButtons actions={actions} closeAction={closeAction} />
 		</Row>
 	);
 }

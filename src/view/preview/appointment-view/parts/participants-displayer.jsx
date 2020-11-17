@@ -15,24 +15,21 @@ import {
 import { useTranslation } from 'react-i18next';
 import React, { useCallback, useMemo, useState } from 'react';
 
-export default function ParticipantsDisplayer({ participants }) {
-	const width = (Object.keys(participants).length === 1) ? '100%' : '50%';
-	if (Object.keys(participants).length === 0) return null;
+function DisplayedParticipant({ participant }) {
+	const { t } = useTranslation();
 	return (
-		<Container
-			wrap="wrap"
-			orientation="horizontal"
-			mainAlignment="flex-start"
-			crossAlignment="flex-start"
-			width="fill"
-			heigh="fit"
-			padding={{ top: 'small' }}
-		>
-			<Dropdown label="Accepted" participants={participants.AC} width={width} />
-			<Dropdown label="Didn't answer" participants={participants.NE} width={width} />
-			<Dropdown label="Tentative" participants={participants.TE} width={width} />
-			<Dropdown label="Declined" participants={participants.DE} width={width} />
-		</Container>
+		<Row mainAlignment="flex-start" crossAlignment="center" width="212px" padding={{ vertical: 'small' }}>
+			<Avatar label={participant.name || participant.email} />
+			<Row mainAlignment="flex-start" crossAlignment="center" takeAvailableSpace padding={{ left: 'small' }}>
+				<Text overflow="ellipsis">
+					{participant.name || participant.email}
+					<br />
+					<Text size="small" color="secondary">
+						{`(${participant.isOptional ? t('Optional') : t('Required')})`}
+					</Text>
+				</Text>
+			</Row>
+		</Row>
 	);
 }
 
@@ -73,20 +70,25 @@ function Dropdown({ label, participants = [], width }) {
 	);
 }
 
-function DisplayedParticipant({ participant }) {
-	const { t } = useTranslation();
+export default function ParticipantsDisplayer({ participants }) {
+	const width = (Object.keys(participants).length === 1) ? '100%' : '50%';
+	if (Object.keys(participants).length === 0) return null;
 	return (
-		<Row mainAlignment="flex-start" crossAlignment="center" width="212px" padding={{ vertical: 'small' }}>
-			<Avatar label={participant.name || participant.email} />
-			<Row mainAlignment="flex-start" crossAlignment="center" takeAvailableSpace padding={{ left: 'small' }}>
-				<Text overflow="ellipsis">
-					{participant.name || participant.email}
-					<br />
-					<Text size="small" color="secondary">
-						{`(${participant.isOptional ? t('Optional') : t('Required')})`}
-					</Text>
-				</Text>
-			</Row>
-		</Row>
+		<Container
+			wrap="wrap"
+			orientation="horizontal"
+			mainAlignment="flex-start"
+			crossAlignment="flex-start"
+			width="fill"
+			heigh="fit"
+			padding={{ top: 'small' }}
+		>
+			<Dropdown label="Accepted" participants={participants.AC} width={width} />
+			<Dropdown label="Didn't answer" participants={participants.NE} width={width} />
+			<Dropdown label="Tentative" participants={participants.TE} width={width} />
+			<Dropdown label="Declined" participants={participants.DE} width={width} />
+		</Container>
 	);
 }
+
+

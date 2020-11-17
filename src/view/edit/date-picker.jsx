@@ -12,7 +12,7 @@ import Styler from './date-picker-style';
 
 momentLocalizer();
 
-export default function ({
+export default function DatePicker({
 	start, end, allDay, onChange, onAllDayChange
 }) {
 	const { t } = useTranslation();

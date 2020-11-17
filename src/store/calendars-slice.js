@@ -225,7 +225,7 @@ export const calendarsSlice = createSlice({
 		[handleSyncData.pending]: produce(fetchCalendarsPending),
 		[handleSyncData.fulfilled]: produce(fetchCalendarsFullFilled),
 		[handleSyncData.rejected]: produce(fetchCalendarsRejected),
-		[createCalendar.pending]: produce((state, action) => {}),
+		[createCalendar.pending]: produce((state, action) => undefined),
 		[createCalendar.fulfilled]: produce(createCalendarFullFilled),
 		[createCalendar.rejected]: produce(calendarActionRejected),
 		[checkUncheckCalendar.pending]: produce(checkUncheckCalendarPending),
