@@ -12,14 +12,6 @@ import React from 'react';
 import { Avatar, Container } from '@zextras/zapp-ui';
 import styled from 'styled-components';
 
-export default function ImageAndIconPart({ icon = 'CalendarOutline', color }) {
-	return (
-		<OuterContainer color={color}>
-			<IconContainer icon={icon} color={color} label="" size="large" />
-		</OuterContainer>
-	);
-}
-
 const OuterContainer = styled(Container)`
 	height: 80px;
 	background: linear-gradient(0.25turn, ${(props) => props.color}, #FFFFFF);
@@ -31,3 +23,11 @@ const IconContainer = styled(Avatar)`
 	z-index: 12;
   background-color: ${(props) => props.color};
 `;
+
+export default function ImageAndIconPart({ icon = 'CalendarOutline', color }) {
+	return (
+		<OuterContainer color={color}>
+			<IconContainer icon={icon} color={color} label="" size="large" />
+		</OuterContainer>
+	);
+}

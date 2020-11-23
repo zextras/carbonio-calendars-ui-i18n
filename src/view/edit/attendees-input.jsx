@@ -3,7 +3,7 @@ import { ChipInput } from '@zextras/zapp-ui';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
-export default function ({ attendees, onChange }) {
+export default function AttendeesInput({ attendees, onChange }) {
 	const { t } = useTranslation();
 	return (
 		<ChipInput
@@ -13,4 +13,4 @@ export default function ({ attendees, onChange }) {
 			background="gray5"
 		/>
 	);
-};
+}

@@ -21,11 +21,6 @@ import { useTranslation } from 'react-i18next';
 import { checkUncheckCalendar, selectAllFolders } from '../store/calendars-slice';
 import Accordion from './accordion-calendar';
 
-export default function SetMainMenuItems() {
-	useSetMainMenuItems();
-	return null;
-}
-
 const nest = (items, id) =>
 	map(
 		filter(items, (item) => item.parentId === id),
@@ -143,4 +138,9 @@ function useSetMainMenuItems() {
 	</>,
 		}]);
 	}, [calendars, findAndSetSelected, setSelectedRecursive, t]);
+}
+
+export default function SetMainMenuItems() {
+	useSetMainMenuItems();
+	return null;
 }

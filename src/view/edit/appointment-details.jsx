@@ -79,7 +79,7 @@ const getStatusItems = (t) => [
 	}
 ];
 
-export default function ({
+export default function AppointmentDetails({
 	onPrivateChange, onCalendarChange, onDisplayStatusChange, onReminderChange, data
 }) {
 	const { t } = useTranslation();

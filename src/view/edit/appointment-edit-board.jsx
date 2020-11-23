@@ -9,4 +9,4 @@ export default function AppointmentEditBoard() {
 	return (
 		<EditorView setTitle={console.log} editorId={editorId} panel={false} close={closeBoard} />
 	);
-};
+}

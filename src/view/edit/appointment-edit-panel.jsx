@@ -21,4 +21,4 @@ export default function AppointmentEditPanel({ editorId }) {
 			<EditorView setTitle={setTitle} editorId={editorId} panel close={closePanel} />
 		</Panel>
 	);
-};
+}
