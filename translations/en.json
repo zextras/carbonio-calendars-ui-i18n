@@ -51,5 +51,13 @@
     "attachments": "",
     "from": "",
     "invited you": "",
-    "organizer": ""
+    "organizer": "",
+    "participants_AC_with_count": "Accepted",
+    "participants_AC_with_count_plural": "Accepted ({{count}})",
+    "participants_DE_with_count": "Didn't answer",
+    "participants_DE_with_count_plural": "Didn't answer  ({{count}})",
+    "participants_NE_with_count": "Tentative",
+    "participants_NE_with_count_plural": "Tentative ({{count}})",
+    "participants_TE_with_count": "Declined",
+    "participants_TE_with_count_plural": "Declined ({{count}})"
 }
