@@ -6,7 +6,7 @@ import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 import { ZIMBRA_STANDARD_COLORS } from '../../zimbra-standard-colors';
 
-export default function ({ data }) {
+export default function DataRecap({ data }) {
 	const { t } = useTranslation();
 
 	return (

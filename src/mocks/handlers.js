@@ -8,7 +8,9 @@
  * http://www.zextras.com/zextras-eula.html
  * *** END LICENSE BLOCK *****
  */
+import { rest } from 'msw';
 
-describe('Hooks', () => {
-	test.skip('', () => undefined);
-});
+const handlers = [
+];
+
+export default handlers;

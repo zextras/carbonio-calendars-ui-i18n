@@ -20,6 +20,25 @@ import AppointmentEditPanel from './edit/appointment-edit-panel';
 
 const CalendarComponent = lazy(() => import(/* webpackChunkName: "calendar-component" */ './calendar/calendar-component'));
 
+function UglyNonRenderingComponent() {
+	const calendars = useSelector(selectAllFolders);
+	const syncing = useSelector(selectSyncStatus);
+	const status = useSelector(selectStatus);
+
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		if (!isEmpty(calendars) && status === 'init') {
+			const now = moment();
+			dispatch(setRange({
+				start: now.startOf('isoWeek').valueOf(),
+				end: now.endOf('isoWeek').valueOf(),
+			}));
+		}
+	}, [dispatch, status, calendars]);
+	return null;
+}
+
 export default function CalendarView() {
 	const [appointmentDetail, setAppointmentDetail] = useState(null);
 	const closeAppointmentDetail = useCallback(() => {
@@ -53,22 +72,3 @@ export default function CalendarView() {
 		</Container>
 	);
 }
-
-const UglyNonRenderingComponent = () => {
-	const calendars = useSelector(selectAllFolders);
-	const syncing = useSelector(selectSyncStatus);
-	const status = useSelector(selectStatus);
-
-	const dispatch = useDispatch();
-
-	useEffect(() => {
-		if (!isEmpty(calendars) && status === 'init') {
-			const now = moment();
-			dispatch(setRange({
-				start: now.startOf('isoWeek').valueOf(),
-				end: now.endOf('isoWeek').valueOf(),
-			}));
-		}
-	}, [dispatch, status, calendars]);
-	return null;
-};

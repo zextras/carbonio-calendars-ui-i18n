@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Input } from '@zextras/zapp-ui';
 
-export default function ({ onChange, label, defaultValue }) {
+export default function InputRow({ onChange, label, defaultValue }) {
 	return (
 		<Row
 			height="fit"

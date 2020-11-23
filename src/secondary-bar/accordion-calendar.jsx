@@ -128,6 +128,63 @@ function pseudoClasses(theme, color) {
 	`;
 }
 
+const ItemContainerEl = styled(Container)`
+	padding: ${(props) => `
+		${props.theme.sizes.padding.medium}
+		calc(${props.theme.sizes.padding.large} + ${props.theme.sizes.icon.large} + ${props.theme.sizes.padding.small})
+		${props.theme.sizes.padding.medium} calc(${props.theme.sizes.padding.large} + ${props.level > 1 ? props.theme.sizes.padding.medium : '0px'})`};
+	${({ theme }) => pseudoClasses(theme, 'gray5')};
+
+`;
+
+function AccordionItem ({
+	id, label, level, isChecked, check, iconColor, click
+}) {
+	const isMobile = useScreenMode() === 'mobile';
+
+	const updateChecked = useCallback((ev) => {
+		ev.stopPropagation();
+		check(!isChecked);
+	}, [check, isChecked]);
+
+	const onClick = useCallback(() => {
+		if (click) click(id);
+	}, [click, id]);
+
+	return (
+		<Container width="fill">
+			<ItemContainerEl
+				level={level}
+				orientation="horizontal"
+				width="fill"
+				mainAlignment="flex-start"
+				tabIndex={0}
+				onClick={isMobile ? onClick : undefined}
+			>
+				<Responsive mode="desktop">
+					<Padding right="medium">
+						<Checkbox
+							value={isChecked}
+							onClick={updateChecked}
+							iconColor="primary"
+						/>
+					</Padding>
+				</Responsive>
+				<Padding right="small">
+					<Icon icon="Calendar2" customColor={iconColor} size="large" />
+				</Padding>
+				<Text
+					size="large"
+					weight="bold"
+					style={{ minWidth: 0, flexBasis: 0, flexGrow: 1 }}
+				>
+					{ label }
+				</Text>
+			</ItemContainerEl>
+		</Container>
+	);
+}
+
 function useCombinedRefs(...refs) {
 	const targetRef = useRef();
 	useEffect(() => {
@@ -156,13 +213,13 @@ const AccordionContainerEl = styled(Container)`
 	${({ theme }) => pseudoClasses(theme, 'gray5')};
 `;
 
-const Accordion = React.forwardRef(({
+const Accordion = React.forwardRef(function Accordion({
 	id, label, items, iconColor, isChecked = undefined, check,
 	level,
 	expanded = true,
 	click = undefined,
 	...rest
-}, ref) => {
+}, ref) {
 	const [open, setOpen] = useState(expanded);
 	const innerRef = useRef(undefined);
 	const accordionRef = useCombinedRefs(ref, innerRef);
@@ -289,62 +346,5 @@ const Accordion = React.forwardRef(({
 		</Container>
 	);
 });
-
-const ItemContainerEl = styled(Container)`
-	padding: ${(props) => `
-		${props.theme.sizes.padding.medium}
-		calc(${props.theme.sizes.padding.large} + ${props.theme.sizes.icon.large} + ${props.theme.sizes.padding.small})
-		${props.theme.sizes.padding.medium} calc(${props.theme.sizes.padding.large} + ${props.level > 1 ? props.theme.sizes.padding.medium : '0px'})`};
-	${({ theme }) => pseudoClasses(theme, 'gray5')};
-
-`;
-
-const AccordionItem = ({
-	id, label, level, isChecked, check, iconColor, click
-}) => {
-	const isMobile = useScreenMode() === 'mobile';
-
-	const updateChecked = useCallback((ev) => {
-		ev.stopPropagation();
-		check(!isChecked);
-	}, [check, isChecked]);
-
-	const onClick = useCallback(() => {
-		if (click) click(id);
-	}, [click, id]);
-
-	return (
-		<Container width="fill">
-			<ItemContainerEl
-				level={level}
-				orientation="horizontal"
-				width="fill"
-				mainAlignment="flex-start"
-				tabIndex={0}
-				onClick={isMobile ? onClick : undefined}
-			>
-				<Responsive mode="desktop">
-					<Padding right="medium">
-						<Checkbox
-							value={isChecked}
-							onClick={updateChecked}
-							iconColor="primary"
-						/>
-					</Padding>
-				</Responsive>
-				<Padding right="small">
-					<Icon icon="Calendar2" customColor={iconColor} size="large" />
-				</Padding>
-				<Text
-					size="large"
-					weight="bold"
-					style={{ minWidth: 0, flexBasis: 0, flexGrow: 1 }}
-				>
-					{ label }
-				</Text>
-			</ItemContainerEl>
-		</Container>
-	);
-};
 
 export default Accordion;

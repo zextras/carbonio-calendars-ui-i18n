@@ -9,6 +9,4 @@
  * *** END LICENSE BLOCK *****
  */
 
-describe('Hooks', () => {
-	test.skip('', () => undefined);
-});
+window.fetch = require('node-fetch');

@@ -64,4 +64,4 @@ export default function CustomEvent({ event }) {
 			</Container>
 		</Tooltip>
 	);
-};
+}
