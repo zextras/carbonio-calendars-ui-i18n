@@ -9,6 +9,12 @@
  * *** END LICENSE BLOCK *****
  */
 
-describe('Hooks', () => {
-	test.skip('', () => undefined);
-});
+import handlers from './handlers';
+
+window.__ZAPP_HANDLERS__(handlers);
+
+if (module.hot) {
+	module.hot.accept('./handlers.js', () => {
+		window.__ZAPP_HMR_HANDLERS__(handlers);
+	});
+}

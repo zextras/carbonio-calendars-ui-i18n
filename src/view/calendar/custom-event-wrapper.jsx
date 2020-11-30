@@ -94,4 +94,4 @@ export default function CustomEventWrapper({ event, children, selected }) {
 			</CustomEventWrapperStyler>
 		</>
 	);
-};
+}

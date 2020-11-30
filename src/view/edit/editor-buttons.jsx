@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Button, Padding } from '@zextras/zapp-ui';
 import { useTranslation } from 'react-i18next';
 
-export default function ({ onSave, onSend }) {
+export default function EditorButtons({ onSave, onSend }) {
 	const { t } = useTranslation();
 	return (
 		<Row padding={{ all: 'medium' }} height="fit" width="fill" mainAlignment="flex-end">

@@ -26,108 +26,6 @@ import StyledDivider from '../../components/styled-divider';
 import Panel from '../../components/panel';
 import useActions from './parts/useActions';
 
-export default function AppointmentView({ inviteId, idx, close }) {
-	const dispatch = useDispatch();
-
-	const appointments = useSelector(selectAllAppointments);
-	const invites = useSelector(selectAllInvites);
-
-	const appointment = useMemo(
-		() => find(appointments, (a) => a.resource.inviteId === inviteId && a.resource.idx === idx),
-		[appointments, idx, inviteId]
-	);
-	const invite = useMemo(() => invites[inviteId] || emptyInvite(),
-		[invites, inviteId]);
-
-	useEffect(() => {
-		if (appointment) dispatch(getOneInvite({ inviteId }));
-	}, [inviteId, appointment, dispatch]);
-
-	const actions = useActions({ appointment, invite, close });
-
-	return (
-		<Panel
-			closeAction={close}
-			actions={actions}
-			resizable={false}
-			title={appointment.title}
-		>
-			<ImageAndIconPart color={appointment.resource.calendarColor.color} />
-			<AppointmentBody message={appointment} invite={invite} />
-		</Panel>
-	);
-}
-
-function AppointmentBody({ message, invite }) { // TODO: scrollable
-	const attachments = useMemo(() => findAttachments(invite.parts, []), [invite]);
-
-	return (
-		<BodyContainer
-			orientation="vertical"
-			mainAlignment="flex-start"
-			width="fill"
-			height="fill"
-			padding={{ top: 'small' }}
-		>
-			<DetailsPart
-				subject={message.title}
-				calendarColor={message.resource.calendarColor.color}
-				calendarName={message.resource.calendarName}
-				location={message.resource.location}
-				isPrivate={message.resource.isPrivate}
-				inviteNeverSent={message.resource.inviteNeverSent}
-				start={message.start}
-				end={message.end}
-				allDay={message.allDay}
-			/>
-			<StyledDivider />
-			{message.resource.role === 'ATTENDEE'
-				&& (
-					<>
-						<ReplyButtonsPart
-							inviteId={message.resource.inviteId}
-							participationStatus={message.resource.participationStatus}
-							compNum={invite.compNum}
-						/>
-						<StyledDivider />
-					</>
-				)}
-			<ParticipantsPart
-				iAmOrganizer={message.resource.iAmOrganizer}
-				role={message.resource.role}
-				organizer={message.resource.organizer}
-				participants={invite.participants}
-				inviteId={message.resource.inviteId}
-				compNum={invite.compNum}
-			/>
-			{
-				invite.fullInvite && invite.fullInvite.fr && (
-					<>
-						<StyledDivider />
-						<MessagePart
-							fullInvite={invite.fullInvite}
-							inviteId={message.resource.inviteId}
-							parts={invite.parts}
-						/>
-					</>
-				)
-			}
-			<StyledDivider />
-			<ReminderPart alarm={invite.alarm} />
-			{
-				attachments.length > 0 && (
-					<>
-						<StyledDivider />
-						<AttachmentsPart
-							attachments={attachments}
-							message={{ id: message.resource.inviteId, subject: message.title }}
-						/>
-					</>
-				)
-			}
-		</BodyContainer>
-	);
-}
 
 const BodyContainer = styled(Container)`
 	overflow-y: auto;
@@ -165,5 +63,108 @@ function findAttachments(parts, acc) {
 			return findAttachments(part.parts, found);
 		},
 		acc
+	);
+}
+
+function AppointmentBody({ message, invite }) { // TODO: scrollable
+	const attachments = useMemo(() => findAttachments(invite.parts, []), [invite]);
+
+	return (
+		<BodyContainer
+			orientation="vertical"
+			mainAlignment="flex-start"
+			width="fill"
+			height="fill"
+			padding={{ top: 'small' }}
+		>
+			<DetailsPart
+				subject={message.title}
+				calendarColor={message.resource.calendarColor.color}
+				calendarName={message.resource.calendarName}
+				location={message.resource.location}
+				isPrivate={message.resource.isPrivate}
+				inviteNeverSent={message.resource.inviteNeverSent}
+				start={message.start}
+				end={message.end}
+				allDay={message.allDay}
+			/>
+			<StyledDivider />
+			{message.resource.role === 'ATTENDEE'
+			&& (
+				<>
+					<ReplyButtonsPart
+						inviteId={message.resource.inviteId}
+						participationStatus={message.resource.participationStatus}
+						compNum={invite.compNum}
+					/>
+					<StyledDivider />
+				</>
+			)}
+			<ParticipantsPart
+				iAmOrganizer={message.resource.iAmOrganizer}
+				role={message.resource.role}
+				organizer={message.resource.organizer}
+				participants={invite.participants}
+				inviteId={message.resource.inviteId}
+				compNum={invite.compNum}
+			/>
+			{
+				invite.fullInvite && invite.fullInvite.fr && (
+					<>
+						<StyledDivider />
+						<MessagePart
+							fullInvite={invite.fullInvite}
+							inviteId={message.resource.inviteId}
+							parts={invite.parts}
+						/>
+					</>
+				)
+			}
+			<StyledDivider />
+			<ReminderPart alarm={invite.alarm} />
+			{
+				attachments.length > 0 && (
+					<>
+						<StyledDivider />
+						<AttachmentsPart
+							attachments={attachments}
+							message={{ id: message.resource.inviteId, subject: message.title }}
+						/>
+					</>
+				)
+			}
+		</BodyContainer>
+	);
+}
+
+export default function AppointmentView({ inviteId, idx, close }) {
+	const dispatch = useDispatch();
+
+	const appointments = useSelector(selectAllAppointments);
+	const invites = useSelector(selectAllInvites);
+
+	const appointment = useMemo(
+		() => find(appointments, (a) => a.resource.inviteId === inviteId && a.resource.idx === idx),
+		[appointments, idx, inviteId]
+	);
+	const invite = useMemo(() => invites[inviteId] || emptyInvite(),
+		[invites, inviteId]);
+
+	useEffect(() => {
+		if (appointment) dispatch(getOneInvite({ inviteId }));
+	}, [inviteId, appointment, dispatch]);
+
+	const actions = useActions({ appointment, invite, close });
+
+	return (
+		<Panel
+			closeAction={close}
+			actions={actions}
+			resizable={false}
+			title={appointment.title}
+		>
+			<ImageAndIconPart color={appointment.resource.calendarColor.color} />
+			<AppointmentBody message={appointment} invite={invite} />
+		</Panel>
 	);
 }

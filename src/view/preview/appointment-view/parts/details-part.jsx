@@ -17,6 +17,42 @@ import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import moment from 'moment-timezone';
 
+const PaddedRow = styled(Row)`
+	padding: 4px 4px;
+	align-items: left;
+`;
+
+function SubjectRow({ subject, calendarColor, isPrivate }) {
+	return (
+		<Container padding={{ top: 'big', horizontal: 'medium' }} mainAlignment="center" orientation="horizontal">
+			{isPrivate && <Icon icon="Lock" customColor={calendarColor} style={{ padding: '4px' }} />}
+			<Padding size="large">
+				<Text weight="bold" size="large" overflow="break-word">
+					{subject}
+				</Text>
+			</Padding>
+			{/* TODO: tags */}
+		</Container>
+	);
+}
+
+function InviteNeverSentRow({ inviteNeverSent = false }) {
+	const { t } = useTranslation();
+	if (inviteNeverSent) {
+		return (
+			<PaddedRow takeAvailableSpace>
+				<Icon icon="AlertCircleOutline" color="error" />
+				<Padding horizontal="small">
+					<Text color="error">
+						{t('You haven\'t sent the invitation to the attendees yet')}
+					</Text>
+				</Padding>
+			</PaddedRow>
+		);
+	}
+	return null;
+}
+
 export default function DetailsPart({
 	subject, calendarColor, calendarName, location, inviteNeverSent, isPrivate, start, end, allDay
 }) {
@@ -76,40 +112,4 @@ export default function DetailsPart({
 			}
 		</Container>
 	);
-}
-
-const PaddedRow = styled(Row)`
-	padding: 4px 4px;
-	align-items: left;
-`;
-
-function SubjectRow({ subject, calendarColor, isPrivate }) {
-	return (
-		<Container padding={{ top: 'big', horizontal: 'medium' }} mainAlignment="center" orientation="horizontal">
-			{isPrivate && <Icon icon="Lock" customColor={calendarColor} style={{ padding: '4px' }} />}
-			<Padding size="large">
-				<Text weight="bold" size="large" overflow="break-word">
-					{subject}
-				</Text>
-			</Padding>
-			{/* TODO: tags */}
-		</Container>
-	);
-}
-
-function InviteNeverSentRow({ inviteNeverSent = false }) {
-	const { t } = useTranslation();
-	if (inviteNeverSent) {
-		return (
-			<PaddedRow takeAvailableSpace>
-				<Icon icon="AlertCircleOutline" color="error" />
-				<Padding horizontal="small">
-					<Text color="error">
-						{t('You haven\'t sent the invitation to the attendees yet')}
-					</Text>
-				</Padding>
-			</PaddedRow>
-		);
-	}
-	return null;
 }
