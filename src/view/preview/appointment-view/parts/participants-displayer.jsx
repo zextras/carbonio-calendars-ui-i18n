@@ -34,7 +34,6 @@ function DisplayedParticipant({ participant }) {
 }
 
 function Dropdown({ label, participants = [], width }) {
-	const { t } = useTranslation();
 	const [isExpanded, setIsExpanded] = useState(participants.length < 3);
 	const toggleExpanded = useCallback(() => setIsExpanded((prevExpanded) => !prevExpanded), []);
 
@@ -61,7 +60,7 @@ function Dropdown({ label, participants = [], width }) {
 		>
 			<Row mainAlignment="flex-start" takeAvailableSpace>
 				<Text weight="bold">
-					{`${t(label)} (${participants.length})`}
+					{ label }
 				</Text>
 				<IconButton icon={isExpanded ? 'ChevronUp' : 'ChevronDown'} onClick={toggleExpanded} size="small" />
 			</Row>
@@ -71,6 +70,7 @@ function Dropdown({ label, participants = [], width }) {
 }
 
 export default function ParticipantsDisplayer({ participants }) {
+	const { t } = useTranslation();
 	const width = (Object.keys(participants).length === 1) ? '100%' : '50%';
 	if (Object.keys(participants).length === 0) return null;
 	return (
@@ -83,10 +83,10 @@ export default function ParticipantsDisplayer({ participants }) {
 			heigh="fit"
 			padding={{ top: 'small' }}
 		>
-			<Dropdown label="Accepted" participants={participants.AC} width={width} />
-			<Dropdown label="Didn't answer" participants={participants.NE} width={width} />
-			<Dropdown label="Tentative" participants={participants.TE} width={width} />
-			<Dropdown label="Declined" participants={participants.DE} width={width} />
+			<Dropdown label={t('participants_AC_with_count', { count: participants.AC?.length ?? 0 })} participants={participants.AC} width={width} />
+			<Dropdown label={t('participants_NE_with_count', { count: participants.NE?.length ?? 0 })} participants={participants.NE} width={width} />
+			<Dropdown label={t('participants_TE_with_count', { count: participants.TE?.length ?? 0 })} participants={participants.TE} width={width} />
+			<Dropdown label={t('participants_DE_with_count', { count: participants.DE?.length ?? 0 })} participants={participants.DE} width={width} />
 		</Container>
 	);
 }
