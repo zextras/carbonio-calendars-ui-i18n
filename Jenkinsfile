@@ -65,7 +65,7 @@ def createRelease(branchName) {
         nodeCmd "npm run release -- --no-verify --prerelease beta"
         sh(script: """#!/bin/bash
             git add translations
-            git commit --no-verify -m 'Extracted translations'
+            git commit --no-verify -m 'chore(i18n): extracted translations'
             git subtree push --squash --prefix translations/ git@bitbucket.org:$TRANSLATIONS_REPOSITORY_NAME\\.git translations-updater/v${getCurrentVersion()}
         """)
         withCredentials([usernameColonPassword(credentialsId: 'tarsier-bot-pr-token', variable: 'PR_ACCESS')]) {
@@ -104,7 +104,7 @@ def createRelease(branchName) {
         echo \"---\ntitle: Change Log\n---\"> docs/docs/CHANGELOG.md
         cat CHANGELOG.md >> docs/docs/CHANGELOG.md
         git add docs/docs/CHANGELOG.md
-        git commit --no-verify -m "Updated change log into documentation"
+        git commit --no-verify -m "chore(release): updated change log into documentation"
     """)
     sh(script: """#!/bin/bash
       git push --follow-tags origin HEAD:$branchName
