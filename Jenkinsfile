@@ -281,12 +281,12 @@ pipeline {
             steps {
                 createRelease("$BRANCH_NAME")
                 archiveArtifacts(
-                    artifacts: "README.md",
+                    artifacts: "CHANGELOG.md",
                     fingerprint: true
                 )
                 stash(
-                    includes: "README.md",
-                    name: 'readme'
+                    includes: "CHANGELOG.md",
+                    name: 'changelog'
                 )
                 createBuild(true)
                 archiveArtifacts(
