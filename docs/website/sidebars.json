@@ -1,7 +1,8 @@
 {
   "docs": {
     "Main": [
-      "main"
+      "main",
+      "CHANGELOG"
     ]
   }
 }
