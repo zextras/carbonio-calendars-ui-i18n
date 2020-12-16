@@ -20,6 +20,7 @@
         "location": "Location",
         "no_subject": "No subject",
         "optional": "Optional",
+        "optional_plural": "Optionals",
         "organizer": "Organizer",
         "out_of_office": "Out of office",
         "private": "Private",
@@ -60,5 +61,9 @@
         "never": "Never",
         "week_before": "{{count}} week before",
         "week_before_plural": "{{count}} weeks before"
+    },
+    "tooltip": {
+        "enable_disable_rich_text": "Enable/Disable rich text editor",
+        "show_optionals": "Show optionals"
     }
 }
