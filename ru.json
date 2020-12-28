@@ -1,1 +1,77 @@
-{}
+{
+    "reminder": {
+        "hour_before_0": "{{count}} час до",
+        "hour_before_1": "{{count}} часа до",
+        "hour_before_2": "{{count}} часов до",
+        "at_time_of_event": "Во время мероприятия",
+        "week_before_0": "{{count}} неделю до",
+        "week_before_1": "{{count}} недель до",
+        "week_before_2": "{count}} недель до",
+        "never": "Никогда",
+        "minute_before_0": "{{count}} минут до",
+        "minute_before_1": "{{count}} минут до",
+        "minute_before_2": "{{count}} минут до",
+        "day_before_0": "{{count}} за день до",
+        "day_before_1": "{{count}} за некскаолько дней до",
+        "day_before_2": "{{count}} за некскаолько дней до"
+    },
+    "participants": {
+        "AC_with_count_0": "Принял",
+        "AC_with_count_1": "Приняли",
+        "AC_with_count_2": "Приняли",
+        "TE_with_count_0": "Отклонено",
+        "TE_with_count_1": "Отклонено",
+        "TE_with_count_2": "Отклонено",
+        "NE_with_count_0": "Под вопросом",
+        "NE_with_count_1": "Под вопросом",
+        "NE_with_count_2": "Под вопросом",
+        "DE_with_count_0": "Не ответил",
+        "DE_with_count_1": "Не ответили",
+        "DE_with_count_2": "Не ответили"
+    },
+    "message": {
+        "invite_has_no_message": "Это приглашения не содержит текста",
+        "you_will_see_the_subject_here": "Вы увидите тему встречи здесь",
+        "you_are_organizer": "Вы организатор",
+        "somebody_invited_you": "<strong> {{кто-то}} </strong> пригласил вас",
+        "meeting_canceled": "Следующая встреча отменена",
+        "have_not_sent_invitation": "Вы еще не отправили приглашение участникам"
+    },
+    "label": {
+        "subject": "Тема",
+        "organizer": "Организатор",
+        "optional_0": "Необязательный",
+        "optional_1": "Необязательные",
+        "optional_2": "Необязательные",
+        "no_subject": "Нет темы",
+        "display": "Отображать",
+        "tentative": "Под вопросом",
+        "start_date_and_time": "Дата и время начала",
+        "start_date": "Дата начала",
+        "required": "Обязательный",
+        "reminder": "Напоминание",
+        "private": "Частный",
+        "out_of_office": "Нет на работе",
+        "location": "Место",
+        "from": "От",
+        "free": "Свободен",
+        "end_date_and_time": "Дата и время окончания",
+        "end_date": "Дата окончания",
+        "cancelled": "Отменено",
+        "calendar": "Календарь",
+        "busy": "Занят",
+        "attendee_plural": "Участники",
+        "attachment_0": "Вложение",
+        "attachment_1": "Вложения",
+        "attachment_2": "Вложения",
+        "all_day": "Весь день",
+        "all_calendars": "Все календари"
+    },
+    "tooltip": {
+        "show_optionals": "Показать опции"
+    },
+    "action": {
+        "send": "Отправить",
+        "save": "Сохранить"
+    }
+}
