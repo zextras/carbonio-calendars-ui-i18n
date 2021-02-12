@@ -1,5 +1,11 @@
 {
     "action": {
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "create": "Create",
+        "empty_trash": "Empty Trash",
+        "move_to_root": "Move to root",
+        "new_calendar": "New calendar",
         "save": "Save",
         "send": "Send"
     },
@@ -12,6 +18,7 @@
         "busy": "Busy",
         "calendar": "Calendar",
         "cancelled": "Cancelled",
+        "create_new_calendar": "Create New Calendar",
         "display": "Display",
         "end_date": "End date",
         "end_date_and_time": "End date and time",
@@ -30,7 +37,8 @@
         "start_date_and_time": "Start date and time",
         "subject": "Subject",
         "tentative": "Tentative",
-        "to": "To"
+        "to": "To",
+        "type_name_here": "Type the name of the calendar here"
     },
     "message": {
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
@@ -38,6 +46,7 @@
         "meeting_canceled": "The following meeting has been cancelled",
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "you_are_organizer": "You are the organizer",
+        "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
         "you_will_see_the_subject_here": "You will see the subject of this appointment here"
     },
     "participants": {
