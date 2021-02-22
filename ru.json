@@ -65,10 +65,12 @@
         "attachment_1": "Вложения",
         "attachment_2": "Вложения",
         "all_day": "Весь день",
-        "all_calendars": "Все календари"
+        "all_calendars": "Все календари",
+        "to": "Кому"
     },
     "tooltip": {
-        "show_optionals": "Показать опции"
+        "show_optionals": "Показать опции",
+        "enable_disable_rich_text": "Включить / отключить редактор форматирования текста"
     },
     "action": {
         "send": "Отправить",
