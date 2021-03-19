@@ -1,7 +1,6 @@
 {
     "action": {
         "cancel": "Cancel",
-        "confirm": "Confirm",
         "create": "Create",
         "delete_calendar": "Delete calendar",
         "empty_trash": "Empty Trash",
@@ -10,6 +9,23 @@
         "new_calendar": "New calendar",
         "save": "Save",
         "send": "Send"
+    },
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "Delete",
+                "title": "Delete"
+            },
+            "footer": {
+                "cancel": "Cancel"
+            },
+            "move": {
+                "footer": "Empty"
+            },
+            "new": {
+                "duplicate_warning": "Calendar with the same name already exists"
+            }
+        }
     },
     "label": {
         "all_calendars": "All calendars",
@@ -37,6 +53,7 @@
         "private": "Private",
         "reminder": "Reminder",
         "required": "Required",
+        "restore_calednar": "Restore calendar",
         "start_date": "Start date",
         "start_date_and_time": "Start date and time",
         "subject": "Subject",
