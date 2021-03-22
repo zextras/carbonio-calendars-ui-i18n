@@ -71,6 +71,7 @@
         "you": "You",
         "you_are_organizer": "You are the organizer",
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
+        "you_sure_move_calendar_trash": "Are you sure you want to  delete the \"{{name}}\" calendar?",
         "you_will_see_the_subject_here": "You will see the subject of this appointment here"
     },
     "participants": {
