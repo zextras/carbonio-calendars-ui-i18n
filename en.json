@@ -1,7 +1,31 @@
 {
     "action": {
+        "cancel": "Cancel",
+        "create": "Create",
+        "delete_calendar": "Delete calendar",
+        "empty_trash": "Empty Trash",
+        "modify_property": "Modify property",
+        "move_to_root": "Move to root",
+        "new_calendar": "New calendar",
         "save": "Save",
         "send": "Send"
+    },
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "Delete",
+                "title": "Delete"
+            },
+            "footer": {
+                "cancel": "Cancel"
+            },
+            "move": {
+                "footer": "Empty"
+            },
+            "new": {
+                "duplicate_warning": "Calendar with the same name already exists"
+            }
+        }
     },
     "label": {
         "all_calendars": "All calendars",
@@ -11,8 +35,11 @@
         "attendee_plural": "Attendees",
         "busy": "Busy",
         "calendar": "Calendar",
+        "calendar_color": "Calendar Color",
         "cancelled": "Cancelled",
+        "create_new_calendar": "Create a New Calendar",
         "display": "Display",
+        "edit_properties": "Edit properties",
         "end_date": "End date",
         "end_date_and_time": "End date and time",
         "free": "Free",
@@ -26,11 +53,13 @@
         "private": "Private",
         "reminder": "Reminder",
         "required": "Required",
+        "restore_calednar": "Restore calendar",
         "start_date": "Start date",
         "start_date_and_time": "Start date and time",
         "subject": "Subject",
         "tentative": "Tentative",
-        "to": "To"
+        "to": "To",
+        "type_name_here": "Calendar name"
     },
     "message": {
         "are_organizer": "are the organizer",
@@ -41,6 +70,8 @@
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
         "you": "You",
         "you_are_organizer": "You are the organizer",
+        "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
+        "you_sure_move_calendar_trash": "Are you sure you want to  delete the \"{{name}}\" calendar?",
         "you_will_see_the_subject_here": "You will see the subject of this appointment here"
     },
     "participants": {
