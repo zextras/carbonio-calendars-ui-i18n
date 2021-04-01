@@ -27,7 +27,22 @@
         "NE_with_count_2": "Под вопросом",
         "DE_with_count_0": "Не ответил",
         "DE_with_count_1": "Не ответили",
-        "DE_with_count_2": "Не ответили"
+        "DE_with_count_2": "Не ответили",
+        "visitors": "и другие {{others}} участники",
+        "Tentative": "принято как предварительное",
+        "Not_answered": "не ответил",
+        "Invited_Visitor": "были приглашены",
+        "Declined": "отклонил",
+        "Attendees_not_answered_count_0": "<strong> 1 участник </strong> не ответил",
+        "Attendees_not_answered_count_1": "<strong>  участника </strong> не ответили",
+        "Attendees_not_answered_count_2": "<strong> участников </strong> не ответили",
+        "Attendees_declined_count_0": "<strong> 1 участник </strong> отклонил",
+        "Attendees_declined_count_1": "<strong> участника </strong> отклонили",
+        "Attendees_declined_count_2": "<strong> участников </strong> отклонили",
+        "Attendees_accepted_count_0": "<strong> 1 участник </strong> принял",
+        "Attendees_accepted_count_1": "<strong> участника </strong> приняли",
+        "Attendees_accepted_count_2": "<strong> участников </strong> приняли",
+        "Accepted": "Принято"
     },
     "message": {
         "invite_has_no_message": "Это приглашения не содержит текста",
@@ -35,7 +50,12 @@
         "you_are_organizer": "Вы организатор",
         "somebody_invited_you": "<strong> {{кто-то}} </strong> пригласил вас",
         "meeting_canceled": "Следующая встреча отменена",
-        "have_not_sent_invitation": "Вы еще не отправили приглашение участникам"
+        "have_not_sent_invitation": "Вы еще не отправили приглашение участникам",
+        "you_sure_move_calendar_trash": "Вы действительно хотите удалить календарь \"{{name}}\"?",
+        "you_sure_delete_calendar": "Вы действительно хотите навсегда удалить календарь \"{{name}}\"?",
+        "you": "Вы",
+        "somebody_is_organizer": "<strong> {{кто-то}} </strong> - организатор",
+        "are_organizer": "Организатор"
     },
     "label": {
         "subject": "Тема",
@@ -66,15 +86,44 @@
         "attachment_2": "Вложения",
         "all_day": "Весь день",
         "all_calendars": "Все календари",
-        "to": "Кому"
+        "to": "Кому",
+        "type_name_here": "Название календаря",
+        "restore_calednar": "Восстановить календарь",
+        "invitation_not_sent": "Вы еще не отправили приглашение участникам",
+        "edit_properties": "Редактировать свойства",
+        "create_new_calendar": "Создать Новый Календарь",
+        "calendar_color": "Цвет календаря"
     },
     "tooltip": {
         "show_optionals": "Показать опции",
-        "enable_disable_rich_text": "Включить / отключить редактор форматирования текста"
+        "enable_disable_rich_text": "Включение / отключение редактора форматированного текста"
     },
     "action": {
         "send": "Отправить",
         "save": "Сохранить",
-        "cancel": "Отменить"
+        "cancel": "Отменить",
+        "move_to_root": "Переместить в root",
+        "empty_trash": "Очистить корзину",
+        "modify_property": "Изменить свойство",
+        "new_calendar": "Новый календарь",
+        "delete_calendar": "Удалить календарь",
+        "create": "Создать"
+    },
+    "folder": {
+        "modal": {
+            "move": {
+                "footer": "Пустой"
+            },
+            "new": {
+                "duplicate_warning": "Календарь с таким названием уже существует"
+            },
+            "footer": {
+                "cancel": "Отменить"
+            },
+            "delete": {
+                "title": "Удалить",
+                "footer": "Удалить"
+            }
+        }
     }
 }
