@@ -85,15 +85,6 @@
         "timezone_pref_msg": "The timings follow your timezone preferences.",
         "to": "To",
         "type_name_here": "Calendar name",
-        "weekdays": {
-            "friday": "Friday",
-            "monday": "Monday",
-            "saturday": "Saturday",
-            "sunday": "Sunday",
-            "thursday": "Thursday",
-            "tuesday": "Tuesday",
-            "wednesday": "Wednesday"
-        },
         "work_hour": "Work hour",
         "work_week": "Work week",
         "your_pref_timezone_msg": "Your preferred timezone is: GMT +01:00 Amsterdam, Berlin, Bern, Rome, Stockholm,Vienna."
@@ -101,7 +92,6 @@
     "message": {
         "are_organizer": "are the organizer",
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
-        "invalid_email": "",
         "invite_has_no_message": "This invite has no text message",
         "meeting_canceled": "The following meeting has been cancelled",
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
