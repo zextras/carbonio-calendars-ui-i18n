@@ -2,11 +2,13 @@
     "action": {
         "cancel": "Cancel",
         "create": "Create",
+        "delete": "",
         "delete_calendar": "Delete calendar",
         "empty_trash": "Empty Trash",
         "modify_property": "Modify property",
         "move_to_root": "Move to root",
         "new_calendar": "New calendar",
+        "preview": "",
         "save": "Save",
         "send": "Send"
     },
