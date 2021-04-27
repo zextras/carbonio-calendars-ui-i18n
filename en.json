@@ -2,13 +2,14 @@
     "action": {
         "cancel": "Cancel",
         "create": "Create",
-        "delete": "",
+        "delete": "Delete",
         "delete_calendar": "Delete calendar",
+        "download": "Download",
         "empty_trash": "Empty Trash",
         "modify_property": "Modify property",
         "move_to_root": "Move to root",
         "new_calendar": "New calendar",
-        "preview": "",
+        "preview": "Click to preview in another tab",
         "save": "Save",
         "send": "Send"
     },
@@ -21,6 +22,13 @@
                 "footer": "Edit",
                 "title": "Customize working hours"
             }
+        }
+    },
+    "composer": {
+        "attachment": {
+            "contactsMod": "add contact card",
+            "drive": "Add from drive",
+            "local": "Add from local"
         }
     },
     "folder": {
@@ -45,7 +53,7 @@
         "all_day": "All day",
         "apple_ical": "Apple iCal",
         "attachment": "Attachment",
-        "attachment_plural": "Attachments",
+        "attachment_plural": "{{count}} Attachments",
         "attendee_plural": "Attendees",
         "auto_add_rcvd_app": "Automatically add received appointments to calendar",
         "busy": "Busy",
@@ -59,6 +67,8 @@
         "default_appt_vsblty": "Default appointment visibility",
         "default_view": "Default view",
         "display": "Display",
+        "download": "Download",
+        "download_plural": "Download all",
         "edit_properties": "Edit properties",
         "enable_dlgtn_for_ical": "Enable deligation for Apple iCal CalDAV Client",
         "end_date": "End date",
@@ -75,10 +85,14 @@
         "private": "Private",
         "regular": "Regular",
         "reminder": "Reminder",
+        "remove": "Delete",
+        "remove_plural": "Delete all",
         "required": "Required",
         "restore_calednar": "Restore calendar",
         "save": "Save",
+        "show": "Show",
         "show_declined_meetings": "Show declined meetings",
+        "show_plural": "Show all",
         "start_date": "Start date",
         "start_date_and_time": "Start date and time",
         "start_week_of": "Start week of",
@@ -145,6 +159,7 @@
         "invalid_email": "Not a valid email"
     },
     "tooltip": {
+        "add_attachments": "Add attachments",
         "enable_disable_rich_text": "Enable/Disable rich text editor",
         "show_optionals": "Show optionals"
     }
