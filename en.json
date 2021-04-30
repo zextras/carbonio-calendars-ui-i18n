@@ -21,6 +21,25 @@
             }
         }
     },
+    "event": {
+        "action": {
+            "accept": "Accept",
+            "create_copy": "Create a copy",
+            "decline": "Decline",
+            "edit": "Edit",
+            "edit_tag": "Edit tags",
+            "expand": "Open in Displayer",
+            "forward": "Forward",
+            "move": "Move",
+            "new_time": "Propse new time",
+            "print": "Print",
+            "reinvite_att": "Re-invite attendees",
+            "reply_all": "Reply all",
+            "show_orignal": "Show orignal",
+            "tentative": "Tentative",
+            "trash": "Delete"
+        }
+    },
     "folder": {
         "modal": {
             "delete": {
@@ -52,19 +71,23 @@
         "calendar_setting": "Calendar's Settings",
         "cancel": "Cancel",
         "cancelled": "Cancelled",
+        "create_appt_settings": "",
         "create_new_calendar": "Create a New Calendar",
         "custom": "Custom",
         "default_appt_vsblty": "Default appointment visibility",
         "default_view": "Default view",
         "display": "Display",
         "edit_properties": "Edit properties",
+        "email_input_message": "Enter email address",
         "enable_dlgtn_for_ical": "Enable deligation for Apple iCal CalDAV Client",
         "end_date": "End date",
         "end_date_and_time": "End date and time",
         "free": "Free",
+        "free_busy": "Free/Busy",
         "from": "From",
         "general": "General",
         "invitation_not_sent": "You haven't sent the invitation to the attendees yet",
+        "invites": "Invites",
         "location": "Location",
         "no_subject": "No subject",
         "optional": "Optional",
@@ -82,6 +105,7 @@
         "start_week_of": "Start week of",
         "subject": "Subject",
         "tentative": "Tentative",
+        "time_zones": "Time Zones",
         "timezone_pref_msg": "The timings follow your timezone preferences.",
         "to": "To",
         "type_name_here": "Calendar name",
@@ -140,7 +164,11 @@
     },
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
-        "invalid_email": "Not a valid email"
+        "invalid_email": "Not a valid email",
+        "label": {
+            "snd_autorply_users": "Send auto-reply to users who are denied from inviting me"
+        },
+        "permissions_note": "Users provided below must be on this mail system(zextras.com).You may use the full email address,or just the username."
     },
     "tooltip": {
         "enable_disable_rich_text": "Enable/Disable rich text editor",
