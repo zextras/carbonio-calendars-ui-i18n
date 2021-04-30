@@ -25,6 +25,13 @@
             }
         }
     },
+    "composer": {
+        "attachment": {
+            "contactsMod": "add contact card",
+            "drive": "Add from drive",
+            "local": "Add from local"
+        }
+    },
     "event": {
         "action": {
             "accept": "Accept",
@@ -42,13 +49,6 @@
             "show_orignal": "Show orignal",
             "tentative": "Tentative",
             "trash": "Delete"
-           }
-        },
-    "composer": {
-        "attachment": {
-            "contactsMod": "add contact card",
-            "drive": "Add from drive",
-            "local": "Add from local"
         }
     },
     "folder": {
@@ -91,16 +91,13 @@
         "download": "Download",
         "download_plural": "Download all",
         "edit_properties": "Edit properties",
-        "email_input_message": "Enter email address",
         "enable_dlgtn_for_ical": "Enable deligation for Apple iCal CalDAV Client",
         "end_date": "End date",
         "end_date_and_time": "End date and time",
         "free": "Free",
-        "free_busy": "Free/Busy",
         "from": "From",
         "general": "General",
         "invitation_not_sent": "You haven't sent the invitation to the attendees yet",
-        "invites": "Invites",
         "location": "Location",
         "no_subject": "No subject",
         "optional": "Optional",
@@ -181,11 +178,7 @@
     },
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
-        "invalid_email": "Not a valid email",
-        "label": {
-            "snd_autorply_users": "Send auto-reply to users who are denied from inviting me"
-        },
-        "permissions_note": "Users provided below must be on this mail system(zextras.com).You may use the full email address,or just the username."
+        "invalid_email": "Not a valid email"
     },
     "tooltip": {
         "add_attachments": "Add attachments",
