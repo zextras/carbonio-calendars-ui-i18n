@@ -195,7 +195,62 @@
     },
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
-        "invalid_email": "Not a valid email"
+        "invalid_email": "Not a valid email",
+        "options": {
+            "default_cal_opts": {
+                "calendar": "Calendar"
+            },
+            "default_view": {
+                "day": "Day View",
+                "list": "List View",
+                "month": "Month View",
+                "week": "Week View",
+                "work_week": "Work Week View"
+            },
+            "dflt_vsblty_opt": {
+                "private": "Private",
+                "public": "Public"
+            },
+            "free_busy_opts": {
+                "allow_all": "Allow both internal and external users to see my free/busy information",
+                "allow_domain": "Allow only users of my domain to see my free/busy information",
+                "allow_following": "Allow only the following internal users to see my free/busy information",
+                "allow_internal": "Allow only users of internal domains to see my free/busy information",
+                "allow_none": "Don't let anyone see my free/busy information"
+            },
+            "invt_opts": {
+                "allow_all": "Allow both internal and extrernal users to invite me to meetings",
+                "allow_following": "Allow only the following internal users to invite me to meetings",
+                "allow_internal": "Allow only internal users to invite me to meetings",
+                "allow_none": "Don't let anyone to invite me to meetings"
+            },
+            "show_reminder": {
+                "all_time": "All time of the event",
+                "day_before": "1 day before",
+                "day_before_plural": "{{count}} days before",
+                "hour_before": "1 hour before",
+                "hour_before_plural": "{{count}} hours before",
+                "minute_before": "1 minute before",
+                "minute_before_plural": "{{count}} minutes before",
+                "never": "Never",
+                "week_before": "1 week before",
+                "week_before_plural": "{{count}} weeks before"
+            },
+            "timezones": {
+                "amsterdam": "GMT +01:00 Amsterdam,Berlin,Bern,Rome,Stockholm,Vienna",
+                "chennai": "GMT +05:30 Chennai,Kolkata,Mumbai,New Delhi",
+                "egypt": "GMT +02:00 Egypt"
+            },
+            "weekdays": {
+                "friday": "Friday",
+                "monday": "Monday",
+                "saturday": "Saturday",
+                "sunday": "Sunday",
+                "thursday": "Thursday",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday"
+            }
+        }
     },
     "tooltip": {
         "add_attachments": "Add attachments",
