@@ -197,6 +197,21 @@
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
         "invalid_email": "Not a valid email",
+        "label": {
+            "default_appt_dur": "Default appointment duration",
+            "default_calendar": "Default calendar",
+            "delete_invt_on_rply": "Delete invite on reply",
+            "enable_reminder_sound": "Play a sound (requires QuickTime or Windows Media plugin)",
+            "enter_email": "Enter email address",
+            "flash_browser_title": "Flash the browser title",
+            "forward_invites": "Forward Invites",
+            "invitation_response": "Invitation Response",
+            "show_popup_notification": "Show a popup notification",
+            "show_reminders": "Show Reminders",
+            "show_rmndr_past_due_meetings": "Show reminders for past-due meetings",
+            "show_timezones": "Show time zone while creating new appointment",
+            "span_time": "Span time"
+        },
         "options": {
             "default_cal_opts": {
                 "calendar": "Calendar"
