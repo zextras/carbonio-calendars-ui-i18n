@@ -32,17 +32,53 @@
             "local": "Add from local"
         }
     },
+    "event": {
+        "action": {
+            "accept": "Accept",
+            "create_copy": "Create a copy",
+            "decline": "Decline",
+            "edit": "Edit",
+            "edit_tag": "Edit tags",
+            "expand": "Open in Displayer",
+            "forward": "Forward",
+            "move": "Move",
+            "new_time": "Propse new time",
+            "print": "Print",
+            "reinvite_att": "Re-invite attendees",
+            "reply_all": "Reply all",
+            "restore": "Restore",
+            "show_orignal": "Show orignal",
+            "tentative": "Tentative",
+            "trash": "Delete"
+        }
+    },
     "folder": {
         "modal": {
             "delete": {
                 "footer": "Delete",
                 "title": "Delete"
             },
+            "footer": {
+                "go_back": "Go back"
+            },
+            "item": {
+                "empty": ""
+            },
             "move": {
-                "footer": "Empty"
+                "body": {
+                    "message3": "Select a calendar to move the considered appointment to:"
+                },
+                "footer": "Empty",
+                "input": {
+                    "filter": "Filter Calendars"
+                },
+                "new": "New Calendar",
+                "title": "Move"
             },
             "new": {
-                "duplicate_warning": "Calendar with the same name already exists"
+                "duplicate_warning": "Calendar with the same name already exists",
+                "footer": "CREATE",
+                "title2": "New calendar creation"
             }
         }
     },
@@ -70,6 +106,7 @@
         "calendar_setting": "Calendar's Settings",
         "cancel": "Cancel",
         "cancelled": "Cancelled",
+        "create_appt_settings": "Creating Appointments",
         "create_new_calendar": "Create a New Calendar",
         "custom": "Custom",
         "custom_repeat": "Custom Repeat",
@@ -125,6 +162,7 @@
         "subject": "Subject",
         "tentative": "Tentative",
         "the": "The",
+        "time_zones": "Time Zones",
         "timezone_pref_msg": "The timings follow your timezone preferences.",
         "to": "To",
         "type_name_here": "Calendar name",
@@ -147,6 +185,10 @@
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
         "meeting_canceled": "The following meeting has been cancelled",
+        "snackbar": {
+            "appt_moved": "Appointment moved successfully.",
+            "appt_moved_error": "Something went wrong,appointment not moved, please retry."
+        },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
         "you": "You",
@@ -219,7 +261,77 @@
     },
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
-        "invalid_email": "Not a valid email"
+        "invalid_email": "Not a valid email",
+        "label": {
+            "default_appt_dur": "Default appointment duration",
+            "default_calendar": "Default calendar",
+            "delete_invt_on_rply": "Delete invite on reply",
+            "enable_reminder_sound": "Play a sound (requires QuickTime or Windows Media plugin)",
+            "enter_email": "Enter email address",
+            "flash_browser_title": "Flash the browser title",
+            "forward_invites": "Forward Invites",
+            "invitation_response": "Invitation Response",
+            "show_popup_notification": "Show a popup notification",
+            "show_reminders": "Show Reminders",
+            "show_rmndr_past_due_meetings": "Show reminders for past-due meetings",
+            "show_timezones": "Show time zone while creating new appointment",
+            "span_time": "Span time"
+        },
+        "options": {
+            "default_cal_opts": {
+                "calendar": "Calendar"
+            },
+            "default_view": {
+                "day": "Day View",
+                "list": "List View",
+                "month": "Month View",
+                "week": "Week View",
+                "work_week": "Work Week View"
+            },
+            "dflt_vsblty_opt": {
+                "private": "Private",
+                "public": "Public"
+            },
+            "free_busy_opts": {
+                "allow_all": "Allow both internal and external users to see my free/busy information",
+                "allow_domain": "Allow only users of my domain to see my free/busy information",
+                "allow_following": "Allow only the following internal users to see my free/busy information",
+                "allow_internal": "Allow only users of internal domains to see my free/busy information",
+                "allow_none": "Don't let anyone see my free/busy information"
+            },
+            "invt_opts": {
+                "allow_all": "Allow both internal and extrernal users to invite me to meetings",
+                "allow_following": "Allow only the following internal users to invite me to meetings",
+                "allow_internal": "Allow only internal users to invite me to meetings",
+                "allow_none": "Don't let anyone to invite me to meetings"
+            },
+            "show_reminder": {
+                "all_time": "All time of the event",
+                "day_before": "1 day before",
+                "day_before_plural": "{{count}} days before",
+                "hour_before": "1 hour before",
+                "hour_before_plural": "{{count}} hours before",
+                "minute_before": "1 minute before",
+                "minute_before_plural": "{{count}} minutes before",
+                "never": "Never",
+                "week_before": "1 week before",
+                "week_before_plural": "{{count}} weeks before"
+            },
+            "timezones": {
+                "amsterdam": "GMT +01:00 Amsterdam,Berlin,Bern,Rome,Stockholm,Vienna",
+                "chennai": "GMT +05:30 Chennai,Kolkata,Mumbai,New Delhi",
+                "egypt": "GMT +02:00 Egypt"
+            },
+            "weekdays": {
+                "friday": "Friday",
+                "monday": "Monday",
+                "saturday": "Saturday",
+                "sunday": "Sunday",
+                "thursday": "Thursday",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday"
+            }
+        }
     },
     "tooltip": {
         "add_attachments": "Add attachments",
