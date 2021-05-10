@@ -32,17 +32,11 @@
             "local": "Add from local"
         }
     },
-    "error": {
-        "generic_integer": "Input field must contains number between 1 and 99"
-    },
     "folder": {
         "modal": {
             "delete": {
                 "footer": "Delete",
                 "title": "Delete"
-            },
-            "footer": {
-                "cancel": "Cancel"
             },
             "move": {
                 "footer": "Empty"
@@ -51,6 +45,16 @@
                 "duplicate_warning": "Calendar with the same name already exists"
             }
         }
+    },
+    "items": {
+        "day": "Day",
+        "first": "First",
+        "fourth": "Fourth",
+        "last": "Last",
+        "second": "Second",
+        "third": "Third",
+        "weekend_day": "Weekend day",
+        "working_day": "Working day"
     },
     "label": {
         "all_calendars": "All calendars",
@@ -69,6 +73,7 @@
         "create_new_calendar": "Create a New Calendar",
         "custom": "Custom",
         "custom_repeat": "Custom Repeat",
+        "day": "Day",
         "days": "Days",
         "default_appt_vsblty": "Default appointment visibility",
         "default_view": "Default view",
@@ -84,14 +89,21 @@
         "every": "Every",
         "every_day": "Every day",
         "every_weekday": "Every weekday",
+        "every_year_on": "Every year on",
         "free": "Free",
         "from": "From",
         "general": "General",
         "invitation_not_sent": "You haven't sent the invitation to the attendees yet",
         "location": "Location",
+        "month": "Month",
+        "months": "Months",
         "no_end_date": "No end date",
         "no_subject": "No subject",
+        "number": "Number",
         "occurrences": "Occurence(s)",
+        "of": "of",
+        "of_every": "of every",
+        "of_the_month,_every": "of the month, every",
         "optional": "Optional",
         "optional_plural": "Optionals",
         "out_of_office": "Out of office",
@@ -112,10 +124,20 @@
         "start_week_of": "Start week of",
         "subject": "Subject",
         "tentative": "Tentative",
+        "the": "The",
         "timezone_pref_msg": "The timings follow your timezone preferences.",
         "to": "To",
         "type_name_here": "Calendar name",
-        "week_on": "Weeks on",
+        "week": {
+            "friday": "Friday",
+            "monday": "Monday",
+            "saturday": "Saturday",
+            "sunday": "Sunday",
+            "thursday": "Thursday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday"
+        },
+        "weeks_on": "Weeks on",
         "work_hour": "Work hour",
         "work_week": "Work week",
         "your_pref_timezone_msg": "Your preferred timezone is: GMT +01:00 Amsterdam, Berlin, Bern, Rome, Stockholm,Vienna."
@@ -132,6 +154,20 @@
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
         "you_sure_move_calendar_trash": "Are you sure you want to  delete the \"{{name}}\" calendar?",
         "you_will_see_the_subject_here": "You will see the subject of this appointment here"
+    },
+    "months": {
+        "april": "April",
+        "august": "August",
+        "december": "December",
+        "february": "February",
+        "january": "January",
+        "july": "July",
+        "june": "June",
+        "march": "March",
+        "may": "May",
+        "november": "November",
+        "october": "October",
+        "september": "September"
     },
     "participants": {
         "AC_with_count": "Accepted",
