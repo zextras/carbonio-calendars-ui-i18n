@@ -35,19 +35,11 @@
     "event": {
         "action": {
             "accept": "Accept",
-            "create_copy": "Create a copy",
             "decline": "Decline",
             "edit": "Edit",
-            "edit_tag": "Edit tags",
             "expand": "Open in Displayer",
-            "forward": "Forward",
             "move": "Move",
-            "new_time": "Propse new time",
-            "print": "Print",
-            "reinvite_att": "Re-invite attendees",
-            "reply_all": "Reply all",
             "restore": "Restore",
-            "show_orignal": "Show orignal",
             "tentative": "Tentative",
             "trash": "Delete"
         }
