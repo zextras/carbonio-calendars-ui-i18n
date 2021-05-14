@@ -35,19 +35,11 @@
     "event": {
         "action": {
             "accept": "Accept",
-            "create_copy": "Create a copy",
             "decline": "Decline",
             "edit": "Edit",
-            "edit_tag": "Edit tags",
             "expand": "Open in Displayer",
-            "forward": "Forward",
             "move": "Move",
-            "new_time": "Propse new time",
-            "print": "Print",
-            "reinvite_att": "Re-invite attendees",
-            "reply_all": "Reply all",
             "restore": "Restore",
-            "show_orignal": "Show orignal",
             "tentative": "Tentative",
             "trash": "Delete"
         }
@@ -76,8 +68,10 @@
                 "title": "Move"
             },
             "new": {
+                "create_move": "CREATE AND MOVE",
                 "duplicate_warning": "Calendar with the same name already exists",
                 "footer": "CREATE",
+                "ok": "OK",
                 "title2": "New calendar creation"
             }
         }
@@ -86,6 +80,8 @@
         "all_calendars": "All calendars",
         "all_day": "All day",
         "apple_ical": "Apple iCal",
+        "appt_reminder": "Appointment Reminder",
+        "appt_reminder_plural": "Appointment Reminders",
         "attachment": "Attachment",
         "attachment_plural": "{{count}} Attachments",
         "attendee_plural": "Attendees",
@@ -101,6 +97,8 @@
         "custom": "Custom",
         "default_appt_vsblty": "Default appointment visibility",
         "default_view": "Default view",
+        "dismiss": "DISMISS",
+        "dismiss_plural": "DISMISS ALL",
         "display": "Display",
         "download": "Download",
         "download_plural": "Download all",
@@ -125,9 +123,11 @@
         "required": "Required",
         "restore_calednar": "Restore calendar",
         "save": "Save",
+        "set_new_time": "Set new time",
         "show": "Show",
         "show_declined_meetings": "Show declined meetings",
         "show_plural": "Show all",
+        "snooze": "Snooze",
         "start_date": "Start date",
         "start_date_and_time": "Start date and time",
         "start_week_of": "Start week of",
@@ -190,6 +190,10 @@
         "hour_before_plural": "{{count}} hours before",
         "minute_before": "{{count}} minute before",
         "minute_before_plural": "{{count}} minutes before",
+        "modal": {
+            "set_new_time": "Set new time",
+            "set_new_time_message": "Do you want to set a new time for the missed appointment? If you click OK, all the other reminders will be automatically dismissed."
+        },
         "never": "Never",
         "week_before": "{{count}} week before",
         "week_before_plural": "{{count}} weeks before"
