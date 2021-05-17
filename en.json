@@ -240,7 +240,8 @@
         "week_before_plural": "{{count}} weeks before"
     },
     "repeat": {
-        "custom": "Customize",
+        "custom": "Custom",
+        "customize": "Customize",
         "daily": "Daily",
         "everyDay": "Every Day",
         "everyMonth": "Every Month",
