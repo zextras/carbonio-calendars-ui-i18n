@@ -32,6 +32,26 @@
             "local": "Add from local"
         }
     },
+    "event": {
+        "action": {
+            "accept": "Accept",
+            "create_copy": "Create a copy",
+            "decline": "Decline",
+            "edit": "Edit",
+            "edit_tag": "Edit tags",
+            "expand": "Open in Displayer",
+            "forward": "Forward",
+            "move": "Move",
+            "new_time": "Propse new time",
+            "print": "Print",
+            "reinvite_att": "Re-invite attendees",
+            "reply_all": "Reply all",
+            "restore": "Restore",
+            "show_orignal": "Show orignal",
+            "tentative": "Tentative",
+            "trash": "Delete"
+        }
+    },
     "folder": {
         "modal": {
             "delete": {
@@ -39,13 +59,26 @@
                 "title": "Delete"
             },
             "footer": {
-                "cancel": "Cancel"
+                "go_back": "Go back"
+            },
+            "item": {
+                "empty": ""
             },
             "move": {
-                "footer": "Empty"
+                "body": {
+                    "message3": "Select a calendar to move the considered appointment to:"
+                },
+                "footer": "Empty",
+                "input": {
+                    "filter": "Filter Calendars"
+                },
+                "new": "New Calendar",
+                "title": "Move"
             },
             "new": {
-                "duplicate_warning": "A calendar with the same name already exists"
+                "duplicate_warning": "A calendar with the same name already exists",
+                "footer": "CREATE",
+                "title2": "New calendar creation"
             }
         }
     },
@@ -63,6 +96,7 @@
         "calendar_setting": "Calendar's Settings",
         "cancel": "Cancel",
         "cancelled": "Canceled",
+        "create_appt_settings": "Creating Appointments",
         "create_new_calendar": "Create a New Calendar",
         "custom": "Custom",
         "default_appt_vsblty": "Default appointment visibility",
@@ -99,6 +133,7 @@
         "start_week_of": "Start week of",
         "subject": "Subject",
         "tentative": "Tentative",
+        "time_zones": "Time Zones",
         "timezone_pref_msg": "The timings follow your timezone preferences.",
         "to": "To",
         "type_name_here": "Calendar name",
@@ -111,6 +146,10 @@
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
         "meeting_canceled": "The following meeting has been cancelled",
+        "snackbar": {
+            "appt_moved": "Appointment moved successfully.",
+            "appt_moved_error": "Something went wrong,appointment not moved, please retry."
+        },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
         "you": "You",
