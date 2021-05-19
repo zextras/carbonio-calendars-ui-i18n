@@ -76,7 +76,7 @@
                 "title": "Move"
             },
             "new": {
-                "duplicate_warning": "Calendar with the same name already exists",
+                "duplicate_warning": "A calendar with the same name already exists",
                 "footer": "CREATE",
                 "title2": "New calendar creation"
             }
@@ -92,10 +92,10 @@
         "auto_add_rcvd_app": "Automatically add received appointments to calendar",
         "busy": "Busy",
         "calendar": "Calendar",
-        "calendar_color": "Calendar Color",
+        "calendar_color": "Calendar color",
         "calendar_setting": "Calendar's Settings",
         "cancel": "Cancel",
-        "cancelled": "Cancelled",
+        "cancelled": "Canceled",
         "create_appt_settings": "Creating Appointments",
         "create_new_calendar": "Create a New Calendar",
         "custom": "Custom",
@@ -155,14 +155,14 @@
         "you": "You",
         "you_are_organizer": "You are the organizer",
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
-        "you_sure_move_calendar_trash": "Are you sure you want to  delete the \"{{name}}\" calendar?",
+        "you_sure_move_calendar_trash": "Are you sure you want to delete the \"{{name}}\" calendar?",
         "you_will_see_the_subject_here": "You will see the subject of this appointment here"
     },
     "participants": {
         "AC_with_count": "Accepted",
         "AC_with_count_plural": "Accepted ({{count}})",
         "Accepted": "accepted",
-        "Attendees_accepted_count": "<strong>1 attendee </strong> have accepted",
+        "Attendees_accepted_count": "<strong>1 attendee </strong> has accepted",
         "Attendees_accepted_count_plural": "<strong>{{count}} attendees </strong> have accepted",
         "Attendees_declined_count": "<strong>1 attendee </strong> has declined",
         "Attendees_declined_count_plural": "<strong>{{count}} attendees </strong> have declined",
@@ -183,7 +183,7 @@
         "visitors": "and other {{others}} attendees"
     },
     "reminder": {
-        "at_time_of_event": "At time of the event",
+        "at_time_of_event": "At the time of the event",
         "day_before": "{{count}} day before",
         "day_before_plural": "{{count}} days before",
         "hour_before": "{{count}} hour before",
