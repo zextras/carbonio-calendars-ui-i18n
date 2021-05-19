@@ -10,6 +10,17 @@
         "save": "Save",
         "send": "Send"
     },
+    "button": {
+        "customize_modal": "Open Customize Modal"
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "Edit",
+                "title": "Customize working hours"
+            }
+        }
+    },
     "folder": {
         "modal": {
             "delete": {
@@ -30,20 +41,29 @@
     "label": {
         "all_calendars": "All calendars",
         "all_day": "All day",
+        "apple_ical": "Apple iCal",
         "attachment": "Attachment",
         "attachment_plural": "Attachments",
         "attendee_plural": "Attendees",
+        "auto_add_rcvd_app": "Automatically add received appointments to calendar",
         "busy": "Busy",
         "calendar": "Calendar",
         "calendar_color": "Calendar color",
+        "calendar_setting": "Calendar's Settings",
+        "cancel": "Cancel",
         "cancelled": "Canceled",
         "create_new_calendar": "Create a New Calendar",
+        "custom": "Custom",
+        "default_appt_vsblty": "Default appointment visibility",
+        "default_view": "Default view",
         "display": "Display",
         "edit_properties": "Edit properties",
+        "enable_dlgtn_for_ical": "Enable deligation for Apple iCal CalDAV Client",
         "end_date": "End date",
         "end_date_and_time": "End date and time",
         "free": "Free",
         "from": "From",
+        "general": "General",
         "invitation_not_sent": "You haven't sent the invitation to the attendees yet",
         "location": "Location",
         "no_subject": "No subject",
@@ -51,15 +71,23 @@
         "optional_plural": "Optionals",
         "out_of_office": "Out of office",
         "private": "Private",
+        "regular": "Regular",
         "reminder": "Reminder",
         "required": "Required",
         "restore_calednar": "Restore calendar",
+        "save": "Save",
+        "show_declined_meetings": "Show declined meetings",
         "start_date": "Start date",
         "start_date_and_time": "Start date and time",
+        "start_week_of": "Start week of",
         "subject": "Subject",
         "tentative": "Tentative",
+        "timezone_pref_msg": "The timings follow your timezone preferences.",
         "to": "To",
-        "type_name_here": "Calendar name"
+        "type_name_here": "Calendar name",
+        "work_hour": "Work hour",
+        "work_week": "Work week",
+        "your_pref_timezone_msg": "Your preferred timezone is: GMT +01:00 Amsterdam, Berlin, Bern, Rome, Stockholm,Vienna."
     },
     "message": {
         "are_organizer": "are the organizer",
@@ -109,6 +137,10 @@
         "never": "Never",
         "week_before": "{{count}} week before",
         "week_before_plural": "{{count}} weeks before"
+    },
+    "settings": {
+        "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
+        "invalid_email": "Not a valid email"
     },
     "tooltip": {
         "enable_disable_rich_text": "Enable/Disable rich text editor",
