@@ -5,14 +5,17 @@
         "delete": "Delete",
         "delete_calendar": "Delete calendar",
         "download": "Download",
+        "edit_message": "Edit Message",
         "empty_trash": "Empty Trash",
         "modify_property": "Modify property",
         "move_to_root": "Move to root",
         "new_calendar": "New calendar",
+        "ok": "OK",
         "preview": "Click to preview in another tab",
         "save": "Save",
         "save_to_preview": "Save to preview",
-        "send": "Send"
+        "send": "Send",
+        "send_cancellation": "Send Cancellation"
     },
     "button": {
         "customize_modal": "Open Customize Modal"
@@ -70,6 +73,7 @@
             "new": {
                 "duplicate_warning": "Calendar with the same name already exists",
                 "footer": "CREATE",
+                "ok": "",
                 "title2": "New calendar creation"
             }
         }
@@ -128,6 +132,7 @@
         "months": "Months",
         "no_end_date": "No end date",
         "no_subject": "No subject",
+        "notify_organizer": "Notify organizer",
         "number": "Number",
         "occurrences": "Occurence(s)",
         "of": "of",
@@ -183,6 +188,8 @@
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
+        "sure_to_delete_appointment": "Are you sure,you want to delete the appointment ?",
+        "want_to_edit_cancellation_msg": "Do you want to edit the appointment cancellation message?",
         "you": "You",
         "you_are_organizer": "You are the organizer",
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
@@ -235,6 +242,10 @@
         "hour_before_plural": "{{count}} hours before",
         "minute_before": "{{count}} minute before",
         "minute_before_plural": "{{count}} minutes before",
+        "modal": {
+            "set_new_time": "",
+            "set_new_time_message": ""
+        },
         "never": "Never",
         "week_before": "{{count}} week before",
         "week_before_plural": "{{count}} weeks before"
