@@ -95,7 +95,8 @@
         "invitation_not_sent": "Вы еще не отправили приглашение участникам",
         "edit_properties": "Редактировать свойства",
         "create_new_calendar": "Создать Новый Календарь",
-        "calendar_color": "Цвет календаря"
+        "calendar_color": "Цвет календаря",
+        "cancel": "Отменить"
     },
     "tooltip": {
         "show_optionals": "Показать опции",
@@ -110,7 +111,9 @@
         "modify_property": "Изменить свойство",
         "new_calendar": "Новый календарь",
         "delete_calendar": "Удалить календарь",
-        "create": "Создать"
+        "create": "Создать",
+        "download": "Загрузка",
+        "preview": "Нажмите, чтобы просмотреть на другой вкладке"
     },
     "folder": {
         "modal": {
