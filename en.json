@@ -10,7 +10,6 @@
         "modify_property": "Modify property",
         "move_to_root": "Move to root",
         "new_calendar": "New calendar",
-        "ok": "OK",
         "preview": "Click to preview in another tab",
         "save": "Save",
         "save_to_preview": "Save to preview",
@@ -187,8 +186,6 @@
         "invite_has_no_message": "This invite has no text message",
         "meeting_canceled": "The following meeting has been cancelled",
         "snackbar": {
-            "appt_deleted": "Appointment deleted successfully.",
-            "appt_deleted_error": "Something went wrong,appointment not moved, please retry.",
             "appt_moved": "Appointment moved successfully.",
             "appt_moved_error": "Something went wrong,appointment not moved, please retry."
         },
