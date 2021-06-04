@@ -71,7 +71,8 @@
             },
             "new": {
                 "duplicate_warning": "Calendar with the same name already exists",
-                "footer": "CREATE",
+                "footer": "",
+                "ok": "OK",
                 "title2": "New calendar creation"
             }
         }
@@ -90,6 +91,8 @@
         "all_calendars": "All calendars",
         "all_day": "All day",
         "apple_ical": "Apple iCal",
+        "appt_reminder": "Appointment Reminder",
+        "appt_reminder_plural": "Appointment Reminders",
         "attachment": "Attachment",
         "attachment_plural": "{{count}} Attachments",
         "attendee_plural": "Attendees",
@@ -108,6 +111,9 @@
         "days": "Days",
         "default_appt_vsblty": "Default appointment visibility",
         "default_view": "Default view",
+        "dismiss": "DISMISS",
+        "dismiss_capitalize": "Dismiss",
+        "dismiss_plural": "DISMISS ALL",
         "display": "Display",
         "download": "Download",
         "download_plural": "Download all",
@@ -132,11 +138,13 @@
         "no_end_date": "No end date",
         "no_subject": "No subject",
         "notify_organizer": "Notify organizer",
+        "now": "Now",
         "number": "Number",
         "occurrences": "Occurence(s)",
         "of": "of",
         "of_every": "of every",
         "of_the_month,_every": "of the month, every",
+        "ongoing": "Ongoing",
         "optional": "Optional",
         "optional_plural": "Optionals",
         "out_of_office": "Out of office",
@@ -150,9 +158,11 @@
         "restore_calednar": "Restore calendar",
         "save": "Save",
         "series": "Series",
+        "set_new_time": "Set new time",
         "show": "Show",
         "show_declined_meetings": "Show declined meetings",
         "show_plural": "Show all",
+        "snooze": "Snooze",
         "start_date": "Start date",
         "start_date_and_time": "Start date and time",
         "start_week_of": "Start week of",
@@ -186,6 +196,8 @@
         "invite_has_no_message": "This invite has no text message",
         "meeting_canceled": "The following meeting has been cancelled",
         "snackbar": {
+            "appt_deleted": "Appointment moved successfully.",
+            "appt_deleted_error": "Something went wrong,appointment not deleted, please retry.",
             "appt_moved": "Appointment moved successfully.",
             "appt_moved_error": "Something went wrong,appointment not moved, please retry."
         },
@@ -247,6 +259,10 @@
         "hour_before_plural": "{{count}} hours before",
         "minute_before": "{{count}} minute before",
         "minute_before_plural": "{{count}} minutes before",
+        "modal": {
+            "set_new_time": "Set new time",
+            "set_new_time_message": "Do you want to set a new time for the missed appointment? If you click OK, all the other reminders will be automatically dismissed."
+        },
         "never": "Never",
         "week_before": "{{count}} week before",
         "week_before_plural": "{{count}} weeks before"
