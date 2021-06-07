@@ -196,7 +196,7 @@
         "invite_has_no_message": "This invite has no text message",
         "meeting_canceled": "The following meeting has been cancelled",
         "snackbar": {
-            "appt_deleted": "Appointment moved successfully.",
+            "appt_deleted": "Appointment deleted successfully.",
             "appt_deleted_error": "Something went wrong,appointment not deleted, please retry.",
             "appt_moved": "Appointment moved successfully.",
             "appt_moved_error": "Something went wrong,appointment not moved, please retry."
