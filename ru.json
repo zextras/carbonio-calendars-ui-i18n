@@ -86,7 +86,7 @@
         "attendee_plural": "Участники",
         "attachment_0": "Вложение",
         "attachment_1": "Вложения",
-        "attachment_2": "Вложения",
+        "attachment_2": "Вложений",
         "all_day": "Весь день",
         "all_calendars": "Все календари",
         "to": "Кому",
@@ -96,7 +96,35 @@
         "edit_properties": "Редактировать свойства",
         "create_new_calendar": "Создать Новый Календарь",
         "calendar_color": "Цвет календаря",
-        "cancel": "Отменить"
+        "cancel": "Отменить",
+        "save": "Сохранить",
+        "apple_ical": "Apple iCal",
+        "calendar_setting": "Настройки Календаря",
+        "create_appt_settings": "Создание Встреч",
+        "day": "День",
+        "days": "Дни",
+        "default_view": "Вид по умолчанию",
+        "download_0": "Скачать",
+        "download_1": "Скачать",
+        "download_2": "Скачать",
+        "every_weekday": "Каждый будний день",
+        "month": "Месяц",
+        "months": "Месяцы",
+        "no_end_date": "Без даты окончания",
+        "number": "Номер",
+        "remove_0": "Удалить",
+        "remove_1": "Удалить",
+        "remove_2": "Удалить",
+        "time_zones": "Часовые пояса",
+        "auto_add_rcvd_app": "Автоматически добавлять встречи в календарь",
+        "default_appt_vsblty": "Видимость встречи по умолчанию",
+        "enable_dlgtn_for_ical": "Включить делегирование для клиента Apple iCal CalDAV",
+        "every_day": "Каждый день",
+        "every_year_on": "Каждый год",
+        "show_0": "Показать",
+        "show_1": "Показать",
+        "show_2": "Показать",
+        "show_declined_meetings": "Показать отклоненные встречи"
     },
     "tooltip": {
         "show_optionals": "Показать опции",
@@ -113,22 +141,66 @@
         "delete_calendar": "Удалить календарь",
         "create": "Создать",
         "download": "Загрузка",
-        "preview": "Нажмите, чтобы просмотреть на другой вкладке"
+        "preview": "Нажмите, чтобы просмотреть на другой вкладке",
+        "delete": "Удалить",
+        "save_to_preview": "Сохранить для предварительного просмотра"
     },
     "folder": {
         "modal": {
             "move": {
-                "footer": "Пустой"
+                "footer": "Пустой",
+                "input": {
+                    "filter": "Фильтр Календарей"
+                },
+                "new": "Новый Календарь",
+                "body": {
+                    "message3": "Выберите календарь, в который нужно переместить рассматриваемую встречу:"
+                },
+                "title": "Переместить"
             },
             "new": {
-                "duplicate_warning": "Календарь с таким названием уже существует"
+                "duplicate_warning": "Календарь с таким названием уже существует",
+                "footer": "СОЗДАТЬ",
+                "title2": "Создание нового календаря"
             },
             "footer": {
-                "cancel": "Отменить"
+                "cancel": "Отменить",
+                "go_back": "Вернуться назад"
             },
             "delete": {
                 "title": "Удалить",
                 "footer": "Удалить"
+            }
+        }
+    },
+    "composer": {
+        "attachment": {
+            "contactsMod": "Добавить карточку контакта",
+            "drive": "Добавить из drive",
+            "local": "Добавить локально"
+        }
+    },
+    "event": {
+        "action": {
+            "accept": "Принять",
+            "edit": "Редактировать",
+            "expand": "Открыть в Displayer",
+            "move": "Переместить",
+            "restore": "Восстановить",
+            "tentative": "Под вопросом",
+            "decline": "Отклонить",
+            "trash": "Удалить"
+        }
+    },
+    "items": {
+        "day": "День",
+        "weekend_day": "Выходной день",
+        "working_day": "Рабочий день"
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "Редактировать"
             }
         }
     }
