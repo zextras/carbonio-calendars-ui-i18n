@@ -189,7 +189,13 @@
         "meeting_canceled": "The following meeting has been cancelled",
         "snackbar": {
             "appt_moved": "Appointment moved successfully.",
-            "appt_moved_error": "Something went wrong,appointment not moved, please retry."
+            "appt_moved_error": "Something went wrong,appointment not moved, please retry.",
+            "invite": {
+                "accepted": "You have replied as Accepted for the invite",
+                "declined": "You have replied as Declined for the invite",
+                "error": "Something went wrong, please retry.",
+                "tentative": "You have replied as Tentative for the invite"
+            }
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
