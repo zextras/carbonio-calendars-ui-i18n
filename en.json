@@ -186,6 +186,7 @@
         "are_organizer": "are the organizer",
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
+        "invited_you": "invited you to an event",
         "meeting_canceled": "The following meeting has been cancelled",
         "snackbar": {
             "appt_moved": "Appointment moved successfully.",
