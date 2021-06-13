@@ -70,7 +70,6 @@
                 "title": "Move"
             },
             "new": {
-                "create_move": "CREATE AND MOVE",
                 "duplicate_warning": "Calendar with the same name already exists",
                 "footer": "",
                 "ok": "OK",
