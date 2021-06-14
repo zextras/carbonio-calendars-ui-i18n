@@ -195,7 +195,6 @@
         "delete_future_occurences_warning": "This will also delete all exceptions (before and after this instance) in the series",
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
-        "invited_you": "invited you to an event",
         "meeting_canceled": "The following meeting has been cancelled",
         "snackbar": {
             "appt_deleted": "Appointment deleted successfully.",
@@ -203,9 +202,6 @@
             "appt_moved": "Appointment moved successfully.",
             "appt_moved_error": "Something went wrong,appointment not moved, please retry.",
             "invite": {
-                "ACCEPTED": "You have replied as Accepted for the invite",
-                "DECLINE": "You have replied as Declined for the invite",
-                "TENTATIVE": "You have replied as Tentative for the invite",
                 "error": "Something went wrong, please retry."
             }
         },
