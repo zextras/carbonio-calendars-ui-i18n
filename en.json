@@ -157,6 +157,7 @@
         "required": "Required",
         "restore_calednar": "Restore calendar",
         "save": "Save",
+        "select_in": "Schedule In",
         "series": "Series",
         "set_new_time": "Set new time",
         "show": "Show",
@@ -202,10 +203,10 @@
             "appt_moved": "Appointment moved successfully.",
             "appt_moved_error": "Something went wrong,appointment not moved, please retry.",
             "invite": {
-                "accepted": "You have replied as Accepted for the invite",
-                "declined": "You have replied as Declined for the invite",
-                "error": "Something went wrong, please retry.",
-                "tentative": "You have replied as Tentative for the invite"
+                "ACCEPTED": "You have replied as Accepted for the invite",
+                "DECLINE": "You have replied as Declined for the invite",
+                "TENTATIVE": "You have replied as Tentative for the invite",
+                "error": "Something went wrong, please retry."
             }
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
