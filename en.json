@@ -5,7 +5,6 @@
         "delete": "Delete",
         "delete_calendar": "Delete calendar",
         "download": "Download",
-        "edit_message": "Edit Message",
         "empty_trash": "Empty Trash",
         "modify_property": "Modify property",
         "move_to_root": "Move to root",
@@ -13,8 +12,7 @@
         "preview": "Click to preview in another tab",
         "save": "Save",
         "save_to_preview": "Save to preview",
-        "send": "Send",
-        "send_cancellation": "Send Cancellation"
+        "send": "Send"
     },
     "button": {
         "customize_modal": "Open Customize Modal"
@@ -34,46 +32,17 @@
             "local": "Add from local"
         }
     },
-    "event": {
-        "action": {
-            "accept": "Accept",
-            "decline": "Decline",
-            "edit": "Edit",
-            "expand": "Open in Displayer",
-            "move": "Move",
-            "restore": "Restore",
-            "tentative": "Tentative",
-            "trash": "Delete"
-        }
-    },
     "folder": {
         "modal": {
             "delete": {
                 "footer": "Delete",
                 "title": "Delete"
             },
-            "footer": {
-                "go_back": "Go back"
-            },
-            "item": {
-                "empty": ""
-            },
             "move": {
-                "body": {
-                    "message3": "Select a calendar to move the considered appointment to:"
-                },
-                "footer": "Empty",
-                "input": {
-                    "filter": "Filter Calendars"
-                },
-                "new": "New Calendar",
-                "title": "Move"
+                "footer": "Empty"
             },
             "new": {
-                "duplicate_warning": "Calendar with the same name already exists",
-                "footer": "",
-                "ok": "OK",
-                "title2": "New calendar creation"
+                "duplicate_warning": "Calendar with the same name already exists"
             }
         }
     },
@@ -91,8 +60,6 @@
         "all_calendars": "All calendars",
         "all_day": "All day",
         "apple_ical": "Apple iCal",
-        "appt_reminder": "Appointment Reminder",
-        "appt_reminder_plural": "Appointment Reminders",
         "attachment": "Attachment",
         "attachment_plural": "{{count}} Attachments",
         "attendee_plural": "Attendees",
@@ -102,7 +69,6 @@
         "calendar_color": "Calendar Color",
         "calendar_setting": "Calendar's Settings",
         "cancel": "Cancel",
-        "cancelled": "Cancelled",
         "create_appt_settings": "Creating Appointments",
         "create_new_calendar": "Create a New Calendar",
         "custom": "Custom",
@@ -111,9 +77,6 @@
         "days": "Days",
         "default_appt_vsblty": "Default appointment visibility",
         "default_view": "Default view",
-        "dismiss": "DISMISS",
-        "dismiss_capitalize": "Dismiss",
-        "dismiss_plural": "DISMISS ALL",
         "display": "Display",
         "download": "Download",
         "download_plural": "Download all",
@@ -130,21 +93,17 @@
         "free": "Free",
         "from": "From",
         "general": "General",
-        "instance": "Instance",
         "invitation_not_sent": "You haven't sent the invitation to the attendees yet",
         "location": "Location",
         "month": "Month",
         "months": "Months",
         "no_end_date": "No end date",
         "no_subject": "No subject",
-        "notify_organizer": "Notify organizer",
-        "now": "Now",
         "number": "Number",
         "occurrences": "Occurence(s)",
         "of": "of",
         "of_every": "of every",
         "of_the_month,_every": "of the month, every",
-        "ongoing": "Ongoing",
         "optional": "Optional",
         "optional_plural": "Optionals",
         "out_of_office": "Out of office",
@@ -157,12 +116,9 @@
         "required": "Required",
         "restore_calednar": "Restore calendar",
         "save": "Save",
-        "series": "Series",
-        "set_new_time": "Set new time",
         "show": "Show",
         "show_declined_meetings": "Show declined meetings",
         "show_plural": "Show all",
-        "snooze": "Snooze",
         "start_date": "Start date",
         "start_date_and_time": "Start date and time",
         "start_week_of": "Start week of",
@@ -189,18 +145,10 @@
     },
     "message": {
         "are_organizer": "are the organizer",
-        "delete_all_occurences": "Delete all occurrences",
-        "delete_future_occurences": "Delete this instance and all future occurrences",
-        "delete_future_occurences_warning": "This will also delete all exceptions (before and after this instance) in the series",
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
         "invited_you": "invited you to an event",
-        "meeting_canceled": "The following meeting has been cancelled",
         "snackbar": {
-            "appt_deleted": "Appointment deleted successfully.",
-            "appt_deleted_error": "Something went wrong,appointment not deleted, please retry.",
-            "appt_moved": "Appointment moved successfully.",
-            "appt_moved_error": "Something went wrong,appointment not moved, please retry.",
             "invite": {
                 "accepted": "You have replied as Accepted for the invite",
                 "declined": "You have replied as Declined for the invite",
@@ -210,10 +158,6 @@
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
-        "sure_to_delete_all_occurences_appointment": "Are you sure you want to delete all occurrences of this appointment?",
-        "sure_to_delete_appointment": "Are you sure,you want to delete the appointment ?",
-        "want_to_edit_cancellation_msg": "Do you want to edit the appointment cancellation message?",
-        "want_to_send_cancellation_msg": "Do you want to send a cancellation message to the attendees?",
         "you": "You",
         "you_are_organizer": "You are the organizer",
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
@@ -266,10 +210,6 @@
         "hour_before_plural": "{{count}} hours before",
         "minute_before": "{{count}} minute before",
         "minute_before_plural": "{{count}} minutes before",
-        "modal": {
-            "set_new_time": "Set new time",
-            "set_new_time_message": "Do you want to set a new time for the missed appointment? If you click OK, all the other reminders will be automatically dismissed."
-        },
         "never": "Never",
         "week_before": "{{count}} week before",
         "week_before_plural": "{{count}} weeks before"
