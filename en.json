@@ -147,11 +147,11 @@
         "are_organizer": "are the organizer",
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
-        "invited_you": "invited you to an event",
+        "invited_you": "",
         "snackbar": {
             "invite": {
-                "accepted": "You have replied as Accepted for the invite",
-                "declined": "You have replied as Declined for the invite",
+                "accepted": "",
+                "declined": "",
                 "error": "Something went wrong, please retry.",
                 "tentative": "You have replied as Tentative for the invite"
             }
