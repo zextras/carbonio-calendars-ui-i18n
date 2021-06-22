@@ -5,6 +5,7 @@
         "delete": "Delete",
         "delete_calendar": "Delete calendar",
         "download": "Download",
+        "edit_message": "Edit Message",
         "empty_trash": "Empty Trash",
         "modify_property": "Modify property",
         "move_to_root": "Move to root",
@@ -12,7 +13,8 @@
         "preview": "Click to preview in another tab",
         "save": "Save",
         "save_to_preview": "Save to preview",
-        "send": "Send"
+        "send": "Send",
+        "send_cancellation": "Send Cancellation"
     },
     "button": {
         "customize_modal": "Open Customize Modal"
@@ -30,6 +32,18 @@
             "contactsMod": "add contact card",
             "drive": "Add from drive",
             "local": "Add from local"
+        }
+    },
+    "event": {
+        "action": {
+            "accept": "Accept",
+            "decline": "Decline",
+            "edit": "Edit",
+            "expand": "Open in Displayer",
+            "move": "Move",
+            "restore": "Restore",
+            "tentative": "Tentative",
+            "trash": "Delete"
         }
     },
     "folder": {
@@ -69,6 +83,7 @@
         "calendar_color": "Calendar Color",
         "calendar_setting": "Calendar's Settings",
         "cancel": "Cancel",
+        "cancelled": "Cancelled",
         "create_appt_settings": "Creating Appointments",
         "create_new_calendar": "Create a New Calendar",
         "custom": "Custom",
@@ -93,12 +108,14 @@
         "free": "Free",
         "from": "From",
         "general": "General",
+        "instance": "Instance",
         "invitation_not_sent": "You haven't sent the invitation to the attendees yet",
         "location": "Location",
         "month": "Month",
         "months": "Months",
         "no_end_date": "No end date",
         "no_subject": "No subject",
+        "notify_organizer": "Notify organizer",
         "number": "Number",
         "occurrences": "Occurence(s)",
         "of": "of",
@@ -116,6 +133,7 @@
         "required": "Required",
         "restore_calednar": "Restore calendar",
         "save": "Save",
+        "series": "Series",
         "show": "Show",
         "show_declined_meetings": "Show declined meetings",
         "show_plural": "Show all",
@@ -145,19 +163,29 @@
     },
     "message": {
         "are_organizer": "are the organizer",
+        "delete_all_occurences": "Delete all occurrences",
+        "delete_future_occurences": "Delete this instance and all future occurrences",
+        "delete_future_occurences_warning": "This will also delete all exceptions (before and after this instance) in the series",
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
-        "invited_you": "",
+        "invited_you": "invited you to an event",
+        "meeting_canceled": "The following meeting has been cancelled",
         "snackbar": {
+            "appt_deleted": "Appointment deleted successfully.",
+            "appt_deleted_error": "Something went wrong,appointment not deleted, please retry.",
             "invite": {
-                "accepted": "",
-                "declined": "",
+                "accepted": "You have replied as Accepted for the invite",
+                "declined": "You have replied as Declined for the invite",
                 "error": "Something went wrong, please retry.",
                 "tentative": "You have replied as Tentative for the invite"
             }
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
+        "sure_to_delete_all_occurences_appointment": "Are you sure you want to delete all occurrences of this appointment?",
+        "sure_to_delete_appointment": "Are you sure,you want to delete the appointment ?",
+        "want_to_edit_cancellation_msg": "Do you want to edit the appointment cancellation message?",
+        "want_to_send_cancellation_msg": "Do you want to send a cancellation message to the attendees?",
         "you": "You",
         "you_are_organizer": "You are the organizer",
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
