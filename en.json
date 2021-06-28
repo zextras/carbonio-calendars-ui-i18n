@@ -30,6 +30,10 @@
     "composer": {
         "attachment": {
             "contactsMod": "add contact card",
+            "draganddrop": {
+                "content": "Drop here your attachments to quick-add them to appointment",
+                "title": "Drag&Drop Mode"
+            },
             "drive": "Add from drive",
             "local": "Add from local"
         }
