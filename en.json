@@ -122,6 +122,7 @@
         "download": "Download",
         "download_plural": "Download all",
         "edit_properties": "Edit properties",
+        "email_input_message": "Enter email addresses",
         "enable_dlgtn_for_ical": "Enable deligation for Apple iCal CalDAV Client",
         "end": "End",
         "end_after": "End after",
@@ -132,10 +133,12 @@
         "every_weekday": "Every weekday",
         "every_year_on": "Every year on",
         "free": "Free",
+        "free_busy": "Free/Busy",
         "from": "From",
         "general": "General",
         "instance": "Instance",
         "invitation_not_sent": "You haven't sent the invitation to the attendees yet",
+        "invites": "Invites",
         "location": "Location",
         "month": "Month",
         "months": "Months",
@@ -152,6 +155,7 @@
         "optional": "Optional",
         "optional_plural": "Optionals",
         "out_of_office": "Out of office",
+        "permissions": "Permissions",
         "private": "Private",
         "regular": "Regular",
         "reminder": "Reminder",
@@ -307,6 +311,7 @@
             "show_reminders": "Show Reminders",
             "show_rmndr_past_due_meetings": "Show reminders for past-due meetings",
             "show_timezones": "Show time zone while creating new appointment",
+            "snd_autorply_users": "Send auto-reply to users who are denied from inviting me",
             "span_time": "Span time"
         },
         "options": {
@@ -363,7 +368,8 @@
                 "tuesday": "Tuesday",
                 "wednesday": "Wednesday"
             }
-        }
+        },
+        "permissions_note": "Users provide below must be on this mail system (zextras.com).You may use the full email address, or just the username."
     },
     "tooltip": {
         "add_attachments": "Add attachments",
