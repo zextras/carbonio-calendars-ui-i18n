@@ -14,7 +14,9 @@
         "save": "Save",
         "save_to_preview": "Save to preview",
         "send": "Send",
-        "send_cancellation": "Send Cancellation"
+        "send_cancellation": "Send Cancellation",
+        "share_calendar": "Share Calendar",
+        "share_folder": "Share Folder"
     },
     "button": {
         "customize_modal": "Open Customize Modal"
@@ -76,7 +78,7 @@
             "new": {
                 "duplicate_warning": "Calendar with the same name already exists",
                 "footer": "",
-                "ok": "OK",
+                "ok": "",
                 "title2": "New calendar creation"
             }
         }
@@ -95,8 +97,8 @@
         "all_calendars": "All calendars",
         "all_day": "All day",
         "apple_ical": "Apple iCal",
-        "appt_reminder": "Appointment Reminder",
-        "appt_reminder_plural": "Appointment Reminders",
+        "appt_reminder": "",
+        "appt_reminder_plural": "",
         "attachment": "Attachment",
         "attachment_plural": "{{count}} Attachments",
         "attendee_plural": "Attendees",
@@ -115,9 +117,9 @@
         "days": "Days",
         "default_appt_vsblty": "Default appointment visibility",
         "default_view": "Default view",
-        "dismiss": "DISMISS",
-        "dismiss_capitalize": "Dismiss",
-        "dismiss_plural": "DISMISS ALL",
+        "dismiss": "",
+        "dismiss_capitalize": "",
+        "dismiss_plural": "",
         "display": "Display",
         "download": "Download",
         "download_plural": "Download all",
@@ -145,13 +147,13 @@
         "no_end_date": "No end date",
         "no_subject": "No subject",
         "notify_organizer": "Notify organizer",
-        "now": "Now",
+        "now": "",
         "number": "Number",
         "occurrences": "Occurence(s)",
         "of": "of",
         "of_every": "of every",
         "of_the_month,_every": "of the month, every",
-        "ongoing": "Ongoing",
+        "ongoing": "",
         "optional": "Optional",
         "optional_plural": "Optionals",
         "out_of_office": "Out of office",
@@ -166,11 +168,12 @@
         "restore_calednar": "Restore calendar",
         "save": "Save",
         "series": "Series",
-        "set_new_time": "Set new time",
+        "set_new_time": "",
+        "share": "Share",
         "show": "Show",
         "show_declined_meetings": "Show declined meetings",
         "show_plural": "Show all",
-        "snooze": "Snooze",
+        "snooze": "",
         "start_date": "Start date",
         "start_date_and_time": "Start date and time",
         "start_week_of": "Start week of",
@@ -275,8 +278,8 @@
         "minute_before": "{{count}} minute before",
         "minute_before_plural": "{{count}} minutes before",
         "modal": {
-            "set_new_time": "Set new time",
-            "set_new_time_message": "Do you want to set a new time for the missed appointment? If you click OK, all the other reminders will be automatically dismissed."
+            "set_new_time": "",
+            "set_new_time_message": ""
         },
         "never": "Never",
         "week_before": "{{count}} week before",
@@ -370,6 +373,32 @@
             }
         },
         "permissions_note": "Users provide below must be on this mail system (zextras.com).You may use the full email address, or just the username."
+    },
+    "share": {
+        "label": {
+            "allow_to_see_private_appt": "Allow user(s) to see my private appointments",
+            "send_notification": "Send notification about this share"
+        },
+        "note": {
+            "share_note": "The standard message displays your name, the name of the shared item, pemissions granted to the recipients, and sign in information, if necessary."
+        },
+        "options": {
+            "share_calendar_role": {
+                "admin": "Admin (can view,edit,add,remove and administer)",
+                "manager": "Manager (can view,edit,add and remove)",
+                "none": "None",
+                "viewer": "Viewer (can view)"
+            },
+            "share_calendar_with": {
+                "external_guests": "External guests (view only)",
+                "internal_users_groups": "Internal Users or Groups",
+                "public": "Public (view only, no password required)"
+            }
+        },
+        "placeholder": {
+            "recipients_address": "Recipients’ e-mail addresses",
+            "standard_message": "Add a note to standard message"
+        }
     },
     "tooltip": {
         "add_attachments": "Add attachments",
