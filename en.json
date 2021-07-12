@@ -16,6 +16,7 @@
         "send": "Send",
         "send_cancellation": "Send Cancellation"
     },
+    "allowed_actions": "Allowed actions",
     "button": {
         "customize_modal": "Open Customize Modal"
     },
@@ -50,6 +51,7 @@
             "trash": "Delete"
         }
     },
+    "find_shares": "Find shares",
     "folder": {
         "modal": {
             "delete": {
@@ -79,8 +81,10 @@
                 "ok": "OK",
                 "title2": "New calendar creation"
             }
-        }
+        },
+        "share_info": "Share Info"
     },
+    "grantee": "Grantee",
     "items": {
         "day": "Day",
         "first": "First",
@@ -242,6 +246,7 @@
         "october": "October",
         "september": "September"
     },
+    "owner": "Owner",
     "participants": {
         "AC_with_count": "Accepted",
         "AC_with_count_plural": "Accepted ({{count}})",
@@ -282,6 +287,7 @@
         "week_before": "{{count}} week before",
         "week_before_plural": "{{count}} weeks before"
     },
+    "remove_from_this_list": "Remove from this list",
     "repeat": {
         "custom": "Custom",
         "customize": "Customize",
@@ -295,6 +301,7 @@
         "weekly": "Weekly",
         "yearly": "Yearly"
     },
+    "role": "Role",
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
         "invalid_email": "Not a valid email",
@@ -371,6 +378,9 @@
         },
         "permissions_note": "Users provide below must be on this mail system (zextras.com).You may use the full email address, or just the username."
     },
+    "shared_folders": "Shared Calendars",
+    "shared_items": "Shared items",
+    "shares_info": "Shares Info",
     "tooltip": {
         "add_attachments": "Add attachments",
         "enable_disable_rich_text": "Enable/Disable rich text editor",
