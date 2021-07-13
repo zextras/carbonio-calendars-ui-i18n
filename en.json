@@ -17,6 +17,8 @@
         "send": "Send",
         "send_cancellation": "Send Cancellation"
     },
+    "add": "Add",
+    "administer": "Administer",
     "allowed_actions": "Allowed actions",
     "button": {
         "customize_modal": "Open Customize Modal"
@@ -40,6 +42,8 @@
             "local": "Add from local"
         }
     },
+    "create": "Create",
+    "delete": "Delete",
     "event": {
         "action": {
             "accept": "Accept",
@@ -52,6 +56,7 @@
             "trash": "Delete"
         }
     },
+    "find_calendar_shares": "Find Calendar Shares",
     "find_shares": "Find shares",
     "folder": {
         "modal": {
@@ -89,7 +94,8 @@
         },
         "share_info": "Share Info"
     },
-    "grantee": "Grantee",
+    "freebusy": "FreeBusy",
+    "insert": "Insert",
     "items": {
         "day": "Day",
         "first": "First",
@@ -287,6 +293,8 @@
         "Tentative": "accepted as tentative",
         "visitors": "and other {{others}} attendees"
     },
+    "private": "Private",
+    "read": "Read",
     "reminder": {
         "at_time_of_event": "At time of the event",
         "day_before": "{{count}} day before",
@@ -317,7 +325,6 @@
         "weekly": "Weekly",
         "yearly": "Yearly"
     },
-    "role": "Role",
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
         "invalid_email": "Not a valid email",
@@ -401,5 +408,7 @@
         "add_attachments": "Add attachments",
         "enable_disable_rich_text": "Enable/Disable rich text editor",
         "show_optionals": "Show optionals"
-    }
+    },
+    "workflow": "WorkFlow",
+    "write": "Write"
 }
