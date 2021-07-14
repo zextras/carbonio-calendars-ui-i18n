@@ -148,6 +148,8 @@
         "every_day": "Every day",
         "every_weekday": "Every weekday",
         "every_year_on": "Every year on",
+        "filter_sharer_user": "Filter sharer user",
+        "find_shares": "Select which calendars you want to see in calendars’ tree",
         "free": "Free",
         "free_busy": "Free/Busy",
         "from": "From",
@@ -183,6 +185,7 @@
         "save": "Save",
         "series": "Series",
         "set_new_time": "Set new time",
+        "shares_items": "{{value}}'s shared calendars",
         "show": "Show",
         "show_declined_meetings": "Show declined meetings",
         "show_plural": "Show all",
@@ -268,6 +271,7 @@
         "october": "October",
         "september": "September"
     },
+    "of": "of",
     "owner": "Owner",
     "participants": {
         "AC_with_count": "Accepted",
