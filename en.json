@@ -22,6 +22,7 @@
     "add": "Add",
     "administer": "Administer",
     "allowed_actions": "Allowed actions",
+    "appointments": "Appointments",
     "button": {
         "customize_modal": "Open Customize Modal"
     },
@@ -187,8 +188,8 @@
         "save": "Save",
         "series": "Series",
         "set_new_time": "Set new time",
-        "shares_items": "{{value}}'s shared calendars",
         "share": "Share",
+        "shares_items": "{{value}}'s shared calendars",
         "show": "Show",
         "show_declined_meetings": "Show declined meetings",
         "show_plural": "Show all",
@@ -408,9 +409,6 @@
         },
         "permissions_note": "Users provide below must be on this mail system (zextras.com).You may use the full email address, or just the username."
     },
-    "shared_folders": "Shared Calendars",
-    "shared_items": "Shared items",
-    "shares_info": "Shares Info",
     "share": {
         "label": {
             "allow_to_see_private_appt": "Allow user(s) to see my private appointments",
@@ -437,11 +435,15 @@
             "standard_message": "Add a note to standard message"
         }
     },
+    "shared_folders": "Shared Calendars",
+    "shared_items": "Shared items",
+    "shares_info": "Shares Info",
     "tooltip": {
         "add_attachments": "Add attachments",
         "enable_disable_rich_text": "Enable/Disable rich text editor",
         "show_optionals": "Show optionals"
     },
+    "type": "Type",
     "workflow": "WorkFlow",
     "write": "Write"
 }
