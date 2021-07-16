@@ -48,9 +48,11 @@
             "edit": "Edit",
             "expand": "Open in Displayer",
             "move": "Move",
+            "no": "No",
             "restore": "Restore",
             "tentative": "Tentative",
-            "trash": "Delete"
+            "trash": "Delete",
+            "yes": "Yes"
         }
     },
     "folder": {
