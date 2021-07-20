@@ -390,6 +390,8 @@
         "permissions_note": "Users provide below must be on this mail system (zextras.com).You may use the full email address, or just the username."
     },
     "snackbar": {
+        "new_time_proposed_error": "Something went wrong,please try again",
+        "new_time_proposed_succes": "New time proposed",
         "proposed_time_accepted": "You accepted the proposed time",
         "proposed_time_error": "Something went wrong,please try again"
     },
