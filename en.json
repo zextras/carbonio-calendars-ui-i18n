@@ -152,7 +152,7 @@
         "every_weekday": "Every weekday",
         "every_year_on": "Every year on",
         "filter_sharer_user": "Filter sharer user",
-        "find_shares": "Select which calendars you want to see in calendarsâ€™ tree",
+        "find_shares": "Select which calendars you want to see in calendars tree",
         "free": "Free",
         "free_busy": "Free/Busy",
         "from": "From",
@@ -244,8 +244,8 @@
             "appt_moved_error": "Something went wrong,appointment not moved, please retry.",
             "appt_restored": "Appointment restored successfully to ",
             "invite": {
-                "accept": "",
-                "decline": "",
+                "accept": "You have replied as Accepted for the invite",
+                "decline": "You have replied as Declined for the invite",
                 "error": "Something went wrong, please retry.",
                 "tentative": "You have replied as Tentative for the invite"
             }
@@ -433,7 +433,7 @@
             }
         },
         "placeholder": {
-            "recipients_address": "Recipientsâ€™ e-mail addresses",
+            "recipients_address": "Recipients e-mail addresses",
             "standard_message": "Add a note to standard message"
         }
     },
