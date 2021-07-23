@@ -64,6 +64,27 @@
     },
     "action": {
         "send": "Invia",
-        "save": "Salva"
+        "save": "Salva",
+        "create": "Crea",
+        "delete_calendar": "Elimina calendario",
+        "empty_trash": "Cestino Vuoto",
+        "move_to_root": "Sposta in root",
+        "new_calendar": "Nuovo calendario",
+        "delete": "Elimina",
+        "download": "Scarica",
+        "preview": "Clicca per l'anteprima in altra scheda",
+        "save_to_preview": "Salva nell'anteprima",
+        "cancel": "Annulla",
+        "modify_property": "Modifica proprietà"
+    },
+    "button": {
+        "customize_modal": "Apri Personalizza Modale"
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "Modifica"
+            }
+        }
     }
 }
