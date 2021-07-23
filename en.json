@@ -19,6 +19,10 @@
         "share_calendar": "Share Calendar",
         "share_folder": "Share Folder"
     },
+    "add": "Add",
+    "administer": "Administer",
+    "allowed_actions": "Allowed actions",
+    "appointments": "Appointments",
     "button": {
         "customize_modal": "Open Customize Modal"
     },
@@ -41,6 +45,8 @@
             "local": "Add from local"
         }
     },
+    "create": "Create",
+    "delete": "Delete",
     "event": {
         "action": {
             "accept": "Accept",
@@ -55,6 +61,8 @@
             "yes": "Yes"
         }
     },
+    "find_calendar_shares": "Find Calendar Shares",
+    "find_shares": "Find shares",
     "folder": {
         "modal": {
             "delete": {
@@ -88,8 +96,11 @@
                 "footer": "Create and Restore",
                 "title": "Restore"
             }
-        }
+        },
+        "share_info": "Share Info"
     },
+    "freebusy": "FreeBusy",
+    "insert": "Insert",
     "items": {
         "day": "Day",
         "first": "First",
@@ -142,6 +153,8 @@
         "every_day": "Every day",
         "every_weekday": "Every weekday",
         "every_year_on": "Every year on",
+        "filter_sharer_user": "Filter sharer user",
+        "find_shares": "Select which calendars you want to see in calendars tree",
         "free": "Free",
         "free_busy": "Free/Busy",
         "from": "From",
@@ -167,6 +180,7 @@
         "out_of_office": "Out of office",
         "permissions": "Permissions",
         "private": "Private",
+        "proposal_declined": "",
         "regular": "Regular",
         "reminder": "Reminder",
         "remove": "Delete",
@@ -175,9 +189,11 @@
         "required": "Required",
         "restore_calednar": "Restore calendar",
         "save": "Save",
+        "select_in": "",
         "series": "Series",
-        "set_new_time": "",
+        "set_new_time": "Set new time",
         "share": "Share",
+        "shares_items": "{{value}}'s shared calendars",
         "show": "Show",
         "show_declined_meetings": "Show declined meetings",
         "show_plural": "Show all",
@@ -230,8 +246,8 @@
             "appt_moved_error": "Something went wrong,appointment not moved, please retry.",
             "appt_restored": "Appointment restored successfully to ",
             "invite": {
-                "accepted": "You have replied as Accepted for the invite",
-                "declined": "You have replied as Declined for the invite",
+                "accept": "You have replied as Accepted for the invite",
+                "decline": "You have replied as Declined for the invite",
                 "error": "Something went wrong, please retry.",
                 "tentative": "You have replied as Tentative for the invite"
             }
@@ -263,6 +279,8 @@
         "october": "October",
         "september": "September"
     },
+    "of": "of",
+    "owner": "Owner",
     "participants": {
         "AC_with_count": "Accepted",
         "AC_with_count_plural": "Accepted ({{count}})",
@@ -287,6 +305,8 @@
         "Tentative": "accepted as tentative",
         "visitors": "and other {{others}} attendees"
     },
+    "private": "Private",
+    "read": "Read",
     "reminder": {
         "at_time_of_event": "At time of the event",
         "day_before": "{{count}} day before",
@@ -303,6 +323,7 @@
         "week_before": "{{count}} week before",
         "week_before_plural": "{{count}} weeks before"
     },
+    "remove_from_this_list": "Remove from this list",
     "repeat": {
         "custom": "Custom",
         "customize": "Customize",
@@ -414,13 +435,25 @@
             }
         },
         "placeholder": {
-            "recipients_address": "Recipients’ e-mail addresses",
+            "recipients_address": "Recipients e-mail addresses",
             "standard_message": "Add a note to standard message"
         }
+    },
+    "shared_folders": "Shared Calendars",
+    "shared_items": "Shared items",
+    "shares_info": "Shares Info",
+    "snackbar": {
+        "new_time_proposed_error": "Something went wrong,please try again",
+        "new_time_proposed_succes": "New time proposed",
+        "proposed_time_accepted": "You accepted the proposed time",
+        "proposed_time_error": "Something went wrong,please try again"
     },
     "tooltip": {
         "add_attachments": "Add attachments",
         "enable_disable_rich_text": "Enable/Disable rich text editor",
         "show_optionals": "Show optionals"
-    }
+    },
+    "type": "Type",
+    "workflow": "WorkFlow",
+    "write": "Write"
 }
