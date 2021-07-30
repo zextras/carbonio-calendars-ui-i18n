@@ -58,16 +58,22 @@
         "busy": "Occupato",
         "attendee_plural": "Partecipanti",
         "attachment": "Allegato",
-        "attachment_plural": "Allegati",
+        "attachment_plural": "{{count}} Allegati",
         "all_day": "Tutto il giorno",
-        "all_calendars": "Tutti i calendari"
+        "all_calendars": "Tutti i calendari",
+        "download": "Scarica",
+        "download_plural": "Scarica tutto",
+        "save": "Salva",
+        "show": "Mostra",
+        "show_plural": "Mostra tutto",
+        "cancel": "Annulla"
     },
     "action": {
         "send": "Invia",
         "save": "Salva",
         "create": "Crea",
         "delete_calendar": "Elimina calendario",
-        "empty_trash": "Cestino Vuoto",
+        "empty_trash": "Svuota cestino",
         "move_to_root": "Sposta in root",
         "new_calendar": "Nuovo calendario",
         "delete": "Elimina",
@@ -84,6 +90,16 @@
         "modal": {
             "custom_schedule": {
                 "footer": "Modifica"
+            }
+        }
+    },
+    "folder": {
+        "modal": {
+            "delete": {
+                "title": "Elimina"
+            },
+            "move": {
+                "title": "Sposta"
             }
         }
     }
