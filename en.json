@@ -1,6 +1,5 @@
 {
     "action": {
-        "cancel": "Cancel",
         "create": "Create",
         "delete": "Delete",
         "delete_calendar": "Delete calendar",
@@ -47,6 +46,7 @@
     },
     "create": "Create",
     "delete": "Delete",
+    "edit_share_properties": "Edit share properties",
     "event": {
         "action": {
             "accept": "Accept",
@@ -144,7 +144,9 @@
         "download": "Download",
         "download_plural": "Download all",
         "edit": "Edit",
-        "edit_properties": "Edit properties",
+        "edit_access": "Edit {{name}}'s access",
+        "edit_properties": "Edit {{name}} properties",
+        "edit_share": "Edit share",
         "email_input_message": "Enter email addresses",
         "enable_dlgtn_for_ical": "Enable deligation for Apple iCal CalDAV Client",
         "end": "End",
@@ -198,8 +200,8 @@
         "series": "Series",
         "set_new_time": "Set new time",
         "share": "Share",
-        "shares_folder_edit": "",
         "shares_items": "{{value}}'s shared calendars",
+        "sharing_of_this_folder": "Sharing of this folder",
         "show": "Show",
         "show_declined_meetings": "Show declined meetings",
         "show_plural": "Show all",
@@ -343,6 +345,8 @@
         "weekly": "Weekly",
         "yearly": "Yearly"
     },
+    "resend_mail_notification_about_this_share": "Resend mail notification about this share",
+    "revoke_access": "Revoke access",
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
         "invalid_email": "Not a valid email",
@@ -449,11 +453,16 @@
     "shared_items": "Shared items",
     "shares_info": "Shares Info",
     "snackbar": {
+        "invite": {
+            "error": "Error"
+        },
         "new_time_proposed_error": "Something went wrong,please try again",
         "new_time_proposed_succes": "New time proposed",
         "proposed_time_accepted": "You accepted the proposed time",
         "proposed_time_error": "Something went wrong,please try again"
     },
+    "standard": "Share created: {{folder}} shared from {{name}}",
+    "success": "Success",
     "tooltip": {
         "add_attachments": "Add attachments",
         "enable_disable_rich_text": "Enable/Disable rich text editor",
