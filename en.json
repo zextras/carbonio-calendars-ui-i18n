@@ -145,7 +145,7 @@
         "download_plural": "Download all",
         "edit": "Edit",
         "edit_access": "Edit {{name}}'s access",
-        "edit_properties": "Edit {{name}} properties",
+        "edit_properties": "Edit {{name}}'s properties",
         "edit_share": "Edit share",
         "email_input_message": "Enter email addresses",
         "enable_dlgtn_for_ical": "Enable deligation for Apple iCal CalDAV Client",
