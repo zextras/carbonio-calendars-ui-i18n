@@ -194,7 +194,7 @@
         "resend": "Resend",
         "restore_calednar": "Restore calendar",
         "revoke": "Revoke",
-        "revoke_share": "Revoke {{title}}'s share",
+        "revoke_share": "Revoke share of {{title}}",
         "save": "Save",
         "select_in": "",
         "series": "Series",
