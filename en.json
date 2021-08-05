@@ -5,9 +5,9 @@
         "delete_calendar": "Delete calendar",
         "delete_permanently": "Delete Permanently",
         "download": "Download",
+        "edit_calendar_properties": "Edit calendar properties",
         "edit_message": "Edit Message",
         "empty_trash": "Empty Trash",
-        "modify_property": "Modify property",
         "move_to_root": "Move to root",
         "new_calendar": "New calendar",
         "preview": "Click to preview in another tab",
@@ -461,7 +461,6 @@
         "proposed_time_accepted": "You accepted the proposed time",
         "proposed_time_error": "Something went wrong,please try again"
     },
-    "standard": "Share created: {{folder}} shared from {{name}}",
     "success": "Success",
     "tooltip": {
         "add_attachments": "Add attachments",
