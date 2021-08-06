@@ -15,8 +15,7 @@
         "save_to_preview": "Save to preview",
         "send": "Send",
         "send_cancellation": "Send Cancellation",
-        "share_calendar": "Share Calendar",
-        "share_folder": "Share Folder"
+        "share_calendar": "Share Calendar"
     },
     "add": "Add",
     "administer": "Administer",
@@ -33,6 +32,7 @@
             }
         }
     },
+    "cannot_edit_name": "You cannot edit the name of a system calendar",
     "composer": {
         "attachment": {
             "contactsMod": "add contact card",
@@ -347,6 +347,9 @@
     },
     "resend_mail_notification_about_this_share": "Resend mail notification about this share",
     "revoke_access": "Revoke access",
+    "revoke_with_custom_message": "Revoke access sending a custom notification",
+    "revoke_without_custom_message": "Revoke access sending a standard notification",
+    "revoke_without_notification": "Revoke access without sending a notification",
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
         "invalid_email": "Not a valid email",
@@ -449,6 +452,7 @@
             "standard_message": "Add a note to standard message"
         }
     },
+    "share_invite_resent": "Share invite resent",
     "shared_folders": "Shared Calendars",
     "shared_items": "Shared items",
     "shares_info": "Shares Info",
