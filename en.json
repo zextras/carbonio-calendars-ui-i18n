@@ -345,12 +345,12 @@
         "weekly": "Weekly",
         "yearly": "Yearly"
     },
+    "resend_mail_notification_about_this_share": "Resend mail notification about this share",
+    "revoke_access": "Revoke access",
     "search": {
         "organized_by": "organized by",
         "results_for": "Results for:"
     },
-    "resend_mail_notification_about_this_share": "Resend mail notification about this share",
-    "revoke_access": "Revoke access",
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
         "invalid_email": "Not a valid email",
@@ -465,7 +465,6 @@
         "proposed_time_accepted": "You accepted the proposed time",
         "proposed_time_error": "Something went wrong,please try again"
     },
-    "standard": "Share created: {{folder}} shared from {{name}}",
     "success": "Success",
     "tooltip": {
         "add_attachments": "Add attachments",
