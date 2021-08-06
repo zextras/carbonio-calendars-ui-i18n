@@ -337,6 +337,10 @@
         "weekly": "Weekly",
         "yearly": "Yearly"
     },
+    "search": {
+        "organized_by": "organized by",
+        "results_for": "Results for:"
+    },
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
         "invalid_email": "Not a valid email",
