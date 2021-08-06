@@ -248,6 +248,7 @@
             "appt_restored": "Appointment restored successfully to ",
             "calendar_delete_error": "Something went wrong, please try again.",
             "calendar_deleted_successfully": "Calendar deleted successfully.",
+            "calendar_edits_saved": "Something went wrong, please try again",
             "calendar_moved_to_root_folder": "Calendar moved to Root folder",
             "calendar_moved_to_root_folder_error": "Something went wrong, please try again",
             "calendar_moved_to_trash": "Calendar moved to trash",
@@ -259,6 +260,7 @@
                 "error": "Something went wrong, please retry.",
                 "tentative": "You’ve replied as Tentative"
             },
+            "new_calendar_create_error": "Something went wrong, please try again",
             "new_calendar_created": "New calendar created",
             "new_calendar_created_error": ""
         },
