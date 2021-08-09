@@ -5,9 +5,9 @@
         "delete_calendar": "Delete calendar",
         "delete_permanently": "Delete Permanently",
         "download": "Download",
+        "edit_calendar_properties": "Edit calendar properties",
         "edit_message": "Edit Message",
         "empty_trash": "Empty Trash",
-        "modify_property": "Modify property",
         "move_to_root": "Move to root",
         "new_calendar": "New calendar",
         "preview": "Click to preview in another tab",
@@ -15,8 +15,7 @@
         "save_to_preview": "Save to preview",
         "send": "Send",
         "send_cancellation": "Send Cancellation",
-        "share_calendar": "Share Calendar",
-        "share_folder": "Share Folder"
+        "share_calendar": "Share Calendar"
     },
     "add": "Add",
     "administer": "Administer",
@@ -33,6 +32,7 @@
             }
         }
     },
+    "cannot_edit_name": "You cannot edit the name of a system calendar",
     "composer": {
         "attachment": {
             "contactsMod": "add contact card",
@@ -145,7 +145,7 @@
         "download_plural": "Download all",
         "edit": "Edit",
         "edit_access": "Edit {{name}}'s access",
-        "edit_properties": "Edit {{name}} properties",
+        "edit_properties": "Edit {{name}}'s properties",
         "edit_share": "Edit share",
         "email_input_message": "Enter email addresses",
         "enable_dlgtn_for_ical": "Enable deligation for Apple iCal CalDAV Client",
@@ -194,7 +194,7 @@
         "resend": "Resend",
         "restore_calednar": "Restore calendar",
         "revoke": "Revoke",
-        "revoke_share": "Revoke {{title}}'s share",
+        "revoke_share": "Revoke share of {{title}}",
         "save": "Save",
         "select_in": "",
         "series": "Series",
@@ -351,6 +351,9 @@
         "organized_by": "organized by",
         "results_for": "Results for:"
     },
+    "revoke_with_custom_message": "Revoke access sending a custom notification",
+    "revoke_without_custom_message": "Revoke access sending a standard notification",
+    "revoke_without_notification": "Revoke access without sending a notification",
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
         "invalid_email": "Not a valid email",
@@ -453,6 +456,7 @@
             "standard_message": "Add a note to standard message"
         }
     },
+    "share_invite_resent": "Share invite resent",
     "shared_folders": "Shared Calendars",
     "shared_items": "Shared items",
     "shares_info": "Shares Info",
