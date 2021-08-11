@@ -270,7 +270,8 @@
             },
             "new_calendar_create_error": "Something went wrong, please try again",
             "new_calendar_created": "New calendar created",
-            "new_calendar_created_error": ""
+            "new_calendar_created_error": "",
+            "settings_saved": "Edits saved correctly"
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
@@ -473,6 +474,7 @@
     "shared_items": "Shared items",
     "shares_info": "Shares Info",
     "snackbar": {
+        "error": "",
         "invite": {
             "error": "Error"
         },
