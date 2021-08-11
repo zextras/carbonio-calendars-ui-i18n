@@ -474,7 +474,7 @@
     "shared_items": "Shared items",
     "shares_info": "Shares Info",
     "snackbar": {
-        "error": "",
+        "error": "Something went wrong, please try again",
         "invite": {
             "error": "Error"
         },
