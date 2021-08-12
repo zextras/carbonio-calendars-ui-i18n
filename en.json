@@ -1,5 +1,6 @@
 {
     "action": {
+        "calendar_access_share": "Calendar access share",
         "create": "Create",
         "delete": "Delete",
         "delete_calendar": "Delete calendar",
@@ -163,6 +164,7 @@
         "free_busy": "Free/Busy",
         "from": "From",
         "general": "General",
+        "ics_url": "ICS URL",
         "instance": "Instance",
         "invitation_not_sent": "You haven't sent the invitation to the attendees yet",
         "invites": "Invites",
@@ -182,6 +184,7 @@
         "optional": "Optional",
         "optional_plural": "Optionals",
         "out_of_office": "Out of office",
+        "outlook_url": "Outlook URL",
         "permissions": "Permissions",
         "private": "Private",
         "proposal_declined": "Proposal declined",
@@ -200,6 +203,7 @@
         "series": "Series",
         "set_new_time": "Set new time",
         "share": "Share",
+        "share_calendar_url": "{{title}} access share",
         "shares_items": "{{value}}'s shared calendars",
         "sharing_of_this_folder": "Sharing of this folder",
         "show": "Show",
@@ -216,6 +220,7 @@
         "timezone_pref_msg": "The timings follow your timezone preferences.",
         "to": "To",
         "type_name_here": "Calendar name",
+        "view_url": "View URL",
         "week": {
             "friday": "Friday",
             "monday": "Monday",
@@ -245,6 +250,9 @@
                 "sure_delete_appointment_permanently": "By deleting permanently this appointment you will not be able to recover it anymore, continue?"
             }
         },
+        "share_calendar_url_msg": "You can quick share {{title}} with your collaborators using one of those URL:",
+        "share_calendar_url_note": "Only your collaborators can access your data using these urls.",
+        "share_calendar_url_note2": "Only your collaborators can access your data using these urls.You can find those links also right-clicking your calendars list.",
         "snackbar": {
             "appointment_permanently_deleted_error": "Something went wrong, retry the action",
             "appointment_permanently_deleted_succesfully": "Permanent deletion completed successfully",
@@ -479,11 +487,16 @@
         "new_time_proposed_error": "Something went wrong,please try again",
         "new_time_proposed_succes": "New time proposed",
         "proposed_time_accepted": "You accepted the proposed time",
-        "proposed_time_error": "Something went wrong,please try again"
+        "proposed_time_error": "Something went wrong,please try again",
+        "share_folder_success": "This Calendar has been shared",
+        "url_copied": "{{title}} copied"
     },
     "success": "Success",
     "tooltip": {
         "add_attachments": "Add attachments",
+        "copy_ics_url": "Copy ICS url",
+        "copy_outlook_url": "Copy Outlook url",
+        "copy_vector_url": "Copy View url",
         "enable_disable_rich_text": "Enable/Disable rich text editor",
         "show_optionals": "Show optionals"
     },
