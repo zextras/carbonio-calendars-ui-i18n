@@ -1,1 +1,150 @@
-{}
+{
+    "action": {
+        "create": "Creëren",
+        "save": "Opslaan",
+        "send": "Versturen",
+        "download": "Downloaden",
+        "delete": "Verwijderen",
+        "delete_permanently": "Permanent Verwijderen",
+        "edit_message": "Bericht Bewerken"
+    },
+    "reminder": {
+        "never": "Nooit"
+    },
+    "label": {
+        "attachment": "Bijlage",
+        "attachment_plural": "{{count}}Bijlagen",
+        "busy": "Bezet",
+        "days": "Dagen",
+        "cancel": "Annuleren",
+        "custom": "Op maat",
+        "delete_permanently": "Permanent Verwijderen",
+        "dismiss_capitalize": "Weigeren",
+        "edit": "Bewerken",
+        "edit_share": "Gedeeld bestand bewerken",
+        "end": "Eindigen",
+        "from": "Van",
+        "general": "Algemeen",
+        "month": "Maand",
+        "months": "Maanden",
+        "now": "Nu",
+        "of": "van",
+        "permissions": "Machtigingen",
+        "save": "Opslaan",
+        "share": "Delen",
+        "start_date": "Startdatum",
+        "subject": "Onderwerp",
+        "week": {
+            "monday": "Maandag",
+            "saturday": "Zaterdag",
+            "sunday": "Zondag",
+            "thursday": "Donderdag",
+            "tuesday": "Dinsdag",
+            "wednesday": "Woensdag",
+            "friday": "Vrijdag"
+        },
+        "free": "Gratis"
+    },
+    "event": {
+        "action": {
+            "accept": "Aanvaarden",
+            "edit": "Bewerken",
+            "move": "Verplaatsen",
+            "no": "Nee",
+            "restore": "Herstellen",
+            "trash": "Verwijderen",
+            "yes": "Ja"
+        }
+    },
+    "items": {
+        "second": "Seconde"
+    },
+    "add": "Toevoegen",
+    "appointments": "Afspraken",
+    "create": "Creëren",
+    "delete": "Verwijderen",
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "Verwijderen",
+                "title": "Verwijderen"
+            },
+            "move": {
+                "title": "Verplaatsen"
+            },
+            "restore": {
+                "title": "Herstellen"
+            }
+        }
+    },
+    "message": {
+        "snackbar": {
+            "invite": {
+                "error": "Er is iets misgegaan, probeer het opnieuw."
+            }
+        }
+    },
+    "months": {
+        "april": "April",
+        "august": "Augustus",
+        "december": "December",
+        "february": "Februari",
+        "january": "Januari",
+        "july": "Juli",
+        "june": "Jni",
+        "march": "Maart",
+        "may": "Mei",
+        "november": "November",
+        "october": "Oktober",
+        "september": "September"
+    },
+    "of": "van",
+    "owner": "Eigenaar",
+    "read": "Lezen",
+    "repeat": {
+        "custom": "Op maat",
+        "none": "Geen"
+    },
+    "settings": {
+        "options": {
+            "dflt_vsblty_opt": {
+                "public": "Publiek"
+            },
+            "show_reminder": {
+                "never": "Nooit"
+            },
+            "weekdays": {
+                "friday": "Vrijdag",
+                "monday": "Maandag",
+                "saturday": "Zaterdag",
+                "sunday": "Zondag",
+                "thursday": "Donderdag",
+                "tuesday": "Dinsdag",
+                "wednesday": "Woensdag"
+            }
+        }
+    },
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "Geen"
+            }
+        }
+    },
+    "snackbar": {
+        "invite": {
+            "error": "Fout"
+        },
+        "new_time_proposed_error": "Er is iets misgegaan, probeer het opnieuw",
+        "proposed_time_error": "Er is iets misgegaan, probeer het opnieuw"
+    },
+    "success": "Succes",
+    "type": "Type",
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "Bewerken"
+            }
+        }
+    }
+}
