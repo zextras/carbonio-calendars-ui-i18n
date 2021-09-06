@@ -147,7 +147,12 @@
         "custom_repeat": "Настроить повторение",
         "general": "Общая",
         "regular": "Обычный",
-        "repeat": "Повтор"
+        "repeat": "Повтор",
+        "edit": "Редактировать",
+        "resend": "Отправить повторно",
+        "share": "Поделиться",
+        "edit_access": "Изменить права доступа {{name}}",
+        "revoke": "Отозвать"
     },
     "tooltip": {
         "show_optionals": "Показать опции",
@@ -167,7 +172,8 @@
         "download": "Загрузка",
         "preview": "Нажмите, чтобы просмотреть на другой вкладке",
         "delete": "Удалить",
-        "save_to_preview": "Сохранить для предварительного просмотра"
+        "save_to_preview": "Сохранить для предварительного просмотра",
+        "delete_permanently": "Удалить навсегда"
     },
     "folder": {
         "modal": {
@@ -200,8 +206,11 @@
     "composer": {
         "attachment": {
             "contactsMod": "Добавить карточку контакта",
-            "drive": "Добавить из drive",
-            "local": "Добавить из локального"
+            "drive": "Добавить из Drive",
+            "local": "Добавить из локального",
+            "draganddrop": {
+                "title": "Режим Drag&Drop"
+            }
         }
     },
     "event": {
@@ -332,5 +341,29 @@
         "customize": "Настроить",
         "custom": "Пользовательский",
         "none": "Нет"
-    }
+    },
+    "add": "Добавить",
+    "administer": "Администрирование",
+    "allowed_actions": "Разрешенные действия",
+    "create": "Создать",
+    "delete": "Удалить",
+    "freebusy": "Свободен/Занят",
+    "insert": "Вставить",
+    "private": "Частный",
+    "read": "Читать",
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "Никто"
+            },
+            "share_calendar_with": {
+                "external_guests": "Внешние пользователи (только просмотр)",
+                "public": "Общедоступно (только просмотр, пароль не требуется)",
+                "internal_users_groups": "Внутренние Пользователи или Группы"
+            }
+        }
+    },
+    "type": "Тип",
+    "write": "Написать",
+    "remove_from_this_list": "Убрать из списка"
 }
