@@ -1,1 +1,123 @@
-{}
+{
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "बदलाव करें"
+            }
+        }
+    },
+    "label": {
+        "cancel": "कैंसल करें",
+        "attachment": "अटैचमेंट",
+        "attachment_plural": "",
+        "busy": "व्यस्त",
+        "dismiss_capitalize": "छोड़ें",
+        "download": "डाऊनलोड करें",
+        "download_plural": "",
+        "edit": "बदलाव करें",
+        "edit_share": "शेयर में बदलाव करें",
+        "end": "समाप्त",
+        "free": "फ्री",
+        "general": "सामान्य",
+        "month": "माह",
+        "of": "में से",
+        "permissions": "परमीशन",
+        "remove": "डिलीट करें",
+        "remove_plural": "",
+        "save": "सेव करें",
+        "share": "शेयर करें",
+        "subject": "विषय",
+        "custom": "कस्टम",
+        "now": "अभी"
+    },
+    "action": {
+        "delete": "डिलीट करें",
+        "download": "डाऊनलोड करें",
+        "create": "बनाएँ",
+        "save": "सेव करें",
+        "send": "भेजें"
+    },
+    "message": {
+        "you": "आप"
+    },
+    "create": "बनाएँ",
+    "delete": "डिलीट करें",
+    "event": {
+        "action": {
+            "no": "नहीं",
+            "yes": "हाँ",
+            "accept": "स्वीकार करें",
+            "edit": "बदलाव करें",
+            "move": "ले जाएँ",
+            "restore": "वापस लाएँ",
+            "trash": "डिलीट करें"
+        }
+    },
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "डिलीट करें",
+                "title": "डिलीट करें"
+            },
+            "restore": {
+                "title": "वापस लाएँ"
+            },
+            "move": {
+                "title": "ले जाएँ"
+            }
+        }
+    },
+    "months": {
+        "april": "अप्रैल",
+        "august": "अगस्त",
+        "december": "दिसम्बर",
+        "february": "फरवरी",
+        "july": "जुलाई",
+        "june": "जून",
+        "march": "मार्च",
+        "may": "मई",
+        "november": "नवम्बर",
+        "october": "अक्तूबर",
+        "september": "सितंबर",
+        "january": "जनवरी"
+    },
+    "of": "में से",
+    "owner": "ओनर",
+    "read": "पढ़ें",
+    "reminder": {
+        "never": "कभी नहीं"
+    },
+    "repeat": {
+        "custom": "कस्टम",
+        "none": "कोई नहीं"
+    },
+    "settings": {
+        "options": {
+            "dflt_vsblty_opt": {
+                "public": "पब्लिक"
+            },
+            "show_reminder": {
+                "never": "कभी नहीं"
+            }
+        }
+    },
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "कोई नहीं"
+            }
+        }
+    },
+    "snackbar": {
+        "invite": {
+            "error": "त्रुटि"
+        }
+    },
+    "success": "सफलता",
+    "type": "टाइप करें",
+    "items": {
+        "second": "सेकंड"
+    },
+    "add": "जोड़ें",
+    "appointments": "अपॉइंट्मेंट"
+}
