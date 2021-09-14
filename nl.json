@@ -43,7 +43,13 @@
             "wednesday": "Woensdag",
             "friday": "Vrijdag"
         },
-        "free": "Gratis"
+        "free": "Gratis",
+        "optional": "Optioneel",
+        "optional_plural": "",
+        "download": "Downloaden",
+        "download_plural": "",
+        "remove": "Openen met",
+        "remove_plural": ""
     },
     "event": {
         "action": {
@@ -81,8 +87,10 @@
         "snackbar": {
             "invite": {
                 "error": "Er is iets misgegaan, probeer het opnieuw."
-            }
-        }
+            },
+            "appt_deleted_error": "Er is iets misgegaan, probeer het opnieuw."
+        },
+        "you": "U"
     },
     "months": {
         "april": "April",
