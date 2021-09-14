@@ -20,10 +20,13 @@
         "AC_with_count_plural": "Accettati ({{count}})",
         "TE_with_count": "Rifiutato",
         "TE_with_count_plural": "Rifiutati {{count}}",
-        "NE_with_count": "Tentativo",
-        "NE_with_count_plural": "Tentativi {{count}}",
+        "NE_with_count": "Forse",
+        "NE_with_count_plural": "Forse {{count}}",
         "DE_with_count": "Non ha risposto",
-        "DE_with_count_plural": "Non hanno risposto ({{count}})"
+        "DE_with_count_plural": "Non hanno risposto ({{count}})",
+        "Attendees_tentative_count": "<strong>1 partecipante </strong> ha risposto: forse",
+        "Attendees_tentative_count_plural": "<strong>{{count}} partecipanti </strong> hanno risposto: forse",
+        "Tentative": "Risposto: forse"
     },
     "message": {
         "you_will_see_the_subject_here": "Vedrai l'oggetto di questo appuntamento qui",
@@ -31,11 +34,17 @@
         "somebody_invited_you": "<strong>{{somebody}}</strong> ti ha invitato",
         "meeting_canceled": "La riunione seguente è stata annullata",
         "invite_has_no_message": "Questo invito non ha messaggi di testo",
-        "have_not_sent_invitation": "Non hai ancora inviato l'invito ai partecipanti"
+        "have_not_sent_invitation": "Non hai ancora inviato l'invito ai partecipanti",
+        "snackbar": {
+            "settings_saved": "Modifiche salvate correttamente",
+            "invite": {
+                "tentative": "Hai risposto: Forse"
+            }
+        }
     },
     "label": {
         "to": "A",
-        "tentative": "Tentativo",
+        "tentative": "Forse",
         "no_subject": "Nessun oggetto",
         "subject": "Oggetto",
         "start_date_and_time": "Data ed ora di inizio",
@@ -66,7 +75,30 @@
         "save": "Salva",
         "show": "Mostra",
         "show_plural": "Mostra tutto",
-        "cancel": "Annulla"
+        "cancel": "Annulla",
+        "resend": "Invia di nuovo",
+        "every_day": "Ogni giorno",
+        "find_shares": "Seleziona i calendari da visualizzare nella tua lista calendari",
+        "invitation_not_sent": "Non hai ancora inviato l'invito ai partecipanti",
+        "end": "Fine",
+        "end_after": "Termina dopo",
+        "edit": "Modifica",
+        "every": "Ogni",
+        "every_weekday": "Ogni giorno della settimana",
+        "every_year_on": "Ogni anno il",
+        "free_busy": "Libero/Occupato",
+        "general": "Generale",
+        "ics_url": "ICS URL",
+        "instance": "Istanza",
+        "month": "Mese",
+        "months": "Mesi",
+        "no_end_date": "Nessuna data di fine",
+        "notify_organizer": "Notifica organizzatore",
+        "now": "Adesso",
+        "number": "Numero",
+        "occurrences": "Occorrenza/e",
+        "of": "di",
+        "revoke": "Revoca"
     },
     "action": {
         "send": "Invia",
@@ -76,12 +108,17 @@
         "empty_trash": "Svuota cestino",
         "move_to_root": "Sposta in root",
         "new_calendar": "Nuovo calendario",
-        "delete": "Elimina",
+        "delete": "Cancella",
         "download": "Scarica",
         "preview": "Clicca per l'anteprima in altra scheda",
         "save_to_preview": "Salva nell'anteprima",
         "cancel": "Annulla",
-        "modify_property": "Modifica proprietà"
+        "modify_property": "Modifica proprietà",
+        "edit_calendar_properties": "Modifica le proprietà del calendario",
+        "delete_permanently": "Elimina definitivamente",
+        "edit_message": "Modifica Messaggio",
+        "send_cancellation": "Invia cancellazione",
+        "share_calendar": "Condividi Calendario"
     },
     "button": {
         "customize_modal": "Apri Personalizza Modale"
@@ -89,18 +126,90 @@
     "calendar": {
         "modal": {
             "custom_schedule": {
-                "footer": "Modifica"
+                "footer": "Modifica",
+                "title": "Personalizza orario lavorativo"
             }
         }
     },
     "folder": {
         "modal": {
             "delete": {
-                "title": "Elimina"
+                "title": "Elimina",
+                "footer": "Elimina"
             },
             "move": {
-                "title": "Sposta"
+                "title": "Sposta",
+                "footer": "Vuoto",
+                "new": "Nuovo Calendario",
+                "body": {
+                    "message3": "Seleziona un calendario in cui spostare questo appuntamento:"
+                }
+            },
+            "restore": {
+                "title": "Ripristina",
+                "footer": "Crea e Ripristina"
+            },
+            "new": {
+                "duplicate_warning": "Esiste già un calendario con lo stesso nome",
+                "footer": "CREA"
+            },
+            "item": {
+                "empty": "Vuoto"
+            },
+            "footer": {
+                "go_back": "Indietro"
+            }
+        },
+        "share_info": "Informazioni sulla condivisione"
+    },
+    "event": {
+        "action": {
+            "tentative": "Forse",
+            "accept": "Accetta",
+            "decline": "Rifiuta",
+            "edit": "Modifica",
+            "move": "Sposta",
+            "no": "No",
+            "restore": "Ripristina",
+            "trash": "Elimina",
+            "yes": "Sì"
+        }
+    },
+    "composer": {
+        "attachment": {
+            "contactsMod": "aggiungi scheda di contatto",
+            "drive": "Aggiungi da Drive",
+            "local": "Aggiungi da locale",
+            "draganddrop": {
+                "content": "Trascina qui gli allegati per aggiungerli velocemente all'appuntamento",
+                "title": "Modalità Drag&Drop"
             }
         }
-    }
+    },
+    "search": {
+        "results_for": "Risultati per:"
+    },
+    "find_calendar_shares": "Trova Condivisoni Calendario",
+    "items": {
+        "first": "Primo",
+        "fourth": "Quarto",
+        "last": "Ultimo",
+        "second": "Secondo",
+        "third": "Terzo",
+        "day": "Giorno",
+        "weekend_day": "Fine settimana"
+    },
+    "snackbar": {
+        "error": "Qualcosa è andato storto. riprova"
+    },
+    "add": "Aggiungi",
+    "allowed_actions": "Azioni consentite",
+    "appointments": "Appuntamenti",
+    "administer": "Gestisci",
+    "cannot_edit_name": "Non è possibile modificare il nome di una calendario di sistema",
+    "create": "Crea",
+    "delete": "Elimina",
+    "edit_share_properties": "Modifica proprietà di condivisione",
+    "find_shares": "Trova condivisioni",
+    "insert": "Inserisci"
 }
