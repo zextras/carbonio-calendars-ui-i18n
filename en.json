@@ -271,9 +271,9 @@
             "edit_calendar_error": "Something went wrong, please try again",
             "invite": {
                 "accept": "You’ve replied as Accepted",
-                "decline": "You’ve replied as Declined",
+                "decline": "You’ve replied as: Declined",
                 "error": "Something went wrong, please retry.",
-                "tentative": "You’ve replied as Tentative"
+                "tentative": "You’ve replied as: Tentative"
             },
             "new_calendar_create_error": "Something went wrong, please try again",
             "new_calendar_created": "New calendar created",
@@ -448,7 +448,7 @@
                 "wednesday": "Wednesday"
             }
         },
-        "permissions_note": "Users provide below must be on this mail system (zextras.com).You may use the full email address, or just the username."
+        "permissions_note": "Users below must be on this e-mail system (zextras.com). You may use the full e-mail address or just the username."
     },
     "share": {
         "label": {
