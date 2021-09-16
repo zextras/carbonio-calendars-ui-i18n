@@ -1,1 +1,120 @@
-{}
+{
+    "action": {
+        "create": "Buat",
+        "delete": "Hapus",
+        "download": "Unduh",
+        "save": "Simpan",
+        "send": "Kirim"
+    },
+    "label": {
+        "attachment": "Lampiran",
+        "busy": "Sibuk",
+        "cancel": "Batal",
+        "custom": "Kustom",
+        "dismiss_capitalize": "Tolak",
+        "download": "Unduh",
+        "edit": "Edit",
+        "edit_share": "Edit berbagi",
+        "end": "Akhiri",
+        "free": "Gratis",
+        "general": "Umum",
+        "month": "Bulan",
+        "now": "Sekarang",
+        "of": "dari",
+        "permissions": "Izin",
+        "save": "Simpan",
+        "share": "Bagikan",
+        "subject": "Subjek",
+        "remove": "Hapus"
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "Edit"
+            }
+        }
+    },
+    "event": {
+        "action": {
+            "accept": "Terima",
+            "edit": "Edit",
+            "move": "Pindahkan",
+            "restore": "Pulihkan",
+            "trash": "Hapus",
+            "no": "Tidak",
+            "yes": "Ya"
+        }
+    },
+    "create": "Buat",
+    "delete": "Hapus",
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "Hapus",
+                "title": "Hapus"
+            },
+            "move": {
+                "title": "Pindahkan"
+            },
+            "restore": {
+                "title": "Pulihkan"
+            }
+        }
+    },
+    "items": {
+        "second": "Detik"
+    },
+    "message": {
+        "you": "Anda"
+    },
+    "months": {
+        "april": "April",
+        "august": "Agustus",
+        "december": "Desember",
+        "february": "Februari",
+        "january": "Januari",
+        "july": "Juli",
+        "june": "Juni",
+        "march": "Maret",
+        "may": "Mei",
+        "november": "November",
+        "october": "Oktober",
+        "september": "September"
+    },
+    "of": "dari",
+    "owner": "Pemilik",
+    "read": "Baca",
+    "reminder": {
+        "never": "Jangan pernah"
+    },
+    "repeat": {
+        "custom": "Kustom",
+        "none": "Tidak ada"
+    },
+    "settings": {
+        "options": {
+            "dflt_vsblty_opt": {
+                "public": "Publik"
+            },
+            "show_reminder": {
+                "never": "Jangan pernah"
+            }
+        }
+    },
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "Tidak ada"
+            }
+        }
+    },
+    "snackbar": {
+        "invite": {
+            "error": "Terjadi kesalahan"
+        }
+    },
+    "success": "Berhasil",
+    "add": "Tambahkan",
+    "appointments": "Janji temu",
+    "type": "Jenis"
+}
