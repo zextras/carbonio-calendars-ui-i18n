@@ -1,1 +1,123 @@
-{}
+{
+    "message": {
+        "you": "あなた"
+    },
+    "action": {
+        "save": "保存する",
+        "delete": "削除する",
+        "download": "ダウンロード",
+        "create": "作成する",
+        "send": "送信"
+    },
+    "event": {
+        "action": {
+            "accept": "許可",
+            "edit": "編集する",
+            "move": "移動",
+            "restore": "復元する",
+            "no": "いいえ",
+            "trash": "削除する",
+            "yes": "はい"
+        }
+    },
+    "items": {
+        "second": "秒"
+    },
+    "label": {
+        "end": "終わり",
+        "attachment": "添付ファイル",
+        "busy": "予定あり",
+        "cancel": "キャンセル",
+        "custom": "カスタム",
+        "dismiss_capitalize": "拒否する",
+        "download": "ダウンロード",
+        "edit": "編集する",
+        "edit_share": "シェアを編集する",
+        "free": "フリー",
+        "general": "一般設定",
+        "month": "月",
+        "now": "今",
+        "permissions": "権限",
+        "remove": "削除する",
+        "save": "保存する",
+        "share": "シェアする",
+        "of": "の",
+        "subject": "件名"
+    },
+    "create": "作成する",
+    "delete": "削除する",
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "削除する",
+                "title": "削除する"
+            },
+            "move": {
+                "title": "移動"
+            },
+            "restore": {
+                "title": "復元する"
+            }
+        }
+    },
+    "months": {
+        "february": "2月",
+        "january": "1月",
+        "july": "7月",
+        "june": "6月",
+        "march": "3月",
+        "may": "5月",
+        "november": "11月",
+        "october": "10月",
+        "september": "9月",
+        "april": "4月",
+        "august": "8月",
+        "december": "12月"
+    },
+    "owner": "オーナ",
+    "participants": {
+        "AC_with_count": "受け取り完了"
+    },
+    "read": "既読",
+    "reminder": {
+        "never": "一度もない"
+    },
+    "repeat": {
+        "custom": "カスタム",
+        "none": "なし"
+    },
+    "settings": {
+        "options": {
+            "show_reminder": {
+                "never": "一度もない"
+            },
+            "dflt_vsblty_opt": {
+                "public": "公開する"
+            }
+        }
+    },
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "なし"
+            }
+        }
+    },
+    "add": "追加する",
+    "appointments": "予定",
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "編集する"
+            }
+        }
+    },
+    "snackbar": {
+        "invite": {
+            "error": "エラー"
+        }
+    },
+    "success": "成功",
+    "type": "タイプ",
+    "of": "の"
+}
