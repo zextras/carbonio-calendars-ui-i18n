@@ -1,1 +1,120 @@
-{}
+{
+    "message": {
+        "you": "您"
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "编辑"
+            }
+        }
+    },
+    "action": {
+        "download": "下载",
+        "create": "创建",
+        "save": "保存",
+        "send": "发送",
+        "delete": "删除"
+    },
+    "event": {
+        "action": {
+            "accept": "接受",
+            "edit": "编辑",
+            "move": "移动",
+            "restore": "恢复",
+            "no": "否",
+            "trash": "删除",
+            "yes": "是"
+        }
+    },
+    "items": {
+        "second": "秒"
+    },
+    "create": "创建",
+    "delete": "删除",
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "删除",
+                "title": "删除"
+            },
+            "move": {
+                "title": "移动"
+            },
+            "restore": {
+                "title": "恢复"
+            }
+        }
+    },
+    "label": {
+        "download": "下载",
+        "edit": "编辑",
+        "edit_share": "编辑分享",
+        "end": "结束",
+        "free": "免费",
+        "month": "月",
+        "now": "现在",
+        "of": "，共",
+        "permissions": "权限",
+        "remove": "删除",
+        "attachment": "附件",
+        "busy": "忙碌",
+        "cancel": "取消",
+        "custom": "自定义",
+        "dismiss_capitalize": "收起",
+        "save": "保存",
+        "share": "分享",
+        "subject": "主题",
+        "general": "通用"
+    },
+    "months": {
+        "april": "四月",
+        "august": "八月",
+        "december": "十二月",
+        "february": "二月",
+        "january": "一月",
+        "july": "七月",
+        "june": "六月",
+        "march": "三月",
+        "may": "五月",
+        "november": "十一月",
+        "october": "十月",
+        "september": "九月"
+    },
+    "of": "，共",
+    "owner": "所有者",
+    "reminder": {
+        "never": "永不"
+    },
+    "repeat": {
+        "custom": "自定义",
+        "none": "无"
+    },
+    "settings": {
+        "options": {
+            "dflt_vsblty_opt": {
+                "public": "公共"
+            },
+            "show_reminder": {
+                "never": "永不"
+            }
+        }
+    },
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "无"
+            }
+        }
+    },
+    "add": "添加",
+    "appointments": "预约",
+    "snackbar": {
+        "invite": {
+            "error": "错误"
+        }
+    },
+    "success": "成功",
+    "type": "类型",
+    "read": "已读"
+}
