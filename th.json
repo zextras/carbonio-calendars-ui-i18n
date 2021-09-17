@@ -1,1 +1,123 @@
-{}
+{
+    "participants": {
+        "AC_with_count": "ยอมรับ"
+    },
+    "label": {
+        "subject": "หัวข้อ",
+        "cancel": "ยกเลิก",
+        "custom": "กำหนดเอง",
+        "attachment": "สิ่งที่แนบมา",
+        "busy": "ไม่ว่าง",
+        "dismiss_capitalize": "ยกเลิก",
+        "download": "ดาวน์โหลด",
+        "edit": "แก้ไข",
+        "edit_share": "แก้ไขการแชร์",
+        "end": "จบ",
+        "free": "ฟรี",
+        "general": "ทั่วไป",
+        "month": "เดือน",
+        "now": "ตอนนี้",
+        "of": "ของ",
+        "permissions": "การอนุญาต",
+        "remove": "ลบ",
+        "save": "บันทึก",
+        "share": "แชร์"
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "แก้ไข"
+            }
+        }
+    },
+    "action": {
+        "delete": "ลบ",
+        "download": "ดาวน์โหลด",
+        "create": "สร้าง",
+        "save": "บันทึก",
+        "send": "ส่ง"
+    },
+    "event": {
+        "action": {
+            "accept": "ยอมรับ",
+            "edit": "แก้ไข",
+            "move": "ย้าย",
+            "restore": "การกู้คืนข้อมูล (Restore)",
+            "trash": "ลบ",
+            "no": "ไม่",
+            "yes": "ใช่"
+        }
+    },
+    "settings": {
+        "options": {
+            "show_reminder": {
+                "never": "ไม่มี"
+            },
+            "dflt_vsblty_opt": {
+                "public": "สาธารณะ"
+            }
+        }
+    },
+    "folder": {
+        "modal": {
+            "move": {
+                "title": "ย้าย"
+            },
+            "restore": {
+                "title": "การกู้คืนข้อมูล (Restore)"
+            },
+            "delete": {
+                "footer": "ลบ",
+                "title": "ลบ"
+            }
+        }
+    },
+    "items": {
+        "second": "วินาที"
+    },
+    "months": {
+        "december": "ธันวาคม",
+        "february": "กุมภาพันธ์",
+        "july": "กรกฎาคม",
+        "june": "มิถุนายน",
+        "march": "มีนาคม",
+        "may": "พฤษภาคม",
+        "november": "พฤศจิกายน",
+        "october": "ตุลาคม",
+        "september": "กันยายน",
+        "january": "มกราคม",
+        "april": "เมษายน",
+        "august": "สิงหาคม"
+    },
+    "of": "ของ",
+    "owner": "เจ้าของ",
+    "read": "อ่าน",
+    "reminder": {
+        "never": "ไม่มี"
+    },
+    "repeat": {
+        "custom": "กำหนดเอง",
+        "none": "ไม่มี"
+    },
+    "snackbar": {
+        "invite": {
+            "error": "ผิดพลาด"
+        }
+    },
+    "success": "สำเร็จ",
+    "add": "เพิ่ม",
+    "appointments": "การนัดหมาย",
+    "create": "สร้าง",
+    "delete": "ลบ",
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "ไม่มี"
+            }
+        }
+    },
+    "message": {
+        "you": "คุณ"
+    },
+    "type": "รูปแบบ"
+}
