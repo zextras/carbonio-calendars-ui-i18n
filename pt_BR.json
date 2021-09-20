@@ -1,1 +1,127 @@
-{}
+{
+    "label": {
+        "general": "Geral",
+        "busy": "Ocupado",
+        "cancel": "Cancelar",
+        "custom": "Customizado",
+        "dismiss_capitalize": "Dispensar",
+        "edit": "Editar",
+        "edit_share": "Editar seleção",
+        "end": "Fim",
+        "free": "Gratis",
+        "now": "Agora",
+        "of": "de",
+        "permissions": "Permissões",
+        "remove": "Excluir",
+        "remove_plural": "",
+        "save": "Salvar",
+        "share": "Compartilhar",
+        "subject": "Assunto",
+        "download": "Download",
+        "download_plural": "",
+        "attachment": "Anexo",
+        "attachment_plural": "{{count}}Anexos",
+        "month": "Mês"
+    },
+    "action": {
+        "delete": "Excluir",
+        "download": "Download",
+        "create": "Criar",
+        "save": "Salvar",
+        "send": "Enviar"
+    },
+    "event": {
+        "action": {
+            "accept": "Aceitar",
+            "edit": "Editar",
+            "move": "Mover",
+            "restore": "Restaurar",
+            "trash": "Excluir",
+            "no": "No",
+            "yes": "Sim"
+        }
+    },
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "Excluir",
+                "title": "Excluir"
+            },
+            "move": {
+                "title": "Mover"
+            },
+            "restore": {
+                "title": "Restaurar"
+            }
+        }
+    },
+    "delete": "Excluir",
+    "items": {
+        "second": "Segundo"
+    },
+    "message": {
+        "you": "Você"
+    },
+    "months": {
+        "april": "Abril",
+        "august": "Agosto",
+        "december": "Dezembro",
+        "february": "Fevereiro",
+        "january": "Janeiro",
+        "july": "Julho",
+        "june": "Junho",
+        "march": "Março",
+        "november": "Novembro",
+        "october": "Outubro",
+        "september": "Setembro",
+        "may": "Maio"
+    },
+    "of": "de",
+    "owner": "Proprietário",
+    "participants": {
+        "AC_with_count": "Aceito",
+        "AC_with_count_plural": ""
+    },
+    "reminder": {
+        "never": "Nunca"
+    },
+    "repeat": {
+        "custom": "Customizado",
+        "none": "None"
+    },
+    "settings": {
+        "options": {
+            "dflt_vsblty_opt": {
+                "public": "Público"
+            },
+            "show_reminder": {
+                "never": "Nunca"
+            }
+        }
+    },
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "None"
+            }
+        }
+    },
+    "snackbar": {
+        "invite": {
+            "error": "Erro"
+        }
+    },
+    "success": "Sucesso",
+    "type": "Tipo",
+    "add": "Adicionar",
+    "appointments": "Compromissos",
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "Editar"
+            }
+        }
+    },
+    "create": "Criar",
+    "read": "Lida"
+}
