@@ -88,7 +88,8 @@
             "invite": {
                 "error": "Er is iets misgegaan, probeer het opnieuw."
             },
-            "appt_deleted_error": "Er is iets misgegaan, probeer het opnieuw."
+            "appt_deleted_error": "Er is iets misgegaan, probeer het opnieuw.",
+            "settings_saved": "Bewerkingen correct opgeslagen"
         },
         "you": "U"
     },
@@ -144,7 +145,8 @@
             "error": "Fout"
         },
         "new_time_proposed_error": "Er is iets misgegaan, probeer het opnieuw",
-        "proposed_time_error": "Er is iets misgegaan, probeer het opnieuw"
+        "proposed_time_error": "Er is iets misgegaan, probeer het opnieuw",
+        "error": "Er is iets misgegaan, probeer het opnieuw"
     },
     "success": "Succes",
     "type": "Type",
@@ -154,5 +156,8 @@
                 "footer": "Bewerken"
             }
         }
+    },
+    "search": {
+        "results_for": "Resultaten voor:"
     }
 }
