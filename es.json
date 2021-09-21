@@ -1,1 +1,126 @@
-{}
+{
+    "label": {
+        "attachment": "Adjunto",
+        "attachment_plural": "",
+        "end": "Fin",
+        "busy": "Ocupado",
+        "cancel": "Cancelar",
+        "custom": "Personalizado",
+        "dismiss_capitalize": "Desestimar",
+        "download": "Download",
+        "download_plural": "",
+        "edit": "Editar",
+        "edit_share": "Editar compartición",
+        "free": "Gratis",
+        "month": "Mes",
+        "now": "Ahora",
+        "of": "d",
+        "permissions": "Permisos",
+        "remove": "Eliminar",
+        "remove_plural": "",
+        "save": "Guardar",
+        "share": "Compartir",
+        "subject": "Asunto"
+    },
+    "action": {
+        "delete": "Eliminar",
+        "download": "Download",
+        "create": "Crear",
+        "save": "Guardar",
+        "send": "Enviar"
+    },
+    "event": {
+        "action": {
+            "accept": "Aceptar",
+            "edit": "Editar",
+            "move": "Mover",
+            "restore": "Restaurar",
+            "trash": "Eliminar",
+            "no": "No",
+            "yes": "Sí"
+        }
+    },
+    "items": {
+        "second": "Segundo"
+    },
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "Eliminar",
+                "title": "Eliminar"
+            },
+            "move": {
+                "title": "Mover"
+            },
+            "restore": {
+                "title": "Restaurar"
+            }
+        }
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "Editar"
+            }
+        }
+    },
+    "create": "Crear",
+    "delete": "Eliminar",
+    "months": {
+        "february": "Febrero",
+        "july": "Julio",
+        "june": "Junio",
+        "march": "Marzo",
+        "may": "Mayo",
+        "november": "Noviembre",
+        "october": "Octubre",
+        "september": "Septiembre",
+        "april": "Abril",
+        "august": "Agosto",
+        "december": "Diciembre",
+        "january": "Enero"
+    },
+    "of": "d",
+    "owner": "Propietario",
+    "participants": {
+        "AC_with_count": "Aceptado",
+        "AC_with_count_plural": ""
+    },
+    "read": "Leido",
+    "reminder": {
+        "never": "Nunca"
+    },
+    "repeat": {
+        "custom": "Personalizado",
+        "none": "None"
+    },
+    "settings": {
+        "options": {
+            "dflt_vsblty_opt": {
+                "public": "Público"
+            },
+            "show_reminder": {
+                "never": "Nunca"
+            }
+        }
+    },
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "None"
+            }
+        }
+    },
+    "snackbar": {
+        "invite": {
+            "error": "Error"
+        }
+    },
+    "success": "Éxito",
+    "type": "Tipo",
+    "add": "Agregar",
+    "appointments": "Reuniones",
+    "message": {
+        "you": "Tu"
+    }
+}
