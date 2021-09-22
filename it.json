@@ -39,8 +39,11 @@
             "settings_saved": "Modifiche salvate correttamente",
             "invite": {
                 "tentative": "Hai risposto: Forse"
-            }
-        }
+            },
+            "appointment_permanently_deleted_error": "Qualcosa è andato storto, riprova l'azione"
+        },
+        "share_calendar_url_note2": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL.<br/> Puoi trovare questi collegamenti anche con un clic destro del mouse sull'elenco dei calendari.",
+        "share_calendar_url_note": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL."
     },
     "label": {
         "to": "A",
