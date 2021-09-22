@@ -69,7 +69,7 @@
         "attachment": "Allegato",
         "attachment_plural": "{{count}} Allegati",
         "all_day": "Tutto il giorno",
-        "all_calendars": "Tutti i calendari",
+        "all_calendars": "Tutti i Calendari",
         "download": "Scarica",
         "download_plural": "Scarica tutto",
         "save": "Salva",
@@ -98,7 +98,42 @@
         "number": "Numero",
         "occurrences": "Occorrenza/e",
         "of": "di",
-        "revoke": "Revoca"
+        "revoke": "Revoca",
+        "calendar_color": "Colore calendario",
+        "enable_dlgtn_for_ical": "Abilita delega del Client Apple iCal CalDAV",
+        "apple_ical": "Apple iCal",
+        "auto_add_rcvd_app": "Aggiungi automaticamente al calendario gli appuntamenti ricevuti",
+        "calendar_setting": "Impostazioni Calendario",
+        "custom_repeat": "Ripetizione Personalizzata",
+        "day": "Giorno",
+        "proposal_declined": "Proposta rifiutata",
+        "edit_access": "Modifica l'accesso di {{name}}",
+        "add_share": "Aggiungi condivisione",
+        "create_appt_settings": "Crea Appuntamento",
+        "create_new_calendar": "Crea Nuovo Calendario",
+        "custom": "Personalizzato",
+        "days": "Giorni",
+        "default_appt_vsblty": "Visibilità appuntamento predefinita",
+        "default_view": "Vista predefinita",
+        "delete_permanently": "Elimina Definitivamente",
+        "dismiss": "ANNULLA",
+        "dismiss_plural": "ANNULLA TUTTO",
+        "edit_properties": "Modifica proprietà di {{name}}",
+        "edit_share": "Modifica condivisione",
+        "email_input_message": "Inserisci email",
+        "of_every": "di ogni",
+        "of_the_month,_every": "del mese, ogni",
+        "ongoing": "Continuo",
+        "share": "Condividi",
+        "outlook_url": "URL Outlook",
+        "permissions": "Permessi",
+        "regular": "Regolare",
+        "repeat": "Ripeti",
+        "restore_calednar": "Ripristina calendario",
+        "revoke_share": "Revoca condivisione di {{title}}",
+        "series": "Serie",
+        "set_new_time": "Imposta nuovo orario",
+        "show_declined_meetings": "Mostra appuntamenti rifiutati"
     },
     "action": {
         "send": "Invia",
@@ -121,7 +156,7 @@
         "share_calendar": "Condividi Calendario"
     },
     "button": {
-        "customize_modal": "Apri Personalizza Modale"
+        "customize_modal": "Personalizza"
     },
     "calendar": {
         "modal": {
@@ -151,7 +186,8 @@
             },
             "new": {
                 "duplicate_warning": "Esiste già un calendario con lo stesso nome",
-                "footer": "CREA"
+                "footer": "CREA",
+                "title2": "Creazione nuovo calendario"
             },
             "item": {
                 "empty": "Vuoto"
@@ -197,7 +233,8 @@
         "second": "Secondo",
         "third": "Terzo",
         "day": "Giorno",
-        "weekend_day": "Fine settimana"
+        "weekend_day": "Fine settimana",
+        "working_day": "Giorno lavorativo"
     },
     "snackbar": {
         "error": "Qualcosa è andato storto. riprova"
@@ -211,5 +248,14 @@
     "delete": "Elimina",
     "edit_share_properties": "Modifica proprietà di condivisione",
     "find_shares": "Trova condivisioni",
-    "insert": "Inserisci"
+    "insert": "Inserisci",
+    "share": {
+        "options": {
+            "share_calendar_with": {
+                "public": "Pubblico (solo visualizzazione, password non richiesta)",
+                "external_guests": "Invitati Esterni (solo visualizzazione)",
+                "internal_users_groups": "Utenti Interni o Gruppi"
+            }
+        }
+    }
 }
