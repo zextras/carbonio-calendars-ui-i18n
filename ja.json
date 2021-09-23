@@ -1,13 +1,28 @@
 {
     "message": {
-        "you": "あなた"
+        "you": "あなた",
+        "snackbar": {
+            "settings_saved": "編集が保存されました"
+        }
     },
     "action": {
         "save": "保存する",
         "delete": "削除する",
         "download": "ダウンロード",
         "create": "作成する",
-        "send": "送信"
+        "send": "送信",
+        "delete_calendar": "カレンダーを削除する",
+        "empty_trash": "ゴミ箱を空にする",
+        "preview": "クリックして別のタブでプレビューする",
+        "delete_permanently": "完全に削除する",
+        "edit_message": "メッセージを編集する",
+        "move_to_root": "ルートに移動する",
+        "new_calendar": "新しいカレンダー",
+        "save_to_preview": "保存してプレビューする",
+        "send_cancellation": "キャンセルを送信する",
+        "share_calendar": "カレンダーを共有する",
+        "calendar_access_share": "カレンダーへのアクセスシェア",
+        "edit_calendar_properties": "カレンダーのプロパティを編集する"
     },
     "event": {
         "action": {
@@ -17,11 +32,21 @@
             "restore": "復元する",
             "no": "いいえ",
             "trash": "削除する",
-            "yes": "はい"
+            "yes": "はい",
+            "decline": "拒否する",
+            "expand": "ディスプレイヤーで開く",
+            "tentative": "暫定"
         }
     },
     "items": {
-        "second": "秒"
+        "second": "秒",
+        "day": "日",
+        "first": "最初",
+        "fourth": "4番目",
+        "last": "最後",
+        "third": "3番目",
+        "weekend_day": "週末",
+        "working_day": "平日"
     },
     "label": {
         "end": "終わり",
@@ -42,7 +67,51 @@
         "save": "保存する",
         "share": "シェアする",
         "of": "の",
-        "subject": "件名"
+        "subject": "件名",
+        "invitation_not_sent": "まだ参加者に招待状を送信していません",
+        "all_calendars": "すべてのカレンダー",
+        "custom_repeat": "繰り返しをカスタマイズする",
+        "day": "日",
+        "days": "日",
+        "end_after": "終了する",
+        "add_share": "共有を追加する",
+        "all_day": "終日",
+        "apple_ical": "Apple iCal",
+        "attendee_plural": "出席者",
+        "auto_add_rcvd_app": "受信した予定をカレンダーに自動的に追加します",
+        "calendar": "カレンダー",
+        "calendar_color": "カレンダーの色",
+        "calendar_setting": "カレンダーの設定",
+        "cancelled": "キャンセルされました",
+        "create_appt_settings": "予定を作成する",
+        "create_new_calendar": "新しいカレンダーを作成する",
+        "default_appt_vsblty": "デフォルトの予定の可視性",
+        "default_view": "デフォルトビュー",
+        "delete_permanently": "完全に削除する",
+        "edit_access": "{{name}}のアクセスを編集する",
+        "dismiss": "すべて却下する",
+        "display": "表示",
+        "edit_properties": "{{name}}のプロパティを編集する",
+        "email_input_message": "メールアドレスを入力してください",
+        "enable_dlgtn_for_ical": "Apple iCal CalDAVクライアントの委任を有効にする",
+        "end_date": "終了日",
+        "end_date_and_time": "終了日時",
+        "every": "すべて",
+        "every_day": "毎日",
+        "every_weekday": "毎週平日",
+        "every_year_on": "毎年",
+        "filter_sharer_user": "共有者ユーザーのフィルター",
+        "find_shares": "カレンダーツリーに表示するカレンダーを選択します",
+        "free_busy": "空いている/忙しい",
+        "from": "送信者",
+        "ics_url": "ICS URL",
+        "instance": "実例",
+        "invites": "招待状",
+        "location": "場所",
+        "months": "月",
+        "no_end_date": "終了日がありません",
+        "resend": "再送信する",
+        "revoke": "取り消す"
     },
     "create": "作成する",
     "delete": "削除する",
@@ -53,12 +122,33 @@
                 "title": "削除する"
             },
             "move": {
-                "title": "移動"
+                "title": "移動",
+                "body": {
+                    "message3": "カレンダーを選択して、検討中の予定を以下に移動します:"
+                },
+                "footer": "空にする",
+                "input": {
+                    "filter": "カレンダーをフィルターする"
+                },
+                "new": "新しいカレンダー"
             },
             "restore": {
-                "title": "復元する"
+                "title": "復元する",
+                "footer": "作成と復元"
+            },
+            "new": {
+                "duplicate_warning": "同じ名前のカレンダーがすでに存在します",
+                "footer": "作成",
+                "title2": "新しいカレンダーの作成"
+            },
+            "item": {
+                "empty": "空にする"
+            },
+            "footer": {
+                "go_back": "戻る"
             }
-        }
+        },
+        "share_info": "情報を共有する"
     },
     "months": {
         "february": "2月",
@@ -108,16 +198,43 @@
     "calendar": {
         "modal": {
             "custom_schedule": {
-                "footer": "編集する"
+                "footer": "編集する",
+                "title": "勤務時間をカスタマイズする"
             }
         }
     },
     "snackbar": {
         "invite": {
             "error": "エラー"
-        }
+        },
+        "error": "エラーが発生しました。再度お試しください"
     },
     "success": "成功",
     "type": "タイプ",
-    "of": "の"
+    "of": "の",
+    "administer": "管理する",
+    "allowed_actions": "許可された操作",
+    "button": {
+        "customize_modal": "カスタマイズモーダルを開く"
+    },
+    "composer": {
+        "attachment": {
+            "contactsMod": "連絡先カードを追加する",
+            "draganddrop": {
+                "content": "添付ファイルをここにドロップして、予定に素早く追加できます",
+                "title": "ドラッグ＆ドロップモード"
+            },
+            "drive": "ドライブから追加する",
+            "local": "ローカルから追加する"
+        }
+    },
+    "cannot_edit_name": "システムカレンダーの名前は編集できません",
+    "edit_share_properties": "共有プロパティを編集する",
+    "find_calendar_shares": "カレンダーの共有を探す",
+    "find_shares": "共有を探す",
+    "freebusy": "FreeBusy",
+    "insert": "挿入する",
+    "search": {
+        "results_for": "検索結果:"
+    }
 }
