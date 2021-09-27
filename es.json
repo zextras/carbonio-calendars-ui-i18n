@@ -275,24 +275,116 @@
     "settings": {
         "options": {
             "dflt_vsblty_opt": {
-                "public": "Público"
+                "public": "Público",
+                "private": "Privado"
             },
             "show_reminder": {
-                "never": "Nunca"
+                "never": "Nunca",
+                "day_before": "1 día antes",
+                "day_before_plural": "{{count}} días antes",
+                "all_time": "Todo el tiempo del evento",
+                "hour_before": "1 hora antes",
+                "hour_before_plural": "{{count}} horas antes",
+                "minute_before": "1 minuto antes",
+                "minute_before_plural": "{{count}} minutos antes",
+                "week_before": "1 semana antes",
+                "week_before_plural": "{{count}} semanas antes"
+            },
+            "default_cal_opts": {
+                "calendar": "Calendario"
+            },
+            "default_view": {
+                "list": "Vista de lista",
+                "month": "Vista del mes",
+                "day": "Vista del día",
+                "work_week": "Vista de la semana laboral",
+                "week": "Vista de la semana"
+            },
+            "free_busy_opts": {
+                "allow_domain": "Permitir solo a los usuarios de mi dominio a ver mi información de libre/ocupado",
+                "allow_following": "Permitir solo a los siguientes usuarios internos ver mi información de libre/ocupado",
+                "allow_internal": "Permitir solo a los usuarios de los dominios internos ver mi información de libre/ocupado",
+                "allow_all": "Permitir tanto a los usuarios internos como externos ver mi información de libre/ocupado",
+                "allow_none": "No dejar que nadie vea mi información de libre/ocupado"
+            },
+            "invt_opts": {
+                "allow_all": "Permitir tanto a los usuarios internos como externos invitarme a mis reuniones",
+                "allow_following": "Permitir solo a los siguientes usuarios internos invitarme a reuniones",
+                "allow_internal": "Permitir solo a los usuarios internos invitarme a reuniones",
+                "allow_none": "No dejar que nadie me invite a reuniones"
+            },
+            "timezones": {
+                "chennai": "GMT +05:30 Chennai,Calcuta,Bombay,Nueva Delhi",
+                "egypt": "GMT +02:00 Egipto",
+                "amsterdam": "GMT +01:00 Ámsterdam,Berlín,Berna,Roma,Estocolmo,Viena"
+            },
+            "weekdays": {
+                "friday": "Viernes",
+                "monday": "Lunes",
+                "saturday": "Sábado",
+                "sunday": "Domingo",
+                "thursday": "Jueves",
+                "tuesday": "Martes",
+                "wednesday": "Miércoles"
             }
-        }
+        },
+        "label": {
+            "show_timezones": "Mostrar zona horaria al crear una nueva cita",
+            "snd_autorply_users": "Enviar autorespuesta a los usuarios que se niegan a invitarme",
+            "default_appt_dur": "Duración de la cita por defecto",
+            "default_calendar": "Calendario por defecto",
+            "delete_invt_on_rply": "Borrar invitación en la respuesta",
+            "enable_reminder_sound": "Reproducir un sonido (requiere QuickTime o el complemento de Windows Media)",
+            "enter_email": "Introducir dirección de correo electrónico",
+            "flash_browser_title": "Parpadear el título del navegador",
+            "forward_invites": "Enviar invitaciones",
+            "invitation_response": "Respuesta a invitación",
+            "show_popup_notification": "Mostrar una notificación emergente",
+            "show_reminders": "Mostrar recordatorios",
+            "show_rmndr_past_due_meetings": "Mostrar recordatorios para las reuniones atrasadas",
+            "span_time": "Periodo de tiempo"
+        },
+        "invalid_email": "No es un email válido",
+        "ical_note": "Apple iCal se puede configurar para acceder a tus Calendarios utilizando el protocolo CalDAV. Cuando este ajuste está activado, los calendarios compartidos se mostrarán en la pestaña de Delegación de iCal para que puedas delegar el acceso a tus Calendarios a otros usuarios.",
+        "permissions_note": "Los usuarios a continuación debe estar en este sistema de correo electrónico (zextras.com). Puedes usar la dirección completa de correo electrónico o solo el nombre de usuario."
     },
     "share": {
         "options": {
             "share_calendar_role": {
-                "none": "None"
+                "none": "None",
+                "viewer": "Visualizador (puede ver)",
+                "admin": "Administrador (puede ver, editar, quitar y administrar)",
+                "manager": "Gerente (puede ver, editar, añadir y quitar)"
+            },
+            "share_calendar_with": {
+                "external_guests": "Invitados externos (ver solo)",
+                "internal_users_groups": "Usuarios o grupos internos",
+                "public": "Público (ver solo, no se necesita contraseña)"
             }
+        },
+        "label": {
+            "allow_to_see_private_appt": "Permitir al/los usuario(s) ver mis citas privadas",
+            "send_notification": "Enviar notificaciones sobre este compartir"
+        },
+        "placeholder": {
+            "recipients_address": "Direcciones de correo electrónico de los destinatarios",
+            "standard_message": "Añadir nota al mensaje estándar"
+        },
+        "note": {
+            "share_note": "El mensaje estándar muestra tu nombre, el nombre del elemento compartido, los permisos otorgados a los destinatarios y la información de inicio de sesión, si fuera necesario."
         }
     },
     "snackbar": {
         "invite": {
             "error": "Error"
-        }
+        },
+        "error": "Algo fue mal, por favor, prueba de nuevo",
+        "new_time_proposed_error": "Algo fue mal, por favor, prueba de nuevo",
+        "new_time_proposed_succes": "Nueva hora propuesta",
+        "proposed_time_accepted": "Has aceptado la hora propuesta",
+        "share_folder_success": "Este calendario ha sido compartido",
+        "url_copied": "{{title}} copiado",
+        "proposed_time_error": "Algo fue mal, por favor, prueba de nuevo"
     },
     "success": "Éxito",
     "type": "Tipo",
@@ -387,5 +479,19 @@
         "organized_by": "organizado por",
         "results_for": "Resultados para:"
     },
-    "resend_mail_notification_about_this_share": "Reenviar notificación por correo de esta aportación"
+    "resend_mail_notification_about_this_share": "Reenviar notificación por correo de esta aportación",
+    "tooltip": {
+        "add_attachments": "Añadir adjuntos",
+        "copy_ics_url": "Copiar URL de ICS",
+        "copy_outlook_url": "Copiar URL de Outlook",
+        "copy_vector_url": "Copiar URL de Vista",
+        "enable_disable_rich_text": "Activar/Desactivar editor de texto enriquecido",
+        "show_optionals": "Mostrar opcionales"
+    },
+    "share_invite_resent": "Compartir invitación reenviado",
+    "shared_folders": "Calendarios compartidos",
+    "shared_items": "Elementos compartidos",
+    "shares_info": "Información de participaciones",
+    "workflow": "Flujo de trabajo",
+    "write": "Escribir"
 }
