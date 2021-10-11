@@ -28,7 +28,8 @@
         "share": "शेयर करें",
         "subject": "विषय",
         "custom": "कस्टम",
-        "now": "अभी"
+        "now": "अभी",
+        "all_day": "दिनभर"
     },
     "action": {
         "delete": "डिलीट करें",
@@ -119,5 +120,8 @@
         "second": "सेकंड"
     },
     "add": "जोड़ें",
-    "appointments": "अपॉइंट्मेंट"
+    "appointments": "अपॉइंट्मेंट",
+    "participants": {
+        "Accepted": "स्वीकार्य"
+    }
 }
