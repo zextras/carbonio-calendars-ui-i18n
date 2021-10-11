@@ -104,7 +104,8 @@
         "display": "प्रदर्शित करना",
         "set_new_time": "नया समय रखें",
         "sharing_of_this_folder": "इस फ़ोल्डर का साझाकरण",
-        "start_date_and_time": "प्रारम्भ तिथि और समय"
+        "start_date_and_time": "प्रारम्भ तिथि और समय",
+        "tentative": "संभावित"
     },
     "action": {
         "delete": "डिलीट करें",
