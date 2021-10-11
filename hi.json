@@ -30,8 +30,25 @@
         "subject": "विषय",
         "custom": "कस्टम",
         "now": "अभी",
-        "all_day": "दिनभर",
-        "to": "इन्हें भेजें"
+        "all_day": "पूरा दिन",
+        "to": "इन्हें भेजें",
+        "all_calendars": "सभी कैलेंडर",
+        "attendee_plural": "उपस्थित जन",
+        "add_share": "सहभाजी जोड़ें",
+        "apple_ical": "ऐपल आइकैल",
+        "day": "दिन",
+        "auto_add_rcvd_app": "आमंत्रण को कैलेंडर में स्वतः जोड़ें",
+        "calendar": "कैलेंडर",
+        "calendar_color": "कैलेंडर का रंग",
+        "calendar_setting": "कैलेंडर सेटिंग",
+        "cancelled": "रद्द",
+        "create_appt_settings": "समयादेश बनाएँ",
+        "create_new_calendar": "नया कैलेंडर बनाएँ",
+        "custom_repeat": "अपने अनुकूल दोहराना",
+        "days": "दिन",
+        "default_appt_vsblty": "डिफ़ॉल्ट समयादेश दृश्यता",
+        "default_view": "डिफ़ॉल्ट दृश्य",
+        "delete_permanently": "सदा के लिए मिटाएँ"
     },
     "action": {
         "delete": "डिलीट करें",
@@ -78,7 +95,8 @@
                 "title": "डिलीट करें"
             },
             "restore": {
-                "title": "वापस लाएँ"
+                "title": "वापस लाएँ",
+                "footer": "बनाएँ और वापस लाएँ"
             },
             "move": {
                 "title": "ले जाएँ",
@@ -102,7 +120,8 @@
                 "footer": "बनाएँ",
                 "title2": "नए कैलेंडर की रचना"
             }
-        }
+        },
+        "share_info": "जानकारी बाँटें"
     },
     "months": {
         "april": "अप्रैल",
@@ -157,7 +176,10 @@
         "first": "प्रथम",
         "fourth": "चौथा",
         "last": "अंतिम",
-        "third": "तीसरा"
+        "third": "तीसरा",
+        "weekend_day": "सप्ताहांत दिन",
+        "working_day": "कार्य दिवस",
+        "day": "दिन"
     },
     "add": "जोड़ें",
     "appointments": "अपॉइंट्मेंट",
@@ -183,5 +205,7 @@
     "cannot_edit_name": "आप सिस्टम कैलेंडर का नाम नहीं बदल सकते",
     "edit_share_properties": "शेयर गुणों में संशोधन",
     "find_calendar_shares": "साझा कैलेंडर खोजें",
-    "find_shares": "सहभाजी खोजें"
+    "find_shares": "सहभाजी खोजें",
+    "freebusy": "ख़ाली व्यस्त",
+    "insert": "सम्मिलित करना"
 }
