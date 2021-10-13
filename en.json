@@ -245,18 +245,18 @@
         "meeting_canceled": "The following meeting has been cancelled",
         "modal": {
             "delete": {
-                "sure_delete_appointment_all_instances_permanently": "This will delete all occurences of this appointment and you will not be able to recover it again, continue?",
+                "sure_delete_appointment_all_instances_permanently": "This will delete all occurrences of this appointment and you will not be able to recover them again, continue?",
                 "sure_delete_appointment_permanently": "By deleting permanently this appointment you will not be able to recover it anymore, continue?"
             }
         },
-        "share_calendar_url_msg": "You can quick share {{title}} with your collaborators using one of those URL:",
+        "share_calendar_url_msg": "You can quickly share {{title}} with your collaborators using one of these URLs:",
         "share_calendar_url_note": "Only your collaborators can access your data using these URLs.",
         "share_calendar_url_note2": "Only your collaborators can access your data using these URLs.<br/> You can find those links also right-clicking your calendars list.",
         "snackbar": {
             "appointment_permanently_deleted_error": "Something went wrong, please try again",
             "appointment_permanently_deleted_succesfully": "Permanent deletion completed successfully",
             "appt_deleted_error": "Something went wrong, please retry.",
-            "appt_moved": "Appointment moved successfully to ",
+            "appt_moved": "Appointment moved successfully to",
             "appt_moved_error": "Something went wrong, appointment not moved, please retry.",
             "appt_moved_to_trash": "Appointment moved to trash",
             "appt_restored": "Appointment restored successfully to",
@@ -365,7 +365,7 @@
         "weekly": "Weekly",
         "yearly": "Yearly"
     },
-    "resend_mail_notification_about_this_share": "Resend mail notification about this share",
+    "resend_mail_notification_about_this_share": "Send mail notification about this share",
     "revoke_access": "Revoke access",
     "revoke_with_custom_message": "Revoke access sending a custom notification",
     "revoke_without_custom_message": "Revoke access sending a standard notification",
@@ -378,7 +378,7 @@
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
         "invalid_email": "Not a valid email",
         "label": {
-            "default_appt_dur": "Default appointment duration",
+            "default_appt_dur": "Appointment's default duration",
             "default_calendar": "Default calendar",
             "delete_invt_on_rply": "Delete invite on reply",
             "enable_reminder_sound": "Play a sound (requires QuickTime or Windows Media plugin)",
@@ -390,7 +390,7 @@
             "show_reminders": "Show Reminders",
             "show_rmndr_past_due_meetings": "Show reminders for past-due meetings",
             "show_timezones": "Show time zone while creating new appointment",
-            "snd_autorply_users": "Send auto-reply to users who are denied from inviting me",
+            "snd_autorply_users": "Send auto-reply to users who are not allowed to invite me",
             "span_time": "Span time"
         },
         "options": {
@@ -456,7 +456,7 @@
             "send_notification": "Send notification about this share"
         },
         "note": {
-            "share_note": "The standard message displays your name, the name of the shared item, pemissions granted to the recipients, and sign in information, if necessary."
+            "share_note": "The standard message displays your name, the name of the shared item, permissions granted to the recipients, and sign-in information."
         },
         "options": {
             "share_calendar_role": {
