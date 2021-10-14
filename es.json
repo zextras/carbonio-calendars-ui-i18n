@@ -371,7 +371,7 @@
             "standard_message": "Añadir nota al mensaje estándar"
         },
         "note": {
-            "share_note": "El mensaje estándar muestra tu nombre, el nombre del elemento compartido, los permisos otorgados a los destinatarios y la información de inicio de sesión, si fuera necesario."
+            "share_note": "El mensaje estándar muestra tu nombre, el nombre del elemento compartido, los permisos otorgados a los destinatarios y la información de inicio de sesión."
         }
     },
     "snackbar": {
@@ -397,7 +397,7 @@
         "you_will_see_the_subject_here": "Verás el asunto de esta cita aquí",
         "have_not_sent_invitation": "Aún no has enviado la invitación a los asistentes",
         "snackbar": {
-            "appt_moved": "Cita movida con éxito a ",
+            "appt_moved": "Cita movida con éxito a",
             "appt_moved_error": "Algo fue mal, cita no movida, por favor, inténtalo de nuevo.",
             "appointment_permanently_deleted_error": "Algo fue mal, por favor, prueba de nuevo",
             "appointment_permanently_deleted_succesfully": "Borrado permanente completado con éxito",
@@ -479,7 +479,7 @@
         "organized_by": "organizado por",
         "results_for": "Resultados para:"
     },
-    "resend_mail_notification_about_this_share": "Reenviar notificación por correo de esta aportación",
+    "resend_mail_notification_about_this_share": "Enviar notificación por correo de esta aportación",
     "tooltip": {
         "add_attachments": "Añadir adjuntos",
         "copy_ics_url": "Copiar URL de ICS",
