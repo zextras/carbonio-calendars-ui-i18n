@@ -60,7 +60,7 @@
         "somebody_is_organizer": "<strong> {{кто-то}} </strong> - организатор",
         "are_organizer": "Организатор",
         "snackbar": {
-            "appt_moved": "Встреча успешно перенесена ",
+            "appt_moved": "Встреча успешно перенесена",
             "appt_moved_error": "Что-то пошло не так, встреча не перенесена. Повторите попытку.",
             "settings_saved": "Правки сохранены",
             "appt_moved_to_trash": "Встреча перенесена в корзину",
@@ -100,7 +100,7 @@
         "delete_all_occurences": "Удалить все встречи",
         "sure_to_delete_appointment_permanently": "Вы действительно хотите удалить эту встречу навсегда?",
         "want_to_edit_cancellation_msg": "Вы хотите отредактировать сообщение об отмене встречи?",
-        "delete_future_occurences_warning": "Это также удалит все исключения (до и после этого экземпляра) в серии",
+        "delete_future_occurences_warning": "Это удалит все исключения (до и после этой встречи) в ряде",
         "delete_future_occurences": "Удалить эту встречу и все будущие встречи",
         "sure_to_delete_all_occurences_appointment": "Вы уверены, что хотите удалить эту встречу?"
     },
@@ -197,7 +197,7 @@
         "dismiss_capitalize": "Закрыть",
         "email_input_message": "Введите адреса электронной почты",
         "invites": "Приглашения",
-        "shares_items": "Общие календари {{value}}",
+        "shares_items": "{{value}}Общие календари",
         "dismiss_0": "Отклонить",
         "dismiss_1": "Отклонить",
         "dismiss_2": "Отклонить",
@@ -224,7 +224,8 @@
         "of_the_month,_every": "месяца, каждый",
         "series": "Серии",
         "revoke_share": "Отозвать доступ {{title}}",
-        "weeks_on": ""
+        "weeks_on": "Еженедельно",
+        "occurrences": "Повторение(я)"
     },
     "tooltip": {
         "show_optionals": "Показать опции",
@@ -349,7 +350,7 @@
             "default_calendar": "Календарь по умолчанию",
             "enable_reminder_sound": "Воспроизвести звук (требуется плагин QuickTime или Windows Media)",
             "show_rmndr_past_due_meetings": "Показывать напоминания о просроченных встречах",
-            "snd_autorply_users": "Отправлять автоответ пользователям, которым отказано в приглашении",
+            "snd_autorply_users": "Отправлять автоответ пользователям, которым не разрешено меня приглашать",
             "flash_browser_title": "Мигающий заголовок в браузере"
         },
         "options": {
@@ -465,7 +466,7 @@
             }
         },
         "note": {
-            "share_note": "В стандартном сообщении отображается ваше имя, имя общего элемента, разрешения, предоставленные получателям, и информация для входа, если это необходимо."
+            "share_note": "В стандартном сообщении отображается ваше имя, имя общего элемента, разрешения, предоставленные получателям, и информация для входа."
         },
         "label": {
             "allow_to_see_private_appt": "Разрешить пользователям видеть мои личные встречи",
@@ -499,7 +500,7 @@
     "appointments": "Встречи",
     "edit_share_properties": "Изменить разрешения общего ресурса",
     "find_calendar_shares": "Найти общий календарь",
-    "resend_mail_notification_about_this_share": "Повторно выслать уведомление о доступе к файлам",
+    "resend_mail_notification_about_this_share": "Отправить уведомление о доступе к файлам",
     "revoke_access": "Отменить доступ",
     "revoke_without_notification": "Отозвать доступ без отправки уведомления",
     "search": {
