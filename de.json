@@ -23,7 +23,8 @@
             "calendar_moved_to_trash_error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut",
             "edit_calendar_error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut",
             "new_calendar_create_error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut",
-            "new_calendar_created": "Neuer Kalender erstellt"
+            "new_calendar_created": "Neuer Kalender erstellt",
+            "edit_calendar": "Änderungen korrekt gespeichert"
         },
         "are_organizer": "sind der Organisator",
         "somebody_invited_you": "<strong>{{somebody}}</strong> hat Sie eingeladen",
@@ -52,7 +53,8 @@
         "you_sure_delete_calendar": "Sind Sie sicher, dass Sie den \"{{name}}\" Kalender endgültig löschen möchten?",
         "you_sure_move_calendar_trash": "Sind Sie sicher, dass Sie den \"{{name}}\" Kalender löschen möchten?",
         "you_will_see_the_subject_here": "Hier werden Sie den Betreff des Termins sehen",
-        "share_calendar_url_msg": "Sie können {{title}} schnell mit Ihren Kollegen teilen, indem Sie einen dieser URLs benutzen:"
+        "share_calendar_url_msg": "Sie können {{title}} schnell mit Ihren Kollegen teilen, indem Sie einen dieser URLs benutzen:",
+        "you": "Sie"
     },
     "label": {
         "invitation_not_sent": "Sie haben die Einladung noch nicht an die Teilnehmer geschickt",
@@ -129,7 +131,49 @@
         "weeks_on": "Wochen in",
         "work_hour": "Arbeitsstunde",
         "work_week": "Arbeitswoche",
-        "your_pref_timezone_msg": "Ihre bevorzugte Zeitzone ist: GMT +01:00 Amsterdam, Berlin, Bern, Rom, Stockholm, Wien."
+        "your_pref_timezone_msg": "Ihre bevorzugte Zeitzone ist: GMT +01:00 Amsterdam, Berlin, Bern, Rom, Stockholm, Wien.",
+        "all_day": "Ganztägig",
+        "attendee_plural": "Teilnehmer",
+        "attachment": "Anhang",
+        "attachment_plural": "",
+        "tentative": "Vorläufig",
+        "to": "An",
+        "calendar": "Kalender",
+        "cancel": "Abbrechen",
+        "custom": "Benutzerdefiniert",
+        "days": "Tage",
+        "delete_permanently": "Endgültig löschen",
+        "dismiss_capitalize": "Abweisen",
+        "download": "Download",
+        "download_plural": "",
+        "edit": "Bearbeiten",
+        "every": "Jeden",
+        "every_day": "Jeden Tag",
+        "free": "Kostenlos",
+        "from": "von",
+        "location": "Ort",
+        "month": "Monat",
+        "no_end_date": "Kein Enddatum",
+        "now": "Jetzt",
+        "number": "Nummer",
+        "of": "von",
+        "permissions": "Berechtigungen",
+        "private": "Privat",
+        "reminder": "Erinnerung",
+        "remove": "Löschen",
+        "remove_plural": "",
+        "repeat": "Wiederholen",
+        "required": "Erforderlich",
+        "save": "Speichern",
+        "share": "Teilen",
+        "subject": "Betreff",
+        "edit_share": "Teil bearbeiten",
+        "end": "Ende",
+        "end_after": "Ende nach",
+        "busy": "Beschäftigt",
+        "optional": "Optional",
+        "optional_plural": "",
+        "out_of_office": "Nicht im Büro"
     },
     "participants": {
         "Invited_Visitor": "wurden eingeladen",
@@ -147,7 +191,13 @@
         "Attendees_tentative_count": "<strong>1 Teilnehmer </strong> hat vorläufig zugesagt",
         "Attendees_tentative_count_plural": "<strong>{{count}} Teilnehmer </strong> haben vorläufig zugesagt",
         "Not_answered": "haben nicht genantwortet",
-        "Tentative": "vorläufig zugesagt"
+        "Tentative": "vorläufig zugesagt",
+        "Declined": "abgelehnt",
+        "Accepted": "akzeptiert",
+        "NE_with_count": "Vorläufig",
+        "NE_with_count_plural": "",
+        "TE_with_count": "Abgelehnt",
+        "TE_with_count_plural": ""
     },
     "action": {
         "create": "Erstellen",
@@ -240,7 +290,12 @@
     "items": {
         "day": "Tag",
         "weekend_day": "Wochendtag",
-        "working_day": "Werktag"
+        "working_day": "Werktag",
+        "first": "Erster",
+        "fourth": "Vierter",
+        "last": "Letzter",
+        "second": "Sekunde",
+        "third": "Dritter"
     },
     "add": "Hinzufügen",
     "administer": "Verwalten",
@@ -267,7 +322,8 @@
         "minute_before": "{{count}} Minute früher",
         "minute_before_plural": "{{count}} Minuten früher",
         "week_before": "{{count}} Woche früher",
-        "week_before_plural": "{{count}} Wochen früher"
+        "week_before_plural": "{{count}} Wochen früher",
+        "never": "Niemals"
     },
     "remove_from_this_list": "Aus der Liste entfernen",
     "repeat": {
@@ -275,7 +331,13 @@
         "everyDay": "Jeden Tag",
         "everyMonth": "Jeden Monat",
         "everyWeek": "Jede Woche",
-        "everyYear": "Jedes Jahr"
+        "everyYear": "Jedes Jahr",
+        "custom": "Benutzerdefiniert",
+        "daily": "Täglich",
+        "monthly": "Monatlich",
+        "none": "Keine",
+        "weekly": "Wöchentlich",
+        "yearly": "Jährlich"
     },
     "revoke_access": "Zugriff widerrufen",
     "revoke_with_custom_message": "Zugriff widerrufen mit einer benutzerdefinierten Benachrichtigung",
@@ -285,6 +347,18 @@
         "invalid_email": "Keine gültige E-Mail",
         "label": {
             "default_calendar": "Standardkalender"
+        },
+        "options": {
+            "dflt_vsblty_opt": {
+                "private": "Privat",
+                "public": "Öffentlich"
+            },
+            "show_reminder": {
+                "never": "Niemals"
+            },
+            "default_cal_opts": {
+                "calendar": "Kalender"
+            }
         }
     },
     "share": {
@@ -293,7 +367,36 @@
                 "external_guests": "Externe Gäste (nur Leserecht)",
                 "internal_users_groups": "Interne Benutzer oder Gruppen",
                 "public": "Öffentlich (nur Leserecht, kein Passwort erforderlich)"
+            },
+            "share_calendar_role": {
+                "none": "Keine"
             }
         }
-    }
+    },
+    "months": {
+        "august": "August",
+        "december": "Dezember",
+        "february": "Februar",
+        "january": "Januar",
+        "july": "Juli",
+        "may": "Mai",
+        "november": "November",
+        "october": "Oktober",
+        "september": "September",
+        "march": "März",
+        "april": "April",
+        "june": "Juni"
+    },
+    "of": "von",
+    "owner": "Besitzer",
+    "private": "Privat",
+    "read": "Gelesen",
+    "type": "Typ",
+    "snackbar": {
+        "invite": {
+            "error": "Fehler"
+        },
+        "error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut"
+    },
+    "success": "Erfolg"
 }
