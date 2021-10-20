@@ -346,7 +346,20 @@
     "settings": {
         "invalid_email": "Keine gültige E-Mail",
         "label": {
-            "default_calendar": "Standardkalender"
+            "default_calendar": "Standardkalender",
+            "snd_autorply_users": "Automatische Antworten an Nutzer schicken, die keine Erlaubnis haben, mich einzuladen",
+            "show_reminders": "Erinnerungen zeigen",
+            "span_time": "Zeitspanne",
+            "default_appt_dur": "Standarddauer für Termine",
+            "delete_invt_on_rply": "Einladung nach Antwort löschen",
+            "enable_reminder_sound": "Einen Sound spielen (erfordert QuickTime oder Windows Media Plugin)",
+            "enter_email": "E-Mail Adresse eingeben",
+            "flash_browser_title": "Browser Titel beleuchten",
+            "forward_invites": "Einladungen weiterleiten",
+            "invitation_response": "Einladungsantwort",
+            "show_popup_notification": "Eine Popup-Benachrichtigung anzeigen",
+            "show_rmndr_past_due_meetings": "Erinnerungen für überfällige Meetings zeigen",
+            "show_timezones": "Zeitzone beim Erstellen eines neuen Termins zeigen"
         },
         "options": {
             "dflt_vsblty_opt": {
@@ -354,12 +367,57 @@
                 "public": "Öffentlich"
             },
             "show_reminder": {
-                "never": "Niemals"
+                "never": "Niemals",
+                "all_time": "die ganze Zeit des Events",
+                "day_before": "1 Tag früher",
+                "day_before_plural": "{{count}} Tage früher",
+                "hour_before": "1 Stunde früher",
+                "hour_before_plural": "{{count}} Stunden früher",
+                "minute_before": "1 Minute früher",
+                "minute_before_plural": "{{count}} Minuten früher",
+                "week_before": "1 Woche früher",
+                "week_before_plural": "{{count}} Wochen früher"
             },
             "default_cal_opts": {
                 "calendar": "Kalender"
+            },
+            "free_busy_opts": {
+                "allow_following": "Nur den folgenden internen Nutzern erlauben, meine frei/beschäftigt Informationen zu sehen",
+                "allow_all": "Sowohl internen also auch externen Nutzer erlauben, meine frei/beschäftigt Informationen zu sehen",
+                "allow_domain": "Nur Nutzern meiner Domain erlauben, meine frei/beschäftigt Informationen zu sehen",
+                "allow_internal": "Nur Nutzern interner Domains erlauben, meine frei/beschäftigt Informationen zu sehen",
+                "allow_none": "Niemandem erlauben, meine frei/beschäftigt Informationen zu sehen"
+            },
+            "invt_opts": {
+                "allow_none": "Niemandem erlauben, mich zu Meetings einzuladen",
+                "allow_following": "Nur den folgenden internen Nutzern erlauben, mich zu Meetings einzuladen",
+                "allow_internal": "Nur internen Nutzern erlauben, mich zu Meetings einzuladen",
+                "allow_all": "Sowohl internen also auch externen Nutzer erlauben, mich zu Meetings einzuladen"
+            },
+            "timezones": {
+                "amsterdam": "GMT +01:00 Amsterdam,Berlin,Bern,Rom,Stockholm,Wien",
+                "chennai": "GMT +05:30 Chennai,Kalkutta,Mumbai,NeuDelhi",
+                "egypt": "GMT +02:00 Ägypten"
+            },
+            "default_view": {
+                "day": "Tagesansicht",
+                "list": "Listenansicht",
+                "month": "Monatsansicht",
+                "week": "Wochenansicht",
+                "work_week": "Arbeitswochenansicht"
+            },
+            "weekdays": {
+                "friday": "Freitag",
+                "monday": "Montag",
+                "saturday": "Samstag",
+                "sunday": "Sonntag",
+                "thursday": "Donnerstag",
+                "tuesday": "Dienstag",
+                "wednesday": "Mittwoch"
             }
-        }
+        },
+        "permissions_note": "Nutzer müssen aus diesem E-Mail System stammen (zextras.com). Sie können die vollständige E-Mail Adresse nutzen oder nur den Benutzername.",
+        "ical_note": "Apple iCal kann eingerichtet werden, um Ihre Kalender mit Hilfe des CalDAV Protokolls zu nutzen.Wenn diese Präferenz aktiviert ist, werden geteilte Kalender im iCal Konten- Delegationsreiter angezeigt, damit Sie anderen Nutzern Zugriff auf Ihre Kalender geben können."
     },
     "share": {
         "options": {
@@ -369,8 +427,22 @@
                 "public": "Öffentlich (nur Leserecht, kein Passwort erforderlich)"
             },
             "share_calendar_role": {
-                "none": "Keine"
+                "none": "Keine",
+                "admin": "Admin (kann sehen, bearbeiten, hinzufügen, entfernen und verwalten)",
+                "manager": "Manager (kann sehen, bearbeiten, hinzufügen und entfernen)",
+                "viewer": "Zuschauer (kann sehen)"
             }
+        },
+        "note": {
+            "share_note": "Die Standardnachricht zeigt Ihren Namen, den Namen des geteilten Elements, die verteilten Rechte für die Empfänger und Anmeldeinformationen."
+        },
+        "label": {
+            "allow_to_see_private_appt": "Nutzer(n) erlauben, meine privaten Termine zu sehen",
+            "send_notification": "Benachrichtigung über dieses geteilte Element senden"
+        },
+        "placeholder": {
+            "recipients_address": "E-Mail Adressen der Empfänger",
+            "standard_message": "Notiz zur Standardnachricht hinzufügen"
         }
     },
     "months": {
@@ -396,7 +468,30 @@
         "invite": {
             "error": "Fehler"
         },
-        "error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut"
+        "error": "Etwas ist schiefgegangen, bitte versuchen Sie es erneut",
+        "new_time_proposed_error": "Etwas ist schiefgegangen,bitte versuchen Sie es erneut",
+        "new_time_proposed_succes": "Neue Zeit vorgeschlagen",
+        "proposed_time_accepted": "Sie haben die vorgeschlagene Zeit zugesagt",
+        "proposed_time_error": "Etwas ist schiefgegangen,bitte versuchen Sie es erneut",
+        "share_folder_success": "Dieser Kalender wurde geteilt",
+        "url_copied": "{{title}} kopiert"
     },
-    "success": "Erfolg"
+    "success": "Erfolg",
+    "button": {
+        "customize_modal": "Modal anpassen öffnen"
+    },
+    "tooltip": {
+        "show_optionals": "Optionale anzeigen",
+        "add_attachments": "Anhänge einfügen",
+        "copy_ics_url": "ICS URL kopieren",
+        "copy_outlook_url": "Outlook URL kopieren",
+        "copy_vector_url": "View URL kopieren",
+        "enable_disable_rich_text": "Rich Text Editor aktivieren/ deaktivieren"
+    },
+    "share_invite_resent": "Einladung zum Teilen erneut gesendet",
+    "shared_folders": "Geteilte Kalender",
+    "shared_items": "Geteilte Elemente",
+    "shares_info": "Informationen zu geteiltem Zugriff",
+    "workflow": "WorkFlow",
+    "write": "Schreiben"
 }
