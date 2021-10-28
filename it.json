@@ -211,7 +211,8 @@
         "work_hour": "Orario lavorativo",
         "work_week": "Settimana lavorativa",
         "timezone_pref_msg": "Gli orari seguono le impostazioni relative al tuo fuso orario.",
-        "your_pref_timezone_msg": "Il tuo fuso orario predefinito è: GMT +01:00 Amsterdam, Berlino, Berna, Roma, Stoccolma, Vienna."
+        "your_pref_timezone_msg": "Il tuo fuso orario predefinito è: GMT +01:00 Amsterdam, Berlino, Berna, Roma, Stoccolma, Vienna.",
+        "shares_items": "calendari condivisi di {{value}}"
     },
     "action": {
         "send": "Invia",
