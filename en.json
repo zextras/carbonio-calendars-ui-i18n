@@ -154,6 +154,7 @@
         "end_after": "End after",
         "end_date": "End date",
         "end_date_and_time": "End date and time",
+        "event_title": "Event's title",
         "every": "Every",
         "every_day": "Every day",
         "every_weekday": "Every weekday",
@@ -162,7 +163,6 @@
         "find_shares": "Select which calendars you want to see in calendars tree",
         "free": "Free",
         "free_busy": "Free/Busy",
-        "from": "From",
         "general": "General",
         "ics_url": "ICS URL",
         "instance": "Instance",
@@ -199,6 +199,7 @@
         "revoke": "Revoke",
         "revoke_share": "Revoke share of {{title}}",
         "save": "Save",
+        "search_hint": "",
         "select_in": "",
         "series": "Series",
         "set_new_time": "Set new time",
@@ -218,7 +219,6 @@
         "the": "The",
         "time_zones": "Time Zones",
         "timezone_pref_msg": "The timings follow your timezone preferences.",
-        "to": "To",
         "type_name_here": "Calendar name",
         "view_url": "View URL",
         "week": {
@@ -243,6 +243,7 @@
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
         "invited_you": "invited you to an event",
+        "location": "location",
         "meeting_canceled": "The following meeting has been cancelled",
         "modal": {
             "delete": {
@@ -250,6 +251,7 @@
                 "sure_delete_appointment_permanently": "By deleting permanently this appointment you will not be able to recover it anymore, continue?"
             }
         },
+        "search_hints": "",
         "share_calendar_url_msg": "You can quick share {{title}} with your collaborators using one of those URL:",
         "share_calendar_url_note": "Only your collaborators can access your data using these urls.",
         "share_calendar_url_note2": "Only your collaborators can access your data using these urls.<br/> You can find those links also right-clicking your calendars list.",
@@ -293,6 +295,9 @@
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
         "you_sure_move_calendar_trash": "Are you sure you want to  delete the \"{{name}}\" calendar?",
         "you_will_see_the_subject_here": "You will see the subject of this appointment here"
+    },
+    "messages": {
+        "format_as_plain_text": "Format as Plain Text"
     },
     "months": {
         "april": "April",
@@ -367,13 +372,13 @@
         "yearly": "Yearly"
     },
     "resend_mail_notification_about_this_share": "Resend mail notification about this share",
+    "results_for": "Results for:",
     "revoke_access": "Revoke access",
     "revoke_with_custom_message": "Revoke access sending a custom notification",
     "revoke_without_custom_message": "Revoke access sending a standard notification",
     "revoke_without_notification": "Revoke access without sending a notification",
     "search": {
-        "organized_by": "organized by",
-        "results_for": "Results for:"
+        "organized_by": "organized by"
     },
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
@@ -499,8 +504,7 @@
         "copy_ics_url": "Copy ICS url",
         "copy_outlook_url": "Copy Outlook url",
         "copy_vector_url": "Copy View url",
-        "enable_disable_rich_text": "Enable/Disable rich text editor",
-        "show_optionals": "Show optionals"
+        "enable_disable_rich_text": "Enable/Disable rich text editor"
     },
     "type": "Type",
     "workflow": "WorkFlow",
