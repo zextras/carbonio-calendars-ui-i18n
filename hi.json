@@ -127,7 +127,8 @@
         "share_calendar": "कैलेंडर साझा करें"
     },
     "message": {
-        "you": "आप"
+        "you": "आप",
+        "have_not_sent_invitation": "आपने अभी तक आमंत्रण नहीं भेजा है"
     },
     "create": "बनाएँ",
     "delete": "डिलीट करें",
@@ -202,15 +203,23 @@
     },
     "repeat": {
         "custom": "कस्टम",
-        "none": "कोई नहीं"
+        "none": "कोई नहीं",
+        "daily": "प्रतिदिन",
+        "monthly": "मासिक",
+        "weekly": "साप्ताहिक",
+        "yearly": "वार्षिक"
     },
     "settings": {
         "options": {
             "dflt_vsblty_opt": {
-                "public": "पब्लिक"
+                "public": "पब्लिक",
+                "private": "निजी"
             },
             "show_reminder": {
                 "never": "कभी नहीं"
+            },
+            "default_cal_opts": {
+                "calendar": "कैलेंडर"
             }
         }
     },
@@ -241,7 +250,11 @@
     "add": "जोड़ें",
     "appointments": "अपॉइंट्मेंट",
     "participants": {
-        "Accepted": "स्वीकार्य"
+        "Accepted": "स्वीकार्य",
+        "NE_with_count": "संभावित",
+        "NE_with_count_plural": "",
+        "TE_with_count": "अस्वीकृत",
+        "TE_with_count_plural": ""
     },
     "button": {
         "customize_modal": "अनुरूप बनाने का मोडल खोलें"
@@ -264,5 +277,6 @@
     "find_calendar_shares": "साझा कैलेंडर खोजें",
     "find_shares": "सहभाजी खोजें",
     "freebusy": "ख़ाली व्यस्त",
-    "insert": "सम्मिलित करना"
+    "insert": "सम्मिलित करना",
+    "private": "निजी"
 }
