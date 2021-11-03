@@ -80,7 +80,7 @@
                 "title": "Sil"
             }
         },
-        "share_info": "Bilgi Paylaş"
+        "share_info": "Paylaşım Bilgisi"
     },
     "items": {
         "day": "Gün",
@@ -124,7 +124,19 @@
             "calendar_delete_error": "Bir hata oluştu, lütfen tekrar deneyin.",
             "calendar_deleted_successfully": "Takvim başarıyla silindi.",
             "calendar_moved_to_root_folder": "Takvim Kök klasöre taşındı",
-            "calendar_moved_to_root_folder_error": "Bir hata oluştu, lütfen tekrar deneyin"
+            "calendar_moved_to_root_folder_error": "Bir hata oluştu, lütfen tekrar deneyin",
+            "calendar_moved_to_trash": "Takvim çöp kutusuna taşındı",
+            "edit_calendar": "Değişiklikler başarıyla kaydedildi",
+            "invite": {
+                "accept": "Kabul edildi olarak yanıtladınız",
+                "error": "Bir hata oluştu, lütfen tekrar deneyin.",
+                "decline": "Reddedildi olarak yanıtladınız",
+                "tentative": "Belirsiz olarak yanıtladınız"
+            },
+            "new_calendar_created": "Yeni takvim oluşturuldu",
+            "calendar_moved_to_trash_error": "Bir hata oluştu, lütfen tekrar deneyin",
+            "edit_calendar_error": "Bir hata oluştu, lütfen tekrar deneyin",
+            "new_calendar_create_error": "Bir hata oluştu, lütfen tekrar deneyin"
         },
         "are_organizer": "organize eden",
         "meeting_canceled": "Bu toplantı iptal edildi",
@@ -142,13 +154,35 @@
         "invite_has_no_message": "Bu davette yazılı mesaj yok",
         "invited_you": "sizi bir etkinliğe davet etti",
         "share_calendar_url_msg": "Bu URL bağlantılarından birisini kullanarak {{title}} kolayca paylaşabilirsiniz:",
-        "share_calendar_url_note2": "Bu URL bağlantılarını kullanarak yanlızca katılımcılar veriye erişebilir.<br/> Takvim listenizde sağ tıkladığınızda da bu bağlantıları görebilirsiniz."
+        "share_calendar_url_note2": "Bu URL bağlantılarını kullanarak yanlızca katılımcılar veriye erişebilir.<br/> Takvim listenizde sağ tıkladığınızda da bu bağlantıları görebilirsiniz.",
+        "somebody_is_organizer": "<strong>{{somebody}}</strong> organize eden kişi",
+        "somebody_invited_you": "<strong>{{somebody}}</strong> sizi davet etti",
+        "sure_to_delete_all_occurences_appointment": "Bu randevunun tüm tekrarlamalarını silmek istediğinizden emin misiniz?",
+        "want_to_send_cancellation_msg": "Katılımcılara iptal mesajı göndermek istiyor musunuz?",
+        "sure_to_delete_appointment": "Randevuyu silmek istediğinizden emin misiniz?",
+        "sure_to_delete_appointment_permanently": "Bu randevuyu kalıcı olarak silmek istediğinizden emin misiniz?",
+        "want_to_edit_cancellation_msg": "Randevu iptal mesajını düzenlemek istiyor musunuz?",
+        "you": "Siz",
+        "you_are_organizer": "Sizin organize ettiğiniz",
+        "you_sure_delete_calendar": "\"{{name}}\" takvimi tamamen silmek istediğinizden emin misiniz?",
+        "you_sure_move_calendar_trash": "\"{{name}}\" takvimi silmek istediğinizden emin misiniz?",
+        "you_will_see_the_subject_here": "Randevunun başlığını burada göreceksiniz"
     },
     "search": {
-        "results_for": "Sonuçlar:"
+        "results_for": "Sonuçlar:",
+        "organized_by": "Organize eden"
     },
     "snackbar": {
-        "error": "Bir hata oluştu, lütfen tekrar deneyin"
+        "error": "Bir hata oluştu, lütfen tekrar deneyin",
+        "invite": {
+            "error": "Hata"
+        },
+        "new_time_proposed_succes": "Yeni saat önerildi",
+        "proposed_time_accepted": "Önerilen saati kabul ettiniz",
+        "share_folder_success": "Bu takvim paylaşıldı",
+        "url_copied": "{{title}} kopyalandı",
+        "new_time_proposed_error": "Bir hata oluştu, lütfen tekrar deneyin",
+        "proposed_time_error": "Bir hata oluştu, lütfen tekrar deneyin"
     },
     "label": {
         "invitation_not_sent": "Katılımcılara henüz davet göndermediniz",
@@ -266,6 +300,198 @@
         },
         "weeks_on": "Hafta",
         "work_hour": "Çalışma saatleri",
-        "work_week": "Çalışma haftası"
-    }
+        "work_week": "Çalışma günleri",
+        "the": " "
+    },
+    "resend_mail_notification_about_this_share": "Bu paylaşım hakkında posta bildirimi gönder",
+    "participants": {
+        "Attendees_not_answered_count": "<strong>1 katılımcı </strong> yanıtlamadı",
+        "Attendees_not_answered_count_plural": "<strong>{{count}} katılımcı </strong> yanıtlamadı",
+        "AC_with_count": "Kabul edildi",
+        "AC_with_count_plural": "Kabul edildi ({{count}})",
+        "Attendees_declined_count": "<strong>1 katılımcı </strong> reddetti",
+        "Attendees_declined_count_plural": "<strong>{{count}} katılımcı </strong> reddetti",
+        "Attendees_accepted_count": "<strong>1 katılımcı </strong> kabul etti",
+        "Attendees_accepted_count_plural": "<strong>{{count}} katılımcı </strong> kabul etti",
+        "Attendees_tentative_count": "<strong>1 katılımcı </strong> belirsiz olarak kabul etti",
+        "Attendees_tentative_count_plural": "<strong>{{count}} katılımcı </strong> belirsiz olarak kabul etti",
+        "DE_with_count": "Yanıtlamadı (1)",
+        "DE_with_count_plural": "Yanıtlamadı ({{count}})",
+        "Declined": "reddetti",
+        "Invited_Visitor": "davet edildi",
+        "NE_with_count": "Belirsiz",
+        "NE_with_count_plural": "Belirsiz ({{count}})",
+        "Not_answered": "yanıtlamadı",
+        "TE_with_count": "Reddetti",
+        "TE_with_count_plural": "Reddetti ({{count}})",
+        "Tentative": "belirsiz olarak kabul etti",
+        "visitors": "ve diğer {{others}} katılımcı",
+        "Accepted": "kabul edildi"
+    },
+    "tooltip": {
+        "show_optionals": "İsteğe bağlıları göster",
+        "add_attachments": "Eklenti ekle",
+        "enable_disable_rich_text": "Gelişmiş metin düzenleyici kullan/kullanma",
+        "copy_ics_url": "ICS url kopyala",
+        "copy_outlook_url": "Outlook url kopyala",
+        "copy_vector_url": "View url kopyala"
+    },
+    "revoke_with_custom_message": "Özel bildirim göndererek erişim yetkisini kaldır",
+    "settings": {
+        "ical_note": "Apple iCal, CalDAV protokolü kullanılarak takvimlerinize erişim için yapılandırılabilir. Bu seçildiğinde paylaşılan takvimler ical hesabının Deligation sekmesinde görüntülenir ve Takvimlerinizi diğer kullanıcılarla erişime açabilirsiniz.",
+        "label": {
+            "snd_autorply_users": "Beni davet etme izni olmayan kullanıcılara otomatik yanıt gönder",
+            "default_appt_dur": "Randevunun varsayılan süresi",
+            "default_calendar": "Varsayılan takvim",
+            "delete_invt_on_rply": "Daveti yanıtlandıktan sonra sil",
+            "enable_reminder_sound": "Ses ile uyar (QuickTime veya Windows Media eklentisi gerekir)",
+            "enter_email": "E-posta adresi gir",
+            "flash_browser_title": "Tarayıcı başlığında flaş uyarısı",
+            "forward_invites": "Davetleri yönlendir",
+            "invitation_response": "Davet Yanıtı",
+            "show_popup_notification": "Açılan bildirim göster",
+            "show_reminders": "Hatırlatmaları göster",
+            "show_rmndr_past_due_meetings": "Süresi geçmiş toplantılar için hatırlatıcıları göster",
+            "show_timezones": "Yeni randevu oluştururken saat dilimini göster",
+            "span_time": "Süresi"
+        },
+        "options": {
+            "dflt_vsblty_opt": {
+                "public": "Genel",
+                "private": "Özel"
+            },
+            "free_busy_opts": {
+                "allow_all": "İçeriden veya dışarıdan kullanıcıların serbest / meşgul bilgimi görmelerine izin ver",
+                "allow_following": "Sadece listedeki içeriden kullanıcıların serbest / meşgul bilgimi görmelerine izin ver",
+                "allow_domain": "Sadece etki alanımdan kullanıcıların serbest / meşgul bilgimi görmelerine izin ver",
+                "allow_internal": "Sadece iç etki alanlarından kullanıcıların serbest / meşgul bilgimi görmelerine izin ver",
+                "allow_none": "Hiç kimsenin serbest / meşgul bilgimi görmesine izin verme"
+            },
+            "invt_opts": {
+                "allow_following": "Sadece listedeki içeriden kullanıcıların beni toplantılara davet etmesine izin ver",
+                "allow_internal": "Sadece içeriden kullanıcıların beni toplantılara davet etmesine izin ver",
+                "allow_none": "Hiç kimsenin beni toplantılara davet etmesine izin verme",
+                "allow_all": "İçeriden veya dışarıdan kullanıcıların beni toplantılara davet etmesine izin ver"
+            },
+            "default_cal_opts": {
+                "calendar": "Takvim"
+            },
+            "default_view": {
+                "day": "Günlük Görünüm",
+                "list": "Liste Görünümü",
+                "month": "Aylık Görünüm",
+                "week": "Haftalık Görünüm",
+                "work_week": "Çalışma Günleri Görünümü"
+            },
+            "show_reminder": {
+                "all_time": "Etkinliğin tüm süresi",
+                "day_before": "1 gün önce",
+                "day_before_plural": "{{count}} gün önce",
+                "hour_before": "1 saat önce",
+                "hour_before_plural": "{{count}} saat önce",
+                "minute_before": "1 dakika önce",
+                "minute_before_plural": "{{count}} dakika önce",
+                "never": "Hiçbir zaman",
+                "week_before": "1 hafta önce",
+                "week_before_plural": "{{count}} hafta önce"
+            },
+            "timezones": {
+                "amsterdam": "GMT +01:00 Amsterdam, Berlin, Bern, Roma, Stockholm, Viyana",
+                "chennai": "GMT +05:30 Chennai,Kalkuta,Mumbai,Yeni Delhi",
+                "egypt": "GMT +02:00 Mısır"
+            },
+            "weekdays": {
+                "friday": "Cuma",
+                "monday": "Pazartesi",
+                "saturday": "Cumartesi",
+                "sunday": "Pazar",
+                "thursday": "Perşembe",
+                "tuesday": "Salı",
+                "wednesday": "Çarşamba"
+            }
+        },
+        "invalid_email": "Geçersiz e-posta adresi",
+        "permissions_note": "Aşağıdaki kullanıcıların bu e-posta sisteminde (zextras.com) bulunmaları gerekir. E-posta adresinin tamamını veya sadece kullanıcı adını kullanabilirsiniz."
+    },
+    "private": "Özel",
+    "read": "Okunmuş",
+    "repeat": {
+        "daily": "Günlük",
+        "custom": "Özel",
+        "customize": "Özelleştir",
+        "everyDay": "Her gün",
+        "everyMonth": "Her ay",
+        "everyWeek": "Her hafta",
+        "everyYear": "Her yıl",
+        "monthly": "Aylık",
+        "none": "Yok",
+        "weekly": "Haftalık",
+        "yearly": "Yıllık"
+    },
+    "share": {
+        "label": {
+            "send_notification": "Bu paylaşım hakkında bildirim gönder",
+            "allow_to_see_private_appt": "Kullanıcı(lar)ın benim özel randevularımı görmesine izin ver"
+        },
+        "options": {
+            "share_calendar_role": {
+                "admin": "Admin (Görüntüler, düzenler, ekler, kaldırır ve yönetir)",
+                "manager": "Yönetim (Görüntüler, düzenler, ekler, kaldırır)",
+                "none": "Hiçbiri",
+                "viewer": "Görüntüleme (Görüntüler)"
+            },
+            "share_calendar_with": {
+                "external_guests": "Dışarıdan misafir (sadece görüntüler)",
+                "internal_users_groups": "İçeriden Kullanıcılar veya Gruplar",
+                "public": "Genel (sadece görüntüler, parola gerekmez)"
+            }
+        },
+        "note": {
+            "share_note": "Standart mesajda adınız, paylaşılan öğenin adı, alıcıya verilen izinler ve giriş bilgisi gösterilir."
+        },
+        "placeholder": {
+            "recipients_address": "Alıcıların e-posta adresleri",
+            "standard_message": "Standart mesaja bir not ekle"
+        }
+    },
+    "shares_info": "Paylaşım Bilgisi",
+    "months": {
+        "april": "Nisan",
+        "august": "Ağustos",
+        "december": "Aralık",
+        "february": "Şubat",
+        "january": "Ocak",
+        "july": "Temmuz",
+        "june": "Haziran",
+        "march": "Mart",
+        "may": "Mayıs",
+        "november": "Kasım",
+        "october": "Ekim",
+        "september": "Eylül"
+    },
+    "of": "—",
+    "owner": "Sahibi",
+    "reminder": {
+        "at_time_of_event": "Etkinlik saatinde",
+        "day_before": "{{count}} gün önce",
+        "day_before_plural": "{{count}} gün önce",
+        "hour_before": "{{count}} saat önce",
+        "hour_before_plural": "{{count}} saat önce",
+        "minute_before": "{{count}} dakika önce",
+        "minute_before_plural": "{{count}} dakika önce",
+        "never": "Hiçbir zaman",
+        "week_before": "{{count}} hafta önce",
+        "week_before_plural": "{{count}} hafta önce"
+    },
+    "remove_from_this_list": "Bu listeden kaldır",
+    "revoke_access": "Erişim yetkisini kaldır",
+    "revoke_without_custom_message": "Standart bildirim göndererek erişim yetkisini kaldır",
+    "revoke_without_notification": "Bildirim göndermeden erişim yetkisini kaldır",
+    "share_invite_resent": "Paylaşım davetini yeniden gönder",
+    "shared_folders": "Paylaşılan Takvimler",
+    "shared_items": "Paylaşılan öğeler",
+    "success": "Başarılı",
+    "type": "Tür",
+    "workflow": "İş Akışı",
+    "write": "Yazı"
 }
