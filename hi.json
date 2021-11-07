@@ -128,7 +128,10 @@
     },
     "message": {
         "you": "आप",
-        "have_not_sent_invitation": "आपने अभी तक आमंत्रण नहीं भेजा है"
+        "have_not_sent_invitation": "आपने अभी तक आमंत्रण नहीं भेजा है",
+        "snackbar": {
+            "settings_saved": "बदलाव ठीक से सेव हो गए"
+        }
     },
     "create": "बनाएँ",
     "delete": "डिलीट करें",
@@ -278,5 +281,8 @@
     "find_shares": "सहभाजी खोजें",
     "freebusy": "ख़ाली व्यस्त",
     "insert": "सम्मिलित करना",
-    "private": "निजी"
+    "private": "निजी",
+    "search": {
+        "results_for": "इसके नतीजे:"
+    }
 }
