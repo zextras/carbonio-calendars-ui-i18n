@@ -105,7 +105,13 @@
         "set_new_time": "नया समय रखें",
         "sharing_of_this_folder": "इस फ़ोल्डर का साझाकरण",
         "start_date_and_time": "प्रारम्भ तिथि और समय",
-        "tentative": "संभावित"
+        "tentative": "संभावित",
+        "timezone_pref_msg": "टाइमिंग आपके टाइमज़ोन की पसंद के अनुसार होती हैं।",
+        "start_week_of": "इस सप्ताह का प्रारम्भ करें",
+        "the": "यह",
+        "time_zones": "टाइम ज़ोन",
+        "type_name_here": "कैलेंडर नाम",
+        "view_url": "URL देखें"
     },
     "action": {
         "delete": "डिलीट करें",
