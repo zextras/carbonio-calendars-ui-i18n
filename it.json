@@ -452,7 +452,8 @@
                 "egypt": "GMT +02:00 Egitto"
             }
         },
-        "invalid_email": "Email non valida"
+        "invalid_email": "Email non valida",
+        "permissions_note": "Gli utenti devono essere su questo sistema e-mail (zextras.com). Puoi utilizzare l'indirizzo e-mail completo oppure solo il nome utente."
     },
     "freebusy": "LiberoOccupato",
     "months": {
