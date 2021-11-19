@@ -222,7 +222,7 @@
             },
             "appt_deleted_error": "Er is iets misgegaan, probeer het opnieuw.",
             "settings_saved": "Bewerkingen correct opgeslagen",
-            "appt_moved": "Afspraak met succes verplaatst naar ",
+            "appt_moved": "Afspraak met succes verplaatst naar",
             "appt_moved_error": "Er ging iets mis, afspraak niet verplaatst, probeer het opnieuw.",
             "appointment_permanently_deleted_error": "Er is iets misgegaan, probeer het opnieuw",
             "appointment_permanently_deleted_succesfully": "Definitieve verwijdering met succes voltooid",
