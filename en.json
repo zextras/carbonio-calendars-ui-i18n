@@ -101,7 +101,10 @@
         "share_info": "Share Info"
     },
     "freebusy": "FreeBusy",
+    "has_attachments": "Has attachments",
     "insert": "Insert",
+    "is_private": "Is private",
+    "is_recurrent": "Is recurrent",
     "items": {
         "day": "Day",
         "first": "First",
@@ -154,6 +157,7 @@
         "end_after": "End after",
         "end_date": "End date",
         "end_date_and_time": "End date and time",
+        "event_title": "Event's title",
         "every": "Every",
         "every_day": "Every day",
         "every_weekday": "Every weekday",
@@ -199,6 +203,7 @@
         "revoke": "Revoke",
         "revoke_share": "Revoke share of {{title}}",
         "save": "Save",
+        "search_hint": "",
         "select_in": "",
         "series": "Series",
         "set_new_time": "Set new time",
@@ -243,6 +248,7 @@
         "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
         "invited_you": "invited you to an event",
+        "location": "location",
         "meeting_canceled": "The following meeting has been cancelled",
         "modal": {
             "delete": {
@@ -250,6 +256,7 @@
                 "sure_delete_appointment_permanently": "By deleting permanently this appointment you will not be able to recover it anymore, continue?"
             }
         },
+        "search_hints": "",
         "share_calendar_url_msg": "You can quick share {{title}} with your collaborators using one of those URL:",
         "share_calendar_url_note": "Only your collaborators can access your data using these urls.",
         "share_calendar_url_note2": "Only your collaborators can access your data using these urls.<br/> You can find those links also right-clicking your calendars list.",
@@ -293,6 +300,9 @@
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
         "you_sure_move_calendar_trash": "Are you sure you want to  delete the \"{{name}}\" calendar?",
         "you_will_see_the_subject_here": "You will see the subject of this appointment here"
+    },
+    "messages": {
+        "format_as_plain_text": "Format as Plain Text"
     },
     "months": {
         "april": "April",
@@ -367,6 +377,7 @@
         "yearly": "Yearly"
     },
     "resend_mail_notification_about_this_share": "Resend mail notification about this share",
+    "results_for": "Results for:",
     "revoke_access": "Revoke access",
     "revoke_with_custom_message": "Revoke access sending a custom notification",
     "revoke_without_custom_message": "Revoke access sending a standard notification",
