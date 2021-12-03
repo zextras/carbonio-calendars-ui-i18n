@@ -166,7 +166,6 @@
         "find_shares": "Select which calendars you want to see in calendars tree",
         "free": "Free",
         "free_busy": "Free/Busy",
-        "from": "From",
         "general": "General",
         "ics_url": "ICS URL",
         "instance": "Instance",
@@ -223,7 +222,6 @@
         "the": "The",
         "time_zones": "Time Zones",
         "timezone_pref_msg": "The timings follow your timezone preferences.",
-        "to": "To",
         "type_name_here": "Calendar name",
         "view_url": "View URL",
         "week": {
@@ -383,8 +381,7 @@
     "revoke_without_custom_message": "Revoke access sending a standard notification",
     "revoke_without_notification": "Revoke access without sending a notification",
     "search": {
-        "organized_by": "organized by",
-        "results_for": "Results for:"
+        "organized_by": "organized by"
     },
     "settings": {
         "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
@@ -510,8 +507,7 @@
         "copy_ics_url": "Copy ICS url",
         "copy_outlook_url": "Copy Outlook url",
         "copy_vector_url": "Copy View url",
-        "enable_disable_rich_text": "Enable/Disable rich text editor",
-        "show_optionals": "Show optionals"
+        "enable_disable_rich_text": "Enable/Disable rich text editor"
     },
     "type": "Type",
     "workflow": "WorkFlow",
