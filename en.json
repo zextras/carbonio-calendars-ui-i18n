@@ -46,7 +46,6 @@
 			"decline": "Decline",
 			"expand": "Open in Displayer",
 			"no": "No",
-			"tentative": "Tentative",
 			"yes": "Yes"
 		}
 	},
@@ -67,7 +66,6 @@
 			},
 			"new": {
 				"duplicate_warning": "Calendar with the same name already exists",
-				"footer": "Empty",
 				"title2": "New calendar creation"
 			},
 			"restore": {
@@ -92,7 +90,7 @@
 	},
 	"label": {
 		"add_share": "Add share",
-		"all_calendars": "Filter calendars",
+		"all_calendars": "All calendars",
 		"all_day": "All day",
 		"apple_ical": "Apple iCal",
 		"appt_reminder": "",
@@ -126,7 +124,6 @@
 		"download_plural": "Download all",
 		"edit": "Edit",
 		"edit_access": "Edit {{name}}'s access",
-		"edit_properties": "Edit {{name}}'s access",
 		"edit_share": "Edit share",
 		"edits_saved": "Edits saved correctly",
 		"email_input_message": "Enter email addresses",
@@ -228,7 +225,6 @@
 		"delete_future_occurences_warning": "This will also delete all exceptions (before and after this instance) in the series",
 		"invite_has_no_message": "This invite has no text message",
 		"invited_you": "invited you to an event",
-		"location": "location",
 		"meeting_canceled": "The following meeting has been cancelled",
 		"modal": {
 			"delete": {
@@ -248,7 +244,6 @@
 			"calendar_deleted_successfully": "Calendar deleted successfully.",
 			"calendar_moved_to_root_folder": "Calendar moved to Root folder",
 			"calendar_moved_to_trash": "Calendar moved to trash",
-			"calendar_restored_to_root_folder": "Something went wrong, please try again",
 			"invite": {
 				"accept": "You’ve replied as Accepted",
 				"decline": "You’ve replied as Declined",
@@ -287,7 +282,6 @@
 		"october": "October",
 		"september": "September"
 	},
-	"of": "of",
 	"owner": "Owner",
 	"participants": {
 		"AC_with_count": "Accepted",
