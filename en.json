@@ -68,7 +68,6 @@
 			"new": {
 				"duplicate_warning": "Calendar with the same name already exists",
 				"footer": "Empty",
-				"ok": "OK",
 				"title2": "New calendar creation"
 			},
 			"restore": {
@@ -167,6 +166,7 @@
 		"of": "of",
 		"of_every": "of every",
 		"of_every_month": "of the month, every",
+		"ok": "OK",
 		"ongoing": "Ongoing",
 		"optional": "Optional",
 		"optional_plural": "Optionals",
