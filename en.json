@@ -101,7 +101,10 @@
         "share_info": "Share Info"
     },
     "freebusy": "FreeBusy",
+    "has_attachments": "Has attachments",
     "insert": "Insert",
+    "is_private": "Is private",
+    "is_recurrent": "Is recurrent",
     "items": {
         "day": "Day",
         "first": "First",
@@ -338,6 +341,9 @@
         "TE_with_count_plural": "Declined ({{count}})",
         "Tentative": "accepted as tentative",
         "visitors": "and other {{others}} attendees"
+    },
+    "placeholder": {
+        "organizer": "Organizer"
     },
     "private": "Private",
     "read": "Read",
