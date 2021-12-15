@@ -418,7 +418,7 @@
             "standard_message": "Adicionar nota à mensagem padrão"
         },
         "note": {
-            "share_note": "A mensagem padrão exibe seu nome, o nome do item compartilhado, as permissões concedidas aos destinatários e as informações de acesso, quando necessárias."
+            "share_note": "A mensagem padrão exibe seu nome, o nome do item compartilhado, as permissões concedidas aos destinatários e as informações de acesso."
         }
     },
     "snackbar": {
