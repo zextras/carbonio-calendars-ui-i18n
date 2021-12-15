@@ -390,7 +390,7 @@
             }
         },
         "note": {
-            "share_note": "Het standaardbericht toont uw naam, de naam van het gedeelde item, de machtigingen die aan de ontvangers zijn verleend en, indien nodig, de aanmeldingsinformatie."
+            "share_note": "Het standaardbericht toont uw naam, de naam van het gedeelde item, de machtigingen die aan de ontvangers zijn verleend en, indien nodig."
         },
         "label": {
             "allow_to_see_private_appt": "Gebruiker(s) toestaan mijn privé afspraken te zien",
