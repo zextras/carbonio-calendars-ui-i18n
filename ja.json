@@ -4,7 +4,7 @@
         "snackbar": {
             "settings_saved": "編集が保存されました",
             "appointment_permanently_deleted_error": "エラーが発生しました。再度お試しください",
-            "appt_moved": "予定が移動しました: ",
+            "appt_moved": "予定が移動しました",
             "appointment_permanently_deleted_succesfully": "完全に削除されました",
             "appt_deleted_error": "エラーが発生しました。再度お試しください。",
             "appt_moved_error": "エラーが発生しました。予定が移動されませんでした。再度お試しください。",
