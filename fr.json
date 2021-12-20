@@ -54,7 +54,8 @@
             "restore": "Restaurer",
             "tentative": "Tentative",
             "trash": "Supprimer",
-            "yes": "Oui"
+            "yes": "Oui",
+            "expand": "Ouvrir dans une fenêtre dédiée"
         }
     },
     "find_shares": "Rechercher les partages",
