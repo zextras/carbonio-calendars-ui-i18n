@@ -183,6 +183,7 @@
         "of": "of",
         "of_every": "of every",
         "of_the_month,_every": "of the month, every",
+        "on_behalf_of": "on behalf of",
         "ongoing": "Ongoing",
         "optional": "Optional",
         "optional_plural": "Optionals",
@@ -316,7 +317,6 @@
         "september": "September"
     },
     "of": "of",
-    "on_behalf_of": "on behalf of",
     "owner": "Owner",
     "participants": {
         "AC_with_count": "Accepted",
