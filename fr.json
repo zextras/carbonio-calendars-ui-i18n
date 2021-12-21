@@ -1,0 +1,135 @@
+{
+    "action": {
+        "create": "Créer",
+        "delete": "Supprimer",
+        "delete_calendar": "Supprimer le calendrier",
+        "delete_permanently": "Supprimer de manière permanente",
+        "download": "Télécharger",
+        "edit_message": "Éditer le message",
+        "empty_trash": "Vider la corbeille",
+        "move_to_root": "Déplacer à la racine",
+        "new_calendar": "Nouveau calendrier",
+        "preview": "Cliquer pour prévisualiser dans un autre onglet",
+        "save": "Sauver",
+        "save_to_preview": "Sauver l’aperçu",
+        "send": "Envoyer",
+        "share_calendar": "Partager le calendrier",
+        "calendar_access_share": "Accès au partage de calendrier",
+        "edit_calendar_properties": "Modifier les propriétés du calendrier",
+        "send_cancellation": "Envoyer l'annulation"
+    },
+    "add": "Ajouter",
+    "administer": "Administrer",
+    "allowed_actions": "Actions autorisées",
+    "appointments": "Rendez-vous",
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "footer": "Éditer",
+                "title": "Personnaliser les heures de travail"
+            }
+        }
+    },
+    "cannot_edit_name": "Vous ne pouvez pas modifier le nom d'un calendrier système",
+    "composer": {
+        "attachment": {
+            "contactsMod": "ajouter une carte contact",
+            "draganddrop": {
+                "title": "Mode glisser déposer",
+                "content": "Déposer ici vos pièces jointes afin de les ajouter à l'évènement"
+            },
+            "drive": "Ajouter depuis le Drive",
+            "local": "Ajouter un fichier depuis le disque local"
+        }
+    },
+    "create": "Création",
+    "delete": "Suppression",
+    "event": {
+        "action": {
+            "decline": "Refuser",
+            "accept": "Accepter",
+            "edit": "Éditer",
+            "move": "Déplacer",
+            "no": "Non",
+            "restore": "Restaurer",
+            "tentative": "Tentative",
+            "trash": "Supprimer",
+            "yes": "Oui"
+        }
+    },
+    "find_shares": "Rechercher les partages",
+    "folder": {
+        "modal": {
+            "delete": {
+                "footer": "Supprimer",
+                "title": "Supprimer"
+            },
+            "footer": {
+                "go_back": "Retour"
+            },
+            "item": {
+                "empty": "Vide"
+            },
+            "move": {
+                "footer": "Vide",
+                "input": {
+                    "filter": "Filtrer les calendriers"
+                },
+                "new": "Nouveau calendrier",
+                "title": "Déplacer",
+                "body": {
+                    "message3": "Sélectionner le calendrier vers lequel déplacer l'évènement :"
+                }
+            },
+            "new": {
+                "duplicate_warning": "Un calendrier avec le même nom existe déjà",
+                "footer": "CRÉER",
+                "title2": "Création d'un nouveau calendrier"
+            },
+            "restore": {
+                "footer": "Créer et restaurer",
+                "title": "Restaurer"
+            }
+        },
+        "share_info": "Partager l'information"
+    },
+    "freebusy": "Disponibilité",
+    "insert": "Insérer",
+    "items": {
+        "day": "Jour",
+        "first": "Premier",
+        "fourth": "Forcer",
+        "last": "Dernier",
+        "second": "Second",
+        "weekend_day": "Jour de week-end",
+        "working_day": "Jour de travail",
+        "third": "Troisième"
+    },
+    "label": {
+        "add_share": "Ajouter un partage",
+        "all_calendars": "Tous les calendriers",
+        "all_day": "Toute la journée",
+        "attendee_plural": "Participants",
+        "busy": "Occupé",
+        "calendar": "Calendrier",
+        "calendar_color": "Couleur du calendrier",
+        "calendar_setting": "Paramètres du calendrier",
+        "cancel": "Annuler",
+        "cancelled": "Annulé",
+        "create_new_calendar": "Créer un nouveau calendrier",
+        "custom": "Personnaliser",
+        "custom_repeat": "Répétition personnalisé",
+        "day": "Jour",
+        "days": "Jours",
+        "default_appt_vsblty": "Visibilité par défaut de l'évènement",
+        "delete_permanently": "Supprimer de façon permanente",
+        "default_view": "Vue par défaut",
+        "apple_ical": "Apple iCal",
+        "attachment": "Pièce jointe",
+        "attachment_plural": "{{count}} pièces jointes",
+        "auto_add_rcvd_app": "Ajouter automatiquement les rendez-vous reçus dans le calendrier",
+        "create_appt_settings": "Créer un rendez-vous"
+    },
+    "edit_share_properties": "Éditer les propriétés de partage",
+    "find_calendar_shares": "Chercher les partages de calendrier"
+}
