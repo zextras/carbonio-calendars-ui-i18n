@@ -117,6 +117,7 @@
         "delete": "Delete",
         "delete_permanently": "Delete permanently",
         "delete_plural": "Delete all",
+        "discard_changes": "DISCARD CHANGES",
         "dismiss": "Dismiss",
         "dismiss_plural": "Dismiss all",
         "display": "Display",
