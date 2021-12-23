@@ -1,18 +1,13 @@
 {
     "action": {
         "calendar_access_share": "Calendar access share",
-        "create": "Create",
-        "delete": "Delete",
         "delete_calendar": "Delete calendar",
-        "delete_permanently": "Delete Permanently",
-        "download": "Download",
         "edit_calendar_properties": "Edit calendar properties",
         "edit_message": "Edit Message",
         "empty_trash": "Empty Trash",
+        "empty_trash_confirmation": "This action will delete all items in E-mail, Contacts, Calendar, Tasks and Briefcase trash folders. Are you sure that you want to permanently delete everything in these trash folders?",
         "move_to_root": "Move to root",
-        "new_calendar": "New calendar",
         "preview": "Click to preview in another tab",
-        "save": "Save",
         "save_to_preview": "Save to preview",
         "send": "Send",
         "send_cancellation": "Send Cancellation",
@@ -28,7 +23,6 @@
     "calendar": {
         "modal": {
             "custom_schedule": {
-                "footer": "Edit",
                 "title": "Customize working hours"
             }
         }
@@ -45,20 +39,13 @@
             "local": "Add from local"
         }
     },
-    "create": "Create",
-    "delete": "Delete",
     "edit_share_properties": "Edit share properties",
     "event": {
         "action": {
             "accept": "Accept",
             "decline": "Decline",
-            "edit": "Edit",
             "expand": "Open in Displayer",
-            "move": "Move",
             "no": "No",
-            "restore": "Restore",
-            "tentative": "Tentative",
-            "trash": "Delete",
             "yes": "Yes"
         }
     },
@@ -66,43 +53,33 @@
     "find_shares": "Find shares",
     "folder": {
         "modal": {
-            "delete": {
-                "footer": "Delete",
-                "title": "Delete"
-            },
             "footer": {
                 "go_back": "Go back"
-            },
-            "item": {
-                "empty": "Empty"
             },
             "move": {
                 "body": {
                     "message3": "Select a calendar to move the considered appointment to:"
                 },
-                "footer": "Empty",
                 "input": {
-                    "filter": "Filter Calendars"
-                },
-                "new": "New Calendar",
-                "title": "Move"
+                    "filter": "Filter calendars"
+                }
             },
             "new": {
-                "duplicate_warning": "A calendar with the same name already exists",
-                "footer": "CREATE",
+                "duplicate_warning": "Calendar with the same name already exists",
                 "title2": "New calendar creation"
             },
             "restore": {
-                "footer": "Create and Restore",
-                "title": "Restore"
+                "footer": "Create and Restore"
             }
         },
         "share_info": "Share Info"
     },
     "freebusy": "FreeBusy",
+    "has_attachments": "Has attachments",
     "insert": "Insert",
+    "is_private": "Is private",
+    "is_recurrent": "Is recurrent",
     "items": {
-        "day": "Day",
         "first": "First",
         "fourth": "Fourth",
         "last": "Last",
@@ -113,22 +90,23 @@
     },
     "label": {
         "add_share": "Add share",
-        "all_calendars": "All Calendars",
+        "all_calendars": "All calendars",
         "all_day": "All day",
         "apple_ical": "Apple iCal",
         "appt_reminder": "",
         "appt_reminder_plural": "",
-        "attachment": "Attachment",
-        "attachment_plural": "{{count}} Attachments",
+        "attachment": "attachment",
+        "attachment_plural": "attachments",
         "attendee_plural": "Attendees",
         "auto_add_rcvd_app": "Automatically add received appointments to calendar",
         "busy": "Busy",
         "calendar": "Calendar",
         "calendar_color": "Calendar color",
-        "calendar_setting": "Calendar's Settings",
+        "calendar_setting": "Calendar Settings",
         "cancel": "Cancel",
-        "cancelled": "Canceled",
-        "create_appt_settings": "Create Appointment",
+        "cancelled": "Cancelled",
+        "create": "Create",
+        "create_appt_settings": "Creating Appointments",
         "create_new_calendar": "Create a New Calendar",
         "custom": "Custom",
         "custom_repeat": "Custom Repeat",
@@ -136,23 +114,28 @@
         "days": "Days",
         "default_appt_vsblty": "Default appointment visibility",
         "default_view": "Default view",
-        "delete_permanently": "Delete Permanently",
-        "dismiss": "DISMISS",
-        "dismiss_plural": "DISMISS ALL",
-        "dismiss_capitalize": "Dismiss",
+        "delete": "Delete",
+        "delete_permanently": "Delete permanently",
+        "delete_plural": "Delete all",
+        "discard_changes": "DISCARD CHANGES",
+        "dismiss": "Dismiss",
+        "dismiss_plural": "Dismiss all",
         "display": "Display",
         "download": "Download",
         "download_plural": "Download all",
         "edit": "Edit",
         "edit_access": "Edit {{name}}'s access",
-        "edit_properties": "Edit {{name}}'s properties",
         "edit_share": "Edit share",
-        "email_input_message": "Enter email addresses",
+        "edits_saved": "Edits saved correctly",
+        "email_input_message": "Enter e-mail addresses",
+        "empty": "Empty",
         "enable_dlgtn_for_ical": "Enable delegation for Apple iCal CalDAV Client",
         "end": "End",
         "end_after": "End after",
         "end_date": "End date",
         "end_date_and_time": "End date and time",
+        "error_try_again": "Something went wrong, please try again",
+        "event_title": "Event title",
         "every": "Every",
         "every_day": "Every day",
         "every_weekday": "Every weekday",
@@ -161,7 +144,6 @@
         "find_shares": "Select which calendars you want to see in calendars tree",
         "free": "Free",
         "free_busy": "Free/Busy",
-        "from": "From",
         "general": "General",
         "ics_url": "ICS URL",
         "instance": "Instance",
@@ -170,15 +152,19 @@
         "location": "Location",
         "month": "Month",
         "months": "Months",
+        "move": "Move",
+        "new_calendar": "New calendar",
         "no_end_date": "No end date",
         "no_subject": "No subject",
+        "none": "None",
         "notify_organizer": "Notify organizer",
         "now": "Now",
         "number": "Number",
         "occurrences": "Occurence(s)",
         "of": "of",
         "of_every": "of every",
-        "of_the_month,_every": "of the month, every",
+        "of_every_month": "of the month, every",
+        "ok": "OK",
         "ongoing": "Ongoing",
         "optional": "Optional",
         "optional_plural": "Optionals",
@@ -189,15 +175,16 @@
         "proposal_declined": "Proposal declined",
         "regular": "Regular",
         "reminder": "Reminder",
-        "remove": "Delete",
-        "remove_plural": "Delete all",
         "repeat": "Repeat",
         "required": "Required",
         "resend": "Resend",
-        "restore_calednar": "Restore calendar",
+        "restore": "Restore",
+        "restore_calendar": "Restore calendar",
+        "results_for": "Results for:",
         "revoke": "Revoke",
         "revoke_share": "Revoke share of {{title}}",
         "save": "Save",
+        "search_hint": "",
         "select_in": "",
         "series": "Series",
         "set_new_time": "Set new time",
@@ -207,17 +194,14 @@
         "sharing_of_this_folder": "Sharing of this folder",
         "show": "Show",
         "show_plural": "Show all",
-        "show_declined_meetings": "Show declined meetings",
-        "snooze": "",
+        "snooze": "Snooze",
         "start_date": "Start date",
         "start_date_and_time": "Start date and time",
         "start_week_of": "Start week of",
-        "subject": "Subject",
-        "tentative": "Tentative",
+        "tentative": "tentative",
         "the": "The",
-        "time_zones": "Time Zones",
+        "time_zones": "Time zones",
         "timezone_pref_msg": "The timings follow your timezone preferences.",
-        "to": "To",
         "type_name_here": "Calendar name",
         "view_url": "View URL",
         "week": {
@@ -239,7 +223,6 @@
         "delete_all_occurences": "Delete all occurrences",
         "delete_future_occurences": "Delete this instance and all future occurrences",
         "delete_future_occurences_warning": "This will also delete all exceptions (before and after this instance) in the series",
-        "have_not_sent_invitation": "You haven't sent the invitation to the attendees yet",
         "invite_has_no_message": "This invite has no text message",
         "invited_you": "invited you to an event",
         "meeting_canceled": "The following meeting has been cancelled",
@@ -249,36 +232,24 @@
                 "sure_delete_appointment_permanently": "By deleting permanently this appointment you will not be able to recover it anymore, continue?"
             }
         },
-        "share_calendar_url_msg": "You can quickly share {{title}} with your collaborators using one of these URLs:",
-        "share_calendar_url_note": "Only your collaborators can access your data using these URLs.",
-        "share_calendar_url_note2": "Only your collaborators can access your data using these URLs.<br/> You can find those links also right-clicking your calendars list.",
+        "search_hints": "",
+        "share_calendar_url_msg": "You can quick share {{title}} with your collaborators using one of those URL:",
+        "share_calendar_url_note": "Only your collaborators can access your data using these urls.",
+        "share_calendar_url_note2": "Only your collaborators can access your data using these urls.<br/> You can find those links also right-clicking your calendars list.",
         "snackbar": {
-            "appointment_permanently_deleted_error": "Something went wrong, please try again",
             "appointment_permanently_deleted_succesfully": "Permanent deletion completed successfully",
-            "appt_deleted_error": "Something went wrong, please retry.",
             "appt_moved": "Appointment moved successfully to",
-            "appt_moved_error": "Something went wrong, appointment not moved, please retry.",
             "appt_moved_to_trash": "Appointment moved to trash",
             "appt_restored": "Appointment restored successfully to",
-            "calendar_delete_error": "Something went wrong, please try again.",
             "calendar_deleted_successfully": "Calendar deleted successfully.",
             "calendar_moved_to_root_folder": "Calendar moved to Root folder",
-            "calendar_moved_to_root_folder_error": "Something went wrong, please try again",
             "calendar_moved_to_trash": "Calendar moved to trash",
-            "calendar_moved_to_trash_error": "Something went wrong, please try again",
-            "calendar_restored_to_root_folder": "",
-            "edit_calendar": "Edits saved correctly",
-            "edit_calendar_error": "Something went wrong, please try again",
             "invite": {
                 "accept": "You’ve replied as Accepted",
-                "decline": "You’ve replied as: Declined",
-                "error": "Something went wrong, please retry.",
-                "tentative": "You’ve replied as: Tentative"
+                "decline": "You’ve replied as Declined",
+                "tentative": "You’ve replied as Tentative"
             },
-            "new_calendar_create_error": "Something went wrong, please try again",
-            "new_calendar_created": "New calendar created",
-            "new_calendar_created_error": "",
-            "settings_saved": "Edits saved correctly"
+            "new_calendar_created": "New calendar created"
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
@@ -290,8 +261,12 @@
         "you": "You",
         "you_are_organizer": "You are the organizer",
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the \"{{name}}\" calendar?",
-        "you_sure_move_calendar_trash": "Are you sure you want to delete the \"{{name}}\" calendar?",
-        "you_will_see_the_subject_here": "You will see the subject of this appointment here"
+        "you_sure_delete_instance": "Are you sure you want to delete this instance of “{{title}}” appointment?",
+        "you_sure_move_calendar_trash": "Are you sure you want to  delete the \"{{name}}\" calendar?",
+        "you_will_see_the_subject_here": "Subject"
+    },
+    "messages": {
+        "format_as_plain_text": "Format as Plain Text"
     },
     "months": {
         "april": "April",
@@ -307,7 +282,6 @@
         "october": "October",
         "september": "September"
     },
-    "of": "of",
     "owner": "Owner",
     "participants": {
         "AC_with_count": "Accepted",
@@ -333,10 +307,10 @@
         "Tentative": "accepted as tentative",
         "visitors": "and other {{others}} attendees"
     },
-    "private": "Private",
     "read": "Read",
     "reminder": {
-        "at_time_of_event": "At the time of the event",
+        "all_time": "All time of the event",
+        "at_time_of_event": "At time of the event",
         "day_before": "{{count}} day before",
         "day_before_plural": "{{count}} days before",
         "hour_before": "{{count}} hour before",
@@ -353,15 +327,12 @@
     },
     "remove_from_this_list": "Remove from this list",
     "repeat": {
-        "custom": "Custom",
         "customize": "Customize",
         "daily": "Daily",
-        "everyDay": "Every Day",
         "everyMonth": "Every Month",
         "everyWeek": "Every Week",
         "everyYear": "Every Year",
         "monthly": "Monthly",
-        "none": "None",
         "weekly": "Weekly",
         "yearly": "Yearly"
     },
@@ -371,18 +342,17 @@
     "revoke_without_custom_message": "Revoke access sending a standard notification",
     "revoke_without_notification": "Revoke access without sending a notification",
     "search": {
-        "organized_by": "organized by",
-        "results_for": "Results for:"
+        "organized_by": "organized by"
     },
     "settings": {
-        "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Deligation tab so you can delegate access to your Calendars to other users.",
-        "invalid_email": "Not a valid email",
+        "ical_note": "Apple iCal can be configured to access your Calendars using the CalDAV protocol.When this preference is enabled,shared calendars are displayed in the ical account's Delegation tab so you can delegate access to your Calendars to other users.",
+        "invalid_email": "Not a valid e-mail",
         "label": {
             "default_appt_dur": "Appointment's default duration",
             "default_calendar": "Default calendar",
             "delete_invt_on_rply": "Delete invite on reply",
             "enable_reminder_sound": "Play a sound (requires QuickTime or Windows Media plugin)",
-            "enter_email": "Enter email address",
+            "enter_email": "Enter e-mail address",
             "flash_browser_title": "Flash the browser title",
             "forward_invites": "Forward Invites",
             "invitation_response": "Invitation Response",
@@ -394,9 +364,6 @@
             "span_time": "Span time"
         },
         "options": {
-            "default_cal_opts": {
-                "calendar": "Calendar"
-            },
             "default_view": {
                 "day": "Day View",
                 "list": "List View",
@@ -405,7 +372,6 @@
                 "work_week": "Work Week View"
             },
             "dflt_vsblty_opt": {
-                "private": "Private",
                 "public": "Public"
             },
             "free_busy_opts": {
@@ -421,34 +387,13 @@
                 "allow_internal": "Allow only internal users to invite me to meetings",
                 "allow_none": "Don't let anyone to invite me to meetings"
             },
-            "show_reminder": {
-                "all_time": "All time of the event",
-                "day_before": "1 day before",
-                "day_before_plural": "{{count}} days before",
-                "hour_before": "1 hour before",
-                "hour_before_plural": "{{count}} hours before",
-                "minute_before": "1 minute before",
-                "minute_before_plural": "{{count}} minutes before",
-                "never": "Never",
-                "week_before": "1 week before",
-                "week_before_plural": "{{count}} weeks before"
-            },
             "timezones": {
                 "amsterdam": "GMT +01:00 Amsterdam,Berlin,Bern,Rome,Stockholm,Vienna",
                 "chennai": "GMT +05:30 Chennai,Kolkata,Mumbai,New Delhi",
                 "egypt": "GMT +02:00 Egypt"
-            },
-            "weekdays": {
-                "friday": "Friday",
-                "monday": "Monday",
-                "saturday": "Saturday",
-                "sunday": "Sunday",
-                "thursday": "Thursday",
-                "tuesday": "Tuesday",
-                "wednesday": "Wednesday"
             }
         },
-        "permissions_note": "Users below must be on this e-mail system (zextras.com). You may use the full e-mail address or just the username."
+        "permissions_note": "Users provide below must be on this mail system (zextras.com).You may use the full e-mail address, or just the username."
     },
     "share": {
         "label": {
@@ -462,7 +407,6 @@
             "share_calendar_role": {
                 "admin": "Admin (can view,edit,add,remove and administer)",
                 "manager": "Manager (can view,edit,add and remove)",
-                "none": "None",
                 "viewer": "Viewer (can view)"
             },
             "share_calendar_with": {
@@ -481,14 +425,11 @@
     "shared_items": "Shared items",
     "shares_info": "Shares Info",
     "snackbar": {
-        "error": "Something went wrong, please try again",
         "invite": {
             "error": "Error"
         },
-        "new_time_proposed_error": "Something went wrong,please try again",
-        "new_time_proposed_succes": "New time proposed",
+        "new_time_proposed_success": "New time proposed",
         "proposed_time_accepted": "You accepted the proposed time",
-        "proposed_time_error": "Something went wrong,please try again",
         "share_folder_success": "This Calendar has been shared",
         "url_copied": "{{title}} copied"
     },
@@ -498,8 +439,7 @@
         "copy_ics_url": "Copy ICS url",
         "copy_outlook_url": "Copy Outlook url",
         "copy_vector_url": "Copy View url",
-        "enable_disable_rich_text": "Enable/Disable rich text editor",
-        "show_optionals": "Show optionals"
+        "enable_disable_rich_text": "Enable/Disable rich text editor"
     },
     "type": "Type",
     "workflow": "WorkFlow",
