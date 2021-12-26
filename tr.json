@@ -190,7 +190,7 @@
     "label": {
         "invitation_not_sent": "Katılımcılara henüz davet göndermediniz",
         "attachment": "ek",
-        "attachment_plural": "{{count}} ek",
+        "attachment_plural": "ek",
         "attendee_plural": "Katılımcılar",
         "busy": "Meşgul",
         "all_calendars": "Tüm takvimler",
@@ -514,7 +514,7 @@
     "success": "Başarılı",
     "type": "Tür",
     "workflow": "İş Akışı",
-    "write": "Yazı",
+    "write": "Yaz",
     "has_attachments": "Eklentiler olan",
     "is_private": "Özel",
     "is_recurrent": "Tekrarlanan",
