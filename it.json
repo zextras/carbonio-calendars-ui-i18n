@@ -17,7 +17,8 @@
         "day_before_plural": "{{count}} giorni fa",
         "hour_before": "{{count}} hour fa",
         "hour_before_plural": "{{count}} ore fa",
-        "at_time_of_event": "Al momento dell'evento"
+        "at_time_of_event": "Al momento dell'evento",
+        "all_time": "Per tutta la durata dell'evento"
     },
     "participants": {
         "AC_with_count": "Accettato",
@@ -44,7 +45,7 @@
         "Not_answered": "non ha risposto"
     },
     "message": {
-        "you_will_see_the_subject_here": "Vedrai l'oggetto di questo appuntamento qui",
+        "you_will_see_the_subject_here": "Oggetto",
         "you_are_organizer": "Tu sei l'organizzatore",
         "somebody_invited_you": "<strong>{{somebody}}</strong> ti ha invitato",
         "meeting_canceled": "La riunione seguente è stata annullata",
@@ -102,7 +103,7 @@
     },
     "label": {
         "to": "A",
-        "tentative": "Forse",
+        "tentative": "forse",
         "no_subject": "Nessun oggetto",
         "subject": "Oggetto",
         "start_date_and_time": "Data ed ora di inizio",
@@ -124,16 +125,16 @@
         "calendar": "Calendario",
         "busy": "Occupato",
         "attendee_plural": "Partecipanti",
-        "attachment": "Allegato",
-        "attachment_plural": "{{count}} Allegati",
+        "attachment": "allegato",
+        "attachment_plural": "{{count}} allegati",
         "all_day": "Tutto il giorno",
-        "all_calendars": "Tutti i Calendari",
+        "all_calendars": "Tutti i calendari",
         "download": "Scarica",
         "download_plural": "Scarica tutto",
         "save": "Salva",
         "show": "Mostra",
         "show_plural": "Mostra tutto",
-        "cancel": "Annulla",
+        "cancel": "Cancella",
         "resend": "Invia di nuovo",
         "every_day": "Ogni giorno",
         "find_shares": "Seleziona i calendari da visualizzare nella tua lista calendari",
@@ -167,18 +168,18 @@
         "proposal_declined": "Proposta rifiutata",
         "edit_access": "Modifica l'accesso di {{name}}",
         "add_share": "Aggiungi condivisione",
-        "create_appt_settings": "Crea Appuntamento",
+        "create_appt_settings": "Crea Appuntamenti",
         "create_new_calendar": "Crea Nuovo Calendario",
         "custom": "Personalizzato",
         "days": "Giorni",
         "default_appt_vsblty": "Visibilità appuntamento predefinita",
         "default_view": "Vista predefinita",
-        "delete_permanently": "Elimina Definitivamente",
-        "dismiss": "ANNULLA",
-        "dismiss_plural": "ANNULLA TUTTO",
+        "delete_permanently": "Elimina definitivamente",
+        "dismiss": "Annulla",
+        "dismiss_plural": "Annulla tutto",
         "edit_properties": "Modifica proprietà di {{name}}",
         "edit_share": "Modifica condivisione",
-        "email_input_message": "Inserisci email",
+        "email_input_message": "Inserisci indirizzo e-mail",
         "of_every": "di ogni",
         "of_the_month,_every": "del mese, ogni",
         "ongoing": "Continuo",
@@ -196,7 +197,7 @@
         "remove": "Elimina",
         "remove_plural": "Elimina tutto",
         "sharing_of_this_folder": "Condivisione di questa cartella",
-        "time_zones": "Fuso Orario",
+        "time_zones": "Fuso orario",
         "type_name_here": "Nome Calendario",
         "view_url": "Visualizza URL",
         "week": {
@@ -212,7 +213,24 @@
         "work_week": "Settimana lavorativa",
         "timezone_pref_msg": "Gli orari seguono le impostazioni relative al tuo fuso orario.",
         "your_pref_timezone_msg": "Il tuo fuso orario predefinito è: GMT +01:00 Amsterdam, Berlino, Berna, Roma, Stoccolma, Vienna.",
-        "shares_items": "calendari condivisi di {{value}}"
+        "shares_items": "calendari condivisi di {{value}}",
+        "edits_saved": "Modifiche salvate correttamente",
+        "restore_calendar": "Ripristina calendario",
+        "snooze": "Posponi",
+        "create": "Crea",
+        "delete": "Elimina",
+        "delete_plural": "Elimina tutti",
+        "discard_changes": "ELIMINA MODIFICHE",
+        "empty": "Vuoto",
+        "error_try_again": "Qualcosa è andato storto, riprova",
+        "event_title": "Titolo dell'evento",
+        "move": "Sposta",
+        "new_calendar": "Nuovo calendario",
+        "none": "Nesusno",
+        "of_every_month": "del mese, ogni",
+        "ok": "OK",
+        "restore": "Ripristina",
+        "results_for": "Risultati per:"
     },
     "action": {
         "send": "Invia",
@@ -260,7 +278,7 @@
                     "message3": "Seleziona un calendario in cui spostare questo appuntamento:"
                 },
                 "input": {
-                    "filter": "Filtra Calendari"
+                    "filter": "Filtra calendari"
                 }
             },
             "restore": {
@@ -331,7 +349,8 @@
         "new_time_proposed_succes": "Nuovo orario proposto",
         "proposed_time_accepted": "Hai accettato l'orario proposto",
         "share_folder_success": "Il Calendario è stato condiviso",
-        "url_copied": "{{title}} copiato"
+        "url_copied": "{{title}} copiato",
+        "new_time_proposed_success": "Nuovo orario proposto"
     },
     "add": "Aggiungi",
     "allowed_actions": "Azioni consentite",
@@ -391,7 +410,7 @@
             "span_time": "Periodo di tempo",
             "default_appt_dur": "Durata predefinita di un appuntamento",
             "default_calendar": "Calendario predefinito",
-            "enter_email": "Inserisci email",
+            "enter_email": "Inserisci indirizzo e-mail",
             "flash_browser_title": "Alterna con il titolo del browser",
             "invitation_response": "Risposta all'invito",
             "show_popup_notification": "Mostra una notifica pop up",
@@ -453,7 +472,7 @@
                 "egypt": "GMT +02:00 Egitto"
             }
         },
-        "invalid_email": "Email non valida",
+        "invalid_email": "E-mail non valida",
         "permissions_note": "Gli utenti devono essere su questo sistema e-mail (zextras.com). Puoi utilizzare l'indirizzo e-mail completo oppure solo il nome utente."
     },
     "freebusy": "LiberoOccupato",
@@ -487,5 +506,8 @@
     "success": "Successo",
     "type": "Tipo",
     "workflow": "Flusso di lavoro",
-    "write": "Scrivi"
+    "write": "Scrivi",
+    "has_attachments": "Ha allegati",
+    "is_private": "È privato",
+    "is_recurrent": "È ricorrente"
 }
