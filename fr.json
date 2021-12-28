@@ -480,5 +480,8 @@
     "shared_folders": "Calendriers partagés",
     "shared_items": "Eléments partagés",
     "shares_info": "Informations partagées",
-    "success": "Succès"
+    "success": "Succès",
+    "button": {
+        "customize_modal": "Ouvrir l'écran de personnalisation"
+    }
 }
