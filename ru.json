@@ -13,7 +13,8 @@
         "minute_before_2": "{{count}} минут до",
         "day_before_0": "{{count}} за день до",
         "day_before_1": "{{count}} за некскаолько дней до",
-        "day_before_2": "{{count}} за некскаолько дней до"
+        "day_before_2": "{{count}} за некскаолько дней до",
+        "all_time": "Все время мероприятия"
     },
     "participants": {
         "AC_with_count_0": "Принял",
@@ -49,7 +50,7 @@
     },
     "message": {
         "invite_has_no_message": "Это приглашения не содержит текста",
-        "you_will_see_the_subject_here": "Вы увидите тему встречи здесь",
+        "you_will_see_the_subject_here": "Тема",
         "you_are_organizer": "Вы организатор",
         "somebody_invited_you": "<strong> {{кто-то}} </strong> пригласил вас",
         "meeting_canceled": "Следующая встреча отменена",
@@ -102,7 +103,8 @@
         "want_to_edit_cancellation_msg": "Вы хотите отредактировать сообщение об отмене встречи?",
         "delete_future_occurences_warning": "Это удалит все исключения (до и после этой встречи) в ряде",
         "delete_future_occurences": "Удалить эту встречу и все будущие встречи",
-        "sure_to_delete_all_occurences_appointment": "Вы уверены, что хотите удалить эту встречу?"
+        "sure_to_delete_all_occurences_appointment": "Вы уверены, что хотите удалить эту встречу?",
+        "you_sure_delete_instance": "Вы действительно хотите удалить этот экземпляр встречи «{{title}}»?"
     },
     "label": {
         "subject": "Тема",
@@ -110,14 +112,14 @@
         "optional_0": "Необязательный",
         "optional_1": "Необязательные",
         "optional_2": "Необязательные",
-        "no_subject": "Нет темы",
+        "no_subject": "(без темы)",
         "display": "Отображать",
         "tentative": "Под вопросом",
         "start_date_and_time": "Дата и время начала",
         "start_date": "Дата начала",
         "required": "Обязательный",
         "reminder": "Напоминание",
-        "private": "Частный",
+        "private": "Приватный",
         "out_of_office": "Нет на работе",
         "location": "Место",
         "from": "От",
@@ -128,9 +130,9 @@
         "calendar": "Календарь",
         "busy": "Занят",
         "attendee_plural": "Участники",
-        "attachment_0": "{{count}}Вложение",
-        "attachment_1": "{{count}} Вложения",
-        "attachment_2": "{{count}} Вложений",
+        "attachment_0": "Вложение",
+        "attachment_1": "Вложения",
+        "attachment_2": "Вложений",
         "all_day": "Весь день",
         "all_calendars": "Все календари",
         "to": "Кому",
@@ -225,7 +227,25 @@
         "series": "Серии",
         "revoke_share": "Отозвать доступ {{title}}",
         "weeks_on": "Еженедельно",
-        "occurrences": "Повторение(я)"
+        "occurrences": "Повторение(я)",
+        "restore_calendar": "Восстановить календарь",
+        "create": "Создать",
+        "delete_0": "Удалить",
+        "delete_1": "Удалить",
+        "delete_2": "Удалить",
+        "discard_changes": "ОТМЕНИТЬ ИЗМЕНЕНИЯ",
+        "edits_saved": "Изменения сохранены",
+        "empty": "Пусто",
+        "error_try_again": "Что-то пошло не так, попробуйте еще раз",
+        "event_title": "Название мероприятия",
+        "move": "Перенести",
+        "new_calendar": "Новый календарь",
+        "none": "Никто",
+        "of_every_month": "месяца, каждый(ую)",
+        "ok": "ОК",
+        "restore": "Восстановить",
+        "results_for": "Результаты поиска:",
+        "snooze": "Отложить"
     },
     "tooltip": {
         "show_optionals": "Показать опции",
@@ -254,7 +274,8 @@
         "edit_message": "Редактировать сообщение",
         "send_cancellation": "Отправить отмену",
         "share_calendar": "Поделиться Календарем",
-        "edit_calendar_properties": "Изменить свойства календаря"
+        "edit_calendar_properties": "Изменить свойства календаря",
+        "empty_trash_confirmation": "Это действие удалит все элементы из папок электронной почты, контактов, календаря, задач и портфеля. Вы уверены, что хотите навсегда удалить все папки находящиеся в этой корзине?"
     },
     "folder": {
         "modal": {
@@ -490,7 +511,8 @@
         "new_time_proposed_succes": "Предложено новое время",
         "proposed_time_accepted": "Вы приняли предлагаемое время",
         "url_copied": "{{title}} скопировано",
-        "share_folder_success": "Доступ к этому календарю предоставлен"
+        "share_folder_success": "Доступ к этому календарю предоставлен",
+        "new_time_proposed_success": "Предложено новое время"
     },
     "owner": "Владелец",
     "workflow": "Рабочий процесс",
@@ -515,5 +537,11 @@
     "find_shares": "Найти общие элементы",
     "shares_info": "Информация об общем доступе",
     "share_invite_resent": "Уведомление о доступе отправлено",
-    "success": "Успешно"
+    "success": "Успешно",
+    "has_attachments": "Есть вложения",
+    "is_recurrent": "Повторяющаяся",
+    "is_private": "Приватный",
+    "messages": {
+        "format_as_plain_text": "Форматировать как обычный текст"
+    }
 }
