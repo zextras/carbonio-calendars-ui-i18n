@@ -147,15 +147,15 @@
                 "sure_delete_appointment_permanently": "Bu toplantıyı kalıcı olarak silerseniz geri alamazsınız, devam edilsin mi?"
             }
         },
-        "share_calendar_url_note": "Bu URL bağlantılarını kullanarak yanlızca katılımcılar veriye erişebilir.",
+        "share_calendar_url_note": "Bu URL bağlantılarını kullanarak sadece katılımcılarınız veriye erişebilir.",
         "delete_all_occurences": "Tüm tekrarlamaları sil",
         "delete_future_occurences": "Bu randevuyu ve ilerideki tüm tekrarlamaları sil",
         "delete_future_occurences_warning": "Serideki (bu randevu öncesi ve sonrasındaki) tüm özel durumlar da silinecek",
         "have_not_sent_invitation": "Katılımcılara henüz davet göndermediniz",
         "invite_has_no_message": "Bu davette yazılı mesaj yok",
         "invited_you": "sizi bir etkinliğe davet etti",
-        "share_calendar_url_msg": "Bu URL bağlantılarından birisini kullanarak {{title}} kişilerle kolayca paylaşabilirsiniz:",
-        "share_calendar_url_note2": "Bu URL bağlantılarını kullanarak yanlızca katılımcılar veriye erişebilir.<br/> Takvim listenizde sağ tıkladığınızda da bu bağlantıları görebilirsiniz.",
+        "share_calendar_url_msg": "Bu URL bağlantılarından birisini kullanarak {{title}} öğesini kişilerle kolayca paylaşabilirsiniz:",
+        "share_calendar_url_note2": "Bu URL bağlantılarını kullanarak sadece katılımcılar veriye erişebilir.<br/> Takvim listenizde sağ tıkladığınızda da bu bağlantıları görebilirsiniz.",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> organize eden kişi",
         "somebody_invited_you": "<strong>{{somebody}}</strong> sizi davet etti",
         "sure_to_delete_all_occurences_appointment": "Bu randevunun tüm tekrarlamalarını silmek istediğinizden emin misiniz?",
@@ -189,8 +189,8 @@
     },
     "label": {
         "invitation_not_sent": "Katılımcılara henüz davet göndermediniz",
-        "attachment": "ek",
-        "attachment_plural": "ek",
+        "attachment": "Ek",
+        "attachment_plural": "ekler",
         "attendee_plural": "Katılımcılar",
         "busy": "Meşgul",
         "all_calendars": "Tüm takvimler",
@@ -200,7 +200,7 @@
         "default_appt_vsblty": "Randevu görünümü için varsayılan",
         "enable_dlgtn_for_ical": "Apple iCal CalDAV Client için temsilci etkinleştir",
         "every_weekday": "Haftanın her günü",
-        "filter_sharer_user": "Paylaşan kullanıcıyı filtrele",
+        "filter_sharer_user": "Klasör sahibi",
         "of_the_month,_every": "ayın, her",
         "remove": "Sil",
         "remove_plural": "Hepsini Sil",
@@ -321,7 +321,18 @@
         "ok": "TAMAM",
         "restore": "Geri al",
         "restore_calendar": "Takvimi geri yükle",
-        "results_for": "Sonuçlar:"
+        "results_for": "Sonuçlar:",
+        "access_revoked": "Erişim iptal edildi",
+        "appt_reminder": "Randevu Bildirimi",
+        "appt_reminder_plural": "Randevu Bildirimleri",
+        "calendar_shared": "Takvim başarıyla paylaşıldı",
+        "changes_saved": "Değişiklikler kaydedildi",
+        "delete_instance": "\"{title}\" randevusunun bu öğesini silmek istediğinizden emin misiniz?",
+        "settings_saved": "Ayarlar kaydedildi",
+        "start_week_on": "Hafta başlangıcı",
+        "trash_emptied": "Çöp kutusu başarıyla boşaltıldı",
+        "undo": "Geri Al",
+        "on_behalf_of": "{{identitiy}} ({{accountName}} on behalf of <{{otherAccount}}>"
     },
     "resend_mail_notification_about_this_share": "Bu paylaşım hakkında posta bildirimi gönder",
     "participants": {
@@ -520,5 +531,6 @@
     "is_recurrent": "Tekrarlanan",
     "messages": {
         "format_as_plain_text": "Düz Metin olarak biçimlendir"
-    }
+    },
+    "appt_restored_successfully": "Randevu başarıyla geri yüklendi"
 }
