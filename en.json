@@ -33,7 +33,7 @@
 		"attachment": {
 			"contactsMod": "add contact card",
 			"draganddrop": {
-				"content": "Drop here your attachements to quickly add them to the appointment",
+				"content": "Drop here your attachments to quickly add them to the appointment",
 				"title": "Drag&Drop Mode"
 			},
 			"drive": "Add from Drive",
@@ -144,7 +144,7 @@
 		"every_day": "Every day",
 		"every_weekday": "Every weekday",
 		"every_year_on": "Every year on",
-		"filter_sharer_user": "Foder owner",
+		"filter_sharer_user": "Folder owner",
 		"find_shares": "Select which calendars you want to see in calendars tree",
 		"free": "Free",
 		"free_busy": "Free/Busy",
