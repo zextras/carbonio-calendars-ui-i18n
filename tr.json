@@ -137,7 +137,9 @@
             "new_calendar_created": "Yeni takvim oluşturuldu",
             "calendar_moved_to_trash_error": "Bir hata oluştu, lütfen tekrar deneyin",
             "edit_calendar_error": "Bir hata oluştu, lütfen tekrar deneyin",
-            "new_calendar_create_error": "Bir hata oluştu, lütfen tekrar deneyin"
+            "new_calendar_create_error": "Bir hata oluştu, lütfen tekrar deneyin",
+            "calendar_permanently_deleted": "Takvim kalıcı olarak silindi",
+            "calendar_restored": "Takvim başarıyla geri alındı"
         },
         "are_organizer": "organize eden",
         "meeting_canceled": "Bu toplantı iptal edildi",
@@ -181,7 +183,7 @@
         },
         "new_time_proposed_succes": "Yeni saat önerildi",
         "proposed_time_accepted": "Önerilen saati kabul ettiniz",
-        "share_folder_success": "Bu takvim paylaşıldı",
+        "share_folder_success": "Takvim başarıyla paylaşıldı",
         "url_copied": "{{title}} kopyalandı",
         "new_time_proposed_error": "Bir hata oluştu, lütfen tekrar deneyin",
         "proposed_time_error": "Bir hata oluştu, lütfen tekrar deneyin",
@@ -332,22 +334,22 @@
         "start_week_on": "Hafta başlangıcı",
         "trash_emptied": "Çöp kutusu başarıyla boşaltıldı",
         "undo": "Geri Al",
-        "on_behalf_of": "{{identitiy}} ({{accountName}} on behalf of <{{otherAccount}}>"
+        "on_behalf_of": "{{identitiy}} ({{accountName}} , bu kullanıcı yerine <{{otherAccount}}>"
     },
     "resend_mail_notification_about_this_share": "Bu paylaşım hakkında posta bildirimi gönder",
     "participants": {
-        "Attendees_not_answered_count": "<strong>1 katılımcı </strong> yanıtlamadı",
+        "Attendees_not_answered_count": "<strong>{{count}} katılımcı </strong> yanıtlamadı",
         "Attendees_not_answered_count_plural": "<strong>{{count}} katılımcı </strong> yanıtlamadı",
         "AC_with_count": "Kabul edildi",
         "AC_with_count_plural": "Kabul edildi ({{count}})",
-        "Attendees_declined_count": "<strong>1 katılımcı </strong> reddetti",
+        "Attendees_declined_count": "<strong>{{count}} katılımcı </strong> reddetti",
         "Attendees_declined_count_plural": "<strong>{{count}} katılımcı </strong> reddetti",
-        "Attendees_accepted_count": "<strong>1 katılımcı </strong> kabul etti",
+        "Attendees_accepted_count": "<strong>{{count}} katılımcı </strong> kabul etti",
         "Attendees_accepted_count_plural": "<strong>{{count}} katılımcı </strong> kabul etti",
-        "Attendees_tentative_count": "<strong>1 katılımcı </strong> belirsiz olarak kabul etti",
+        "Attendees_tentative_count": "<strong>{{count}} katılımcı </strong> belirsiz olarak kabul etti",
         "Attendees_tentative_count_plural": "<strong>{{count}} katılımcı </strong> belirsiz olarak kabul etti",
-        "DE_with_count": "Yanıtlamadı (1)",
-        "DE_with_count_plural": "Yanıtlamadı ({{count}})",
+        "DE_with_count": "Yanıtlamayan ({{count}})",
+        "DE_with_count_plural": "Yanıtlamayan ({{count}})",
         "Declined": "reddetti",
         "Invited_Visitor": "davet edildi",
         "NE_with_count": "Belirsiz",
@@ -372,7 +374,7 @@
         "ical_note": "Apple iCal, CalDAV protokolü kullanılarak takvimlerinize erişim için yapılandırılabilir. Bu seçildiğinde paylaşılan takvimler ical hesabının Delegation sekmesinde görüntülenir ve Takvimlerinizi diğer kullanıcılarla erişime açabilirsiniz.",
         "label": {
             "snd_autorply_users": "Beni davet etme izni olmayan kullanıcılara otomatik yanıt gönder",
-            "default_appt_dur": "Randevunun varsayılan süresi",
+            "default_appt_dur": "Varsayılan randevu süresi",
             "default_calendar": "Varsayılan takvim",
             "delete_invt_on_rply": "Daveti yanıtlandıktan sonra sil",
             "enable_reminder_sound": "Ses ile uyar (QuickTime veya Windows Media eklentisi gerekir)",
@@ -428,7 +430,7 @@
             },
             "timezones": {
                 "amsterdam": "GMT +01:00 Amsterdam, Berlin, Bern, Roma, Stockholm, Viyana",
-                "chennai": "GMT +05:30 Chennai,Kalkuta,Mumbai,Yeni Delhi",
+                "chennai": "GMT +05:30 Chennai, Kalkuta, Mumbai, Yeni Delhi",
                 "egypt": "GMT +02:00 Mısır"
             },
             "weekdays": {
@@ -467,7 +469,7 @@
         "options": {
             "share_calendar_role": {
                 "admin": "Admin (Görüntüler, düzenler, ekler, kaldırır ve yönetir)",
-                "manager": "Yönetim (Görüntüler, düzenler, ekler, kaldırır)",
+                "manager": "Yönetim (Görüntüler, düzenler, ekler ve kaldırır)",
                 "none": "Hiçbiri",
                 "viewer": "Görüntüleme (Görüntüler)"
             },
@@ -513,7 +515,10 @@
         "never": "Hiçbir zaman",
         "week_before": "{{count}} hafta önce",
         "week_before_plural": "{{count}} hafta önce",
-        "all_time": "Etkinliğin tüm süresi"
+        "all_time": "Etkinliğin tüm süresi",
+        "modal": {
+            "set_new_time_message": "Zamanı geçen randevu için yeni bir zaman belirlemek ister misiniz? TAMAM tuşuna tıkladığınızda tüm diğer hatırlatmalar otomatik olarak iptal edilecek."
+        }
     },
     "remove_from_this_list": "Bu listeden kaldır",
     "revoke_access": "Erişim yetkisini kaldır",
@@ -532,5 +537,8 @@
     "messages": {
         "format_as_plain_text": "Düz Metin olarak biçimlendir"
     },
-    "appt_restored_successfully": "Randevu başarıyla geri yüklendi"
+    "appt_restored_successfully": "Randevu başarıyla geri yüklendi",
+    "placeholder": {
+        "organizer": "Organize eden"
+    }
 }
