@@ -14,7 +14,10 @@
         "day_before_0": "{{count}} за день до",
         "day_before_1": "{{count}} за некскаолько дней до",
         "day_before_2": "{{count}} за некскаолько дней до",
-        "all_time": "Все время мероприятия"
+        "all_time": "Все время мероприятия",
+        "modal": {
+            "set_new_time_message": "Вы хотите установить новое время для пропущенной встречи? Если вы нажмете ОК, все остальные напоминания будут автоматически отменены."
+        }
     },
     "participants": {
         "AC_with_count_0": "Принял",
@@ -34,17 +37,17 @@
         "Not_answered": "не ответил",
         "Invited_Visitor": "были приглашены",
         "Declined": "отклонил",
-        "Attendees_not_answered_count_0": "<strong> 1 участник </strong> не ответил",
+        "Attendees_not_answered_count_0": "<strong> участник </strong> не ответил",
         "Attendees_not_answered_count_1": "<strong> участника </strong> не ответили",
         "Attendees_not_answered_count_2": "<strong> участников </strong> не ответили",
-        "Attendees_declined_count_0": "<strong> 1 участник </strong> отклонил",
+        "Attendees_declined_count_0": "<strong> участник </strong> отклонил",
         "Attendees_declined_count_1": "<strong> участника </strong> отклонили",
         "Attendees_declined_count_2": "<strong> участников </strong> отклонили",
-        "Attendees_accepted_count_0": "<strong> 1 участник </strong> принял",
+        "Attendees_accepted_count_0": "<strong> участник </strong> принял",
         "Attendees_accepted_count_1": "<strong> участника </strong> приняли",
         "Attendees_accepted_count_2": "<strong> участников </strong> приняли",
         "Accepted": "Принято",
-        "Attendees_tentative_count_0": "<strong> 1 участник </strong> предварительно принял",
+        "Attendees_tentative_count_0": "<strong> участник </strong> предварительно принял",
         "Attendees_tentative_count_1": "<strong> участника </strong> предварительно приняли",
         "Attendees_tentative_count_2": "<strong> участников </strong> предварительно приняли"
     },
@@ -84,7 +87,9 @@
             "calendar_moved_to_root_folder_error": "Что-то пошло не так, повторите попытку",
             "edit_calendar_error": "Что-то пошло не так, повторите попытку",
             "new_calendar_create_error": "Что-то пошло не так, повторите попытку",
-            "new_calendar_created": "Создан новый календарь"
+            "new_calendar_created": "Создан новый календарь",
+            "calendar_permanently_deleted": "Календарь удален навсегда",
+            "calendar_restored": "Календарь успешно восстановлен"
         },
         "modal": {
             "delete": {
@@ -233,7 +238,7 @@
         "delete_0": "Удалить",
         "delete_1": "Удалить",
         "delete_2": "Удалить",
-        "discard_changes": "ОТМЕНИТЬ ИЗМЕНЕНИЯ",
+        "discard_changes": "УДАЛИТЬ ИЗМЕНЕНИЯ",
         "edits_saved": "Изменения сохранены",
         "empty": "Пусто",
         "error_try_again": "Что-то пошло не так, попробуйте еще раз",
@@ -245,7 +250,20 @@
         "ok": "ОК",
         "restore": "Восстановить",
         "results_for": "Результаты поиска:",
-        "snooze": "Отложить"
+        "snooze": "Отложить",
+        "filter_sharer_user": "Владелец папки",
+        "appt_reminder_0": "Напоминание о встрече",
+        "appt_reminder_1": "Напоминание о встречах",
+        "appt_reminder_2": "Напоминание о встречах",
+        "access_revoked": "Доступ отменен",
+        "calendar_shared": "Доступ к календарю успешно предоставлен",
+        "changes_saved": "Изменения сохранены",
+        "delete_instance": "Вы действительно хотите удалить этот экземпляр встречи «{title}»?",
+        "on_behalf_of": "{{identitiy}} ({{accountName}}от <{{other Account}}>",
+        "settings_saved": "Настройки сохранены",
+        "start_week_on": "Начать неделю",
+        "trash_emptied": "Корзина успешно очищена",
+        "undo": "Отменить"
     },
     "tooltip": {
         "show_optionals": "Показать опции",
@@ -434,7 +452,7 @@
             }
         },
         "ical_note": "Apple iCal можно настроить для доступа к вашим календарям с помощью протокола CalDAV. Когда этот параметр включен, общие календари отображаются во вкладке Делегирование учетной записи ical, поэтому вы можете делегировать доступ к своим календарям другим пользователям.",
-        "permissions_note": "Пользователи ниже должны быть пользователями данного почтового сервера (zextras.com). Вы можете использовать полный адрес электронной почты, либо просто имя пользователя."
+        "permissions_note": "Пользователи должны быть пользователями данного почтового сервера (zextras.com). Вы можете использовать полный адрес электронной почты, либо просто имя пользователя."
     },
     "months": {
         "april": "Апрель",
@@ -487,7 +505,7 @@
             }
         },
         "note": {
-            "share_note": "В стандартном сообщении отображается ваше имя, имя общего элемента, разрешения, предоставленные получателям, и информация для входа."
+            "share_note": "В стандартном сообщении отображается ваше имя, название общего элемента, разрешения, предоставленные получателям, и информация для входа."
         },
         "label": {
             "allow_to_see_private_appt": "Разрешить пользователям видеть мои личные встречи",
@@ -511,7 +529,7 @@
         "new_time_proposed_succes": "Предложено новое время",
         "proposed_time_accepted": "Вы приняли предлагаемое время",
         "url_copied": "{{title}} скопировано",
-        "share_folder_success": "Доступ к этому календарю предоставлен",
+        "share_folder_success": "Доступ к календарю предоставлен",
         "new_time_proposed_success": "Предложено новое время"
     },
     "owner": "Владелец",
@@ -543,5 +561,9 @@
     "is_private": "Приватный",
     "messages": {
         "format_as_plain_text": "Форматировать как обычный текст"
+    },
+    "appt_restored_successfully": "Встреча успешно восстановлена",
+    "placeholder": {
+        "organizer": "Организатор"
     }
 }
