@@ -169,7 +169,7 @@
         "of_every": "of every",
         "of_every_month": "of the month, every",
         "ok": "OK",
-        "on_behalf_of": "{{identitiy}} ({{accountName}} on behalf of <{{otherAccount}}>",
+        "on_behalf_of": "{{accountName}} on behalf of {{identitiy}} <{{otherAccount}}>",
         "ongoing": "Ongoing",
         "optional": "Optional",
         "optional_plural": "Optionals",
