@@ -14,7 +14,7 @@
         "save_to_preview": "Sauver l’aperçu",
         "send": "Envoyer",
         "share_calendar": "Partager le calendrier",
-        "calendar_access_share": "Accès au partage de calendrier",
+        "calendar_access_share": "Partage d'accès au calendrier",
         "edit_calendar_properties": "Modifier les propriétés du calendrier",
         "send_cancellation": "Envoyer l'annulation",
         "empty_trash_confirmation": "Cette action supprimera tous les éléments des dossiers de la corbeille E-mail, Contacts, Calendrier, Tâches et Portefeuille. Êtes-vous sûr de vouloir supprimer définitivement tout ce qui se trouve dans ces dossiers de la corbeille ?"
@@ -150,7 +150,7 @@
         "every": "Chaque",
         "every_weekday": "Chaque jour de la semaine",
         "every_year_on": "Chaque année sur",
-        "filter_sharer_user": "Utilisateur du partage de filtre",
+        "filter_sharer_user": "Propriétaire du dossier",
         "free": "Libre",
         "free_busy": "Libre/Occupé",
         "from": "Depuis",
@@ -210,7 +210,7 @@
             "wednesday": "Mercredi",
             "saturday": "Samedi"
         },
-        "weeks_on": "Semaines de",
+        "weeks_on": "Semaine(s) de",
         "work_hour": "Heure travaillée",
         "work_week": "Semaine travaillée",
         "tentative": "tentative",
@@ -240,7 +240,19 @@
         "ok": "OK",
         "restore": "Restaurer",
         "restore_calendar": "Restaurer le calendrier",
-        "results_for": "Résultats pour :"
+        "results_for": "Résultats pour :",
+        "appt_reminder": "Rappel",
+        "appt_reminder_plural": "Rappels",
+        "access_revoked": "Accès supprimé",
+        "changes_saved": "Modifications enregistrées",
+        "of_every_month": "du mois, chaque",
+        "on_behalf_of": "{{accountName}} de la part de {{identitiy}} <{{otherAccount}}>",
+        "start_week_on": "La semaine débute le",
+        "trash_emptied": "Corbeille vidée avec succès",
+        "undo": "Annuler",
+        "calendar_shared": "Calendrier partagé avec succès",
+        "delete_instance": "Êtes vous sûr de vouloir supprimer cette instance de l'évènement “{title}” ?",
+        "settings_saved": "Paramètres enregistrés"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -276,7 +288,9 @@
             "appt_deleted_error": "Quelque chose s'est mal passé, veuillez réessayer.",
             "appt_moved_error": "Quelque chose s'est mal passé, le rendez-vous n'a pas été déplacé, veuillez réessayer.",
             "calendar_moved_to_root_folder_error": "Quelque chose s'est mal passé, veuillez réessayer",
-            "edit_calendar": "Modifications sauvées correctement"
+            "edit_calendar": "Modifications sauvées correctement",
+            "calendar_restored": "Le calendrier a été restauré avec succès",
+            "calendar_permanently_deleted": "Le calendrier a été supprimé"
         },
         "somebody_is_organizer": "<strong>{{somebody}}</strong> est l'organisateur",
         "sure_to_delete_all_occurences_appointment": "Êtes-vous sûr de vouloir supprimer toutes les occurrences de ce rendez-vous ?",
@@ -294,9 +308,9 @@
                 "sure_delete_appointment_permanently": "En supprimant de façon permanente ce rendez-vous, vous ne serez plus en mesure de le récupérer, continuer ?"
             }
         },
-        "share_calendar_url_msg": "Vous pouvez rapidement partager {{title}} avec vos collaborateurs en utilisant l'une de ces URL :",
-        "share_calendar_url_note": "Seuls vos collaborateurs peuvent accéder à vos données en utilisant ces urls.",
-        "share_calendar_url_note2": "Seuls vos collaborateurs peuvent accéder à vos données en utilisant ces urls.<br/>Vous pouvez également retrouver ces liens en cliquant droit sur la liste des calendriers.",
+        "share_calendar_url_msg": "Vous pouvez rapidement partager {{title}} avec vos collaborateurs en utilisant l'une de ces URLs :",
+        "share_calendar_url_note": "Seuls vos collaborateurs peuvent accéder à vos données en utilisant ces URLs.",
+        "share_calendar_url_note2": "Seuls vos collaborateurs peuvent accéder à vos données en utilisant ces URLs.<br/>Vous pouvez également retrouver ces liens en cliquant droit sur la liste des calendriers.",
         "somebody_invited_you": "<strong>{{somebody}}</strong> vous a invité",
         "sure_to_delete_appointment": "Êtes-vous sûr de vouloir supprimer le rendez-vous ?",
         "you_sure_delete_calendar": "Êtes-vous sûr de vouloir supprimer définitivement le calendrier \"{{name}}\" ?",
@@ -322,15 +336,15 @@
         "Accepted": "accepté",
         "AC_with_count": "Accepté",
         "AC_with_count_plural": "Accepté ({{count}})",
-        "Attendees_accepted_count": "<strong>1 participant </strong> a accepté",
+        "Attendees_accepted_count": "<strong>{{count}} participant </strong> a accepté",
         "Attendees_accepted_count_plural": "<strong>{{count}} participants </strong> ont accepté",
-        "Attendees_declined_count": "<strong>1 participant </strong> a refusé",
+        "Attendees_declined_count": "<strong>{{count}} participant </strong> a refusé",
         "Attendees_declined_count_plural": "<strong>{{count}} participants </strong> ont refusé",
-        "Attendees_not_answered_count": "<strong>1 participant </strong> n'a pas répondu",
+        "Attendees_not_answered_count": "<strong>{{count}} participant </strong> n'a pas répondu",
         "Attendees_not_answered_count_plural": "<strong>{{count}} participants </strong> n'ont pas répondu",
-        "Attendees_tentative_count": "<strong>1 participant</strong> a accepté à titre provisoire",
+        "Attendees_tentative_count": "<strong>{{count}} participant</strong> a accepté à titre provisoire",
         "Attendees_tentative_count_plural": "<strong>{{count}} participants </strong> ont accepté à titre provisoire",
-        "DE_with_count": "N'a pas répondu (1)",
+        "DE_with_count": "N'a pas répondu ({{count}})",
         "DE_with_count_plural": "N'ont pas répondu ({{count}})",
         "Declined": "refusé",
         "Invited_Visitor": "ont été invités",
@@ -340,7 +354,7 @@
         "TE_with_count": "Refusé",
         "TE_with_count_plural": "Refusés ({{count}})",
         "Tentative": "accepté à titre provisoire",
-        "visitors": "et d'autres {{autres}} participants"
+        "visitors": "et d'autres {{others}} participants"
     },
     "reminder": {
         "hour_before": "{{count}} heure avant",
@@ -483,5 +497,6 @@
     "success": "Succès",
     "button": {
         "customize_modal": "Ouvrir l'écran de personnalisation"
-    }
+    },
+    "appt_restored_successfully": "Évènement restauré avec succès"
 }
