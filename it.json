@@ -230,7 +230,9 @@
         "of_every_month": "del mese, ogni",
         "ok": "OK",
         "restore": "Ripristina",
-        "results_for": "Risultati per:"
+        "results_for": "Risultati per:",
+        "undo": "Annulla",
+        "start_week_on": "La settimana inizia il"
     },
     "action": {
         "send": "Invia",
@@ -509,5 +511,8 @@
     "write": "Scrivi",
     "has_attachments": "Ha allegati",
     "is_private": "È privato",
-    "is_recurrent": "È ricorrente"
+    "is_recurrent": "È ricorrente",
+    "placeholder": {
+        "organizer": "Organizzatore"
+    }
 }
