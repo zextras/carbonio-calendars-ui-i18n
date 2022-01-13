@@ -498,5 +498,8 @@
     "button": {
         "customize_modal": "Ouvrir l'écran de personnalisation"
     },
-    "appt_restored_successfully": "Évènement restauré avec succès"
+    "appt_restored_successfully": "Évènement restauré avec succès",
+    "placeholder": {
+        "organizer": "Organisateur"
+    }
 }
