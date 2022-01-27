@@ -135,7 +135,7 @@
         "all_day": "Ganztägig",
         "attendee_plural": "Teilnehmer",
         "attachment": "Anhang",
-        "attachment_plural": "",
+        "attachment_plural": "Anhänge",
         "tentative": "Vorläufig",
         "to": "An",
         "calendar": "Kalender",
@@ -212,9 +212,9 @@
         "Declined": "abgelehnt",
         "Accepted": "akzeptiert",
         "NE_with_count": "Vorläufig",
-        "NE_with_count_plural": "",
+        "NE_with_count_plural": "Vorläufig ({{count}})",
         "TE_with_count": "Abgelehnt",
-        "TE_with_count_plural": ""
+        "TE_with_count_plural": "Abgelehnt ({{count}})"
     },
     "action": {
         "create": "Erstellen",
