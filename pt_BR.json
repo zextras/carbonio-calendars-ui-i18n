@@ -20,7 +20,7 @@
         "download": "Baixar",
         "download_plural": "Baixar tudo",
         "attachment": "Anexo",
-        "attachment_plural": "{{count}} Anexos",
+        "attachment_plural": "anexos",
         "month": "Mês",
         "invitation_not_sent": "Você ainda não enviou o convite aos participantes",
         "calendar_color": "Cor do calendário",
