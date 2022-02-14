@@ -152,19 +152,19 @@
         "create": "Crear",
         "save": "Guardar",
         "send": "Enviar",
-        "delete_calendar": "Borrar calendario",
+        "delete_calendar": "Eliminar calendario",
         "empty_trash": "Vaciar papelera",
-        "move_to_root": "Mover a raíz",
+        "move_to_root": "Mover al directorio raíz",
         "new_calendar": "Nuevo calendario",
-        "preview": "Clic para previsualizar en otra pestaña",
+        "preview": "Clic para visualizar en otra pestaña",
         "delete_permanently": "Borrar permanentemente",
         "edit_message": "Editar mensaje",
-        "save_to_preview": "Guardar en vista previa",
+        "save_to_preview": "Salvar para pre-visualizar",
         "send_cancellation": "Enviar cancelación",
         "calendar_access_share": "Compartir acceso al calendario",
         "edit_calendar_properties": "Editar propiedades del calendario",
         "share_calendar": "Compartir calendario",
-        "empty_trash_confirmation": "Esta acción borrará todos los elementos en las carpetas basura de Correo electrónico, Contactos, Calendario, Tareas y Maletín. ¿Seguro que quieres borrar permanentemente todo en esas basura?"
+        "empty_trash_confirmation": "Esta acción borrará todos los elementos del correo electrónico, contactos, calendario, tareas, maletín y papelera. ¿Seguro que desea borrar todos los elementos mencionados?"
     },
     "event": {
         "action": {
@@ -200,10 +200,10 @@
                 "title": "Mover",
                 "footer": "Vacío",
                 "body": {
-                    "message3": "Elige un calendario al que mover las citas consideradas:"
+                    "message3": "Elegir un calendario hacia donde mover las citas consideradas:"
                 },
                 "input": {
-                    "filter": "Filtrar Calendarios"
+                    "filter": "Filtrar calendarios"
                 },
                 "new": "Nuevo calendario"
             },
@@ -212,7 +212,7 @@
                 "footer": "Crear y restaurar"
             },
             "footer": {
-                "go_back": "Regresar"
+                "go_back": "Volver"
             },
             "item": {
                 "empty": "Vacío"
@@ -229,7 +229,7 @@
         "modal": {
             "custom_schedule": {
                 "footer": "Editar",
-                "title": "Personalizar de trabajo"
+                "title": "Personalizar horario de trabajo"
             }
         }
     },
@@ -423,7 +423,7 @@
     "success": "Éxito",
     "type": "Tipo",
     "add": "Agregar",
-    "appointments": "Reuniones",
+    "appointments": "Citas",
     "message": {
         "you": "Tu",
         "are_organizer": "eres el organizador",
@@ -490,21 +490,21 @@
     "administer": "Administrar",
     "allowed_actions": "Acciones permitidas",
     "freebusy": "FreeBusy",
-    "cannot_edit_name": "No puedes editar el nombre de un calendario del sistema",
+    "cannot_edit_name": "No es posible editar el nombre de un calendario del sistema",
     "composer": {
         "attachment": {
-            "contactsMod": "añadir tarjeta de contacto",
+            "contactsMod": "añadir ficha de contacto",
             "draganddrop": {
-                "content": "Suelta aquí tus archivos adjuntos para añadirlos rápidamente a una cita",
-                "title": "Modo Arrastrar y Soltar"
+                "content": "Arrastre aquí sus archivos para añadirlos rápidamente a una cita",
+                "title": "Modo \"arrastrar y soltar\""
             },
-            "local": "Añadir desde local",
+            "local": "Añadir desde Mi PC",
             "drive": "Añadir desde Drive"
         }
     },
-    "edit_share_properties": "Editar propiedades de compartir",
-    "find_calendar_shares": "Encontrar compartidos de calendario",
-    "find_shares": "Encontrar compartidos",
+    "edit_share_properties": "Editar propiedades de compartición",
+    "find_calendar_shares": "Encontrar comparticiones de calendario",
+    "find_shares": "Encontrar comparticiones",
     "insert": "Insertar",
     "private": "Privado",
     "remove_from_this_list": "Quitar de esta lista",
