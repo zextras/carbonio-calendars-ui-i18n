@@ -151,7 +151,8 @@
         "delete_instance": "คุณแน่ใจหรือไม่ว่าต้องการลบอินสแตนซ์ของการนัดหมาย “{title}” นี้?",
         "settings_saved": "การตั้งค่าที่บันทึกไว้",
         "on_behalf_of": "{{accountName}} ในนามของ {{identitiy}} <{{otherAccount}}>",
-        "trash_emptied": "ล้างถังขยะเรียบร้อยแล้ว"
+        "trash_emptied": "ล้างถังขยะเรียบร้อยแล้ว",
+        "the": "ที่"
     },
     "calendar": {
         "modal": {
