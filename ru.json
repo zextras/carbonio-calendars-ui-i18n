@@ -124,7 +124,7 @@
         "start_date": "Дата начала",
         "required": "Обязательный",
         "reminder": "Напоминание",
-        "private": "Приватный",
+        "private": "Личные",
         "out_of_office": "Нет на работе",
         "location": "Место",
         "from": "От",
@@ -190,7 +190,7 @@
         "work_hour": "Рабочий час",
         "work_week": "Рабочая неделя",
         "your_pref_timezone_msg": "Предпочтительный часовой пояс: GMT +01: 00 Амстердам, Берлин, Берн, Рим, Стокгольм, Вена.",
-        "custom": "Пользовательский",
+        "custom": "Персонализировать",
         "custom_repeat": "Настроить повторение",
         "general": "Общие настройки",
         "regular": "Обычный",
@@ -245,7 +245,7 @@
         "event_title": "Название мероприятия",
         "move": "Перенести",
         "new_calendar": "Новый календарь",
-        "none": "Никто",
+        "none": "Никогда",
         "of_every_month": "месяца, каждый(ую)",
         "ok": "ОК",
         "restore": "Восстановить",
@@ -405,7 +405,7 @@
                 "day": "День"
             },
             "dflt_vsblty_opt": {
-                "public": "Общедоступный",
+                "public": "Общедоступные",
                 "private": "Частный"
             },
             "free_busy_opts": {
@@ -559,7 +559,7 @@
     "success": "Успешно",
     "has_attachments": "Есть вложения",
     "is_recurrent": "Повторяющаяся",
-    "is_private": "Приватный",
+    "is_private": "Личная",
     "messages": {
         "format_as_plain_text": "Форматировать как обычный текст"
     },
@@ -569,7 +569,7 @@
     },
     "timezone": {
         "alaska": "{{value}} Аляска",
-        "anadyr_petropavlovsk_kamchatsky_rtz11": "{{value}} Анадырь, Петропавловск-Камчатский(RTZ 11)",
+        "anadyr_petropavlovsk_kamchatsky_rtz11": "{{value}}  Анадырь, Петропавловск-Камчатский",
         "argentina": "{{value}} Аргентина",
         "arizona": "{{value}} Аризона",
         "asuncion": "{{value}} Аризона",
@@ -654,6 +654,6 @@
         "newfoundland": "{{value}} Ньюфаундленд",
         "sarajevo_skopje_warsaw_zagreb": "{{value}} Сараево, Скопье, Варшава, Загреб",
         "us_canada_eastern": "{{value}} US/Canada Eastern",
-        "vladivostok_magadan": "{{value}} Владивосток_Магадан_rtz_9"
+        "vladivostok_magadan": "{{value}} Владивосток, Магадан"
     }
 }
