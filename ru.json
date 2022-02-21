@@ -89,7 +89,8 @@
             "new_calendar_create_error": "Что-то пошло не так, повторите попытку",
             "new_calendar_created": "Создан новый календарь",
             "calendar_permanently_deleted": "Календарь удален навсегда",
-            "calendar_restored": "Календарь успешно восстановлен"
+            "calendar_restored": "Календарь успешно восстановлен",
+            "appointment_permanently_deleted": "Встреча удалена"
         },
         "modal": {
             "delete": {
@@ -264,7 +265,8 @@
         "start_week_on": "Начать неделю",
         "trash_emptied": "Корзина успешно очищена",
         "undo": "Отменить",
-        "of": "из"
+        "of": "из",
+        "new_appointment": "Новая встреча"
     },
     "tooltip": {
         "show_optionals": "Показать опции",
@@ -569,7 +571,7 @@
     },
     "timezone": {
         "alaska": "{{value}} Аляска",
-        "anadyr_petropavlovsk_kamchatsky_rtz11": "{{value}}  Анадырь, Петропавловск-Камчатский",
+        "anadyr_petropavlovsk_kamchatsky_rtz11": "{{value}} Анадырь, Петропавловск-Камчатский",
         "argentina": "{{value}} Аргентина",
         "arizona": "{{value}} Аризона",
         "asuncion": "{{value}} Аризона",
@@ -604,7 +606,7 @@
         "guadalajara_mexico_city_monterrey ": "{{value}} Гвадалахара, Мехико, Монтеррей",
         "harare_pretoria": "{{value}} Хараре, Претория",
         "hawaii": "{{value}} Гавайи",
-        "indiana_east": "{{value}} Indiana (East)",
+        "indiana_east": "{{value}} Индиана (Восток)",
         "irkutsk_rtz_7": "{{value}} Иркутск (RTZ 7)",
         "istanbul": "{{value}} Стамбул",
         "jerusalem": "{{value}} Иерусалим",
@@ -653,7 +655,7 @@
         "montevideo": "{{value}} Монтевидео",
         "newfoundland": "{{value}} Ньюфаундленд",
         "sarajevo_skopje_warsaw_zagreb": "{{value}} Сараево, Скопье, Варшава, Загреб",
-        "us_canada_eastern": "{{value}} US/Canada Eastern",
+        "us_canada_eastern": "{{value}} Восточная часть США/Канады",
         "vladivostok_magadan": "{{value}} Владивосток, Магадан"
     }
 }
