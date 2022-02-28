@@ -4,14 +4,14 @@
         "calendar_access_share": "Udostępnij uprawnienia do kalendarza",
         "delete_calendar": "Usuń kalendarz",
         "edit_calendar_properties": "Edytuj szczegóły kalendarza",
-        "edit_message": "Edytuj wiadomość",
-        "empty_trash": "Opróżnij kosz",
+        "edit_message": "Edytuj Wiadomość",
+        "empty_trash": "Opróżnij Kosz",
         "move_to_root": "Przenieś do źródła",
         "preview": "Kliknij aby zobaczyć podgląd w nowej karcie",
         "save_to_preview": "Zapisz do podglądu",
         "send": "Wyślij",
-        "send_cancellation": "Wyślij anulację",
-        "share_calendar": "Udostępnij kalendarz"
+        "send_cancellation": "Wyślij Anulację",
+        "share_calendar": "Udostępnij Kalendarz"
     },
     "event": {
         "action": {
@@ -71,9 +71,9 @@
         "changes_saved": "Zmiany zostały zapisane",
         "create": "Stwórz",
         "create_appt_settings": "Tworzenie spotkań",
-        "create_new_calendar": "Stwórz nowy kalendarz",
+        "create_new_calendar": "Stwórz Nowy kalendarz",
         "custom": "Niestandardowy",
-        "custom_repeat": "Niestandardowe powtarzanie",
+        "custom_repeat": "Niestandardowe Powtarzanie",
         "day": "Dzień",
         "days": "Dni",
         "default_appt_vsblty": "Domyślna widoczność spotkań",
@@ -218,7 +218,7 @@
             "appt_restored": "Spotkanie zostało przywrócone do",
             "appointment_permanently_deleted_succesfully": "Trwałe usunięcie zostało pomyślnie ukończone",
             "calendar_deleted_successfully": "Kalendarz został pomyślnie usunięty.",
-            "calendar_moved_to_root_folder": "Kalendarz został przeniesiony do folderu źródłowego",
+            "calendar_moved_to_root_folder": "Kalendarz został przeniesiony do Folderu źródłowego",
             "calendar_moved_to_trash": "Kalendarz został przeniesiony do kosza",
             "calendar_permanently_deleted": "Kalendarz został trwale usunięty",
             "calendar_restored": "Kalendarz został pomyślnie przywrócony",
@@ -473,7 +473,7 @@
     "appointments": "Spotkania",
     "appt_restored_successfully": "Spotkania przywrócone prawidłowo",
     "button": {
-        "customize_modal": "Otwórz dostosowywanie Modala"
+        "customize_modal": "Otwórz Dostosowywanie Modala"
     },
     "calendar": {
         "modal": {
@@ -495,7 +495,7 @@
         }
     },
     "edit_share_properties": "Edytuj ustawienia udostępniania",
-    "find_calendar_shares": "Znajdź udostępnienia kalendarza",
+    "find_calendar_shares": "Znajdź Udostępnienia Kalendarza",
     "find_shares": "Znajdź udostępnienia",
     "freebusy": "WolnyZajęty",
     "has_attachments": "Ma załączniki",
