@@ -1,7 +1,7 @@
 {
     "action": {
         "empty_trash_confirmation": "Ta czynność usunie wszystkie elementy w koszach: Skrzynki pocztowej, Kontaktów, Kalndarza, Zadań oraz Aktówki. Czy na pewno chcesz trwale usunąć całą zawartość tych koszy?",
-        "calendar_access_share": "Udostępnij uprawnienia do kalendarza",
+        "calendar_access_share": "Udostępnij dostęp do kalendarza",
         "delete_calendar": "Usuń kalendarz",
         "edit_calendar_properties": "Edytuj szczegóły kalendarza",
         "edit_message": "Edytuj Wiadomość",
@@ -92,7 +92,7 @@
         "download_1": "Pobierz wszystkie",
         "download_2": "Pobierz wszystkie",
         "edit": "Edytuj",
-        "edit_access": "Edytuj uprawnienia do {{name}}",
+        "edit_access": "Edytuj dostęp do {{name}}",
         "edits_saved": "Zmiany zostały pomyślnie zapisane",
         "email_input_message": "Wprowadź adresy mailowe",
         "empty": "Pusty",
@@ -186,7 +186,7 @@
         "permissions": "Uprawnienia",
         "private": "Prywatny",
         "outlook_url": "adres URL Outlooka",
-        "of": "",
+        "of": "od",
         "share": "Udostępnij",
         "timezone_pref_msg": "Terminy zależą od twoich preferencji stref czasowych."
     },
@@ -449,11 +449,11 @@
         "options": {
             "share_calendar_role": {
                 "admin": "Administrator (może wyświetlać, edytować, dodawać, usuwać oraz zarządzać)",
-                "viewer": "Obserwator (może wyświetlać)",
+                "viewer": "Wyświetlający (może wyświetlać)",
                 "manager": "Manager (może wyświetlać, edytować, dodawać oraz usuwać)"
             },
             "share_calendar_with": {
-                "internal_users_groups": "Użytkonicy lub Grupy z mojej domeny",
+                "internal_users_groups": "Użytkownicy lub Grupy z mojej domeny",
                 "public": "Publiczny (można tylko wyświetlać, hasło niewymagane)",
                 "external_guests": "Goście spoza mojej domeny (mogą tylko wyświetlać)"
             }
@@ -527,7 +527,7 @@
     "search": {
         "organized_by": "zorganizowane przez"
     },
-    "share_invite_resent": "Udostępnij ponowne zaproszenie",
+    "share_invite_resent": "Zaproszenie do udostępnienia zostało wysłane ponownie",
     "shared_folders": "Udostępnione Kalendarze",
     "shared_items": "Udostępnione przedmioty",
     "messages": {
@@ -561,6 +561,6 @@
         "enable_disable_rich_text": "Włącz/Wyłącz rozbudowany edytor tekstu"
     },
     "type": "Typ",
-    "workflow": "Organizacja Pracy",
+    "workflow": "OrganizacjaPracy",
     "write": "Napisz"
 }
