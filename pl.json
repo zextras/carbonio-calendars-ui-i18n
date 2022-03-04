@@ -81,7 +81,7 @@
         "delete_0": "Usuń",
         "delete_1": "Usuń wszystkie",
         "delete_2": "Usuń wszystkie",
-        "delete_permanently": "Usuń trwale",
+        "delete_permanently": "Trwale usuń",
         "discard_changes": "ODRZUĆ ZMIANY",
         "dismiss_0": "Ignoruj",
         "dismiss_1": "Ignoruj wszystkie",
@@ -193,7 +193,7 @@
     "message": {
         "modal": {
             "delete": {
-                "sure_delete_appointment_permanently": "Usuwając trwale to spotkanie nie będziesz w stanie go przywrócić. Kontynuować?",
+                "sure_delete_appointment_permanently": "Trwale usuwając to spotkanie nie będziesz w stanie go przywrócić. Kontynuować?",
                 "sure_delete_appointment_all_instances_permanently": "Ta czynność usunie wszystkie przypadki tego spotkania. Nie będziesz w stanie ich przywrócić. Kontynuować?"
             }
         },
