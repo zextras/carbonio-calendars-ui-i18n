@@ -188,7 +188,8 @@
         "outlook_url": "adres URL Outlooka",
         "of": "od",
         "share": "Udostępnij",
-        "timezone_pref_msg": "Terminy zależą od twoich preferencji stref czasowych."
+        "timezone_pref_msg": "Terminy zależą od twoich preferencji stref czasowych.",
+        "the": " "
     },
     "message": {
         "modal": {
