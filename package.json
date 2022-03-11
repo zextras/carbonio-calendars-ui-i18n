@@ -1,7 +1,7 @@
 {
-	"name": "carbonio-boilerplate-ui",
+	"name": "carbonio-admin-manage-ui",
 	"version": "0.1.9-rc.2",
-	"description": "Example module for Zextras Carbonio",
+	"description": "Admin Manage for Zextras Carbonio",
 	"main": "src/app.tsx",
 	"scripts": {
 		"build": "sdk build",
@@ -80,10 +80,10 @@
 	],
 	"carbonio": {
 		"translations_repository": "<Insert Repo Here>",
-		"name": "carbonio-boilerplate-ui",
-		"priority": 1,
+		"name": "carbonio-admin-manage-ui",
+		"priority": 3,
 		"type": "carbonioAdmin",
-		"display": "Example App",
-		"icon": "CubeOutline"
+		"display": "Manage",
+		"icon": "List"
 	}
 }
