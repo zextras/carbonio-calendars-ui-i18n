@@ -140,7 +140,7 @@
         "revoke_share": "Cofnij udostępnienie {{title}}",
         "save": "Zapisz",
         "series": "Seria",
-        "set_new_time": "Ustaw nową godzinę",
+        "set_new_time": "Ustaw nowy czas",
         "share_calendar_url": "Udostępnij dostęp do {{title}}",
         "shares_items": "Udostępnione kalendarze użytkownika <bold>{{user}}</bold>",
         "sharing_of_this_folder": "Udostępnianie tego folderu",
@@ -150,7 +150,7 @@
         "show_declined_meetings": "Pokaż odrzucone spotkania",
         "snooze": "Drzemka",
         "start_date": "Data rozpoczęcia",
-        "start_date_and_time": "Data i godzina rozpoczęcia",
+        "start_date_and_time": "Data i czas rozpoczęcia",
         "start_week_on": "Zacznij tydzień",
         "time_zones": "Strefy czasowe",
         "tentative": "Niepewne",
@@ -353,8 +353,8 @@
         "invite": {
             "error": "Błąd"
         },
-        "new_time_proposed_success": "Nowa godzina została zaproponowana",
-        "proposed_time_accepted": "Zaakceptowano zaproponowaną godzinę",
+        "new_time_proposed_success": "Zaproponowano nowy czas",
+        "proposed_time_accepted": "Zaakceptowano zaproponowany czas",
         "url_copied": "skopiowano {{title}}"
     },
     "timezone": {
