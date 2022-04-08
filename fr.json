@@ -202,15 +202,7 @@
         "to": "À",
         "type_name_here": "Nom du calendrier",
         "view_url": "Voir l'URL",
-        "week": {
-            "friday": "Vendredi",
-            "monday": "Lundi",
-            "sunday": "Dimanche",
-            "thursday": "Jeudi",
-            "tuesday": "Mardi",
-            "wednesday": "Mercredi",
-            "saturday": "Samedi"
-        },
+        "week": "Semaine",
         "weeks_on": "Semaine(s) de",
         "work_hour": "Heure travaillée",
         "work_week": "Semaine travaillée",
@@ -260,7 +252,18 @@
         "share_with": "partagé avec",
         "propose_new_time": "PROPOSER UN NOUVEL HORAIRE",
         "app_name": "Calendriers",
-        "exclude_free_busy": "Ne pas inclure ce calendrier dans la gestion des disponibilités"
+        "exclude_free_busy": "Ne pas inclure ce calendrier dans la gestion des disponibilités",
+        "week_day": {
+            "monday": "Lundi",
+            "friday": "Vendredi",
+            "saturday": "Samedi",
+            "sunday": "Dimanche",
+            "thursday": "Jeudi",
+            "tuesday": "Mardi",
+            "wednesday": "Mercredi"
+        },
+        "role": "rôle",
+        "today": "aujourd'hui"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
