@@ -448,7 +448,7 @@
     },
     "share": {
         "note": {
-            "share_note": "Domyślna wiadomość zawiera twoje imię, nazwę udostępnianiego elementu, uprawnienia przyznane odbiorcom oraz informacje dot. logowania."
+            "share_note": "Domyślna wiadomość zawiera twoje imię, nazwę udostępnianiego elementu, uprawnienia przyznane odbiorcom oraz informacje logowania."
         },
         "options": {
             "share_calendar_role": {
