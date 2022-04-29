@@ -166,7 +166,8 @@
         "propose_new_time": "AJUKAN WAKTU BARU",
         "share_with": "bagikan kepada",
         "app_name": "Kalender",
-        "new_appointment": "Janji temu baru"
+        "new_appointment": "Janji temu baru",
+        "preview": "Pratinjau"
     },
     "calendar": {
         "modal": {
@@ -269,7 +270,8 @@
             "new_calendar_created": "Kalender baru dibuat",
             "calendar_permanently_deleted": "Kalender dihapus permanen",
             "calendar_restored": "Kalender berhasil dipulihkan",
-            "appointment_permanently_deleted": "Janji temu dihapus permanen"
+            "appointment_permanently_deleted": "Janji temu dihapus permanen",
+            "calendar_edits_saved": "Hasil edit disimpan dengan benar"
         },
         "have_not_sent_invitation": "Anda belum mengirim undangan ke peserta",
         "invite_has_no_message": "Undangan ini tidak berisi pesan teks",
