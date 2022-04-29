@@ -68,7 +68,7 @@
         "send": "送信",
         "delete_calendar": "カレンダーを削除する",
         "empty_trash": "ゴミ箱を空にする",
-        "preview": "クリックして別のタブでプレビューする",
+        "preview": "クリックしてプレビューする",
         "delete_permanently": "完全に削除する",
         "edit_message": "メッセージを編集する",
         "move_to_root": "ルートに移動する",
@@ -617,5 +617,8 @@
     "has_attachments": "添付ファイルがあります",
     "is_private": "プライベートです",
     "is_recurrent": "循環しています",
-    "appt_restored_successfully": "予定が復元されました"
+    "appt_restored_successfully": "予定が復元されました",
+    "preview": {
+        "close": "プレビューを閉じる"
+    }
 }
