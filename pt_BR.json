@@ -168,7 +168,7 @@
         "new_calendar": "Novo calendário",
         "delete_calendar": "Excluir calendário",
         "save_to_preview": "Salvar para visualizar",
-        "preview": "Clique para pré-visualizar em outra aba",
+        "preview": "Clique para pré-visualizar",
         "delete_permanently": "Excluir Permanentemente",
         "edit_message": "Editar Mensagem",
         "send_cancellation": "Enviar Cancelamento",
@@ -643,5 +643,8 @@
     "appt_restored_successfully": "Compromisso restaurado com sucesso",
     "messages": {
         "format_as_plain_text": "Formatar como Texto Simples"
+    },
+    "preview": {
+        "close": "Fechar Pré-visualização"
     }
 }
