@@ -643,5 +643,8 @@
     "appt_restored_successfully": "Afspraak met succes hersteld",
     "messages": {
         "format_as_plain_text": "Formatteren als platte tekst"
+    },
+    "preview": {
+        "close": "Voorbeeld sluiten"
     }
 }
