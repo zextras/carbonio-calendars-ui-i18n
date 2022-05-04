@@ -179,7 +179,7 @@
         "create": "สร้าง",
         "save": "บันทึก",
         "send": "ส่ง",
-        "preview": "คลิกเพื่อดูตัวอย่างในแท็บอื่น",
+        "preview": "คลิกเพื่อดูตัวอย่าง",
         "delete_permanently": "ลบอย่างถาวร",
         "delete_calendar": "ลบปฏิทิน",
         "edit_message": "แก้ไขข้อความ",
@@ -619,5 +619,8 @@
         "moscow_st_petersburg_volgograd_rtz_2": "{{value}} มอสโก, เซนต์ปีเตอร์สเบิร์ก, โวลโกกราด (RTZ 2)",
         "sarajevo_skopje_warsaw_zagreb": "{{value}} ซาราเยโว, สโกเปีย, วอร์ซอ, ซาเกร็บ",
         "us_canada_central": "{{value}} สหรัฐฯ/แคนาดากลาง"
+    },
+    "preview": {
+        "close": "ปิดการแสดงตัวอย่าง"
     }
 }
