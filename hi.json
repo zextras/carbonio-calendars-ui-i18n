@@ -643,5 +643,8 @@
         "amsterdam_berlin_bern_rome_stockholm_vienna": "{{value}} एम्स्टर्डैम, बर्लिन, बर्न, रॉम, स्टॉकहोम, विएना",
         "brussels_copenhagen_madrid_paris ": "{{value}} ब्रूसेल्स, कोपेनहागेन, मैड्रिड, पेरिस",
         "guadalajara_mexico_city_monterrey ": "{{value}} गुआदलहारा, मेक्सिको सिटी, मोंटेर्री"
+    },
+    "preview": {
+        "close": "प्रीव्यू बंद करें"
     }
 }
