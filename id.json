@@ -6,7 +6,7 @@
         "save": "Simpan",
         "send": "Kirim",
         "delete_calendar": "Hapus kalender",
-        "preview": "Klik untuk melihat pratinjau di tab lain",
+        "preview": "Klik untuk melihat pratinjau",
         "save_to_preview": "Simpan untuk melihat pratinjau",
         "calendar_access_share": "Berbagi akses kalender",
         "delete_permanently": "Hapus Secara Permanen",
@@ -619,5 +619,8 @@
     "is_recurrent": "Berulang",
     "messages": {
         "format_as_plain_text": "Format sebagai Teks Biasa"
+    },
+    "preview": {
+        "close": "Tutup Pratinjau"
     }
 }
