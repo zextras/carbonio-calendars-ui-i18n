@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 import React, { FC, Suspense } from 'react';
-import { Container } from '@zextras/carbonio-design-system';
+import { Container, Text } from '@zextras/carbonio-design-system';
 import { Spinner } from '@zextras/carbonio-shell-ui';
 import { useRouteMatch, Switch, Route } from 'react-router-dom';
 import DomainListPanel from './domain/domain-list-panel';
@@ -13,6 +13,7 @@ import Subscription from './core/subscribsion/subscription';
 
 const AppView: FC = () => {
 	const { path } = useRouteMatch();
+
 	return (
 		<Switch>
 			<Route path={`${path}/domain`}>
@@ -27,10 +28,50 @@ const AppView: FC = () => {
 					</Suspense>
 				</Container>
 			</Route>
+			<Route path={`${path}/server-and-volumes`}>
+				<Container orientation="horizontal" mainAlignment="flex-start">
+					<Container width="40%">
+						<Text>Server and Volumes</Text>
+					</Container>
+					<Suspense fallback={<Spinner />}>
+						<DomainDetailPanel />
+					</Suspense>
+				</Container>
+			</Route>
+			<Route path={`${path}/certificate-item`}>
+				<Container orientation="horizontal" mainAlignment="flex-start">
+					<Container width="40%">
+						<Text>Certificate Sidebar</Text>
+					</Container>
+					<Suspense fallback={<Spinner />}>
+						<DomainDetailPanel />
+					</Suspense>
+				</Container>
+			</Route>
+			<Route path={`${path}/cos`}>
+				<Container orientation="horizontal" mainAlignment="flex-start">
+					<Container width="40%">
+						<Text>COS</Text>
+					</Container>
+					<Suspense fallback={<Spinner />}>
+						<DomainDetailPanel />
+					</Suspense>
+				</Container>
+			</Route>
 			<Route path={`${path}/core`}>
 				<Container orientation="horizontal" mainAlignment="flex-start">
 					<Suspense fallback={<Spinner />}>
 						<Subscription />
+					</Suspense>
+				</Container>
+			</Route>
+			<Route path={`${path}/features`}>
+				<Container orientation="horizontal" mainAlignment="flex-start">
+					<Container width="40%">
+						<Text>Features</Text>
+					</Container>
+					<Suspense fallback={<Spinner />}>
+						<DomainDetailPanel />
 					</Suspense>
 				</Container>
 			</Route>
