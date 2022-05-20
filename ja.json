@@ -29,7 +29,8 @@
             "calendar_permanently_deleted": "カレンダーは完全に削除されました",
             "calendar_restored": "カレンダーが復元されました",
             "appointment_permanently_deleted": "予定は完全に削除されました",
-            "calendar_edits_saved": "編集内容が保存されました"
+            "calendar_edits_saved": "編集内容が保存されました",
+            "series_deleted": "シリーズが削除されました。 参加者にキャンセル通知が届きます。"
         },
         "are_organizer": "は主催者です",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> は主催者です",
@@ -59,7 +60,8 @@
         "share_calendar_url_note2": "このURLを使用してデータにアクセスできるのは、共同編集者だけです。<br/>カレンダーリストを右クリックしても、このリンクを見つけることができます。",
         "sure_to_delete_all_occurences_appointment": "本当にこの予定の出来事をすべて削除しますか？",
         "you_sure_move_calendar_trash": "本当に「{{name}}」カレンダーを完全に削除しますか？",
-        "you_sure_delete_instance": "本当にこの「{{title}}」予定のインスタンスを削除しますか？"
+        "you_sure_delete_instance": "本当にこの「{{title}}」予定のインスタンスを削除しますか？",
+        "appointment_type_handle": "「{{name}}」は定期的な予定です。このインスタンスのみを開きますか、それともシリーズを開きますか？"
     },
     "action": {
         "save": "保存する",
@@ -93,7 +95,8 @@
             "decline": "拒否する",
             "expand": "ディスプレイヤーで開く",
             "tentative": "暫定",
-            "needs_action": "アクションが必要です"
+            "needs_action": "アクションが必要です",
+            "invitation_not_sent_yet": "招待状はまだ送信されていません"
         }
     },
     "items": {
@@ -254,7 +257,11 @@
             "wednesday": "水曜日"
         },
         "today": "今日",
-        "preview": "プレビューする"
+        "preview": "プレビューする",
+        "entire_serires": "シリーズ全体",
+        "new_tag": "新しいタグ",
+        "other_actions": "その他のアクション",
+        "single_instance": "シングルインスタンス"
     },
     "create": "作成する",
     "delete": "削除する",
@@ -525,7 +532,10 @@
         "organizer": "主催者"
     },
     "messages": {
-        "format_as_plain_text": "プレーンテキストとしてフォーマット"
+        "format_as_plain_text": "プレーンテキストとしてフォーマット",
+        "snackbar": {
+            "tag_not_updated": "問題が発生しました。タグが更新されていません。 再度お試しください。"
+        }
     },
     "timezone": {
         "bangkok_hanoi_jakarta": "{{value}}バンコク、ハノイ、ジャカルタ",
