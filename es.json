@@ -155,7 +155,11 @@
         "propose_new_time": "PROPONER UN NUEVO HORARIO",
         "share_with": "compartir con",
         "app_name": "Calendarios",
-        "preview": "Vista previa"
+        "preview": "Vista previa",
+        "entire_serires": "TODA LA SERIE",
+        "new_tag": "Nueva etiqueta",
+        "other_actions": "Otras acciones",
+        "single_instance": "UNA SOLA INSTANCIA"
     },
     "action": {
         "delete": "Eliminar",
@@ -189,7 +193,8 @@
             "decline": "Rechazar",
             "expand": "Abrir en visualizador",
             "tentative": "Provisional",
-            "needs_action": "Necesita acción"
+            "needs_action": "Necesita acción",
+            "invitation_not_sent_yet": "La invitación todavía no ha sido enviada"
         }
     },
     "items": {
@@ -470,7 +475,8 @@
             "calendar_permanently_deleted": "El calendario ha sido eliminado permanentemente",
             "calendar_restored": "El calendario ha sido restaurado con éxito",
             "appointment_permanently_deleted": "La reunión ha sido eliminada permanentemente",
-            "calendar_edits_saved": "Ediciones guardadas correctamente"
+            "calendar_edits_saved": "Ediciones guardadas correctamente",
+            "series_deleted": "Serie borrada con éxito. Los asistentes recibirán una notificación de la cancelación."
         },
         "invite_has_no_message": "Esta invitación no contiene texto",
         "invited_you": "te ha invitado a un evento",
@@ -496,7 +502,8 @@
         "share_calendar_url_note2": "Solo tus colaboradores pueden acceder a los datos por medio de estos enlaces. <br/> También puedes encontrar los enlaces haciendo clic derecho en tu lista de calendarios.",
         "somebody_invited_you": "<strong>{{somebody}}</strong> te ha invitado",
         "sure_to_delete_appointment_permanently": "¿Seguro que quieres eliminar esta cita de forma permanente?",
-        "you_sure_delete_instance": "¿Seguro que quieres eliminar esta instancia de la cita \"{{title}}\"?"
+        "you_sure_delete_instance": "¿Seguro que quieres eliminar esta instancia de la cita \"{{title}}\"?",
+        "appointment_type_handle": "\"{{name}}\" es una cita recurrente. ¿Te gustaría abrir solo esta instancia o toda la serie?"
     },
     "button": {
         "customize_modal": "Abrir módulo de personalización"
@@ -641,7 +648,10 @@
     "is_private": "Es privado",
     "is_recurrent": "Es recurrente",
     "messages": {
-        "format_as_plain_text": "Texto sin formato"
+        "format_as_plain_text": "Texto sin formato",
+        "snackbar": {
+            "tag_not_updated": "Algo salió mal, etiqueta no actualizada. Por favor, prueba de nuevo."
+        }
     },
     "has_attachments": "Tiene adjuntos",
     "preview": {
