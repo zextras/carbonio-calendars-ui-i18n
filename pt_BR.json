@@ -167,7 +167,11 @@
         "select_color": "Selecionar Cor",
         "tag_max_length": "Máximo de 128 caracteres permitidos",
         "tag_name": "Nome da etiqueta",
-        "tags": "Etiquetas"
+        "tags": "Etiquetas",
+        "entire_serires": "TODA A SÉRIE",
+        "new_tag": "Nova Etiqueta",
+        "other_actions": "Outras ações",
+        "single_instance": "UMA ÚNICA INSTÂNCIA"
     },
     "action": {
         "delete": "Excluir",
@@ -201,7 +205,8 @@
             "decline": "Recusar",
             "expand": "Abrir no Visualizador",
             "tentative": "Provisório",
-            "needs_action": "Requer ação"
+            "needs_action": "Requer ação",
+            "invitation_not_sent_yet": "O convite ainda não foi enviado"
         }
     },
     "folder": {
@@ -285,7 +290,8 @@
             "calendar_permanently_deleted": "Calendário excluído permanentemente",
             "calendar_restored": "Calendário restaurado com sucesso",
             "appointment_permanently_deleted": "Compromisso excluído definitivamente",
-            "calendar_edits_saved": "Edições salvas corretamente"
+            "calendar_edits_saved": "Edições salvas corretamente",
+            "series_deleted": "Série excluída com sucesso. Os participantes receberão a notificação de cancelamento."
         },
         "share_calendar_url_note2": "Apenas seus colaboradores podem acessar seus dados usando essas URLs.<br/>Também é possível encontrar esses links clicando com o botão direito em sua lista de calendários.",
         "delete_all_occurences": "Excluir todas as ocorrências",
@@ -312,7 +318,8 @@
         "sure_to_delete_appointment_permanently": "Tem certeza que deseja excluir este compromisso permanentemente?",
         "you_sure_delete_instance": "Tem certeza que deseja excluir esta instância do compromisso “{{title}}”?",
         "delete_tag_message1": "Tem certeza que deseja excluir a Etiqueta \"{{name}}\"?",
-        "delete_tag_message2": "Uma vez excluída, ela será removida de todos os itens marcados com ela."
+        "delete_tag_message2": "Uma vez excluída, ela será removida de todos os itens marcados com ela.",
+        "appointment_type_handle": "\"{{name}}\" é um compromisso recorrente. Você gostaria de abrir apenas esta instância ou toda a série?"
     },
     "months": {
         "april": "Abril",
@@ -662,7 +669,8 @@
         "snackbar": {
             "tag_created": "Etiqueta {{name}} criada com sucesso",
             "tag_deleted": "Etiqueta {{name}} excluída com sucesso",
-            "tag_updated": "Etiqueta atualizada com sucesso"
+            "tag_updated": "Etiqueta atualizada com sucesso",
+            "tag_not_updated": "Algo deu errado, a etiqueta não foi atualizada. Tente novamente."
         }
     },
     "preview": {
