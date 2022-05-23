@@ -203,7 +203,11 @@
         "select_color": "Kleur selecteren",
         "tag_max_length": "Max 128 tekens zijn toegestaan",
         "tag_name": "Tag-naam",
-        "tags": "Tags"
+        "tags": "Tags",
+        "entire_serires": "VOLLEDIGE SERIE",
+        "new_tag": "Nieuwe Tag",
+        "other_actions": "Andere acties",
+        "single_instance": "EEN ENKEL GEVAL"
     },
     "event": {
         "action": {
@@ -217,7 +221,8 @@
             "decline": "Weigeren",
             "expand": "In Displayer openen",
             "tentative": "Voorlopig",
-            "needs_action": "Heeft actie nodig"
+            "needs_action": "Heeft actie nodig",
+            "invitation_not_sent_yet": "De uitnodiging is nog niet verstuurd"
         }
     },
     "items": {
@@ -298,7 +303,8 @@
             "calendar_permanently_deleted": "Kalender permanent verwijderd",
             "calendar_restored": "Kalender met succes hersteld",
             "appointment_permanently_deleted": "Afspraak permanent verwijderd",
-            "calendar_edits_saved": "Bewerkingen correct opgeslagen"
+            "calendar_edits_saved": "Bewerkingen correct opgeslagen",
+            "series_deleted": "Serie succesvol verwijderd. Deelnemers ontvangen een bericht van annulering."
         },
         "you": "U",
         "are_organizer": "zijn de organisator",
@@ -331,7 +337,8 @@
         "share_calendar_url_msg": "U kunt snel {{title}} delen met uw medewerkers met behulp van een van deze URL:",
         "you_sure_delete_instance": "Weet u zeker dat u deze instantie van \"{title}\" afspraak wilt verwijderen?",
         "delete_tag_message1": "Weet u zeker dat u de\"{{name}}\" Tag wilt verwijderen?",
-        "delete_tag_message2": "Eenmaal verwijderd, zal het verwijderd worden van elk item dat ermee gemarkeerd is."
+        "delete_tag_message2": "Eenmaal verwijderd, zal het verwijderd worden van elk item dat ermee gemarkeerd is.",
+        "appointment_type_handle": "\"{{name}}” is een terugkerende afspraak. Wilt u alleen deze afspraak of de hele serie openen?"
     },
     "months": {
         "april": "April",
@@ -662,7 +669,8 @@
         "snackbar": {
             "tag_deleted": "{{name}} Tag met succes verwijderd",
             "tag_updated": "Tag met succes bijgewerkt",
-            "tag_created": "Tag {{name}} met succes gecreëerd"
+            "tag_created": "Tag {{name}} met succes gecreëerd",
+            "tag_not_updated": "Er is iets fout gegaan, de tag is niet bijgewerkt. Probeer het opnieuw."
         }
     },
     "preview": {
