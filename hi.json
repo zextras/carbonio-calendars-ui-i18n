@@ -175,7 +175,11 @@
         "delete_tag_name": "\"{{name}}\" टैग डिलीट करें",
         "results_for_error": "सर्च शुरू नहीं कर पा रहा, इसे क्लियर करें और दोबारा कोशिश करने: ",
         "select_color": "रंग चुनें",
-        "tag_max_length": "अधिकतम 128 कैरक्टर"
+        "tag_max_length": "अधिकतम 128 कैरक्टर",
+        "entire_serires": "पूरी सीरीज़",
+        "new_tag": "नया टैग",
+        "other_actions": "दूसरे एक्शन",
+        "single_instance": "एकल घटना"
     },
     "action": {
         "delete": "डिलीट करें",
@@ -228,7 +232,8 @@
             "calendar_permanently_deleted": "Calendar परमानेंट डिलीट कर दिया गया",
             "calendar_restored": "Calendar वापस लाया गया",
             "appointment_permanently_deleted": "एप्पोइंटमेंट परमानेंट डिलीट कर दिया गया",
-            "calendar_edits_saved": "बदलाव ठीक से सेव हो गए"
+            "calendar_edits_saved": "बदलाव ठीक से सेव हो गए",
+            "series_deleted": "सीरीज़ डिलीट कर दी गई। अटेंड करने वालों को कैंसल होने का नोटिफ़िकेशन मिलेगा।"
         },
         "somebody_is_organizer": "ऑर्गनाइज़र <strong>{{somebody}}</strong> है",
         "are_organizer": "वाक्य इस तरह से माना जाएगा मानो आप ऑर्गनाइज़र हों",
@@ -259,7 +264,8 @@
         "sure_to_delete_all_occurences_appointment": "क्या आप वाकई में इस एपाइंटमेंट के भविष्य में आने को पूरा डिलीट करना चाहते हैं?",
         "you_sure_delete_instance": "क्या आप वाकई में \"{{title}}\" एपाइंटमेंट की इस घटना को डिलीट करना चाहते हैं?",
         "delete_tag_message1": "क्या आप वाकई में \"{{name}}\" टैग डिलीट करना चाहते हैं?",
-        "delete_tag_message2": "डिलीट हो जाने के बाद, इससे मार्क हर आइटम से इसे हटा दिया जाएगा।"
+        "delete_tag_message2": "डिलीट हो जाने के बाद, इससे मार्क हर आइटम से इसे हटा दिया जाएगा।",
+        "appointment_type_handle": "{{name}} बार-बार आने वाला अपोइंटमेंट है। क्या आप सिर्फ इस घटना को या पूरी सीरीज़ खोलना चाहते हैं?"
     },
     "create": "बनाएँ",
     "delete": "डिलीट करें",
@@ -275,7 +281,8 @@
             "tentative": "संभावित",
             "decline": "अस्वीकृत",
             "expand": "डिस्प्ले में देखें",
-            "needs_action": "कार्यवाई की आवश्यकता है"
+            "needs_action": "कार्यवाई की आवश्यकता है",
+            "invitation_not_sent_yet": "इन्विटेशन अभी तक भेजा नहीं गया है"
         }
     },
     "folder": {
@@ -573,7 +580,8 @@
         "snackbar": {
             "tag_created": "टैग {{name}} बन गया",
             "tag_deleted": "{{name}} टैग डिलीट हो गया",
-            "tag_updated": "टैग अपडेट हो गया"
+            "tag_updated": "टैग अपडेट हो गया",
+            "tag_not_updated": "कुछ गड़बड़ हुई, टैग अपडेट नहीं है। दोबारा कोशिश करें।"
         }
     },
     "timezone": {
