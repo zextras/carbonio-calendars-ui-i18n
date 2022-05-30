@@ -3,7 +3,7 @@
         "exclude_free_busy": "Loại trừ lịch này khi báo cáo thời gian rảnh / bận",
         "filter_sharer_user": "Chủ sở hữu thư mục",
         "appt_reminder": "Nhắc cuộc hẹn",
-        "attachment": "đính kèm",
+        "attachment": "Đính kèm",
         "attendee_plural": "Người tham dự",
         "auto_add_rcvd_app": "Tự động thêm các cuộc hẹn đã nhận vào lịch",
         "apple_ical": "Apple iCal",
@@ -40,7 +40,7 @@
         "edit_share": "Chỉnh sửa chia sẻ",
         "edit_tag": "Chỉnh sửa Tag",
         "edit_tag_name": "Chỉnh sửa tag \"{{name}}",
-        "email_input_message": "Nhập địa chỉ e-mail",
+        "email_input_message": "Nhập địa chỉ thư điện tử",
         "empty": "Rỗng",
         "enable_dlgtn_for_ical": "Bật ủy quyền cho Apple iCal CalDAV Client",
         "end": "Kết thúc",
@@ -52,7 +52,7 @@
         "every": "Mọi",
         "every_day": "Hằng ngày",
         "every_weekday": "Hằng tuần",
-        "every_year_on": "Hàng năm vào",
+        "every_year_on": "Hằng năm vào",
         "find_shares": "Chọn lịch bạn muốn xem từ cây lịch",
         "free": "Rảnh",
         "free_busy": "Rảnh/Bận",
@@ -84,7 +84,7 @@
         "ok": "OK",
         "ongoing": "Đang diễn ra",
         "optional": "Tuỳ chọn",
-        "other_actions": "Cách tác vụ khác",
+        "other_actions": "Các tác vụ khác",
         "out_of_office": "Không ở văn phòng",
         "permissions": "Quyền",
         "proposal_declined": "Đề xuất bị từ chối",
@@ -99,7 +99,7 @@
         "role": "vai trò",
         "save": "Lưu",
         "select_color": "Chọn màu",
-        "series": "Series",
+        "series": "Chuỗi",
         "set_new_time": "Đặt thời gian mới",
         "settings_saved": "Lưu cài đặt",
         "share": "Chia sẻ",
@@ -127,7 +127,7 @@
         "week_day": {
             "monday": "Thứ Hai",
             "saturday": "Thứ Bảy",
-            "sunday": "Chủ nhật",
+            "sunday": "Chủ Nhật",
             "thursday": "Thứ Năm",
             "tuesday": "Thứ Ba",
             "wednesday": "Thứ Tư",
@@ -154,14 +154,14 @@
         "results_for_error": "Không thể bắt đầu tìm kiếm, hãy xóa nó và thử lại: ",
         "shares_items": "<bold> {{user}} </bold> Lịch được chia sẻ của",
         "start_week_on": "Bắt đầu tuần vào",
-        "timezone_pref_msg": "Thời gian tuân theo tùy chọn múi giờ của bạn.",
+        "timezone_pref_msg": "Thời gian tuân theo múi giờ của bạn chọn.",
         "your_pref_timezone_msg": "Múi giờ ưa thích của bạn là: GMT +01: 00 Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna."
     },
     "participants": {
         "Not_answered": "không trả lời",
         "Attendees_declined_count": "<strong>{{count}} người tham dự </strong> đã từ chối",
-        "AC_with_count": "Chấp nhận ({{count}})",
-        "Accepted": "đã được chấp nhận",
+        "AC_with_count": "Đã chấp nhận ({{count}})",
+        "Accepted": "đã chấp nhận",
         "Attendees_not_answered_count": "<strong>{{count}} người tham dự </strong> không trả lời",
         "DE_with_count": "Từ chối {{count}}",
         "Declined": "từ chối",
@@ -211,7 +211,7 @@
             "show_rmndr_past_due_meetings": "Hiển thị lời nhắc cho các cuộc họp quá hạn",
             "default_calendar": "Lịch mặc định",
             "delete_invt_on_rply": "Xóa lời mời khi trả lời",
-            "enter_email": "Nhập vào địa chỉ e-mail",
+            "enter_email": "Nhập vào địa chỉ thư điện tử",
             "flash_browser_title": "Flash tiêu đề trình duyệt",
             "forward_invites": "Chuyển tiếp lời mời",
             "invitation_response": "Trả lời lời mời",
@@ -224,7 +224,7 @@
             "show_reminders": "Hiển thị lời nhắc"
         },
         "invalid_email": "Địa chỉ thư điện tử sai",
-        "permissions_note": "Người dùng dưới đây phải ở trên hệ thống e-mail này (zextras.com). Bạn có thể sử dụng địa chỉ e-mail đầy đủ hoặc chỉ sử dụng tên người dùng.",
+        "permissions_note": "Người dùng dưới đây phải ở trên hệ thống e-mail này (zextras.com). Bạn có thể sử dụng địa chỉ thư điện tử đầy đủ hoặc chỉ sử dụng tên người dùng.",
         "ical_note": "Apple iCal có thể được định cấu hình để truy cập Lịch của bạn bằng giao thức CalDAV. Khi tùy chọn này được bật, các lịch dùng chung sẽ được hiển thị trong tab Ủy quyền(Delegation ) của tài khoản ical để bạn có thể ủy quyền truy cập vào Lịch của mình cho những người dùng khác."
     },
     "share": {
@@ -246,7 +246,7 @@
         },
         "placeholder": {
             "standard_message": "Thêm ghi chú vào tin nhắn chuẩn",
-            "recipients_address": "Địa chỉ e-mail người nhận"
+            "recipients_address": "Địa chỉ thư điện tử người nhận"
         },
         "note": {
             "share_note": "Thông điệp tiêu chuẩn sẽ hiển thị tên của bạn, tên của thư mục được chia sẻ, quyền được cấp cho người nhận và thông tin đăng nhập."
@@ -261,7 +261,7 @@
         },
         "new_time_proposed_success": "Đề xuất thời gian mới",
         "tag_applied": "đã áp dụng tag \"{{tag}}\"",
-        "tag_removed": "Đã xoá tag \"{{tag}}\"",
+        "tag_removed": "Đã xoá thẻ \"{{tag}}\"",
         "url_copied": "Đã sao chép {{title}}"
     },
     "success": "Thành công",
@@ -359,7 +359,7 @@
         "add_attachments": "Thêm vào đính kèm",
         "copy_ics_url": "Sao chép ICS url",
         "copy_outlook_url": "Sao chép Outlook url",
-        "enable_disable_rich_text": "Bật / Tắt trình chỉnh sửa văn bản đa dạng(rich text)"
+        "enable_disable_rich_text": "Bật / Tắt trình chỉnh sửa văn bản rich text"
     },
     "find_shares": "Tìm chia sẻ",
     "is_recurrent": "Lặp lại",
@@ -387,7 +387,7 @@
             "appointment_permanently_deleted": "Cuộc hẹn đã bị xoá vĩnh viễn",
             "appointment_permanently_deleted_succesfully": "Xoá vĩnh viễn thành công",
             "appt_moved": "Cuộc hẹn đã di chuyển thành công tới",
-            "series_deleted": "Đã xoá chuổi(Series) thành công. Những người tham gia sẽ được nhận thông báo huỷ.",
+            "series_deleted": "Đã xoá chuổi thành công. Những người tham gia sẽ được nhận thông báo huỷ.",
             "calendar_deleted_successfully": "Xoá lịch thành công.",
             "calendar_edits_saved": "Chỉnh sửa được lưu chính xác",
             "calendar_moved_to_root_folder": "Lịch đã được di chuyển về thư mục gốc",
@@ -473,7 +473,7 @@
         "edit_message": "Chỉnh sửa thông điệp",
         "preview": "Bấm vào để xem trước",
         "edit_calendar_properties": "Chỉnh sửa thuộc tính lịch",
-        "empty_trash_confirmation": "Tác vụ này sẽ xóa vĩnh viễn tất cả các mục trong thư mục trong thùng rác bao gồm E-mail, Danh bạ, Lịch, Nhiệm vụ và Cặp. Bạn có chắc chắn muốn xóa các thư mục thùng rác này không?"
+        "empty_trash_confirmation": "Tác vụ này sẽ xóa vĩnh viễn tất cả các mục trong thùng rác bao gồm Thư điện tử, Danh bạ, Lịch, Nhiệm vụ và Cặp. Bạn có chắc chắn muốn xóa các mục trong thùng rác này không?"
     },
     "administer": "Quản trị viên",
     "appointments": "Lịch hẹn",
@@ -523,7 +523,7 @@
             },
             "move": {
                 "input": {
-                    "filter": "Lọc lịch"
+                    "filter": "Bộ lọc lịch"
                 },
                 "body": {
                     "message3": "Chọn một lịch để chuyển cuộc hẹn mà bạn cân nhắc:"
@@ -544,10 +544,10 @@
     "repeat": {
         "customize": "Tuỳ chỉnh",
         "daily": "Hàng ngày",
-        "everyMonth": "Hàng tháng",
-        "everyWeek": "Hàng tuần",
+        "everyMonth": "Mỗi tháng",
+        "everyWeek": "Mỗi tuần",
         "yearly": "Hàng năm",
-        "everyYear": "Hàng năm",
+        "everyYear": "Mỗi năm",
         "weekly": "Hàng tuần",
         "monthly": "Hàng tháng"
     },
@@ -555,11 +555,11 @@
     "revoke_access": "Thu hồi truy cập",
     "revoke_without_custom_message": "Thu hồi quyền truy cập và gửi một thông báo chuẩn",
     "revoke_without_notification": "Thu hồi quyền truy cập và không gửi thông báo",
-    "shared_folders": "Chia sẻ lịch",
-    "shared_items": "Chia sẻ mục",
+    "shared_folders": "Các lịch được chia sẻ",
+    "shared_items": "Các mục được chia sẻ",
     "shares_info": "Thông tin chia sẻ",
     "type": "Kiểu",
-    "workflow": "Luồng công việc(Workflow)",
+    "workflow": "Luồng công việc",
     "write": "Ghi",
     "revoke_with_custom_message": "Thu hồi quyền truy cập và gửi một thông báo tùy chỉnh",
     "placeholder": {
