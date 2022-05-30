@@ -109,7 +109,7 @@
         "show": "Hiển thị tất cả",
         "show_declined_meetings": "Hiển thị các cuộc gặp bị từ chối",
         "single_instance": "TRƯỜNG HỢP DUY NHẤT",
-        "snooze": "Snooze(chế độ ngủ ngắn)",
+        "snooze": "Chế độ ngủ ngắn",
         "start_date": "Ngày bắt đầu",
         "start_date_and_time": "Ngày và giờ bắt đầu",
         "tag_max_length": "Cho phép tối đa là 128 ký tự",
@@ -218,12 +218,12 @@
             "show_popup_notification": "Hiển thị một cửa sổ(popup) thông báo",
             "show_timezones": "Hiển thị múi giờ khi tạo cuộc hẹn mới",
             "span_time": "Thời gian kéo dài",
-            "default_appt_dur": "Thời gian(lượng) mặc định của cuộc hẹn",
+            "default_appt_dur": "Thời lượng mặc định của cuộc hẹn",
             "enable_reminder_sound": "Phát âm thanh (yêu cầu phải có plugin QuickTime hoặc Windows Media)",
             "snd_autorply_users": "Gửi thư trả lời tự động đến người dùng mà bạn chặn quyền mời",
             "show_reminders": "Hiển thị lời nhắc"
         },
-        "invalid_email": "Địa chỉ e-mail sai",
+        "invalid_email": "Địa chỉ thư điện tử sai",
         "permissions_note": "Người dùng dưới đây phải ở trên hệ thống e-mail này (zextras.com). Bạn có thể sử dụng địa chỉ e-mail đầy đủ hoặc chỉ sử dụng tên người dùng.",
         "ical_note": "Apple iCal có thể được định cấu hình để truy cập Lịch của bạn bằng giao thức CalDAV. Khi tùy chọn này được bật, các lịch dùng chung sẽ được hiển thị trong tab Ủy quyền(Delegation ) của tài khoản ical để bạn có thể ủy quyền truy cập vào Lịch của mình cho những người dùng khác."
     },
@@ -490,13 +490,13 @@
     "cannot_edit_name": "Bạn không thể chỉnh sửa tên của lịch hệ thống",
     "composer": {
         "attachment": {
-            "contactsMod": "thêm thẻ liên hệ(contact card)",
+            "contactsMod": "thêm thẻ liên hệ",
             "draganddrop": {
-                "title": "Chế độ kéo thả(Drag&Drop Mode)",
+                "title": "Chế độ kéo thả",
                 "content": "Kéo/thả vào đây các tệp đính kèm của bạn để nhanh chóng thêm vào cuộc hẹn"
             },
             "drive": "Thêm vào từ Drive",
-            "local": "Thêm vào từ thiết bị cá nhân của bạn(local)"
+            "local": "Thêm vào từ thiết bị cục bộ"
         }
     },
     "edit_share_properties": "Chỉnh sửa thuộc tính chia sẻ",
