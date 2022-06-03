@@ -68,7 +68,7 @@
         "location": "Localização",
         "months": "Meses",
         "no_end_date": "Sem data final",
-        "no_subject": "Sem Assunto",
+        "no_subject": "Sem assunto",
         "notify_organizer": "Notificar ao organizador",
         "number": "Número",
         "occurrences": "Ocorrência(s)",
@@ -162,11 +162,11 @@
         "edit_tag": "Editar Etiqueta",
         "edit_tag_name": "Editar etiqueta \"{{name}}\"",
         "loading_results": "Carregando resultados...",
-        "no_special_char_allowed": "O nome não deve conter nenhum caracter especial",
+        "no_special_char_allowed": "O nome não deve conter caracteres especiais",
         "results_for_error": "Não foi possível completar a busca, limpe-a e tente novamente: ",
-        "select_color": "Selecionar Cor",
+        "select_color": "Selecionar cor",
         "tag_max_length": "Máximo de 128 caracteres permitidos",
-        "tag_name": "Nome da Etiqueta",
+        "tag_name": "Nome da etiqueta",
         "tags": "Etiquetas",
         "entire_serires": "TODA A SÉRIE",
         "new_tag": "Nova Etiqueta",
@@ -318,7 +318,7 @@
         "sure_to_delete_appointment_permanently": "Tem certeza que deseja excluir este compromisso?",
         "you_sure_delete_instance": "Tem certeza que deseja excluir esta instância do compromisso “{{title}}”?",
         "delete_tag_message1": "Tem certeza que deseja excluir a Etiqueta \"{{name}}\"?",
-        "delete_tag_message2": "Uma vez excluída, ela será removida de todos os itens marcados com ela.",
+        "delete_tag_message2": "Uma vez excluída, ela será removida de todos os itens marcados com a mesma.",
         "appointment_type_handle": "\"{{name}}\" é um compromisso recorrente. Você gostaria de abrir apenas esta instância ou toda a série?"
     },
     "months": {
@@ -674,6 +674,6 @@
         }
     },
     "preview": {
-        "close": "Fechar Pré-visualização"
+        "close": "Fechar pré-visualização"
     }
 }
