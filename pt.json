@@ -455,7 +455,7 @@
             },
             "share_calendar_with": {
                 "external_guests": "Convidados externos (apenas ver)",
-                "internal_users_groups": "Usuários ou Grupos Internos",
+                "internal_users_groups": "Usuários ou grupos internos",
                 "public": "Público (apenas ver, senha não necessária)"
             }
         },
