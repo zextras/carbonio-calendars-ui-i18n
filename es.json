@@ -167,7 +167,7 @@
         "results_for_error": "No se puede realizar la búsqueda, bórrala y vuelve a intentarlo: ",
         "select_color": "Elige un color",
         "tag_max_length": "Máximo 128 caracteres permitidos",
-        "tag_name": "Nombre de etiqueta",
+        "tag_name": "Nombre de la etiqueta",
         "tags": "Etiquetas",
         "delete_tag_name": "Eliminar etiqueta \"{{name}}\"",
         "edit_tag": "Editar etiqueta",
