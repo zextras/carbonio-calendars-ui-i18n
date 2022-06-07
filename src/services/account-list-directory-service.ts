@@ -13,7 +13,6 @@ export const accountListDirectory = async (
 	const request: any = {
 		SearchDirectoryRequest: {
 			_jsns: 'urn:zimbraAdmin',
-			// limit: '50',
 			offset: 0,
 			sortAscending: '1',
 			applyCos: 'false',

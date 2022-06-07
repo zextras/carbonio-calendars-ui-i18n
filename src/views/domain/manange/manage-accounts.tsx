@@ -3,21 +3,10 @@
  *
  * SPDX-License-Identifier: AGPL-3.0-only
  */
-import React, { FC, useEffect, useState, useMemo, useContext, useCallback } from 'react';
+import React, { FC, useEffect, useState, useMemo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { filter } from 'lodash';
-import {
-	Container,
-	Input,
-	Row,
-	Text,
-	Select,
-	Button,
-	Padding,
-	SnackbarManagerContext,
-	Table,
-	Divider
-} from '@zextras/carbonio-design-system';
+import { Container, Input, Row, Text, Table, Divider } from '@zextras/carbonio-design-system';
 import { useDomainStore } from '../../../store/domain/store';
 
 import Paginig from '../../components/paging';
@@ -43,14 +32,14 @@ const ManageAccounts: FC = () => {
 	const headers: any = useMemo(
 		() => [
 			{
-				id: 'email',
-				label: t('label.name', 'Email'),
+				id: 'name',
+				label: t('label.email', 'Name'),
 				width: '15%',
 				bold: true
 			},
 			{
-				id: 'name',
-				label: t('label.email', 'Name'),
+				id: 'email',
+				label: t('label.name', 'Email'),
 				width: '15%',
 				bold: true
 			},
@@ -116,7 +105,7 @@ const ManageAccounts: FC = () => {
 		(domainName: string): void => {
 			const type = 'accounts';
 			const attrs =
-				'displayName,zimbraId,zimbraAliasTargetId,cn,sn,zimbraMailHost,uid,zimbraCOSId,zimbraAccountStatus,zimbraLastLogonTimestamp,description,zimbraIsSystemAccount,zimbraIsDelegatedAdminAccount,zimbraIsAdminAccount,zimbraIsSystemResource,zimbraAuthTokenValidityValue,zimbraIsExternalVirtualAccount,zimbraMailStatus,zimbraIsAdminGroup,zimbraCalResType,zimbraDomainType,zimbraDomainName,zimbraDomainStatus,zimbraIsDelegatedAdminAccount,zimbraIsAdminAccount,zimbraIsSystemResource,zimbraIsSystemAccount,zimbraIsExternalVirtualAccount';
+				'displayName,zimbraId,zimbraAliasTargetId,cn,sn,zimbraMailHost,uid,zimbraCOSId,zimbraAccountStatus,zimbraLastLogonTimestamp,description,zimbraIsSystemAccount,zimbraIsDelegatedAdminAccount,zimbraIsAdminAccount,zimbraIsSystemResource,zimbraAuthTokenValidityValue,zimbraIsExternalVirtualAccount,zimbraMailStatus,zimbraIsAdminGroup,zimbraCalResType,zimbraDomainType,zimbraDomainName,zimbraDomainStatus,zimbraIsDelegatedAdminAccount,zimbraIsAdminAccount,zimbraIsSystemResource,zimbraIsSystemAccount,zimbraIsExternalVirtualAccount,zimbraCreateTimestamp,zimbraLastLogonTimestamp,zimbraQuotaUsage,zimbraNotes';
 			console.log('domainName', domainName);
 			accountListDirectory(attrs, type, domainName, '')
 				.then((response) => response.json())
@@ -129,12 +118,13 @@ const ManageAccounts: FC = () => {
 							setTotalAccount(data?.Body?.SearchDirectoryResponse?.searchTotal);
 						}
 						accountListResponse.map((item: any): any => {
-							const obj: any = {};
+							// const obj: any = {};
 							item?.a?.map((ele: any) => {
-								obj[ele?.n] = ele._content;
+								// eslint-disable-next-line no-param-reassign
+								item[ele?.n] = ele._content;
 								return '';
 							});
-							console.log('obj', obj);
+							// console.log('obj', obj);
 							accountListArr.push({
 								id: item?.id,
 								columns: [
@@ -143,7 +133,7 @@ const ManageAccounts: FC = () => {
 										key={item?.id}
 										color="#414141"
 										onClick={(): void => {
-											setSelectedAccount({ item, obj });
+											setSelectedAccount(item);
 											setShowAccountDetailView(true);
 										}}
 									>
@@ -153,37 +143,36 @@ const ManageAccounts: FC = () => {
 										size="medium"
 										key={item?.id}
 										color="#414141"
-										onClick={(): void => console.log('Row clicked', item, obj)}
+										onClick={(): void => console.log('Row clicked', item)}
 									>
-										{item?.description}
-									</Text>,
-									<Text
-										size="medium"
-										key={item?.id}
-										color={STATUS_COLOR[obj?.zimbraAccountStatus]?.color}
-										onClick={(): void => console.log('Row clicked', item, obj)}
-									>
-										{STATUS_COLOR[obj?.zimbraAccountStatus]?.label}
+										{item?.displayName}
 									</Text>,
 									<Text
 										size="medium"
 										key={item?.id}
 										color="#828282"
-										onClick={(): void => console.log('Row clicked', item, obj)}
+										onClick={(): void => console.log('Row clicked', item)}
 									>
-										{obj?.zimbraAccountStatus}
+										{item?.uid}
+									</Text>,
+									<Text
+										size="medium"
+										key={item?.id}
+										color={STATUS_COLOR[item?.zimbraAccountStatus]?.color}
+										onClick={(): void => console.log('Row clicked', item)}
+									>
+										{STATUS_COLOR[item?.zimbraAccountStatus]?.label}
 									</Text>,
 									<Text
 										size="medium"
 										key={item?.id}
 										color="#414141"
-										onClick={(): void => console.log('Row clicked', item, obj)}
+										onClick={(): void => console.log('Row clicked', item)}
 									>
 										{item?.description}
 									</Text>
 								],
 								item,
-								obj,
 								clickable: true
 							});
 							return '';
@@ -301,6 +290,7 @@ const ManageAccounts: FC = () => {
 				<AccountDetailView
 					selectedAccount={selectedAccount}
 					setShowAccountDetailView={setShowAccountDetailView}
+					STATUS_COLOR={STATUS_COLOR}
 				/>
 			)}
 		</Container>
