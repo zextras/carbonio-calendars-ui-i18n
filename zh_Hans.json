@@ -63,7 +63,10 @@
         "you_sure_delete_instance": "确定要删除此“{{title}}”预约的实例吗？",
         "delete_tag_message1": "确定要删除“{{name}}”标签吗？",
         "delete_tag_message2": "删除后，其将从所有已进行相关标记的项目上移除。",
-        "appointment_type_handle": "“{{name}}”是定期预约。您是想打开此实例还是整个系列？"
+        "appointment_type_handle": "“{{name}}”是定期预约。您是想打开此实例还是整个系列？",
+        "organizer": "组织者",
+        "reply": "回复",
+        "reply_all": "回复全部"
     },
     "calendar": {
         "modal": {
@@ -535,7 +538,10 @@
         "show_optionals": "显示选项",
         "copy_ics_url": "复制ICS URL",
         "copy_outlook_url": "复制Outlook URL",
-        "copy_vector_url": "复制视图URL"
+        "copy_vector_url": "复制视图URL",
+        "chat": "设备",
+        "equipment": "设备",
+        "location": "位置"
     },
     "workflow": "工作流",
     "write": "编写",
