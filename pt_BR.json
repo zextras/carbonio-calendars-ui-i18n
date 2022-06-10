@@ -319,7 +319,10 @@
         "you_sure_delete_instance": "Tem certeza que deseja excluir esta instância do compromisso “{{title}}”?",
         "delete_tag_message1": "Tem certeza que deseja excluir a Etiqueta \"{{name}}\"?",
         "delete_tag_message2": "Uma vez excluída, ela será removida de todos os itens marcados com a mesma.",
-        "appointment_type_handle": "\"{{name}}\" é um compromisso recorrente. Você gostaria de abrir apenas esta instância ou toda a série?"
+        "appointment_type_handle": "\"{{name}}\" é um compromisso recorrente. Você gostaria de abrir apenas esta instância ou toda a série?",
+        "organizer": "Organizador",
+        "reply": "Responder",
+        "reply_all": "Responder a todos"
     },
     "months": {
         "april": "Abril",
@@ -544,7 +547,10 @@
         "show_optionals": "Mostrar opcionais",
         "copy_ics_url": "Copiar URL de ICS",
         "copy_outlook_url": "Copiar URL do Outlook",
-        "copy_vector_url": "Copiar URL de visualização"
+        "copy_vector_url": "Copiar URL de visualização",
+        "chat": "Equipamento",
+        "equipment": "Equipamento",
+        "location": "Localização"
     },
     "cannot_edit_name": "Você não pode editar o nome do calendário do sistema",
     "edit_share_properties": "Editar propriedades de compartilhamento",
