@@ -519,7 +519,10 @@
         "you_sure_delete_instance": "¿Seguro que quieres eliminar esta instancia de la cita \"{{title}}\"?",
         "appointment_type_handle": "\"{{name}}\" es una cita recurrente. ¿Te gustaría abrir solo esta instancia o toda la serie?",
         "delete_tag_message1": "¿Seguro que quieres borrar la etiqueta \"{{name}}\"?",
-        "delete_tag_message2": "Una vez borrada, se quitará de cada elemento marcado con ella."
+        "delete_tag_message2": "Una vez borrada, se quitará de cada elemento marcado con ella.",
+        "organizer": "Organizador",
+        "reply": "Responder",
+        "reply_all": "Responder a todos"
     },
     "button": {
         "customize_modal": "Abrir modo de personalización"
@@ -560,7 +563,10 @@
         "copy_outlook_url": "Copiar enlace de Outlook",
         "copy_vector_url": "Copiar enlace de visualización",
         "enable_disable_rich_text": "Activar/Desactivar editor de texto enriquecido",
-        "show_optionals": "Mostrar opcionales"
+        "show_optionals": "Mostrar opcionales",
+        "chat": "Equipamiento",
+        "equipment": "Equipamiento",
+        "location": "Ubicación"
     },
     "share_invite_resent": "Invitación para acceder a la compartición reenviada",
     "shared_folders": "Calendarios compartidos",
