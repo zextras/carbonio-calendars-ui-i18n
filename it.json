@@ -5,7 +5,10 @@
         "add_attachments": "Aggiungi allegati",
         "copy_ics_url": "Copia url ICS",
         "copy_outlook_url": "Copia url Outlook",
-        "copy_vector_url": "Copia url vista"
+        "copy_vector_url": "Copia url vista",
+        "chat": "Attrezzatura",
+        "equipment": "Attrezzatura",
+        "location": "Luogo"
     },
     "reminder": {
         "week_before": "{{count}} settimana fa",
@@ -111,7 +114,10 @@
         "you_sure_delete_instance": "Vuoi eliminare questa istanza dell'appuntamento “{{title}}” ?",
         "appointment_type_handle": "\"{{name}}\" è un appuntamento ricorrente. Vuoi aprire solo questa istanza o tutta la serie?",
         "delete_tag_message1": "Vuoi eliminare l'etichetta \"{{name}}\"?",
-        "delete_tag_message2": "Una volta eliminata, verrà eliminata anche da tutti gli elementi su cui è utilizzata."
+        "delete_tag_message2": "Una volta eliminata, verrà eliminata anche da tutti gli elementi su cui è utilizzata.",
+        "reply": "Rispondi",
+        "reply_all": "Rispondi a tutti",
+        "organizer": "Organizzatore"
     },
     "label": {
         "to": "A",
