@@ -172,7 +172,8 @@
         "delete_tag_name": "Eliminar etiqueta \"{{name}}\"",
         "edit_tag": "Editar etiqueta",
         "edit_tag_name": "Editar etiqueta \"{{name}}\"",
-        "scheduled_in": "Agendado para"
+        "scheduled_in": "Agendado para",
+        "no_title": "Sin Título"
     },
     "action": {
         "delete": "Eliminar",
@@ -498,7 +499,7 @@
             "series_deleted": "Serie borrada con éxito. Los asistentes recibirán una notificación de la cancelación."
         },
         "invite_has_no_message": "Esta invitación no contiene texto",
-        "invited_you": "te ha invitado a un evento",
+        "invited_you": "te ha invitado a",
         "you_are_organizer": "<Row><Text> <BoldText> Tú </BoldText> eres el organizador </Text></Row>",
         "delete_all_occurences": "Eliminar todas las incidencias",
         "delete_future_occurences": "Eliminar esta instancia y todas las futuras incidencias",
