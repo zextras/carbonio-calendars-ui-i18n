@@ -1,5 +1,8 @@
 {
     "backup": {
+        "backup_path": "Backup Path",
+        "backup_purge": "Backup Purge",
+        "compression_level": "Compression Level",
         "global": {
             "headers": {
                 "advanced": "Advanced",
@@ -7,9 +10,6 @@
                 "service_status": "Service Status"
             }
         },
-        "backup_path": "Backup Path",
-        "backup_purge": "Backup Purge",
-        "compression_level": "Compression Level",
         "keep_delete_accounts_in_backup": "Keep deleted accounts in the backup",
         "keep_delted_items_backup": "Keep deleted items in the backup",
         "latency_high_threshold": "Latency High Threshold",
