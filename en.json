@@ -410,6 +410,7 @@
         "time_zone": "Time Zone",
         "timezone": "Time Zone",
         "type": "Type",
+        "undo": "undo",
         "unlimited": "Unlimited",
         "unsaved_changes": "You have unsaved changes",
         "unsaved_changes_line1": "Are you sure you want to leave this page without saving?",
