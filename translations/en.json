@@ -1,4 +1,15 @@
 {
+    "account": {
+        "new": {
+            "create_account_wizard": "Create Account Wizard"
+        }
+    },
+    "accountDetails": {
+        "change_password_for_next_login": "Must change password on the next login",
+        "default_COS": "Default COS",
+        "enable_activeSync_remote_access": "Enable ActiveSync remote access",
+        "generate_first_2FA_token": "Generate first 2FA token"
+    },
     "backup": {
         "backup_path": "Backup Path",
         "backup_purge": "Backup Purge",
@@ -55,7 +66,8 @@
         }
     },
     "commons": {
-        "confirm_connection": "CONFIRM CONNECTION"
+        "confirm_connection": "CONFIRM CONNECTION",
+        "create_with_there_data": "CREATE WITH THESE DATA"
     },
     "core": {
         "subscription": {
@@ -182,6 +194,7 @@
         "access_key": "Access Key",
         "account": "Account",
         "account_scan": "AccountScan",
+        "account_status": "Account Status",
         "accounts": "Accounts",
         "actions": "Actions",
         "activate_and_update": "Activate & Update",
@@ -226,6 +239,7 @@
         "certificate": "Certificate",
         "certificates": "Certificates",
         "change_save_success_msg": "The change has been saved successfully",
+        "class_of_Service": "Class of Service",
         "closed": "Closed",
         "configuration": "Configuration",
         "connect_buckets": "Connect Buckets",
@@ -297,6 +311,7 @@
         "fall_back_to_local_msg": "Fall back to local password management in case of failure",
         "features": "Features",
         "filter": "Filter",
+        "first_2FA_access_token_link": "First 2FA Access Token Link (send this to the user)",
         "first_day_of_Week": "First day of Week",
         "force_delete": "Force Delete",
         "gal": "GAL",
@@ -325,6 +340,7 @@
         "initial_mail_serach": "initial Mail Serach",
         "internal": "Internal",
         "internal_gal": "InternalGAL",
+        "language": "Language",
         "last_access": "Last Access",
         "leave_anyway": "Leave anyway",
         "locked": "Locked",
@@ -335,6 +351,7 @@
         "logout_allowed_ip": "Logout Allowed IP",
         "logout_allowed_user_agent": "Logout Allowed User Agent",
         "logout_redirect_url": "Logout Redirect URL",
+        "mail": "Mail",
         "mail_size": "Mail Size",
         "mailbox_quota": "Mailbox Quota",
         "mailing_list": "Mailing List",
@@ -348,6 +365,7 @@
         "minimum_mail_polling_interval": "Minimum mail polling interval",
         "minutes": "Minutes",
         "monitoring": "Monitoring",
+        "must_change_passowrd": "Must Change Passowrd?",
         "mx_record_information_msg": "If your MX records point to a spam-relay or any other external non-zimbra server, enter the name of that server in \"Inbound SMTP Host Name\" field.",
         "name": "Name",
         "need_help": "NEED HELP?",
@@ -370,6 +388,7 @@
         "out_of_office_cache_lifetime": "Out of office cache lifetime",
         "page ": "You have accepted the share request",
         "page_": "You have accepted the share request",
+        "password": "Password",
         "password_to_bind_external_server_msg": "I want to use DN/Password to bind to External Server",
         "pending": "Pending",
         "preferences": "Preferences",
@@ -382,6 +401,7 @@
         "region": "Region",
         "remove": "Remove",
         "remove_button": "REMOVE",
+        "repeat_password": "Repeat Password",
         "reply/forward_using_format_of_the_original_message": "Reply/forward using format of the original message",
         "resources": "Resources",
         "restore_account": "Restore Account",
@@ -393,6 +413,7 @@
         "search": "Search",
         "search_base": "Search Base",
         "search_dot": "Search ...",
+        "second_name_initials": "Second Name Initials",
         "secondary bar_view": "This is a main view",
         "secondary?bar_view": "This is a main view",
         "secondary_app": "App Example",
@@ -427,6 +448,7 @@
         "storages": "Storages",
         "subscription": "Subscription",
         "subscriptions": "Subscriptions",
+        "surname": "Surname",
         "suspended": "Suspended",
         "this_list_is_empty": "This list is empty.",
         "time_zone": "Time Zone",
@@ -442,6 +464,8 @@
         "use_the_gal_when_autocompleting_addresses": "Use the GAL when autocompleting addresses",
         "used_on_Domains": "Used on Domains",
         "used_on_accounts": "Used on Accounts",
+        "user": "User",
+        "userName": "username (Auto-fill)",
         "utility_view": "Test utility view 1",
         "utility_view2": "Test utility view 2",
         "utility_view3": "Test utility view 3",
@@ -450,6 +474,7 @@
         "verify_connector_fail": " VERIFICATION FAILED",
         "verify_error": "{{name}}",
         "view": "This is a view",
+        "viewed_name": "Viewed Name (Auto-fill)",
         "virtual_host": "virtual host",
         "virtual_host_enable_info_msg": "Click to ADD button to enabled new one.",
         "virtual_host_info_msg": "Virtual hosts allow the system to establish a default domain for a user login.",

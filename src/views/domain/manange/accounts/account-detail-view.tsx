@@ -17,7 +17,7 @@ import {
 } from '@zextras/carbonio-design-system';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import { getMailboxQuota } from '../../../services/account-list-directory-service';
+import { getMailboxQuota } from '../../../../services/account-list-directory-service';
 
 const AccountDetailContainer = styled(Container)`
 	z-index: 10;

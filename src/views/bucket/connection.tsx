@@ -25,9 +25,9 @@ const Connection: FC<{
 	setVerifyCheck: any;
 	verifyCheck: any;
 	setButtonChange: any;
-	bucketType: any;
+	staticData: any;
 	setCompleteLoading: any;
-}> = ({ isActive, getData, onSelection, title, bucketType, setCompleteLoading }) => {
+}> = ({ isActive, getData, onSelection, title, staticData, setCompleteLoading }) => {
 	const [t] = useTranslation();
 	const [buttonColor, setButtonColor] = useState<string>('primary');
 	const [icon, setIcon] = useState('ActivityOutline');
@@ -53,7 +53,7 @@ const Connection: FC<{
 			_jsns: 'urn:zimbraAdmin',
 			module: 'ZxCore',
 			action: 'doCreateBucket',
-			storeType: bucketType || bucketTypeData,
+			storeType: staticData || bucketTypeData,
 			bucketName,
 			accessKey: accessKeyData,
 			secret: secretKey,
@@ -98,12 +98,12 @@ const Connection: FC<{
 	]);
 
 	useEffect(() => {
-		if (bucketType !== '') {
-			const volumeObject: any = BucketTypeItems.find((s) => s.value === bucketType);
+		if (staticData !== '') {
+			const volumeObject: any = BucketTypeItems.find((s) => s.value === staticData);
 			setBucketTypeData(volumeObject.label);
-			onSelection({ storeType: bucketType }, false);
+			onSelection({ storeType: staticData }, false);
 		}
-	}, [bucketType, bucketTypeData, onSelection]);
+	}, [staticData, bucketTypeData, onSelection]);
 
 	useEffect(() => {
 		if (verifyCheck === 'success') {
@@ -127,7 +127,7 @@ const Connection: FC<{
 	return (
 		<Container mainAlignment="flex-start">
 			<form>
-				{bucketType !== '' ? (
+				{staticData !== '' ? (
 					<Row padding={{ top: 'extralarge' }} width="100%">
 						<Input
 							label={t('label.bucket_type', 'Bucket Type')}
