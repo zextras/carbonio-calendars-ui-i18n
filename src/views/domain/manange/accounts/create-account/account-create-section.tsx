@@ -17,7 +17,8 @@ import { useTranslation } from 'react-i18next';
 
 const AccountCreateSection: FC<{
 	domainName: string | undefined;
-}> = ({ domainName }) => {
+	createAccountReq: any;
+}> = ({ domainName, createAccountReq }) => {
 	const [t] = useTranslation();
 
 	return (

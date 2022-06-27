@@ -52,17 +52,20 @@ const CreateAccount: FC<{
 	setShowCreateAccountView: any;
 	setSnackBarData: any;
 	domainName: any;
-}> = ({ setShowCreateAccountView, setSnackBarData, domainName }) => {
+	createAccountReq: any;
+}> = ({ setShowCreateAccountView, setSnackBarData, domainName, createAccountReq }) => {
 	const { t } = useTranslation();
 	const [wizardData, setWizardData] = useState();
+	const [userName, setUserName] = useState('');
+	const [password, setPassword] = useState('password');
 
 	const CreateAccountDetailSectionCB = useCallback(
-		() => <CreateAccountDetailSection domainName={domainName} />,
+		() => <CreateAccountDetailSection domainName={domainName} setUserName={setUserName} />,
 		[domainName]
 	);
 	const CreateAccountSectionCB = useCallback(
-		() => <CreateAccountSectionView domainName={domainName} />,
-		[domainName]
+		() => <CreateAccountSectionView domainName={domainName} createAccountReq={createAccountReq} />,
+		[createAccountReq, domainName]
 	);
 	const wizardSteps = [
 		{
@@ -121,6 +124,7 @@ const CreateAccount: FC<{
 					onClick={(): void => {
 						setShowCreateAccountView(false);
 						setSnackBarData(true);
+						createAccountReq({}, `${userName}@${domainName}`, password);
 					}}
 				/>
 			)

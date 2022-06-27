@@ -23,7 +23,10 @@ import logo from '../../../../assets/gardian.svg';
 import { useDomainStore } from '../../../../store/domain/store';
 
 import Paginig from '../../../components/paging';
-import { accountListDirectory } from '../../../../services/account-list-directory-service';
+import {
+	accountListDirectory,
+	createAccountRequest
+} from '../../../../services/account-list-directory-service';
 import AccountDetailView from './account-detail-view';
 import ListRow from '../../../list/list-row';
 import CreateAccount from './create-account/create-account';
@@ -225,6 +228,18 @@ const ManageAccounts: FC = () => {
 			getAccountList();
 		}
 	}, [domainName, getAccountList]);
+
+	const createAccountReq = useCallback(
+		(attr, name, password): void => {
+			createAccountRequest(attr, name, password)
+				.then((response) => response.json())
+				.then((data) => {
+					console.log('createAccountRequest', data);
+					getAccountList();
+				});
+		},
+		[getAccountList]
+	);
 	return (
 		<Container padding={{ all: 'large' }} mainAlignment="flex-start" background="gray6">
 			<Row takeAvwidth="fill" mainAlignment="flex-start" width="100%">
@@ -369,6 +384,7 @@ const ManageAccounts: FC = () => {
 					setShowCreateAccountView={setShowCreateAccountView}
 					setSnackBarData={setSnackBarData}
 					domainName={domainName}
+					createAccountReq={createAccountReq}
 				/>
 			)}
 			<Snackbar

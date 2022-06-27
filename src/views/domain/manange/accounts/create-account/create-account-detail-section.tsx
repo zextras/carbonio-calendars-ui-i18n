@@ -18,7 +18,8 @@ import { useTranslation } from 'react-i18next';
 
 const CreateAccountDetailSection: FC<{
 	domainName: string | undefined;
-}> = ({ domainName }) => {
+	setUserName: any;
+}> = ({ domainName, setUserName }) => {
 	const [t] = useTranslation();
 	const [isCheck, setIsCheck] = useState(true);
 	return (
@@ -53,6 +54,9 @@ const CreateAccountDetailSection: FC<{
 							background="gray5"
 							label={t('label.userName', 'username (Auto-fill)')}
 							name="ArnName"
+							onChange={(e: any): any => {
+								setUserName(e.target.value);
+							}}
 						/>
 					</Row>
 					<Padding width="4%" />
