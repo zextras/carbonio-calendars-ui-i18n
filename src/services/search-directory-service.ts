@@ -41,6 +41,12 @@ export const searchDirectory = async (
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify({
+			Header: {
+				context: {
+					_jsns: 'urn:zimbra',
+					session: {}
+				}
+			},
 			Body: request
 		})
 	});

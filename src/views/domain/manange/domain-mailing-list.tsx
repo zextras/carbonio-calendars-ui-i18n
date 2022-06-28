@@ -24,6 +24,7 @@ import Paginig from '../../components/paging';
 import { searchDirectory } from '../../../services/search-directory-service';
 import EditMailingListView from './edit-mailing-detail-view';
 import { useDomainStore } from '../../../store/domain/store';
+import { RECORD_DISPLAY_LIMIT } from '../../../constants';
 
 const DomainMailingList: FC = () => {
 	const [t] = useTranslation();
@@ -31,7 +32,7 @@ const DomainMailingList: FC = () => {
 	const domainName = useDomainStore((state) => state.domain?.name);
 	const [mailingList, setMailingList] = useState<any[]>([]);
 	const [offset, setOffset] = useState<number>(0);
-	const [limit, setLimit] = useState<number>(50);
+	const [limit, setLimit] = useState<number>(RECORD_DISPLAY_LIMIT);
 	const [totalAccount, setTotalAccount] = useState<number>(0);
 	const [selectedMailingList, setSelectedMailingList] = useState<any>({});
 	const [showMailingListDetailView, setShowMailingListDetailView] = useState<any>();
@@ -182,37 +183,36 @@ const DomainMailingList: FC = () => {
 						});
 					});
 					setMailingList(mList);
+				} else {
+					setTotalAccount(0);
+					setMailingList([]);
 				}
 			});
 	}, [t, offset, limit, domainName, searchQuery]);
 
 	useEffect(() => {
 		getMailingList();
-	}, [offset, searchQuery, getMailingList]);
+	}, [offset, getMailingList]);
 
 	// eslint-disable-next-line react-hooks/exhaustive-deps
-	const searchResourceQuery = useCallback(
+	const searchMailingListQuery = useCallback(
 		debounce((searchText) => {
 			if (searchText) {
+				setOffset(0);
 				setSearchQuery(
 					`(|(mail=*${searchText}*)(cn=*${searchText}*)(sn=*${searchText}*)(gn=*${searchText}*)(displayName=*${searchText}*)(zimbraMailDeliveryAddress=*${searchText}*))`
 				);
 			} else {
+				setOffset(0);
 				setSearchQuery('');
 			}
-		}, 700),
+		}, 100),
 		[debounce]
 	);
 
 	useEffect(() => {
-		searchResourceQuery(searchString);
-	}, [searchString, searchResourceQuery]);
-
-	useEffect(() => {
-		if (showMailingListDetailView !== undefined && !showMailingListDetailView) {
-			getMailingList();
-		}
-	}, [showMailingListDetailView, getMailingList]);
+		searchMailingListQuery(searchString);
+	}, [searchString, searchMailingListQuery]);
 
 	return (
 		<Container
