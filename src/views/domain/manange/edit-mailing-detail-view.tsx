@@ -167,9 +167,7 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowMailingListD
 		[t]
 	);
 
-	const [previousDetail, setPreviousDetail] = useState<any>({
-		zimbraMailStatus: rightsOptions[1]
-	});
+	const [previousDetail, setPreviousDetail] = useState<any>({});
 
 	const [zimbraDistributionListSubscriptionPolicy, setZimbraDistributionListSubscriptionPolicy] =
 		useState<any>(subscriptionUnsubscriptionRequestOptions[0]);
@@ -344,6 +342,11 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowMailingListD
 								setPreviousDetail((prevState: any) => ({
 									...prevState,
 									zimbraMailStatus: rightsOptions[0]
+								}));
+							} else {
+								setPreviousDetail((prevState: any) => ({
+									...prevState,
+									zimbraMailStatus: rightsOptions[1]
 								}));
 							}
 						}
@@ -533,6 +536,8 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowMailingListD
 		latestData.zimbraDistributionListUnsubscriptionPolicy =
 			zimbraDistributionListUnsubscriptionPolicy;
 		latestData.zimbraDistributionListSubscriptionPolicy = zimbraDistributionListSubscriptionPolicy;
+		latestData.zimbraMailStatus = zimbraMailStatus;
+
 		setPreviousDetail(latestData);
 		setIsDirty(false);
 	};
@@ -562,6 +567,9 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowMailingListD
 					previousDetail?.zimbraDistributionListSubscriptionPolicy
 			  )
 			: setZimbraDistributionListSubscriptionPolicy(subscriptionUnsubscriptionRequestOptions[0]);
+		previousDetail?.zimbraMailStatus !== undefined
+			? setZimbraMailStatus(previousDetail?.zimbraMailStatus)
+			: setZimbraMailStatus(rightsOptions[1]);
 		setIsDirty(false);
 	};
 
@@ -872,7 +880,7 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowMailingListD
 	useEffect(() => {
 		if (
 			previousDetail?.zimbraMailStatus !== undefined &&
-			previousDetail?.zimbraMailStatus.value !== zimbraMailStatus.value
+			previousDetail?.zimbraMailStatus?.value !== zimbraMailStatus.value
 		) {
 			setIsDirty(true);
 		}
