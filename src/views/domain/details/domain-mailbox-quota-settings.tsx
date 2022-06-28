@@ -118,7 +118,7 @@ const DomainMailboxQuotaSetting: FC = () => {
 						if (data?.Body?.GetQuotaUsageResponse?.searchTotal) {
 							setTotalAccount(data?.Body?.GetQuotaUsageResponse?.searchTotal);
 						}
-						usedQuota.map((item: any): any => {
+						usedQuota.map((item: any, index): any => {
 							let diskUsed: any = 0;
 							let quotaLimit: any = 0;
 							let percentage: any = 0;
@@ -142,7 +142,7 @@ const DomainMailboxQuotaSetting: FC = () => {
 							quotaLimit += ` ${t('label.mb', 'MB')}`;
 							percentage += '%';
 							quota.push({
-								id: item?.id,
+								id: index.toString(),
 								columns: [
 									'',
 									<Text size="medium" weight="bold" key={item?.id} color="#828282">
@@ -394,7 +394,6 @@ const DomainMailboxQuotaSetting: FC = () => {
 									<Input
 										label={t('domain.domain_space_byte', 'Domain Space (Byte)')}
 										value={zimbraMailDomainQuota}
-										defaultValue={zimbraMailDomainQuota}
 										background="gray5"
 										onChange={(e: any): any => {
 											setZimbraMailDomainQuota(e.target.value);
