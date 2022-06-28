@@ -215,12 +215,7 @@ const DomainMailingList: FC = () => {
 	}, [searchString, searchMailingListQuery]);
 
 	return (
-		<Container
-			padding={{ all: 'large' }}
-			mainAlignment="flex-start"
-			background="gray6"
-			style={{ maxWidth: '982px' }}
-		>
+		<Container padding={{ all: 'large' }} mainAlignment="flex-start" background="gray6">
 			<Row takeAvwidth="fill" mainAlignment="flex-start" width="100%">
 				<Container
 					orientation="vertical"
