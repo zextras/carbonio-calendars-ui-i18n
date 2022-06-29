@@ -14,7 +14,8 @@ import {
 	Table,
 	Text,
 	Select,
-	Switch
+	Switch,
+	Padding
 } from '@zextras/carbonio-design-system';
 import { useTranslation } from 'react-i18next';
 import moment from 'moment';
@@ -552,11 +553,18 @@ const MailingListDetail: FC<any> = ({ selectedMailingList, setShowMailingListDet
 					</Container>
 				</ListRow>
 				<ListRow>
-					<Container padding={{ all: 'small' }}>
-						<Paginig totalItem={1} pageSize={10} setOffset={setMemberOffset} />
+					<Container mainAlignment="flex-end" crossAlignment="flex-end">
+						<Divider />
+
+						<Padding all="small">
+							<Paginig totalItem={1} pageSize={10} setOffset={setMemberOffset} />
+						</Padding>
 					</Container>
-					<Container padding={{ all: 'small' }}>
-						<Paginig totalItem={1} pageSize={10} setOffset={setOwnerOffset} />
+					<Container mainAlignment="flex-end" crossAlignment="flex-end" padding={{ left: 'small' }}>
+						<Divider />
+						<Padding all="small">
+							<Paginig totalItem={1} pageSize={10} setOffset={setOwnerOffset} />
+						</Padding>
 					</Container>
 				</ListRow>
 				<ListRow>

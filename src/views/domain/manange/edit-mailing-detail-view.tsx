@@ -1182,10 +1182,10 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowMailingListD
 					</Container>
 				</ListRow>
 				<ListRow>
-					<Container padding={{ all: 'small' }}>
+					<Container padding={{ all: 'small' }} mainAlignment="flex-end" crossAlignment="flex-end">
 						<Paginig totalItem={1} pageSize={10} setOffset={setMemberOffset} />
 					</Container>
-					<Container padding={{ all: 'small' }}>
+					<Container padding={{ all: 'small' }} mainAlignment="flex-end" crossAlignment="flex-end">
 						<Paginig totalItem={1} pageSize={10} setOffset={setOwnerOffset} />
 					</Container>
 				</ListRow>

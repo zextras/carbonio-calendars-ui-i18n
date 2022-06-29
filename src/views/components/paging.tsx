@@ -85,7 +85,12 @@ const Paginig: FC<{
 	}, [currentPage, totalPages, setOffset, pageSize, totalItem]);
 
 	return (
-		<Container orientation="horizontal" crossAlignment="center" mainAlignment="flex-start">
+		<Container
+			orientation="horizontal"
+			crossAlignment="center"
+			mainAlignment="flex-start"
+			width="fit"
+		>
 			<IconButton
 				size="large"
 				icon="ArrowheadLeft"
