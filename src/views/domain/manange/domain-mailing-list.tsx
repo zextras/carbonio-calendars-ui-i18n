@@ -25,6 +25,7 @@ import { searchDirectory } from '../../../services/search-directory-service';
 import EditMailingListView from './edit-mailing-detail-view';
 import { useDomainStore } from '../../../store/domain/store';
 import { RECORD_DISPLAY_LIMIT } from '../../../constants';
+import MailingListDetail from './mailing-list-detail';
 
 const DomainMailingList: FC = () => {
 	const [t] = useTranslation();
@@ -360,8 +361,15 @@ const DomainMailingList: FC = () => {
 					</Container>
 				</Row>
 			</Container>
-			{showMailingListDetailView && (
+			{/* {showMailingListDetailView && (
 				<EditMailingListView
+					selectedMailingList={selectedMailingList}
+					setShowMailingListDetailView={setShowMailingListDetailView}
+				/>
+			)} */}
+
+			{showMailingListDetailView && (
+				<MailingListDetail
 					selectedMailingList={selectedMailingList}
 					setShowMailingListDetailView={setShowMailingListDetailView}
 				/>
