@@ -27,19 +27,15 @@ import { getDistributionListMembership } from '../../../services/get-distributio
 import { getDateFromStr } from '../../utility/utils';
 
 const MailingListDetailContainer = styled(Container)`
-	z-index: 10;
 	position: absolute;
-	top: 43px;
-	right: 12px;
-	bottom: 0px;
 	left: ${'max(calc(100% - 680px), 12px)'};
-	transition: left 0.2s ease-in-out;
+	top: 43px;
 	height: auto;
 	width: auto;
 	max-height: 100%;
 	overflow: hidden;
+	transition: left 0.2s ease-in-out;
 	box-shadow: -6px 4px 5px 0px rgba(0, 0, 0, 0.1);
-	opacity: '10%;
 `;
 
 // eslint-disable-next-line no-shadow
@@ -406,7 +402,7 @@ const MailingListDetail: FC<any> = ({ selectedMailingList, setShowMailingListDet
 				padding={{ all: 'extralarge' }}
 				mainAlignment="flex-start"
 				crossAlignment="flex-start"
-				height="calc(100% - 64px)"
+				height="calc(100vh - 150px)"
 				background="white"
 				style={{ overflow: 'auto' }}
 			>
