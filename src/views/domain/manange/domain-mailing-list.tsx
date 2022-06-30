@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: AGPL-3.0-only
  */
-import React, { FC, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import React, { FC, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import {
 	Container,
 	Row,
@@ -43,6 +43,8 @@ const DomainMailingList: FC = () => {
 	const [selectedDlRow, setSelectedDlRow] = useState<any>([]);
 	const [mailingListItem, setMailingListItem] = useState([]);
 	const [selectedFromRow, setSelectedFromRow] = useState<any>({});
+	const [prevent, setPrevent] = useState<boolean>(false);
+	const timer = useRef<any>();
 	const headers: any[] = useMemo(
 		() => [
 			{
@@ -85,6 +87,26 @@ const DomainMailingList: FC = () => {
 		[t]
 	);
 
+	const doClickAction = useCallback((): void => {
+		setShowMailingListDetailView(true);
+	}, []);
+
+	const doDoubleClickAction = useCallback((): void => {
+		setShowEditMailingView(true);
+	}, []);
+
+	const handleClick = useCallback(
+		(event: any) => {
+			clearTimeout(timer.current);
+			if (event.detail === 1) {
+				timer.current = setTimeout(doClickAction, 200);
+			} else if (event.detail === 2) {
+				doDoubleClickAction();
+			}
+		},
+		[doClickAction, doDoubleClickAction]
+	);
+
 	const getMailingList = useCallback((): void => {
 		const attrs =
 			'displayName,zimbraId,zimbraMailHost,uid,description,zimbraIsAdminGroup,zimbraMailStatus,zimbraIsDelegatedAdminAccount,zimbraIsAdminAccount,zimbraIsSystemResource,zimbraIsSystemAccount,zimbraIsExternalVirtualAccount';
@@ -108,15 +130,10 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={item?.id}
-									onDoubleClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
+									onClick={(e: any): void => {
 										setSelectedMailingList(item);
-										setShowEditMailingView(true);
-									}}
-									onClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
-										setShowMailingListDetailView(true);
 										setSelectedFromRow(item);
+										handleClick(e);
 									}}
 								>
 									<Text size="small" weight="light" key={`${item?.id}display-child`} color="gray0">
@@ -127,15 +144,10 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-address`}
-									onDoubleClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
+									onClick={(e: any): void => {
 										setSelectedMailingList(item);
-										setShowEditMailingView(true);
-									}}
-									onClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
-										setShowMailingListDetailView(true);
 										setSelectedFromRow(item);
+										handleClick(e);
 									}}
 								>
 									<Text size="medium" weight="light" key={`${item?.id}address-child`} color="gray0">
@@ -146,15 +158,10 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-member`}
-									onDoubleClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
+									onClick={(e: any): void => {
 										setSelectedMailingList(item);
-										setShowEditMailingView(true);
-									}}
-									onClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
-										setShowMailingListDetailView(true);
 										setSelectedFromRow(item);
+										handleClick(e);
 									}}
 								>
 									<Text size="medium" weight="light" key={`${item?.id}member-child`} color="gray0">
@@ -165,15 +172,10 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-status`}
-									onDoubleClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
+									onClick={(e: any): void => {
 										setSelectedMailingList(item);
-										setShowEditMailingView(true);
-									}}
-									onClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
-										setShowMailingListDetailView(true);
 										setSelectedFromRow(item);
+										handleClick(e);
 									}}
 								>
 									<Text size="medium" weight="light" key={`${item?.id}status-child`} color="gray0">
@@ -186,15 +188,10 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-gal`}
-									onDoubleClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
+									onClick={(e: any): void => {
 										setSelectedMailingList(item);
-										setShowEditMailingView(true);
-									}}
-									onClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
-										setShowMailingListDetailView(true);
 										setSelectedFromRow(item);
+										handleClick(e);
 									}}
 								>
 									<Text size="medium" weight="light" key={`${item?.id}gal-child`} color="gray0">
@@ -205,15 +202,10 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-description`}
-									onDoubleClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
+									onClick={(e: any): void => {
 										setSelectedMailingList(item);
-										setShowEditMailingView(true);
-									}}
-									onClick={(event: { stopPropagation: () => void }): void => {
-										event.stopPropagation();
-										setShowMailingListDetailView(true);
 										setSelectedFromRow(item);
+										handleClick(e);
 									}}
 								>
 									<Text
@@ -235,7 +227,7 @@ const DomainMailingList: FC = () => {
 					setMailingList([]);
 				}
 			});
-	}, [t, offset, limit, domainName, searchQuery]);
+	}, [t, offset, limit, domainName, searchQuery, handleClick]);
 
 	useEffect(() => {
 		getMailingList();
