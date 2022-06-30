@@ -321,38 +321,49 @@ const ManageAccounts: FC = () => {
 				orientation="column"
 				crossAlignment="flex-start"
 				mainAlignment="flex-start"
-				style={{ overflow: 'auto' }}
 				width="100%"
 				height="calc(100vh - 200px)"
+				padding={{ top: 'extralarge' }}
 			>
 				<Row takeAvwidth="fill" mainAlignment="flex-start" width="100%">
 					<Container height="fit" crossAlignment="flex-start" background="gray6">
-						<Container padding={{ top: 'large', right: 'small', left: 'small' }}>
-							<ListRow>
-								<Container padding={{ top: 'large', right: 'small', left: 'small' }}>
-									<Input
-										label={t(
-											'label.i_am_looking_for_this_account',
-											`I'm looking for this account...`
-										)}
-										value={searchString}
-										background="gray5"
-										onChange={(e: any): any => {
-											setSearchString(e.target.value);
-										}}
-										CustomIcon={(): any => (
-											<Icon icon="FunnelOutline" size="large" color="primary" />
-										)}
-									/>
-								</Container>
-							</ListRow>
-						</Container>
+						<Row
+							orientation="horizontal"
+							mainAlignment="space-between"
+							crossAlignment="flex-start"
+							width="fill"
+							padding={{ bottom: 'large' }}
+						>
+							<Container>
+								<Input
+									label={t(
+										'label.i_am_looking_for_this_account',
+										`I'm looking for this account...`
+									)}
+									value={searchString}
+									background="gray5"
+									onChange={(e: any): any => {
+										setSearchString(e.target.value);
+									}}
+									CustomIcon={(): any => <Icon icon="FunnelOutline" size="large" color="primary" />}
+								/>
+							</Container>
+						</Row>
 
-						<Container padding={{ all: 'large' }}>
+						<Row
+							orientation="horizontal"
+							mainAlignment="space-between"
+							crossAlignment="flex-start"
+							width="fill"
+							height="calc(100vh - 340px)"
+						>
 							{accountList.length !== 0 && (
-								<ListRow>
-									<Table rows={accountList} headers={headers} showCheckbox multiSelect />
-								</ListRow>
+								<Table
+									rows={accountList}
+									headers={headers}
+									showCheckbox={false}
+									style={{ overflow: 'auto', height: '100%' }}
+								/>
 							)}
 							{accountList.length === 0 && (
 								<Container orientation="column" crossAlignment="center" mainAlignment="flex-start">
@@ -400,7 +411,7 @@ const ManageAccounts: FC = () => {
 									<Paginig totalItem={totalAccount} setOffset={setOffset} pageSize={limit} />
 								</Row>
 							)}
-						</Container>
+						</Row>
 					</Container>
 				</Row>
 			</Container>
