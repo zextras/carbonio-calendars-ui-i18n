@@ -440,7 +440,7 @@ const MailingListDetail: FC<any> = ({
 				padding={{ all: 'extralarge' }}
 				mainAlignment="flex-start"
 				crossAlignment="flex-start"
-				height="calc(100vh - 150px)"
+				height="calc(100vh - 250px)"
 				background="white"
 				style={{ overflow: 'auto' }}
 			>
