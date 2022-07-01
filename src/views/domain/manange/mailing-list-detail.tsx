@@ -415,23 +415,26 @@ const MailingListDetail: FC<any> = ({
 				padding={{ all: 'extralarge' }}
 			>
 				<Padding right="large">
+					<Container style={{ border: '1px solid #2b73d2' }}>
+						<IconButton
+							iconColor="primary"
+							backgroundColor="gray6"
+							icon="EditAsNewOutline"
+							height={44}
+							width={44}
+							onClick={onEditMailingList}
+						/>
+					</Container>
+				</Padding>
+				<Container width="fit" style={{ border: '1px solid #d74942' }}>
 					<IconButton
-						iconColor="primary"
+						iconColor="error"
 						backgroundColor="gray6"
-						icon="EditAsNewOutline"
+						icon="Trash2Outline"
 						height={44}
 						width={44}
-						onClick={onEditMailingList}
 					/>
-				</Padding>
-
-				<IconButton
-					iconColor="error"
-					backgroundColor="gray6"
-					icon="Trash2Outline"
-					height={44}
-					width={44}
-				/>
+				</Container>
 			</Container>
 			<Container
 				padding={{ all: 'extralarge' }}
