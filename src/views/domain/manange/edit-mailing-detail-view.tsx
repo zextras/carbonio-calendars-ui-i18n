@@ -929,6 +929,7 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowEditMailingL
 				crossAlignment="flex-end"
 				background="gray6"
 				padding={{ all: 'extralarge' }}
+				height="85px"
 			>
 				<Padding right="small">
 					{isDirty && (
@@ -941,7 +942,7 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowEditMailingL
 				padding={{ all: 'extralarge' }}
 				mainAlignment="flex-start"
 				crossAlignment="flex-start"
-				height="calc(100vh - 150px)"
+				height="calc(100vh - 230px)"
 				background="white"
 				style={{ overflow: 'auto' }}
 			>
@@ -1188,7 +1189,7 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowEditMailingL
 					</Text>
 				</Row>
 				<ListRow>
-					<Container padding={{ left: 'extralarge' }}>
+					<Container>
 						<Input
 							value={zimbraNotes}
 							background="gray5"
