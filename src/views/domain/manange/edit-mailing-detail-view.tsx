@@ -913,12 +913,6 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowEditMailingL
 					</Text>
 				</Row>
 				<Row padding={{ right: 'extrasmall' }}>
-					<Padding right="small">
-						{isDirty && (
-							<Button label={t('label.cancel', 'Cancel')} color="secondary" onClick={onUndo} />
-						)}
-					</Padding>
-					{isDirty && <Button label={t('label.save', 'Save')} color="primary" onClick={onSave} />}
 					<IconButton
 						size="medium"
 						icon="CloseOutline"
@@ -929,6 +923,20 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowEditMailingL
 			<Row>
 				<Divider color="gray3" />
 			</Row>
+			<Container
+				orientation="horizontal"
+				mainAlignment="flex-end"
+				crossAlignment="flex-end"
+				background="gray6"
+				padding={{ all: 'extralarge' }}
+			>
+				<Padding right="small">
+					{isDirty && (
+						<Button label={t('label.cancel', 'Cancel')} color="secondary" onClick={onUndo} />
+					)}
+				</Padding>
+				{isDirty && <Button label={t('label.save', 'Save')} color="primary" onClick={onSave} />}
+			</Container>
 			<Container
 				padding={{ all: 'extralarge' }}
 				mainAlignment="flex-start"
