@@ -36,22 +36,6 @@ import { addDistributionListMember } from '../../../services/add-distributionlis
 import { removeDistributionListMember } from '../../../services/remove-distributionlist-member-service';
 import { distributionListAction } from '../../../services/distribution-list-action-service';
 
-const EditMailingListContainer = styled(Container)`
-	z-index: 10;
-	position: absolute;
-	top: 43px;
-	right: 1px;
-	bottom: 0px;
-	left: ${'max(calc(100% - 680px), 12px)'};
-	transition: left 0.2s ease-in-out;
-	height: auto;
-	width: auto;
-	max-height: 100%;
-	overflow: hidden;
-	box-shadow: -6px 4px 5px 0px rgba(0, 0, 0, 0.1);
-	opacity: '10%;
-`;
-
 // eslint-disable-next-line no-shadow
 export enum SUBSCRIBE_UNSUBSCRIBE {
 	ACCEPT = 'ACCEPT',
@@ -899,7 +883,21 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowEditMailingL
 	}, [openAddMailingListDialog]);
 
 	return (
-		<EditMailingListContainer background="gray5" mainAlignment="flex-start">
+		<Container
+			background="gray5"
+			mainAlignment="flex-start"
+			style={{
+				position: 'absolute',
+				left: `${'max(calc(100% - 680px), 12px)'}`,
+				top: '43px',
+				height: 'auto',
+				width: 'auto',
+				overflow: 'hidden',
+				transition: 'left 0.2s ease-in-out',
+				'box-shadow': '-6px 4px 5px 0px rgba(0, 0, 0, 0.1)',
+				right: 0
+			}}
+		>
 			<Row
 				mainAlignment="flex-start"
 				crossAlignment="center"
@@ -917,23 +915,10 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowEditMailingL
 				<Row padding={{ right: 'extrasmall' }}>
 					<Padding right="small">
 						{isDirty && (
-							<Button
-								label={t('label.undo', 'undo')}
-								type="outlined"
-								icon="CloseOutline"
-								color="secondary"
-								onClick={onUndo}
-							/>
+							<Button label={t('label.cancel', 'Cancel')} color="secondary" onClick={onUndo} />
 						)}
 					</Padding>
-					{isDirty && (
-						<Button
-							label={t('label.save', 'Save')}
-							icon="SaveOutline"
-							color="primary"
-							onClick={onSave}
-						/>
-					)}
+					{isDirty && <Button label={t('label.save', 'Save')} color="primary" onClick={onSave} />}
 					<IconButton
 						size="medium"
 						icon="CloseOutline"
@@ -948,7 +933,7 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowEditMailingL
 				padding={{ all: 'extralarge' }}
 				mainAlignment="flex-start"
 				crossAlignment="flex-start"
-				height="calc(100% - 64px)"
+				height="calc(100vh - 150px)"
 				background="white"
 				style={{ overflow: 'auto' }}
 			>
@@ -1301,7 +1286,7 @@ const EditMailingListView: FC<any> = ({ selectedMailingList, setShowEditMailingL
 					</Container>
 				</Container>
 			</Modal>
-		</EditMailingListContainer>
+		</Container>
 	);
 };
 export default EditMailingListView;

@@ -98,6 +98,7 @@ const DomainMailingList: FC = () => {
 
 	const handleClick = useCallback(
 		(event: any) => {
+			event.stopPropagation();
 			clearTimeout(timer.current);
 			if (event.detail === 1) {
 				timer.current = setTimeout(doClickAction, 300);
@@ -131,7 +132,8 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={item?.id}
-									onClick={(e: any): void => {
+									onClick={(e: { stopPropagation: () => void }): void => {
+										e.stopPropagation();
 										setSelectedMailingList(item);
 										setSelectedFromRow(item);
 										handleClick(e);
@@ -145,7 +147,8 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-address`}
-									onClick={(e: any): void => {
+									onClick={(e: { stopPropagation: () => void }): void => {
+										e.stopPropagation();
 										setSelectedMailingList(item);
 										setSelectedFromRow(item);
 										handleClick(e);
@@ -159,7 +162,8 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-member`}
-									onClick={(e: any): void => {
+									onClick={(e: { stopPropagation: () => void }): void => {
+										e.stopPropagation();
 										setSelectedMailingList(item);
 										setSelectedFromRow(item);
 										handleClick(e);
@@ -173,7 +177,8 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-status`}
-									onClick={(e: any): void => {
+									onClick={(e: { stopPropagation: () => void }): void => {
+										e.stopPropagation();
 										setSelectedMailingList(item);
 										setSelectedFromRow(item);
 										handleClick(e);
@@ -189,7 +194,8 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-gal`}
-									onClick={(e: any): void => {
+									onClick={(e: { stopPropagation: () => void }): void => {
+										e.stopPropagation();
 										setSelectedMailingList(item);
 										setSelectedFromRow(item);
 										handleClick(e);
@@ -203,7 +209,8 @@ const DomainMailingList: FC = () => {
 									mainAlignment="flex-start"
 									crossAlignment="flex-start"
 									key={`${item?.id}-description`}
-									onClick={(e: any): void => {
+									onClick={(e: { stopPropagation: () => void }): void => {
+										e.stopPropagation();
 										setSelectedMailingList(item);
 										setSelectedFromRow(item);
 										handleClick(e);
