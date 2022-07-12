@@ -24,7 +24,7 @@ import {
 } from '@zextras/carbonio-design-system';
 import { Trans, useTranslation } from 'react-i18next';
 import moment from 'moment';
-import { isEqual } from 'lodash';
+import { isEqual, isError } from 'lodash';
 import ListRow from '../../list/list-row';
 import Paginig from '../../components/paging';
 import { getDistributionList } from '../../../services/get-distribution-list';
@@ -89,6 +89,7 @@ const EditMailingListView: FC<any> = ({
 	const [memberURL, setMemberURL] = useState<string>();
 	const [ownerOfList, setOwnerOfList] = useState<any[]>([]);
 	const [searchOwnerMemberOfList, setSearchOwnerMemberOfList] = useState<any[]>([]);
+	const [ownerErrorMessage, setOwnerErrorMessage] = useState<string>('');
 
 	const dlCreateDate = useMemo(
 		() =>
@@ -586,18 +587,43 @@ const EditMailingListView: FC<any> = ({
 				if (!!accountExists && accountExists[0]) {
 					setIsShowError(false);
 					if (isAddToOwnerList) {
-						setOwnersList(
-							ownersList.concat({ id: accountExists[0]?.id, name: accountExists[0]?.name })
+						if (ownersList.find((item: any) => item?.name === searchMailingListOrUser)) {
+							setIsShowError(true);
+							setOwnerErrorMessage(
+								t(
+									'label.mailing_list_already_in_list_error',
+									'The Mailing List / User is already in the list'
+								)
+							);
+						} else {
+							setOwnersList(
+								ownersList.concat({ id: accountExists[0]?.id, name: accountExists[0]?.name })
+							);
+							setOpenAddMailingListDialog(false);
+						}
+					} else if (dlm.find((item: any) => item === searchMailingListOrUser)) {
+						setIsShowError(true);
+						setOwnerErrorMessage(
+							t(
+								'label.mailing_list_already_in_list_error',
+								'The Mailing List / User is already in the list'
+							)
 						);
 					} else {
 						setDlm(dlm.concat(accountExists[0]?.name));
+						setOpenAddMailingListDialog(false);
 					}
-					setOpenAddMailingListDialog(false);
 				} else {
 					setIsShowError(true);
+					setOwnerErrorMessage(
+						t(
+							'label.mailing_list_not_exists_error_msg',
+							'The Mailing List / User does not exists. Please check the spelling and try again.'
+						)
+					);
 				}
 			});
-	}, [isAddToOwnerList, searchMailingListOrUser, dlm, ownersList]);
+	}, [t, isAddToOwnerList, searchMailingListOrUser, dlm, ownersList]);
 
 	const onDeleteFromList = (): void => {
 		if (selectedDistributionListMember.length > 0) {
@@ -685,6 +711,7 @@ const EditMailingListView: FC<any> = ({
 		Promise.all(requests)
 			.then((response: any) => Promise.all(response.map((res: any) => res.json())))
 			.then((data: any) => {
+				// eslint-disable-next-line no-shadow
 				let isError = false;
 				let errorMessage = '';
 				data.forEach((item: any) => {
@@ -1093,6 +1120,7 @@ const EditMailingListView: FC<any> = ({
 	useEffect(() => {
 		if (openAddMailingListDialog) {
 			setSearchMailingListOrUser('');
+			setIsShowError(false);
 		}
 	}, [openAddMailingListDialog]);
 
@@ -1589,16 +1617,15 @@ const EditMailingListView: FC<any> = ({
 							onChange={(e: any): void => {
 								setSearchMailingListOrUser(e.target.value);
 							}}
+							hasError={isShowError}
+							label={t('label.mailing_list_user', 'Mailing List / User')}
 						/>
 					</Container>
 					{isShowError && (
 						<Container mainAlignment="flex-start" crossAlignment="flex-start" width="fill">
 							<Padding top="small">
 								<Text size="extrasmall" weight="regular" color="error">
-									{t(
-										'label.mailing_list_already_in_list_error',
-										'The Mailing List / User is already in the list'
-									)}
+									{ownerErrorMessage}
 								</Text>
 							</Padding>
 						</Container>
