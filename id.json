@@ -183,7 +183,9 @@
         "entire_serires": "SELURUH SERI",
         "new_tag": "Tag Baru",
         "other_actions": "Tindakan lain",
-        "single_instance": "SATU INSTANS"
+        "single_instance": "SATU INSTANS",
+        "no_title": "Tanpa Judul",
+        "scheduled_in": "Kalender"
     },
     "calendar": {
         "modal": {
@@ -323,7 +325,10 @@
         "appointment_type_handle": "\"{{name}}\" adalah janji temu berulang. Anda hanya ingin membuka instans ini atau seri?",
         "organizer": "Penyelenggara",
         "reply": "Balas",
-        "reply_all": "Balas semua"
+        "reply_all": "Balas semua",
+        "send_email_to": "Kirim email ke: {{email}}",
+        "send_email": "Kirim email",
+        "more": "Lainnya..."
     },
     "months": {
         "april": "April",
@@ -541,7 +546,8 @@
         "show_optionals": "Tampilkan opsi",
         "chat": "Peralatan",
         "equipment": "Peralatan",
-        "location": "Lokasi"
+        "location": "Lokasi",
+        "chat_room": "Tautan Ruang Virtual"
     },
     "share_invite_resent": "Undangan berbagi dikirim ulang",
     "shared_folders": "Kalender Bersama",
