@@ -43,7 +43,7 @@
         "delete_all_occurences": "あらゆる出来事を削除する",
         "delete_future_occurences": "この瞬間と今後の出来事をすべて削除します",
         "delete_future_occurences_warning": "これにより、シリーズ内のすべての例外（この瞬間の前後）も削除されます",
-        "invited_you": "があなたをイベントに招待しました",
+        "invited_you": "があなたを招待しました",
         "meeting_canceled": "次の会議がキャンセルされました",
         "modal": {
             "delete": {
@@ -66,7 +66,13 @@
         "delete_tag_message2": "削除されると、それでマークされたすべてのアイテムから削除されます。",
         "organizer": "主催者",
         "reply": "返信する",
-        "reply_all": "全員に返信する"
+        "reply_all": "全員に返信する",
+        "required_participant": "{{count}}参加者",
+        "optional_participant": "{{count}}オプション",
+        "guests": "ゲスト",
+        "declined": "{{count}}が却下されました",
+        "awaiting": "待機しています",
+        "accepted": "{{count}}が承認されました"
     },
     "action": {
         "save": "保存する",
@@ -359,7 +365,9 @@
         "all_time": "イベント中ずっと",
         "modal": {
             "set_new_time_message": "欠席した予定の新しい時間を設定しますか？ [OK]をクリックすると、他のリマインダーがすべて自動的に閉じられます。"
-        }
+        },
+        "minutes": "{{count}}分間",
+        "hours": "{{count}}時間"
     },
     "repeat": {
         "custom": "カスタム",
@@ -535,7 +543,10 @@
         "copy_vector_url": "ビューのURLをコピーする",
         "chat": "機器",
         "equipment": "機器",
-        "location": "場所"
+        "location": "場所",
+        "virtual_chat": "バーチャルチャット",
+        "calendar_sharing_status_one": "1人と共有されました",
+        "calendar_sharing_status": "{{count}}人と共有されました"
     },
     "workflow": "ワークフロー",
     "write": "書く",
