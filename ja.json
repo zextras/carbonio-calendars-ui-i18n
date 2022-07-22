@@ -72,7 +72,10 @@
         "guests": "ゲスト",
         "declined": "{{count}}が却下されました",
         "awaiting": "待機しています",
-        "accepted": "{{count}}が承認されました"
+        "accepted": "{{count}}が承認されました",
+        "send_email_to": "次の宛先にメールを送信します: {{email}}",
+        "send_email": "メールを送信する",
+        "more": "その他..."
     },
     "action": {
         "save": "保存する",
@@ -284,7 +287,9 @@
         "select_color": "色を選択してください",
         "tag_max_length": "最大128文字まで使用できます",
         "tag_name": "タグの名前",
-        "tags": "タグ"
+        "tags": "タグ",
+        "no_title": "件名なし",
+        "scheduled_in": "カレンダー"
     },
     "create": "作成する",
     "delete": "削除する",
@@ -546,7 +551,8 @@
         "location": "場所",
         "virtual_chat": "バーチャルチャット",
         "calendar_sharing_status_one": "1人と共有されました",
-        "calendar_sharing_status": "{{count}}人と共有されました"
+        "calendar_sharing_status": "{{count}}人と共有されました",
+        "chat_room": "バーチャルルームのリンク"
     },
     "workflow": "ワークフロー",
     "write": "書く",
