@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 import { replaceHistory } from '@zextras/carbonio-shell-ui';
 import ListPanelItem from '../list/list-panel-item';
 import ListItems from '../list/list-items';
-import { BUCKET_LIST, SERVERS_LIST } from '../../constants';
+import { BUCKET_LIST, SERVERS_LIST, VOLUME, HMS_SETTINGS, INDEXER_SETTINGS } from '../../constants';
 
 const BucketListPanel: FC = () => {
 	const [isstoreselect, setIsStoreSelect] = useState(false);
@@ -29,7 +29,7 @@ const BucketListPanel: FC = () => {
 			},
 			{
 				id: BUCKET_LIST,
-				name: t('label.bucket_List', 'Bucket List'),
+				name: t('label.bucket_list', 'Bucket List'),
 				isSelected: isstoreselect
 			}
 		],
@@ -38,17 +38,17 @@ const BucketListPanel: FC = () => {
 	const serverSpecificOption = useMemo(
 		() => [
 			{
-				id: 'Volume',
+				id: VOLUME,
 				name: t('label.volume', 'Volume'),
 				isSelected: isstoreselect
 			},
 			{
-				id: 'HMS Settings',
+				id: HMS_SETTINGS,
 				name: t('label.hms_settings', 'HMS Settings'),
 				isSelected: isstoreselect
 			},
 			{
-				id: 'Indexer Settings',
+				id: INDEXER_SETTINGS,
 				name: t('label.indexer_settings', 'Indexer Settings'),
 				isSelected: isstoreselect
 			}

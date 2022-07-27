@@ -77,7 +77,7 @@ const BucketListTable: FC<{
 						onClick={(): any => {
 							onClick(i);
 						}}
-						style={{ textAlign: 'left', justifyContent: 'flex-start', textTransform: 'capitalize' }}
+						style={{ textAlign: 'left', justifyContent: 'flex-start' }}
 					>
 						{v.bucketName}
 					</Row>,
@@ -89,7 +89,7 @@ const BucketListTable: FC<{
 						onClick={(): any => {
 							onClick(i);
 						}}
-						style={{ textAlign: 'center', textTransform: 'capitalize' }}
+						style={{ textAlign: 'center' }}
 					>
 						{v.storeType}
 					</Row>
