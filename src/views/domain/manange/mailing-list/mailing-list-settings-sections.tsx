@@ -12,12 +12,17 @@ import {
 	Select,
 	Table,
 	Input,
-	Button
+	Button,
+	Dropdown
 } from '@zextras/carbonio-design-system';
 import { useTranslation } from 'react-i18next';
+import { debounce } from 'lodash';
 import { MailingListContext } from './mailinglist-context';
 import ListRow from '../../../list/list-row';
 import { isValidEmail } from '../../../utility/utils';
+import { searchDirectory } from '../../../../services/search-directory-service';
+import { RECORD_DISPLAY_LIMIT } from '../../../../constants';
+import { searchGal } from '../../../../services/search-gal-service';
 
 // eslint-disable-next-line no-shadow
 export enum SUBSCRIBE_UNSUBSCRIBE {
@@ -36,6 +41,8 @@ const MailingListSettingsSection: FC<any> = () => {
 	const [selectedDistributionListOwner, setSelectedDistributionListOwner] = useState<Array<any>>(
 		[]
 	);
+
+	const [searchMemberResult, setSearchMemberResult] = useState<Array<any>>([]);
 
 	const subscriptionUnsubscriptionRequestOptions: any[] = useMemo(
 		() => [
@@ -137,6 +144,63 @@ const MailingListSettingsSection: FC<any> = () => {
 			setSelectedDistributionListOwner([]);
 		}
 	}, [ownersList, selectedDistributionListOwner]);
+
+	const getSearchMemberList = useCallback((searchKeyword) => {
+		searchGal(searchKeyword)
+			.then((response) => response.json())
+			.then((data) => {
+				const contactList = data?.Body?.SearchGalResponse?.cn;
+				if (contactList) {
+					let result: any[] = [];
+					result = contactList.map((item: any): any => ({
+						id: item?.id,
+						name: item?._attrs?.email
+					}));
+					setSearchMemberResult(result);
+				} else {
+					setSearchMemberResult([]);
+				}
+			});
+	}, []);
+
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	const searchMemberCall = useCallback(
+		debounce((mem) => {
+			getSearchMemberList(mem);
+		}, 700),
+		[debounce]
+	);
+	useEffect(() => {
+		if (member !== '') {
+			searchMemberCall(member);
+		}
+	}, [member, searchMemberCall]);
+
+	const items = searchMemberResult.map((item: any, index) => ({
+		id: item.id,
+		label: item.name,
+		customComponent: (
+			<Row
+				top="9px"
+				right="large"
+				bottom="9px"
+				left="large"
+				style={{
+					fontFamily: 'roboto',
+					display: 'block',
+					textAlign: 'left',
+					height: 'inherit',
+					padding: '3px',
+					width: 'inherit'
+				}}
+				onClick={(): void => {
+					setMember(item?.name);
+				}}
+			>
+				{item?.name}
+			</Row>
+		)
+	}));
 
 	return (
 		<Container mainAlignment="flex-start">
@@ -263,7 +327,7 @@ const MailingListSettingsSection: FC<any> = () => {
 						padding={{ top: 'large', right: 'small' }}
 						width="65%"
 					>
-						<Input
+						{/* <Input
 							label={t('label.type_an_account_dot', 'Type an account ...')}
 							backgroundColor="gray5"
 							size="medium"
@@ -271,7 +335,28 @@ const MailingListSettingsSection: FC<any> = () => {
 							onChange={(e: any): void => {
 								setMember(e.target.value);
 							}}
-						/>
+						/> */}
+
+						<Dropdown
+							items={items}
+							placement="bottom-start"
+							maxWidth="300px"
+							disableAutoFocus
+							width="265px"
+							style={{
+								width: '100%'
+							}}
+						>
+							<Input
+								label={t('label.type_an_account_dot', 'Type an account ...')}
+								backgroundColor="gray5"
+								size="medium"
+								value={member}
+								onChange={(e: any): void => {
+									setMember(e.target.value);
+								}}
+							/>
+						</Dropdown>
 					</Container>
 					<Container
 						mainAlignment="flex-start"
