@@ -18,17 +18,21 @@ import { useTranslation } from 'react-i18next';
 import { MailingListContext } from './mailinglist-context';
 import ListRow from '../../../list/list-row';
 import { searchDirectory } from '../../../../services/search-directory-service';
+import { isValidLdapQuery } from '../../../utility/utils';
 
 const MailingListSection: FC<any> = () => {
 	const { t } = useTranslation();
 	const context = useContext(MailingListContext);
 	const [domainList, setDomainList] = useState([]);
-
+	const [isValidQuery, setIsValidQuery] = useState<boolean>(false);
 	const { mailingListDetail, setMailingListDetail } = context;
 	const [dynamicListMember, setDynamicListMember] = useState<Array<any>>([]);
 	const [dynamicListMemberRows, setDynamicListMemberRows] = useState<Array<any>>([]);
 	const changeResourceDetail = useCallback(
 		(e) => {
+			if (e.target.name === 'memberURL') {
+				setIsValidQuery(isValidLdapQuery(e.target.value));
+			}
 			setMailingListDetail((prev: any) => ({ ...prev, [e.target.name]: e.target.value }));
 		},
 		[setMailingListDetail]
@@ -206,6 +210,7 @@ const MailingListSection: FC<any> = () => {
 								size="medium"
 								inputName="memberURL"
 								onChange={changeResourceDetail}
+								hasError={!isValidQuery}
 								CustomIcon={(): any => (
 									<Icon
 										icon="CheckmarkOutline"
@@ -221,7 +226,7 @@ const MailingListSection: FC<any> = () => {
 
 				{mailingListDetail?.dynamic && (
 					<>
-						<Row>
+						<Row padding={{ top: 'large' }}>
 							<Text
 								size="small"
 								mainAlignment="flex-start"
@@ -233,7 +238,7 @@ const MailingListSection: FC<any> = () => {
 							</Text>
 						</Row>
 						<ListRow>
-							<Container padding={{ top: 'large' }}>
+							<Container padding={{ top: 'large', bottom: 'large' }}>
 								<Table rows={dynamicListMemberRows} headers={memberHeaders} showCheckbox={false} />
 							</Container>
 						</ListRow>

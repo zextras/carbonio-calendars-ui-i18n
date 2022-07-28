@@ -1110,3 +1110,8 @@ export const getAllEmailFromString = (str: string): any =>
 	str.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+(.))/gi);
 
 export const getEmailDisplayNameFromString = (str: string): any => str.match(/".*?"|'.*?'/g);
+
+export const isValidLdapQuery = (query: string): boolean => {
+	const re = /\([^\\(\\)\\=]+=[^\\(\\)\\=]+\)/;
+	return re.test(query);
+};
