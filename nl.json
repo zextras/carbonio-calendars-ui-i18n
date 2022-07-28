@@ -33,7 +33,11 @@
         "all_time": "De hele tijd van het evenement",
         "modal": {
             "set_new_time_message": "Wilt u een nieuwe tijd instellen voor de gemiste afspraak? Als u op OK klikt, worden alle andere herinneringen automatisch geweigerd."
-        }
+        },
+        "minutes": "{{count}} minuut",
+        "minutes_plural": "{{count}} minuten",
+        "hours": "{{count}} uur",
+        "hours_plural": "{{count}} uren"
     },
     "label": {
         "attachment": "Bijlage",
@@ -346,7 +350,15 @@
         "reply_all": "Alle beantwoorden",
         "send_email_to": "E-mail sturen naar: {{email}}",
         "send_email": "E-mail sturen",
-        "more": "Meer..."
+        "more": "Meer...",
+        "required_participant": "{{count}} Deelnemer",
+        "required_participant_plural": "{{count}} Deelnemers",
+        "optional_participant": "{{count}} Optioneel",
+        "optional_participant_plural": "{{count}} Optionele",
+        "guests": "gasten",
+        "declined": "{{count}} geweigerd",
+        "awaiting": "in afwachting",
+        "accepted": "{{count}} aanvaard"
     },
     "months": {
         "april": "April",
@@ -543,7 +555,10 @@
         "chat": "Uitrusting",
         "equipment": "Uitrusting",
         "location": "Locatie",
-        "chat_room": "Link naar virtuele ruimte"
+        "chat_room": "Link naar virtuele ruimte",
+        "virtual_chat": "Virtuele Chat",
+        "calendar_sharing_status_one": "Gedeeld met 1 persoon",
+        "calendar_sharing_status": "Gedeeld met {{count}} persoon"
     },
     "button": {
         "customize_modal": "Modal aanpassen openen"
