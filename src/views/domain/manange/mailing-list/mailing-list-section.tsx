@@ -24,9 +24,11 @@ const MailingListSection: FC<any> = () => {
 	const { t } = useTranslation();
 	const context = useContext(MailingListContext);
 	const [domainList, setDomainList] = useState([]);
-	const [isValidQuery, setIsValidQuery] = useState<boolean>(false);
+	const [isValidQuery, setIsValidQuery] = useState<boolean>(true);
 	const { mailingListDetail, setMailingListDetail } = context;
-	const [dynamicListMember, setDynamicListMember] = useState<Array<any>>([]);
+	const [dynamicListMember, setDynamicListMember] = useState<Array<any>>(
+		mailingListDetail?.ldapQueryMembers
+	);
 	const [dynamicListMemberRows, setDynamicListMemberRows] = useState<Array<any>>([]);
 	const changeResourceDetail = useCallback(
 		(e) => {
@@ -80,6 +82,8 @@ const MailingListSection: FC<any> = () => {
 				}
 				if (allList && allList.length > 0) {
 					setDynamicListMember(allList);
+				} else {
+					setDynamicListMember([]);
 				}
 			});
 	}, [mailingListDetail?.memberURL]);
@@ -96,8 +100,12 @@ const MailingListSection: FC<any> = () => {
 				]
 			}));
 			setDynamicListMemberRows(searchDlRows);
+			setMailingListDetail((prev: any) => ({ ...prev, ldapQueryMembers: dynamicListMember }));
+		} else {
+			setDynamicListMemberRows([]);
+			setMailingListDetail((prev: any) => ({ ...prev, ldapQueryMembers: [] }));
 		}
-	}, [dynamicListMember]);
+	}, [dynamicListMember, setMailingListDetail]);
 
 	return (
 		<Container mainAlignment="flex-start">

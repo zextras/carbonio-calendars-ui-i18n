@@ -40,6 +40,7 @@ interface MailingListDetailObj {
 	zimbraDistributionListUnsubscriptionPolicy: any;
 	prefixName: string;
 	suffixName: string;
+	ldapQueryMembers: Array<any>;
 }
 
 const WizardInSection: FC<any> = ({ wizard, wizardFooter, setToggleWizardSection }) => {
@@ -91,7 +92,8 @@ const CreateMailingList: FC<{
 			value: SUBSCRIBE_UNSUBSCRIBE.ACCEPT
 		},
 		prefixName: '',
-		suffixName: ''
+		suffixName: '',
+		ldapQueryMembers: []
 	});
 
 	const onCreate = useCallback(() => {
