@@ -97,6 +97,10 @@ const EditMailingListView: FC<any> = ({
 	const [zimbraIsACLGroup, setZimbraIsACLGroup] = useState<boolean>(false);
 	const [searchMemberResult, setSearchMemberResult] = useState<Array<any>>([]);
 	const [searchOwnerResult, setSearchOwnerResult] = useState<Array<any>>([]);
+	const [isShowMemberError, setIsShowMemberError] = useState<boolean>(false);
+	const [isShowOwnerError, setIsShowOwnerError] = useState<boolean>(false);
+	const [memberErrorMessage, setMemberErrorMessage] = useState<string>('');
+
 	const dlCreateDate = useMemo(
 		() =>
 			!!zimbraCreateTimestamp && zimbraCreateTimestamp !== null && zimbraCreateTimestamp !== ''
@@ -1254,32 +1258,39 @@ const EditMailingListView: FC<any> = ({
 			if (allEmails !== null && allEmails !== undefined) {
 				const inValidEmailAddress = allEmails.filter((item: any) => !isValidEmail(item));
 				if (inValidEmailAddress && inValidEmailAddress.length > 0) {
-					createSnackbar({
-						key: 'error',
-						type: 'error',
-						label: `${t('label.invalid_email_address', 'Invalid email address')} ${
-							inValidEmailAddress[0]
-						}`,
-						autoHideTimeout: 3000,
-						hideButton: true,
-						replace: true
-					});
+					setIsShowMemberError(true);
+					setMemberErrorMessage(
+						t(
+							'label.mailing_list_not_exists_error_msg',
+							'The Mailing List / User does not exists. Please check the spelling and try again.'
+						)
+					);
+				} else if (dlm.find((item: any) => item === searchMember)) {
+					setIsShowMemberError(true);
+					setMemberErrorMessage(
+						t(
+							'label.mailing_list_already_in_list_error',
+							'The Mailing List / User is already in the list'
+						)
+					);
 				} else {
 					const sortedList = sortedUniq(allEmails);
 					setDlm(dlm.concat(sortedList));
+					setIsShowMemberError(false);
+					setSearchMember('');
+					setMemberErrorMessage('');
 				}
 			} else if (allEmails === undefined) {
-				createSnackbar({
-					key: 'error',
-					type: 'error',
-					label: `${t('label.invalid_email_address', 'Invalid email address')} ${searchMember}`,
-					autoHideTimeout: 3000,
-					hideButton: true,
-					replace: true
-				});
+				setMemberErrorMessage(
+					t(
+						'label.mailing_list_not_exists_error_msg',
+						'The Mailing List / User does not exists. Please check the spelling and try again.'
+					)
+				);
+				setIsShowMemberError(true);
 			}
 		}
-	}, [searchMember, createSnackbar, t, dlm]);
+	}, [searchMember, t, dlm]);
 
 	const onAddOwner = useCallback((): void => {
 		if (searchOwner !== '') {
@@ -1287,34 +1298,33 @@ const EditMailingListView: FC<any> = ({
 			if (allEmails !== null && allEmails !== undefined) {
 				const inValidEmailAddress = allEmails.filter((item: any) => !isValidEmail(item));
 				if (inValidEmailAddress && inValidEmailAddress.length > 0) {
-					createSnackbar({
-						key: 'error',
-						type: 'error',
-						label: `${t('label.invalid_email_address', 'Invalid email address')} ${
-							inValidEmailAddress[0]
-						}`,
-						autoHideTimeout: 3000,
-						hideButton: true,
-						replace: true
-					});
+					setIsShowOwnerError(true);
+					setOwnerErrorMessage(
+						t(
+							'label.mailing_list_not_exists_error_msg',
+							'The Mailing List / User does not exists. Please check the spelling and try again.'
+						)
+					);
 				} else {
+					setIsShowOwnerError(false);
 					const sortedList = sortedUniq(allEmails);
 					setOwnersList(
 						ownersList.concat(sortedList.map((item: any) => ({ name: item, id: item })))
 					);
+					setSearchOwner('');
+					setMemberErrorMessage('');
 				}
 			} else if (allEmails === undefined) {
-				createSnackbar({
-					key: 'error',
-					type: 'error',
-					label: `${t('label.invalid_email_address', 'Invalid email address')} ${searchOwner}`,
-					autoHideTimeout: 3000,
-					hideButton: true,
-					replace: true
-				});
+				setIsShowOwnerError(true);
+				setOwnerErrorMessage(
+					t(
+						'label.mailing_list_not_exists_error_msg',
+						'The Mailing List / User does not exists. Please check the spelling and try again.'
+					)
+				);
 			}
 		}
-	}, [searchOwner, createSnackbar, t, ownersList]);
+	}, [searchOwner, t, ownersList]);
 
 	const getSearchOwnerList = useCallback((searchKeyword) => {
 		searchGal(searchKeyword)
@@ -1688,9 +1698,11 @@ const EditMailingListView: FC<any> = ({
 												onChange={(e: any): any => {
 													setSearchMember(e.target.value);
 												}}
+												hasError={isShowMemberError}
 											/>
 										</Dropdown>
 									</Row>
+
 									<Row width="40%" mainAlignment="flex-start" crossAlignment="flex-start">
 										<Padding left="large" right="large">
 											<Button
@@ -1702,6 +1714,7 @@ const EditMailingListView: FC<any> = ({
 												height={44}
 												iconPlacement="right"
 												onClick={onAdd}
+												disabled={searchMember === ''}
 											/>
 										</Padding>
 
@@ -1720,6 +1733,17 @@ const EditMailingListView: FC<any> = ({
 								</Row>
 							</Container>
 						</Row>
+						{isShowMemberError && (
+							<Row>
+								<Container mainAlignment="flex-start" crossAlignment="flex-start" width="fill">
+									<Padding top="small">
+										<Text size="extrasmall" weight="regular" color="error">
+											{memberErrorMessage}
+										</Text>
+									</Padding>
+								</Container>
+							</Row>
+						)}
 					</>
 				)}
 				<ListRow>
@@ -1795,6 +1819,7 @@ const EditMailingListView: FC<any> = ({
 										onChange={(e: any): void => {
 											setSearchOwner(e.target.value);
 										}}
+										hasError={isShowOwnerError}
 									/>
 								</Dropdown>
 							</Row>
@@ -1809,6 +1834,7 @@ const EditMailingListView: FC<any> = ({
 										height={44}
 										iconPlacement="right"
 										onClick={onAddOwner}
+										disabled={searchOwner === ''}
 									/>
 								</Padding>
 
@@ -1826,6 +1852,17 @@ const EditMailingListView: FC<any> = ({
 							</Row>
 						</Row>
 					</Container>
+					{isShowOwnerError && (
+						<Row>
+							<Container mainAlignment="flex-start" crossAlignment="flex-start" width="fill">
+								<Padding top="small">
+									<Text size="extrasmall" weight="regular" color="error">
+										{ownerErrorMessage}
+									</Text>
+								</Padding>
+							</Container>
+						</Row>
+					)}
 				</Row>
 
 				<ListRow>
