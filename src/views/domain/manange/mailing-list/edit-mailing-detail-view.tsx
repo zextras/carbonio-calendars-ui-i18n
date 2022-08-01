@@ -1387,7 +1387,7 @@ const EditMailingListView: FC<any> = ({
 				orientation="horizontal"
 				background="white"
 				width="fill"
-				height="48px"
+				height="56px"
 			>
 				<Row padding={{ horizontal: 'small' }}></Row>
 				<Row takeAvailableSpace mainAlignment="flex-start">
@@ -1398,6 +1398,35 @@ const EditMailingListView: FC<any> = ({
 							: t('label.standard', 'Standard')}
 						)
 					</Text>
+				</Row>
+				<Row>
+					{isDirty && (
+						<Container
+							orientation="horizontal"
+							mainAlignment="flex-end"
+							crossAlignment="flex-end"
+							background="gray6"
+						>
+							<Padding right="small">
+								{isDirty && (
+									<Button
+										label={t('label.cancel', 'Cancel')}
+										color="secondary"
+										onClick={onUndo}
+										height={36}
+									/>
+								)}
+							</Padding>
+							{isDirty && (
+								<Button
+									label={t('label.save', 'Save')}
+									color="primary"
+									onClick={onSave}
+									height={36}
+								/>
+							)}
+						</Container>
+					)}
 				</Row>
 				<Row padding={{ right: 'extrasmall' }}>
 					<IconButton
@@ -1410,35 +1439,11 @@ const EditMailingListView: FC<any> = ({
 			<Row>
 				<Divider color="gray3" />
 			</Row>
-			{isDirty && (
-				<Container
-					orientation="horizontal"
-					mainAlignment="flex-end"
-					crossAlignment="flex-end"
-					background="gray6"
-					padding={{ all: 'extralarge' }}
-					height="85px"
-				>
-					<Padding right="small">
-						{isDirty && (
-							<Button
-								label={t('label.cancel', 'Cancel')}
-								color="secondary"
-								onClick={onUndo}
-								height={44}
-							/>
-						)}
-					</Padding>
-					{isDirty && (
-						<Button label={t('label.save', 'Save')} color="primary" onClick={onSave} height={44} />
-					)}
-				</Container>
-			)}
 			<Container
 				padding={{ all: 'extralarge' }}
 				mainAlignment="flex-start"
 				crossAlignment="flex-start"
-				height={isDirty ? 'calc(100vh - 230px)' : 'calc(100vh - 145px)'}
+				height="calc(100vh - 145px)"
 				background="white"
 				style={{ overflow: 'auto' }}
 			>
