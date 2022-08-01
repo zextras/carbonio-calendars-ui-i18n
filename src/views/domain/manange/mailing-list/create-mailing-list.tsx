@@ -41,6 +41,7 @@ interface MailingListDetailObj {
 	prefixName: string;
 	suffixName: string;
 	ldapQueryMembers: Array<any>;
+	allOwnersList: Array<any>;
 }
 
 const WizardInSection: FC<any> = ({ wizard, wizardFooter, setToggleWizardSection }) => {
@@ -93,7 +94,8 @@ const CreateMailingList: FC<{
 		},
 		prefixName: '',
 		suffixName: '',
-		ldapQueryMembers: []
+		ldapQueryMembers: [],
+		allOwnersList: []
 	});
 
 	const onCreate = useCallback(() => {
@@ -111,7 +113,8 @@ const CreateMailingList: FC<{
 			mailingListDetail?.zimbraDistributionListSendShareMessageToNewMembers,
 			mailingListDetail?.owners,
 			mailingListDetail?.zimbraDistributionListSubscriptionPolicy,
-			mailingListDetail?.zimbraDistributionListUnsubscriptionPolicy
+			mailingListDetail?.zimbraDistributionListUnsubscriptionPolicy,
+			mailingListDetail?.allOwnersList
 		);
 	}, [createMailingListReq, mailingListDetail]);
 

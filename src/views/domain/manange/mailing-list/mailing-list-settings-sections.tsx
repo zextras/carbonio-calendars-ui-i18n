@@ -176,23 +176,30 @@ const MailingListSettingsSection: FC<any> = () => {
 		}
 	}, [ownersList, selectedDistributionListOwner]);
 
-	const getSearchMemberList = useCallback((searchKeyword) => {
-		searchGal(searchKeyword)
-			.then((response) => response.json())
-			.then((data) => {
-				const contactList = data?.Body?.SearchGalResponse?.cn;
-				if (contactList) {
-					let result: any[] = [];
-					result = contactList.map((item: any): any => ({
-						id: item?.id,
-						name: item?._attrs?.email
-					}));
-					setSearchMemberResult(result);
-				} else {
-					setSearchMemberResult([]);
-				}
-			});
-	}, []);
+	const getSearchMemberList = useCallback(
+		(searchKeyword) => {
+			searchGal(searchKeyword)
+				.then((response) => response.json())
+				.then((data) => {
+					const contactList = data?.Body?.SearchGalResponse?.cn;
+					if (contactList) {
+						let result: any[] = [];
+						result = contactList.map((item: any): any => ({
+							id: item?.id,
+							name: item?._attrs?.email
+						}));
+						setSearchMemberResult(result);
+						setMailingListDetail((prev: any) => ({
+							...prev,
+							allOwnersList: mailingListDetail?.allOwnersList.concat(contactList)
+						}));
+					} else {
+						setSearchMemberResult([]);
+					}
+				});
+		},
+		[setMailingListDetail, mailingListDetail?.allOwnersList]
+	);
 
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	const searchMemberCall = useCallback(
