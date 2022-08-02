@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: AGPL-3.0-only
  */
-import React, { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
 	Container,
 	Padding,
@@ -27,17 +27,10 @@ import DetailsPanel from './details-panel';
 import { fetchSoap } from '../../services/bucket-service';
 import { BucketTypeItems } from '../utility/utils';
 import EditBucketDetailPanel from './edit-bucket-details-panel';
+import { AbsoluteContainer } from '../components/styled';
 
 const RelativeContainer = styled(Container)`
 	position: relative;
-`;
-const AbsoluteContainer = styled(Container)`
-	position: absolute;
-	max-width: 630px;
-	right: 0;
-	z-index: 1;
-	box-shadow: 0 0 12px -1px #888;
-	top: 0;
 `;
 
 const headers = [
@@ -131,8 +124,6 @@ const BucketDetailPanel: FC = () => {
 	const [open, setOpen] = useState(false);
 	const [showDetails, setShowDetails] = useState(false);
 	const [showEditDetailView, setShowEditDetailView] = useState(false);
-	const [toggleForGetAPICall, setToggleForGetAPICall] = useState(false);
-	const [selectedRow, setSelectedRow] = useState<any>();
 
 	const closeHandler = (): any => {
 		setOpen(false);
@@ -204,21 +195,19 @@ const BucketDetailPanel: FC = () => {
 		t
 	]);
 	const handleDoubleClick = (i: any): any => {
-		setSelectedRow(i);
+		const volumeObject: any = bucketList.find((s, index) => index === i);
+		setConnectionData(volumeObject);
+		setShowEditDetailView(true);
+		setDetailsBucket(false);
+		setShowDetails(true);
+	};
+	const handleClick = (i: any): any => {
 		const volumeObject: any = bucketList.find((s, index) => index === i);
 		setConnectionData(volumeObject);
 		setDetailsBucket(true);
+		setShowEditDetailView(false);
 		setShowDetails(true);
 	};
-
-	useEffect(() => {
-		if (selectedRow !== undefined) {
-			const getIndex = bucketList.findIndex((data: any) => data.uuid === selectedRow.uuid);
-			const volumeObject: any = bucketList.find((s, index) => index === getIndex);
-			setConnectionData(volumeObject);
-		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [bucketList, toggleForGetAPICall]);
 
 	useEffect(() => {
 		getBucketListType();
@@ -255,10 +244,6 @@ const BucketDetailPanel: FC = () => {
 						setShowEditDetailView={setShowEditDetailView}
 						title="Bucket Connection"
 						bucketDetail={connectionData}
-						getBucketListType={getBucketListType}
-						setSelectedRow={setSelectedRow}
-						setToggleForGetAPICall={setToggleForGetAPICall}
-						toggleForGetAPICall={toggleForGetAPICall}
 					/>
 				</AbsoluteContainer>
 			)}
@@ -339,11 +324,9 @@ const BucketDetailPanel: FC = () => {
 										}}
 										onDoubleClick={(i: any): any => {
 											handleDoubleClick(i);
-											setShowEditDetailView(true);
 										}}
 										onClick={(i: any): any => {
-											handleDoubleClick(i);
-											setShowEditDetailView(false);
+											handleClick(i);
 										}}
 									/>
 								</Row>
