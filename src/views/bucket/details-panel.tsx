@@ -21,6 +21,7 @@ import { useTranslation } from 'react-i18next';
 import { find } from 'lodash';
 import { BucketRegions, BucketRegionsInAlibaba, BucketTypeItems } from '../utility/utils';
 import { fetchSoap } from '../../services/bucket-service';
+import { ALIBABA, EMC } from '../../constants';
 
 const DetailsHeaders = [
 	{
@@ -208,13 +209,13 @@ const DetailsPanel: FC<{
 
 	useEffect(() => {
 		const upperBucketType =
-			bucketDetail.storeType !== 'EMC'
+			bucketDetail.storeType !== EMC
 				? bucketDetail.storeType.charAt(0).toUpperCase() +
 				  bucketDetail.storeType.slice(1).toLowerCase()
 				: bucketDetail.storeType;
 		const volumeObject: any = find(BucketTypeItems, (o) => o.value === upperBucketType)?.label;
 		const regionValue: any = find(
-			upperBucketType === 'Alibaba' ? BucketRegionsInAlibaba : BucketRegions,
+			upperBucketType === ALIBABA ? BucketRegionsInAlibaba : BucketRegions,
 			(o) => o.value === bucketDetail.region
 		)?.label;
 		setBucketType(volumeObject);

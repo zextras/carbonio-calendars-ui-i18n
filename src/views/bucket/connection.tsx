@@ -18,6 +18,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import { BucketRegions, BucketRegionsInAlibaba, BucketTypeItems } from '../utility/utils';
 import { fetchSoap } from '../../services/bucket-service';
+import { ALIBABA, AMAZON_WEB_SERVICE_S3, ERROR, FAIL, SUCCESS } from '../../constants';
 
 const prefixRegex = /^[A-Za-z0-9_./-]*$/;
 
@@ -72,10 +73,10 @@ const Connection: FC<{
 				secret: secretKey,
 				region: regionsData?.value,
 				url:
-					bucketTypeData === 'Alibaba' ||
-					bucketType === 'Alibaba' ||
-					bucketTypeData === 'S3' ||
-					bucketType === 'S3'
+					bucketTypeData === ALIBABA ||
+					bucketType === ALIBABA ||
+					bucketTypeData === AMAZON_WEB_SERVICE_S3 ||
+					bucketType === AMAZON_WEB_SERVICE_S3
 						? ''
 						: urlInput,
 				prefix,
@@ -100,17 +101,17 @@ const Connection: FC<{
 							responseVerifyData.response[server] &&
 							responseVerifyData.response[server].ok
 						) {
-							setVerifyCheck('successWithVerify');
+							setVerifyCheck(SUCCESS);
 							setbucketDetailButton(true);
 						} else {
-							setVerifyCheck('errorOnVerify');
+							setVerifyCheck(ERROR);
 							setverifyFailErr(data);
 							setbucketDetailButton(true);
 						}
 					});
 				} else {
 					setbothFail(response.error.message || response.error);
-					setVerifyCheck('fail');
+					setVerifyCheck(FAIL);
 					setbucketDetailButton(false);
 				}
 			});
@@ -119,7 +120,7 @@ const Connection: FC<{
 
 	useEffect(() => {
 		if (
-			(bucketTypeData === 'S3' || bucketType === 'S3') &&
+			(bucketTypeData === AMAZON_WEB_SERVICE_S3 || bucketType === AMAZON_WEB_SERVICE_S3) &&
 			bucketName &&
 			regionsData?.value &&
 			accessKeyData &&
@@ -127,7 +128,7 @@ const Connection: FC<{
 		) {
 			setbucketDetailButton(false);
 		} else if (
-			(bucketTypeData === 'Alibaba' || bucketType === 'Alibaba') &&
+			(bucketTypeData === ALIBABA || bucketType === ALIBABA) &&
 			bucketName &&
 			regionsData?.value &&
 			accessKeyData &&
@@ -138,10 +139,10 @@ const Connection: FC<{
 		) {
 			setbucketDetailButton(false);
 		} else if (
-			bucketTypeData !== 'S3' &&
-			bucketType !== 'S3' &&
-			bucketTypeData !== 'Alibaba' &&
-			bucketType !== 'Alibaba' &&
+			bucketTypeData !== AMAZON_WEB_SERVICE_S3 &&
+			bucketType !== AMAZON_WEB_SERVICE_S3 &&
+			bucketTypeData !== ALIBABA &&
+			bucketType !== ALIBABA &&
 			bucketName &&
 			accessKeyData &&
 			secretKey &&
@@ -192,7 +193,11 @@ const Connection: FC<{
 
 	useEffect(() => {
 		if (bucketTypeData !== '') {
-			if (bucketTypeData === undefined || bucketTypeData === 'S3' || bucketType === 'S3') {
+			if (
+				bucketTypeData === undefined ||
+				bucketTypeData === AMAZON_WEB_SERVICE_S3 ||
+				bucketType === AMAZON_WEB_SERVICE_S3
+			) {
 				setShowPrefix(false);
 			} else {
 				setShowPrefix(true);
@@ -204,10 +209,10 @@ const Connection: FC<{
 		if (bucketTypeData !== '') {
 			if (
 				bucketTypeData === undefined ||
-				bucketTypeData === 'Alibaba' ||
-				bucketType === 'Alibaba' ||
-				bucketTypeData === 'S3' ||
-				bucketType === 'S3'
+				bucketTypeData === ALIBABA ||
+				bucketType === ALIBABA ||
+				bucketTypeData === AMAZON_WEB_SERVICE_S3 ||
+				bucketType === AMAZON_WEB_SERVICE_S3
 			) {
 				setShowRegion(true);
 			} else {
@@ -217,7 +222,10 @@ const Connection: FC<{
 	}, [bucketType, bucketTypeData]);
 
 	useEffect(() => {
-		if (bucketTypeData === undefined || (bucketTypeData !== 'S3' && bucketType !== 'S3')) {
+		if (
+			bucketTypeData === undefined ||
+			(bucketTypeData !== AMAZON_WEB_SERVICE_S3 && bucketType !== AMAZON_WEB_SERVICE_S3)
+		) {
 			setShowURL(true);
 		} else {
 			setShowURL(false);
@@ -250,7 +258,7 @@ const Connection: FC<{
 	const onSelectRegionChange = useCallback(
 		(e: any): any => {
 			const volumeObject: any =
-				bucketType === 'Alibaba' || bucketTypeData === 'Alibaba'
+				bucketType === ALIBABA || bucketTypeData === ALIBABA
 					? BucketRegionsInAlibaba.find((s) => s.value === e)
 					: BucketRegions.find((s) => s.value === e);
 			setRegionsData(volumeObject);
@@ -262,7 +270,7 @@ const Connection: FC<{
 	const onChangeBucketType = useCallback(
 		(v: any): any => {
 			const volumeObject: any =
-				bucketType === 'Alibaba' || bucketTypeData === 'Alibaba'
+				bucketType === ALIBABA || bucketTypeData === ALIBABA
 					? BucketRegionsInAlibaba[0]
 					: BucketRegions[0];
 			setRegionSelection(volumeObject);
@@ -271,13 +279,13 @@ const Connection: FC<{
 	);
 
 	useEffect(() => {
-		if (verifyCheck === 'successWithVerify') {
+		if (verifyCheck === SUCCESS) {
 			setButtonColor('success');
 			setIcon('CheckmarkCircle2');
 			setButtonDetail(
 				t('label.connector_is_create_and_verified', 'CONNECTOR IS CREATED AND VERIFIED')
 			);
-		} else if (verifyCheck === 'errorOnVerify') {
+		} else if (verifyCheck === ERROR) {
 			setButtonColor('warning');
 			setIcon('alert-triangle');
 			setButtonDetail(
@@ -296,7 +304,7 @@ const Connection: FC<{
 					autoHideTimeout: 5000
 				});
 			}
-		} else if (verifyCheck === 'fail') {
+		} else if (verifyCheck === FAIL) {
 			setButtonColor('error');
 			setIcon('AlertTriangle');
 			setButtonDetail(
@@ -369,7 +377,7 @@ const Connection: FC<{
 						<Row width="48%" mainAlignment="flex-end">
 							<Select
 								items={
-									bucketTypeData === 'Alibaba' || bucketType === 'Alibaba'
+									bucketTypeData === ALIBABA || bucketType === ALIBABA
 										? BucketRegionsInAlibaba
 										: BucketRegions
 								}
@@ -463,7 +471,7 @@ const Connection: FC<{
 					disabled={bucketDetailButton}
 				/>
 			</Row>
-			{verifyCheck === 'successWithVerify' && (
+			{verifyCheck === SUCCESS && (
 				<Row width="100%" padding={{ top: 'large' }}>
 					<Input label={t('label.uuid', 'uuid')} value={BucketUid} readOnly />
 				</Row>

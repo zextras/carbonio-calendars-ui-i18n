@@ -23,6 +23,7 @@ import { useTranslation } from 'react-i18next';
 import { find } from 'lodash';
 import { BucketRegions, BucketRegionsInAlibaba, BucketTypeItems } from '../utility/utils';
 import { fetchSoap } from '../../services/bucket-service';
+import { ALIBABA, EMC } from '../../constants';
 
 const DetailsHeaders = [
 	{
@@ -265,7 +266,7 @@ const EditBucketDetailPanel: FC<{
 
 	const onUndo = (): void => {
 		const upperBucketType =
-			bucketDetail.storeType !== 'EMC'
+			bucketDetail.storeType !== EMC
 				? bucketDetail.storeType.charAt(0).toUpperCase() +
 				  bucketDetail.storeType.slice(1).toLowerCase()
 				: bucketDetail.storeType;
@@ -277,7 +278,7 @@ const EditBucketDetailPanel: FC<{
 			? setBucketName(previousDetail?.bucketName)
 			: setBucketName(bucketName);
 		const regionValue: any = find(
-			upperBucketType === 'Alibaba' && bucketDetail?.region !== undefined
+			upperBucketType === ALIBABA && bucketDetail?.region !== undefined
 				? BucketRegionsInAlibaba
 				: BucketRegions,
 			(o) => o.value === bucketDetail.region
@@ -298,7 +299,7 @@ const EditBucketDetailPanel: FC<{
 	const onSelectionChange = useCallback(
 		(e: any): any => {
 			const volumeObject =
-				bucketDetail?.region !== undefined && bucketDetail.storeType === 'ALIBABA'
+				bucketDetail?.region !== undefined && bucketDetail.storeType === ALIBABA.toUpperCase()
 					? BucketRegionsInAlibaba.find((s) => s.value === e)
 					: BucketRegions.find((s) => s.value === e);
 			setRegionData(volumeObject);
@@ -313,7 +314,7 @@ const EditBucketDetailPanel: FC<{
 
 	useEffect(() => {
 		const upperBucketType =
-			bucketDetail.storeType !== 'EMC'
+			bucketDetail.storeType !== EMC
 				? bucketDetail.storeType.charAt(0).toUpperCase() +
 				  bucketDetail.storeType.slice(1).toLowerCase()
 				: bucketDetail.storeType;
@@ -335,12 +336,12 @@ const EditBucketDetailPanel: FC<{
 
 	useEffect(() => {
 		const upperBucketType =
-			bucketDetail.storeType !== 'EMC'
+			bucketDetail.storeType !== EMC
 				? bucketDetail.storeType.charAt(0).toUpperCase() +
 				  bucketDetail.storeType.slice(1).toLowerCase()
 				: bucketDetail.storeType;
 		const regionValue: any = find(
-			bucketDetail?.region !== undefined && upperBucketType === 'Alibaba'
+			bucketDetail?.region !== undefined && upperBucketType === ALIBABA
 				? BucketRegionsInAlibaba
 				: BucketRegions,
 			(o) => o.value === bucketDetail.region
@@ -382,12 +383,12 @@ const EditBucketDetailPanel: FC<{
 
 	useEffect(() => {
 		const upperBucketType =
-			bucketDetail.storeType !== 'EMC'
+			bucketDetail.storeType !== EMC
 				? bucketDetail.storeType.charAt(0).toUpperCase() +
 				  bucketDetail.storeType.slice(1).toLowerCase()
 				: bucketDetail.storeType;
 		const regionValue: any = find(
-			bucketDetail?.region !== undefined && upperBucketType === 'Alibaba'
+			bucketDetail?.region !== undefined && upperBucketType === ALIBABA
 				? BucketRegionsInAlibaba
 				: BucketRegions,
 			(o) => o.value === bucketDetail.region
@@ -461,7 +462,9 @@ const EditBucketDetailPanel: FC<{
 							<Row width="48%" mainAlignment="flex-end">
 								<Select
 									items={
-										bucketDetail.storeType === 'ALIBABA' ? BucketRegionsInAlibaba : BucketRegions
+										bucketDetail.storeType === ALIBABA.toUpperCase()
+											? BucketRegionsInAlibaba
+											: BucketRegions
 									}
 									background="gray6"
 									label={t('label.region', 'Region')}
