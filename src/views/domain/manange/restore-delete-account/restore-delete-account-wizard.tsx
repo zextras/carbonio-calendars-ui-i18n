@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import React, { FC, ReactElement, useCallback, useMemo, useState } from 'react';
+import React, { FC, ReactElement, useCallback, useEffect, useMemo, useState } from 'react';
 import { Container, Button } from '@zextras/carbonio-design-system';
 import { useTranslation } from 'react-i18next';
 import { Section } from '../../../app/component/section';
@@ -38,10 +38,35 @@ const RestoreDeleteAccountWizard: FC<{
 }> = ({ setShowRestoreAccountWizard, restoreAccountRequest }) => {
 	const { t } = useTranslation();
 	const [wizardData, setWizardData] = useState();
+
 	const onComplete = useCallback(() => {
 		console.log('Completed');
 	}, []);
-	const [restoreAccountDetail, setRestoreAccountDetail] = useState<any>();
+	interface AccountDetailObj {
+		name: string;
+		id: string;
+		createDate: string;
+		status: string;
+		copyAccount: string;
+	}
+	const [restoreAccountDetail, setRestoreAccountDetail] = useState<AccountDetailObj>({
+		name: '',
+		id: '',
+		createDate: '',
+		status: '',
+		copyAccount: ''
+	});
+
+	const onRestoreAccount = useCallback(() => {
+		restoreAccountRequest(
+			restoreAccountDetail?.name,
+			restoreAccountDetail?.id,
+			restoreAccountDetail?.createDate,
+			restoreAccountDetail?.status,
+			restoreAccountDetail?.copyAccount
+		);
+	}, [restoreAccountDetail, restoreAccountRequest]);
+
 	const wizardSteps = useMemo(
 		() => [
 			{
@@ -153,11 +178,12 @@ const RestoreDeleteAccountWizard: FC<{
 						label={t('label.restore_account', 'Restore Account')}
 						icon="PowerOutline"
 						iconPlacement="right"
+						onClick={onRestoreAccount}
 					/>
 				)
 			}
 		],
-		[t, setShowRestoreAccountWizard]
+		[t, setShowRestoreAccountWizard, onRestoreAccount]
 	);
 
 	return (

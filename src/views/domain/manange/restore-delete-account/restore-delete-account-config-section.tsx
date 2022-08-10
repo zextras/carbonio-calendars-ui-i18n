@@ -19,9 +19,12 @@ import { useTranslation } from 'react-i18next';
 import ListRow from '../../../list/list-row';
 import { searchDirectory } from '../../../../services/search-directory-service';
 import { isValidLdapQuery } from '../../../utility/utils';
+import { RestoreDeleteAccountContext } from './restore-delete-account-context';
 
 const RestoreDeleteAccountConfigSection: FC<any> = () => {
 	const { t } = useTranslation();
+	const context = useContext(RestoreDeleteAccountContext);
+	const { restoreAccountDetail, setRestoreAccountDetail } = context;
 	return (
 		<Container
 			orientation="column"
@@ -46,6 +49,13 @@ const RestoreDeleteAccountConfigSection: FC<any> = () => {
 									'label.account_data_copy_to_account',
 									'The account data will be copied to this account'
 								)}
+								value={restoreAccountDetail?.copyAccount}
+								onChange={(e: any): void => {
+									setRestoreAccountDetail((prev: any) => ({
+										...prev,
+										copyAccount: e.target.value
+									}));
+								}}
 							/>
 						</ListRow>
 						<ListRow>

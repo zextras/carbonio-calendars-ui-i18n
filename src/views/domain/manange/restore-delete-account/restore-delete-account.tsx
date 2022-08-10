@@ -23,8 +23,12 @@ import { useGlobalConfigStore } from '../../../../store/global-config/store';
 const RestoreDeleteAccount: FC = () => {
 	const [t] = useTranslation();
 	const [showRestoreAccountWizard, setShowRestoreAccountWizard] = useState<boolean>(false);
-	const restoreAccountRequest = useCallback(() => {
-		console.log('xxxx');
+	const restoreAccountRequest = useCallback((name, id, createDate, status, copyAccount) => {
+		console.log('xxxx: ', name);
+		console.log('xxxx: ', id);
+		console.log('xxxx: ', createDate);
+		console.log('xxxx: ', status);
+		console.log('xxxx: ', copyAccount);
 	}, []);
 
 	const getGlobalConfig = useGlobalConfigStore((state) => state.globalConfig);
