@@ -15,16 +15,19 @@ import {
 	Switch
 } from '@zextras/carbonio-design-system';
 import ListRow from '../../list/list-row';
+import { useBackupStore } from '../../../store/backup/store';
 
 const BackupServiceStatus: FC = () => {
 	const [t] = useTranslation();
 	const [isDirty, setIsDirty] = useState<boolean>(false);
+	const globalConfig = useBackupStore((state) => state.globalConfig);
 	const onCancel = (): void => {
 		console.log('onCancel');
 	};
 	const onSave = (): void => {
 		console.log('onSave');
 	};
+	console.log(globalConfig);
 	return (
 		<Container padding={{ all: 'large' }} mainAlignment="flex-start" background="gray6">
 			<Row takeAvwidth="fill" mainAlignment="flex-start" width="100%">
@@ -69,16 +72,22 @@ const BackupServiceStatus: FC = () => {
 				padding={{ top: 'extralarge' }}
 			>
 				<ListRow>
-					<Switch value={false} label={t('backup.realtime_scanner', 'RealTime Scanner')} />
+					<Switch
+						label={t('backup.realtime_scanner', 'RealTime Scanner')}
+						value={globalConfig.ZxBackup_RealTimeScanner}
+					/>
 				</ListRow>
 				<ListRow>
 					<Switch
-						value={false}
+						value={globalConfig.ZxAdmin_ModuleEnabledAtStartup}
 						label={t('backup.module_enable_at_startup', 'Module Enabled at Startup')}
 					/>
 				</ListRow>
 				<ListRow>
-					<Switch value={false} label={t('backup.smart_scan_at_startup', 'SmartScan at Startup')} />
+					<Switch
+						value={globalConfig.ZxBackup_DoSmartScanOnStartup}
+						label={t('backup.smart_scan_at_startup', 'SmartScan at Startup')}
+					/>
 				</ListRow>
 			</Container>
 		</Container>

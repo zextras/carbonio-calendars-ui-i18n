@@ -16,10 +16,12 @@ import {
 	Input
 } from '@zextras/carbonio-design-system';
 import ListRow from '../../list/list-row';
+import { useBackupStore } from '../../../store/backup/store';
 
 const BackupServerConfig: FC = () => {
 	const [t] = useTranslation();
 	const [isDirty, setIsDirty] = useState<boolean>(false);
+	const globalConfig = useBackupStore((state) => state.globalConfig);
 	const onCancel = (): void => {
 		console.log('onCancel');
 	};
@@ -72,14 +74,18 @@ const BackupServerConfig: FC = () => {
 			>
 				<ListRow>
 					<Container padding={{ bottom: 'large' }}>
-						<Input label={t('backup.backup_path', 'Backup Path')} value={''} background="gray5" />
+						<Input
+							label={t('backup.backup_path', 'Backup Path')}
+							value={globalConfig.ZxBackup_DestPath}
+							background="gray5"
+						/>
 					</Container>
 				</ListRow>
 				<ListRow>
 					<Container padding={{ bottom: 'large' }}>
 						<Input
 							label={t('backup.minimum_space_threshold', 'Minimum Space Threshold')}
-							value={''}
+							value={globalConfig.backupLatencyLowThreshold}
 							background="gray5"
 						/>
 					</Container>
@@ -88,7 +94,7 @@ const BackupServerConfig: FC = () => {
 					<Container padding={{ bottom: 'large' }}>
 						<Input
 							label={t('backup.local_metadata_threshold', 'Local Metadata Threshold')}
-							value={''}
+							value={globalConfig.backupLatencyHighThreshold}
 							background="gray5"
 						/>
 					</Container>
@@ -101,14 +107,18 @@ const BackupServerConfig: FC = () => {
 				<ListRow>
 					<Padding bottom="large">
 						<Switch
-							value={false}
+							value={globalConfig.ZxBackup_SmartScanSchedulingEnabled}
 							label={t('backup.smart_scan_scheduling', 'SmartScan Scheduling')}
 						/>
 					</Padding>
 				</ListRow>
 				<ListRow>
 					<Container padding={{ bottom: 'large' }}>
-						<Input label={t('backup.schedule', 'Schedule')} value={''} background="gray5" />
+						<Input
+							label={t('backup.schedule', 'Schedule')}
+							value={globalConfig.backupSmartScanScheduler?.['cron-pattern']}
+							background="gray5"
+						/>
 					</Container>
 				</ListRow>
 				<ListRow>
@@ -127,14 +137,18 @@ const BackupServerConfig: FC = () => {
 
 				<ListRow>
 					<Container padding={{ bottom: 'large' }}>
-						<Input label={t('backup.schedule', 'Schedule')} value={''} background="gray5" />
+						<Input
+							label={t('backup.schedule', 'Schedule')}
+							value={globalConfig.backupPurgeScheduler?.['cron-pattern']}
+							background="gray5"
+						/>
 					</Container>
 				</ListRow>
 				<ListRow>
 					<Container padding={{ bottom: 'small' }}>
 						<Input
 							label={t('backup.keep_delted_items_backup', 'Keep deleted items in the backup')}
-							value={''}
+							value={globalConfig.ZxBackup_DataRetentionDays}
 							background="gray5"
 						/>
 					</Container>
@@ -157,7 +171,7 @@ const BackupServerConfig: FC = () => {
 								'backup.keep_delete_accounts_in_backup',
 								'Keep deleted accounts in the backup'
 							)}
-							value={''}
+							value={globalConfig.backupAccountsRetentionDays}
 							background="gray5"
 						/>
 					</Container>
