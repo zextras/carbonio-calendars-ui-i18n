@@ -340,6 +340,7 @@
     },
     "have_not_setup_bucket_type": "It seems like you haven't setup a bucket type",
     "label": {
+        "\"max_email_quota_you_can_manage_is": "The max email quota you can manage is...",
         "access_key": "Access Key",
         "account": "Account",
         "account_created_successfully": "The account has been created successfully",
