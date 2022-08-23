@@ -746,15 +746,15 @@ const EditMailingListView: FC<any> = ({
 
 	const callAllRequest = (requests: any): void => {
 		Promise.all(requests)
-			.then((response: any) => Promise.all(response.map((res: any) => res.json())))
+			.then((response: any) => Promise.all(response))
 			.then((data: any) => {
 				// eslint-disable-next-line no-shadow
 				let isError = false;
 				let errorMessage = '';
 				data.forEach((item: any) => {
-					if (item?.Body?.Fault) {
+					if (item?.Fault) {
 						isError = true;
-						errorMessage = item?.Body?.Fault?.Reason?.Text;
+						errorMessage = item?.Fault?.Reason?.Text;
 					}
 				});
 				if (isError) {
