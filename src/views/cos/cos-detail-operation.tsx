@@ -61,16 +61,14 @@ const CosDetailOperation: FC = () => {
 
 	const getSelectedCosInformation = useCallback(
 		(id: any): any => {
-			getCosGeneralInformation(id)
-				.then((response) => response.json())
-				.then((data) => {
-					const cos = data?.Body?.GetCosResponse?.cos[0];
-					if (cos) {
-						setCos(cos);
-						getTotalAccount(cos.id, !!cos?.isDefaultCos);
-						getTotalDomain(cos.id, !!cos?.isDefaultCos);
-					}
-				});
+			getCosGeneralInformation(id).then((data) => {
+				const cos = data?.cos[0];
+				if (cos) {
+					setCos(cos);
+					getTotalAccount(cos.id, !!cos?.isDefaultCos);
+					getTotalDomain(cos.id, !!cos?.isDefaultCos);
+				}
+			});
 		},
 		[getTotalAccount, getTotalDomain, setCos]
 	);
