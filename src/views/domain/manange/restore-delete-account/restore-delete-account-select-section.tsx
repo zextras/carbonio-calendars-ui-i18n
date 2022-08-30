@@ -35,7 +35,7 @@ const RestoreDeleteAccountSelectSection: FC<any> = () => {
 	const createSnackbar: any = useContext(SnackbarManagerContext);
 	const context = useContext(RestoreDeleteAccountContext);
 	const { restoreAccountDetail, setRestoreAccountDetail } = context;
-	const [searchString, setSearchString] = useState<string>('');
+	const [searchString, setSearchString] = useState<string>();
 	const [totalItem, setTotalItem] = useState(1);
 	const [isRequestInProgress, setIsRequestInProgress] = useState<boolean>(false);
 
@@ -170,12 +170,14 @@ const RestoreDeleteAccountSelectSection: FC<any> = () => {
 				setAccountOffset(0);
 			}
 			getBackupAccounts(searchText);
-		}, 700),
+		}, 1000),
 		[debounce]
 	);
 
 	useEffect(() => {
-		searchAccount(searchString);
+		if (searchString !== undefined) {
+			searchAccount(searchString);
+		}
 	}, [searchString, searchAccount]);
 
 	useMemo(() => {
