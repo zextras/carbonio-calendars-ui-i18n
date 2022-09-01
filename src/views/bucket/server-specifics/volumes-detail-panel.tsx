@@ -4,7 +4,15 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 import React, { FC, useCallback, useEffect, useMemo, useState } from 'react';
-import { Container, Row, Text, Divider, Table, Button } from '@zextras/carbonio-design-system';
+import {
+	Container,
+	Row,
+	Text,
+	Divider,
+	Table,
+	Button,
+	useSnackbar
+} from '@zextras/carbonio-design-system';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { NO, YES } from '../../../constants';
@@ -113,7 +121,7 @@ const VolumesDetailPanel: FC = () => {
 		indexes: [],
 		secondaries: []
 	});
-
+	const createSnackbar = useSnackbar();
 	const closeHandler = (): any => {
 		setOpen(false);
 	};
@@ -170,6 +178,12 @@ const VolumesDetailPanel: FC = () => {
 			}
 		}).then((res: any) => {
 			GetAllVolumesRequest();
+			setToggleWizardSection(false);
+			createSnackbar({
+				key: '1',
+				type: 'success',
+				label: t('label.volume_created', 'Volume created successfully')
+			});
 		});
 	};
 

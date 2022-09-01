@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: AGPL-3.0-only
  */
-import React, { FC, useCallback, useContext, useState } from 'react';
+import React, { FC, useCallback, useContext, useEffect, useState } from 'react';
 import { Container, Row, Input, Switch, Text } from '@zextras/carbonio-design-system';
 import { useTranslation } from 'react-i18next';
 import { VolumeContext } from './volume-context';
@@ -19,6 +19,11 @@ const MailstoresConfig: FC = () => {
 		},
 		[setVolumeDetail]
 	);
+
+	useEffect(() => {
+		!volumeDetail.isCompression &&
+			setVolumeDetail((prev: any) => ({ ...prev, compressionThreshold: '' }));
+	}, [setVolumeDetail, volumeDetail.isCompression]);
 
 	const changeSwitchOption = useCallback(
 		(key: string): void => {
@@ -71,8 +76,9 @@ const MailstoresConfig: FC = () => {
 						inputName="compressionThreshold"
 						label={t('label.volume_compression_thresold', 'Compression Threshold')}
 						backgroundColor="gray5"
-						value={volumeDetail?.compressionThreshold}
+						value={volumeDetail?.isCompression ? volumeDetail?.compressionThreshold : ''}
 						onChange={changeVolDetail}
+						disabled={!volumeDetail?.isCompression}
 					/>
 				</Row>
 			</Container>

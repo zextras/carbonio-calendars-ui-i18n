@@ -122,24 +122,12 @@ const MailstoresCreate: FC = () => {
 					</Row>
 				</Row>
 				<Row padding={{ top: 'large' }} width="100%">
-					<Row mainAlignment="flex-start" width="48%">
-						<Input
-							label={t('label.date_creation', 'Data Creation')}
-							backgroundColor="gray6"
-							value="Thu, 21/03/04, 02:24 PM"
-							readOnly
-						/>
-					</Row>
-					<Padding horizontal="small" />
-					<Row mainAlignment="flex-end" width="48%">
-						<Input
-							inputName="id"
-							label={t('label.volume_id', 'Volume ID')}
-							backgroundColor="gray6"
-							value={volumeDetail?.id}
-							onChange={changeVolDetail}
-						/>
-					</Row>
+					<Input
+						label={t('label.date_creation', 'Data Creation')}
+						backgroundColor="gray6"
+						value="Thu, 21/03/04, 02:24 PM"
+						readOnly
+					/>
 				</Row>
 			</Container>
 		</>
