@@ -164,10 +164,16 @@
         "edit_tag": "Editar etiqueta",
         "edit_tag_name": "Editar etiqueta \"{{name}}\"",
         "scheduled_in": "Agenda",
-        "no_title": "Sin Título"
+        "no_title": "Sin Título",
+        "warning": "Advertencia",
+        "trash": "Papelera",
+        "tag": "Etiqueta",
+        "share_public_link": "Compartir enlace público",
+        "select": "Seleccionar",
+        "root": "Raíz",
+        "choose_file": "Elegir archivo"
     },
     "action": {
-        "save": "Guardar",
         "send": "Enviar",
         "delete_calendar": "Eliminar calendario",
         "empty_trash": "Vaciar papelera",
@@ -184,7 +190,6 @@
     "event": {
         "action": {
             "accept": "Aceptar",
-            "trash": "Eliminar",
             "no": "No",
             "yes": "Sí",
             "decline": "Rechazar",
@@ -205,7 +210,6 @@
     "folder": {
         "modal": {
             "move": {
-                "footer": "Vacío",
                 "body": {
                     "message3": "Elige un calendario hacia donde mover las citas seleccionadas:"
                 },
@@ -308,9 +312,6 @@
             "dflt_vsblty_opt": {
                 "public": "Público"
             },
-            "show_reminder": {
-                "all_time": "Todo el tiempo del evento"
-            },
             "default_cal_opts": {
                 "calendar": "Calendario"
             },
@@ -338,9 +339,6 @@
                 "chennai": "GMT +05:30 Chennai, Calcuta, Bombay, Nueva Delhi",
                 "egypt": "GMT +02:00 Egipto",
                 "amsterdam": "GMT +01:00 Ámsterdam, Berlín, Berna, Roma, Estocolmo, Viena"
-            },
-            "weekdays": {
-                "sunday": "Domingo"
             }
         },
         "label": {
@@ -426,7 +424,13 @@
             "calendar_restored": "El calendario ha sido restaurado con éxito",
             "appointment_permanently_deleted": "La reunión ha sido eliminada permanentemente",
             "calendar_edits_saved": "Ediciones guardadas correctamente",
-            "series_deleted": "Serie borrada con éxito. Los asistentes recibirán una notificación de la cancelación."
+            "series_deleted": "Serie borrada con éxito. Los asistentes recibirán una notificación de la cancelación.",
+            "some_link_copying_error": "Parece que hay un problema al generar el enlace público para algunos archivos. Por favor intenta de nuevo",
+            "some_att_add_fails": "Parece que hay un problema al añadir algunos archivos adjuntos, por favor, prueba de nuevo",
+            "link_copying_error": "Parece haber un problema al generar el enlace público. Por favor intenta de nuevo",
+            "att_err_adding": "Parece que hay un problema al añadir los archivos adjuntos, por favor, prueba de nuevo",
+            "all_link_copied": "Enlace público copiado con éxito",
+            "all_att_added": "Archivos adjuntos añadidos con éxito"
         },
         "invite_has_no_message": "Esta invitación no contiene texto",
         "invited_you": "te ha invitado a",
@@ -457,9 +461,7 @@
         "delete_tag_message1": "¿Seguro que quieres borrar la etiqueta \"{{name}}\"?",
         "delete_tag_message2": "Una vez borrada, se quitará de cada elemento marcado con ella.",
         "organizer": "Organizador",
-        "reply_all": "Responder a todos",
         "accepted": "{{count}} aceptado",
-        "declined": "{{count}} rechazado",
         "more": "Más…",
         "optional_participant": "{{count}} Opcional",
         "optional_participant_plural": "{{count}} Opcionales",
@@ -482,7 +484,9 @@
                 "title": "Modo \"arrastrar y soltar\""
             },
             "local": "Adjuntar desde Mi PC",
-            "drive": "Adjuntar desde Drive"
+            "drive": "Adjuntar desde Drive",
+            "url": "Agregar enlace público desde Drive",
+            "files": "Añadir desde Files"
         }
     },
     "edit_share_properties": "Editar propiedades de compartición",
