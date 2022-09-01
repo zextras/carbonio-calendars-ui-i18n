@@ -198,7 +198,14 @@
         "other_actions": "Andere acties",
         "single_instance": "EEN ENKEL GEVAL",
         "no_title": "Geen Titel",
-        "scheduled_in": "Agenda"
+        "scheduled_in": "Agenda",
+        "warning": "Warnung",
+        "trash": "Papierkorb",
+        "tag": "Label",
+        "share_public_link": "Publieke Link delen",
+        "select": "Selecteren",
+        "root": "Hoofdniveau",
+        "choose_file": "Bestand kiezen"
     },
     "event": {
         "action": {
@@ -224,9 +231,6 @@
     "appointments": "Afspraken",
     "folder": {
         "modal": {
-            "delete": {
-                "title": "Verwijderen"
-            },
             "move": {
                 "body": {
                     "message3": "Selecteer een kalender om de overwogen afspraak naar te verplaatsen:"
@@ -267,7 +271,13 @@
             "calendar_restored": "Kalender met succes hersteld",
             "appointment_permanently_deleted": "Afspraak permanent verwijderd",
             "calendar_edits_saved": "Bewerkingen correct opgeslagen",
-            "series_deleted": "Serie succesvol verwijderd. Deelnemers ontvangen een bericht van annulering."
+            "series_deleted": "Serie succesvol verwijderd. Deelnemers ontvangen een bericht van annulering.",
+            "some_link_copying_error": "Er lijkt een probleem te zijn met het genereren van de publieke url voor sommige bestanden, probeer het opnieuw",
+            "some_att_add_fails": "Er lijkt een probleem te zijn bij het toevoegen van enkele bijlagen, probeer het opnieuw",
+            "link_copying_error": "Er lijkt een probleem te zijn tijdens het genereren van de publieke link, probeer het opnieuw",
+            "att_err_adding": "Er lijkt een probleem te zijn bij het toevoegen van bijlagen, probeer het opnieuw",
+            "all_link_copied": "Publieke link met succes gekopieerd",
+            "all_att_added": "Bijlagen met succes toegevoegd"
         },
         "you": "U",
         "are_organizer": "zijn de organisator",
@@ -302,7 +312,6 @@
         "delete_tag_message2": "Eenmaal verwijderd, zal het verwijderd worden van elk item dat ermee gemarkeerd is.",
         "appointment_type_handle": "\"{{name}}” is een terugkerende afspraak. Wilt u alleen deze afspraak of de hele serie openen?",
         "organizer": "Organisator",
-        "reply_all": "Alle beantwoorden",
         "send_email": "E-mail sturen",
         "more": "Meer..."
     },
@@ -337,13 +346,8 @@
             "dflt_vsblty_opt": {
                 "public": "Publiek"
             },
-            "show_reminder": {
-                "day_before": "1 dag voordien",
-                "day_before_plural": "{{count}} dagen voordien"
-            },
             "weekdays": {
-                "friday": "Vrijdag",
-                "thursday": "Donderdag"
+                "friday": "Vrijdag"
             },
             "default_view": {
                 "day": "Dagweergave",
@@ -420,7 +424,6 @@
         "invite": {
             "error": "Fout"
         },
-        "new_time_proposed_succes": "Nieuwe tijd voorgesteld",
         "proposed_time_accepted": "U aanvaardde de voorgestelde tijd",
         "url_copied": "{{title}} gekopieerd",
         "share_folder_success": "Kalender met succes gedeeld",
@@ -488,7 +491,9 @@
             "draganddrop": {
                 "title": "Drag&Drop-modus",
                 "content": "Drop hier uw bijlagen om ze snel aan de afspraak toe te voegen"
-            }
+            },
+            "url": "Openbare link toevoegen vanuit Bestanden",
+            "files": "Toevoegen vanuit Bestanden"
         }
     },
     "administer": "Beheren",
