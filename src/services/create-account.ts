@@ -20,6 +20,9 @@ export const createAccountRequest = async (
 		password,
 		a: attrList
 	};
+	if (!password) {
+		delete request.CreateAccountRequest.password;
+	}
 
 	return soapFetch(`CreateAccount`, {
 		...request

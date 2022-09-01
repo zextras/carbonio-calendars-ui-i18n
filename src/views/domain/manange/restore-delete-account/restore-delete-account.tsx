@@ -20,6 +20,7 @@ const RestoreDeleteAccount: FC = () => {
 	const context = useContext(RestoreDeleteAccountContext);
 	const { restoreAccountDetail, setRestoreAccountDetail } = context;
 	const [isSuccess, setIsSuccess] = useState(false);
+	const [isRequestWorkInProgress, setIsRequestWorkInProgress] = useState<any>();
 
 	const backToFirstTab = useCallback(() => {
 		const lastloc = history?.location?.pathname;
@@ -78,9 +79,11 @@ const RestoreDeleteAccount: FC = () => {
 			if (copyAccount !== '') {
 				body.dstAccountName = copyAccount;
 			}
+			setIsRequestWorkInProgress(true);
 			doRestoreDeleteAccount(body).then((data) => {
 				const error = data?.error?.details?.cause || data?.error?.message;
 				const success = data?.operationId;
+				setIsRequestWorkInProgress(false);
 				if (error) {
 					createSnackbar({
 						key: 'error',
@@ -127,6 +130,7 @@ const RestoreDeleteAccount: FC = () => {
 					<RestoreAccountWizard
 						setShowRestoreAccountWizard={setShowRestoreAccountWizard}
 						restoreAccountRequest={restoreAccountRequest}
+						isRequestWorkInProgress={isRequestWorkInProgress}
 					/>
 				</Container>
 			</Container>

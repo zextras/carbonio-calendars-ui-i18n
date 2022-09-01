@@ -2547,10 +2547,10 @@ const CosAdvanced: FC = () => {
 							height="fit"
 							crossAlignment="flex-start"
 							background="gray6"
-							padding={{ top: 'large', bottom: 'large' }}
+							padding={{ top: 'large' }}
 						>
 							<ListRow>
-								<Container width="72%" padding={{ right: 'small' }}>
+								<Container width="100%" padding={{ right: 'small' }}>
 									<Input
 										label={t('cos.trashed_message_lifetime', 'Trashed message lifetime')}
 										value={zimbraMailTrashLifetimeNum}
@@ -2559,7 +2559,7 @@ const CosAdvanced: FC = () => {
 										onChange={onZimbraMailTrashLifetimeNumChange}
 									/>
 								</Container>
-								<Container width="28%" padding={{ left: 'small', right: 'small' }}>
+								<Container width="17%" padding={{ left: 'small', right: 'small' }}>
 									<Select
 										items={timeItems}
 										background="gray5"
@@ -2576,7 +2576,18 @@ const CosAdvanced: FC = () => {
 										onChange={onZimbraMailTrashLifetimeTypeChange}
 									/>
 								</Container>
-								<Container width="72%" padding={{ left: 'small', right: 'small' }}>
+							</ListRow>
+						</Container>
+					</Row>
+					<Row takeAvwidth="fill" mainAlignment="flex-start" width="100%">
+						<Container
+							height="fit"
+							crossAlignment="flex-start"
+							background="gray6"
+							padding={{ top: 'large', bottom: 'large' }}
+						>
+							<ListRow>
+								<Container width="100%" padding={{ right: 'small' }}>
 									<Input
 										label={t('cos.spam_message_lifetime', 'Spam message lifetime')}
 										value={zimbraMailSpamLifetimeNum}
@@ -2585,7 +2596,7 @@ const CosAdvanced: FC = () => {
 										onChange={onZimbraMailSpamLifetimeNumChange}
 									/>
 								</Container>
-								<Container width="28%" padding={{ left: 'small' }}>
+								<Container width="17%" padding={{ left: 'small', right: 'small' }}>
 									<Select
 										items={timeItems}
 										background="gray5"

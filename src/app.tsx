@@ -23,6 +23,9 @@ import {
 	APPLICATION_LOG,
 	APP_ID,
 	BACKUP_ROUTE_ID,
+	CARBONIO_ALLOW_FEEDBACK,
+	CARBONIO_SEND_ANALYTICS,
+	CARBONIO_SEND_FULL_ERROR_STACK,
 	COS_ROUTE_ID,
 	CREATE_NEW_COS_ROUTE_ID,
 	CREATE_NEW_DOMAIN_ROUTE_ID,
@@ -34,6 +37,7 @@ import {
 	MONITORING,
 	MTA,
 	OPERATIONS,
+	PRIVACY_ROUTE_ID,
 	SERVICES_ROUTE_ID,
 	STORAGES_ROUTE_ID,
 	SUBSCRIPTIONS_ROUTE_ID
@@ -43,6 +47,9 @@ import { useServerStore } from './store/server/store';
 import { useGlobalConfigStore } from './store/global-config/store';
 import { useBackupModuleStore } from './store/backup-module/store';
 import { getAllServers } from './services/get-all-servers-service';
+import { getConfig } from './services/get-config';
+import { useConfigStore } from './store/config/store';
+import { getAllConfig } from './services/get-all-config';
 
 const LazyAppView = lazy(() => import('./views/app-view'));
 
@@ -58,6 +65,7 @@ const App: FC = () => {
 	const setServerList = useServerStore((state) => state.setServerList);
 	const setGlobalConfig = useGlobalConfigStore((state) => state.setGlobalConfig);
 	const setBackupModuleEnable = useBackupModuleStore((state) => state.setBackupModuleEnable);
+	const setConfig = useConfigStore((state) => state.setConfig);
 	const managementSection = useMemo(
 		() => ({
 			id: MANAGE_APP_ID,
@@ -393,6 +401,17 @@ const App: FC = () => {
 			tooltip: SubscriptionTooltipView
 		});
 		addRoute({
+			route: PRIVACY_ROUTE_ID,
+			position: 5,
+			visible: true,
+			label: t('label.privacy', 'Privacy'),
+			primaryBar: 'ShieldOutline',
+			appView: AppView,
+			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+			// @ts-ignore
+			primarybarSection: { ...managementSection }
+		});
+		addRoute({
 			route: BACKUP_ROUTE_ID,
 			position: 1,
 			visible: true,
@@ -537,6 +556,24 @@ const App: FC = () => {
 	useEffect(() => {
 		getAllServersRequest();
 	}, [getAllServersRequest]);
+
+	const getAllConfigRequest = useCallback(() => {
+		getAllConfig()
+			.then((response) => response.json())
+			.then((data) => {
+				if (
+					data?.Body?.GetAllConfigResponse?.a &&
+					Array.isArray(data?.Body?.GetAllConfigResponse?.a)
+				) {
+					const allConfig = data?.Body?.GetAllConfigResponse?.a;
+					setConfig(allConfig);
+				}
+			});
+	}, [setConfig]);
+
+	useEffect(() => {
+		getAllConfigRequest();
+	}, [getAllConfigRequest]);
 
 	return null;
 };
