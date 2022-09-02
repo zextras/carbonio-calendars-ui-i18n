@@ -48,10 +48,12 @@ const BackupAdvanced: FC = () => {
 			modifiedData[ele] = initbackupDetail[ele];
 		});
 		modifyBackupRequest(modifiedData)
-			.then(function (response) {
-				return response.status !== 200 ? response.json() : response;
-			})
+			// .then(function (response) {
+			// 	console.log('>>>>>>>>>', response);
+			// 	return response.status !== 200 ? response.json() : response;
+			// })
 			.then((data) => {
+				console.log('>>>>>>>>>>>>>>>###>>>>', data);
 				if (data.status === 200) {
 					setGlobalConfig(initbackupDetail);
 					createSnackbar({
@@ -72,6 +74,7 @@ const BackupAdvanced: FC = () => {
 						label:
 							data?.errors?.[0]?.error ||
 							data?.statusText ||
+							data?.error ||
 							t('label.something_wrong_error_msg', 'Something went wrong. Please try again.'),
 						autoHideTimeout: 3000,
 						hideButton: true,

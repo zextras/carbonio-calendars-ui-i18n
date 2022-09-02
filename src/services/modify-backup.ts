@@ -5,6 +5,12 @@
  */
 
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import {
+	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+	// @ts-ignore
+	postSoapWithoutBodyFetchRequest
+} from '@zextras/carbonio-shell-ui';
+
 export const modifyBackupRequest = async (modifiedData: any): Promise<any> => {
 	// const attrList: { attribute: string; value: string }[] = [];
 	const request: any = {};
@@ -22,4 +28,7 @@ export const modifyBackupRequest = async (modifiedData: any): Promise<any> => {
 		},
 		body: JSON.stringify(request)
 	});
+	// return postSoapWithoutBodyFetchRequest(`/service/extension/zextras_admin/core/attribute/set`, {
+	// 	...request
+	// });
 };

@@ -47,7 +47,6 @@ import { useServerStore } from './store/server/store';
 import { useGlobalConfigStore } from './store/global-config/store';
 import { useBackupModuleStore } from './store/backup-module/store';
 import { getAllServers } from './services/get-all-servers-service';
-import { getConfig } from './services/get-config';
 import { useConfigStore } from './store/config/store';
 import { getAllConfig } from './services/get-all-config';
 
@@ -558,17 +557,12 @@ const App: FC = () => {
 	}, [getAllServersRequest]);
 
 	const getAllConfigRequest = useCallback(() => {
-		getAllConfig()
-			.then((response) => response.json())
-			.then((data) => {
-				if (
-					data?.Body?.GetAllConfigResponse?.a &&
-					Array.isArray(data?.Body?.GetAllConfigResponse?.a)
-				) {
-					const allConfig = data?.Body?.GetAllConfigResponse?.a;
-					setConfig(allConfig);
-				}
-			});
+		getAllConfig().then((data) => {
+			if (data?.a && Array.isArray(data?.a)) {
+				const allConfig = data?.a;
+				setConfig(allConfig);
+			}
+		});
 	}, [setConfig]);
 
 	useEffect(() => {
