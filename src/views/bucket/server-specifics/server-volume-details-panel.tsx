@@ -57,28 +57,30 @@ const ServerVolumeDetailsPanel: FC<{
 			module: 'ZxPowerstore',
 			id: volumeDetail?.id
 		}).then((response) => {
-			if (response.Fault === undefined) {
-				if (response.GetVolumeResponse.volume[0].type === 1) {
+			console.log('__res', response);
+
+			if (response.Body.Fault === undefined) {
+				if (response.Body.GetVolumeResponse.volume[0].type === 1) {
 					setType(PRIMARIES);
-				} else if (response.GetVolumeResponse.volume[0].type === 2) {
+				} else if (response.Body.GetVolumeResponse.volume[0].type === 2) {
 					setType(SECONDARIES);
-				} else if (response.GetVolumeResponse.volume[0].type === 10) {
+				} else if (response.Body.GetVolumeResponse.volume[0].type === 10) {
 					setType(INDEXERES);
 				}
 				setDetailData({
-					name: response.GetVolumeResponse.volume[0].name,
-					id: response.GetVolumeResponse.volume[0].id,
-					compressBlobs: response.GetVolumeResponse.volume[0].compressBlobs,
-					isCurrent: response.GetVolumeResponse.volume[0].isCurrent,
-					rootpath: response.GetVolumeResponse.volume[0].rootpath,
-					compressionThreshold: response.GetVolumeResponse.volume[0].compressionThreshold
+					name: response.Body.GetVolumeResponse.volume[0].name,
+					id: response.Body.GetVolumeResponse.volume[0].id,
+					compressBlobs: response.Body.GetVolumeResponse.volume[0].compressBlobs,
+					isCurrent: response.Body.GetVolumeResponse.volume[0].isCurrent,
+					rootpath: response.Body.GetVolumeResponse.volume[0].rootpath,
+					compressionThreshold: response.Body.GetVolumeResponse.volume[0].compressionThreshold
 				});
 			} else {
 				createSnackbar({
 					key: 'error',
 					type: 'error',
 					label: t('label.volume_detail_error', '{{message}}', {
-						message: response.Fault.Reason.Text
+						message: response.Body.Fault.Reason.Text
 					}),
 					autoHideTimeout: 5000
 				});

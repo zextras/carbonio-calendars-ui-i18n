@@ -137,7 +137,7 @@ const VolumesDetailPanel: FC = () => {
 		mgbits: 0,
 		name: '',
 		rootpath: '',
-		type: 1
+		type: 0
 	});
 	const [open, setOpen] = useState(false);
 	const [volumeList, setVolumeList] = useState<object | any>({
@@ -154,14 +154,14 @@ const VolumesDetailPanel: FC = () => {
 		fetchSoap('GetAllVolumesRequest', {
 			_jsns: 'urn:zimbraAdmin'
 		}).then((response) => {
-			if (response.Fault === undefined) {
-				const primaries = response.GetAllVolumesResponse.volume.filter(
+			if (response.Body.Fault === undefined) {
+				const primaries = response.Body.GetAllVolumesResponse.volume.filter(
 					(item: any) => item.type === 1
 				);
-				const secondaries = response.GetAllVolumesResponse.volume.filter(
+				const secondaries = response.Body.GetAllVolumesResponse.volume.filter(
 					(item: any) => item.type === 2
 				);
-				const indexes = response.GetAllVolumesResponse.volume.filter(
+				const indexes = response.Body.GetAllVolumesResponse.volume.filter(
 					(item: any) => item.type === 10
 				);
 				setVolumeList({
@@ -174,7 +174,7 @@ const VolumesDetailPanel: FC = () => {
 					key: 'error',
 					type: 'error',
 					label: t('label.volume_detail_error', '{{message}}', {
-						message: response.Fault.Reason.Text
+						message: response.Body.Fault.Reason.Text
 					}),
 					autoHideTimeout: 5000
 				});
@@ -193,18 +193,18 @@ const VolumesDetailPanel: FC = () => {
 			action: 'DeleteVolumeRequest',
 			id
 		}).then((res) => {
-			if (res.Fault === undefined) {
+			if (res.Body.Fault === undefined) {
 				createSnackbar({
 					key: '1',
 					type: 'success',
 					label: t('label.volume_deleted', 'Volume deleted successfully')
 				});
-			} else {
+			} else if (res.Body.Fault.Reason.Text !== '') {
 				createSnackbar({
 					key: 'error',
 					type: 'error',
 					label: t('label.volume_detail_error', '{{message}}', {
-						message: res.Fault.Reason.Text
+						message: res.Body.Fault.Reason.Text
 					}),
 					autoHideTimeout: 5000
 				});
@@ -238,7 +238,7 @@ const VolumesDetailPanel: FC = () => {
 				isCurrent: volumeDetail?.isCurrent ? 1 : 0
 			}
 		}).then((res: any) => {
-			if (res.Fault === undefined) {
+			if (res.Body.Fault === undefined) {
 				setToggleWizardSection(false);
 				createSnackbar({
 					key: '1',
@@ -251,7 +251,7 @@ const VolumesDetailPanel: FC = () => {
 					key: 'error',
 					type: 'error',
 					label: t('label.volume_detail_error', '{{message}}', {
-						message: res.Fault.Reason.Text
+						message: res.Body.Fault.Reason.Text
 					}),
 					autoHideTimeout: 5000
 				});
@@ -265,18 +265,19 @@ const VolumesDetailPanel: FC = () => {
 		setToggleDetailPage(true);
 	};
 
-	useEffect(() => {
-		if (volume?.type === 1 && volume.id !== 0) {
-			const volumeObject: any = volumeList?.primaries.find((s: any) => s.id === volume.id);
-			setVolume(volumeObject);
-		} else if (volume?.type === 2 && volume.id !== 0) {
-			const volumeObject: any = volumeList?.secondaries.find((s: any) => s.id === volume.id);
-			setVolume(volumeObject);
-		} else if (volume?.type === 10 && volume.id !== 0) {
-			const volumeObject: any = volumeList?.indexes.find((s: any) => s.id === volume.id);
-			setVolume(volumeObject);
-		}
-	}, [volume.id, volume?.type, volumeList]);
+	// useEffect(() => {
+	// 	console.log('__vol', volume);
+	// 	if (volume?.type === 1 && volume.id !== 0) {
+	// 		const volumeObject: any = volumeList?.primaries.find((s: any) => s.id === volume.id);
+	// 		setVolume(volumeObject);
+	// 	} else if (volume?.type === 2 && volume.id !== 0) {
+	// 		const volumeObject: any = volumeList?.secondaries.find((s: any) => s.id === volume.id);
+	// 		setVolume(volumeObject);
+	// 	} else if (volume?.type === 10 && volume.id !== 0) {
+	// 		const volumeObject: any = volumeList?.indexes.find((s: any) => s.id === volume.id);
+	// 		setVolume(volumeObject);
+	// 	}
+	// }, [volume, volume.id, volume?.type, volumeList]);
 
 	return (
 		<>
