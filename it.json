@@ -9,6 +9,7 @@
         "equipment": "Attrezzatura",
         "location": "Luogo",
         "calendar_sharing_status": "Condiviso con {{count}} persone",
+        "calendar_sharing_status_plural": "",
         "virtual_chat": "Chat Virtuale",
         "chat_room": "Link alla Stanza Virtuale"
     },
@@ -80,7 +81,13 @@
             "calendar_restored": "Calendario ripristinato correttamente",
             "appointment_permanently_deleted": "Appuntamento eliminato definitivamente",
             "calendar_edits_saved": "Modifiche salvate correttamente",
-            "series_deleted": "La serie di appuntamenti è stata cancellata correttamente. Gli invitati riceveranno una notifica di avvenuta cancellazione."
+            "series_deleted": "La serie di appuntamenti è stata cancellata correttamente. Gli invitati riceveranno una notifica di avvenuta cancellazione.",
+            "some_link_copying_error": "Sembra esserci stato un problema durante la generazione dell'url pubblico di alcuni file, riprova",
+            "some_att_add_fails": "Sembra esserci stato un problema durante l'aggiunta di alcuni allegati, riprova",
+            "link_copying_error": "Sembra esserci stato un problema durante la generazione del link pubblico, riprova",
+            "att_err_adding": "Sembra esserci stato un problema durante l'aggiunta degli allegati, riprova",
+            "all_link_copied": "Link pubblico copiato con successo",
+            "all_att_added": "Allegati aggiunti correttamente"
         },
         "share_calendar_url_note2": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL.<br/> Puoi trovare questi collegamenti anche con un clic destro del mouse sull'elenco dei calendari.",
         "share_calendar_url_note": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL.",
@@ -92,7 +99,7 @@
         "delete_all_occurences": "Cancella tutte le occorrenze",
         "delete_future_occurences": "Elimina questa istanza e tutte le occorrenze future",
         "delete_future_occurences_warning": "Saranno eliminate anche tutte le eccezioni (prima e dopo questa istanza) della serie",
-        "invited_you": "ti ha invitato a:",
+        "invited_you": "ti ha invitato a un evento",
         "modal": {
             "delete": {
                 "sure_delete_appointment_permanently": "Eliminando permanentemente questo appuntamento non sarà più possibile ripristinarlo, vuoi continuare?",
@@ -109,16 +116,15 @@
         "appointment_type_handle": "\"{{name}}\" è un appuntamento ricorrente. Vuoi aprire solo questa istanza o tutta la serie?",
         "delete_tag_message1": "Vuoi eliminare l'etichetta \"{{name}}\"?",
         "delete_tag_message2": "Una volta eliminata, verrà eliminata anche da tutti gli elementi su cui è utilizzata.",
-        "reply_all": "Rispondi a tutti",
         "organizer": "Organizzatore",
-        "guests": "ospiti",
         "more": "Altro...",
         "optional_participant": "{{count}} Opzionale",
         "optional_participant_plural": "{{count}} Opzionali",
         "required_participant": "{{count}} Partecipante",
         "required_participant_plural": "{{count}} Partecipanti",
         "send_email": "Invia e-mail",
-        "declined": "{{count}} rifiutato"
+        "edit_series_warning": "Procedendo con le modifiche alla serie, tutte le istanze precedentemente modificate o eliminate, verranno ripristinate secondo le nuove impostazioni di questa serie.",
+        "appointment_invitation_sent": "Invito all'appuntamento inviato"
     },
     "label": {
         "to": "A",
@@ -147,7 +153,7 @@
         "all_day": "Tutto il giorno",
         "all_calendars": "Tutti i calendari",
         "download": "Scarica",
-        "download_plural": "Scarica tutto",
+        "download_plural": "Scarica tutti",
         "save": "Salva",
         "show": "Mostra",
         "show_plural": "Mostra tutto",
@@ -285,7 +291,16 @@
         "tag_name": "Nome etichetta",
         "tags": "Etichette",
         "no_title": "Nessun Titolo",
-        "scheduled_in": "Calendario"
+        "scheduled_in": "Calendario",
+        "public_link_description": "Generato da {{title}} il {{date}}",
+        "continue": "Continua",
+        "warning": "Avviso",
+        "trash": "Cestino",
+        "tag": "Tag",
+        "share_public_link": "Condividi Link Pubblico",
+        "select": "Seleziona",
+        "root": "Primaria",
+        "choose_file": "Scegli file"
     },
     "action": {
         "send": "Invia",
@@ -314,7 +329,6 @@
     "folder": {
         "modal": {
             "move": {
-                "footer": "Vuoto",
                 "body": {
                     "message3": "Seleziona un calendario in cui spostare questo appuntamento:"
                 },
@@ -344,7 +358,8 @@
             "expand": "Apri nel visulizzatore",
             "needs_action": "Necessita azione",
             "invitation_not_sent_yet": "L'invito non è ancora stato inviato"
-        }
+        },
+        "is_exception": "Eccezione"
     },
     "composer": {
         "attachment": {
@@ -354,7 +369,9 @@
             "draganddrop": {
                 "content": "Trascina qui gli allegati per aggiungerli velocemente all'appuntamento",
                 "title": "Modalità Drag&Drop"
-            }
+            },
+            "url": "Aggiungi link pubblico da Files",
+            "files": "Aggiungi da Files"
         }
     },
     "search": {
@@ -456,14 +473,9 @@
                 "allow_following": "Consenti solo ai seguenti utenti di invitarmi agli appuntamenti",
                 "allow_none": "Nessuno può invitarmi agli appuntamenti"
             },
-            "weekdays": {
-                "saturday": "Sabato"
-            },
             "show_reminder": {
                 "day_before": "1 giorno prima",
-                "day_before_plural": "{{count}} giorni prima",
-                "week_before": "1 settimana prima",
-                "week_before_plural": "{{count}} settimane prima"
+                "day_before_plural": "{{count}} giorni prima"
             },
             "default_view": {
                 "day": "Vista Giorno",
