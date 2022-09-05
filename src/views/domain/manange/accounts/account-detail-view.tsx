@@ -14,12 +14,15 @@ import {
 	Padding,
 	Icon,
 	Quota,
-	Button
+	Button,
+	Modal,
+	SnackbarManagerContext
 } from '@zextras/carbonio-design-system';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { getMailboxQuota } from '../../../../services/account-list-directory-service';
 import { AccountContext } from './account-context';
+import { deleteAccount } from '../../../../services/delete-account-service';
 
 const AccountDetailContainer = styled(Container)`
 	z-index: 10;
@@ -40,12 +43,16 @@ const AccountDetailView: FC<any> = ({
 	selectedAccount,
 	setShowAccountDetailView,
 	setShowEditAccountView,
-	STATUS_COLOR
+	STATUS_COLOR,
+	getAccountList
 }) => {
 	const [t] = useTranslation();
 	const [usedQuota, setUsedQuota] = useState(0);
 	const conext = useContext(AccountContext);
 	const { accountDetail } = conext;
+	const [isOpenDeleteDialog, setIsOpenDeleteDialog] = useState<boolean>(false);
+	const [isRequestInProgress, setIsRequestInProgress] = useState<boolean>(false);
+	const createSnackbar: any = useContext(SnackbarManagerContext);
 
 	const getDataSourceDetail = useCallback((): void => {
 		getMailboxQuota(selectedAccount?.id).then((data) => {
@@ -55,6 +62,55 @@ const AccountDetailView: FC<any> = ({
 	useEffect(() => {
 		getDataSourceDetail();
 	}, [getDataSourceDetail]);
+
+	const onDeleteAccount = useCallback(() => {
+		setIsOpenDeleteDialog(true);
+	}, []);
+
+	const closeHandler = useCallback(() => {
+		setIsOpenDeleteDialog(false);
+	}, []);
+
+	const onDeleteHandler = useCallback(() => {
+		setIsRequestInProgress(true);
+		deleteAccount(selectedAccount?.id)
+			.then((data: any) => {
+				createSnackbar({
+					key: 'success',
+					type: 'success',
+					label: t('label.account_remove_correctly', 'The account has been correctly removed.'),
+					autoHideTimeout: 3000,
+					hideButton: true,
+					replace: true
+				});
+				setIsRequestInProgress(false);
+				closeHandler();
+				setShowAccountDetailView(false);
+				getAccountList();
+			})
+			.then((error: any) => {
+				setIsRequestInProgress(false);
+				createSnackbar({
+					key: 'error',
+					type: 'error',
+					label: error.message
+						? error.message
+						: t('label.something_wrong_error_msg', 'Something went wrong. Please try again.'),
+
+					autoHideTimeout: 3000,
+					hideButton: true,
+					replace: true
+				});
+			});
+	}, [
+		selectedAccount?.id,
+		closeHandler,
+		setShowAccountDetailView,
+		getAccountList,
+		createSnackbar,
+		t
+	]);
+
 	return (
 		<AccountDetailContainer background="gray5" mainAlignment="flex-start">
 			<Row
@@ -117,6 +173,7 @@ const AccountDetailView: FC<any> = ({
 							disabled={!accountDetail?.zimbraId || accountDetail?.zimbraId !== selectedAccount.id}
 							// loading={!accountDetail?.zimbraId || accountDetail?.zimbraId !== selectedAccount.id}
 							style={{ padding: '8px 8px 8px 6px', display: 'block' }}
+							onClick={onDeleteAccount}
 						/>
 					</Padding>
 					<Padding right="medium">
@@ -353,6 +410,78 @@ const AccountDetailView: FC<any> = ({
 					></Input>
 				</Row>
 			</Container>
+			{isOpenDeleteDialog && (
+				<Modal
+					size="medium"
+					title={t('label.deleting_account_name', 'You are deleting {{name}} account', {
+						name: selectedAccount?.name
+					})}
+					open={isOpenDeleteDialog}
+					customFooter={
+						<Container orientation="horizontal" mainAlignment="space-between">
+							<Button
+								style={{ marginLeft: '10px' }}
+								type="outlined"
+								label={t('label.help', 'Help')}
+								color="primary"
+							/>
+							<Row style={{ gap: '8px' }}>
+								<Button
+									label={t('label.disable_it_instead', 'Disable it instead')}
+									color="secondary"
+									onClick={closeHandler}
+									disabled={isRequestInProgress}
+								/>
+								<Button
+									label={t('lable.delete_it', 'Delete it')}
+									color="error"
+									onClick={onDeleteHandler}
+									disabled={isRequestInProgress}
+								/>
+							</Row>
+						</Container>
+					}
+					showCloseIcon
+					onClose={closeHandler}
+				>
+					<Container>
+						<Padding bottom="medium" top="medium">
+							<Text size={'extralarge'} overflow="break-word">
+								<Trans
+									i18nKey="label.deleting_account_content_1"
+									defaults="Are you sure you want to delete <bold>{{name}}</bod> ?"
+									components={{ bold: <strong />, name: selectedAccount?.name }}
+								/>
+							</Text>
+						</Padding>
+						<Padding bottom="medium">
+							<Text size="extralarge" overflow="break-word">
+								<Trans
+									i18nKey="label.deleting_account_content_2"
+									defaults="Deleting the account <bold>will PERMANENTLY delete</bold> all the data."
+									components={{ bold: <strong /> }}
+								/>
+							</Text>
+						</Padding>
+						<Padding bottom="medium">
+							<Text size="extralarge" overflow="break-word">
+								<Trans
+									i18nKey="label.deleting_account_content_3"
+									defaults="You can <bold>Disable it to preserve</bold> the data, instead."
+									components={{ bold: <strong /> }}
+								/>
+							</Text>
+						</Padding>
+						<Row padding={{ bottom: 'large' }}>
+							<Icon
+								icon="AlertTriangleOutline"
+								size="large"
+								style={{ height: '48px', width: '48px' }}
+							/>
+						</Row>
+					</Container>
+				</Modal>
+			)}
 		</AccountDetailContainer>
 	);
 };
