@@ -112,7 +112,7 @@
         "dismiss_plural": "Tout rejeter",
         "display": "Afficher",
         "download": "Télécharger",
-        "download_plural": "Tout télécharger",
+        "download_plural": "Télécharger tout",
         "edit": "Modifier",
         "edit_access": "Modifier les accès de {{name}}",
         "edit_share": "Modifier le partage",
@@ -234,12 +234,12 @@
         "today": "aujourd'hui",
         "preview": "Prévisualisation",
         "create_tag": "Créer une étiquette",
-        "edit_tag": "Éditer l'étiquette",
-        "edit_tag_name": "Éditer l'étiquette \"{{name}}\"",
+        "edit_tag": "Modifier l'étiquette",
+        "edit_tag_name": "Modifier l'étiquette \"{{name}}\"",
         "entire_serires": "TOUTE LES SÉRIE",
         "loading_results": "Chargement des résultats...",
         "new_tag": "Nouvelle étiquette",
-        "no_special_char_allowed": "Le nom ne doit pas contenir des caractères spéciaux",
+        "no_special_char_allowed": "Le nom ne doit pas contenir de caractère spécial",
         "other_actions": "Autres actions",
         "results_for_error": "Il n'est pas possible de démarrer la recherche, nettoyez là et réessayez : ",
         "select_color": "Sélectionnez une couleur",
@@ -320,7 +320,7 @@
         "you_sure_delete_calendar": "Êtes-vous sûr de vouloir supprimer définitivement le calendrier \"{{name}}\" ?",
         "you_sure_delete_instance": "Êtes-vous sûr de vouloir supprimer cette instance du rendez-vous \"{{title}}\" ?",
         "delete_tag_message1": "Êtes-vous sûr de vouloir supprimer l'étiquette \"{{name}}\" ?",
-        "delete_tag_message2": "Une fois supprimée, elle sera supprimée de l'ensemble des éléments qu'elle marquait.",
+        "delete_tag_message2": "Une fois supprimée, elle sera supprimée de l'ensemble des éléments associés.",
         "appointment_type_handle": "{{name}}\" est un rendez-vous récurent. Souhaitez-vous ouvrir uniquement cette instance ou la série ?",
         "more": "Plus...",
         "organizer": "Organisateur",
@@ -462,7 +462,7 @@
         "share_folder_success": "Ce calendrier a été partagé avec succès",
         "url_copied": "{{title}} copié",
         "tag_applied": "Étiquette \"{{tag}}\" appliquée",
-        "tag_removed": "Étiquette \"{{tag}}\" supprimée"
+        "tag_removed": "L'étiquette \"{{tag}}\" a été supprimée"
     },
     "share_invite_resent": "Invitation à partager envoyée",
     "resend_mail_notification_about_this_share": "Envoyer une notification par email à propos de ce partage",
@@ -517,7 +517,7 @@
             "tag_created": "L'étiquette {{name}} a été créée avec succès",
             "tag_deleted": "L'étiquette {{name}} a été supprimée avec succès",
             "tag_not_updated": "Une erreur est survenue, l'étiquette n'a pas été mise à jour. Merci de réessayer.",
-            "tag_updated": "L'étiquette a été mise à jour avec succès"
+            "tag_updated": "Étiquette mise à jour avec succès"
         }
     },
     "read": "Lire",
