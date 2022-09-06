@@ -321,7 +321,7 @@
         "you_sure_delete_instance": "Êtes-vous sûr de vouloir supprimer cette instance du rendez-vous {{title}} ?",
         "delete_tag_message1": "Êtes-vous sûr de vouloir supprimer l'étiquette {{name}} ?",
         "delete_tag_message2": "Une fois supprimée, elle sera supprimée de l'ensemble des éléments associés.",
-        "appointment_type_handle": "{{name}}\" est un rendez-vous récurent. Souhaitez-vous ouvrir uniquement cette instance ou la série ?",
+        "appointment_type_handle": "{{name}} est un rendez-vous récurent. Souhaitez-vous ouvrir uniquement cette instance ou la série ?",
         "more": "Plus...",
         "organizer": "Organisateur",
         "send_email": "Envoyer un email",
