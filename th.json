@@ -439,8 +439,7 @@
         "send_email": "ส่งอีเมล",
         "more": "เพิ่มเติม...",
         "required_participant": "ผู้เข้าร่วม {{count}}",
-        "optional_participant": "{{count}} ตัวเลือก",
-        "accepted": "ยอมรับแล้ว {{count}}"
+        "optional_participant": "{{count}} ตัวเลือก"
     },
     "type": "รูปแบบ",
     "tooltip": {

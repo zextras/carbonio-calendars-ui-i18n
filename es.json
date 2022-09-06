@@ -312,9 +312,6 @@
             "dflt_vsblty_opt": {
                 "public": "Público"
             },
-            "default_cal_opts": {
-                "calendar": "Calendario"
-            },
             "default_view": {
                 "list": "Vista de lista",
                 "month": "Vista por mes",
@@ -461,7 +458,6 @@
         "delete_tag_message1": "¿Seguro que quieres borrar la etiqueta {{name}}?",
         "delete_tag_message2": "Una vez borrada, se quitará de cada elemento marcado con ella.",
         "organizer": "Organizador",
-        "accepted": "{{count}} aceptado",
         "more": "Más…",
         "optional_participant": "{{count}} Opcional",
         "optional_participant_plural": "{{count}} Opcionales",

@@ -162,7 +162,6 @@
         "create_tag": "Criar Etiqueta"
     },
     "action": {
-        "save": "Salvar",
         "send": "Enviar",
         "empty_trash": "Esvaziar Lixeira",
         "move_to_root": "Mover para raiz",
@@ -179,7 +178,6 @@
     "event": {
         "action": {
             "accept": "Aceitar",
-            "trash": "Excluir",
             "no": "Não",
             "yes": "Sim",
             "decline": "Recusar",
@@ -190,7 +188,6 @@
     "folder": {
         "modal": {
             "move": {
-                "footer": "Vazia",
                 "body": {
                     "message3": "Selecione um calendário para mover o compromisso selecionado:"
                 },
@@ -269,12 +266,10 @@
         },
         "sure_to_delete_appointment_permanently": "Tem certeza que deseja excluir este compromisso permanentemente?",
         "you_sure_delete_instance": "Tens a certeza que desejas excluir esta instância do compromisso {{title}}?",
-        "reply": "Responder",
         "organizer": "Organizador",
         "more": "Mais...",
         "delete_tag_message2": "Uma vez excluída, ela será removida de todos os itens marcados com ela.",
-        "delete_tag_message1": "Tem certeza que deseja excluir a Etiqueta {{name}}?",
-        "awaiting": "a esperar"
+        "delete_tag_message1": "Tem certeza que deseja excluir a Etiqueta {{name}}?"
     },
     "months": {
         "april": "Abril",
@@ -346,10 +341,6 @@
             "dflt_vsblty_opt": {
                 "public": "Público"
             },
-            "show_reminder": {
-                "day_before": "1 dia antes",
-                "day_before_plural": "{{count}} dias antes"
-            },
             "invt_opts": {
                 "allow_none": "Não permitir que ninguém me convide para reuniões",
                 "allow_following": "Permitir que apenas os seguintes usuários internos me enviem convites para reuniões",
@@ -374,9 +365,6 @@
                 "egypt": "GMT +02:00 Egito",
                 "amsterdam": "GMT +01:00 Amsterdã, Berlim, Berna, Roma, Estocolmo, Viena",
                 "chennai": "GMT +5:30 Chennai, Calcutá, Mumbai, Nova Delhi"
-            },
-            "weekdays": {
-                "sunday": "Domingo"
             }
         },
         "label": {

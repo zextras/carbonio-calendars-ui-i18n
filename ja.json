@@ -61,7 +61,6 @@
         "organizer": "主催者",
         "required_participant": "{{count}}参加者",
         "optional_participant": "{{count}}オプション",
-        "accepted": "{{count}}が承認されました",
         "send_email": "メールを送信する",
         "more": "その他..."
     },

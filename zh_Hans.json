@@ -62,8 +62,7 @@
         "send_email": "发送邮件",
         "more": "更多...",
         "required_participant": "{{count}} 参与者",
-        "optional_participant": "{{count}} 可选",
-        "accepted": "{{count}} 已接受"
+        "optional_participant": "{{count}} 可选"
     },
     "calendar": {
         "modal": {
@@ -339,9 +338,6 @@
         "options": {
             "dflt_vsblty_opt": {
                 "public": "公共"
-            },
-            "default_cal_opts": {
-                "calendar": "日历"
             },
             "default_view": {
                 "month": "月视图",

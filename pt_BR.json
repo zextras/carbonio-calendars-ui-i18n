@@ -295,8 +295,7 @@
         "required_participant": "{{count}} Participante",
         "required_participant_plural": "{{count}} Participantes",
         "optional_participant": "{{count}} Opcional",
-        "optional_participant_plural": "{{count}} Opcionais",
-        "accepted": "{{count}} aceitadas"
+        "optional_participant_plural": "{{count}} Opcionais"
     },
     "months": {
         "april": "Abril",

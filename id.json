@@ -293,8 +293,7 @@
         "send_email": "Kirim email",
         "more": "Lainnya...",
         "required_participant": "{{count}} Peserta",
-        "optional_participant": "{{count}} Opsional",
-        "awaiting": "menunggu"
+        "optional_participant": "{{count}} Opsional"
     },
     "months": {
         "april": "April",
@@ -340,9 +339,6 @@
         "options": {
             "dflt_vsblty_opt": {
                 "public": "Publik"
-            },
-            "weekdays": {
-                "sunday": "Minggu"
             },
             "default_view": {
                 "day": "Tampilan Hari",

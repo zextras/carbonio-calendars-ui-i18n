@@ -64,8 +64,7 @@
         "required_participant": "{{count}} Teilnehmer",
         "required_participant_plural": "{{count}} Teilnehmer",
         "optional_participant": "{{count}} Optional",
-        "optional_participant_plural": "{{count}} Optionale",
-        "accepted": "{{count}} akzeptiert"
+        "optional_participant_plural": "{{count}} Optionale"
     },
     "label": {
         "invitation_not_sent": "Sie haben die Einladung noch nicht an die Teilnehmer geschickt",

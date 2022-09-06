@@ -346,9 +346,6 @@
             "dflt_vsblty_opt": {
                 "public": "Publiek"
             },
-            "weekdays": {
-                "friday": "Vrijdag"
-            },
             "default_view": {
                 "day": "Dagweergave",
                 "list": "Lijstweergave",

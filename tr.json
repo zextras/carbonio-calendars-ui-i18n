@@ -149,7 +149,6 @@
         "delete_tag_message1": "{{name}} etiketini silmek istediğinizden emin misiniz?",
         "delete_tag_message2": "Silinince önceden işaretlenmiş tüm öğelerden etiket kaldırılacak.",
         "appointment_type_handle": "{{name}} tekrarlanan bir randevu. Sadece bu rendevuyu mu yoksa tekrarlama serisini mi açmak istersiniz?",
-        "guests": "konuklar",
         "more": "Daha fazla...",
         "optional_participant": "{{count}} İsteğe bağlı",
         "optional_participant_plural": "{{count}} İsteğe bağlı",
