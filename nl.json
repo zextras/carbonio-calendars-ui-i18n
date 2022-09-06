@@ -310,7 +310,7 @@
         "you_sure_delete_instance": "Weet u zeker dat u deze instantie van \"{title}\" afspraak wilt verwijderen?",
         "delete_tag_message1": "Weet u zeker dat u de{{name}} Tag wilt verwijderen?",
         "delete_tag_message2": "Eenmaal verwijderd, zal het verwijderd worden van elk item dat ermee gemarkeerd is.",
-        "appointment_type_handle": "\"{{name}}” is een terugkerende afspraak. Wilt u alleen deze afspraak of de hele serie openen?",
+        "appointment_type_handle": "{{name}} is een terugkerende afspraak. Wilt u alleen deze afspraak of de hele serie openen?",
         "organizer": "Organisator",
         "send_email": "E-mail sturen",
         "more": "Meer..."

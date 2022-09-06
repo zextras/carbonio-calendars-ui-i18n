@@ -57,7 +57,7 @@
         "you_sure_delete_instance": "Sind Sie sicher, dass Sie diese Kopie des Termins \"1{{title}}\" löschen wollen?",
         "delete_tag_message1": "Sind Sie sicher, dass Sie den {{name}} Tag?",
         "delete_tag_message2": "Nach dem Löschen wird es aus allen damit gekennzeichneten Artikeln entfernt.",
-        "appointment_type_handle": "\"{{name}}” ist ein Serientermin. Möchten Sie nur diesen Termin oder die ganze Serie öffnen?",
+        "appointment_type_handle": "{{name}} ist ein Serientermin. Möchten Sie nur diesen Termin oder die ganze Serie öffnen?",
         "organizer": "Organisator",
         "send_email": "E-Mail senden",
         "more": "Mehr ...",

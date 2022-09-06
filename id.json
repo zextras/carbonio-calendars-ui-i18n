@@ -285,7 +285,7 @@
         },
         "share_calendar_url_note2": "Hanya kolaborator Anda yang dapat mengakses data Anda menggunakan URL ini.<br/>Anda juga bisa menemukan tautan tersebut dengan mengklik kanan daftar kalender Anda.",
         "delete_future_occurences_warning": "Tindakan ini juga menghapus semua pengecualian (sebelum dan sesudah kejadian ini) dalam rangkaian tersebut",
-        "you_sure_delete_instance": "Anda yakin ingin menghapus instan janji temu “{{title}}” ini?",
+        "you_sure_delete_instance": "Anda yakin ingin menghapus instan janji temu {{title}} ini?",
         "delete_tag_message1": "Yakin ingin menghapus Tag {{name}}?",
         "delete_tag_message2": "Setelah dihapus, ini akan dihapus dari tiap item yang ditandai dengannya.",
         "appointment_type_handle": "{{name}} adalah janji temu berulang. Anda hanya ingin membuka instans ini atau seri?",

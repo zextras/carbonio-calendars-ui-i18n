@@ -268,7 +268,7 @@
             }
         },
         "sure_to_delete_appointment_permanently": "Tem certeza que deseja excluir este compromisso permanentemente?",
-        "you_sure_delete_instance": "Tens a certeza que desejas excluir esta instância do compromisso “{{title}}”?",
+        "you_sure_delete_instance": "Tens a certeza que desejas excluir esta instância do compromisso {{title}}?",
         "reply": "Responder",
         "organizer": "Organizador",
         "more": "Mais...",

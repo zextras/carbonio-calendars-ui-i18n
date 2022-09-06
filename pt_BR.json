@@ -285,7 +285,7 @@
             }
         },
         "sure_to_delete_appointment_permanently": "Tem certeza que deseja excluir este compromisso?",
-        "you_sure_delete_instance": "Tem certeza que deseja excluir esta instância do compromisso “{{title}}”?",
+        "you_sure_delete_instance": "Tem certeza que deseja excluir esta instância do compromisso {{title}}?",
         "delete_tag_message1": "Tem certeza que deseja excluir a Etiqueta {{name}}?",
         "delete_tag_message2": "Uma vez excluída, ela será removida de todos os itens marcados com a mesma.",
         "appointment_type_handle": "{{name}} é um compromisso recorrente. Você gostaria de abrir apenas esta instância ou toda a série?",

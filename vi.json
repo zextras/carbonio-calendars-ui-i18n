@@ -428,7 +428,7 @@
         "you_are_organizer": "<Row><Text> <BoldText> You  </BoldText> là người tổ chức </Text></Row>",
         "delete_tag_message1": "Bạn có chắc xoá thẻ {{name}}?",
         "you_sure_delete_calendar": "Bạn có chắc chắn muốn xoá vĩnh viễn lịch {{name}} không?",
-        "you_sure_delete_instance": "Bạn có chắc chắn muốn xóa phiên bản cuộc hẹn “{{title}}” này không?",
+        "you_sure_delete_instance": "Bạn có chắc chắn muốn xóa phiên bản cuộc hẹn {{title}} này không?",
         "appointment_type_handle": "{{name}} là một cuộc hẹn định kỳ. Bạn chỉ muốn mở phiên bản này hay chuỗi chương trình?",
         "modal": {
             "delete": {
