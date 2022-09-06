@@ -113,7 +113,7 @@
         "you_sure_move_calendar_trash": "Vuoi eliminare il calendario \"{{name}}\"?",
         "share_calendar_url_msg": "Condividi {{title}} con i tuoi collaboratori condividendo uno di questi URL:",
         "you_sure_delete_instance": "Vuoi eliminare questa istanza dell'appuntamento “{{title}}” ?",
-        "appointment_type_handle": "\"{{name}}\" è un appuntamento ricorrente. Vuoi aprire solo questa istanza o tutta la serie?",
+        "appointment_type_handle": "{{name}} è un appuntamento ricorrente. Vuoi aprire solo questa istanza o tutta la serie?",
         "delete_tag_message1": "Vuoi eliminare l'etichetta \"{{name}}\"?",
         "delete_tag_message2": "Una volta eliminata, verrà eliminata anche da tutti gli elementi su cui è utilizzata.",
         "organizer": "Organizzatore",
@@ -472,10 +472,6 @@
                 "allow_all": "Consenti ad utenti interni e esterni di invitarmi agli appuntamenti",
                 "allow_following": "Consenti solo ai seguenti utenti di invitarmi agli appuntamenti",
                 "allow_none": "Nessuno può invitarmi agli appuntamenti"
-            },
-            "show_reminder": {
-                "day_before": "1 giorno prima",
-                "day_before_plural": "{{count}} giorni prima"
             },
             "default_view": {
                 "day": "Vista Giorno",
