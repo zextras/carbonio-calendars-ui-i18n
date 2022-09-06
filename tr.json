@@ -383,7 +383,7 @@
         "chat": "Donanım",
         "chat_room": "Sanal Oda bağlantısı",
         "calendar_sharing_status": "{{count}} kişi ile paylaşıldı",
-        "calendar_sharing_status_plural": "",
+        "calendar_sharing_status_plural": "{{count}} kişi ile paylaşıldı",
         "equipment": "Donanım",
         "location": "Yer",
         "virtual_chat": "Sanal Sohbet"
