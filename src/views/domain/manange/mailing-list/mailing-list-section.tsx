@@ -24,6 +24,7 @@ import ListRow from '../../../list/list-row';
 import { searchDirectory } from '../../../../services/search-directory-service';
 import { getAllEmailFromString, isValidEmail, isValidLdapQuery } from '../../../utility/utils';
 import { searchGal } from '../../../../services/search-gal-service';
+import carbonioHelmet from '../../../../assets/carbonio-helmet.svg';
 
 const MailingListSection: FC<any> = () => {
 	const { t } = useTranslation();
@@ -523,7 +524,7 @@ const MailingListSection: FC<any> = () => {
 									type="outlined"
 									label={t('label.delete', 'Delete')}
 									color="error"
-									icon="PlusOutline"
+									icon="Trash2Outline"
 									iconPlacement="right"
 									height={44}
 									onClick={onDeleteFromList}
@@ -548,6 +549,50 @@ const MailingListSection: FC<any> = () => {
 							</Container>
 						</ListRow>
 					</>
+				)}
+
+				{ownerTableRows.length === 0 && mailingListDetail?.dynamic && (
+					<ListRow>
+						<Container
+							height="100%"
+							mainAlignment="center"
+							crossAlignment="center"
+							background="gray6"
+							padding={{ top: 'large' }}
+						>
+							<Text
+								overflow="break-word"
+								weight="normal"
+								size="large"
+								style={{ whiteSpace: 'pre-line', textAlign: 'center', fontFamily: 'roboto' }}
+							>
+								<img src={carbonioHelmet} alt="logo" />
+							</Text>
+							<Padding bottom="medium">
+								<Text
+									color="#828282"
+									overflow="break-word"
+									weight="light"
+									style={{ fontSize: '18px' }}
+								>
+									{t('label.there_are_not_owner_here', 'There aren’t owners here.')}
+								</Text>
+							</Padding>
+							<Padding bottom="small">
+								<Text
+									color="#828282"
+									overflow="break-word"
+									weight="light"
+									style={{ fontSize: '18px' }}
+								>
+									{t(
+										'label.search_for_user_add_button',
+										'Search for a user and click on the ADD button.'
+									)}
+								</Text>
+							</Padding>
+						</Container>
+					</ListRow>
 				)}
 				<ListRow>
 					<Container

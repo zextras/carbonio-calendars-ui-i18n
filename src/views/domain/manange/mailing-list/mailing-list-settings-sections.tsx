@@ -423,7 +423,7 @@ const MailingListSettingsSection: FC<any> = () => {
 							type="outlined"
 							label={t('label.delete', 'Delete')}
 							color="error"
-							icon="PlusOutline"
+							icon="Trash2Outline"
 							iconPlacement="right"
 							height={44}
 							onClick={onDeleteFromList}
