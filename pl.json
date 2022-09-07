@@ -291,7 +291,7 @@
         "you_will_see_the_subject_here": "Temat",
         "delete_tag_message1": "Czy na pewno chcesz usunąć Tag {{name}}?",
         "delete_tag_message2": "Po usunięciu Tag zostanie zdjęty z każdego elementu oznaczonego nim.",
-        "appointment_type_handle": "{{name}}\" to powtarzające się spotkanie. Chcesz otworzyć tylko ten przypadek czy serię?",
+        "appointment_type_handle": "{{name}} to powtarzające się spotkanie. Chcesz otworzyć tylko ten przypadek czy serię?",
         "more": "Więcej...",
         "organizer": "Organizator",
         "required_participant_0": "{{count}} Uczestnik",
