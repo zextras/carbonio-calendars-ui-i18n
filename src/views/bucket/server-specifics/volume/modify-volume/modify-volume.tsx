@@ -25,8 +25,8 @@ const ModifyVolume: FC<{
 	setmodifyVolumeToggle: any;
 	volumeDetail: any;
 	changeSelectedVolume: any;
-	GetAllVolumesRequest: any;
-}> = ({ setmodifyVolumeToggle, volumeDetail, changeSelectedVolume, GetAllVolumesRequest }) => {
+	getAllVolumesRequest: any;
+}> = ({ setmodifyVolumeToggle, volumeDetail, changeSelectedVolume, getAllVolumesRequest }) => {
 	const { t } = useTranslation();
 	const [isDirty, setIsDirty] = useState(false);
 	const [name, setName] = useState(volumeDetail?.name);
@@ -94,7 +94,7 @@ const ModifyVolume: FC<{
 					type: 'success',
 					label: t('label.volume_edited', 'Volume edited successfully')
 				});
-				GetAllVolumesRequest();
+				getAllVolumesRequest();
 				setmodifyVolumeToggle(false);
 			})
 			.catch((error) => {

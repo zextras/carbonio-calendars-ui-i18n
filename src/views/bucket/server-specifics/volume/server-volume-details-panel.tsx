@@ -27,7 +27,7 @@ const ServerVolumeDetailsPanel: FC<{
 	setmodifyVolumeToggle: any;
 	setOpen: any;
 	changeSelectedVolume: any;
-	GetAllVolumesRequest: any;
+	getAllVolumesRequest: any;
 	detailData: any;
 	setDetailData: any;
 }> = ({
@@ -37,7 +37,7 @@ const ServerVolumeDetailsPanel: FC<{
 	setmodifyVolumeToggle,
 	setOpen,
 	changeSelectedVolume,
-	GetAllVolumesRequest,
+	getAllVolumesRequest,
 	detailData,
 	setDetailData
 }) => {
@@ -83,10 +83,10 @@ const ServerVolumeDetailsPanel: FC<{
 					autoHideTimeout: 5000
 				});
 				setToggleDetailPage(false);
-				GetAllVolumesRequest();
+				getAllVolumesRequest();
 			});
 	}, [
-		GetAllVolumesRequest,
+		getAllVolumesRequest,
 		createSnackbar,
 		setDetailData,
 		setToggleDetailPage,
@@ -120,7 +120,7 @@ const ServerVolumeDetailsPanel: FC<{
 								: 'volume type successfully changed to Primary'
 					})
 				});
-				GetAllVolumesRequest();
+				getAllVolumesRequest();
 				getVolumeDetailData();
 			})
 			.catch((error) => {
@@ -133,7 +133,7 @@ const ServerVolumeDetailsPanel: FC<{
 					autoHideTimeout: 5000
 				});
 			});
-	}, [GetAllVolumesRequest, createSnackbar, detailData?.id, getVolumeDetailData, t, typeLabel]);
+	}, [getAllVolumesRequest, createSnackbar, detailData?.id, getVolumeDetailData, t, typeLabel]);
 
 	useEffect(() => {
 		if (typeLabel === PRIMARIES) {
