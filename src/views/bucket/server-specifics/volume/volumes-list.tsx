@@ -33,6 +33,8 @@ import NewVolume from './create-volume/new-volume';
 import ModifyVolume from './modify-volume/modify-volume';
 import DeleteVolumeModel from './delete-volume-model';
 import { useServerStore } from '../../../../store/server/store';
+import CreateMailstoresVolume from './create-volume/advanced-create-volume/create-mailstores-volume';
+import { useAuthIsAdvanced } from '../../../../store/auth-advanced/store';
 
 const RelativeContainer = styled(Container)`
 	position: relative;
@@ -125,6 +127,7 @@ const VolumesDetailPanel: FC = () => {
 	const { operation, server }: { operation: string; server: string } = useParams();
 	const [t] = useTranslation();
 	const selectedServerName = useBucketVolumeStore((state) => state.selectedServerName);
+	const isAdvanced = useAuthIsAdvanced((state) => state.isAdvanced);
 	const [priamryVolumeSelection, setPriamryVolumeSelection] = useState('');
 	const [secondaryVolumeSelection, setSecondaryVolumeSelection] = useState('');
 	const [indexerVolumeSelection, setIndexerVolumeSelection] = useState('');
@@ -406,9 +409,20 @@ const VolumesDetailPanel: FC = () => {
 					/>
 				</AbsoluteContainer>
 			)}
-			{toggleWizardSection && (
+			{toggleWizardSection && !isAdvanced && (
 				<AbsoluteContainer orientation="vertical" background="gray5">
 					<NewVolume
+						setToggleWizardSection={setToggleWizardSection}
+						setDetailsVolume={setDetailsVolume}
+						setCreateMailstoresVolumeData={setCreateMailstoresVolumeData}
+						volName={selectedServerName}
+						CreateVolumeRequest={CreateVolumeRequest}
+					/>
+				</AbsoluteContainer>
+			)}
+			{toggleWizardSection && isAdvanced && (
+				<AbsoluteContainer orientation="vertical" background="gray5">
+					<CreateMailstoresVolume
 						setToggleWizardSection={setToggleWizardSection}
 						setDetailsVolume={setDetailsVolume}
 						setCreateMailstoresVolumeData={setCreateMailstoresVolumeData}
