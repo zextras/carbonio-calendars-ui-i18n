@@ -475,7 +475,7 @@ const BackupConfiguration: FC = () => {
 				setIsRequestInProgress(false);
 				if (res?.Body?.response?.content) {
 					const content = JSON.parse(res?.Body?.response?.content);
-					if (content?.response?.message) {
+					if (content?.ok && content?.ok === true) {
 						setBackupServiceStart(!backupServiceStart);
 					}
 				}
@@ -634,14 +634,15 @@ const BackupConfiguration: FC = () => {
 					height="calc(100vh - 150px)"
 				>
 					<Container
-						mainAlignment="flex-start"
+						mainAlignment="flex-end"
 						crossAlignment="flex-end"
 						padding={{ top: 'medium' }}
 						height="fit"
+						orientation="horizontal"
 					>
-						<Text size="medium" weight="bold">
-							{t('backup.the_service_is_stopped', 'The service is stopped')}
-						</Text>
+						<Text>{t('backup.the_service_is', 'The service is')}</Text>&nbsp;
+						{!backupServiceStart && <Text color="error">{t('backup.stopped', 'stopped')}</Text>}
+						{backupServiceStart && <Text color="primary">{t('backup.running', 'running')}</Text>}
 					</Container>
 
 					<Container
