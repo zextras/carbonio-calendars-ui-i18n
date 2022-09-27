@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 import React, { FC, useCallback, useContext, useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import {
 	Container,
 	Row,
@@ -941,6 +941,7 @@ const BackupConfiguration: FC = () => {
 									setKeepDeletedAccountsInBackup(e.target.value);
 								}}
 								disabled={!scheduleAutomaticRetentionPolicy}
+								description="Optional description"
 							/>
 						</Container>
 						<Container
@@ -954,6 +955,35 @@ const BackupConfiguration: FC = () => {
 								label={t('backup.range', 'Range')}
 								background="gray5"
 								value={t('label.days', 'Days')}
+							/>
+						</Container>
+					</ListRow>
+
+					<ListRow>
+						<Container
+							mainAlignment="flex-start"
+							crossAlignment="flex-start"
+							orientation="horizontal"
+							padding={{ top: 'small', right: 'large' }}
+							width="50%"
+						>
+							<Text overflow="break-word" size="extrasmall">
+								<Trans
+									i18nKey="backup.back_delete_item_warning_message"
+									defaults="If you set 0, <strong>items</strong> will be kept in backup forever ?"
+								/>
+							</Text>
+						</Container>
+						<Container
+							mainAlignment="flex-start"
+							crossAlignment="flex-start"
+							orientation="horizontal"
+							padding={{ top: 'small', right: 'large' }}
+							width="50%"
+						>
+							<Trans
+								i18nKey="backup.back_delete_account_warning_message"
+								defaults="If you set 0, <strong>accounts</strong> will be kept in backup forever"
 							/>
 						</Container>
 					</ListRow>
