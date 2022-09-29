@@ -1299,5 +1299,6 @@
         "serverName_volumes": "{{serverName}} Volumes",
         "serverName_volumes_create_mailstores_volume": "{{serverName}} Create Mailstores Volume"
     },
-    "welcome_to_carbonio": "Welcome {{adminName}} to Carbonio {{carbonioVersion}}!"
+    "welcome_to_carbonio": "Welcome {{adminName}} to Carbonio {{carbonioVersion}}!",
+    "welcome_to_carbonio_display_name": "Welcome {{adminName}}!"
 }
