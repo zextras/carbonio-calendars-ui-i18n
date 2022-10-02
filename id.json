@@ -484,8 +484,7 @@
         "equipment": "Peralatan",
         "location": "Lokasi",
         "chat_room": "Tautan Ruang Virtual",
-        "virtual_chat": "Chat Virtual",
-        "calendar_sharing_status": ""
+        "virtual_chat": "Chat Virtual"
     },
     "share_invite_resent": "Undangan berbagi dikirim ulang",
     "shared_folders": "Kalender Bersama",
