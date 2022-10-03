@@ -223,18 +223,18 @@ const App: FC = () => {
 				]
 			},
 			{
-				header: t('label.management', 'Management'),
+				header: t('domain.manage', 'Manage'),
 				options: [
 					{
 						label: t('label.accounts', 'Accounts')
 					},
 					{
-						label: t('label.mailing_lists', 'Mailing Lists')
+						label: t('label.mailing_list', 'Mailing List')
 					},
 					{
 						label: t('label.resources', 'Resources')
 					},
-					{
+					/* {
 						label: t('label.admin_delegates', 'Admin Delegates')
 					},
 					{
@@ -245,13 +245,13 @@ const App: FC = () => {
 					},
 					{
 						label: t('label.export_domain', 'Export Domain')
-					},
+					} */
 					{
 						label: t('label.restore_account', 'Restore Account')
-					},
-					{
-						label: t('label.restore_deleted_email', 'Restore Deleted E-mail')
 					}
+					/* {
+						label: t('label.restore_deleted_email', 'Restore Deleted E-mail')
+					} */
 				]
 			}
 		],
