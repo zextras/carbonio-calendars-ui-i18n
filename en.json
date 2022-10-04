@@ -491,6 +491,20 @@
         "alreadyInUse": ""
     },
     "have_not_setup_bucket_type": "It seems like you haven't setup a bucket type",
+    "hsm": {
+        "apply_duplication_after_scheduledhsm": "Apply Deduplication after scheduled HSM",
+        "delete": "Delete",
+        "edit": "Edit",
+        "enable_scheduler": "Enable Scheduler",
+        "hsm_policies_list": "HSM Policies List",
+        "minimum_space_threshold": "Minimum Space Threshold",
+        "name_hsm_policies": "{{serverName}} HSM Policies",
+        "new_policy": "New Policy",
+        "policy_name": "Policy Name",
+        "schedule": "Schedule",
+        "scheduling": "Scheduling",
+        "this_function_allow_save_disk_copy_msg": "This function allows you to save disk space by storing a single copy of an item."
+    },
     "label": {
         "I_want_to_see_this_server_details": "i want to see this server’s details",
         "access_key": "Access Key",
