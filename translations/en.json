@@ -508,8 +508,10 @@
         "days": "Days",
         "delete": "Delete",
         "destination_volume": "Destination Volume",
+        "details": "Details",
         "document": "Document",
         "edit": "Edit",
+        "editing": "Editing",
         "enable_scheduler": "Enable Scheduler",
         "event": "Event",
         "gb": "GB",
@@ -525,6 +527,7 @@
         "name_hsm_policies": "{{serverName}} HSM Policies",
         "new_policy": "New Policy",
         "option": "Option",
+        "policy_criteria": "Policy Criteria",
         "policy_name": "Policy Name",
         "policy_settings": "Policy Settings",
         "scale": "Scale",
@@ -539,6 +542,7 @@
         "this_function_allow_save_disk_copy_msg": "This function allows you to save disk space by storing a single copy of an item.",
         "type": "Type",
         "value": "Value",
+        "volumes": "Volumes",
         "years": "Years"
     },
     "label": {

@@ -22,6 +22,7 @@ import { useParams } from 'react-router-dom';
 import { fetchSoap } from '../../../services/bucket-service';
 import ListRow from '../../list/list-row';
 import CreateHsmPolicy from './create-hsm-policy/create-hsm-policy';
+import EditHsmPolicy from './edit-hsm-policy/edit-hsm-policy';
 
 const HSMsettingPanel: FC = () => {
 	const { operation, server }: { operation: string; server: string } = useParams();
@@ -29,6 +30,7 @@ const HSMsettingPanel: FC = () => {
 	const [isDirty, setIsDirty] = useState<boolean>(false);
 	const [policies, setPolicies] = useState<any>([]);
 	const [showCreateHsmPolicyView, setShowCreateHsmPolicyView] = useState<boolean>(false);
+	const [showEditHsmPolicyView, setShowEditHsmPolicyView] = useState<boolean>(false);
 	const headers = useMemo(
 		() => [
 			{
@@ -186,6 +188,9 @@ const HSMsettingPanel: FC = () => {
 										icon="EditOutline"
 										color="secondary"
 										height={36}
+										onClick={(): void => {
+											setShowEditHsmPolicyView(true);
+										}}
 									/>
 								</Padding>
 								<Button
@@ -218,6 +223,9 @@ const HSMsettingPanel: FC = () => {
 			</Container>
 			{showCreateHsmPolicyView && (
 				<CreateHsmPolicy setShowCreateHsmPolicyView={setShowCreateHsmPolicyView} />
+			)}
+			{showEditHsmPolicyView && (
+				<EditHsmPolicy setShowEditHsmPolicyView={setShowEditHsmPolicyView} />
 			)}
 		</Container>
 	);
