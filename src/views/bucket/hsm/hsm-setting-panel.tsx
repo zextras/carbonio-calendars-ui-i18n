@@ -46,6 +46,7 @@ const HSMsettingPanel: FC = () => {
 	const [powerstoreSpaceThreshold, setPowerstoreSpaceThreshold] = useState<number>(0);
 	const [deduplicateAfterScheduledMoveBlobs, setDeduplicateAfterScheduledMoveBlobs] =
 		useState<boolean>(false);
+	const [oldValues, setOldValues] = useState<any>({});
 	const headers = useMemo(
 		() => [
 			{
@@ -76,6 +77,7 @@ const HSMsettingPanel: FC = () => {
 		).then((data: any) => {
 			const serv = data?.servers;
 			if (serv && serv.length > 0) {
+				const olderValues: any = {};
 				serverList.forEach((item: any) => {
 					const id = item?.id;
 					const selectedServer = serv.find((sItem: any) => sItem[id]);
@@ -89,24 +91,30 @@ const HSMsettingPanel: FC = () => {
 										attributes?.powerstoreMoveScheduler?.value?.['cron-enabled'];
 									if (schedulerEnabled) {
 										setIsPowerstoreMoveSchedulerEnabled(true);
+										olderValues.isPowerstoreMoveSchedulerEnabled = true;
 									} else {
 										setIsPowerstoreMoveSchedulerEnabled(false);
+										olderValues.isPowerstoreMoveSchedulerEnabled = false;
 									}
 
 									const schedulePattern =
 										attributes?.powerstoreMoveScheduler?.value?.['cron-pattern'];
 									if (schedulePattern) {
 										setPowerstoreMoveSchedulerValue(schedulePattern);
+										olderValues.powerstoreMoveSchedulerValue = schedulePattern;
 									} else {
 										setPowerstoreMoveSchedulerValue('');
+										olderValues.powerstoreMoveSchedulerValue = '';
 									}
 								}
 								if (attributes?.ZxPowerstore_SpaceThreshold) {
 									const spaceThreshold = attributes?.ZxPowerstore_SpaceThreshold?.value;
 									if (spaceThreshold) {
 										setPowerstoreSpaceThreshold(spaceThreshold);
+										olderValues.powerstoreSpaceThreshold = spaceThreshold;
 									} else {
 										setPowerstoreSpaceThreshold(0);
+										olderValues.powerstoreSpaceThreshold = 0;
 									}
 								}
 
@@ -114,14 +122,18 @@ const HSMsettingPanel: FC = () => {
 									const duplicate = attributes?.deduplicateAfterScheduledMoveBlobs;
 									if (duplicate) {
 										setDeduplicateAfterScheduledMoveBlobs(true);
+										olderValues.deduplicateAfterScheduledMoveBlobs = true;
 									} else {
 										setDeduplicateAfterScheduledMoveBlobs(false);
+										olderValues.deduplicateAfterScheduledMoveBlobs = false;
 									}
 								}
 							}
 						}
 					}
 				});
+				setOldValues(olderValues);
+				setIsDirty(false);
 			}
 		});
 	}, [serverList]);
@@ -137,12 +149,57 @@ const HSMsettingPanel: FC = () => {
 	}, [getHSMList]);
 
 	const onCancel = useCallback(() => {
+		setIsPowerstoreMoveSchedulerEnabled(oldValues?.isPowerstoreMoveSchedulerEnabled);
+		setPowerstoreMoveSchedulerValue(oldValues?.powerstoreMoveSchedulerValue);
+		setPowerstoreSpaceThreshold(oldValues?.powerstoreSpaceThreshold);
+		setDeduplicateAfterScheduledMoveBlobs(oldValues?.deduplicateAfterScheduledMoveBlobs);
 		setIsDirty(false);
-	}, []);
+	}, [
+		oldValues?.isPowerstoreMoveSchedulerEnabled,
+		oldValues?.powerstoreMoveSchedulerValue,
+		oldValues?.powerstoreSpaceThreshold,
+		oldValues?.deduplicateAfterScheduledMoveBlobs
+	]);
 
 	const onSave = useCallback(() => {
 		setIsDirty(false);
 	}, []);
+
+	useEffect(() => {
+		if (
+			oldValues.isPowerstoreMoveSchedulerEnabled !== undefined &&
+			oldValues.isPowerstoreMoveSchedulerEnabled !== isPowerstoreMoveSchedulerEnabled
+		) {
+			setIsDirty(true);
+		}
+	}, [oldValues.isPowerstoreMoveSchedulerEnabled, isPowerstoreMoveSchedulerEnabled]);
+
+	useEffect(() => {
+		if (
+			oldValues.powerstoreMoveSchedulerValue !== undefined &&
+			oldValues.powerstoreMoveSchedulerValue !== powerstoreMoveSchedulerValue
+		) {
+			setIsDirty(true);
+		}
+	}, [oldValues.powerstoreMoveSchedulerValue, powerstoreMoveSchedulerValue]);
+
+	useEffect(() => {
+		if (
+			oldValues.powerstoreSpaceThreshold !== undefined &&
+			oldValues.powerstoreSpaceThreshold !== powerstoreSpaceThreshold
+		) {
+			setIsDirty(true);
+		}
+	}, [oldValues.powerstoreSpaceThreshold, powerstoreSpaceThreshold]);
+
+	useEffect(() => {
+		if (
+			oldValues.deduplicateAfterScheduledMoveBlobs !== undefined &&
+			oldValues.deduplicateAfterScheduledMoveBlobs !== deduplicateAfterScheduledMoveBlobs
+		) {
+			setIsDirty(true);
+		}
+	}, [oldValues.deduplicateAfterScheduledMoveBlobs, deduplicateAfterScheduledMoveBlobs]);
 
 	return (
 		<Container mainAlignment="flex-start" width="100%">
