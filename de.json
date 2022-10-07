@@ -308,7 +308,8 @@
             "yes": "Ja",
             "needs_action": "Handlungsbedarf",
             "invitation_not_sent_yet": "Die Einladung wurde noch nicht verschickt"
-        }
+        },
+        "is_exception": "Ausnahme"
     },
     "folder": {
         "modal": {
