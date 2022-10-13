@@ -1040,6 +1040,105 @@ export const volumeConfigHeader = (
 	}
 ];
 
+export const headerAdvanced = (
+	t: TFunction
+): Array<{
+	id: string;
+	label: string;
+	width: string;
+	bold: boolean;
+	i18nAllLabel: string;
+}> => [
+	{
+		id: 'Server',
+		label: t('volume.server_list_header.server', 'Server'),
+		i18nAllLabel: 'All',
+		width: '187px',
+		bold: true
+	},
+	{
+		id: 'Primary',
+		label: t('volume.server_list_header.primary', 'Primary'),
+		i18nAllLabel: 'All',
+		width: '87px',
+		bold: true
+	},
+	{
+		id: 'Secondary',
+		label: t('volume.server_list_header.secondary', 'Secondary'),
+		i18nAllLabel: 'All',
+		width: '87px',
+		bold: true
+	},
+	{
+		id: 'Index',
+		label: t('volume.server_list_header.index', 'Index'),
+		i18nAllLabel: 'All',
+		width: '87px',
+		bold: true
+	},
+	{
+		id: 'HSM Scheduling',
+		label: t('volume.server_list_header.HSM Scheduling', 'HSM Scheduling'),
+		i18nAllLabel: 'All',
+		width: '138px',
+		bold: true
+	},
+	{
+		id: 'Indexer',
+		label: t('volume.server_list_header.indexer', 'Indexer'),
+		i18nAllLabel: 'All',
+		width: '100px',
+		bold: true
+	},
+	{
+		id: 'Description',
+		label: t('volume.server_list_header.description', 'Description'),
+		i18nAllLabel: 'All',
+		width: '177px',
+		bold: true
+	}
+];
+
+export const headerCE = (
+	t: TFunction
+): Array<{
+	id: string;
+	label: string;
+	width: string;
+	bold: boolean;
+	i18nAllLabel: string;
+}> => [
+	{
+		id: 'server_name',
+		label: t('volume.server_list_header.server_name', 'Server Name'),
+		i18nAllLabel: 'All',
+		width: '260px',
+		bold: true
+	},
+	{
+		id: 'primary',
+		label: t('volume.server_list_header.primary', 'Primary'),
+		i18nAllLabel: 'All',
+		width: '120px',
+		bold: true
+	},
+	{
+		id: 'index',
+		label: t('volume.server_list_header.index', 'Index'),
+		i18nAllLabel: 'All',
+		width: '120px',
+		bold: true
+	},
+	{
+		id: 'description',
+		label: t('volume.server_list_header.description', 'Description'),
+		i18nAllLabel: 'All',
+		width: '169px',
+		bold: true
+	}
+];
+
 export const localeList = (
 	t: TFunction
 ): Array<{ id: string; name: string; localName: string; value: string; label: string }> => [
