@@ -976,7 +976,7 @@ export const indexerHeaders = (
 
 export const volumeTypeList = (t: TFunction): Array<{ label: string; value?: number }> => [
 	{
-		label: t('volume.volume_type.primary', 'Priamry'),
+		label: t('volume.volume_type.primary', 'Primary'),
 		value: 1
 	},
 	{
@@ -999,7 +999,7 @@ export const volumeAllocationList = (t: TFunction): Array<{ label: string; value
 		value: 2
 	},
 	{
-		label: t('volume.volume_allocation_list.sproxy', 'Proxy'),
+		label: t('volume.volume_allocation_list.proxy', 'Proxy'),
 		value: 3
 	},
 	{

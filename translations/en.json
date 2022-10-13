@@ -1333,7 +1333,7 @@
             "centralized": "Centralized",
             "external": "External",
             "local": "Local",
-            "sproxy": "Proxy"
+            "proxy": "Proxy"
         },
         "volume_config_header": {
             "hsm_scheduled": "HSM Scheduled",
@@ -1355,7 +1355,7 @@
         },
         "volume_type": {
             "index": "Index",
-            "primary": "Priamry",
+            "primary": "Primary",
             "secondary": "Secondary"
         }
     },
