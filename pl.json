@@ -231,7 +231,8 @@
         "root": "Źródło",
         "public_link_description": "Wygenerowano z {{title}} dnia {{date}}",
         "continue": "Kontynuuj",
-        "choose_file": "Wybierz plik"
+        "choose_file": "Wybierz plik",
+        "cancel": "anuluj"
     },
     "message": {
         "modal": {
@@ -360,7 +361,10 @@
         "hours_2": "{{count}} godzin",
         "minutes_0": "{{count}} minuta",
         "minutes_1": "{{count}} minuty",
-        "minutes_2": "{{count}} minut"
+        "minutes_2": "{{count}} minut",
+        "second_before_0": "{{count}} sekunda przed",
+        "second_before_1": "{{count}} sekundy przed",
+        "second_before_2": "{{count}} sekund przed"
     },
     "resend_mail_notification_about_this_share": "Wyślij powiadomienie mailowe dot. tego udostępnienia",
     "revoke_with_custom_message": "Odbierz dostęp i wyślij niestandardową notkę",
@@ -647,7 +651,8 @@
         "chat": "Ekwipunek",
         "calendar_sharing_status_0": "Udostępniono {{count}} osobie",
         "calendar_sharing_status_1": "Udostępniono {{count}} osobom",
-        "calendar_sharing_status_2": "Udostępniono {{count}} osobom"
+        "calendar_sharing_status_2": "Udostępniono {{count}} osobom",
+        "calendar_sharing_status_one": "Udostępniono 1 osobie"
     },
     "type": "Typ",
     "workflow": "Organizacja Pracy",
