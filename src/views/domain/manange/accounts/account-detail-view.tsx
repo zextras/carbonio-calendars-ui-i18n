@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: AGPL-3.0-only
  */
-import React, { FC, useCallback, useEffect, useState, useContext } from 'react';
+import React, { FC, useCallback, useEffect, useState, useContext, useMemo } from 'react';
 import moment from 'moment';
 import {
 	Container,
@@ -16,7 +16,8 @@ import {
 	Quota,
 	Button,
 	Modal,
-	SnackbarManagerContext
+	SnackbarManagerContext,
+	Table
 } from '@zextras/carbonio-design-system';
 import { Trans, useTranslation } from 'react-i18next';
 import styled from 'styled-components';
@@ -26,6 +27,8 @@ import { deleteAccount } from '../../../../services/delete-account-service';
 import { CLOSED } from '../../../../constants';
 import { modifyAccountRequest } from '../../../../services/modify-account';
 import { getDelegateAuthRequest } from '../../../../services/get-delegate-auth-request';
+import { endSession } from '../../../../services/end-session';
+import { getSessions } from '../../../../services/get-sessions';
 
 const AccountDetailContainer = styled(Container)`
 	z-index: 10;
@@ -42,6 +45,14 @@ const AccountDetailContainer = styled(Container)`
 	box-shadow: -6px 4px 5px 0px rgba(0, 0, 0, 0.1);
 `;
 
+type UserSession = {
+	name: string;
+	sid: string;
+	zid: string;
+	ip: string;
+	service: string;
+};
+
 const AccountDetailView: FC<any> = ({
 	selectedAccount,
 	setShowAccountDetailView,
@@ -56,6 +67,39 @@ const AccountDetailView: FC<any> = ({
 	const [isOpenDeleteDialog, setIsOpenDeleteDialog] = useState<boolean>(false);
 	const [isRequestInProgress, setIsRequestInProgress] = useState<boolean>(false);
 	const createSnackbar: any = useContext(SnackbarManagerContext);
+	const [userSessionList, setUserSessionList] = useState<Array<UserSession>>([]);
+	const [sessionListRows, setSessionListRows] = useState<Array<any>>([]);
+	const [selectedSession, setSelectedSession] = useState<any>([]);
+
+	const sessionTableHeader: any[] = useMemo(
+		() => [
+			{
+				id: 'accounts',
+				label: t('label.accounts', 'Accounts'),
+				width: '25%',
+				bold: true
+			},
+			{
+				id: 'session_id',
+				label: t('label.session_id', 'Session ID'),
+				width: '25%',
+				bold: true
+			},
+			{
+				id: 'ip',
+				label: t('label.ip', 'IP'),
+				width: '25%',
+				bold: true
+			},
+			{
+				id: 'service',
+				label: t('label.service', 'Service'),
+				width: '25%',
+				bold: true
+			}
+		],
+		[t]
+	);
 
 	const getDataSourceDetail = useCallback((): void => {
 		getMailboxQuota(selectedAccount?.id).then((data) => {
@@ -172,6 +216,91 @@ const AccountDetailView: FC<any> = ({
 			});
 	}, [accountDetail?.zimbraId, createSnackbar, t, onSuccess]);
 
+	const getAllUserSession = useCallback(() => {
+		const sessionType = 'admin';
+		getSessions(sessionType).then((resp: any) => {
+			if (resp && resp?.s) {
+				const existingSession = resp?.s;
+				if (existingSession) {
+					const session: UserSession[] = [];
+					existingSession.forEach((element: any) => {
+						session.push({
+							ip: '',
+							name: element?.name,
+							sid: element?.sid,
+							service: '',
+							zid: element?.zid
+						});
+					});
+					setUserSessionList(session);
+				}
+			}
+		});
+	}, []);
+
+	useEffect(() => {
+		if (userSessionList && userSessionList.length > 0) {
+			const allRows = userSessionList.map((item: UserSession) => ({
+				id: item?.sid,
+				columns: [
+					<Text size="medium" weight="bold" key={item?.zid} color="#828282">
+						{item?.name}
+					</Text>,
+					<Text size="medium" weight="bold" key={item?.zid} color="#828282">
+						{item?.sid}
+					</Text>,
+					<Text size="medium" weight="bold" key={item?.zid} color="#828282">
+						{''}
+					</Text>,
+					<Text size="medium" weight="bold" key={item?.zid} color="#828282">
+						{''}
+					</Text>
+				]
+			}));
+			setSessionListRows(allRows);
+		} else {
+			setSessionListRows([]);
+		}
+	}, [userSessionList]);
+
+	useEffect(() => {
+		getAllUserSession();
+	}, [getAllUserSession]);
+
+	const onEndSession = useCallback(() => {
+		setIsRequestInProgress(true);
+		endSession(selectedSession[0])
+			.then((resp: any) => {
+				setIsRequestInProgress(false);
+				if (resp && resp?._jsns) {
+					getAllUserSession();
+					setSelectedSession([]);
+					createSnackbar({
+						key: 'success',
+						type: 'success',
+						label: t('label.session_end_success', 'Session end successfully'),
+						autoHideTimeout: 3000,
+						hideButton: true,
+						replace: true
+					});
+				}
+			})
+			.then((error: any) => {
+				setIsRequestInProgress(false);
+				createSnackbar({
+					key: 'error',
+					type: 'error',
+					label: error.message
+						? error.message
+						: t('label.something_wrong_error_msg', 'Something went wrong. Please try again.'),
+
+					autoHideTimeout: 3000,
+					hideButton: true,
+					replace: true
+				});
+			});
+	}, [selectedSession, t, createSnackbar, getAllUserSession]);
+
 	return (
 		<AccountDetailContainer background="gray5" mainAlignment="flex-start">
 			<Row
@@ -202,6 +331,7 @@ const AccountDetailView: FC<any> = ({
 				mainAlignment="flex-start"
 				crossAlignment="flex-start"
 				height="calc(100% - 64px)"
+				style={{ overflow: 'auto' }}
 				background="white"
 			>
 				<Row width="100%" mainAlignment="flex-end" crossAlignment="flex-end">
@@ -423,11 +553,68 @@ const AccountDetailView: FC<any> = ({
 						orientation="horizontal"
 						weight="bold"
 					>
-						{t('label.notes', 'Notes')}
+						{t('label.active_sessions', 'Active Sessions')}
 					</Text>
 				</Row>
 				<Row
 					padding={{ top: 'extralarge' }}
+					width="100%"
+					mainAlignment="flex-start"
+					crossAlignment="flex-start"
+				>
+					<Container width="60%">
+						<Input
+							label={t('label.i_m_looking_for_the_session', 'I`m looking for the session ...')}
+							backgroundColor="gray5"
+							width="100%"
+							value=""
+						></Input>
+					</Container>
+					<Container width="40%">
+						<Button
+							label={t('label.end_session', 'End Session')}
+							color="error"
+							type="outlined"
+							icon="StopCircleOutline"
+							iconPlacement="right"
+							height={44}
+							disabled={selectedSession.length === 0 || isRequestInProgress}
+							onClick={onEndSession}
+							loading={isRequestInProgress}
+						/>
+					</Container>
+				</Row>
+				<Row
+					padding={{ top: 'extralarge' }}
+					width="100%"
+					mainAlignment="flex-start"
+					crossAlignment="flex-start"
+				>
+					<Table
+						rows={sessionListRows}
+						headers={sessionTableHeader}
+						showCheckbox={false}
+						selectedRows={selectedSession}
+						multiSelect={false}
+						onSelectionChange={(selected: any): any => {
+							setSelectedSession(selected);
+						}}
+					></Table>
+				</Row>
+
+				<Row padding={{ top: 'extralarge' }}>
+					<Text
+						size="small"
+						mainAlignment="flex-start"
+						crossAlignment="flex-start"
+						orientation="horizontal"
+						weight="bold"
+					>
+						{t('label.notes', 'Notes')}
+					</Text>
+				</Row>
+				<Row
+					padding={{ top: 'extralarge', bottom: 'extralarge' }}
 					width="100%"
 					mainAlignment="flex-start"
 					crossAlignment="flex-start"
