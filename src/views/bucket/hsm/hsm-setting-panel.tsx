@@ -57,6 +57,7 @@ const HSMsettingPanel: FC = () => {
 	const [selectedPolicies, setSelectedPolicies] = useState<Array<any>>([]);
 	const [isRequestInProgress, setIsRequestInProgress] = useState<boolean>(false);
 	const [isVolumeInProgress, setIsVolumeInProgress] = useState<boolean>(false);
+	const [isEditSaveInProgress, setIsEditSaveInProgress] = useState<boolean>(false);
 
 	const headers = useMemo(
 		() => [
@@ -371,8 +372,69 @@ const HSMsettingPanel: FC = () => {
 		}
 	}, [oldValues.deduplicateAfterScheduledMoveBlobs, deduplicateAfterScheduledMoveBlobs]);
 
+	const onDeletePolicy = useCallback(
+		(isEditSave?: boolean) => {
+			setIsRequestInProgress(true);
+			const hType = policies.find((item: any) => item?.hsmQuery === selectedPolicies[0]);
+			fetchSoap('zextras', {
+				_jsns: 'urn:zimbraAdmin',
+				module: 'ZxPowerstore',
+				action: 'removeHSMPolicy',
+				targetServer: server,
+				hsmPolicy: `${getHSMType(hType?.hsmType)}${selectedPolicies[0]}`
+			})
+				.then((res: any) => {
+					setIsRequestInProgress(false);
+					if (res?.Body?.response?.content) {
+						const info = JSON.parse(res?.Body?.response?.content);
+						getHSMPolicyList();
+						if (info?.ok) {
+							setSelectedPolicies([]);
+							setShowDeletePolicyView(false);
+							setIsEditSaveInProgress(false);
+							if (isEditSave) {
+								setShowEditHsmPolicyView(false);
+								createSnackbar({
+									key: 'success',
+									type: 'success',
+									label: t('hsm.edit_hsm_policy_success', 'HSM Policy updated successfully'),
+									autoHideTimeout: 3000,
+									hideButton: true,
+									replace: true
+								});
+							} else {
+								createSnackbar({
+									key: 'success',
+									type: 'success',
+									label: t('hsm.hsm_policy_correctly_deleted', 'HSM Policy was correctly deleted'),
+									autoHideTimeout: 3000,
+									hideButton: true,
+									replace: true
+								});
+							}
+						}
+					}
+				})
+				.catch((error) => {
+					setIsRequestInProgress(false);
+					setIsEditSaveInProgress(false);
+					createSnackbar({
+						key: 'error',
+						type: 'error',
+						label: error?.message
+							? error?.message
+							: t('label.something_wrong_error_msg', 'Something went wrong. Please try again.'),
+						autoHideTimeout: 3000,
+						hideButton: true,
+						replace: true
+					});
+				});
+		},
+		[server, selectedPolicies, t, createSnackbar, getHSMPolicyList, policies]
+	);
+
 	const createHSMpolicy = useCallback(
-		(hsmPolicyDetail: any) => {
+		(hsmPolicyDetail: any, isEditSave?: boolean) => {
 			let policy = '';
 			const criteriaScale: string[] = [];
 			if (hsmPolicyDetail?.isAllEnabled) {
@@ -427,23 +489,28 @@ const HSMsettingPanel: FC = () => {
 					if (res?.Body?.response?.content) {
 						const info = JSON.parse(res?.Body?.response?.content);
 						if (info?.ok) {
-							setShowCreateHsmPolicyView(false);
-							getHSMPolicyList();
-							createSnackbar({
-								key: 'success',
-								type: 'success',
-								label: t(
-									'hsm.policies_added_successfully',
-									'Policies have been added successfully'
-								),
-								autoHideTimeout: 3000,
-								hideButton: true,
-								replace: true
-							});
+							if (isEditSave) {
+								onDeletePolicy(isEditSave);
+							} else {
+								setShowCreateHsmPolicyView(false);
+								getHSMPolicyList();
+								createSnackbar({
+									key: 'success',
+									type: 'success',
+									label: t(
+										'hsm.policies_added_successfully',
+										'Policies have been added successfully'
+									),
+									autoHideTimeout: 3000,
+									hideButton: true,
+									replace: true
+								});
+							}
 						}
 					}
 				})
 				.catch((error) => {
+					setIsEditSaveInProgress(false);
 					createSnackbar({
 						key: 'error',
 						type: 'error',
@@ -456,53 +523,16 @@ const HSMsettingPanel: FC = () => {
 					});
 				});
 		},
-		[server, createSnackbar, t, getHSMPolicyList]
+		[server, createSnackbar, t, getHSMPolicyList, onDeletePolicy]
 	);
 
-	const onDeletePolicy = useCallback(() => {
-		setIsRequestInProgress(true);
-		const hType = policies.find((item: any) => item?.hsmQuery === selectedPolicies[0]);
-		fetchSoap('zextras', {
-			_jsns: 'urn:zimbraAdmin',
-			module: 'ZxPowerstore',
-			action: 'removeHSMPolicy',
-			targetServer: server,
-			hsmPolicy: `${getHSMType(hType?.hsmType)}${selectedPolicies[0]}`
-		})
-			.then((res: any) => {
-				setIsRequestInProgress(false);
-				if (res?.Body?.response?.content) {
-					const info = JSON.parse(res?.Body?.response?.content);
-					getHSMPolicyList();
-					if (info?.ok) {
-						setSelectedPolicies([]);
-						setShowDeletePolicyView(false);
-						createSnackbar({
-							key: 'success',
-							type: 'success',
-							label: t('hsm.hsm_policy_correctly_deleted', 'HSM Policy was correctly deleted'),
-							autoHideTimeout: 3000,
-							hideButton: true,
-							replace: true
-						});
-					}
-				}
-			})
-			.catch((error) => {
-				setIsRequestInProgress(false);
-				createSnackbar({
-					key: 'error',
-					type: 'error',
-					label: error?.message
-						? error?.message
-						: t('label.something_wrong_error_msg', 'Something went wrong. Please try again.'),
-					autoHideTimeout: 3000,
-					hideButton: true,
-					replace: true
-				});
-			});
-	}, [server, selectedPolicies, t, createSnackbar, getHSMPolicyList, policies]);
-
+	const onEditSave = useCallback(
+		(editDetail: any) => {
+			setIsEditSaveInProgress(true);
+			createHSMpolicy(editDetail, true);
+		},
+		[createHSMpolicy]
+	);
 	return (
 		<Container mainAlignment="flex-start" width="100%">
 			<Row
@@ -718,6 +748,8 @@ const HSMsettingPanel: FC = () => {
 					policies={policies}
 					selectedPolicies={selectedPolicies[0]}
 					volumeList={volumeList}
+					onEditSave={onEditSave}
+					isEditSaveInProgress={isEditSaveInProgress}
 				/>
 			)}
 			{showDeletePolicyView && (

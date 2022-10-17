@@ -51,7 +51,16 @@ const EditHsmPolicy: FC<{
 	policies: any;
 	selectedPolicies: any;
 	volumeList: any;
-}> = ({ setShowEditHsmPolicyView, policies, selectedPolicies, volumeList }) => {
+	onEditSave: any;
+	isEditSaveInProgress: boolean;
+}> = ({
+	setShowEditHsmPolicyView,
+	policies,
+	selectedPolicies,
+	volumeList,
+	onEditSave,
+	isEditSaveInProgress
+}) => {
 	const { t } = useTranslation();
 	const createSnackbar = useSnackbar();
 	const [change, setChange] = useState('details');
@@ -114,6 +123,10 @@ const EditHsmPolicy: FC<{
 			icon: 'OptionsOutline'
 		}
 	];
+
+	const onSave = useCallback(() => {
+		onEditSave(hsmDetail);
+	}, [hsmDetail, onEditSave]);
 	return (
 		<>
 			<Container
@@ -141,15 +154,36 @@ const EditHsmPolicy: FC<{
 					<Row padding={{ horizontal: 'small' }}></Row>
 					<Row takeAvailableSpace mainAlignment="flex-start">
 						<Text size="medium" overflow="ellipsis" weight="bold">
-							{t('hsm.editing', 'Editing')}
+							{t('hsm.editing_policy', 'Editing Policy')}
 						</Text>
 					</Row>
 					<Row padding={{ right: 'extrasmall' }}>
-						<IconButton
-							size="medium"
-							icon="CloseOutline"
-							onClick={(): void => setShowEditHsmPolicyView(false)}
-						/>
+						{isDirty && (
+							<Row>
+								<Padding right="medium">
+									<Button
+										label={t('label.cancel', 'Cancel')}
+										color="secondary"
+										onClick={(): void => setShowEditHsmPolicyView(false)}
+									/>
+								</Padding>
+
+								<Button
+									label={t('label.save', 'Save')}
+									color="primary"
+									onClick={onSave}
+									disabled={isEditSaveInProgress}
+									loading={isEditSaveInProgress}
+								/>
+							</Row>
+						)}
+						{!isDirty && (
+							<IconButton
+								size="medium"
+								icon="CloseOutline"
+								onClick={(): void => setShowEditHsmPolicyView(false)}
+							/>
+						)}
 					</Row>
 				</Row>
 				<Row>
@@ -178,22 +212,9 @@ const EditHsmPolicy: FC<{
 					</Row>
 					<HSMContext.Provider value={{ hsmDetail, setHsmDetail }}>
 						<Container crossAlignment="flex-start" padding={{ all: '0px' }}>
-							{isDirty && (
-								<Container
-									orientation="horizontal"
-									mainAlignment="flex-end"
-									crossAlignment="flex-end"
-									background="gray6"
-									padding={{ all: 'medium' }}
-									height="85px"
-								>
-									<Padding right="small">
-										<Button label={t('label.cancel', 'Cancel')} color="secondary" />
-									</Padding>
-									<Button label={t('label.save', 'Save')} color="primary" />
-								</Container>
+							{change === 'details' && (
+								<EditHsmPolicyDetailSection currentPolicy={currentPolicy} setIsDirty={setIsDirty} />
 							)}
-							{change === 'details' && <EditHsmPolicyDetailSection currentPolicy={currentPolicy} />}
 							{change === 'volumes' && <EditHsmPolicyVolumesSection />}
 						</Container>
 					</HSMContext.Provider>

@@ -23,7 +23,8 @@ import { HSMContext } from '../hsm-context/hsm-context';
 
 const EditHsmPolicyDetailSection: FC<{
 	currentPolicy: any;
-}> = ({ currentPolicy }) => {
+	setIsDirty: any;
+}> = ({ currentPolicy, setIsDirty }) => {
 	const { operation, server }: { operation: string; server: string } = useParams();
 	const [t] = useTranslation();
 	const context = useContext(HSMContext);
@@ -266,7 +267,8 @@ const EditHsmPolicyDetailSection: FC<{
 				dateScale: value
 			}
 		]);
-	}, [selectedOption?.value, selectedScale?.value, value]);
+		setIsDirty(true);
+	}, [selectedOption?.value, selectedScale?.value, value, setIsDirty]);
 
 	const onDeletePolicy = useCallback(() => {
 		const reducedArr = policyCriteria.filter(
@@ -274,7 +276,8 @@ const EditHsmPolicyDetailSection: FC<{
 		);
 		setPolicyCriteria(reducedArr);
 		setSelectedPolicies([]);
-	}, [selectedPolicies, policyCriteria]);
+		setIsDirty(true);
+	}, [selectedPolicies, policyCriteria, setIsDirty]);
 
 	return (
 		<Container
@@ -305,6 +308,7 @@ const EditHsmPolicyDetailSection: FC<{
 						value={all}
 						onClick={(): void => {
 							onClickAll(!all);
+							setIsDirty(true);
 						}}
 					/>
 				</Container>
@@ -320,6 +324,7 @@ const EditHsmPolicyDetailSection: FC<{
 								...prev,
 								isMessageEnabled: !isMessageEnable
 							}));
+							setIsDirty(true);
 						}}
 					/>
 				</Container>
@@ -335,6 +340,7 @@ const EditHsmPolicyDetailSection: FC<{
 								...prev,
 								isDocumentEnabled: !isDocument
 							}));
+							setIsDirty(true);
 						}}
 					/>
 				</Container>
@@ -350,6 +356,7 @@ const EditHsmPolicyDetailSection: FC<{
 								...prev,
 								isEventEnabled: !isEventEnable
 							}));
+							setIsDirty(true);
 						}}
 					/>
 				</Container>
@@ -365,6 +372,7 @@ const EditHsmPolicyDetailSection: FC<{
 								...prev,
 								isContactEnabled: !isContactEnable
 							}));
+							setIsDirty(true);
 						}}
 					/>
 				</Container>
