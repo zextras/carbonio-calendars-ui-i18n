@@ -566,7 +566,7 @@
             "local": "Dodaj z tego urządzenia",
             "draganddrop": {
                 "content": "Upuść tutaj załączniki, żeby szybko dodać je do spotkania",
-                "title": "Tryb Drag&Drop"
+                "title": "Tryb Przeciągnij i upuść"
             },
             "drive": "Dodaj z Dysku",
             "url": "Dodaj publiczny link z Files",
