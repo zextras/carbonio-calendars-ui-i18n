@@ -667,6 +667,26 @@ const BackupConfiguration: FC = () => {
 							replace: true
 						});
 					} else {
+						const selectedServer = allServers.find(
+							(serverItem: any) => serverItem?.name === server
+						);
+						getSoapFetchRequest(
+							`/service/extension/zextras_admin/core/getServer/${selectedServer?.id}?module=zxbackup`
+						).then((data: any) => {
+							if (data && data?.attributes) {
+								const attributes = data?.attributes;
+								if (attributes?.backupArchivingStore) {
+									const value = attributes?.backupArchivingStore?.value;
+									if (isEmpty(value)) {
+										setBackupArchivingStore({});
+										setIsBackArchivingStoreEmpty(true);
+									} else {
+										setBackupArchivingStore(value);
+										setIsBackArchivingStoreEmpty(false);
+									}
+								}
+							}
+						});
 						setIsShowSetExternalVolume(false);
 						setIsManageExternalVolumeEnable(false);
 						createSnackbar({
@@ -693,7 +713,7 @@ const BackupConfiguration: FC = () => {
 					});
 				});
 		},
-		[createSnackbar, t]
+		[createSnackbar, t, server, allServers]
 	);
 
 	const getAllBuckets = useCallback(() => {
