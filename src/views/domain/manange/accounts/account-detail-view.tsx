@@ -21,7 +21,6 @@ import {
 } from '@zextras/carbonio-design-system';
 import { Trans, useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import { soapFetch } from '@zextras/carbonio-shell-ui';
 import { getMailboxQuota } from '../../../../services/account-list-directory-service';
 import { AccountContext } from './account-context';
 import { deleteAccount } from '../../../../services/delete-account-service';
@@ -226,15 +225,20 @@ const AccountDetailView: FC<any> = ({
 					const existingSession = resp?.s;
 					if (existingSession) {
 						const session: UserSession[] = [];
-						existingSession.forEach((element: any) => {
-							session.push({
-								ip: '',
-								name: element?.name,
-								sid: element?.sid,
-								service: '',
-								zid: element?.zid
+						const filterSession = existingSession.filter(
+							(sessionItem: any) => sessionItem?.name === selectedAccount?.name
+						);
+						if (filterSession.length > 0) {
+							filterSession.forEach((element: any) => {
+								session.push({
+									ip: '',
+									name: element?.name,
+									sid: element?.sid,
+									service: '',
+									zid: element?.zid
+								});
 							});
-						});
+						}
 						setUserSessionList((prev: any) => [...prev, ...session]);
 					}
 				}
@@ -273,22 +277,43 @@ const AccountDetailView: FC<any> = ({
 
 	const onEndSession = useCallback(() => {
 		setIsRequestInProgress(true);
-		endSession(selectedSession[0])
-			.then((resp: any) => {
-				setIsRequestInProgress(false);
-				if (resp && resp?._jsns) {
-					setUserSessionList((prev: any) => [
-						...prev.filter((item: UserSession) => item?.sid !== selectedSession[0])
-					]);
-					setSelectedSession([]);
-					createSnackbar({
-						key: 'success',
-						type: 'success',
-						label: t('label.session_end_success', 'Session end successfully'),
-						autoHideTimeout: 3000,
-						hideButton: true,
-						replace: true
-					});
+		getDelegateAuthRequest(selectedAccount?.id)
+			.then((res: any) => {
+				if (res && res?.authToken) {
+					const token = res?.authToken[0]?._content;
+					setIsRequestInProgress(true);
+					endSession(selectedSession[0], selectedAccount?.name, token)
+						.then((resp: any) => {
+							setIsRequestInProgress(false);
+							if (resp && resp?._jsns) {
+								setUserSessionList((prev: any) => [
+									...prev.filter((item: UserSession) => item?.sid !== selectedSession[0])
+								]);
+								setSelectedSession([]);
+								createSnackbar({
+									key: 'success',
+									type: 'success',
+									label: t('label.session_end_success', 'Session end successfully'),
+									autoHideTimeout: 3000,
+									hideButton: true,
+									replace: true
+								});
+							}
+						})
+						.then((error: any) => {
+							setIsRequestInProgress(false);
+							createSnackbar({
+								key: 'error',
+								type: 'error',
+								label: error.message
+									? error.message
+									: t('label.something_wrong_error_msg', 'Something went wrong. Please try again.'),
+
+								autoHideTimeout: 3000,
+								hideButton: true,
+								replace: true
+							});
+						});
 				}
 			})
 			.then((error: any) => {
@@ -305,7 +330,7 @@ const AccountDetailView: FC<any> = ({
 					replace: true
 				});
 			});
-	}, [selectedSession, t, createSnackbar]);
+	}, [selectedAccount?.id, selectedSession, selectedAccount?.name, t, createSnackbar]);
 
 	return (
 		<AccountDetailContainer background="gray5" mainAlignment="flex-start">

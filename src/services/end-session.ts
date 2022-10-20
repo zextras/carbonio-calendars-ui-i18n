@@ -6,8 +6,25 @@
 
 import { soapFetch } from '@zextras/carbonio-shell-ui';
 
-export const endSession = async (sessionId: string): Promise<any> =>
-	soapFetch(`EndSession`, {
-		_jsns: 'urn:zimbraAccount',
-		sessionId
-	});
+export const endSession = async (
+	sessionId: string,
+	accountName: string,
+	token: string
+): Promise<any> =>
+	soapFetch(
+		`EndSession`,
+		{
+			_jsns: 'urn:zimbraAccount',
+			sessionId,
+			logoff: '0',
+			all: '0',
+			excludeCurrent: '0'
+		},
+		accountName,
+		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+		// @ts-ignore
+		undefined,
+		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+		// @ts-ignore
+		token
+	);
