@@ -10,7 +10,7 @@ import {
 	Row,
 	Button,
 	Text,
-	Icon,
+	useSnackbar,
 	Table,
 	Divider,
 	ChipInput
@@ -73,7 +73,9 @@ const EditAccountSecuritySection: FC = () => {
 	const [qrData, setQrData] = useState('');
 	const [sendEmailTo, setSendEmailTo] = useState('');
 	const [pinCodes, setPinCodes] = useState<any>([]);
+	const [selectedRows, setSelectedRows] = useState([]);
 	const [t] = useTranslation();
+	const createSnackbar = useSnackbar();
 	const wizardSteps = useMemo(
 		() => [
 			{
@@ -315,6 +317,37 @@ const EditAccountSecuritySection: FC = () => {
 			}
 		});
 	};
+	const handleDeleteOTP = (): void => {
+		fetchSoap('zextras', {
+			_jsns: 'urn:zimbraAdmin',
+			module: 'ZxAuth',
+			action: 'delete_totp_command',
+			account: `${accountDetail?.uid}@${domainName}`,
+			id: selectedRows?.[0]
+		}).then((res: any) => {
+			if (res.ok) {
+				setSelectedRows([]);
+				createSnackbar({
+					key: 'success',
+					type: 'success',
+					label: t('label.otp_deleted_successfully', 'OTP has been deleted successfully'),
+					autoHideTimeout: 3000,
+					hideButton: true,
+					replace: true
+				});
+				getListOtp(`${accountDetail?.uid}@${domainName}`);
+			} else {
+				createSnackbar({
+					key: 'error',
+					type: 'error',
+					label: t('label.something_wrong_wrror_msg', 'Something went wrong. Please try again.'),
+					autoHideTimeout: 3000,
+					hideButton: true,
+					replace: true
+				});
+			}
+		});
+	};
 	return (
 		<Container
 			mainAlignment="flex-start"
@@ -347,7 +380,8 @@ const EditAccountSecuritySection: FC = () => {
 								iconPlacement="right"
 								color="error"
 								height={44}
-								disabled
+								disabled={!selectedRows?.length}
+								onClick={(): void => handleDeleteOTP()}
 							/>
 						</Row>
 						<Row
@@ -366,7 +400,8 @@ const EditAccountSecuritySection: FC = () => {
 									<Table
 										rows={otpList}
 										headers={headers}
-										showCheckbox={false}
+										multiSelect={false}
+										onSelectionChange={setSelectedRows}
 										style={{ overflow: 'auto', height: '100%' }}
 									/>
 								)}
