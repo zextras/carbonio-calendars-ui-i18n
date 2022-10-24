@@ -530,7 +530,7 @@
                 "manager": "Manager (może wyświetlać, edytować, dodawać oraz usuwać)"
             },
             "share_calendar_with": {
-                "internal_users_groups": "Użytkownicy lub Grupy z mojej domeny",
+                "internal_users_groups": "Użytkownicy lub grupy z mojej domeny",
                 "public": "Publiczny (można tylko wyświetlać, hasło niewymagane)",
                 "external_guests": "Goście spoza mojej domeny (mogą tylko wyświetlać)"
             }
@@ -644,7 +644,7 @@
         "copy_outlook_url": "Skopiuj link do Outlooka",
         "copy_vector_url": "Skopiuj link do Widoku",
         "enable_disable_rich_text": "Włącz/Wyłącz rozbudowany edytor tekstu",
-        "chat_room": "Link do Wirtualnego Pokoju",
+        "chat_room": "Link do wirtualnego pokoju",
         "equipment": "Ekwipunek",
         "location": "Lokalizacja",
         "virtual_chat": "Wirtualny Czat",
