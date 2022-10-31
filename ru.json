@@ -62,7 +62,6 @@
     },
     "message": {
         "invite_has_no_message": "Это приглашения не содержит текста",
-        "you_will_see_the_subject_here": "Тема",
         "you_are_organizer": "<Row><Text> <BoldText> Вы организатор</BoldText> </Text></Row>",
         "somebody_invited_you": "<strong> {{кто-то}} </strong> пригласил вас",
         "meeting_canceled": "Следующая встреча отменена",
@@ -524,7 +523,6 @@
         "proposed_time_accepted": "Вы приняли предлагаемое время",
         "url_copied": "{{title}} скопировано",
         "share_folder_success": "Доступ к календарю предоставлен",
-        "new_time_proposed_success": "Предложено новое время",
         "tag_applied": "Тег {{tag}} применен",
         "tag_removed": "Тег {{tag}} удален"
     },

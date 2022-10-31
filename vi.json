@@ -268,7 +268,6 @@
         "invite": {
             "error": "Lỗi"
         },
-        "new_time_proposed_success": "Đề xuất thời gian mới",
         "tag_applied": "đã áp dụng thẻ {{tag}}",
         "tag_removed": "Đã xoá thẻ {{tag}}",
         "url_copied": "Đã sao chép {{title}}"
@@ -390,7 +389,6 @@
     "message": {
         "sure_to_delete_all_occurences_appointment": "Bạn có chắc chắn muốn xóa tất cả các lần xuất hiện của cuộc hẹn này không?",
         "sure_to_delete_appointment": "Bạn có chắc chắn muốn xóa cuộc hẹn này không?",
-        "you_will_see_the_subject_here": "Chủ đề",
         "you_sure_move_calendar_trash": "Bạn có chắc chắn muốn xóa lịch {{name}} ?",
         "delete_all_occurences": "Xóa tất cả các lần xuất hiện",
         "delete_future_occurences": "Xóa trường hợp này và tất cả các lần xuất hiện trong tương lai",

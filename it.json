@@ -61,7 +61,6 @@
         "Not_answered": "non ha risposto"
     },
     "message": {
-        "you_will_see_the_subject_here": "Oggetto",
         "you_are_organizer": "<Row><Text> <BoldText>Tu </BoldText> sei l'organizzatore </Text></Row>",
         "somebody_invited_you": "<strong>{{somebody}}</strong> ti ha invitato",
         "meeting_canceled": "La riunione seguente è stata annullata",
@@ -398,7 +397,6 @@
         "proposed_time_accepted": "Hai accettato l'orario proposto",
         "share_folder_success": "Calendario condiviso correttamente",
         "url_copied": "{{title}} copiato",
-        "new_time_proposed_success": "Nuovo orario proposto",
         "tag_applied": "Etichetta {{tag}} applicata",
         "tag_removed": "Etichetta {{tag}} rimossa"
     },

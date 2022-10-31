@@ -144,7 +144,6 @@
         "you_are_organizer": "<Row><Text> <BoldText> Sizin  </BoldText> organize ettiğiniz </Text></Row>",
         "you_sure_delete_calendar": "{{name}} takvimi tamamen silmek istediğinizden emin misiniz?",
         "you_sure_move_calendar_trash": "{{name}} takvimi silmek istediğinizden emin misiniz?",
-        "you_will_see_the_subject_here": "Konu",
         "you_sure_delete_instance": "{{title}} randevusunun bu öğesini silmek istediğinizden emin misiniz?",
         "delete_tag_message1": "{{name}} etiketini silmek istediğinizden emin misiniz?",
         "delete_tag_message2": "Silinince önceden işaretlenmiş tüm öğelerden etiket kaldırılacak.",
@@ -169,7 +168,6 @@
         "proposed_time_accepted": "Önerilen saati kabul ettiniz",
         "share_folder_success": "Takvim başarıyla paylaşıldı",
         "url_copied": "{{title}} kopyalandı",
-        "new_time_proposed_success": "Yeni saat önerildi",
         "tag_applied": "{{tag}} etiketi uygulandı",
         "tag_removed": "{{tag}} etiketi kaldırıldı"
     },
