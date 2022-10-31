@@ -709,6 +709,7 @@
         "enable_past_due_reminders": "Enable reminders of appointments in the past",
         "enable_start_tls": "Enable StartTLS",
         "enable_toaster_notification_for_new_calendar_events": "enable toaster notification for new calendar events",
+        "enabled": "Enabled",
         "enter_email_address": "Enter E-mail address",
         "error": "{{message}}",
         "everyone": "Everyone",
