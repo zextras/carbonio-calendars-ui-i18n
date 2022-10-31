@@ -126,7 +126,9 @@
         "required_participant_plural": "{{count}} Partecipanti",
         "send_email": "Invia e-mail",
         "edit_series_warning": "Procedendo con le modifiche alla serie, tutte le istanze precedentemente modificate o eliminate, verranno ripristinate secondo le nuove impostazioni di questa serie.",
-        "appointment_invitation_sent": "Invito all'appuntamento inviato"
+        "appointment_invitation_sent": "Invito all'appuntamento inviato",
+        "want_to_edit_modified_msg": "Vuoi modificare il messaggio dell'appuntamento?",
+        "meeting_modified": "La riunione seguente è stata modificata"
     },
     "label": {
         "to": "A",
@@ -303,7 +305,10 @@
         "select": "Seleziona",
         "root": "Primaria",
         "choose_file": "Scegli file",
-        "cancel": "annulla"
+        "cancel": "annulla",
+        "subject": "Oggetto",
+        "new_time_proposed": "Nuovo Orario Proposto",
+        "appointment_is_private": "L'appuntamento è privato."
     },
     "action": {
         "send": "Invia",
@@ -317,7 +322,8 @@
         "send_cancellation": "Invia cancellazione",
         "share_calendar": "Condividi Calendario",
         "calendar_access_share": "Condivisione accesso calendario",
-        "empty_trash_confirmation": "Tutti gli elementi che appartengono a Email, Contatti, Calendari, Impegni e valigetta verranno eliminati. Vuoi procedere spostando tutto nel cestino?"
+        "empty_trash_confirmation": "Tutti gli elementi che appartengono a Email, Contatti, Calendari, Impegni e valigetta verranno eliminati. Vuoi procedere spostando tutto nel cestino?",
+        "send_edit": "Invia Modifica"
     },
     "button": {
         "customize_modal": "Personalizza"
