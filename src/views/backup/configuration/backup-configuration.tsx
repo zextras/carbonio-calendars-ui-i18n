@@ -85,6 +85,8 @@ const BackupConfiguration: FC = () => {
 	const [manageExternalVolumeBucketList, setManageExternalVolumeBucketList] = useState<any>([]);
 	const [manageExternalVolumeLocalMountpoint, setManageExternalVolumeLocalMountpoint] =
 		useState<string>('');
+	const [manageExternalVolumeNewLocalMountpoint, setManageExternalVolumeNewLocalMountpoint] =
+		useState<string>('');
 	const [rootVolumePath, setRootVolumePath] = useState<string>('');
 
 	const destinationOptions: any[] = useMemo(
@@ -848,7 +850,7 @@ const BackupConfiguration: FC = () => {
 			isManageExternalVolumeEnable &&
 			destinationSelected?.value === MOVE_TO_LOCAL_MOUNT_POINT
 		) {
-			body.volumeRootPath = manageExternalVolumeLocalMountpoint;
+			body.volumeRootPath = manageExternalVolumeNewLocalMountpoint;
 			body.storeType = 'LOCAL';
 		}
 
@@ -859,18 +861,14 @@ const BackupConfiguration: FC = () => {
 		manageExternalVolumeConfiguration?.value,
 		manageExternalVolumeBucketList?.value,
 		onBackupExternalVolume,
-		manageExternalVolumeLocalMountpoint,
-		manageExternalVolumeType
+		manageExternalVolumeType,
+		manageExternalVolumeNewLocalMountpoint,
+		manageExternalVolumeLocalMountpoint
 	]);
 
 	const isSetManageExternalButtonVisible = useMemo(
 		() => isManageExternalVolumeEnable || isShowSetExternalVolume,
 		[isManageExternalVolumeEnable, isShowSetExternalVolume]
-	);
-
-	const isShowDefaultManageFields = useMemo(
-		() => !isSetManageExternalButtonVisible && !isBackArchivingStoreEmpty,
-		[isSetManageExternalButtonVisible, isBackArchivingStoreEmpty]
 	);
 
 	return (
@@ -1051,34 +1049,32 @@ const BackupConfiguration: FC = () => {
 						</Container>
 					</ListRow>
 
-					{isShowDefaultManageFields && (
-						<Container>
-							<ListRow>
-								<Container padding={{ top: 'large' }}>
-									<Input
-										label={t('backup.external_volume', 'External Volume')}
-										value={manageExternalVolumeType}
-										background="gray5"
-										readOnly
-									/>
-								</Container>
-							</ListRow>
-							<ListRow>
-								<Container padding={{ top: 'large', bottom: 'large' }}>
-									<Input
-										label={t('backup.bucket_configuration', 'Bucket Configuration')}
-										value={
-											manageExternalVolumeType.startsWith('LOCAL')
-												? manageExternalVolumeLocalMountpoint
-												: manageExternalVolumeConfiguration?.value
-										}
-										background="gray5"
-										readOnly
-									/>
-								</Container>
-							</ListRow>
-						</Container>
-					)}
+					<Container>
+						<ListRow>
+							<Container padding={{ top: 'large' }}>
+								<Input
+									label={t('backup.external_volume', 'External Volume')}
+									value={manageExternalVolumeType}
+									background="gray5"
+									readOnly
+								/>
+							</Container>
+						</ListRow>
+						<ListRow>
+							<Container padding={{ top: 'large', bottom: 'large' }}>
+								<Input
+									label={t('backup.bucket_configuration', 'Bucket Configuration')}
+									value={
+										manageExternalVolumeType.startsWith('LOCAL')
+											? manageExternalVolumeLocalMountpoint
+											: manageExternalVolumeConfiguration?.value
+									}
+									background="gray5"
+									readOnly
+								/>
+							</Container>
+						</ListRow>
+					</Container>
 
 					{isShowSetExternalVolume && (
 						<ListRow>
@@ -1147,7 +1143,7 @@ const BackupConfiguration: FC = () => {
 
 					{isManageExternalVolumeEnable && (
 						<ListRow>
-							<Container padding={{ top: 'large' }}>
+							<Container padding={{ bottom: 'large' }}>
 								<Select
 									items={destinationOptions}
 									background="gray5"
@@ -1160,38 +1156,10 @@ const BackupConfiguration: FC = () => {
 						</ListRow>
 					)}
 
-					{isManageExternalVolumeEnable && destinationSelected?.value === MANAGE_EXTERNAL_VOLUME && (
-						<Container>
-							<ListRow>
-								<Container padding={{ top: 'large' }}>
-									<Input
-										label={t('backup.external_volume', 'External Volume')}
-										value={manageExternalVolumeType}
-										background="gray5"
-										readOnly
-									/>
-								</Container>
-							</ListRow>
-							<ListRow>
-								<Container padding={{ top: 'large', bottom: 'large' }}>
-									<Input
-										label={t('backup.bucket_configuration', 'Bucket Configuration')}
-										value={
-											manageExternalVolumeType.startsWith('LOCAL')
-												? manageExternalVolumeLocalMountpoint
-												: manageExternalVolumeConfiguration?.value
-										}
-										background="gray5"
-										readOnly
-									/>
-								</Container>
-							</ListRow>
-						</Container>
-					)}
 					{isManageExternalVolumeEnable && destinationSelected?.value === MOVE_TO_EXTERNAL_BUCKET && (
 						<Container>
 							<ListRow>
-								<Container padding={{ top: 'large', bottom: 'large' }}>
+								<Container padding={{ bottom: 'large' }}>
 									<Select
 										items={bucketListOption}
 										background="gray5"
@@ -1208,13 +1176,13 @@ const BackupConfiguration: FC = () => {
 						destinationSelected?.value === MOVE_TO_LOCAL_MOUNT_POINT && (
 							<Container>
 								<ListRow>
-									<Container padding={{ top: 'large', bottom: 'large' }}>
+									<Container padding={{ bottom: 'large' }}>
 										<Input
 											label={t('backup.local_mountpoint', 'Local Mountpoint')}
-											value={manageExternalVolumeLocalMountpoint}
+											value={manageExternalVolumeNewLocalMountpoint}
 											background="gray5"
 											onChange={(e: any): any => {
-												setManageExternalVolumeLocalMountpoint(e.target.value);
+												setManageExternalVolumeNewLocalMountpoint(e.target.value);
 											}}
 										/>
 									</Container>
