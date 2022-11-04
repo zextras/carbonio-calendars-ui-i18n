@@ -34,7 +34,7 @@
         "minutes": "{{count}} minuto",
         "minutes_plural": "{{count}} minuti",
         "second_before": "{{count}} secondo prima",
-        "second_before_plural": ""
+        "second_before_plural": "{{count}} secondi prima"
     },
     "participants": {
         "AC_with_count": "Accettato",
@@ -638,5 +638,6 @@
     },
     "preview": {
         "close": "Chiudi Anteprima"
-    }
+    },
+    "recurrent_in_allday": "Non è possibile trascinare un appuntamento ricorrente dove è già presente un appuntamento che occupa l'intera giornata"
 }
