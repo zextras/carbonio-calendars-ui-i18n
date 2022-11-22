@@ -11,7 +11,6 @@ import {
 	Button,
 	Row,
 	Divider,
-	Select,
 	Input,
 	Icon,
 	Table,
@@ -20,12 +19,12 @@ import {
 
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import logo from '../../assets/gardian.svg';
+import { filter, includes } from 'lodash';
+import logo from '../../assets/ninja_robo.svg';
 import NewBucket from './new-bucket';
 import BucketDeleteModel from './delete-bucket-model';
 import DetailsPanel from './details-panel';
 import { fetchSoap } from '../../services/bucket-service';
-import { BucketTypeItems } from '../utility/utils';
 import EditBucketDetailPanel from './edit-bucket-details-panel';
 import { AbsoluteContainer } from '../components/styled';
 
@@ -57,6 +56,7 @@ const BucketListTable: FC<{
 	onDoubleClick: any;
 	onClick: any;
 }> = ({ volumes, selectedRows, onSelectionChange, onDoubleClick, onClick }) => {
+	const [t] = useTranslation();
 	const tableRows = useMemo(
 		() =>
 			volumes.map((v, i) => ({
@@ -103,9 +103,26 @@ const BucketListTable: FC<{
 				onSelectionChange={onSelectionChange}
 			/>
 			{tableRows.length === 0 && (
-				<Row padding={{ top: 'extralarge', horizontal: 'extralarge' }} width="fill">
-					<Text>Empty Table</Text>
-				</Row>
+				<Container crossAlignment="center" mainAlignment="flex-start" style={{ marginTop: '64px' }}>
+					<Text overflow="break-word" weight="normal" size="large">
+						<img src={logo} alt="logo" />
+					</Text>
+					<Padding all="medium" width="494px">
+						<Text
+							color="gray1"
+							overflow="break-word"
+							weight="normal"
+							size="large"
+							width="60%"
+							style={{ whiteSpace: 'pre-line', textAlign: 'center' }}
+						>
+							{t(
+								'select_bucket_or_create_bucket',
+								'It seems like you haven\'t setup a bucket type. \n Click on the "CREATE +" button to create a new one.'
+							)}
+						</Text>
+					</Padding>
+				</Container>
 			)}
 		</Container>
 	);
@@ -117,7 +134,8 @@ const BucketDetailPanel: FC = () => {
 	const [bucketselection, setBucketselection] = useState([]);
 	const [bucketDeleteName, setBucketDeleteName] = useState<object | any>({});
 	const [bucketType, setBucketType] = useState('');
-	const [bucketList, setBucketList] = useState([]);
+	const [bucketList, setBucketList] = useState<Array<object | any>>([]);
+	const [allBucketList, setAllBucketList] = useState([]);
 	const [connectionData, setConnectionData] = useState();
 	const [detailsBucket, setDetailsBucket] = useState(false);
 	const [toggleWizardSection, setToggleWizardSection] = useState(false);
@@ -126,7 +144,6 @@ const BucketDetailPanel: FC = () => {
 	const [showEditDetailView, setShowEditDetailView] = useState(false);
 	const [toggleForGetAPICall, setToggleForGetAPICall] = useState(false);
 	const [selectedRow, setSelectedRow] = useState<any>();
-	const bucketTypeItems = useMemo(() => BucketTypeItems(t), [t]);
 
 	const closeHandler = (): any => {
 		setOpen(false);
@@ -140,18 +157,19 @@ const BucketDetailPanel: FC = () => {
 			_jsns: 'urn:zimbraAdmin',
 			module: 'ZxCore',
 			action: 'listBuckets',
-			type: bucketType,
+			type: 'all',
 			targetServer: server,
 			showSecrets: true
 		}).then((res: any) => {
 			const response = JSON.parse(res.Body.response.content);
 			if (response.ok) {
 				setBucketList(response.response.values);
+				setAllBucketList(response.response.values);
 			} else {
 				setBucketList([]);
 			}
 		});
-	}, [bucketType, server]);
+	}, [server]);
 
 	const deleteHandler = useCallback(() => {
 		// eslint-disable-next-line no-restricted-syntax
@@ -224,7 +242,16 @@ const BucketDetailPanel: FC = () => {
 	useEffect(() => {
 		getBucketListType();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [bucketType, toggleWizardSection]);
+	}, [toggleWizardSection]);
+
+	const filterBucketList = (e: any): void => {
+		if (e.target.value !== '') {
+			console.log('_dd bucketList', bucketList);
+			setBucketList(filter(bucketList, (o) => o.bucketName.toLowerCase().includes(e.target.value)));
+		} else {
+			setBucketList(allBucketList);
+		}
+	};
 
 	return (
 		<>
@@ -276,17 +303,30 @@ const BucketDetailPanel: FC = () => {
 					</Text>
 				</Row>
 				<Divider />
-				<Row style={{ padding: '32px 16px 16px 16px' }} width="100%">
-					<Select
-						items={bucketTypeItems}
-						background="gray5"
-						label={t('buckets.bucket_type', 'Buckets Type')}
-						onChange={(e: any): void => {
-							const volumeObject: any = bucketTypeItems.find((s) => s.value === e);
-							setBucketType(volumeObject?.value);
+				<Padding vertical="small" />
+				<Row
+					width="100%"
+					mainAlignment="flex-end"
+					orientation="horizontal"
+					padding={{ top: 'extralarge', right: 'large', left: 'large' }}
+					style={{ gap: '16px' }}
+				>
+					<Button
+						type="outlined"
+						label={t('label.bucket_create_button', 'CREATE')}
+						icon="PlusOutline"
+						color="primary"
+						onClick={(): void => {
+							setToggleWizardSection(!toggleWizardSection);
+							if (showDetails) setShowDetails(!showDetails);
 						}}
-						showCheckbox={false}
-						padding={{ right: 'medium' }}
+					/>
+					<Button
+						type="outlined"
+						label={t('label.bucket_delete_button', 'DELETE')}
+						icon="CloseOutline"
+						color="error"
+						disabled
 					/>
 				</Row>
 				{bucketDeleteName && (
@@ -297,111 +337,32 @@ const BucketDetailPanel: FC = () => {
 						BucketDetail={bucketDeleteName}
 					/>
 				)}
-				{bucketType ? (
-					<>
-						<Row
-							width="100%"
-							mainAlignment="flex-end"
-							orientation="horizontal"
-							style={{ gap: '8px', padding: '8px 14px' }}
-						>
-							<Button
-								type="outlined"
-								label={t('label.create_button', 'CREATE')}
-								icon="Plus"
-								color="primary"
-								onClick={(): void => {
-									setToggleWizardSection(!toggleWizardSection);
-									if (showDetails) setShowDetails(!showDetails);
-								}}
-							/>
-						</Row>
-						<Row width="100%" style={{ padding: '3px 13px' }}>
-							<Input
-								background="gray5"
-								label={t('buckets.filter_buckets_list', 'Filter Buckets List')}
-								CustomIcon={(): any => <Icon icon="FunnelOutline" size="large" color="grey" />}
-							/>
-						</Row>
-						{bucketList?.length !== 0 ? (
-							<Row style={{ padding: '16px 14px 0px 14px' }} width="100%">
-								<BucketListTable
-									volumes={bucketList}
-									selectedRows={bucketselection}
-									onSelectionChange={(selected: any): any => {
-										setBucketselection(selected);
-										const volumeObject: any = bucketList.find((s, index) => index === selected[0]);
-										setShowDetails(false);
-										setBucketDeleteName(volumeObject);
-									}}
-									onDoubleClick={(i: any): any => {
-										handleDoubleClick(i);
-									}}
-									onClick={(i: any): any => {
-										handleClick(i);
-									}}
-								/>
-							</Row>
-						) : (
-							<Container style={{ marginBottom: '109px' }}>
-								<Text overflow="break-word" weight="normal" size="large">
-									<img src={logo} alt="logo" />
-								</Text>
-								<Padding all="medium" width="294px">
-									<Text
-										color="gray1"
-										overflow="break-word"
-										weight="normal"
-										size="large"
-										width="60%"
-										style={{ whiteSpace: 'pre-line', textAlign: 'center' }}
-									>
-										{t(
-											'label.selected_empty_bucket',
-											`You haven’t selected a bucket, yet. But you can start typing in the field above to start viewing them.`
-										)}
-									</Text>
-								</Padding>
-							</Container>
-						)}
-					</>
-				) : (
-					<Container>
-						<Text overflow="break-word" weight="normal" size="large">
-							<img src={logo} alt="logo" />
-						</Text>
-						<Padding all="medium" width="406px">
-							<Text
-								color="gray1"
-								overflow="break-word"
-								weight="normal"
-								size="large"
-								width="60%"
-								style={{ whiteSpace: 'pre-line', textAlign: 'center' }}
-							>
-								{t(
-									'select_bucket_or_create_new_bucket',
-									'It seems like you haven\'t set up a bucket type. Click the "NEW BUCKET" button to create a new one.'
-								)}
-							</Text>
-						</Padding>
-						<Padding all="medium">
-							<Text
-								size="small"
-								overflow="break-word"
-								style={{ whiteSpace: 'pre-line', textAlign: 'center' }}
-							>
-								<Button
-									type="outlined"
-									label={t('buckets.create_new_bucket', 'NEW BUCKET')}
-									icon="Plus"
-									color="info"
-									onClick={(): void => setToggleWizardSection(!toggleWizardSection)}
-								/>
-							</Text>
-						</Padding>
-					</Container>
-				)}
+				<Row width="100%" style={{ padding: '16px 13px' }}>
+					<Input
+						background="gray5"
+						label={t('buckets.filter_buckets_list', 'Filter Buckets List')}
+						CustomIcon={(): any => <Icon icon="FunnelOutline" size="large" color="grey" />}
+						onChange={filterBucketList}
+					/>
+				</Row>
+				<Row style={{ padding: '0px 14px 0px 14px' }} width="100%">
+					<BucketListTable
+						volumes={bucketList}
+						selectedRows={bucketselection}
+						onSelectionChange={(selected: any): any => {
+							setBucketselection(selected);
+							const volumeObject: any = bucketList.find((s, index) => index === selected[0]);
+							setShowDetails(false);
+							setBucketDeleteName(volumeObject);
+						}}
+						onDoubleClick={(i: any): any => {
+							handleDoubleClick(i);
+						}}
+						onClick={(i: any): any => {
+							handleClick(i);
+						}}
+					/>
+				</Row>
 			</RelativeContainer>
 		</>
 	);

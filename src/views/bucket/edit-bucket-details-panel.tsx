@@ -23,7 +23,7 @@ import { useTranslation } from 'react-i18next';
 import { find } from 'lodash';
 import { BucketRegions, BucketRegionsInAlibaba, BucketTypeItems } from '../utility/utils';
 import { fetchSoap } from '../../services/bucket-service';
-import { ALIBABA, EMC } from '../../constants';
+import { ALIBABA, AMAZON_WEB_SERVICE_S3, CUSTOM_S3, EMC } from '../../constants';
 
 const DetailsHeaders = [
 	{
@@ -256,8 +256,8 @@ const EditBucketDetailPanel: FC<{
 			region: bucketDetail?.region !== undefined ? regionData.value : '',
 			targetServer: server
 		}).then((res: any) => {
-			const updateResData = JSON.parse(res.Body.response.content);
-			if (updateResData.ok) {
+			const updateResData = JSON.parse(res?.Body?.response?.content);
+			if (updateResData?.ok) {
 				getBucketListType();
 				setToggleForGetAPICall(!toggleForGetAPICall);
 				setButtonLabel(t('label.verify_connector', 'VERIFY CONNECTOR'));
@@ -268,7 +268,7 @@ const EditBucketDetailPanel: FC<{
 					key: 'success',
 					type: 'success',
 					label: t('label.changes_have_been_updated', '{{message}}', {
-						message: updateResData.response.message
+						message: updateResData?.response?.message
 					}),
 					autoHideTimeout: 3000,
 					hideButton: true,
@@ -280,7 +280,7 @@ const EditBucketDetailPanel: FC<{
 					key: 'error',
 					type: 'error',
 					label: t('label.error', '{{message}}', {
-						message: updateResData.error.message
+						message: updateResData?.error?.message
 					}),
 					autoHideTimeout: 3000,
 					hideButton: true,
@@ -293,10 +293,10 @@ const EditBucketDetailPanel: FC<{
 
 	const onUndo = (): void => {
 		const upperBucketType =
-			bucketDetail.storeType !== EMC
+			bucketDetail?.storeType !== EMC
 				? bucketDetail.storeType.charAt(0).toUpperCase() +
 				  bucketDetail.storeType.slice(1).toLowerCase()
-				: bucketDetail.storeType;
+				: bucketDetail?.storeType;
 		const bucketTypeValue: any = find(
 			bucketTypeItems,
 			(o) => o.value?.toLowerCase() === upperBucketType?.toLowerCase()
@@ -306,7 +306,7 @@ const EditBucketDetailPanel: FC<{
 			: setBucketType(bucketTypeValue);
 		previousDetail?.bucketName
 			? setBucketName(previousDetail?.bucketName)
-			: setBucketName(bucketName);
+			: setBucketName(bucketDetail?.bucketName);
 		const regionValue: any = find(
 			upperBucketType === ALIBABA && bucketDetail?.region !== undefined
 				? bucketRegionsInAlibaba
@@ -329,7 +329,7 @@ const EditBucketDetailPanel: FC<{
 	const onSelectionChange = useCallback(
 		(e: any): any => {
 			const volumeObject =
-				bucketDetail?.region !== undefined && bucketDetail.storeType === ALIBABA.toUpperCase()
+				bucketDetail?.region !== undefined && bucketDetail?.storeType === ALIBABA.toUpperCase()
 					? bucketRegionsInAlibaba.find((s) => s.value === e)
 					: bucketRegions.find((s) => s.value === e);
 			setRegionData(volumeObject);
@@ -347,15 +347,25 @@ const EditBucketDetailPanel: FC<{
 
 	useEffect(() => {
 		const upperBucketType =
-			bucketDetail.storeType !== EMC
+			bucketDetail?.storeType !== EMC && bucketDetail?.storeType !== AMAZON_WEB_SERVICE_S3
 				? bucketDetail.storeType.charAt(0).toUpperCase() +
 				  bucketDetail.storeType.slice(1).toLowerCase()
-				: bucketDetail.storeType;
-		const bucketTypeValue: any = find(bucketTypeItems, (o) => o.value === upperBucketType)?.value;
+				: bucketDetail?.storeType;
+		const customType =
+			bucketDetail?.storeType === CUSTOM_S3 &&
+			bucketDetail.storeType.charAt(0).toUpperCase() +
+				bucketDetail.storeType.slice(1, 7).toLowerCase() +
+				bucketDetail.storeType.charAt(7).toUpperCase() +
+				bucketDetail.storeType.slice(8).toLowerCase();
+		const bucketTypeValue: any = find(
+			bucketTypeItems,
+			(o) => o.value === (bucketDetail?.storeType === CUSTOM_S3 ? customType : upperBucketType)
+		)?.value;
+
 		if (bucketType !== undefined && bucketTypeValue !== bucketType?.value) {
 			setIsDirty(true);
 		}
-	}, [bucketDetail.storeType, bucketType, bucketTypeItems]);
+	}, [bucketDetail, bucketDetail.storeType, bucketType, bucketTypeItems]);
 
 	useEffect(() => {
 		if (bucketName !== undefined && bucketDetail?.bucketName !== bucketName) {
@@ -373,7 +383,7 @@ const EditBucketDetailPanel: FC<{
 			bucketDetail?.region !== undefined && upperBucketType === ALIBABA
 				? bucketRegionsInAlibaba
 				: bucketRegions,
-			(o) => o.value === bucketDetail.region
+			(o) => o?.value === bucketDetail?.region
 		)?.value;
 		if (
 			bucketDetail?.region !== undefined &&
