@@ -180,6 +180,12 @@ const BackupServerConfig: FC = () => {
 					height="calc(100vh - 200px)"
 					padding={{ all: 'large' }}
 				>
+					<Row
+						takeAvwidth="fill"
+						mainAlignment="flex-start"
+						width="100%"
+						padding={{ top: 'large' }}
+					></Row>
 					<ListRow>
 						<Switch
 							label={t('backup.enable_realtime_scanner', 'Enable Realtime Scanner')}
