@@ -119,7 +119,7 @@ const Connection: FC<{
 						}
 					});
 				} else {
-					setbothFail(response.error.message || response.error);
+					setbothFail(response.error?.message || response.error || response.exception?.message);
 					setVerifyCheck(FAIL);
 					setbucketDetailButton(false);
 				}

@@ -6,17 +6,8 @@
 
 import { soapFetch } from '@zextras/carbonio-shell-ui';
 
-export const getGrant = async (by: string, type: string, value: string): Promise<any> => {
-	const request: any = {
+export const getGrant = async (body: JSON): Promise<any> =>
+	soapFetch(`GetGrants`, {
 		_jsns: 'urn:zimbraAdmin',
-		target: {
-			type,
-			by,
-			_content: value
-		}
-	};
-
-	return soapFetch(`GetGrants`, {
-		...request
+		...body
 	});
-};

@@ -627,7 +627,14 @@ const EditMailingListView: FC<any> = ({
 	);
 
 	const getGrantML = useCallback(() => {
-		getGrant('name', 'dl', selectedMailingList?.name)
+		const getGrantBody: any = {};
+		const target = {
+			type: 'dl',
+			by: 'name',
+			_content: selectedMailingList?.name
+		};
+		getGrantBody.target = target;
+		getGrant(getGrantBody)
 			.then((data: any) => {
 				if (data && data?.grant && Array.isArray(data?.grant)) {
 					const grant = data?.grant;

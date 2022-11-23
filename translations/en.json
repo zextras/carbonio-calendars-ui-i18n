@@ -1179,6 +1179,7 @@
         "title": "Title",
         "title_and_description": "Title & Description",
         "title_theme_note": "The title is the name that will appear on the browser tab",
+        "total_acc_rights_with_delete_distribution_list_helper_text": "This list has <bold>{{totalAccRights}}</bold> shared accounts rights. <br /> If you delete it all rights will be lost.",
         "true": "True",
         "type": "Type",
         "type_accounts_paste_them_here": "Type the Accounts or paste them here",

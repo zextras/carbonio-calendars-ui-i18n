@@ -28,6 +28,7 @@ import { getDistributionList } from '../../../../services/get-distribution-list'
 import { getDistributionListMembership } from '../../../../services/get-distributionlists-membership-service';
 import { getDateFromStr } from '../../../utility/utils';
 import { deleteDistributionList } from '../../../../services/delete-distribution-list';
+import { getGrant } from '../../../../services/get-grant';
 
 // eslint-disable-next-line no-shadow
 export enum SUBSCRIBE_UNSUBSCRIBE {
@@ -52,6 +53,7 @@ const MailingListDetail: FC<any> = ({
 	const [zimbraCreateTimestamp, setZimbraCreateTimestamp] = useState<string>('');
 	const [isOpenDeleteDialog, setIsOpenDeleteDialog] = useState<boolean>(false);
 	const [isRequestInProgress, setIsRequestInProgress] = useState<boolean>(false);
+	const [totalGrantRights, setTotalGrantRights] = useState(0);
 	const createSnackbar: any = useContext(SnackbarManagerContext);
 	const dlCreateDate = useMemo(
 		() =>
@@ -160,6 +162,9 @@ const MailingListDetail: FC<any> = ({
 	const [memberOffset, setMemberOffset] = useState<number>(0);
 	const [ownerOffset, setOwnerOffset] = useState<number>(0);
 	const [memberURL, setMemberURL] = useState<string>();
+	const [isDeleteBtnLoading, setIsDeleteBtnLoading] = useState<boolean>(false);
+	const [granteeTotalRights, setGranteeTotalRights] = useState(0);
+	const [targetTotalRights, setTargetTotalRights] = useState(0);
 
 	const onRightsChange = useCallback(
 		(v: any): any => {
@@ -432,6 +437,91 @@ const MailingListDetail: FC<any> = ({
 			});
 	}, [createSnackbar, onSuccess, t, dlId, distributionName]);
 
+	const handleClickDeleteEvent = useCallback(() => {
+		setIsDeleteBtnLoading(true);
+		const getGrantBody: any = {};
+		const grantee = {
+			type: 'grp',
+			by: 'name',
+			_content: selectedMailingList?.name,
+			all: false
+		};
+		getGrantBody.grantee = grantee;
+		getGrant(getGrantBody)
+			.then((data: any) => {
+				if (data && data?.grant && Array.isArray(data?.grant)) {
+					let granteeTotal = 0;
+
+					const granteeRights = data?.grant?.map((items: any) => items?.right?.length);
+					const granteeRightLenght = granteeRights?.values();
+
+					// eslint-disable-next-line no-restricted-syntax
+					for (const value of granteeRightLenght) {
+						granteeTotal += value;
+					}
+					setGranteeTotalRights(granteeTotal);
+				}
+				setIsOpenDeleteDialog(true);
+				setIsDeleteBtnLoading(false);
+			})
+			.catch((error) => {
+				createSnackbar({
+					key: 'error',
+					type: 'error',
+					label: error?.message
+						? error?.message
+						: t('label.something_wrong_error_msg', 'Something went wrong. Please try again.'),
+					autoHideTimeout: 3000,
+					hideButton: true,
+					replace: true
+				});
+				setIsDeleteBtnLoading(false);
+			});
+
+		// get grants' rights as target
+		const getGrantBodyTarget: any = {};
+		const target = {
+			type: 'dl',
+			by: 'name',
+			_content: selectedMailingList?.name
+		};
+		getGrantBodyTarget.target = target;
+		getGrant(getGrantBodyTarget)
+			.then((resFromTarget: any) => {
+				if (resFromTarget && resFromTarget?.grant && Array.isArray(resFromTarget?.grant)) {
+					let targetTotal = 0;
+					const targetRights = resFromTarget?.grant?.map((items: any) => items?.right?.length);
+					const targetRightLenght = targetRights?.values();
+
+					// eslint-disable-next-line no-restricted-syntax
+					for (const value of targetRightLenght) {
+						targetTotal += value;
+					}
+					setTargetTotalRights(targetTotal);
+				}
+				setIsOpenDeleteDialog(true);
+				setIsDeleteBtnLoading(false);
+			})
+			.catch((error) => {
+				createSnackbar({
+					key: 'error',
+					type: 'error',
+					label: error?.message
+						? error?.message
+						: t('label.something_wrong_error_msg', 'Something went wrong. Please try again.'),
+					autoHideTimeout: 3000,
+					hideButton: true,
+					replace: true
+				});
+				setIsDeleteBtnLoading(false);
+			});
+	}, [createSnackbar, selectedMailingList?.name, t]);
+
+	useEffect(() => {
+		const totalRights = targetTotalRights + granteeTotalRights;
+		setTotalGrantRights(totalRights);
+	}, [granteeTotalRights, targetTotalRights]);
+
 	return (
 		<Container
 			background="gray5"
@@ -502,9 +592,8 @@ const MailingListDetail: FC<any> = ({
 						icon="Trash2Outline"
 						height={44}
 						width={44}
-						onClick={(): void => {
-							setIsOpenDeleteDialog(true);
-						}}
+						loading={isDeleteBtnLoading}
+						onClick={handleClickDeleteEvent}
 					/>
 				</Container>
 			</Container>
@@ -709,7 +798,7 @@ const MailingListDetail: FC<any> = ({
 				<Modal
 					size="medium"
 					title={t('label.you_are_deleting_ml', 'You are deleting {{name}}', {
-						name: distributionName
+						name: displayName || distributionName
 					})}
 					open={isOpenDeleteDialog}
 					customFooter={
@@ -740,13 +829,31 @@ const MailingListDetail: FC<any> = ({
 					showCloseIcon
 					onClose={closeHandler}
 				>
-					<Container padding={{ top: 'extralarge', bottom: 'extralarge' }}>
-						<Padding bottom="medium" top="medium">
+					<Container
+						padding={{ top: 'extralarge', bottom: 'extralarge' }}
+						style={{ textAlign: 'center' }}
+					>
+						<Padding bottom="small">
+							{totalGrantRights !== 0 && (
+								<Container padding={{ bottom: 'extralarge' }}>
+									<Text size={'extralarge'} overflow="break-word">
+										<Trans
+											i18nKey="label.total_acc_rights_with_delete_distribution_list_helper_text"
+											defaults="This list has <bold>{{totalAccRights}}</bold> shared accounts rights. <br /> If you delete it all rights will be lost."
+											components={{
+												bold: <strong />,
+												totalAccRights: totalGrantRights,
+												br: <br />
+											}}
+										/>
+									</Text>
+								</Container>
+							)}
 							<Text size={'extralarge'} overflow="break-word">
 								<Trans
 									i18nKey="label.are_you_sure_delete_distribution_list"
 									defaults="Are you sure you want to delete <bold>{{name}}</bold> ?"
-									components={{ bold: <strong />, name: distributionName }}
+									components={{ bold: <strong />, name: displayName || distributionName }}
 								/>
 							</Text>
 						</Padding>
