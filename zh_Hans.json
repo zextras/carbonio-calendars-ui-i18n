@@ -64,7 +64,8 @@
         "optional_participant": "{{count}} 可选",
         "search_hints": " ",
         "edit_series_warning": "当您修改系列时，所有先前被删除或修改的实例都将按照新的系列设置进行恢复。",
-        "appointment_invitation_sent": "预约邀请已发送"
+        "appointment_invitation_sent": "预约邀请已发送",
+        "meeting_modified": "以下会议有改动"
     },
     "calendar": {
         "modal": {
@@ -300,7 +301,10 @@
         "select_in": " ",
         "search_hint": " ",
         "public_link_description": "从 {{title}} 于 {{date}} 生成",
-        "continue": "继续"
+        "continue": "继续",
+        "new_time_proposed": "建议的新时间",
+        "subject": "主题",
+        "cancel": "取消"
     },
     "months": {
         "april": "四月",
@@ -491,7 +495,8 @@
         "location": "位置",
         "chat_room": "虚拟房间链接",
         "virtual_chat": "虚拟聊天",
-        "calendar_sharing_status": " "
+        "calendar_sharing_status": " ",
+        "calendar_sharing_status_one": "已与 1 人分享"
     },
     "workflow": "工作流",
     "write": "编写",
