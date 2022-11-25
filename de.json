@@ -241,7 +241,10 @@
         "root": "Stammordner",
         "choose_file": "Datei auswählen",
         "public_link_description": "Erzeugt von {{title}} am {{date}}",
-        "continue": "Fortfahren"
+        "continue": "Fortfahren",
+        "new_time_proposed": "Neuer Uhrzeitvorschlag",
+        "subject": "Betreff",
+        "cancel": "abbrechen"
     },
     "participants": {
         "Invited_Visitor": "wurden eingeladen",
@@ -513,7 +516,8 @@
         "chat_room": "Link des virtuellen Raums",
         "virtual_chat": "Virtueller Chat",
         "calendar_sharing_status": "Mit {{count}} Person geteilt",
-        "calendar_sharing_status_plural": "Mit {{count}} Personen geteilt"
+        "calendar_sharing_status_plural": "Mit {{count}} Personen geteilt",
+        "calendar_sharing_status_one": "Mit 1 Person geteilt"
     },
     "share_invite_resent": "Einladung zum Teilen erneut gesendet",
     "shared_folders": "Geteilte Kalender",
