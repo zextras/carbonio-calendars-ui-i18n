@@ -182,7 +182,10 @@
         "root": "ราก",
         "choose_file": "เลือกไฟล์",
         "public_link_description": "สร้างจาก {{title}} เมื่อวันที่ {{date}}",
-        "continue": "ดำเนินการต่อ"
+        "continue": "ดำเนินการต่อ",
+        "new_time_proposed": "เวลาใหม่ที่เสนอ",
+        "subject": "เรื่อง",
+        "cancel": "ยกเลิก"
     },
     "calendar": {
         "modal": {
@@ -455,7 +458,9 @@
         "equipment": "อุปกรณ์",
         "location": "สถานที่",
         "chat_room": "ลิงก์ของห้องเสมือนจริง",
-        "virtual_chat": "แชทเสมือนจริง"
+        "virtual_chat": "แชทเสมือนจริง",
+        "calendar_sharing_status_one": "แชร์กับ 1 คน",
+        "calendar_sharing_status": "แชร์กับ {{count}} คน"
     },
     "button": {
         "customize_modal": "เปิด Customize Modal"
