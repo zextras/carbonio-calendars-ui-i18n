@@ -180,7 +180,10 @@
         "root": "Akar",
         "choose_file": "Pilih file",
         "public_link_description": "Dibuat dari {{title}} pada {{date}}",
-        "continue": "Lanjutkan"
+        "continue": "Lanjutkan",
+        "new_time_proposed": "Waktu Baru yang Diusulkan",
+        "subject": "Subjek",
+        "cancel": "Batal"
     },
     "calendar": {
         "modal": {
@@ -487,7 +490,9 @@
         "equipment": "Peralatan",
         "location": "Lokasi",
         "chat_room": "Tautan Ruang Virtual",
-        "virtual_chat": "Chat Virtual"
+        "virtual_chat": "Chat Virtual",
+        "calendar_sharing_status_one": "Dibagikan kepada 1 oarang",
+        "calendar_sharing_status": "Dibagikan kepada {{count}} orang"
     },
     "share_invite_resent": "Undangan berbagi dikirim ulang",
     "shared_folders": "Kalender Bersama",
