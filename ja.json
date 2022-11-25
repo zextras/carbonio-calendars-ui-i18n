@@ -267,7 +267,10 @@
         "root": "ルート",
         "choose_file": "ファイルを選択する",
         "public_link_description": "{{date}}に{{title}}から生成されました",
-        "continue": "続行する"
+        "continue": "続行する",
+        "new_time_proposed": "時刻変更依頼",
+        "subject": "件名",
+        "cancel": "キャンセル"
     },
     "folder": {
         "modal": {
@@ -482,7 +485,9 @@
         "equipment": "機器",
         "location": "場所",
         "virtual_chat": "バーチャルチャット",
-        "chat_room": "バーチャルルームのリンク"
+        "chat_room": "バーチャルルームのリンク",
+        "calendar_sharing_status_one": "1人と共有されました",
+        "calendar_sharing_status": "{{count}}人と共有されました"
     },
     "workflow": "ワークフロー",
     "write": "書く",
