@@ -173,7 +173,10 @@
         "root": "Raíz",
         "choose_file": "Elegir archivo",
         "public_link_description": "Generado de  {{title}} en {{date}}",
-        "continue": "Continuar"
+        "continue": "Continuar",
+        "new_time_proposed": "Nueva hora propuesta",
+        "subject": "Asunto",
+        "cancel": "Cancelar"
     },
     "action": {
         "send": "Enviar",
@@ -513,7 +516,8 @@
         "chat_room": "Enlace de la Sala Virtual",
         "calendar_sharing_status": "Compartido con {{count}} persona",
         "calendar_sharing_status_plural": "Compartido con {{count}} personas",
-        "virtual_chat": "Chat virtual"
+        "virtual_chat": "Chat virtual",
+        "calendar_sharing_status_one": "Compartido con 1 persona"
     },
     "share_invite_resent": "Invitación para acceder a la compartición reenviada",
     "shared_folders": "Calendarios compartidos",
