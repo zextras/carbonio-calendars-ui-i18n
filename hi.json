@@ -183,7 +183,8 @@
         "continue": "जारी रखें",
         "new_time_proposed": "नया समय प्रस्तुत करें",
         "subject": "विषय",
-        "cancel": "कैंसल करें"
+        "cancel": "कैंसल करें",
+        "appointment_is_private": "एपाइंटमेंट प्राइवेट है।"
     },
     "action": {
         "send": "भेजें",
@@ -197,7 +198,8 @@
         "edit_message": "संदेश संशोधन",
         "move_to_root": "मूल पर ले जाएँ",
         "share_calendar": "कैलेंडर साझा करें",
-        "empty_trash_confirmation": "ऐसा करने से आपकी ईमेल, Contacts, Calendar, Tasks और Briefcase के रद्दी फोल्डरों के सभी आइटम डिलीट हो जाएंगे। क्या आप वाकई में इन रद्दी फोल्डरों की हर चीज जो परमानेंट डिलीट करना चाहते हैं?"
+        "empty_trash_confirmation": "ऐसा करने से आपकी ईमेल, Contacts, Calendar, Tasks और Briefcase के रद्दी फोल्डरों के सभी आइटम डिलीट हो जाएंगे। क्या आप वाकई में इन रद्दी फोल्डरों की हर चीज जो परमानेंट डिलीट करना चाहते हैं?",
+        "send_edit": "बदलाव भेजें"
     },
     "message": {
         "you": "आप",
@@ -265,7 +267,9 @@
         "optional_participant": "{{count}} ऑप्शनल",
         "optional_participant_plural": "{{count}} ऑप्शनल्स",
         "edit_series_warning": "जैसे-जैसे आप सीरीज़ में बदलाव करते जाएंगे, पहले डिलीट किए या बदले इन्सटेन्स नई सीरीज़ सेटिंग्स से रिस्टोर होते जाएंगे।",
-        "appointment_invitation_sent": "एप्पोइंटमेंट आमंत्रण भेजा गया"
+        "appointment_invitation_sent": "एप्पोइंटमेंट आमंत्रण भेजा गया",
+        "meeting_modified": "निम्न मीटिंग बदल दी गई है",
+        "want_to_edit_modified_msg": "क्या आप बदले गए एप्पोइंटमेंट के मैसेज को एडिट करना चाहते हैं?"
     },
     "event": {
         "action": {
@@ -336,7 +340,9 @@
         "minutes": "{{count}} मिनट",
         "minutes_plural": "{{count}} मिनट",
         "hours": "{{count}} घंटा",
-        "hours_plural": "{{count}} घंटे"
+        "hours_plural": "{{count}} घंटे",
+        "second_before": "{{count}} सेकंड पहले",
+        "second_before_plural": "{{count}} सेकंड पहले"
     },
     "repeat": {
         "daily": "प्रतिदिन",
@@ -632,5 +638,6 @@
     },
     "preview": {
         "close": "प्रीव्यू बंद करें"
-    }
+    },
+    "recurrent_in_allday": "आप बार-बार आने वाले एपोइंटमेंट को किसी पूरे दिन के स्लॉट में ड्रैग नहीं कर सकते"
 }
