@@ -593,6 +593,7 @@
         "yes": "Yes"
     },
     "label": {
+        "Aliases": "Aliases",
         "DELETE": "DELETE",
         "I_want_to_see_this_server_details": "i want to see this server’s details",
         "NEW_OTP": "NEW OTP",
