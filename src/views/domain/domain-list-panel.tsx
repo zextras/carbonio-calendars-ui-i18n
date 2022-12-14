@@ -99,12 +99,20 @@ const DomainListPanel: FC = () => {
 			setSearchDomainName(domainInformation?.name);
 			setIsDomainSelect(true);
 			setIsDomainListExpand(false);
-			setSelectedOperationItem(GENERAL_SETTINGS);
+			if (selectedOperationItem === '') {
+				const operationItem = locationService?.pathname.split('/').pop();
+				setSelectedOperationItem(operationItem || '');
+			}
 			if (domainInformation?.id) {
 				setDomainId(domainInformation?.id);
 			}
 		}
-	}, [domainInformation?.id, domainInformation?.name]);
+	}, [
+		domainInformation?.id,
+		domainInformation?.name,
+		selectedOperationItem,
+		locationService?.pathname
+	]);
 
 	useEffect(() => {
 		if (
