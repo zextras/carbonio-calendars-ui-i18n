@@ -10,7 +10,9 @@ import { useTranslation } from 'react-i18next';
 import ListRow from '../list/list-row';
 import NotificationView from '../app/shared/notification-view';
 
-const DashboardNotification: FC = () => {
+const DashboardNotification: FC<{
+	goToMailNotificationt: () => void;
+}> = ({ goToMailNotificationt }) => {
 	const [t] = useTranslation();
 	return (
 		<Container background="gray6" style={{ 'border-radius': '0.5rem' }}>
@@ -40,6 +42,7 @@ const DashboardNotification: FC = () => {
 						type="ghost"
 						label={t('dashboard.go_to_notification', 'Go to notification')}
 						color="primary"
+						onClick={goToMailNotificationt}
 					/>
 				</Container>
 			</ListRow>

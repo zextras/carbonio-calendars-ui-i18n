@@ -11,7 +11,15 @@ import { useUserAccounts } from '@zextras/carbonio-shell-ui';
 import { useHistory } from 'react-router-dom';
 import packageJson from '../../../package.json';
 import MatomoTracker from '../../matomo-tracker';
-import { DASHBOARD, MANAGE, SERVERS_LIST, STORAGES_ROUTE_ID } from '../../constants';
+import {
+	DASHBOARD,
+	LIST,
+	LOG_AND_QUEUES,
+	MANAGE,
+	NOTIFICATION_ROUTE_ID,
+	SERVERS_LIST,
+	STORAGES_ROUTE_ID
+} from '../../constants';
 import { useGlobalConfigStore } from '../../store/global-config/store';
 import ListRow from '../list/list-row';
 import CarbonioVersionInformation from './carbonio-version-information-view';
@@ -70,6 +78,10 @@ const Dashboard: FC = () => {
 		history.push(`/${MANAGE}/${STORAGES_ROUTE_ID}/${SERVERS_LIST}`);
 	}, [history]);
 
+	const goToMailNotificationt = useCallback(() => {
+		history.push(`/${LOG_AND_QUEUES}/${NOTIFICATION_ROUTE_ID}/${LIST}`);
+	}, [history]);
+
 	return (
 		<Container
 			mainAlignment="flex-start"
@@ -89,7 +101,7 @@ const Dashboard: FC = () => {
 
 			<ListRow>
 				<Container padding={{ all: 'extralarge' }}>
-					<DashboardNotification />
+					<DashboardNotification goToMailNotificationt={goToMailNotificationt} />
 				</Container>
 			</ListRow>
 

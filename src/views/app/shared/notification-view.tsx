@@ -13,7 +13,8 @@ import {
 	Table,
 	Icon,
 	Button,
-	Padding
+	Padding,
+	Divider
 } from '@zextras/carbonio-design-system';
 import React, {
 	FC,
@@ -51,21 +52,32 @@ const ReusedDefaultTabBar: FC<{
 		onClick={onClick}
 		orientation="horizontal"
 	>
-		<ListRow>
+		<Container
+			orientation="horizontal"
+			mainAlignment="flex-start"
+			crossAlignment="flex-start"
+			padding={{ all: 'small' }}
+			takeAvailableSpace
+		>
+			<Container width="2rem" padding={{ right: 'small' }}>
+				<Icon icon={item?.icon} height={'1rem'} width="1rem" />
+			</Container>
 			<Container
 				mainAlignment="flex-start"
 				crossAlignment="flex-start"
-				width="2rem"
-				padding={{ all: 'medium' }}
+				width="auto"
+				takeAvailableSpace
 			>
-				<Icon icon={item?.icon} height={'1rem'} width="1rem" />
-			</Container>
-			<Container mainAlignment="flex-start" crossAlignment="flex-start" padding={{ all: 'medium' }}>
-				<Text size="small" weight="regular" color={selected ? 'primary' : 'gray'}>
+				<Text
+					size="small"
+					weight="regular"
+					color={selected ? 'primary' : 'gray'}
+					takeAvailableSpace
+				>
 					{item.label}
 				</Text>
 			</Container>
-		</ListRow>
+		</Container>
 	</DefaultTabBarItem>
 );
 
@@ -83,7 +95,8 @@ export type Notification = {
 
 const NotificationView: FC<{
 	isShowTitle: boolean;
-}> = ({ isShowTitle }) => {
+	isAddPadding?: boolean;
+}> = ({ isShowTitle, isAddPadding = false }) => {
 	const [t] = useTranslation();
 	const [change, setChange] = useState(NOTIFICATION_ALL);
 	const [click, setClick] = useState('');
@@ -297,7 +310,11 @@ const NotificationView: FC<{
 	return (
 		<Container background="gray6">
 			<ListRow>
-				<Container mainAlignment="flex-start" crossAlignment="flex-start">
+				<Container
+					mainAlignment="flex-start"
+					crossAlignment="flex-start"
+					padding={{ left: isAddPadding ? 'large' : '' }}
+				>
 					{isShowTitle && (
 						<Text size="large" weight="bold" color="gray0">
 							{t('notification.notifications_list', 'Notifications’ List')}
@@ -312,6 +329,9 @@ const NotificationView: FC<{
 						onItemClick={setClick}
 					/>
 				</Container>
+			</ListRow>
+			<ListRow>
+				<Divider />
 			</ListRow>
 			<ListRow>
 				<Container
@@ -346,6 +366,7 @@ const NotificationView: FC<{
 					crossAlignment="flex-start"
 					width="fill"
 					height="calc(100vh - 340px)"
+					padding={{ all: isAddPadding ? 'large' : '' }}
 				>
 					<Table
 						rows={notificationRows}

@@ -9,15 +9,12 @@ import { Container } from '@zextras/carbonio-design-system';
 import ListRow from '../list/list-row';
 import NotificationView from '../app/shared/notification-view';
 
-const NotificationListView: FC = () => {
-	console.log('xxx');
-	return (
-		<Container background="gray6" style={{ 'border-radius': '0.5rem' }}>
-			<ListRow>
-				<NotificationView isShowTitle />
-			</ListRow>
-		</Container>
-	);
-};
+const NotificationListView: FC = () => (
+	<Container background="gray6" height="auto" padding={{ top: 'large' }}>
+		<ListRow>
+			<NotificationView isShowTitle isAddPadding />
+		</ListRow>
+	</Container>
+);
 
 export default NotificationListView;
