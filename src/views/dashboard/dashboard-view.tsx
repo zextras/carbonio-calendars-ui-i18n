@@ -7,14 +7,22 @@
 import React, { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import { Container } from '@zextras/carbonio-design-system';
 import { useTranslation } from 'react-i18next';
-import { useUserAccounts } from '@zextras/carbonio-shell-ui';
+import {
+	useUserAccounts,
+	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+	// @ts-ignore
+	useDomainInformation
+} from '@zextras/carbonio-shell-ui';
 import { useHistory } from 'react-router-dom';
 import packageJson from '../../../package.json';
 import MatomoTracker from '../../matomo-tracker';
 import {
+	ACCOUNTS,
 	DASHBOARD,
+	DOMAINS_ROUTE_ID,
 	LIST,
 	LOG_AND_QUEUES,
+	MAILING_LIST,
 	MANAGE,
 	NOTIFICATION_ROUTE_ID,
 	SERVERS_LIST,
@@ -26,6 +34,7 @@ import CarbonioVersionInformation from './carbonio-version-information-view';
 import QuickAccess from './quick-access-view';
 import DashboardNotification from './dashboard-notification';
 import DashboardServerList from './dashboard-server-list-view';
+import { useDomainStore } from '../../store/domain/store';
 
 const Dashboard: FC = () => {
 	const [t] = useTranslation();
@@ -37,6 +46,8 @@ const Dashboard: FC = () => {
 	const accounts = useUserAccounts();
 	const [userName, setUserName] = useState<string>('');
 	const [version, setVersion] = useState<string>('');
+
+	const setDomain = useDomainStore((state) => state.setDomain);
 	const [quickAccessItems, setQuickAccessItems] = useState<Array<any>>([
 		{
 			upperText: t('label.domains', 'Domains'),
@@ -44,7 +55,8 @@ const Dashboard: FC = () => {
 			bottomText: t('label.open', 'Open'),
 			operationIcon: 'PersonOutline',
 			bottomIcon: 'ChevronRightOutline',
-			bgColor: 'avatar_39'
+			bgColor: 'avatar_39',
+			operation: 'account'
 		},
 		{
 			upperText: t('label.domains', 'Domains'),
@@ -52,9 +64,34 @@ const Dashboard: FC = () => {
 			bottomText: t('label.open', 'Open'),
 			operationIcon: 'PersonOutline',
 			bottomIcon: 'ChevronRightOutline',
-			bgColor: 'avatar_21'
+			bgColor: 'avatar_21',
+			operation: 'malinglist'
 		}
 	]);
+	const domainInformation = useDomainInformation();
+
+	useEffect(() => {
+		setDomain({
+			a: domainInformation?.a,
+			id: domainInformation?.id,
+			name: domainInformation?.name
+		});
+	}, [domainInformation, setDomain]);
+
+	const openOperationView = useCallback(
+		(operation: string) => {
+			if (operation === 'account' && !!domainInformation) {
+				history.push(
+					`/${MANAGE}/${DOMAINS_ROUTE_ID}/${domainInformation?.id}/${SERVERS_LIST}/${ACCOUNTS}`
+				);
+			} else if (operation === 'malinglist') {
+				history.push(
+					`/${MANAGE}/${DOMAINS_ROUTE_ID}/${domainInformation?.id}/${SERVERS_LIST}/${MAILING_LIST}`
+				);
+			}
+		},
+		[history, domainInformation]
+	);
 
 	useEffect(() => {
 		globalCarbonioSendAnalytics && matomo.trackPageView(`${DASHBOARD}`);
@@ -95,7 +132,7 @@ const Dashboard: FC = () => {
 					<CarbonioVersionInformation userName={userName} />
 				</Container>
 				<Container width={'60'} padding={{ all: 'extralarge' }}>
-					<QuickAccess quickAccessItems={quickAccessItems} />
+					<QuickAccess quickAccessItems={quickAccessItems} openOperationView={openOperationView} />
 				</Container>
 			</ListRow>
 

@@ -12,12 +12,17 @@ import ListRow from '../list/list-row';
 
 export const ActionContainer = styled(Container)`
 	background: ${({ theme, bgColor }): string => theme.avatarColors[bgColor]};
-	border-radius: 0.5rem;
+	'borderRadius':0.5rem ;
+`;
+
+export const OperationContainer = styled(Container)`
+	cursor: pointer;
 `;
 
 const QuickAccess: FC<{
 	quickAccessItems: Array<any>;
-}> = ({ quickAccessItems }) => {
+	openOperationView: (operation: string) => void;
+}> = ({ quickAccessItems, openOperationView }) => {
 	const [t] = useTranslation();
 	return (
 		<Container
@@ -25,7 +30,7 @@ const QuickAccess: FC<{
 			mainAlignment="flex-start"
 			crossAlignment="flex-start"
 			padding={{ all: 'extralarge' }}
-			style={{ 'border-radius': '0.5rem' }}
+			style={{ borderRadius: '0.5rem' }}
 		>
 			<Container padding={{ all: 'large' }} mainAlignment="flex-start" crossAlignment="flex-start">
 				<ListRow>
@@ -49,6 +54,7 @@ const QuickAccess: FC<{
 							mainAlignment="flex-start"
 							crossAlignment="flex-start"
 							padding={{ left: 'extralarge' }}
+							key={item?.bgColor}
 						>
 							<ActionContainer
 								height={'8.75rem'}
@@ -84,22 +90,28 @@ const QuickAccess: FC<{
 									</Container>
 								</ListRow>
 								<ListRow>
-									<Container
+									<OperationContainer
 										mainAlignment="flex-start"
 										crossAlignment="flex-start"
 										padding={{ all: 'large' }}
+										onClick={(): void => {
+											openOperationView(item?.operation);
+										}}
 									>
 										<Text color="gray6" overflow="break-word" weight="light" size="medium">
 											{item?.bottomText}
 										</Text>
-									</Container>
-									<Container
+									</OperationContainer>
+									<OperationContainer
 										mainAlignment="flex-end"
 										crossAlignment="flex-end"
 										padding={{ all: 'large' }}
+										onClick={(): void => {
+											openOperationView(item?.operation);
+										}}
 									>
 										<Icon icon={item?.bottomIcon} size="medium" color="gray6" />
-									</Container>
+									</OperationContainer>
 								</ListRow>
 							</ActionContainer>
 						</Container>
