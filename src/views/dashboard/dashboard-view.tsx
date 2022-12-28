@@ -46,7 +46,6 @@ const Dashboard: FC = () => {
 	const accounts = useUserAccounts();
 	const [userName, setUserName] = useState<string>('');
 	const [version, setVersion] = useState<string>('');
-	console.log('>>>>>>', accounts);
 
 	const setDomain = useDomainStore((state) => state.setDomain);
 	const [quickAccessItems, setQuickAccessItems] = useState<Array<any>>([
