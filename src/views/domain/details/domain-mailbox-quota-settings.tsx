@@ -84,7 +84,7 @@ const DomainMailboxQuotaSetting: FC = () => {
 	);
 
 	const [zimbraMailDomainQuota, setZimbraMailDomainQuota] = useState<string>('');
-	const [zimbraDomainAggregateQuota, setZimbraDomainAggregateQuota] = useState<string>('');
+	const [zimbraDomainMaxAccounts, setZimbraDomainMaxAccounts] = useState<string>('');
 	const [zimbraDomainAggregateQuotaWarnPercent, setZimbraDomainAggregateQuotaWarnPercent] =
 		useState<string>('');
 	const [
@@ -96,6 +96,7 @@ const DomainMailboxQuotaSetting: FC = () => {
 	);
 	const [domainData, setDomainData]: any = useState({
 		zimbraMailDomainQuota: '',
+		zimbraDomainMaxAccounts: '',
 		zimbraDomainAggregateQuota: '',
 		zimbraDomainAggregateQuotaWarnPercent: '',
 		zimbraDomainAggregateQuotaWarnEmailRecipient: '',
@@ -184,11 +185,11 @@ const DomainMailboxQuotaSetting: FC = () => {
 				setZimbraMailDomainQuota(obj.zimbraMailDomainQuota);
 			}
 
-			if (obj.zimbraDomainAggregateQuota) {
-				setZimbraDomainAggregateQuota(obj.zimbraDomainAggregateQuota);
+			if (obj.zimbraDomainMaxAccounts) {
+				setZimbraDomainMaxAccounts(obj.zimbraDomainMaxAccounts);
 			} else {
-				obj.zimbraDomainAggregateQuota = '';
-				setZimbraDomainAggregateQuota(obj.zimbraDomainAggregateQuota);
+				obj.zimbraDomainMaxAccounts = '';
+				setZimbraDomainMaxAccounts(obj.zimbraDomainMaxAccounts);
 			}
 
 			if (obj.zimbraDomainAggregateQuotaWarnPercent) {
@@ -229,10 +230,10 @@ const DomainMailboxQuotaSetting: FC = () => {
 	}, [domainData, zimbraMailDomainQuota]);
 
 	useEffect(() => {
-		if (domainData.zimbraDomainAggregateQuota !== zimbraDomainAggregateQuota) {
+		if (domainData.zimbraDomainMaxAccounts !== zimbraDomainMaxAccounts) {
 			setIsDirty(true);
 		}
-	}, [domainData, zimbraDomainAggregateQuota]);
+	}, [domainData, zimbraDomainMaxAccounts]);
 
 	useEffect(() => {
 		if (
@@ -259,7 +260,7 @@ const DomainMailboxQuotaSetting: FC = () => {
 
 	const onCancel = (): void => {
 		setZimbraMailDomainQuota(domainData.zimbraMailDomainQuota);
-		setZimbraDomainAggregateQuota(domainData.zimbraDomainAggregateQuota);
+		setZimbraDomainMaxAccounts(domainData.zimbraDomainMaxAccounts);
 		setZimbraDomainAggregateQuotaWarnPercent(domainData.zimbraDomainAggregateQuotaWarnPercent);
 		setZimbraDomainAggregateQuotaWarnEmailRecipient(
 			domainData.zimbraDomainAggregateQuotaWarnEmailRecipient
@@ -275,6 +276,10 @@ const DomainMailboxQuotaSetting: FC = () => {
 		const attributes: any[] = [];
 		body.id = domainData.zimbraId;
 		body._jsns = 'urn:zimbraAdmin';
+		attributes.push({
+			n: 'zimbraDomainMaxAccounts',
+			_content: zimbraDomainMaxAccounts
+		});
 		attributes.push({
 			n: 'zimbraMailDomainQuota',
 			_content: zimbraMailDomainQuota
@@ -405,24 +410,26 @@ const DomainMailboxQuotaSetting: FC = () => {
 								<Container padding={{ all: 'small' }}>
 									<Input
 										label={t(
-											'domain.single_account_domain_space_byte',
-											'Single Account Domain Space (Byte)'
+											'label.max_number_account_of_this_domain_manage',
+											'The max number of accounts this domain can manage'
 										)}
-										value={zimbraMailDomainQuota}
-										background="gray5"
+										value={zimbraDomainMaxAccounts}
+										background="gray6"
 										onChange={(e: any): any => {
-											setZimbraMailDomainQuota(e.target.value);
+											setZimbraDomainMaxAccounts(e.target.value);
 										}}
 									/>
 								</Container>
 								<Container padding={{ all: 'small' }}>
 									<Input
-										label={t('domain.total_domain_space', 'Total Domain Space (Byte)')}
-										value={zimbraDomainAggregateQuota}
-										defaultValue={zimbraDomainAggregateQuota}
+										label={t(
+											'label.default_mail_quota_for_account_domain',
+											'The default email quota for each account in the domain'
+										)}
+										value={zimbraMailDomainQuota}
 										background="gray5"
 										onChange={(e: any): any => {
-											setZimbraDomainAggregateQuota(e.target.value);
+											setZimbraMailDomainQuota(e.target.value);
 										}}
 									/>
 								</Container>
