@@ -52,11 +52,16 @@ const DetailViewContainer = styled(Container)`
 const AppView: FC = () => {
 	const isPrimaryBarExpanded = usePrimaryBarState();
 	return (
-		<Container>
+		<Container height="auto" background="gray5">
 			<BreadCrumb />
 			<Switch>
 				<Route path={`/${DASHBOARD}`}>
-					<Container orientation="horizontal" mainAlignment="flex-start" background="gray5">
+					<Container
+						orientation="horizontal"
+						mainAlignment="flex-start"
+						background="gray5"
+						height="auto"
+					>
 						<Suspense fallback={<Spinner />}>
 							<Dashboard />
 						</Suspense>

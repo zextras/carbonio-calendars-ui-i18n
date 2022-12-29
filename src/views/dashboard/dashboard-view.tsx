@@ -122,7 +122,7 @@ const Dashboard: FC = () => {
 				crossAlignment="flex-start"
 				background="gray5"
 				style={{ overflow: 'auto' }}
-				height="calc(100vh - 7.5rem)"
+				height="calc(100vh - 6.5rem)"
 			>
 				<ListRow>
 					<Container width={'40'} padding={{ all: 'extralarge' }}>
