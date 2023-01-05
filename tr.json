@@ -255,7 +255,7 @@
         "required": "Gerekli",
         "resend": "Yeniden gönder",
         "revoke": "İptal et",
-        "revoke_share": "{{title}} paylaşımını iptal et",
+        "revoke_share": "{{title}} paylaşımını kaldır",
         "save": "Kaydet",
         "series": "Seriler",
         "share": "Paylaş",
