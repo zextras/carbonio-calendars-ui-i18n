@@ -10,9 +10,10 @@ import {
 	Row,
 	Switch,
 	DateTimePicker,
-	Icon
+	Icon,
+	Text
 } from '@zextras/carbonio-design-system';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import ListRow from '../../../list/list-row';
 import { RestoreDeleteAccountContext } from './restore-delete-account-context';
@@ -61,6 +62,19 @@ const RestoreDeleteAccountConfigSection: FC<any> = () => {
 						width="fill"
 						padding={{ bottom: 'large', right: 'large', left: 'large' }}
 					>
+						<ListRow>
+							<Container padding={{ bottom: 'medium' }} crossAlignment="flex-start">
+								{
+									<Text size="medium" color="gray0" weight="regular">
+										<Trans
+											i18nKey="label.restore_config_info_row_1"
+											defaults="<bold>{{accountName}}</bold> will be copied in the account you`ll select in the field below."
+											components={{ bold: <strong />, accountName: restoreAccountDetail?.name }}
+										/>
+									</Text>
+								}
+							</Container>
+						</ListRow>
 						<ListRow>
 							<Container
 								mainAlignment="flex-start"
