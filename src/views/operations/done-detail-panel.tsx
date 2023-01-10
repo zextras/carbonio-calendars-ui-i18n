@@ -27,7 +27,7 @@ const DoneDetailPanel: FC = () => {
 	const [isSelectedRow, setIsSelectedRow] = useState([]);
 
 	const handleClick = (i: any): any => {
-		const volumeObject: any = doneData.find((s: any, index: any) => index === i);
+		const volumeObject: any = doneData?.find((s: any, index: any) => index === i);
 		setSelectedData(volumeObject);
 		setWizardDetailToggle(true);
 	};

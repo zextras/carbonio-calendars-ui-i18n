@@ -188,7 +188,7 @@ const AppView: FC = () => {
 				</Route>
 				<Route path={`/${LOG_AND_QUEUES}/${OPERATIONS_ROUTE_ID}`}>
 					<Container orientation="horizontal" mainAlignment="flex-start">
-						<Container style={{ maxWidth: '265px' }}>
+						<Container style={{ maxWidth: '16.563rem' }}>
 							<Suspense fallback={<Spinner />}>
 								<OperationsListPanel />
 							</Suspense>

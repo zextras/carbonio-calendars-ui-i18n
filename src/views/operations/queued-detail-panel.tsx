@@ -33,7 +33,7 @@ const QuededDetailPanel: FC<{ getAllOperationAPICallHandler: any }> = ({
 }) => {
 	const [t] = useTranslation();
 	const createSnackbar = useSnackbar();
-	const serverList = useServerStore((state) => state.serverList)[0]?.name;
+	const serverList = useServerStore((state) => state?.serverList)[0]?.name;
 	const { queuedData } = useOperationStore((state) => state);
 	const operationsHeader = useMemo(() => OperationsHeader(t), [t]);
 	const [wizardDetailToggle, setWizardDetailToggle] = useState(false);
@@ -88,7 +88,7 @@ const QuededDetailPanel: FC<{ getAllOperationAPICallHandler: any }> = ({
 	};
 
 	const handleClick = (i: any): any => {
-		const volumeObject: any = queuedData.find((s: any, index: any) => index === i);
+		const volumeObject: any = queuedData?.find((s: any, index: any) => index === i);
 		setSelectedData(volumeObject);
 		setWizardDetailToggle(true);
 	};
@@ -129,14 +129,7 @@ const QuededDetailPanel: FC<{ getAllOperationAPICallHandler: any }> = ({
 						open={open}
 						closeHandler={closeHandler}
 						saveHandler={stopHandler}
-						operationMessage={t(
-							'operations.cancel_operation_model_title',
-							'You are cancelling {{OperationName}}',
-							{
-								OperationName: selectedData?.name
-							}
-						)}
-						modelHandler
+						selectedData={selectedData}
 					/>
 					<Row takeAvwidth="fill" mainAlignment="flex-end" crossAlignment="flex-end" width="100%">
 						<Button

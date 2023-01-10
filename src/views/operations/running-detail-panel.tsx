@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import React, { FC, useCallback, useMemo, useState } from 'react';
+import React, { FC, useMemo, useState } from 'react';
 import {
 	Container,
 	Row,
@@ -33,14 +33,19 @@ const RunningDetailPanel: FC<{ getAllOperationAPICallHandler: any }> = ({
 }) => {
 	const [t] = useTranslation();
 	const createSnackbar = useSnackbar();
-	const serverList = useServerStore((state) => state.serverList)[0]?.name;
+	const serverList = useServerStore((state) => state?.serverList)[0]?.name;
 	const { runningData } = useOperationStore((state) => state);
 	const operationsHeader = useMemo(() => OperationsHeader(t), [t]);
 	const [wizardDetailToggle, setWizardDetailToggle] = useState(false);
 	const [open, setOpen] = useState(false);
 	const [selectedData, setSelectedData] = useState<any>();
 	const [isSelectedRow, setIsSelectedRow] = useState([]);
-	const stopOperationAPICall = useCallback(() => {
+
+	const closeHandler = (): any => {
+		setOpen(false);
+	};
+
+	const stopHandler = (): any => {
 		stopOperations(selectedData?.id)
 			.then((res) => {
 				const result = JSON.parse(res?.Body?.response?.content);
@@ -80,27 +85,10 @@ const RunningDetailPanel: FC<{ getAllOperationAPICallHandler: any }> = ({
 					})
 				});
 			});
-	}, [
-		createSnackbar,
-		getAllOperationAPICallHandler,
-		selectedData?.id,
-		selectedData?.name,
-		serverList,
-		t
-	]);
-
-	const closeHandler = (): any => {
-		setOpen(false);
-	};
-
-	const stopHandler = (modelHandler: boolean): any => {
-		if (!modelHandler) {
-			stopOperationAPICall();
-		}
 	};
 
 	const handleClick = (i: any): any => {
-		const volumeObject: any = runningData.find((s: any, index: any) => index === i);
+		const volumeObject: any = runningData?.find((s: any, index: any) => index === i);
 		setSelectedData(volumeObject);
 		setWizardDetailToggle(true);
 	};
@@ -127,14 +115,7 @@ const RunningDetailPanel: FC<{ getAllOperationAPICallHandler: any }> = ({
 					open={open}
 					closeHandler={closeHandler}
 					saveHandler={stopHandler}
-					operationMessage={t(
-						'operations.stopping_operation_model_title',
-						'You are stopping {{OperationName}}',
-						{
-							OperationName: selectedData?.name
-						}
-					)}
-					modelHandler={false}
+					selectedData={selectedData}
 				/>
 				<Row mainAlignment="flex-start" padding={{ all: 'large' }}>
 					<Text size="extralarge" weight="bold">

@@ -386,6 +386,38 @@ const App: FC = () => {
 		[subscriptionTooltipItems]
 	);
 
+	const operationTooltipItem = useMemo(
+		() => [
+			{
+				header: t('label.operations', 'Operations'),
+				options: [
+					{
+						label: t('label.here_you_will_find', 'Here you will find')
+					}
+				]
+			},
+			{
+				options: [
+					{
+						label: t('label.running', 'Running')
+					},
+					{
+						label: t('label.queued', 'Queued')
+					},
+					{
+						label: t('label.done', 'Done')
+					}
+				]
+			}
+		],
+		[t]
+	);
+
+	const OperationTooltipView: FC = useCallback(
+		() => <PrimaryBarTooltip items={operationTooltipItem} />,
+		[operationTooltipItem]
+	);
+
 	const backupPrimaryBar: FC = useCallback(
 		() => (
 			<PrimaryBarIconButton
@@ -493,7 +525,7 @@ const App: FC = () => {
 
 		addRoute({
 			route: NOTIFICATION_ROUTE_ID,
-			position: 5,
+			position: 1,
 			visible: true,
 			label: t('label.notifications', 'Notifications'),
 			primaryBar: 'BellOutline',
@@ -505,14 +537,15 @@ const App: FC = () => {
 
 		addRoute({
 			route: OPERATIONS_ROUTE_ID,
-			position: 6,
+			position: 2,
 			visible: true,
 			label: t('label.operations', 'Operations'),
 			primaryBar: 'ListOutline',
 			appView: AppView,
 			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 			// @ts-ignore
-			primarybarSection: { ...logAndQueuesSection }
+			primarybarSection: { ...logAndQueuesSection },
+			tooltip: OperationTooltipView
 		});
 
 		/* addRoute({
@@ -551,7 +584,8 @@ const App: FC = () => {
 		SubscriptionTooltipView,
 		logAndQueuesSection,
 		backupPrimaryBar,
-		isAdvanced
+		isAdvanced,
+		OperationTooltipView
 	]);
 
 	useEffect(() => {

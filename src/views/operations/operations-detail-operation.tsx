@@ -27,7 +27,7 @@ const OperationsDetailOperation: FC = () => {
 	const [t] = useTranslation();
 	const createSnackbar = useSnackbar();
 	const { operation }: { operation: string } = useParams();
-	const serverList = useServerStore((state) => state.serverList)[0]?.name;
+	const serverList = useServerStore((state) => state?.serverList)[0]?.name;
 	const { setAlloperationDetail, setRunningData, setQueuedData, setDoneData } = useOperationStore(
 		(state) => state
 	);

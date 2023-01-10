@@ -6,22 +6,37 @@
 import React, { FC } from 'react';
 import { Modal, Row, Button, Text, Container } from '@zextras/carbonio-design-system';
 import { Trans, useTranslation } from 'react-i18next';
+import { STARTED } from '../../constants';
 
 const DeleteOpearationsModel: FC<{
 	open: boolean;
 	closeHandler: any;
 	saveHandler: any;
-	operationMessage: any;
-	modelHandler: boolean;
-}> = ({ open, closeHandler, saveHandler, operationMessage, modelHandler }) => {
+	selectedData: any;
+}> = ({ open, closeHandler, saveHandler, selectedData }) => {
 	const [t] = useTranslation();
+
 	return (
 		<>
 			<Modal
 				size="medium"
-				title={t('operations.label.operation_model_message', '{{OperationMsg}}', {
-					OperationMsg: operationMessage
-				})}
+				title={
+					selectedData?.state === STARTED
+						? t(
+								'operations.stopping_operation_model_title_helperText',
+								'You are stopping {{operationName}}',
+								{
+									operationName: selectedData?.name
+								}
+						  )
+						: t(
+								'operations.cancel_operation_model_title_helperText',
+								'You are cancelling {{operationName}}',
+								{
+									operationName: selectedData?.name
+								}
+						  )
+				}
 				open={open}
 				customFooter={
 					<Container orientation="horizontal" mainAlignment="flex-end">
@@ -34,14 +49,12 @@ const DeleteOpearationsModel: FC<{
 							/>
 							<Button
 								label={
-									modelHandler
+									selectedData?.state !== STARTED
 										? t('operations.label.cancel_operation_btn', 'CANCEL OPERATION')
 										: t('operations.label.stop_operation_btn', 'STOP OPERATION')
 								}
 								color="error"
-								onClick={(): void => {
-									saveHandler(modelHandler);
-								}}
+								onClick={saveHandler}
 							/>
 						</Row>
 					</Container>
@@ -59,7 +72,7 @@ const DeleteOpearationsModel: FC<{
 						overflow="break-word"
 						style={{ whiteSpace: 'pre-line', textAlign: 'center', paddingBottom: '1rem' }}
 					>
-						{modelHandler ? (
+						{selectedData?.state !== STARTED ? (
 							<Trans
 								i18nKey="label.cancel_operations_message"
 								defaults="Are you sure you want to CANCEL this operation? <br /> By clicking CANCEL OPERATION, it will be <br /> removed from the operations queue list."
