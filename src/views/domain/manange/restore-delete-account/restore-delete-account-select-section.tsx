@@ -203,7 +203,7 @@ const RestoreDeleteAccountSelectSection: FC<any> = () => {
 			width="100%"
 			padding={{ top: 'extralarge' }}
 			style={{ overflowY: 'auto' }}
-			maxHeight="calc(100vh - 280px)"
+			maxHeight="calc(100vh - 17.5em)"
 		>
 			<Row takeAvwidth="fill" mainAlignment="flex-start" width="100%">
 				<Container crossAlignment="flex-start" background="gray6">
@@ -245,7 +245,7 @@ const RestoreDeleteAccountSelectSection: FC<any> = () => {
 							/>
 						</Container>
 						<ListRow>
-							<Row height={isRequestInProgress ? 'fit' : 'calc(100vh - 570px)'}>
+							<Row height={isRequestInProgress ? 'fit' : 'calc(100vh - 35.625em)'}>
 								<Table
 									style={{ overflow: 'auto', height: '100%' }}
 									multiSelect={false}
