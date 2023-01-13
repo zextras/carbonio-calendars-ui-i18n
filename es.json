@@ -41,7 +41,7 @@
         "dismiss": "Desconsiderar",
         "dismiss_plural": "Desconsiderar todo",
         "display": "Mostrar",
-        "edit_access": "Editar el acceso de {{name}}",
+        "edit_access": "Editar el acceso",
         "email_input_message": "Introducir direcciones de correo electrónico",
         "enable_dlgtn_for_ical": "Activar delegación para el cliente CalDAV de iCal de Apple",
         "end_date": "Fecha de finalización",
