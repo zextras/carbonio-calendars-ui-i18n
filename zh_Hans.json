@@ -221,7 +221,7 @@
         "time_zones": "时区",
         "to": "至",
         "display": "显示",
-        "edit_access": "编辑 {{name}} 的访问权限",
+        "edit_access": "编辑 的访问权限",
         "email_input_message": "输入邮件地址",
         "end_after": "以下条件后结束：",
         "enable_dlgtn_for_ical": "为 Apple iCal CalDAV 客户端启用委派",
