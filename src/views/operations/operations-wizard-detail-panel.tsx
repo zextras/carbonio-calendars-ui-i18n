@@ -159,47 +159,19 @@ const OperationsWizardDetailPanel: FC<{
 						{t('operations.other', 'Other')}
 					</Text>
 					<Row width="100%" padding={{ top: 'large' }}>
-						<ListRow>
-							<Container padding={{ right: 'small' }}>
-								<Input
-									background="gray6"
-									label={t('operations.label.action(M)', 'Action (M)')}
-									value=""
-									readOnly
-								/>
-							</Container>
-							<Container padding={{ right: 'small', left: 'small' }}>
-								<Input
-									background="gray6"
-									label={t('operations.label.notifications', 'Notifications')}
-									value={
-										selectedData?.parameters?.additionalNotificationAddresses &&
-										selectedData?.parameters?.additionalNotificationAddresses?.length
-									}
-									readOnly
-								/>
-							</Container>
-							<Container padding={{ left: 'small' }}>
-								<Input
-									background="gray6"
-									label={t('operations.label.read_error_threshold', 'Read Error Threshold')}
-									value=""
-									readOnly
-								/>
-							</Container>
-						</ListRow>
+						<Input
+							background="gray6"
+							label={t('operations.label.notifications', 'Notifications')}
+							value={
+								selectedData?.parameters?.additionalNotificationAddresses &&
+								selectedData?.parameters?.additionalNotificationAddresses?.length
+							}
+							readOnly
+						/>
 					</Row>
 					<Row width="100%" padding={{ top: 'large' }}>
 						<ListRow>
 							<Container padding={{ right: 'small' }}>
-								<Input
-									background="gray6"
-									label={t('operations.label.remote_metadata_upload', 'Remote Metadata Upload')}
-									value=""
-									readOnly
-								/>
-							</Container>
-							<Container padding={{ right: 'small', left: 'small' }}>
 								<Input
 									background="gray6"
 									label={t('operations.label.create_fake_blob', 'Create Fake Blob')}
