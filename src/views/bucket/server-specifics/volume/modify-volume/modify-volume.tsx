@@ -95,7 +95,8 @@ const ModifyVolume: FC<{
 			obj.currentVolumeName = volumeDetail?.name;
 			obj.volumeName = name;
 			obj.volumeType = type?.label?.toLowerCase();
-			obj.currentVolume = isCurrent;
+			obj.volumeCurrent = isCurrent;
+			obj.storeType = externalVolDetail?.storeType;
 
 			if (externalVolDetail === '') {
 				obj.volumePath = rootpath;
