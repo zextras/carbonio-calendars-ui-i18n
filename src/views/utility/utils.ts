@@ -997,14 +997,6 @@ export const volumeAllocationList = (t: TFunction): Array<{ label: string; value
 	{
 		label: t('volume.volume_allocation_list.external', 'External'),
 		value: 2
-	},
-	{
-		label: t('volume.volume_allocation_list.sproxy', 'Sproxy'),
-		value: 3
-	},
-	{
-		label: t('volume.volume_allocation_list.centralized', 'Centralized'),
-		value: 4
 	}
 ];
 
@@ -1032,8 +1024,8 @@ export const volumeConfigHeader = (
 		bold: true
 	},
 	{
-		id: 'indexer',
-		label: t('volume.volume_config_header.indexer', 'Indexer'),
+		id: 'status',
+		label: t('volume.volume_config_header.status', 'Status'),
 		width: '33%',
 		align: 'center',
 		bold: true
@@ -1136,6 +1128,118 @@ export const headerCE = (
 		i18nAllLabel: 'All',
 		width: '169px',
 		bold: true
+	}
+];
+
+export const OperationsHeader = (
+	t: TFunction
+): Array<{
+	id: string;
+	label: string;
+	width: string;
+	bold: boolean;
+	i18nAllLabel: string;
+	align: string;
+}> => [
+	{
+		id: 'Server',
+		label: t('operations.operations_list_header.server', 'Server'),
+		i18nAllLabel: 'All',
+		width: '127px',
+		bold: true,
+		align: 'left'
+	},
+	{
+		id: 'Operation',
+		label: t('operations.operations_list_header.operation', 'Operation'),
+		i18nAllLabel: 'All',
+		width: '127px',
+		bold: true,
+		align: 'left'
+	},
+	{
+		id: 'Secondary',
+		label: t('operations.operations_list_header.author', 'Author'),
+		i18nAllLabel: 'All',
+		width: '177px',
+		bold: true,
+		align: 'left'
+	},
+	{
+		id: 'Index',
+		label: t('operations.operations_list_header.submit_date', 'Submit date'),
+		i18nAllLabel: 'All',
+		width: '138px',
+		bold: true,
+		align: 'center'
+	},
+	{
+		id: 'HSM Scheduling',
+		label: t('operations.operations_list_header.start_date', 'Start date'),
+		i18nAllLabel: 'All',
+		width: '138px',
+		bold: true,
+		align: 'center'
+	}
+];
+
+export const OperationsDoneHeader = (
+	t: TFunction
+): Array<{
+	id: string;
+	label: string;
+	width: string;
+	bold: boolean;
+	i18nAllLabel: string;
+	align: string;
+}> => [
+	{
+		id: 'Server',
+		label: t('operations.operations_list_header.server', 'Server'),
+		i18nAllLabel: 'All',
+		width: '127px',
+		bold: true,
+		align: 'left'
+	},
+	{
+		id: 'Operation',
+		label: t('operations.operations_list_header.operation', 'Operation'),
+		i18nAllLabel: 'All',
+		width: '77px',
+		bold: true,
+		align: 'left'
+	},
+	{
+		id: 'Operation',
+		label: t('operations.operations_list_header.status', 'Status'),
+		i18nAllLabel: 'All',
+		width: '57px',
+		bold: true,
+		align: 'center'
+	},
+	{
+		id: 'Secondary',
+		label: t('operations.operations_list_header.author', 'Author'),
+		i18nAllLabel: 'All',
+		width: '177px',
+		bold: true,
+		align: 'left'
+	},
+	{
+		id: 'Index',
+		label: t('operations.operations_list_header.submit_date', 'Submit date'),
+		i18nAllLabel: 'All',
+		width: '138px',
+		bold: true,
+		align: 'center'
+	},
+	{
+		id: 'HSM Scheduling',
+		label: t('operations.operations_list_header.start_date', 'Start date'),
+		i18nAllLabel: 'All',
+		width: '138px',
+		bold: true,
+		align: 'center'
 	}
 ];
 
