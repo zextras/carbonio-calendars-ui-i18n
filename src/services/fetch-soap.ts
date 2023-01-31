@@ -10,10 +10,5 @@ import {
 	postSoapFetchRequest
 } from '@zextras/carbonio-shell-ui';
 
-declare global {
-	interface Window {
-		csrfToken: string;
-	}
-}
 export const fetchSoap = async (api: string, body: unknown): Promise<any> =>
 	postSoapFetchRequest(`/service/admin/soap/${api}`, body, api);

@@ -31,10 +31,7 @@ const DelegateSelectModeSection: FC = () => {
 	const domainName = useDomainStore((state) => state.domain?.name);
 
 	const [t] = useTranslation();
-	const [delegateAccountList, setDelegateAccountList] = useState<any[]>([
-		{ id: 'a1', label: 'aa' },
-		{ id: 'a2', label: 'bb' }
-	]);
+	const [delegateAccountList, setDelegateAccountList] = useState<any[]>([]);
 	const [searchDelegateAccountName, setSearchDelegateAccountName] = useState(undefined);
 	const [isDelegateAccountListExpand, setIsDelegateAccountListExpand] = useState(false);
 	const [isDelegateSelect, setIsDelegateSelect] = useState(false);
