@@ -231,62 +231,7 @@ const CreateAccount: FC<{
 					/>
 				)
 			},
-			// {
-			// 	name: 'create',
-			// 	label: t('label.create', 'CREATE'),
-			// 	icon: 'PersonOutline',
-			// 	view: CreateAccountSectionView,
-			// 	CancelButton: (props: any) => (
-			// 		<Button
-			// 			{...props}
-			// 			type="outlined"
-			// 			key="wizard-cancel"
-			// 			label={'CANCEL'}
-			// 			color="secondary"
-			// 			icon="CloseOutline"
-			// 			iconPlacement="right"
-			// 			onClick={(): void => setShowCreateAccountView(false)}
-			// 		/>
-			// 	),
-			// 	PrevButton: (props: any): ReactElement => <></>,
-			// 	NextButton: (props: any) => (
-			// 		<Button
-			// 			label={t('commons.create_with_there_data', 'CREATE WITH THESE DATA')}
-			// 			icon="PersonOutline"
-			// 			iconPlacement="right"
-			// 			onClick={(): void => {
-			// 				if (
-			// 					accountDetail?.password &&
-			// 					accountDetail?.repeatPassword &&
-			// 					accountDetail?.password?.length < 6
-			// 				) {
-			// 					createSnackbar({
-			// 						key: 'error',
-			// 						type: 'error',
-			// 						label: t('label.password_lenght_msg', 'Password should be more than 5 character'),
-			// 						autoHideTimeout: 3000,
-			// 						hideButton: true,
-			// 						replace: true
-			// 					});
-			// 				} else if (accountDetail?.password !== accountDetail?.repeatPassword) {
-			// 					createSnackbar({
-			// 						key: 'error',
-			// 						type: 'error',
-			// 						label: t(
-			// 							'label.password_and repeat_password_not_match',
-			// 							'Passwords do not match'
-			// 						),
-			// 						autoHideTimeout: 3000,
-			// 						hideButton: true,
-			// 						replace: true
-			// 					});
-			// 				} else {
-			// 					createAccountAPI();
-			// 				}
-			// 			}}
-			// 		/>
-			// 	)
-			// },
+
 			{
 				name: 'otp',
 				label: t('label.otp', 'OTP'),
