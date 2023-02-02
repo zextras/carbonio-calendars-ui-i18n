@@ -465,7 +465,6 @@
         "equipment": "อุปกรณ์",
         "location": "สถานที่",
         "chat_room": "ลิงก์ของห้องเสมือนจริง",
-        "virtual_chat": "แชทเสมือนจริง",
         "calendar_sharing_status_one": "แชร์กับ 1 คน",
         "calendar_sharing_status": "แชร์กับ {{count}} คน",
         "revoke": "เพิกถอนการเข้าถึง",

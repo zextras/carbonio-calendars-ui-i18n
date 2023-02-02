@@ -328,7 +328,6 @@
         "chat": "Оборудование",
         "equipment": "Оборудование",
         "location": "Место",
-        "virtual_chat": "Конференц-зал",
         "chat_room": "Ссылка на виртуальную комнату",
         "calendar_sharing_status_0": "Поделился с {{count}}",
         "calendar_sharing_status_1": "Поделился {{count}}",

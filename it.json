@@ -10,7 +10,6 @@
         "location": "Luogo",
         "calendar_sharing_status": "Condiviso con {{count}} persone",
         "calendar_sharing_status_plural": "",
-        "virtual_chat": "Chat Virtuale",
         "chat_room": "Link alla Stanza Virtuale",
         "calendar_sharing_status_one": "Condiviso con una persona",
         "revoke": "Revoca accesso",

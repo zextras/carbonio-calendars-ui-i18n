@@ -522,7 +522,6 @@
         "equipment": "Ausstattung",
         "location": "Ort",
         "chat_room": "Link des virtuellen Raums",
-        "virtual_chat": "Virtueller Chat",
         "calendar_sharing_status": "Mit {{count}} Person geteilt",
         "calendar_sharing_status_plural": "Mit {{count}} Personen geteilt",
         "calendar_sharing_status_one": "Mit 1 Person geteilt",

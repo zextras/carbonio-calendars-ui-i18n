@@ -492,7 +492,6 @@
         "equipment": "Uitrusting",
         "location": "Locatie",
         "chat_room": "Link naar virtuele ruimte",
-        "virtual_chat": "Virtuele Chat",
         "calendar_sharing_status": "Gedeeld met {{count}} persoon",
         "calendar_sharing_status_plural": "Gedeeld met {{count}} personen",
         "calendar_sharing_status_one": "Gedeeld met 1 persoon",

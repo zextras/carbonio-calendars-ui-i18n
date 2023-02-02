@@ -524,7 +524,6 @@
         "chat_room": "Enlace de la Sala Virtual",
         "calendar_sharing_status": "Compartido con {{count}} persona",
         "calendar_sharing_status_plural": "Compartido con {{count}} personas",
-        "virtual_chat": "Chat virtual",
         "calendar_sharing_status_one": "Compartido con 1 persona",
         "revoke": "Revocar acceso",
         "resend": "Enviar notificación por correo de esta aportación",

@@ -508,7 +508,6 @@
         "equipment": "Equipamento",
         "location": "Localização",
         "chat_room": "Link da Sala virtual",
-        "virtual_chat": "Chat virtual",
         "calendar_sharing_status": "Compartilhado com {{count}} pessoa",
         "calendar_sharing_status_plural": "",
         "calendar_sharing_status_one": "Compartilhado com 1 pessoa",

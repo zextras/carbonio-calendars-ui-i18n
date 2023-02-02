@@ -508,7 +508,6 @@
         "calendar_sharing_status_plural": "Partagé avec {{nombre}} personnes",
         "equipment": "Équipement",
         "location": "Emplacement",
-        "virtual_chat": "Discussion virtuelle",
         "chat": "Équipement",
         "calendar_sharing_status_one": "Partagé avec 1 personne"
     },

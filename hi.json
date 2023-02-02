@@ -517,7 +517,6 @@
         "equipment": "उपकरण",
         "location": "स्थान",
         "chat_room": "Virtual Room लिंक",
-        "virtual_chat": "वर्चुअल चैट",
         "calendar_sharing_status": "{{count}} व्यक्ति के साथ शेयर किया गया",
         "calendar_sharing_status_plural": "{{count}} व्यक्तियों के साथ शेयर किया गया",
         "calendar_sharing_status_one": "1 व्यक्ति के साथ शेयर किया गया",

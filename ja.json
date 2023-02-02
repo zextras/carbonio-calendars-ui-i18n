@@ -491,7 +491,6 @@
         "chat": "機器",
         "equipment": "機器",
         "location": "場所",
-        "virtual_chat": "バーチャルチャット",
         "chat_room": "バーチャルルームのリンク",
         "calendar_sharing_status_one": "1人と共有されました",
         "calendar_sharing_status": "{{count}}人と共有されました",
