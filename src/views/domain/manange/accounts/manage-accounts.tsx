@@ -38,6 +38,7 @@ import CreateAccount from './create-account/create-account';
 import EditAccount from './edit-account/edit-account';
 import { AccountContext } from './account-context';
 import { fetchSoap } from '../../../../services/listOTP-service';
+import { useAuthIsAdvanced } from '../../../../store/auth-advanced/store';
 
 const ManageAccounts: FC = () => {
 	const [t] = useTranslation();
@@ -53,6 +54,7 @@ const ManageAccounts: FC = () => {
 	const [deligateDetail, setDeligateDetail] = useState<any>({});
 
 	const flatten: any = useCallback((item: any) => [item, flatMapDeep(item.folder, flatten)], []);
+	const isAdvanced = useAuthIsAdvanced((state) => state.isAdvanced);
 
 	const headers: any = useMemo(
 		() => [
@@ -366,10 +368,19 @@ const ManageAccounts: FC = () => {
 			getAccountDetail(acc?.id);
 			getSignatureDetail(acc?.id);
 			getAccountMembership(acc?.id);
-			getListOtp(acc?.name);
 			getIdentitiesList(acc);
+			if (isAdvanced) {
+				getListOtp(acc?.name);
+			}
 		},
-		[getAccountDetail, getAccountMembership, getSignatureDetail, getListOtp, getIdentitiesList]
+		[
+			getAccountDetail,
+			getSignatureDetail,
+			getAccountMembership,
+			getIdentitiesList,
+			isAdvanced,
+			getListOtp
+		]
 	);
 	const getAccountList = useCallback((): void => {
 		const type = 'accounts';
