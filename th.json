@@ -55,7 +55,7 @@
         "days": "วัน",
         "default_appt_vsblty": "การเปิดเผยการนัดหมายเริ่มต้น",
         "default_view": "มุมมองเริ่มต้น",
-        "edit_access": "แก้ไขการเข้าถึงของ {{name}}",
+        "edit_access": "แก้ไขการเข้าถึง",
         "delete_permanently": "ลบอย่างถาวร",
         "dismiss": "ยกเลิกทั้งหมด",
         "display": "แสดง",
@@ -187,7 +187,7 @@
         "subject": "เรื่อง",
         "cancel": "ยกเลิก",
         "appointment_is_private": "การนัดหมายเป็นแบบส่วนตัว",
-        "create_copy": "สร้างสำเนา"
+        "create_copy": "คัดลอก"
     },
     "calendar": {
         "modal": {
@@ -217,7 +217,7 @@
             "no": "ไม่",
             "yes": "ใช่",
             "decline": "ปฏิเสธ",
-            "expand": "เปิดใน Displayer",
+            "expand": "เปิด",
             "needs_action": "การดำเนินการที่จำเป็น",
             "invitation_not_sent_yet": "ยังไม่ได้ส่งคำเชิญ"
         },
@@ -452,7 +452,8 @@
         "edit_series_warning": "ในขณะที่คุณดำเนินการแก้ไขซีรีส์ อินสแตนซ์ที่ถูกลบหรือแก้ไขก่อนหน้านี้ทั้งหมดจะถูกกู้คืนด้วยการตั้งค่าซีรีส์ใหม่",
         "appointment_invitation_sent": "ส่งคำเชิญนัดหมายแล้ว",
         "meeting_modified": "การประชุมต่อไปนี้ได้รับการแก้ไขแล้ว",
-        "want_to_edit_modified_msg": "คุณต้องการแก้ไขข้อความการนัดหมายที่เปลี่ยนแปลงแล้วหรือไม่?"
+        "want_to_edit_modified_msg": "คุณต้องการแก้ไขข้อความการนัดหมายที่เปลี่ยนแปลงแล้วหรือไม่?",
+        "copy": "คัดลอก"
     },
     "type": "รูปแบบ",
     "tooltip": {
@@ -468,7 +469,9 @@
         "calendar_sharing_status_one": "แชร์กับ 1 คน",
         "calendar_sharing_status": "แชร์กับ {{count}} คน",
         "revoke": "เพิกถอนการเข้าถึง",
-        "edit": "แก้ไขคุณสมบัติการแชร์"
+        "edit": "แก้ไขคุณสมบัติการแชร์",
+        "virtual_room": "ห้องเสมือนจริง",
+        "resend": "ส่งอีเมลแจ้งเตือนเกี่ยวกับการแชร์นี้"
     },
     "button": {
         "customize_modal": "เปิด Customize Modal"
