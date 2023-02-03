@@ -66,7 +66,8 @@
         "edit_series_warning": "当您修改系列时，所有先前被删除或修改的实例都将按照新的系列设置进行恢复。",
         "appointment_invitation_sent": "预约邀请已发送",
         "meeting_modified": "以下会议有改动",
-        "want_to_edit_modified_msg": "是否编辑已修改的预约消息？"
+        "want_to_edit_modified_msg": "是否编辑已修改的预约消息？",
+        "copy": "拷贝"
     },
     "calendar": {
         "modal": {
@@ -96,7 +97,7 @@
             "no": "否",
             "yes": "是",
             "decline": "拒绝",
-            "expand": "在显示工具中打开",
+            "expand": "打开",
             "needs_action": "需要操作",
             "invitation_not_sent_yet": "尚未发送邀请"
         },
@@ -308,7 +309,7 @@
         "subject": "主题",
         "cancel": "取消",
         "appointment_is_private": "预约为私密。",
-        "create_copy": "创建副本"
+        "create_copy": "拷贝"
     },
     "months": {
         "april": "四月",
@@ -504,7 +505,8 @@
         "calendar_sharing_status_one": "已与 1 人分享",
         "revoke": "撤销访问权限",
         "resend": "发送有关此共享的邮件通知",
-        "edit": "编辑共享属性"
+        "edit": "编辑共享属性",
+        "virtual_room": "虚拟房间"
     },
     "workflow": "工作流",
     "write": "编写",
