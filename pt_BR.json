@@ -178,7 +178,7 @@
         "subject": "Assunto",
         "cancel": "Cancelar",
         "appointment_is_private": "O compromisso é privado.",
-        "create_copy": "Criar uma cópia"
+        "create_copy": "Copiar"
     },
     "action": {
         "send": "Enviar",
@@ -201,7 +201,7 @@
             "no": "Não",
             "yes": "Sim",
             "decline": "Recusar",
-            "expand": "Abrir no Visualizador",
+            "expand": "Abrir",
             "needs_action": "Requer ação",
             "invitation_not_sent_yet": "O convite ainda não foi enviado"
         },
@@ -307,7 +307,8 @@
         "edit_series_warning": "Ao prosseguir com a modificação da série, todas as instâncias excluídas ou modificadas anteriormente serão restauradas com as novas configurações da série.",
         "appointment_invitation_sent": "Convite de compromisso enviado",
         "meeting_modified": "A seguinte reunião foi alterada",
-        "want_to_edit_modified_msg": "Deseja editar a mensagem do compromisso alterado?"
+        "want_to_edit_modified_msg": "Deseja editar a mensagem do compromisso alterado?",
+        "copy": "Copiar"
     },
     "months": {
         "april": "Abril",
@@ -513,7 +514,8 @@
         "calendar_sharing_status_one": "Compartilhado com 1 pessoa",
         "revoke": "Revogar acesso",
         "resend": "Enviar notificação por e-mail sobre este compartilhamento",
-        "edit": "Editar propriedades de compartilhamento"
+        "edit": "Editar propriedades de compartilhamento",
+        "virtual_room": "Sala Virtual"
     },
     "cannot_edit_name": "Você não pode editar o nome do calendário do sistema",
     "edit_share_properties": "Editar propriedades de compartilhamento",
