@@ -65,7 +65,7 @@
         "edit_series_warning": "シリーズの変更を進めると、以前に削除または変更されたインスタンスすべてが新しいシリーズ設定で復元されます。",
         "appointment_invitation_sent": "予約招待状を送信しました",
         "meeting_modified": "次の会議が変更されました",
-        "want_to_edit_modified_msg": "変更された予定のメッセージを編集しますか？"
+        "want_to_edit_modified_msg": "変更は参加者にメールで通知されます。カスタムメッセージを追加しますか？"
     },
     "action": {
         "send": "送信",
@@ -451,7 +451,8 @@
         "url_copied": "{{title}}がコピーされました",
         "share_folder_success": "カレンダーが共有されました",
         "tag_applied": "{{tag}} タグが適用されました",
-        "tag_removed": "{{tag}} タグが削除されました"
+        "tag_removed": "{{tag}} タグが削除されました",
+        "email_copied_to_clipboard": "メールをクリップボードにコピーしました。"
     },
     "success": "成功",
     "type": "タイプ",
