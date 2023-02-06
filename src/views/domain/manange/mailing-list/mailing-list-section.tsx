@@ -27,7 +27,7 @@ import { searchDirectory } from '../../../../services/search-directory-service';
 import { getAllEmailFromString, isValidEmail, isValidLdapQuery } from '../../../utility/utils';
 import { searchGal } from '../../../../services/search-gal-service';
 import carbonioHelmet from '../../../../assets/carbonio-helmet.svg';
-import { ALL, EMAIL, GRP, MEMBERS_ONLY, PUB } from '../../../../constants';
+import { ALL, EMAIL, GRP, LDAP_QUERY, MEMBERS_ONLY, PUB } from '../../../../constants';
 
 const MailingListSection: FC<any> = () => {
 	const { t } = useTranslation();
@@ -494,10 +494,7 @@ const MailingListSection: FC<any> = () => {
 						</ListRow>
 						<ListRow>
 							<Text size="small" weight="regular" color="gray1">
-								{t(
-									'label.ldap_example_query',
-									'Example: ldap:///??sub?(&(objectClass=zimbraAccount)(ZimbraAccountStatus=active))'
-								)}
+								{`${t('label.example_lbl', 'Example:')} ${LDAP_QUERY}`}
 							</Text>
 						</ListRow>
 						{isShowLdapQueryMessage && (
