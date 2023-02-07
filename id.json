@@ -178,7 +178,7 @@
         "tag": "Tag",
         "share_public_link": "Bagikan Tautan Publik",
         "select": "Pilih",
-        "root": "Akar",
+        "root": "Root",
         "choose_file": "Pilih file",
         "public_link_description": "Dibuat dari {{title}} pada {{date}}",
         "continue": "Lanjutkan",
@@ -305,7 +305,7 @@
         "edit_series_warning": "Karena Anda melanjutkan dengan modifikasi seri, semua instans yang sebelumnya dihapus atau diubah akan dipulihkan dengan pengaturan seri baru.",
         "appointment_invitation_sent": "Undangan janji temu dikirim",
         "meeting_modified": "Rapat berikut telah diubah",
-        "want_to_edit_modified_msg": "Ingin mengedit pesan janji temu yang dimodifikasi?",
+        "want_to_edit_modified_msg": "Perubahan akan diberitahukan melalui email kepada para peserta. Anda ingin menambahkan pesan kustom?",
         "copy": "Salin"
     },
     "months": {
@@ -434,7 +434,8 @@
         "url_copied": "{{title}} disalin",
         "share_folder_success": "Kalender berhasil dibagikan",
         "tag_removed": "Tag {{tag}}: dihapus",
-        "tag_applied": "Tag {{tag}} diterapkan"
+        "tag_applied": "Tag {{tag}} diterapkan",
+        "email_copied_to_clipboard": "Email disalin ke clipboard."
     },
     "success": "Berhasil",
     "add": "Tambahkan",
