@@ -403,7 +403,8 @@
         "share_folder_success": "Calendario compartido con éxito",
         "url_copied": "{{title}} copiado",
         "tag_applied": "Etiqueta {{tag}} aplicada",
-        "tag_removed": "Etiqueta {{tag}} eliminada"
+        "tag_removed": "Etiqueta {{tag}} eliminada",
+        "email_copied_to_clipboard": "Email copiado al portapapeles."
     },
     "success": "Éxito",
     "type": "Tipo",
@@ -477,7 +478,7 @@
         "edit_series_warning": "Cuando procedas con la modificación de las series, todas las instancias borradas o modificadas anteriormente serán restauradas con los ajustes de las nuevas series.",
         "appointment_invitation_sent": "Invitación a cita enviada",
         "meeting_modified": "La siguiente reunión ha sido modificada",
-        "want_to_edit_modified_msg": "¿Quieres editar el mensaje de la cita modificada?",
+        "want_to_edit_modified_msg": "Los cambios serán notificados por email a los asistentes. ¿Te gustaría añadir un mensaje personalizado?",
         "copy": "Copiar"
     },
     "button": {
