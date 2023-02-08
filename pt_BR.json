@@ -307,7 +307,7 @@
         "edit_series_warning": "Ao prosseguir com a modificação da série, todas as instâncias excluídas ou modificadas anteriormente serão restauradas com as novas configurações da série.",
         "appointment_invitation_sent": "Convite de compromisso enviado",
         "meeting_modified": "A seguinte reunião foi alterada",
-        "want_to_edit_modified_msg": "Deseja editar a mensagem do compromisso alterado?",
+        "want_to_edit_modified_msg": "As alterações serão informadas por e-mail aos participantes. Gostaria de incluir uma mensagem personalizada?",
         "copy": "Copiar"
     },
     "months": {
@@ -466,7 +466,8 @@
         "url_copied": "{{title}} copiado",
         "share_folder_success": "Calendário compartilhado com sucesso",
         "tag_applied": "Etiqueta {{tag}} aplicada",
-        "tag_removed": "Etiqueta {{tag}} removida"
+        "tag_removed": "Etiqueta {{tag}} removida",
+        "email_copied_to_clipboard": "E-mail copiado para a área de transferência."
     },
     "success": "Sucesso",
     "type": "Tipo",
