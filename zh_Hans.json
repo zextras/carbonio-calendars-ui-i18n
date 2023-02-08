@@ -66,7 +66,7 @@
         "edit_series_warning": "当您修改系列时，所有先前被删除或修改的实例都将按照新的系列设置进行恢复。",
         "appointment_invitation_sent": "预约邀请已发送",
         "meeting_modified": "以下会议有改动",
-        "want_to_edit_modified_msg": "是否编辑已修改的预约消息？",
+        "want_to_edit_modified_msg": "此变更将通过邮件通知参与者。是否添加自定义消息？",
         "copy": "拷贝"
     },
     "calendar": {
@@ -438,7 +438,8 @@
         "url_copied": "{{title}}已复制",
         "proposed_time_accepted": "您接受了提议的时间",
         "tag_applied": "{{tag}} 标签已应用",
-        "tag_removed": "{{tag}} 标签已移除"
+        "tag_removed": "{{tag}} 标签已移除",
+        "email_copied_to_clipboard": "邮件已复制到剪贴板。"
     },
     "success": "成功",
     "type": "类型",
