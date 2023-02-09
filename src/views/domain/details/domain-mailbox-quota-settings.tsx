@@ -526,7 +526,7 @@ const DomainMailboxQuotaSetting: FC = () => {
 
 	const downloadQuotaReport = useCallback(() => {
 		setIsDownloadInProgress(true);
-		getQuotaUsage(domainData?.zimbraDomainName, 0, 1000, selectedSortType)
+		getQuotaUsage(domainData?.zimbraDomainName, 0, totalAccount, selectedSortType)
 			.then((data) => {
 				setIsDownloadInProgress(false);
 				const usedQuota: string = data?.account;
@@ -554,7 +554,14 @@ const DomainMailboxQuotaSetting: FC = () => {
 					replace: true
 				});
 			});
-	}, [domainData?.zimbraDomainName, selectedSortType, getQuotaData, createSnackbar, t]);
+	}, [
+		domainData?.zimbraDomainName,
+		selectedSortType,
+		getQuotaData,
+		createSnackbar,
+		t,
+		totalAccount
+	]);
 
 	return (
 		<Container padding={{ all: 'large' }} mainAlignment="flex-start" background="gray6">
