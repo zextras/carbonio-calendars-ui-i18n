@@ -724,7 +724,7 @@ const DomainMailboxQuotaSetting: FC = () => {
 										label={t('label.download_quota_Report', 'Download Quota Report')}
 										color="primary"
 										onClick={downloadQuotaReport}
-										disabled={isDownloadInProgress}
+										disabled={isDownloadInProgress || totalAccount === 0}
 									/>
 								</Container>
 							</ListRow>
