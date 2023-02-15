@@ -475,7 +475,7 @@ const DomainMailingList: FC = () => {
 				dl = { by: 'name', _content: name };
 				action = {
 					op: 'setRights',
-					right: { right: 'sendToDistList', grantee: [{ type: 'pub' }] }
+					right: { right: 'sendToDistList', grantee: [] }
 				};
 			} else if (ownerGrantEmailType?.value === GRP) {
 				dl = { by: 'name', _content: name };
