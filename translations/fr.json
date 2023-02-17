@@ -157,7 +157,7 @@
         "core": "Core",
         "description": "Description",
         "discard_changes": "ANNULER LES MODIFICATIONS",
-        "suspended": "Suspendu(e)",
+        "suspended": "Suspendu",
         "timezone": "Fuseau horaire",
         "unlimited": "Illimité",
         "url": "URL",
@@ -827,7 +827,21 @@
         "there_are_no_owners": "Il n'y a pas de propriétaire ici.",
         "verify": "Vérification",
         "verify_certificate": "Vérification",
-        "who_can_send_mails_to_list ": "Qui peut envoyer des emails à cette liste ?"
+        "who_can_send_mails_to_list ": "Qui peut envoyer des emails à cette liste ?",
+        "centralized": "Centralisé",
+        "external_volume_edited": "{{message}}",
+        "general_options": "Options Générales",
+        "operation": {
+            "get_all_operation_error": "{{name}}",
+            "stop_operation_error": "{{name}}"
+        },
+        "stop_operation_helperText": "{{message}}",
+        "ID": "ID",
+        "done": "Terminé",
+        "empty_table_helperText": "Vider la Table",
+        "queued": "Ajouté(e) dans la queue",
+        "running": "En cours",
+        "use_intelligent_tiering": "Utiliser le Tiering intelligent"
     },
     "message": {
         "snackbar": {
@@ -1401,7 +1415,6 @@
         "secret_key": "Clé secrète"
     },
     "privacy": {
-        "send_full_error_data_to_zextras": "Envoyer les données en erreur à Zextras",
         "allow_data_analytics": "Autoriser l'analyse des données",
         "allow_live_survey_feedbacks": "Autoriser l'envoi de données d'analyse",
         "analytics_sub_1": "Vos données sont en sécurité. Toutes les informations que nous recueillons sont et resteront anonymes. Elles seront utilisées par notre équipe pour comprendre comment nous pouvons améliorer Carbonio.",
@@ -1439,7 +1452,8 @@
         "volume_config_header": {
             "name": "Nom",
             "hsm_scheduled": "HSM programmé",
-            "indexer": "Indexeur"
+            "indexer": "Indexeur",
+            "status": "Statut"
         },
         "volume_header": {
             "compression": "Compression",
@@ -1458,7 +1472,10 @@
             "index": "Index",
             "primary": "Primaire",
             "secondary": "Secondaire"
-        }
+        },
+        "indexer_helperText": "Indexeur",
+        "primary_helperText": "Primaire",
+        "secondary_helperText": "Secondaire"
     },
     "welcome_to_carbonio": "Bienvenue dans Carbonio {{carbonioVersion}} {{adminName}} !",
     "hsm": {
@@ -1551,5 +1568,27 @@
         "mark_as_read": "Marqué comme lu",
         "mark_as_unread": "Marqué comme non lu",
         "notifications_list": "Liste de notification"
+    },
+    "operations": {
+        "copy_btn": "COPIER",
+        "details": "Détails",
+        "done": "Terminé",
+        "empty_table_helperText": "Vider la Table",
+        "label": {
+            "Deep": "Profond",
+            "notifications": "Notifications",
+            "status": "Statut"
+        },
+        "operations_list_header": {
+            "author": "Auteur",
+            "operation": "Opération",
+            "server": "Server",
+            "start_date": "Date de début",
+            "status": "Statut",
+            "submit_date": "Soumettre une date"
+        },
+        "other": "Autre",
+        "queued": "Ajouté(e) dans la queue",
+        "running": "En cours"
     }
 }

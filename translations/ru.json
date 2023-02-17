@@ -754,7 +754,7 @@
         "Aliases": "Альясы",
         "delete_domain_certificate_content": "Вы удаляете сертификат домена.<br /> Вы уверены, что хотите его удалить?",
         "load_and_verify_certificate": "ЗАГРУЗИТЬ И ПРОВЕРИТЬ СЕРТИФИКАТ",
-        "load_certificate_message": "Загрузите сертификат, чтобы увидеть его детали!<br />Нажмите <strong>\"ЗАГРУЗИТЬ И ПРОВЕРИТЬ СЕРТИФИКАТ +\"</strong>, чтобы начать",
+        "load_certificate_message": "Загрузите сертификат для просмотра информации!<br />Нажмите <strong>\"ЗАГРУЗИТЬ И ПРОВЕРИТЬ СЕРТИФИКАТ +\"</strong>, чтобы начать",
         "new_virtual_host_name": "Введите новое имя виртуального хоста и нажмите «Добавить +», чтобы добавить его в список",
         "virtual_host_msg": "Виртуальные хосты позволяют системе установить домен по умолчанию для входа пользователя в систему.<br />Любой пользователь, который входит в систему с использованием URL-адреса с одним из приведенных ниже имен хостов, будет считаться принадлежащим к этому домену, domain1.local.<br /> >Обратите внимание, что удаление виртуального хоста вступает в силу только после перезапуска почтового сервера.",
         "delete_private_key_certificate_content": "Вы удаляете сертификат закрытого ключа.<br /> Вы уверены, что хотите его удалить?",
@@ -781,16 +781,56 @@
         "no_virtual_host_message": "Здесь нет виртуальных хостов.<br />Нажмите кнопку ДОБАВИТЬ, чтобы активировать новый.",
         "there_are_not_member_here": "Здесь нет участников.",
         "title_and_copyrights_information": "Информация об авторских правах",
-        "type_an_account_add_senders_list": "Введите учетную запись, чтобы добавить ее в список отправителей",
-        "virtual_hosts_and_certificates": "Виртуальные хосты и сертификат",
+        "type_an_account_add_senders_list": "Введите адрес, чтобы добавить его в список разрешенных отправителей",
+        "virtual_hosts_and_certificates": "Виртуальные хосты и сертификаты",
         "want_to_use_this_certifiacte": "Я ХОЧУ ИСПОЛЬЗОВАТЬ ЭТОТ СЕРТИФИКАТ",
-        "what_inside": "Что внутри?"
+        "what_inside": "Объект",
+        "centralized": "Централизованный",
+        "done": "Готово",
+        "empty_table_helperText": "Пустая таблица",
+        "external_volume_edited": "{{message}}",
+        "general_options": "Общие параметры",
+        "operation": {
+            "stop_operation_error": "{{name}}",
+            "get_all_operation_error": "{{name}}"
+        },
+        "queued": "В очереди",
+        "running": "Работает",
+        "stop_operation_helperText": "{{message}}",
+        "use_intelligent_tiering": "Использовать интеллектуальное Tiering",
+        "ID": "ID",
+        "account_password_setting_note_for_external_authentication": "Параметры ниже ↓ не влияют на пароли, установленные пользователями в доменах, которые настроены на использование внешней аутентификации. Изменения, сделанные здесь, переопределяют настройки COS для пароля и блокировки неудачного входа в систему.",
+        "cancel_operation_sucess": "Действие {{name}} было успешно отменена",
+        "cancel_operations_message": "Вы уверены, что хотите ОТМЕНИТЬ эту операцию? <br /> Нажав ОТМЕНИТЬ ОПЕРАЦИЮ <br /> она будет удалена из списка очереди операций.",
+        "cancel_operations_msg": "Вы уверены, что хотите ОТМЕНИТЬ эту операцию? <br /> Нажав ОТМЕНИТЬ ОПЕРАЦИЮ <br /> она будет удалена из списка очереди операций.",
+        "disable_the_account": "Отключить учетную запись",
+        "restore_config_info_row_1": "<bold>{{accountName}}</bold> будет скопирован в учетную запись, которую вы выберете в поле ниже.",
+        "restore_select_account_row_2": "<bold>Обратите внимание</bold>, что все письма, встречи, контакты и настройки учетной записи будут восстановлены в том виде, в каком они были в выбранный временной период.",
+        "storage_centralized_helpertext": "<bold>Используйте интерфейс командной строки для централизованного управления .</bold> Централизованные данные становятся полезными, когда двум или более серверам требуется доступ к одним и тем же данным. Хранение данных в одном месте упрощает управление как оборудованием, так и самими данными. ",
+        "infrequent_access": "Нечастый доступ",
+        "lockout": "Блокировка",
+        "please_wait": "Пожалуйста, подождите",
+        "prefix_name": "Префикс - все объекты будут иметь этот префикс в названии",
+        "restore_select_account_row_1": "С помощью этого инструмента вы сможете восстановить всю учетную запись из резервной копии.",
+        "size_threshold": "Пороговый размер",
+        "stop_operation_sucess": "Операция {{name}} успешно остановлена",
+        "stop_operations_message": "Вы уверены, что хотите ОСТАНОВИТЬ эту операцию? <br /> Нажав ОСТАНОВИТЬ ОПЕРАЦИЮ, она будет остановлена и <br /> удалена из списка очереди.",
+        "type_of_volume": "Тим Тома",
+        "use_infraquent_access": "Использовать нечастый доступ",
+        "use_infraquent_access_helptext": "<underline>Документация по Amazon Storage Class</underline>",
+        "volume_as_current": "Том как текущий",
+        "volume_available_unused_Buckets_list_in_backup": "Список доступных Бакетов (которые не используются в резервной копии)",
+        "volume_create_error": "{{volumeErrMessage}}",
+        "volume_created_msg": "Том успешно создан",
+        "volume_detail_page_title": "{{message}} Дополнительные сведения",
+        "stop_operations_msg": "Вы уверены, что хотите ОСТАНОВИТЬ эту операцию? <br /> Нажав ОСТАНОВИТЬ ОПЕРАЦИЮ, она будет остановлена и удалена из списка очереди операций.",
+        "use_intelligent_tiering_helptext": "<underline>Документация по уровням хранения Amazon </underline>"
     },
     "timezone": {
         "europe_bucharest": "{{value}} Бухарест",
         "europe_chisinau": "{{value}} Кишинев",
         "europe_helsinki": "{{value}} Хельсинки, Киев, Рига, София, Таллинн, Вильнюс",
-        "europe_istanbul": "{{value}}⁣ Стамбул",
+        "europe_istanbul": "{{value}} Стамбул",
         "europe_kaliningrad": "{{value}} Калининград (RTZ 1)",
         "europe_london": "{{value}} Великобритания, Ирландия, Португалия",
         "europe_minsk": "{{value}} Минск",
@@ -819,7 +859,7 @@
         "america_cancun": "{{value}} Канкун, Четумаль",
         "america_caracas": "{{value}} Каракас",
         "america_cayenne": "{{value}} Кайенна, Форталеза",
-        "america_chicago": "{{value}} US/Canada Central",
+        "america_chicago": "{{value}} США/ Центральная Канада",
         "america_chihuahua": "{{value}} Чиуауа, Ла-Пас, Масатлан",
         "america_cuiaba": "{{value}} Куяба",
         "america_denver": "{{value}} US/Canada Mountain",
@@ -892,7 +932,7 @@
         "asia_yerevan": "{{value}} Ереван",
         "atlantic_azores": "{{value}} Азорские острова",
         "atlantic_cape_verde": "{{value}} Острова Кабо-Верде.",
-        "atlantic_south_georgia": "{{value}} Среднеатлантический регион",
+        "atlantic_south_georgia": "{{value}} Средняя Атлантика",
         "australia_adelaide": "{{value}} Аделаида",
         "australia_brisbane": "{{value}} Брисбен",
         "australia_darwin": "{{value}} Дарвин",
@@ -1043,7 +1083,8 @@
             },
             "activate": "Активировать",
             "activation": "Активация",
-            "deactivate": "Отключить"
+            "deactivate": "Отключить",
+            "order_id": "Номер заказа"
         }
     },
     "message": {
@@ -1375,7 +1416,8 @@
         "volume_config_header": {
             "name": "имя",
             "indexer": "Индексатор",
-            "hsm_scheduled": "HSM запланировано"
+            "hsm_scheduled": "HSM запланировано",
+            "status": "Cостояние"
         },
         "volume_header": {
             "compression": "Компрессия",
@@ -1394,7 +1436,10 @@
             "index": "Индекс",
             "primary": "Первичный",
             "secondary": "Вторичный"
-        }
+        },
+        "indexer_helperText": "Индексатор",
+        "primary_helperText": "Первичный",
+        "secondary_helperText": "Вторичный"
     },
     "have_not_setup_bucket_type": "Похоже, вы не настроили тип Бакета",
     "click_new_bucket_button_to_create_new_one": "Для создания нажмите кнопку NEW BUCKET.",
@@ -1491,15 +1536,16 @@
         "manage_the_aliases_for_this_account": "Управление альясами для этой учетной записи",
         "new_alias_name": "Имя нового альяса",
         "type_the_new_alias_name": "Введите новое имя альяса и выберите домен, чтобы добавить его к доступным альясам",
-        "your_available_aliases": "Ваши доступные альясы"
+        "your_available_aliases": "Ваши доступные альясы",
+        "allow_user_check_minimum_interval": "Разрешить пользователю менять минимальный интервал проверки"
     },
     "privacy": {
         "survey_feedback_sub_1": "Помогите нам стать лучше. Пройдите быстрый опрос.",
         "full_error_sub_1": "Мы будем вам благодарны за предоставление информации о проблемах с работой программы и учтем это в разработке",
         "analytics_sub_1": "Ваши данные в безопасности. Вся информация, которую мы собираем, является и останется анонимной. Наша команда будет использовать их для улучшения Carbonio.",
         "allow_data_analytics": "Разрешить аналитику данных",
-        "send_full_error_data_to_zextras": "Отправить полные данные об ошибках в Zextras",
-        "allow_live_survey_feedbacks": "Разрешить комментарии к опросу в реальном времени"
+        "allow_live_survey_feedbacks": "Разрешить комментарии к опросу в реальном времени",
+        "send_full_error_data": "Отправить полные данные об ошибке"
     },
     "connection": {
         "access_key": "ключ доступа",
@@ -1603,7 +1649,8 @@
         "quick_access_to": "Быстрый доступ к",
         "server_ip": "IP-адрес сервера",
         "server_name": "Имя сервера",
-        "your_notifications": "Ваши уведомления"
+        "your_notifications": "Ваши уведомления",
+        "core_version": "Версия ядра"
     },
     "notification": {
         "copy": "Копия",
@@ -1630,5 +1677,49 @@
     },
     "to_carbonio": "в Carbonio!",
     "welcome": "Добро пожаловать",
-    "welcome_to_carbonio_information": "Добро пожаловать {{adminName}} в Carbonio!"
+    "welcome_to_carbonio_information": "Добро пожаловать {{adminName}} в Carbonio!",
+    "operations": {
+        "copy_btn": "КОПИЯ",
+        "copy_operation_successfully": "Уведомление успешно скопировано",
+        "details": "Детали",
+        "done": "Готово",
+        "empty_table_helperText": "Пустая таблица",
+        "label": {
+            "Deep": "Глубокий",
+            "notifications": "Оповещения",
+            "status": "Cостояние",
+            "action(M)": "Действие (M)",
+            "create_fake_blob": "Создать фальшивый блоб",
+            "let_it_run_btn": "ЗАПУСТИТЬ",
+            "operation_model_message": "{{OperationMsg}}",
+            "remote_metadata_upload": "Удаленная загрузка метаданных",
+            "started_at": "Началось в",
+            "submitted_at": "Отправлено в",
+            "who_started_it": "Кто это начал?",
+            "stop_operation_btn": "ОСТАНОВИТЬ ОПЕРАЦИЮ",
+            "cancel_operation_btn": "ОТМЕНИТЬ ОПЕРАЦИЮ",
+            "operation_type": "Тип операции"
+        },
+        "operations_list_header": {
+            "author": "Автор",
+            "operation": "Операция",
+            "server": "Сервер",
+            "start_date": "Дата начала",
+            "status": "Cостояние",
+            "submit_date": "Дата отправки"
+        },
+        "other": "Другое",
+        "queued": "В очереди",
+        "running": "Работает",
+        "cancel_operation_model_title": "Вы отменяете {{OperationName}}",
+        "cancel_operation_model_title_helperText": "Вы отменяете {{operationName}}",
+        "operationname_on_servername": "{{operationName}} на {{serverName}}",
+        "cancel_opearation_btn": "ОТМЕНИТЬ ОПЕРАЦИЮ",
+        "queued_panel_heading": "Операции в очереди",
+        "running_panel_heading": "Запуск операций",
+        "stop_opearation_btn": "ОСТАНОВИТЬ ОПЕРАЦИЮ",
+        "done_panel_heading": "Выполненные операции",
+        "stopping_operation_model_title": "Вы останавливаете {{OperationName}}",
+        "stopping_operation_model_title_helperText": "Вы останавливаете {{operationName}}"
+    }
 }
