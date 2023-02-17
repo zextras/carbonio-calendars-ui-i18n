@@ -728,22 +728,63 @@
         "download_pdf": "PDF İNDİR",
         "load_FILE": "DOSYA YÜKLE",
         "load_and_verify_certificate": "YÜKLE VE SERTİFİKAYI ONAYLA",
-        "load_certificate_message": "Detaylarını görmek için sertifika yükleyin!<br />Başlamak için<strong>“YÜKLE VE SERTİFİKAYI ONAYLA +”</strong> tıklayın",
+        "load_certificate_message": "Detaylarını görmek için sertifikayı yükleyin!<br />Başlamak için<strong>“YÜKLE VE SERTİFİKAYI ONAYLA +”</strong> tıklayın",
         "load_copy_certi": "Sertifikanızı yükleyin veya kopyalayın",
-        "load_you_cert_file": "Sertifika dosyanızı yükleyin",
+        "load_you_cert_file": "Sertifika dosyasını yükleyin",
         "load_your_cert_file": "Sertifika dosyanızı yükleyin",
         "load_your_private_file": "Sertifika dosyanızı yükleyin",
         "max_number_account_of_this_domain_manage": "Bu alan adı için yönetilebilecek maksimum hesap sayısı",
         "new_virtual_host_name": "Yeni Sanal Host Adı yazın ve listeye eklemek için “Ekle +” simgesine tıklayın",
         "no_virtual_host_message": "Sanal host bulunmuyor. <br />Yeni oluşturmak için EKLE simgesine tıklayın.",
-        "private_key_certificate": "Özel Anahtar Sertifikası",
+        "private_key_certificate": "Sertifika Özel Anahtarı",
         "there_are_not_member_here": "Burada üye kullanıcılar yok.",
         "title_and_copyrights_information": "Başlık ve Telif Hakları Bilgisi",
-        "type_an_account_add_senders_list": "Listeye gönderen eklemek için bir hesap yazın",
+        "type_an_account_add_senders_list": "İzin verilen gönderici olarak eklemek için bir adres yazın",
         "virtual_host_msg": "Sanal ana sistemler, sistemin kullanıcı oturumu için varsayılan bir etki alanı oluşturmasını sağlar.<br />Aşağıdaki ana sistemlerden birinin URL’sini kullanarak oturum açan kullanıcının bu etki alanında olduğu varsayılır, domain1.local. <br />Sanal ana sistemin kaldırılması ancak posta kutusu sunucusu yeniden başlatıldıktan sonra yürürlüğe girer.",
-        "virtual_hosts_and_certificates": "Sanal Host ve Sertifika",
+        "virtual_hosts_and_certificates": "Sanal Host ve Sertifikalar",
         "want_to_use_this_certifiacte": "BU SERTİFİKAYI KULLANMAK İSTİYORUM",
-        "what_inside": "İçinde ne var?"
+        "what_inside": "Konu",
+        "ID": "ID",
+        "centralized": "Merkezi",
+        "done": "Tamamlandı",
+        "empty_table_helperText": "Tabloyu Boşalt",
+        "external_volume_edited": "{{message}}",
+        "general_options": "Genel Seçenekler",
+        "operation": {
+            "get_all_operation_error": "{{name}}",
+            "stop_operation_error": "{{name}}"
+        },
+        "running": "Çalışıyor",
+        "stop_operation_helperText": "{{message}}",
+        "use_intelligent_tiering": "Intelligent Tiering kullan",
+        "queued": "Sırada",
+        "account_password_setting_note_for_external_authentication": "Aşağıdaki ↓ ayarlar dışarıdan kimlik doğrulama için alanadına ait kullanıcıların belirlediği parolaları etkilemez. Burada yapılan değişiklikler, Servis Paketinde parola ayarlarını ve başarısız giriş nedeniyle kilitleme ayarlarını değiştirecek.",
+        "cancel_operation_sucess": "{{name}} işlemi başarıyla iptal edildi",
+        "cancel_operations_message": "Bu işlemi İPTAL etmek istediğinizden emin misiniz? <br /> İŞLEMİ İPTAL ET tıkladığınızda <br /> işlemler bekleme sırasından silinecek.",
+        "restore_config_info_row_1": "<bold>{{accountName}}</bold> aşağıda seçtiğiniz hesaba kopyalanacak.",
+        "restore_select_account_row_2": "<bold>Bilgi notu;</bold> tüm postalar, randevular, kişiler ve hesap ayarları seçilen zamandaki haliyle geri yüklenecek.",
+        "stop_operations_message": "Bu işlemi DURDURMAK istediğinizden emin misiniz? <br /> İŞLEMİ DURDUR tıkladığınızda, durdurulacak ve <br /> işlemler bekleme sırasından silinecek.",
+        "storage_centralized_helpertext": "<bold>Merkezileştirme için CLI kullanın.</bold> Merkezi veri, iki veya daha fazla sunucunun aynı veriye erişmesi gerektiğinde kullanışlıdır. Veriyi tek yerde tutarak, hem donanımı hem de veriyi birlikte yönetmek daha kolay olur. ",
+        "use_infraquent_access_helptext": "<underline>Amazon Storage Class Dokümantasyon</underline>",
+        "cancel_operations_msg": "Bu işlemi İPTAL etmek istediğinizden emin misiniz? <br /> İŞLEMİ İPTAL ET tıkladığınızda işlemler bekleme sırasından silinecek.",
+        "disable_the_account": "Hesabı kullanıma kapat",
+        "infrequent_access": "Ara sıra erişim",
+        "ldap_example_query": "Örnek: ldap:///??sub?(&(objectClass=zimbraAccount)(ZimbraAccountStatus=active))",
+        "lockout": "Kilitle",
+        "please_wait": "Lütfen bekleyin",
+        "prefix_name": "Önek - tüm nesne adlarında bu önek kullanılacak",
+        "restore_select_account_row_1": "Bu aracı kullanarak, yedeklenmiş bir hesabın tümünü yeni bir hesaba geri yükleyebilirsiniz.",
+        "size_threshold": "Boyut Aralığı",
+        "stop_operation_sucess": "{{name}} işlemi başarıyla durduruldu",
+        "stop_operations_msg": "Bu işlemi DURDURMAK istediğinizden emin misiniz? <br /> İŞLEMİ DURDUR tıkladığınızda, durdurulacak ve işlemler bekleme sırasından silinecek.",
+        "type_of_volume": "Hacim Türü",
+        "use_infraquent_access": "Ara sıra erişim kullan",
+        "use_intelligent_tiering_helptext": "<underline>Amazon Tiering Dokümantasyon</underline>",
+        "volume_as_current": "Hacim - geçerli olan",
+        "volume_available_unused_Buckets_list_in_backup": "Kullanılabilir Bucket Listesi (yedekleme tarafından kullanılmayan)",
+        "volume_create_error": "{{volumeErrMessage}}",
+        "volume_created_msg": "Hacim başarıyla oluşturuldu",
+        "volume_detail_page_title": "{{message}} Detaylar"
     },
     "timezone": {
         "asia_gaza": "{{value}} Gaza",
@@ -1002,7 +1043,8 @@
             },
             "activate": "Etkinleştir",
             "activation": "Etkinleştirme",
-            "deactivate": "Aktif Değil"
+            "deactivate": "Aktif Değil",
+            "order_id": "Sipariş No"
         }
     },
     "domain": {
@@ -1046,7 +1088,7 @@
         "certificate_valid": "Sertifika geçerli",
         "certificate_valid_but_either_expired_or_exists_non_trusted_CA": "Sertifika geçerli ancak süresi bitmiş veya güvenilmeyen CA olabilir",
         "domain_certificate_removed": "Alan adı sertifikaları kaldırıldı",
-        "private_key_certificate_removed": "Özel anahtar sertifikası kaldırıldı"
+        "private_key_certificate_removed": "Sertifikanın özel anahtarı kaldırıldı"
     },
     "message": {
         "snackbar": {
@@ -1377,7 +1419,8 @@
         "volume_config_header": {
             "name": "Ad",
             "hsm_scheduled": "HSM Zamanlandı",
-            "indexer": "İndeksleyici"
+            "indexer": "İndeksleyici",
+            "status": "Durum"
         },
         "volume_header": {
             "compression": "Sıkıştırma",
@@ -1396,7 +1439,10 @@
             "index": "İndeks",
             "primary": "Birincil",
             "secondary": "İkincil"
-        }
+        },
+        "indexer_helperText": "İndeksleyici",
+        "primary_helperText": "Birincil",
+        "secondary_helperText": "İkincil"
     },
     "privacy": {
         "survey_feedback_sub_1": "Anketler hızlı, kolay ve yapmamız gerekenleri anlamamız için çok kullanışlı olacak.",
@@ -1404,7 +1450,7 @@
         "analytics_sub_1": "Veriniz güvende. Toplanan bilgiler hiçbir zaman kişi bilgisi içermeyecek. Bu bilgiler, ekibimiz tarafından Carbonio ürününü daha nasıl geliştirebiliriz anlamak üzere kullanılacak.",
         "allow_live_survey_feedbacks": "Geri bildirim için anketlere izin ver",
         "allow_data_analytics": "Veri analize izin ver",
-        "send_full_error_data_to_zextras": "Tüm hata verisini Zextras'a gönder"
+        "send_full_error_data": "Tüm hata verisini gönder"
     },
     "have_not_setup_bucket_type": "Bucket türü ayarları yapılmamış",
     "click_new_bucket_button_to_create_new_one": "Yeni oluşturmak için YENI BUCKET simgesine tıklayın.",
@@ -1502,7 +1548,8 @@
         "manage_aliases": "TAKMA ADLARI YÖNET",
         "manage_the_aliases_for_this_account": "Bu hesap için Takma Adları yönet",
         "new_alias_name": "Yeni Takma Ad",
-        "your_available_aliases": "Kullanılabilir Takma Adlarınız"
+        "your_available_aliases": "Kullanılabilir Takma Adlarınız",
+        "allow_user_check_minimum_interval": "Kullanıcının minimum kontrol aralığını değiştirmesine izin ver"
     },
     "connection": {
         "access_key": "Access Key",
@@ -1513,7 +1560,7 @@
     },
     "reminder": {
         "minute": "{{count}} dakika",
-        "minute_plural": ""
+        "minute_plural": "{{count}} dakika"
     },
     "hsm": {
         "allocation": "Kaynak Kullanımı",
@@ -1607,7 +1654,8 @@
         "quick_access_to": "Hızlı Erişim",
         "server_ip": "Sunucu IP",
         "server_name": "Sunucu adı",
-        "your_notifications": "Bildirimleriniz"
+        "your_notifications": "Bildirimleriniz",
+        "core_version": "Ana Versiyon"
     },
     "notification": {
         "copy": "Kopyala",
@@ -1634,5 +1682,50 @@
     },
     "cumminity_edition": "Topluluk Sürümü!",
     "welcome": "Hoş Geldiniz",
-    "welcome_to_carbonio_information": "{{adminName}} - Carbonio'a Hoş Geldin!"
+    "welcome_to_carbonio_information": "{{adminName}} - Carbonio'a Hoş Geldin!",
+    "operations": {
+        "copy_btn": "KOPYALA",
+        "copy_operation_successfully": "Bildirim başarıyla kopyalandı",
+        "details": "Detaylar",
+        "done": "Tamamlandı",
+        "empty_table_helperText": "Tabloyu Boşalt",
+        "label": {
+            "Deep": "Derinlik",
+            "notifications": "Bildirimler",
+            "status": "Durum",
+            "action(M)": "Eylem (M)",
+            "cancel_operation_btn": "İŞLEMİ İPTAL ET",
+            "create_fake_blob": "Sahte Blob oluştur",
+            "let_it_run_btn": "ÇALIŞTIR",
+            "operation_model_message": "{{OperationMsg}}",
+            "operation_type": "İşlem Türü",
+            "read_error_threshold": "Okuma Hata Aralığı",
+            "remote_metadata_upload": "Uzak Metaveri Yükleme",
+            "started_at": "Başlangıç",
+            "stop_operation_btn": "İŞLEMİ DURDUR",
+            "submitted_at": "İstek",
+            "who_started_it": "Kim Başlattı?"
+        },
+        "operations_list_header": {
+            "author": "Yazar",
+            "operation": "İşlem",
+            "server": "Sunucu",
+            "start_date": "Başlangıç tarihi",
+            "status": "Durum",
+            "submit_date": "Gönderim tarihi"
+        },
+        "other": "Diğer",
+        "queued": "Sırada",
+        "running": "Çalışıyor",
+        "cancel_opearation_btn": "İŞLEMİ İPTAL ET",
+        "cancel_operation_model_title": "{{OperationName}} işlemini iptal ediyorsunuz",
+        "cancel_operation_model_title_helperText": "{{operationName}} işlemini iptal ediyorsunuz",
+        "done_panel_heading": "İşlemler Tamamlandı",
+        "operationname_on_servername": "{{operationName}} - {{serverName}}",
+        "queued_panel_heading": "Sıradaki İşlemler",
+        "running_panel_heading": "Çalışan İşlemler",
+        "stop_opearation_btn": "İŞLEMİ DURDUR",
+        "stopping_operation_model_title": "{{OperationName}} işlemini iptal ediyorsunuz",
+        "stopping_operation_model_title_helperText": "{{operationName}} işlemini iptal ediyorsunuz"
+    }
 }

@@ -746,7 +746,24 @@
         "who_can_send_mails_to_list ": "Wer kann Emails AN diese Liste schicken?",
         "domain_certificate_private_key": "Domain-Privatschlüssel",
         "Aliases": "Aliasnamen",
-        "domain_certificate": "Domain-Zertifikat"
+        "domain_certificate": "Domain-Zertifikat",
+        "ID": "ID",
+        "centralized": "Zentralisiert",
+        "done": "Fertig",
+        "empty_table_helperText": "Leere Tabelle",
+        "external_volume_edited": "{{message}}",
+        "general_options": "Allgemeine Optionen",
+        "operation": {
+            "get_all_operation_error": "{{name}}",
+            "stop_operation_error": "{{name}}"
+        },
+        "queued": "In der Warteschlange",
+        "running": "Läuft",
+        "stop_operation_helperText": "{{message}}",
+        "use_intelligent_tiering": "Intelligentes Tiering nutzen",
+        "lockout": "Sperrung",
+        "please_wait": "Bitte warten Sie.",
+        "what_inside": "Betreff"
     },
     "timezone": {
         "asia_yerevan": "{{value}} Eriwan",
@@ -1409,7 +1426,6 @@
         "secret_key": "Geheimer Schlüssel"
     },
     "privacy": {
-        "send_full_error_data_to_zextras": "Vollständige Fehlerdaten an schicken",
         "allow_data_analytics": "Datenanalyse erlauben",
         "allow_live_survey_feedbacks": "Feedback Umfragen erlauben",
         "analytics_sub_1": "Ihre Daten sind sicher. Alle Informationen, die wir sammeln sind und bleiben anonym. Sie werden nur von unserem Team genutzt, um zu verstehen, wie wir Carbonio verbessern können.",
@@ -1447,7 +1463,8 @@
         "volume_config_header": {
             "name": "Name",
             "indexer": "Indexer",
-            "hsm_scheduled": "HSM Geplant"
+            "hsm_scheduled": "HSM Geplant",
+            "status": "Status"
         },
         "volume_header": {
             "compression": "Komprimierung",
@@ -1466,7 +1483,10 @@
             "index": "Index",
             "primary": "Primär",
             "secondary": "Sekundär"
-        }
+        },
+        "indexer_helperText": "Indexer",
+        "primary_helperText": "Primär",
+        "secondary_helperText": "Sekundär"
     },
     "hsm": {
         "allocation": "Zuordnung",
@@ -1561,5 +1581,27 @@
         "carbonio": "Carbonio",
         "description": "Beschreibung"
     },
-    "welcome": "Willkommen"
+    "welcome": "Willkommen",
+    "operations": {
+        "empty_table_helperText": "Leere Tabelle",
+        "label": {
+            "Deep": "Tief",
+            "notifications": "Benachrichtigungen",
+            "status": "Status"
+        },
+        "operations_list_header": {
+            "author": "Autor",
+            "operation": "Vorgang",
+            "server": "Server",
+            "start_date": "Startdatum",
+            "status": "Status",
+            "submit_date": "Datum eingeben"
+        },
+        "other": "Andere",
+        "queued": "In der Warteschlange",
+        "running": "Läuft",
+        "copy_btn": "KOPIEREN",
+        "details": "Details",
+        "done": "Fertig"
+    }
 }
