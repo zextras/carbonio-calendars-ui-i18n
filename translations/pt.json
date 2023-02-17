@@ -224,7 +224,13 @@
         "verify": "Verificar",
         "verify_certificate": "Verificar",
         "notifications": "Notificações",
-        "open": "Abrir"
+        "open": "Abrir",
+        "ID": "ID",
+        "running": "A executar",
+        "centralized": "Centralizado",
+        "done": "Concluído",
+        "general_options": "Opções gerais",
+        "use_intelligent_tiering": "Usar Intelligent S3 Tiering"
     },
     "timezone": {
         "asia_pyongyang": "{{value}} Pyongyang",
@@ -592,9 +598,6 @@
         "descriptive_name": "Nome descritivo",
         "notes": "Observações"
     },
-    "privacy": {
-        "send_full_error_data_to_zextras": "Enviar relatório completo de erros para a Zextras"
-    },
     "reminder": {
         "minute": "{{count}} minuto",
         "minute_plural": ""
@@ -644,7 +647,8 @@
             "external": "Externo"
         },
         "volume_config_header": {
-            "name": "Nome"
+            "name": "Nome",
+            "status": "Status"
         },
         "volume_header": {
             "current": "Corrente",
@@ -662,7 +666,9 @@
             "index": "Índice",
             "primary": "Primário",
             "secondary": "Secundário"
-        }
+        },
+        "primary_helperText": "Primário",
+        "secondary_helperText": "Secundário"
     },
     "dashboard": {
         "carbonio": "Carbonio",
@@ -675,5 +681,23 @@
         "mark_as_read": "Marcar como lida",
         "mark_as_unread": "Marcar como não lído",
         "notifications_list": "Lista de notificações"
+    },
+    "operations": {
+        "copy_btn": "COPIAR",
+        "details": "Detalhes",
+        "done": "Concluído",
+        "label": {
+            "notifications": "Notificações",
+            "status": "Status"
+        },
+        "operations_list_header": {
+            "author": "Autor",
+            "operation": "Operação",
+            "server": "Servidor",
+            "start_date": "Data de início",
+            "status": "Status"
+        },
+        "other": "Outro",
+        "running": "A executar"
     }
 }

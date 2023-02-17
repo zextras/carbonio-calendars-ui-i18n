@@ -256,7 +256,8 @@
             },
             "activate": "Aktywuj",
             "activation": "Aktywacja",
-            "deactivate": "Deaktywuj"
+            "deactivate": "Deaktywuj",
+            "order_id": "ID zamówienia"
         }
     },
     "domain": {
@@ -1037,14 +1038,55 @@
         "load_your_cert_file": "Prześlij plik z certyfikatem",
         "load_your_private_file": "Prześlij plik z certyfikatem",
         "max_number_account_of_this_domain_manage": "Max. liczba kont, którą może zarządzać ta domena",
-        "no_virtual_host_message": "Nie ma tutaj żadnych wirtualnych hostów.<br />Kliknij w przycisk DODAJ, aby dodać nowego.",
+        "no_virtual_host_message": "Nie ma tutaj żadnych wirtualnych hostów.<br />Kliknij w przycisk DODAJ, aby go utworzyć.",
         "private_key_certificate": "Prywatny klucz certyfikatu",
         "there_are_not_member_here": "Nie ma tutaj żadnych członków.",
         "title_and_copyrights_information": "Tytuł i informacje o prawach autorskich",
-        "type_an_account_add_senders_list": "Wprowadź konto, aby dodać je jako nadawcę listy",
-        "virtual_hosts_and_certificates": "Wirtualne hosty i certyfikat",
+        "type_an_account_add_senders_list": "Wprowadź adres e-mail, aby nadać mu uprawnienia nadawcy",
+        "virtual_hosts_and_certificates": "Wirtualne hosty i certyfikaty",
         "want_to_use_this_certifiacte": "CHCĘ UŻYĆ TEGO CERTYFIKATU",
-        "what_inside": "Co się w tym znajduje?"
+        "what_inside": "Temat",
+        "centralized": "Zcentralizowane",
+        "done": "Gotowe",
+        "empty_table_helperText": "Tabela jest pusta",
+        "external_volume_edited": "{{message}}",
+        "ID": "ID",
+        "general_options": "Ustawienia ogólne",
+        "operation": {
+            "get_all_operation_error": "{{name}}",
+            "stop_operation_error": "{{name}}"
+        },
+        "queued": "W kolejce",
+        "running": "Działa",
+        "stop_operation_helperText": "{{message}}",
+        "use_intelligent_tiering": "Używaj intelligent tiering",
+        "ldap_example_query": "Przykład: ldap:///??sub?(&(objectClass=zimbraAccount)(ZimbraAccountStatus=active))",
+        "cancel_operations_message": "Czy na pewno chcesz ANULOWAĆ tę operację? <br /> Klikając ANULUJ OPERACJĘ, zostanie ona <br /> usunięta z kolejki operacji.",
+        "restore_config_info_row_1": "Konto <bold>{{accountName}}</bold> zostanie skopiowane na konto, które wybierzesz w polu poniżej.",
+        "restore_select_account_row_1": "Przy użyciu tego narzędzia będziesz w stanie w całości przywrócić konto z kopii zapasowej na nowe konto.",
+        "restore_select_account_row_2": "<bold>Uwaga</bold>, wszystkie e-maile, spotkania, kontakty i ustawienia konta zostaną przywrócone do stanu z wybranego punktu w czasie.",
+        "stop_operations_msg": "Czy na pewno chcesz ZATRZYMAĆ tę operację? <br /> Po kliknięciu ZATRZYMAJ OPERACJĘ, zostanie ona zatrzymana i usunięta z kolejki operacji.",
+        "storage_centralized_helpertext": "<bold>Użyj CLI, aby zarządzać centralizacją.</bold> Zcentralizowane dane mogą okazać się przydatne, gdy dwa lub więcej serwerów potrzebuje dostępu do tych samych danych. Trzymając dane w jednym miejscu, łatwiej jest zarządzać urządzeniami jak i samymi danymi. ",
+        "account_password_setting_note_for_external_authentication": "Ustawienia poniżej nie mają wpływu na hasła ustawione przez użytkowników w domenach, które używają zewnętrznego uwierzytelniania. Zmiany, których tutaj dokonasz spowodują nadpisanie ustawień COS dla hasła i blokadę konta (tak jak po nieudanym logowaniu).",
+        "cancel_operation_sucess": "Operacja {{name}} została anulowana",
+        "cancel_operations_msg": "Czy na pewno chcesz ANULOWAĆ tę operację? <br /> Po kliknięciu ANULUJ OPERACJĘ, zostanie ona usunięta z kolejki operacji.",
+        "disable_the_account": "Wyłącz konto",
+        "infrequent_access": "Infrequent access",
+        "lockout": "Blokada",
+        "please_wait": "Proszę czekać",
+        "prefix_name": "Prefiks - wszystkie obiekty będą miały ten prefiks w swojej nazwie",
+        "size_threshold": "Próg rozmiaru",
+        "stop_operation_sucess": "Operacja {{name}} została zatrzymana",
+        "stop_operations_message": "Czy na pewno chcesz ZATRZYMAĆ tę operację? <br /> Po kliknięciu ZATRZYMAJ OPERACJĘ zostanie ona zatrzymana i <br /> usunięta z kolejki operacji.",
+        "type_of_volume": "Typ woluminu",
+        "use_infraquent_access": "Używaj infrequent access",
+        "use_infraquent_access_helptext": "<underline>Dokumentacja klas przechowywania Amazon</underline>",
+        "use_intelligent_tiering_helptext": "<underline>Dokumentacja Amazon Tiering</underline>",
+        "volume_as_current": "Wolumin jako bieżący",
+        "volume_available_unused_Buckets_list_in_backup": "Lista dostępnych bucketów (które nie są używane w kopii zapasowej)",
+        "volume_create_error": "{{volumeErrMessage}}",
+        "volume_created_msg": "Wolumin został stworzony",
+        "volume_detail_page_title": "Szczegóły {{message}}"
     },
     "message": {
         "snackbar": {
@@ -1179,7 +1221,7 @@
         "spam_message_lifetime": "Okres dostępności wiadomości oznaczonej jako spam",
         "status": "Status",
         "tagging": "Tagowanie",
-        "time_to_lockout_account": "Czas blokady",
+        "time_to_lockout_account": "Czas blokady konta",
         "time_window_failed_logins_must_occur_to_lock_account": "Okres kolejnych nieudanych logowań prowadzących do blokady",
         "timeout_policy": "Polityka limitów czasowych nieaktywności",
         "trashed_message_lifetime": "Czas życia usuniętej wiadomości",
@@ -1253,7 +1295,7 @@
         "search_a_specific_server": "Wyszukaj konkretny serwer",
         "reject_common_passwords": "Odrzucaj proste hasła",
         "percentage_threshold_for_quota_warning": "Procentowy próg dla ostrzeżeń o limicie przestrzeni",
-        "password_set_to_use_external_authentication_information_msg": "Te ustawienia nie mają wpływu na hasła ustawione przez użytkowników w domenach, które są skonfigurowane by używać zewnętrznego uwierzytelniania",
+        "password_set_to_use_external_authentication_information_msg": "Te ustawienia nie mają wpływu na hasła ustawione przez użytkowników w domenach, które używają zewnętrznego uwierzytelniania",
         "out_of_the_office_reply": "Odpowiedź Poza biurem",
         "notify_changes_by_delegated_access": "Powiadamiaj o zmianach dokonanych przez pełnomocników",
         "name_server": "Serwer nazw",
@@ -1443,20 +1485,21 @@
         "manage_aliases": "ZARZĄDZAJ ALIASEM",
         "manage_the_aliases_for_this_account": "Zarządzaj aliasami dla tego konta",
         "new_alias_name": "Nowa nazwa aliasu",
-        "your_available_aliases": "Dostępne aliasy"
+        "your_available_aliases": "Dostępne aliasy",
+        "allow_user_check_minimum_interval": "Pozwalaj użytkownikowi na zmianę minimalnego interwału sprawdzania"
     },
     "privacy": {
-        "send_full_error_data_to_zextras": "Wysyłaj wszystkie informacje o błędach do Zextras",
         "survey_feedback_sub_1": "Nie martw się, ankiety będą szybkie, proste i bardzo pomogą nam zrozumieć co robimy dobrze a co źle.",
         "full_error_sub_1": "Wszyscy popełniamy błędy, ale największe znaczenie ma to jak sobie z nimi radzimy! Chcemy uczyć się na nszych błędach, dlatego docenimy jeśli dasz nam znać jak możemy je naprawić",
         "analytics_sub_1": "Twoje dane są bezpieczne. Wszystkie informacje, które zbieramy są i pozostaną anonimowe. Zostaną użyte przez nasz zespół by zrozumieć jak możemy ulepszyć Carbonio.",
         "allow_live_survey_feedbacks": "Zezwalaj na opinie z ankiet",
-        "allow_data_analytics": "Zezwalaj na analitykę danych"
+        "allow_data_analytics": "Zezwalaj na analitykę danych",
+        "send_full_error_data": "Wyślij pełne date o błędach"
     },
     "reminder": {
         "minute_0": "{{count}} minuta",
-        "minute_1": "",
-        "minute_2": ""
+        "minute_1": "{{count}} minuty",
+        "minute_2": "{{count}} minut"
     },
     "connection": {
         "access_key": "Klucz dostępu",
@@ -1490,7 +1533,8 @@
         "volume_config_header": {
             "name": "Imię",
             "hsm_scheduled": "HSM zostało zaplanowane",
-            "indexer": "Indeksowanie"
+            "indexer": "Indeksowanie",
+            "status": "Status"
         },
         "volume_header": {
             "compression": "Kompresja",
@@ -1509,7 +1553,10 @@
             "index": "Indeks",
             "primary": "Pierwszorzędny",
             "secondary": "Drugorzędny"
-        }
+        },
+        "primary_helperText": "Pierwszorzędny",
+        "secondary_helperText": "Drugorzędny",
+        "indexer_helperText": "Indeksowanie"
     },
     "have_not_setup_bucket_type": "Wygląda na to, że nie ustawiłeś typu bucketu",
     "click_new_bucket_button_to_create_new_one": "Kliknij przycisk NOWY BUCKET, aby stworzyć nowy.",
@@ -1596,14 +1643,15 @@
         "description": "Opis",
         "carbonio": "Carbonio",
         "quick_access_default_domain": "Szybki dostęp do {defaultDomain}",
-        "carbonio_core": "Carbonio rdzeń",
+        "carbonio_core": "Carbonio Rdzeń",
         "go_to_mailstores_server_list": "Idź do listy serwerów przechowywania poczty",
         "go_to_notification": "Idź do powiadomień",
         "new_notifications": "Nowe powiadomienia",
         "quick_access_to": "Szybki dostęp do",
         "server_ip": "Serwer IP",
         "server_name": "Nazwa serwera",
-        "your_notifications": "Twoje powiadomienia"
+        "your_notifications": "Twoje powiadomienia",
+        "core_version": "Wersja rdzenia"
     },
     "notification": {
         "copy": "Skopiuj",
@@ -1630,5 +1678,50 @@
         "load_certificate": "PRZEŚLIJ CERTYFIKAT"
     },
     "welcome": "Witaj",
-    "welcome_to_carbonio_information": "{{adminName}}, witaj w Carbonio!"
+    "welcome_to_carbonio_information": "{{adminName}}, witaj w Carbonio!",
+    "operations": {
+        "copy_btn": "SKOPIUJ",
+        "copy_operation_successfully": "Powiadomienie zostało skopiowane",
+        "details": "Szczegóły",
+        "done": "Gotowe",
+        "empty_table_helperText": "Tabela jest pusta",
+        "label": {
+            "Deep": "Głęboki",
+            "notifications": "Notifications",
+            "status": "Status",
+            "action(M)": "Czynność (M)",
+            "cancel_operation_btn": "ANULUJ OPERACJĘ",
+            "create_fake_blob": "Stwórz fake blob",
+            "let_it_run_btn": "URUCHOM",
+            "operation_model_message": "{{OperationMsg}}",
+            "operation_type": "Typ operacji",
+            "read_error_threshold": "Próg wyświetlania błędu",
+            "remote_metadata_upload": "Przesyłanie zdalnych metadanych",
+            "started_at": "Rozpoczęto o",
+            "submitted_at": "Zakończono o",
+            "stop_operation_btn": "ZATRZYMAJ OPERACJĘ",
+            "who_started_it": "Kto ją rozpoczął?"
+        },
+        "operations_list_header": {
+            "author": "Autor",
+            "operation": "Operacja",
+            "server": "Serwer",
+            "start_date": "Data rozpoczęcia",
+            "status": "Status",
+            "submit_date": "Data wysłania"
+        },
+        "other": "Inne",
+        "queued": "W kolejce",
+        "running": "Działa",
+        "cancel_opearation_btn": "ANULUJ OPERACJĘ",
+        "cancel_operation_model_title": "Anulujesz operację {{OperationName}}",
+        "cancel_operation_model_title_helperText": "Anulujesz operację {{operationName}}",
+        "done_panel_heading": "Ukończone operacje",
+        "operationname_on_servername": "Operacja {{operationName}} na serwerze {{serverName}}",
+        "queued_panel_heading": "Operacje w kolejce",
+        "running_panel_heading": "Operacje w trakcie",
+        "stop_opearation_btn": "ZATRZYMAJ OPERACJĘ",
+        "stopping_operation_model_title": "Zatrzymujesz operację {{OperationName}}",
+        "stopping_operation_model_title_helperText": "Zatrzymujesz operację {{operationName}}"
+    }
 }
