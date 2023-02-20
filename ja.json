@@ -331,7 +331,7 @@
         "page ": "共有リクエストを承認しました",
         "page_": "共有リクエストを承認しました",
         "privacy": "プライバシー",
-        "remove": "削除する",
+        "remove": "すべて削除する",
         "save": "保存する",
         "signature_required": "署名の情報が必要です。",
         "snackbar": {
@@ -981,7 +981,7 @@
         "secondary_volume": "これはセカンダリ ボリュームです",
         "security": "セキュリティ",
         "select_a_bucket_configuration": "バケット構成を選択する",
-        "selected_empty_bucket": "まだバケットを選択していませんが、上のフィールドに入力し、バケットを表示し始められます。",
+        "selected_empty_bucket": "まだバケットを選択していません。上のフィールドに入力し、バケットを表示し始められます。",
         "session_end_success": "セッションが終了しました",
         "storage_centralized": "このストレージを集中管理します",
         "suspend": "停止する",
@@ -1053,7 +1053,7 @@
         "download_pdf": "PDFをダウンロード",
         "infrequent_access": "まれなアクセス",
         "load_your_cert_file": "証明書ファイルをロードしてください",
-        "load_your_private_file": "証明書ファイルを読み込んでください",
+        "load_your_private_file": "証明書ファイルをロードしてください",
         "max_number_account_of_this_domain_manage": "このドメインが管理できるアカウントの最大数",
         "new_virtual_host_name": "新しい仮想ホスト名を入力して[追加] をクリックし、リストに追加してください",
         "prefix_name": "接頭辞 - あらゆるオブジェクト名にこの接頭辞が含まれます",
@@ -1086,7 +1086,19 @@
         "want_to_use_this_certifiacte": "この証明書を使用します",
         "please_wait": "しばらくお待ちください",
         "lockout": "ロックアウト",
-        "what_inside": "件名"
+        "what_inside": "件名",
+        "Accounts": "アカウント",
+        "EDIT": "編集する",
+        "REMOVE": "削除",
+        "Rights": "権限",
+        "Type": "種類",
+        "chats": "チャット",
+        "contacts": "連絡先",
+        "files": "ファイル",
+        "mail_signatures": "メールの署名",
+        "mails": "メール",
+        "out_of_the_office_reply": "不在時の返信",
+        "tasks": "タスク"
     },
     "message": {
         "snackbar": {
@@ -1494,11 +1506,13 @@
         "allow_user_check_minimum_interval": "ユーザーがチェック間隔の最小値を変更できるようにします",
         "manage_the_aliases_for_this_account": "このアカウントのエイリアスを管理します",
         "new_alias_name": "新しいエイリアス名",
-        "type_name_of_aliases": "新しいエイリアス名を入力してドメインを選択し、利用可能なエイリアスに追加してください ",
         "type_the_new_alias_name": "新しいエイリアス名を入力してドメインを選択し、利用可能なエイリアスに追加してください",
         "your_available_aliases": "利用可能なエイリアス",
         "click_on_the_pencil_to_edit": "鉛筆をクリックして使用可能なエイリアスを編集するか、十字をクリックして削除してください",
-        "manage_aliases": "エイリアスの管理"
+        "manage_aliases": "エイリアスの管理",
+        "NEXT": "次へ",
+        "abstract": "概要",
+        "on_behalf_of": "代わりに"
     },
     "connection": {
         "access_key": "アクセスキー",

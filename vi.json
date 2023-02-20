@@ -658,7 +658,19 @@
         "queued": "Đã xếp hàng",
         "stop_operation_helperText": "{{message}}",
         "running": "Đang chạy",
-        "use_intelligent_tiering": "Sử dụng phân lớp thông minh"
+        "use_intelligent_tiering": "Sử dụng phân lớp thông minh",
+        "EDIT": "CHỈNH SỬA",
+        "what_inside": "Chủ đề",
+        "Accounts": "Tài khoản",
+        "Rights": "Quyền",
+        "Type": "Loại",
+        "chats": "Trò chuyện",
+        "contacts": "Danh bạ",
+        "files": "Tệp",
+        "mail_signatures": "Chữ ký thư",
+        "mails": "Thư",
+        "out_of_the_office_reply": "Trả lời khi không có mặt ở văn phòng",
+        "tasks": "Các Nhiệm vụ"
     },
     "timezone": {
         "australia_sydney": "{{value}} Canberra, Melbourne, Sydney",
@@ -1280,7 +1292,10 @@
         "view_mail_as_html": "Xem thư dưới dạng HTML",
         "Chats": "Trò chuyện",
         "domain": "Miền",
-        "files": "Tệp"
+        "files": "Tệp",
+        "NEXT": "TIẾP",
+        "abstract": "Tóm lược",
+        "on_behalf_of": "thay mặt cho"
     },
     "privacy": {
         "full_error_sub_1": "Tất cả chúng ta đều mắc sai lầm nhưng chính cách bạn đối phó với chúng sẽ thay đổi mọi thứ! Chúng tôi muốn học hỏi từ những lỗi của mình, vì vậy hãy cho chúng tôi biết cách chúng tôi có thể sửa chúng",

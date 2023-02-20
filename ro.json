@@ -169,7 +169,11 @@
         "ID": "ID",
         "general_options": "Opţiuni generale",
         "running": "Executare",
-        "done": "Realizat"
+        "done": "Realizat",
+        "Accounts": "Conturi",
+        "Type": "Tip",
+        "contacts": "Contacte",
+        "files": "Fisiere"
     },
     "core": {
         "subscription": {

@@ -761,7 +761,19 @@
         "use_intelligent_tiering": "Intelligentes Tiering nutzen",
         "lockout": "Sperrung",
         "please_wait": "Bitte warten Sie.",
-        "what_inside": "Betreff"
+        "what_inside": "Betreff",
+        "Accounts": "Konten",
+        "EDIT": "BEARBEITEN",
+        "REMOVE": "ENTFERNEN",
+        "Rights": "Rechte",
+        "Type": "Typ",
+        "chats": "Chats",
+        "contacts": "Kontakte",
+        "files": "Dateien",
+        "mail_signatures": "Mail-Signaturen",
+        "mails": "Mails",
+        "out_of_the_office_reply": "Abwesenheitsnachricht",
+        "tasks": "Aufgaben"
     },
     "timezone": {
         "asia_yerevan": "{{value}} Eriwan",
@@ -1414,7 +1426,10 @@
         "Chats": "Chats",
         "domain": "Domain",
         "aliases": "Aliasnamen",
-        "files": "Dateien"
+        "files": "Dateien",
+        "NEXT": "WEITER",
+        "abstract": "Abstrakt",
+        "on_behalf_of": "im namen von"
     },
     "connection": {
         "access_key": "Access Key",

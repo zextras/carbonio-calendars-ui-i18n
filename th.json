@@ -1029,7 +1029,7 @@
         "empty_table_helperText": "โต๊ะว่าง",
         "queued": "อยู่ในคิวแล้ว",
         "stop_operation_helperText": "{{message}}",
-        "what_inside": "เรื่อง",
+        "what_inside": "หัวข้อ",
         "lockout": "การล็อก",
         "please_wait": "โปรดรอสักครู่",
         "virtual_hosts_and_certificates": "โฮสต์เสมือนจริง & ใบรับรอง",
@@ -1086,7 +1086,19 @@
         "volume_create_error": "{{volumeErrMessage}}",
         "volume_created_msg": "สร้างวอลุ่มสำเร็จแล้ว",
         "volume_detail_page_title": "{{message}} รายละเอียด",
-        "want_to_use_this_certifiacte": "ฉันต้องการใช้ใบรับรองนี้"
+        "want_to_use_this_certifiacte": "ฉันต้องการใช้ใบรับรองนี้",
+        "files": "Drive",
+        "tasks": "งาน",
+        "Accounts": "บัญชีผู้ใช้",
+        "EDIT": "แก้ไข",
+        "REMOVE": "ลบ",
+        "Rights": "สิทธิ์",
+        "Type": "ประเภท",
+        "chats": "Chats",
+        "contacts": "ผู้ติดต่อ",
+        "mail_signatures": "ลายเซ็นจดหมาย",
+        "mails": "อีเมล",
+        "out_of_the_office_reply": "การตอบกลับเมื่อไม่อยู่ในสำนักงาน"
     },
     "message": {
         "snackbar": {
@@ -1482,12 +1494,14 @@
         "aliases": "นามแฝง",
         "allow_user_check_minimum_interval": "อนุญาตให้ผู้ใช้เปลี่ยนช่วงเวลาการตรวจสอบขั้นต่ำ",
         "manage_aliases": "จัดการนามแฝง",
-        "type_name_of_aliases": "พิมพ์ชื่อนามแฝงใหม่และเลือกโดเมนเพื่อเพิ่มไปแทนชื่อที่มีอยู่ของคุณ ",
         "type_the_new_alias_name": "พิมพ์ชื่อนามแฝงใหม่และเลือกโดเมนเพื่อเพิ่มไปแทนชื่อที่มีอยู่ของคุณ",
         "click_on_the_pencil_to_edit": "คลิกที่ดินสอเพื่อแก้ไขนามแฝงที่มีอยู่หรือคลิกที่กากบาทเพื่อลบออก",
         "manage_the_aliases_for_this_account": "จัดการนามแฝงสำหรับบัญชีนี้",
         "new_alias_name": "ชื่อนามแฝงใหม่",
-        "your_available_aliases": "นามแฝงที่มีอยู่ของคุณ"
+        "your_available_aliases": "นามแฝงที่มีอยู่ของคุณ",
+        "on_behalf_of": "ในนามของ",
+        "NEXT": "ต่อไป",
+        "abstract": "การสรุป"
     },
     "connection": {
         "access_key": "รหัสการเข้าถึง",

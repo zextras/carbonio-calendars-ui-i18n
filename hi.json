@@ -782,7 +782,19 @@
         "max_number_account_of_this_domain_manage": "इस डोमेन द्वारा मैनेज की जा सकने वाली अकाउंट की अधिकतम संख्या",
         "new_virtual_host_name": "कोई नया वर्चुअल होस्ट नाम टाइप करें और लिस्ट में जोड़ने के लिए \"जोड़ें+\" पर क्लिक करें",
         "title_and_copyrights_information": "शीर्षक और कॉपीराइट जानकारी",
-        "there_are_not_member_here": "यहाँ मेम्बर नहीं हैं।"
+        "there_are_not_member_here": "यहाँ मेम्बर नहीं हैं।",
+        "Accounts": "अकाउंट",
+        "EDIT": "एडिट करें",
+        "REMOVE": "हटाएँ",
+        "Rights": "अधिकार",
+        "Type": "टाइप",
+        "chats": "चैट",
+        "contacts": "संपर्क",
+        "files": "फाइलें",
+        "mail_signatures": "मेल हस्ताक्षर",
+        "mails": "मेल्स",
+        "out_of_the_office_reply": "आउट ऑफ ऑफिस जबाब",
+        "tasks": "काम"
     },
     "timezone": {
         "asia_tomsk": "{{value}} तोम्स्क",
@@ -1485,9 +1497,11 @@
         "allow_user_check_minimum_interval": "उपयोगकर्ता को न्यूनतम चेकिंग अंतराल बदलने की अनुमति दें",
         "type_the_new_alias_name": "नया उर्फ़नाम टाइप करें और इसे अपने उपलब्ध उर्फनामों में जोड़ने के लिए कोई डोमेन चुनें",
         "new_alias_name": "नया उर्फ़नाम",
-        "type_name_of_aliases": "नया उर्फ़नाम टाइप करें और इसे अपने उपलब्ध उर्फनामों में जोड़ने के लिए कोई डोमेन चुनें ",
         "your_available_aliases": "आपके उपलब्ध उर्फ़नाम",
-        "click_on_the_pencil_to_edit": "पेंसिल पर क्लिक करें और उपलब्ध उपनाम बदलें या इसे डिलीट करने के लिए क्रॉस पर क्लिक करें"
+        "click_on_the_pencil_to_edit": "पेंसिल पर क्लिक करें और उपलब्ध उपनाम बदलें या इसे डिलीट करने के लिए क्रॉस पर क्लिक करें",
+        "NEXT": "अगला",
+        "abstract": "एब्स्ट्रैक्ट",
+        "on_behalf_of": "इनकी ओर से"
     },
     "privacy": {
         "allow_live_survey_feedbacks": "फीडबैक के लिए सर्वेज़ की अनुमति दें",

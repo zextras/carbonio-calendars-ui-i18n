@@ -825,7 +825,19 @@
         "type_an_account_add_senders_list": "输入地址以将其添加为允许的发送者",
         "virtual_host_msg": "虚拟主机可帮助系统为用户登录建立默认域。<br />任何用户在使用带有以下主机名的URL进行登录时都会被认为是处在此域（即：domain1.local）中。<br />请注意，虚拟主机删除操作只有在邮箱服务器重新启动后才会生效。",
         "virtual_hosts_and_certificates": "虚拟主机与证书",
-        "want_to_use_this_certifiacte": "我想使用此证书"
+        "want_to_use_this_certifiacte": "我想使用此证书",
+        "Accounts": "账户",
+        "mail_signatures": "邮件签名",
+        "EDIT": "编辑",
+        "REMOVE": "移除",
+        "Rights": "权限",
+        "Type": "类型",
+        "chats": "聊天",
+        "contacts": "地址簿",
+        "files": "文件",
+        "mails": "邮件",
+        "out_of_the_office_reply": "不在办公室回复",
+        "tasks": "任务"
     },
     "timezone": {
         "asia_tehran": "{{value}} 德黑兰",
@@ -1493,12 +1505,14 @@
         "aliases": "别名",
         "manage_the_aliases_for_this_account": "管理此账户的别名",
         "new_alias_name": "新别名",
-        "type_name_of_aliases": "输入新别名并选择一个域以将其添加至您的可用别名中 ",
         "type_the_new_alias_name": "输入新别名并选择一个域以将其添加至您的可用别名中",
         "your_available_aliases": "您的可用别名",
         "click_on_the_pencil_to_edit": "点击铅笔以编辑可用别名或点击十字以将其删除",
         "allow_user_check_minimum_interval": "允许用户更改最低检查间隔",
-        "manage_aliases": "管理别名"
+        "manage_aliases": "管理别名",
+        "NEXT": "下一步",
+        "abstract": "摘要",
+        "on_behalf_of": "代表"
     },
     "connection": {
         "access_key": "访问密钥",

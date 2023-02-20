@@ -1086,7 +1086,19 @@
         "volume_available_unused_Buckets_list_in_backup": "Lista dostępnych bucketów (które nie są używane w kopii zapasowej)",
         "volume_create_error": "{{volumeErrMessage}}",
         "volume_created_msg": "Wolumin został stworzony",
-        "volume_detail_page_title": "Szczegóły {{message}}"
+        "volume_detail_page_title": "Szczegóły {{message}}",
+        "Accounts": "Konta",
+        "EDIT": "EDYTUJ",
+        "REMOVE": "USUŃ",
+        "Rights": "Uprawnienia",
+        "Type": "Typ",
+        "chats": "Czaty",
+        "contacts": "Kontakty",
+        "files": "Pliki",
+        "mail_signatures": "Podpisy e-mail",
+        "mails": "E-maile",
+        "out_of_the_office_reply": "Odpowiedź Poza biurem",
+        "tasks": "Zadania"
     },
     "message": {
         "snackbar": {
@@ -1486,7 +1498,10 @@
         "manage_the_aliases_for_this_account": "Zarządzaj aliasami dla tego konta",
         "new_alias_name": "Nowa nazwa aliasu",
         "your_available_aliases": "Dostępne aliasy",
-        "allow_user_check_minimum_interval": "Pozwalaj użytkownikowi na zmianę minimalnego interwału sprawdzania"
+        "allow_user_check_minimum_interval": "Pozwalaj użytkownikowi na zmianę minimalnego interwału sprawdzania",
+        "NEXT": "DALEJ",
+        "on_behalf_of": "w imieniu",
+        "abstract": "Abstrakcyjne"
     },
     "privacy": {
         "survey_feedback_sub_1": "Nie martw się, ankiety będą szybkie, proste i bardzo pomogą nam zrozumieć co robimy dobrze a co źle.",
@@ -1498,8 +1513,8 @@
     },
     "reminder": {
         "minute_0": "{{count}} minuta",
-        "minute_1": "{{count}} minuty",
-        "minute_2": "{{count}} minut"
+        "minute_1": "",
+        "minute_2": ""
     },
     "connection": {
         "access_key": "Klucz dostępu",

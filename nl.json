@@ -735,7 +735,7 @@
         "delete_content_is_current": "U probeert {{name}} te verwijderen. Dit volume is ingesteld als huidig. U moet een ander volume instellen als het huidige voordat u het verwijdert.",
         "logo_description": "Plak de URL van het logo voor de inlogpagina. Gebruik SVG of PNG bestand met transparante achtergrond, afmeting 240x120 pixels.",
         "move_item_to_an_external_bucket": "Items verplaatsen naar een externe bucket",
-        "owners_description_msg_1": "Eigenaars kunnen leden toevoegen en verwijderen, de weergavenaam en beschrijving wijzigen, de zichtbaarheid van de lijst wijzigen (d.w.z. verbergen in gal), het eigendom wijzigen, het inschrijvings-/uitschrijvingsgedrag wijzigen.",
+        "owners_description_msg_1": "Eigenaars kunnen leden toevoegen en verwijderen, de weergavenaam en beschrijving wijzigen, de zichtbaarheid van de lijst wijzigen (d.w.z. verbergen voor gal), het eigendom wijzigen, het inschrijvings-/uitschrijvingsgedrag wijzigen.",
         "NEW_OTP": "NIEUWE OTP",
         "abq_status": "ABQ Status",
         "active_sessions": "Actieve sessies",
@@ -1485,7 +1485,6 @@
         "manage_aliases": "ALIAS MANAGEN",
         "manage_the_aliases_for_this_account": "Manage de Aliassen voor deze account",
         "new_alias_name": "Nieuw Alias-naam",
-        "type_name_of_aliases": "Typ de nieuwe Alias-naam en selecteer een domein om het toe te voegen aan uw beschikbare aliassen ",
         "type_the_new_alias_name": "Typ de nieuwe Alias-naam en selecteer een domein om het toe te voegen aan uw beschikbare aliassen",
         "your_available_aliases": "Uw beschikbare Aliassen"
     },

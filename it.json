@@ -905,7 +905,6 @@
         "lockout": "Blocco",
         "no_virtual_host_message": "Non sono presenti host virtuali.<br />Clicca il pulsante AGGIUNGI per abilitarne uno nuovo.",
         "please_wait": "Attendi",
-        "selected_empty_bucket_helperText": "Non hai selezionato alcun bucket.\n\t\t\t\t\t\t\t\t\t\t\tPuoi iniziare a digitare nel campo in alto \n\t\t\t\t\t\t\t\t\t\t\tper visualizzarli.",
         "stop_operations_message": "Vuoi FERMARE questa operazione?<br />Cliccando FERMA OPERAZIONE, quest'ultima verrà fermata e <br /> rimossa dalla lista delle operazioni in coda.",
         "stop_operations_msg": "Vuoi FERMARE questa operazione?<br />Cliccando FERMA OPERAZIONE, quest'ultima verrà fermata e rimossa dalla lista delle operazioni in coda.",
         "storage_centralized_helpertext": "<bold>Utilizza la CLI per gestire la centralizzazione.</bold> Centralizzare i dati è molto utile nel caso in cui due o più server devono accedere agli stessi dati. Tenere i dati in un unico posto rende più facile la gestione dell'hardware e anche dei dati stessi. ",
@@ -944,7 +943,19 @@
         "cancel_operation_sucess": "L'operazione {{name}} è stata cancellata con successo",
         "copyrights_theme_note": "Le informazioni che riguardano il copyright appariranno nel footer del riquadro per l'accesso",
         "use_infraquent_access": "Usa Accesso poco frequente",
-        "volume_as_current": "Volume come corrente"
+        "volume_as_current": "Volume come corrente",
+        "Accounts": "Account",
+        "EDIT": "MODIFICA",
+        "REMOVE": "RIMUOVI",
+        "Rights": "Diritti",
+        "Type": "Tipo",
+        "chats": "Chat",
+        "contacts": "Contatti",
+        "files": "Drive",
+        "mail_signatures": "Firme E-mail",
+        "mails": "Mail",
+        "out_of_the_office_reply": "Risposta automatica Fuori Ufficio",
+        "tasks": "Impegni"
     },
     "message": {
         "snackbar": {
@@ -1496,7 +1507,9 @@
         "your_available_aliases": "I tuoi alias disponibili",
         "allow_user_check_minimum_interval": "Consenti all'utente di modificare l'intervallo minimo tra i controlli",
         "type_the_new_alias_name": "Digita il nuovo nome alias e seleziona un dominio per aggiungerlo ai tuoi alias disponibili",
-        "type_name_of_aliases": "Digita il nuovo nome alias e seleziona un dominio per aggiungerlo ai tuoi alias disponibili "
+        "NEXT": "SUCCESSIVO",
+        "abstract": "Riassunto",
+        "on_behalf_of": "per conto di"
     },
     "connection": {
         "access_key": "Chiave d'Accesso",

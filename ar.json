@@ -41,7 +41,8 @@
         "bucket_done_button": "تم",
         "notifications": "إعلامات",
         "search": "البحث",
-        "status_lbl": "الحالة"
+        "status_lbl": "الحالة",
+        "chats": "دردشات"
     },
     "account_details": {
         "general": "عام",
