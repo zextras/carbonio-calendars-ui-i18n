@@ -135,7 +135,15 @@ const HSMsettingPanel: FC = () => {
 			const allRows = policies.map((item: any) => ({
 				id: item?.hsmQuery,
 				columns: [
-					<Text size="medium" weight="bold" key={item?.hsmQuery} color="#828282">
+					<Text
+						size="medium"
+						weight="bold"
+						key={item?.hsmQuery}
+						color="#828282"
+						onClick={(): void => {
+							setSelectedPolicies([item?.hsmQuery]);
+						}}
+					>
 						{getHSMType(item?.hsmType)}
 						{item?.hsmQuery}
 					</Text>
@@ -727,9 +735,8 @@ const HSMsettingPanel: FC = () => {
 						showCheckbox={false}
 						multiSelect={false}
 						selectedRows={selectedPolicies}
-						onSelectionChange={(selected: any): void => setSelectedPolicies(selected)}
-						RowFactory={CustomRowFactory}
 						HeaderFactory={CustomHeaderFactory}
+						RowFactory={CustomRowFactory}
 					/>
 				</ListRow>
 

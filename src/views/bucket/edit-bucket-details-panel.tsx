@@ -483,18 +483,21 @@ const EditBucketDetailPanel: FC<{
 
 	return (
 		<Container background="gray6">
-			<Row mainAlignment="flex-start" crossAlignment="center" width="100%" height="auto">
+			<Row
+				mainAlignment="flex-start"
+				crossAlignment="center"
+				orientation="horizontal"
+				background="white"
+				width="fill"
+				height="3rem"
+			>
 				<Row mainAlignment="flex-start" padding={{ all: 'large' }} takeAvailableSpace>
 					<Text size="extralarge" weight="bold">
 						{title}
 					</Text>
 				</Row>
 				<Row padding={{ horizontal: 'small' }}>
-					<IconButton
-						icon="CloseOutline"
-						color="gray1"
-						onClick={(): any => setShowEditDetailView(false)}
-					/>
+					<IconButton icon="CloseOutline" onClick={(): any => setShowEditDetailView(false)} />
 				</Row>
 			</Row>
 			<Divider />
