@@ -1028,7 +1028,6 @@
         "running": "Executando",
         "stop_operation_helperText": "{{message}}",
         "use_intelligent_tiering": "Usar hierarquia inteligente",
-        "home": "Início",
         "lockout": "Bloqueio",
         "please_wait": "Aguarde",
         "what_inside": "Assunto",
@@ -1086,7 +1085,19 @@
         "volume_as_current": "Volume como atual",
         "volume_available_unused_Buckets_list_in_backup": "Lista de Buckets Disponíveis (não estão sendo usados no backup)",
         "volume_create_error": "{{volumeErrMessage}}",
-        "want_to_use_this_certifiacte": "EU QUERO USAR ESTE CERTIFICADO"
+        "want_to_use_this_certifiacte": "EU QUERO USAR ESTE CERTIFICADO",
+        "Type": "Tipo",
+        "mail_signatures": "Assinaturas do E-mail",
+        "Accounts": "Contas",
+        "EDIT": "EDITAR",
+        "REMOVE": "REMOVER",
+        "Rights": "Direitos",
+        "chats": "Chats",
+        "contacts": "Contatos",
+        "files": "Drive",
+        "mails": "E-mails",
+        "out_of_the_office_reply": "Resposta Automática",
+        "tasks": "Tarefas"
     },
     "message": {
         "snackbar": {
@@ -1486,7 +1497,10 @@
         "manage_the_aliases_for_this_account": "Gerenciar os Alias para esta conta",
         "new_alias_name": "Novo Nome de Alias",
         "your_available_aliases": "Seus Alias Disponíveis",
-        "type_the_new_alias_name": "Digite o novo Nome de Alias e selecione o domínio para adicioná-lo aos seus alias disponíveis"
+        "type_the_new_alias_name": "Digite o novo Nome de Alias e selecione o domínio para adicioná-lo aos seus alias disponíveis",
+        "on_behalf_of": "em nome de",
+        "NEXT": "PRÓXIMO",
+        "abstract": "Abstrato"
     },
     "connection": {
         "access_key": "Chave de acesso",

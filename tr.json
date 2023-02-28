@@ -811,7 +811,13 @@
         "mail_signatures": "Posta İmzaları",
         "mails": "E-Postalar",
         "out_of_the_office_reply": "Ofis Dışındayım Yanıtı",
-        "tasks": "Görevler"
+        "tasks": "Görevler",
+        "domain_primarybar_tooltip": "<bold>Alanadı detaylarını</bold> görüntüleyin ve <bold>hesaplar, dağıtım listeleri, kaynaklar</bold> ve <bold>diğer özellikleri</bold> <bold>yönetin</bold>.",
+        "notification_primarybar_tooltip": "<bold>Bildirimleri</bold> görüntüleyin, <bold>okundu</bold> olarak işaretleyin veya paylaşmak için <bold>kopyalayın</bold>.",
+        "storage_primarybar_tooltip": "<bold>Sunucu durumunu</bold>, <bold>hacimleri</bold> ve <bold>HSM ilkelerini</bold> görüntüleyin. Ayrıca <bold>bucket birimlerine de bağlantı</bold> yapabilirsiniz.",
+        "operation_primarybar_tooltip": "<bold>Devam eden, sıraya eklenmiş</bold> veya <bold>tamamlanmış</bold> <bold>işlemleri</bold> görüntüleyin ve yönetin.",
+        "privacy_primarybar_tooltip": "<bold>Veri raporları, hata logları</bold> ve <bold>anketler</bold> gibi <bold>Gizlilik</bold> ayarlarını yönetin.",
+        "subscription_primarybar_tooltip": "<bold>Abonelik detaylarınızı</bold> görüntüleyin ve/veya yeni aboneliğinizi <bold>etkinleştirin</bold>."
     },
     "timezone": {
         "asia_gaza": "{{value}} Gaza",

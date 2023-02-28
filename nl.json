@@ -904,7 +904,19 @@
         "max_number_account_of_this_domain_manage": "Het maximale aantal accounts dat dit domein kan beheren",
         "new_virtual_host_name": "Typ een nieuwe virtuele hostnaam en klik op \"Toevoegen +\" om deze aan de lijst toe te voegen",
         "no_virtual_host_message": "Er zijn hier geen virtuele hosts.<br />Klik op de ADD knop om een nieuwe in te schakelen.",
-        "type_an_account_add_senders_list": "Typ een adres om het toe te voegen als toegestane afzender"
+        "type_an_account_add_senders_list": "Typ een adres om het toe te voegen als toegestane afzender",
+        "mail_signatures": "Mailhandtekeningen",
+        "mails": "Mails",
+        "Accounts": "Accounts",
+        "EDIT": "BEWERKEN",
+        "REMOVE": "VERWIJDEREN",
+        "Rights": "Rechten",
+        "Type": "Type",
+        "chats": "Chats",
+        "contacts": "Contacten",
+        "files": "Drive",
+        "out_of_the_office_reply": "Antwoord bij afwezigheid",
+        "tasks": "Taken"
     },
     "timezone": {
         "europe_belgrade": "{{value}} Belgrado, Bratislava, Boedapest, Ljubljana, Praag",
@@ -1486,7 +1498,10 @@
         "manage_the_aliases_for_this_account": "Manage de Aliassen voor deze account",
         "new_alias_name": "Nieuw Alias-naam",
         "type_the_new_alias_name": "Typ de nieuwe Alias-naam en selecteer een domein om het toe te voegen aan uw beschikbare aliassen",
-        "your_available_aliases": "Uw beschikbare Aliassen"
+        "your_available_aliases": "Uw beschikbare Aliassen",
+        "abstract": "Abstract",
+        "on_behalf_of": "namens",
+        "NEXT": "VOLGENDE"
     },
     "privacy": {
         "allow_data_analytics": "Data-analyse mogelijk maken",
@@ -1659,7 +1674,7 @@
         "mark_as_read": "Als gelezen markeren",
         "mark_as_unread": "Markeren als niet geşezen",
         "notifications_list": "Meldingenlijst",
-        "copy_notification_successfully": "Kennisgeving met succes gekopieerd",
+        "copy_notification_successfully": "Melding met succes gekopieerd",
         "all": "ALLE",
         "error": "FOUT",
         "information": "INFORMATIE",
