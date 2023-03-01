@@ -23,7 +23,8 @@ import {
 	Table,
 	Divider,
 	ChipInput,
-	Checkbox
+	Checkbox,
+	Select
 } from '@zextras/carbonio-design-system';
 import { find, filter, map, debounce, cloneDeep, findIndex, pullAt } from 'lodash';
 import { Trans, useTranslation } from 'react-i18next';
@@ -44,6 +45,7 @@ import DelegateAddSection from './add-delegate-section/delegate-add-section';
 import { accountListDirectory } from '../../../../../services/account-list-directory-service';
 import CustomRowFactory from '../../../../app/shared/customTableRowFactory';
 import CustomHeaderFactory from '../../../../app/shared/customTableHeaderFactory';
+import { deligateSendSettings } from '../../../../utility/utils';
 
 const WizardInSection: FC<any> = ({ wizard, wizardFooter, setToggleWizardSection }) => {
 	const { t } = useTranslation();
@@ -72,7 +74,8 @@ const EditAccountDelegatesSection: FC = () => {
 		getIdentitiesList,
 		deligateDetail,
 		setDeligateDetail,
-		folderList
+		folderList,
+		setAccountDetail
 	} = conext;
 	const [showCreateIdentity, setShowCreateIdentity] = useState<boolean>(false);
 	const [editMode, setEditMode] = useState<boolean>(false);
@@ -89,6 +92,7 @@ const EditAccountDelegatesSection: FC = () => {
 	const [readRightCheck, setReadRightCheck] = useState<boolean>(false);
 	const [readRightWriteCheck, setReadWriteRightCheck] = useState<boolean>(false);
 	const [sendWriteCheck, setSendRightCheck] = useState<boolean>(false);
+	const DELEGATE_SEND_SETTINGS = useMemo(() => deligateSendSettings(t), [t]);
 
 	useEffect(() => {
 		const identitiesArr: any = [];
@@ -552,6 +556,19 @@ const EditAccountDelegatesSection: FC = () => {
 					});
 				});
 			}
+
+			// postSoapFetchRequest(
+			// 	`/service/admin/soap/ModifyPrefsRequest`,
+			// 	{
+			// 		_jsns: 'urn:zimbraAccount',
+			// 		id: accountDetail?.zimbraId,
+			// 		a: [{ n: 'zimbraPrefDelegatedSendSaveTarget', _content: 'both' }]
+			// 	},
+			// 	'ModifyPrefsRequest',
+			// 	accountDetail?.zimbraId
+			// ).then((res: any) => {
+			// 	console.log('zimbraPrefDelegatedSendSaveTarget', res);
+			// });
 		});
 		setSelectedAccounts([]);
 		setSimpleSelectedList([]);
@@ -724,9 +741,45 @@ const EditAccountDelegatesSection: FC = () => {
 	useEffect(() => {
 		if (searchQuery) getAccountList();
 	}, [getAccountList, searchQuery]);
+	const onDeligateSendSettingsChange = (v: string): void => {
+		setAccountDetail((prev: any) => ({ ...prev, zimbraPrefDelegatedSendSaveTarget: v }));
+	};
 	return (
 		<>
 			<Container mainAlignment="flex-start" crossAlignment="flex-start" orientation="vertical">
+				<Row
+					padding={{ left: 'large', right: 'extralarge', bottom: 'large' }}
+					mainAlignment="flex-start"
+					width="100%"
+				>
+					<Row padding={{ top: 'large' }} width="100%" mainAlignment="space-between">
+						<Text size="small" color="gray0" weight="bold">
+							{t('label.delegate_send_settings', 'Delegate Send Settings')}
+						</Text>
+					</Row>
+				</Row>
+				<Row
+					width="100%"
+					padding={{ bottom: 'extralarge', right: 'extralarge', left: 'large' }}
+					mainAlignment="space-between"
+				>
+					<Row width="100%" mainAlignment="flex-start">
+						<Select
+							background="gray5"
+							label={t('label.delegate_send_settings', 'Delegate Send Settings')}
+							showCheckbox={false}
+							padding={{ right: 'medium' }}
+							defaultSelection={DELEGATE_SEND_SETTINGS.find(
+								(item: any) => item.value === accountDetail?.zimbraPrefDelegatedSendSaveTarget
+							)}
+							onChange={onDeligateSendSettingsChange}
+							items={DELEGATE_SEND_SETTINGS}
+						/>
+					</Row>
+				</Row>
+				<Row width="100%" padding={{ top: 'medium' }}>
+					<Divider color="gray2" />
+				</Row>
 				<Container
 					mainAlignment="flex-start"
 					crossAlignment="flex-start"
@@ -911,7 +964,9 @@ const EditAccountDelegatesSection: FC = () => {
 										headers={simplifiedViewTableHeader}
 										multiSelect={false}
 										onSelectionChange={setReadWriteSelectedRows}
-										style={{ overflow: 'auto', height: '11rem' }}
+										style={{ overflow: 'auto', height: '15rem' }}
+										RowFactory={CustomRowFactory}
+										HeaderFactory={CustomHeaderFactory}
 									/>
 									<Row
 										width="100%"
@@ -963,7 +1018,9 @@ const EditAccountDelegatesSection: FC = () => {
 										headers={simplifiedViewTableHeader}
 										multiSelect={false}
 										onSelectionChange={setReadSelectedRows}
-										style={{ overflow: 'auto', height: '11rem' }}
+										style={{ overflow: 'auto', height: '15rem' }}
+										RowFactory={CustomRowFactory}
+										HeaderFactory={CustomHeaderFactory}
 									/>
 									<Row
 										width="100%"
@@ -1015,7 +1072,9 @@ const EditAccountDelegatesSection: FC = () => {
 										headers={simplifiedViewTableHeader}
 										onSelectionChange={setSendSelectedRows}
 										multiSelect={false}
-										style={{ overflow: 'auto', height: '11rem' }}
+										style={{ overflow: 'auto', height: '15rem' }}
+										RowFactory={CustomRowFactory}
+										HeaderFactory={CustomHeaderFactory}
 									/>
 									<Row
 										width="100%"

@@ -1640,6 +1640,34 @@ export const conversationGroupBy = (t: TFunction): Array<{ value?: string; label
 	}
 ];
 
+export const deligateSendSettings = (t: TFunction): Array<{ value?: string; label: string }> => [
+	{
+		label: t(
+			'label.save_a_copy_of_sent_messages_to_my_sent_folder',
+			'Save a copy of sent messages to my Sent folder'
+		),
+		value: 'owner'
+	},
+	{
+		label: t(
+			'label.save_a_copy_of_sent_messages_to_delegates_sent_folder',
+			`Save a copy of sent messages to delegate’s Sent folder`
+		),
+		value: 'sender'
+	},
+	{
+		label: t(
+			'label.save_a_copy_of_sent_messages_to_my_sent_folder_and_delegates_folder',
+			`Save a copy of sent messages to my Sent folder and delegate’s folder`
+		),
+		value: 'both'
+	},
+	{
+		label: t('label.dont_save_a_copy_of_sent_messages', `Don’t save a copy of sent messages`),
+		value: 'none'
+	}
+];
+
 export const delegateType = (t: TFunction): Array<{ value?: string; label: string }> => [
 	{
 		label: t('account_details.a_user', 'A User'),
