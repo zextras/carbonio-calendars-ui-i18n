@@ -41,7 +41,7 @@
         "dismiss": "Desconsiderar",
         "dismiss_plural": "Desconsiderar todo",
         "display": "Mostrar",
-        "edit_access": "Editar el acceso",
+        "edit_access": "Editar permisos",
         "email_input_message": "Introducir direcciones de correo electrónico",
         "enable_dlgtn_for_ical": "Activar delegación para el cliente CalDAV de iCal de Apple",
         "end_date": "Fecha de finalización",
@@ -151,8 +151,8 @@
         "new_tag": "Nueva etiqueta",
         "other_actions": "Otras acciones",
         "single_instance": "UNA SOLA INSTANCIA",
-        "create_tag": "Crear Etiqueta",
-        "delete_tag": "Eliminar etiqueta",
+        "create_tag": "Nueva Etiqueta",
+        "delete_tag": "Eliminar Etiqueta",
         "loading_results": "Cargando resultados...",
         "no_special_char_allowed": "El nombre no debe contener ningún carácter especial",
         "results_for_error": "No se puede realizar la búsqueda, bórrala y vuelve a intentarlo: ",
@@ -230,7 +230,7 @@
                 "footer": "Crear y restaurar"
             },
             "footer": {
-                "go_back": "Volver"
+                "go_back": "Atrás"
             },
             "new": {
                 "duplicate_warning": "Ya existe un calendario con el mismo nombre",
@@ -378,9 +378,9 @@
                 "none": "Ninguno"
             },
             "share_calendar_with": {
-                "external_guests": "Invitados externos (solo pueden ver)",
+                "external_guests": "Invitados externos (solo visualizar)",
                 "internal_users_groups": "Usuarios o grupos internos",
-                "public": "Público (solo ver, no necesita contraseña)"
+                "public": "Público (solo ver, no necesitan contraseña)"
             }
         },
         "label": {
