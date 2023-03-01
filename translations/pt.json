@@ -230,7 +230,16 @@
         "centralized": "Centralizado",
         "done": "Concluído",
         "general_options": "Opções gerais",
-        "use_intelligent_tiering": "Usar Intelligent S3 Tiering"
+        "use_intelligent_tiering": "Usar Intelligent S3 Tiering",
+        "what_inside": "Assunto",
+        "Accounts": "Contas",
+        "Rights": "Direitos",
+        "Type": "Tipo",
+        "chats": "Chats",
+        "contacts": "Contactos",
+        "files": "Ficheiros",
+        "mails": "E-mails",
+        "tasks": "Tarefas"
     },
     "timezone": {
         "asia_pyongyang": "{{value}} Pyongyang",
@@ -591,7 +600,8 @@
         "send": "ENVIAR",
         "Chats": "Chats",
         "domain": "Domínio",
-        "files": "Ficheiros"
+        "files": "Ficheiros",
+        "on_behalf_of": "em nome de"
     },
     "connection": {
         "access_key": "Chave de acesso",

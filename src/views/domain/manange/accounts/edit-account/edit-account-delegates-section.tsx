@@ -42,6 +42,8 @@ import DelegateSelectModeSection from './add-delegate-section/delegate-selectmod
 import DelegateSetRightsSection from './add-delegate-section/delegate-setright-section';
 import DelegateAddSection from './add-delegate-section/delegate-add-section';
 import { accountListDirectory } from '../../../../../services/account-list-directory-service';
+import CustomRowFactory from '../../../../app/shared/customTableRowFactory';
+import CustomHeaderFactory from '../../../../app/shared/customTableHeaderFactory';
 
 const WizardInSection: FC<any> = ({ wizard, wizardFooter, setToggleWizardSection }) => {
 	const { t } = useTranslation();
@@ -1097,6 +1099,53 @@ const EditAccountDelegatesSection: FC = () => {
 										width="100%"
 										mainAlignment="space-between"
 									>
+										{identityListItem.length !== 0 && (
+											<Table
+												rows={identityListItem}
+												headers={headers}
+												multiSelect={false}
+												onSelectionChange={setSelectedRows}
+												style={{ overflow: 'auto', height: '100%' }}
+												RowFactory={CustomRowFactory}
+												HeaderFactory={CustomHeaderFactory}
+											/>
+										)}
+										{identityListItem.length === 0 && (
+											<Container
+												orientation="column"
+												crossAlignment="center"
+												mainAlignment="center"
+											>
+												<Row>
+													<img src={logo} alt="logo" />
+												</Row>
+												<Row
+													padding={{ top: 'extralarge' }}
+													orientation="vertical"
+													crossAlignment="center"
+													style={{ textAlign: 'center' }}
+												>
+													<Text weight="light" color="#828282" size="large" overflow="break-word">
+														{t('label.this_list_is_empty', 'This list is empty.')}
+													</Text>
+												</Row>
+												<Row
+													orientation="vertical"
+													crossAlignment="center"
+													style={{ textAlign: 'center' }}
+													padding={{ top: 'small' }}
+													width="53%"
+												>
+													<Text weight="light" color="#828282" size="large" overflow="break-word">
+														<Trans
+															i18nKey="label.create_otp_list_msg"
+															defaults="You can create a new OTP by clicking on <bold>NEW OTP</bold> button up here"
+															components={{ bold: <strong /> }}
+														/>
+													</Text>
+												</Row>
+											</Container>
+										)}
 										<Row
 											orientation="horizontal"
 											mainAlignment="space-between"
