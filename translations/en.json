@@ -6,9 +6,9 @@
         }
     },
     "accountDetails": {
-        "change_password_for_next_login": "Must change password on the next login",
         "default_COS": "Default COS",
-        "enable_activeSync_remote_access": "Enable ActiveSync remote access"
+        "enable_activeSync_remote_access": "Enable ActiveSync remote access",
+        "user_will_change_password_on_next_login": "User will change password on next login"
     },
     "account_details": {
         "ADD": "ADD",
