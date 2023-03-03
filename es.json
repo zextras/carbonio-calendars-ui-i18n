@@ -193,7 +193,9 @@
         "edit_calendar_properties": "Editar propiedades del calendario",
         "share_calendar": "Compartir calendario",
         "empty_trash_confirmation": "Esta acción eliminará todos los elementos de la papelera. ¿Estás seguro que quieres continuar?",
-        "send_edit": "Enviar edición"
+        "send_edit": "Enviar edición",
+        "search": "Buscar",
+        "reset": "Restablecer"
     },
     "event": {
         "action": {
@@ -497,8 +499,8 @@
             },
             "local": "Adjuntar desde Mi PC",
             "drive": "Adjuntar desde Drive",
-            "url": "Agregar enlace público desde Drive",
-            "files": "Añadir desde Files"
+            "url": "Adjuntar enlace público desde Files",
+            "files": "Adjuntar desde Files"
         }
     },
     "edit_share_properties": "Editar propiedades de compartición",
