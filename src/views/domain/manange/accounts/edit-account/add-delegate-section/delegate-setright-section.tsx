@@ -158,13 +158,6 @@ const DelegateSetRightsSection: FC = () => {
 									<Row width="100%" mainAlignment="space-between">
 										<RadioGroup
 											value={deligateDetail?.folderSelection}
-											// onChange={(newValue: string): void => {
-											// 	// setFolderSelection(newValue);
-											// 	setDeligateDetail((prev: any) => ({
-											// 		...prev,
-											// 		folderSelection: newValue
-											// 	}));
-											// }}
 											width="100%"
 											mainAlignment="space-between"
 										>
@@ -176,7 +169,6 @@ const DelegateSetRightsSection: FC = () => {
 												value="all_folders"
 												width="19rem"
 												onChange={(newValue: string): void => {
-													// setFolderSelection(newValue);
 													setDeligateDetail((prev: any) => ({
 														...prev,
 														folderSelection: 'all_folders'
