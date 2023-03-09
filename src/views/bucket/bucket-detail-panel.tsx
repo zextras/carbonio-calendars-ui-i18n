@@ -28,6 +28,7 @@ import DetailsPanel from './details-panel';
 import { fetchSoap } from '../../services/bucket-service';
 import EditBucketDetailPanel from './edit-bucket-details-panel';
 import { AbsoluteContainer } from '../components/styled';
+import ListRow from '../list/list-row';
 
 const RelativeContainer = styled(Container)`
 	position: relative;
@@ -112,15 +113,27 @@ const BucketListTable: FC<{
 	);
 
 	return (
-		<Container crossAlignment="flex-start">
-			<Table
-				headers={headers(t)}
-				rows={tableRows}
-				showCheckbox={false}
-				multiSelect={false}
-				selectedRows={selectedRows}
-				onSelectionChange={onSelectionChange}
-			/>
+		<Container mainAlignment="flex-start" crossAlignment="flex-start">
+			<ListRow>
+				<Container
+					orientation="horizontal"
+					mainAlignment="space-between"
+					crossAlignment="flex-start"
+					width="fill"
+					maxHeight="calc(100vh - 25rem)"
+					minHeight="auto"
+				>
+					<Table
+						headers={headers(t)}
+						rows={tableRows}
+						showCheckbox={false}
+						multiSelect={false}
+						selectedRows={selectedRows}
+						onSelectionChange={onSelectionChange}
+					/>
+				</Container>
+			</ListRow>
+
 			{tableRows.length === 0 && (
 				<Container crossAlignment="center" mainAlignment="flex-start" style={{ marginTop: '64px' }}>
 					<Text overflow="break-word" weight="normal" size="large">
