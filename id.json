@@ -191,7 +191,8 @@
         "create_copy": "Salin",
         "action_performed": "Anda telah melakukan tindakan ini",
         "no_rights": "Anda tidak memiliki izin untuk melakukan tindakan ini",
-        "single_advanced_filter": "Filter Lanjutan"
+        "single_advanced_filter": "Filter Lanjutan",
+        "keywords": "Kata sandi"
     },
     "calendar": {
         "modal": {
