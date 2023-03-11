@@ -22,9 +22,9 @@ import {
 import { useDomainStore } from '../../store/domain/store';
 
 const ManageAliases: FC<{
-	listAliases: any[];
-	setListAliases: (arg: any) => void;
-	setAliasChange: (arg: any) => void;
+	listAliases: Array<{ label: string }>;
+	setListAliases: (arg: Array<{ label: string }>) => void;
+	setAliasChange: (arg: Array<{ label: string }>) => void;
 	aliasType?: string;
 }> = ({ listAliases, setListAliases, setAliasChange, aliasType = '' }) => {
 	const [t] = useTranslation();
@@ -33,7 +33,7 @@ const ManageAliases: FC<{
 	const domainList = useDomainStore((state) => state.domainList);
 	const [aliasNameValue, setAliasNameValue] = useState<string>('');
 	const [selectedDomainName, setSelectedDomainName] = useState<string>('');
-	const onDomainOptionChange = (v: any): any => {
+	const onDomainOptionChange = (v: string): void => {
 		setSelectedDomainName(v);
 	};
 
@@ -109,7 +109,7 @@ const ManageAliases: FC<{
 								backgroundColor="gray5"
 								size="medium"
 								value={aliasNameValue}
-								onChange={(e: any): any => {
+								onChange={(e: React.ChangeEvent<HTMLInputElement>): void => {
 									setAliasNameValue(e.target.value);
 								}}
 							/>
@@ -146,13 +146,13 @@ const ManageAliases: FC<{
 								size="extralarge"
 								onClick={(): void => {
 									if (!aliasNameValue.trim()) return;
-									let aliaes = cloneDeep(listAliases);
+									const aliaes: Array<{ label: string }> = cloneDeep(listAliases);
 									aliaes.push({
 										label: `${aliasNameValue.trim()}@${selectedDomainName || domainName}`
 									});
-									aliaes = uniqBy(aliaes, 'label');
-									setListAliases(aliaes);
-									setAliasChange(aliaes);
+									const aliaesUniq: Array<{ label: string }> = uniqBy(aliaes, 'label');
+									setListAliases(aliaesUniq);
+									setAliasChange(aliaesUniq);
 									setAliasNameValue('');
 								}}
 							/>
@@ -200,14 +200,16 @@ const ManageAliases: FC<{
 														icon: 'Edit2Outline',
 														onClick: (): void => {
 															const aliaes = cloneDeep(listAliases);
-															let selectedItem = aliaes.splice(index, 1);
-															selectedItem = selectedItem[0].label;
-															// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-															// @ts-ignore
-															selectedItem = selectedItem.split('@');
+															// eslint-disable-next-line max-len
+															const selectedItemArr: Array<{ label: string }> = aliaes.splice(
+																index,
+																1
+															);
+															const selectedItem: string = selectedItemArr[0].label;
+															const selectedItemSplit = selectedItem.split('@');
 
-															setAliasNameValue(selectedItem[0]);
-															setSelectedDomainName(selectedItem[1]);
+															setAliasNameValue(selectedItemSplit[0]);
+															setSelectedDomainName(selectedItemSplit[1]);
 															setListAliases(aliaes);
 															setAliasChange(aliaes);
 														}
