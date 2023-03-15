@@ -327,7 +327,7 @@
                 "public": "Público"
             },
             "default_view": {
-                "list": "Vista de lista",
+                "list": "Lista",
                 "month": "Vista por mes",
                 "day": "Vista por día",
                 "work_week": "Vista por semana laboral",
