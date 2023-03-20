@@ -273,7 +273,7 @@
         "Declined": "abgelehnt",
         "Accepted": "akzeptiert",
         "NE_with_count": "Hat nicht geantwortet",
-        "NE_with_count_plural": "Hat nicht geantwortet ({{{count}}})",
+        "NE_with_count_plural": "Hat nicht geantwortet ({{count}})",
         "TE_with_count": "Vorläufige",
         "TE_with_count_plural": "Vorläufig ({{count}})"
     },
