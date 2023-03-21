@@ -292,7 +292,7 @@
         "other_actions": "Altre azioni",
         "single_instance": "SINGOLA ISTANZA",
         "edit_tag_name": "Modifica etichetta {{name}}",
-        "loading_results": "Caricamento Risultati in corso…",
+        "loading_results": "Caricamento risultati in corso…",
         "results_for_error": "Impossibile iniziare la ricerca, cancella e riprova: ",
         "select_color": "Seleziona Colore",
         "tag_max_length": "Il numero massimo di caratteri consentiti è 128",
