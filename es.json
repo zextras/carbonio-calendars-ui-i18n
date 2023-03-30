@@ -160,7 +160,7 @@
         "tag_max_length": "Máximo 128 caracteres permitidos",
         "tag_name": "Nombre de la etiqueta",
         "tags": "Etiquetas",
-        "delete_tag_name": "Eliminar etiqueta",
+        "delete_tag_name": "Eliminar etiqueta {{name}}",
         "edit_tag": "Editar etiqueta",
         "edit_tag_name": "Editar etiqueta {{name}}",
         "scheduled_in": "Calendario",
