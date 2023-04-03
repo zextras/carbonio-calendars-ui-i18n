@@ -14,7 +14,8 @@
         "share_calendar": "Udostępnij kalendarz",
         "send_edit": "Wyślij edycję",
         "reset": "Zresetuj",
-        "search": "Wyszukaj"
+        "search": "Wyszukaj",
+        "show_original": "Pokaż oryginał"
     },
     "event": {
         "action": {
