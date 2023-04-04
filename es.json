@@ -24,7 +24,7 @@
         "custom_repeat": "Repetición personalizada",
         "day": "Día",
         "days": "Días",
-        "end_after": "Finalizar tras",
+        "end_after": "Finalizar el",
         "weeks_on": "Semana(s) de",
         "sharing_of_this_folder": "Uso compartido de esta carpeta",
         "add_share": "Compartir",
@@ -129,7 +129,7 @@
         "settings_saved": "Ajustes guardados",
         "trash_emptied": "La Papelera ha sido vaciada",
         "new_appointment": "Nueva cita",
-        "role": "Permiso",
+        "role": "Rol",
         "today": "hoy",
         "week_day": {
             "friday": "Viernes",
@@ -165,7 +165,7 @@
         "edit_tag_name": "Editar etiqueta {{name}}",
         "scheduled_in": "Calendario",
         "no_title": "Sin Título",
-        "warning": "Atención",
+        "warning": "Atenção",
         "trash": "Papelera",
         "tag": "Etiqueta",
         "share_public_link": "Compartir enlace público",
@@ -385,9 +385,9 @@
     "share": {
         "options": {
             "share_calendar_role": {
-                "viewer": "Visualizar (puede ver)",
-                "admin": "Control total (puede ver, editar, remover y administrar)",
-                "manager": "Administrar (puede ver, editar, añadir y remover)",
+                "viewer": "Visualizador (puede ver)",
+                "admin": "Administrador (puede ver, editar, remover y administrar)",
+                "manager": "Controlador (puede ver, editar, añadir y remover)",
                 "none": "Ninguno"
             },
             "share_calendar_with": {
@@ -497,7 +497,7 @@
     "button": {
         "customize_modal": "Abrir menú de personalización"
     },
-    "administer": "Control total",
+    "administer": "Administrador",
     "allowed_actions": "Acciones permitidas",
     "freebusy": "Libre/Ocupado",
     "cannot_edit_name": "No es posible editar el nombre de un calendario del sistema",
