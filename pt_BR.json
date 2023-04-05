@@ -36,7 +36,7 @@
         "create_new_calendar": "Criar novo calendário",
         "custom_repeat": "Repetição personalizada",
         "day": "Dia",
-        "edit_access": "Editar acesso",
+        "edit_access": "Editar permissões",
         "days": "Dias",
         "default_appt_vsblty": "Visibilidade de compromisso padrão",
         "default_view": "Visualização padrão",
@@ -48,7 +48,7 @@
         "end_after": "Terminar após",
         "end_date": "Data final",
         "end_date_and_time": "Data e hora final",
-        "every": "A cada",
+        "every": "Todo(a)",
         "every_day": "Todos os dias",
         "every_weekday": "Todo dia de semana",
         "every_year_on": "Todo ano em",
@@ -139,7 +139,7 @@
             "tuesday": "Terça-feira",
             "wednesday": "Quarta-feira"
         },
-        "role": "Permissão",
+        "role": "Papel",
         "exclude_free_busy": "Não incluir este calendário ao informar os horários livres/ocupados",
         "loading": "Carregando…",
         "maybe": "talvez",
@@ -155,7 +155,7 @@
         "edit_tag_name": "Editar marcador \"{{name}}\"",
         "loading_results": "Carregando resultados…",
         "no_special_char_allowed": "O nome não pode conter caracteres especiais",
-        "results_for_error": "Não foi possível completar a busca. Limpe-a e tente novamente: ",
+        "results_for_error": "Não foi possível completar a busca. Tente novamente: ",
         "select_color": "Selecionar cor",
         "tag_max_length": "Máximo de 128 caracteres permitidos",
         "tag_name": "Nome do marcador",
@@ -273,11 +273,11 @@
             "appointment_permanently_deleted": "Compromisso excluído permanentemente",
             "calendar_edits_saved": "Edições salvas corretamente",
             "series_deleted": "Série excluída com sucesso. Os participantes receberão a notificação de cancelamento.",
-            "some_link_copying_error": "Ocorreu um problema ao gerar o link público para alguns arquivos. Tente de novo",
-            "some_att_add_fails": "Ocorreu um problema ao adicionar alguns anexos. Tente novamente",
-            "link_copying_error": "Ocorreu um problem ao gerar o link público. Tente de novo",
-            "att_err_adding": "Ocorreu um problema ao adicionar os anexos. Tente novamente",
-            "all_link_copied": "Link público foi copiado com êxito",
+            "some_link_copying_error": "Parece haver um problema ao gerar o link público para alguns arquivos. Tente de novo",
+            "some_att_add_fails": "Parece haver um problema ao adicionar alguns anexos. Tente novamente",
+            "link_copying_error": "Parece haver um problema ao gerar o link público. Tente de novo",
+            "att_err_adding": "Parece haver um problema ao adicionar os anexos. Tente novamente",
+            "all_link_copied": "Link público copiado para a área de transferência",
             "all_att_added": "Anexos adicionados com sucesso"
         },
         "share_calendar_url_note2": "Apenas seus colaboradores podem acessar seus dados usando essas URLs.<br/>Também é possível encontrar esses links clicando com o botão direito em sua lista de calendários.",
@@ -448,14 +448,14 @@
         "options": {
             "share_calendar_role": {
                 "admin": "Administrador (pode visualizar, adicionar, remover e administrar)",
-                "manager": "Gerenciar (pode visualizar, editar, adicionar e remover)",
+                "manager": "Gerenciador (pode visualizar, editar, adicionar e remover)",
                 "viewer": "Visualizador (pode apenas visualizar)",
                 "none": "Nenhum"
             },
             "share_calendar_with": {
                 "external_guests": "Convidados externos (apenas visualizar)",
                 "internal_users_groups": "Usuários ou grupos internos",
-                "public": "Público (apenas ver, senha não necessária)"
+                "public": "Público (apenas ver, senha não requerida)"
             }
         },
         "label": {
@@ -504,7 +504,7 @@
             "local": "Adicionar do Meu Computador",
             "contactsMod": "adicionar cartão de contato",
             "drive": "Adicionar do Drive",
-            "url": "Adicionar link público a partir de Files",
+            "url": "Adicionar link público a partir do Files",
             "files": "Adicionar do Files"
         }
     },
@@ -528,11 +528,11 @@
         "calendar_sharing_status_one": "Compartilhado com 1 pessoa",
         "revoke": "Revogar acesso",
         "resend": "Enviar notificação por e-mail sobre este compartilhamento",
-        "edit": "Editar propriedades de compartilhamento",
+        "edit": "Editar propriedades do compartilhamento",
         "virtual_room": "Sala Virtual"
     },
     "cannot_edit_name": "Não é possível editar o nome de um calendário do sistema",
-    "edit_share_properties": "Editar propriedades de compartilhamento",
+    "edit_share_properties": "Editar propriedades do compartilhamento",
     "find_calendar_shares": "Encontrar compartilhamentos do Calendário",
     "find_shares": "Localizar compartilhamentos",
     "insert": "Inserir",
