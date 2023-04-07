@@ -251,7 +251,10 @@
         "appointment_is_private": "Dieser Termin ist privat.",
         "create_copy": "Kopieren",
         "keywords": "Schlüsselwörter",
-        "single_advanced_filter": "Erweiterte Filter"
+        "single_advanced_filter": "Erweiterte Filter",
+        "advanced_filters": "Erweiterter Filter {{count}}",
+        "advanced_filters_plural": "",
+        "no_rights": "Sie haben für diese Aktion keine Berechtigung"
     },
     "participants": {
         "Invited_Visitor": "wurden eingeladen",
@@ -292,7 +295,8 @@
         "empty_trash_confirmation": "Diese Aktion wird alle Elemente in E-Mails, Kontakte, Kalender, Aufgaben und Aktentasche löschen. Sind Sie sicher, dass Sie alles in diesen Papierkörben endgültig löschen möchten?",
         "send_edit": "Bearbeiten senden",
         "reset": "Wiederherstellen",
-        "search": "Suchen"
+        "search": "Suchen",
+        "show_original": "Original anzeigen"
     },
     "calendar": {
         "modal": {
