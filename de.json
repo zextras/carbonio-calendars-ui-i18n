@@ -59,7 +59,7 @@
         "appointment_type_handle": "{{name}} ist ein Serientermin. Möchten Sie nur diesen Termin oder die ganze Serie öffnen?",
         "organizer": "Organisator",
         "send_email": "E-Mail senden",
-        "more": "Mehr …",
+        "more": "Mehr…",
         "required_participant": "{{count}} Teilnehmer",
         "required_participant_plural": "{{count}} Teilnehmer",
         "optional_participant": "{{count}} Optional",
@@ -67,7 +67,7 @@
         "edit_series_warning": "Da Sie mit der Änderung der gesamten Serie fortfahren, werden alle bereits gelöschten oder veränderten Ereignisse mit den neuen Serieneinstellungen wiederhergestellt.",
         "appointment_invitation_sent": "Termineinladung gesendet",
         "meeting_modified": "Das folgende Meeting wurde geändert",
-        "want_to_edit_modified_msg": "Möchten Sie die geänderte Nachricht des Termins bearbeiten?",
+        "want_to_edit_modified_msg": "Die Änderungen werden den Teilnehmern per E-Mail mitgeteilt. Möchten Sie eine eigene Nachricht hinzufügen?",
         "copy": "Kopieren"
     },
     "label": {
@@ -221,7 +221,7 @@
         "create_tag": "Tag erstellen",
         "delete_tag": "Delete tag",
         "edit_tag": "Edit Tag",
-        "loading_results": "Ergebnisse laden…",
+        "loading_results": "Egebnisse laden…",
         "no_special_char_allowed": "Der Name darf keine Sonderzeichen enthalten",
         "select_color": "Farbe auswählen",
         "tag_max_length": "Maximal 128 Zeichen sind erlaubt",
@@ -254,7 +254,8 @@
         "single_advanced_filter": "Erweiterte Filter",
         "advanced_filters": "Erweiterter Filter {{count}}",
         "advanced_filters_plural": "",
-        "no_rights": "Sie haben für diese Aktion keine Berechtigung"
+        "no_rights": "Sie haben für diese Aktion keine Berechtigung",
+        "action_performed": "Sie haben diese Aktion bereits durchgeführt"
     },
     "participants": {
         "Invited_Visitor": "wurden eingeladen",
@@ -374,7 +375,9 @@
     "freebusy": "FreeBusy",
     "insert": "Eingeben",
     "search": {
-        "organized_by": "organisiert von"
+        "organized_by": "organisiert von",
+        "from_date": "Anfangsdatum",
+        "to_date": "Enddatum"
     },
     "reminder": {
         "at_time_of_event": "Zum Zeitpunkt des Events",
@@ -515,7 +518,8 @@
         "share_folder_success": "Kalender erfolgreich geteilt",
         "url_copied": "{{title}} kopiert",
         "tag_applied": "{{tag}} Tag angewendet",
-        "tag_removed": "{{tag}} Tag entfernt"
+        "tag_removed": "{{tag}} Tag entfernt",
+        "email_copied_to_clipboard": "E-Mail in die Zwischenablage kopiert."
     },
     "success": "Erfolg",
     "button": {
@@ -653,5 +657,8 @@
     "preview": {
         "close": "Vorschau schließen"
     },
-    "recurrent_in_allday": "Sie können einen Serientermin nicht in einen Tagesslot ziehen"
+    "recurrent_in_allday": "Sie können einen Serientermin nicht in einen Tagesslot ziehen",
+    "mountpoint_error": "Die Freigabe konnte nicht zum Abschnitt \"Gemeinsame Kalender\" hinzugefügt werden",
+    "mountpoint_success": "Die Freigabe wurde erfolgreich zum Abschnitt \"Gemeinsame Kalender\" hinzugefügt",
+    "mountpoint_warning": "{{failed}} von {{total}} freigegebenen Kalendern konnten nicht zu den freigegebenen Kalendern hinzugefügt werden"
 }
