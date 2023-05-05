@@ -196,7 +196,7 @@
         "loading": "Ładowanie…",
         "maybe": "może",
         "exclude_free_busy": "Wyklucz ten kalendarz z informowania o statusie wolny/zajęty",
-        "role": "rola",
+        "role": "Rola",
         "today": "dzisiaj",
         "week_day": {
             "sunday": "Niedziela",
@@ -218,7 +218,7 @@
         "other_actions": "Inne czynności",
         "results_for_error": "Nie udało się wyszukać, wyczyść pole i spróbuj ponownie: ",
         "select_color": "Wybierz kolor",
-        "share_with": "udostępnij",
+        "share_with": "Udostępnij",
         "single_instance": "POJEDYNCZY PRZYPADEK",
         "tag_max_length": "Dozwolone max. 128 znaków",
         "tag_name": "Nazwa Tagu",
@@ -247,7 +247,9 @@
         "advanced_filters_2": "{{count}} zaawansowanych filtrów",
         "keywords": "Słowa kluczowe",
         "no_rights": "Nie masz uprawnień, aby wykonać tę czynność",
-        "single_advanced_filter": "Zaawansowane filtry"
+        "single_advanced_filter": "Zaawansowane filtry",
+        "optionals": "Opcjonalni",
+        "time": "Czas"
     },
     "message": {
         "modal": {
