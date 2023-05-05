@@ -320,7 +320,8 @@
         "action_performed": "Hai già completato questa azione",
         "advanced_filters": "{{count}} Filtro Avanzato",
         "advanced_filters_plural": "{{count}} Filtri Avanzati",
-        "time": "Orario"
+        "time": "Orario",
+        "optionals": "Opzionali"
     },
     "action": {
         "send": "Invia",
