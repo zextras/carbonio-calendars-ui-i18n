@@ -100,7 +100,7 @@
         "download_2": "Pobierz wszystkie",
         "edit": "Edytuj",
         "edit_access": "Edytuj dostęp",
-        "edits_saved": "Zmiany zostały pomyślnie zapisane",
+        "edits_saved": "Zmiany zostały zapisane",
         "email_input_message": "Wprowadź adresy mailowe",
         "empty": "Pusty",
         "enable_dlgtn_for_ical": "Włącz delegowanie dla klienta Apple iCal CalDAV",
@@ -289,7 +289,7 @@
                 "tentative": "Odpowiedziałeś: Niepewne"
             },
             "new_calendar_created": "Nowy kalendarz został utworzony",
-            "calendar_edits_saved": "Zmiany zostały zapisane pomyślnie",
+            "calendar_edits_saved": "Zmiany zostały zapisane",
             "series_deleted": "Seria została usunięta pomyślnie. Uczestnicy otrzymają powiadomienie o anulacji.",
             "some_link_copying_error": "Wygląda na to, że wystąpił problem przy generowaniu publicznego url dla niektórych plików, spróbuj ponownie",
             "some_att_add_fails": "Wystąpił problem podczas dodawania niektórych z załączników, spróbuj ponownie",
