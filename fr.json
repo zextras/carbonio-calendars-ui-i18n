@@ -282,7 +282,8 @@
         "advanced_filters_2": "{{count}} Filtres avancés",
         "keywords": "Mots-clé",
         "no_rights": "Vous n'avez pas les droits pour réaliser cette action",
-        "single_advanced_filter": "Filtres avancés"
+        "single_advanced_filter": "Filtres avancés",
+        "time": "Horaire"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
