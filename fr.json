@@ -313,13 +313,14 @@
             "calendar_permanently_deleted": "Le calendrier a été supprimé",
             "appointment_permanently_deleted": "Rendez-vous supprimé définitivement",
             "calendar_edits_saved": "Modifications enregistrées avec succès",
-            "series_deleted": "La séries a été supprimée avec succès. Les participants vont recevoir la notification de l'annulation.",
+            "series_deleted": "La série a été déplacée dans la corbeille avec succès. Les participants vont recevoir la notification de l'annulation.",
             "some_link_copying_error": "Il semble y avoir un problème lors de la génération de l'url publique pour certains fichiers, veuillez réessayer",
             "some_att_add_fails": "Il semble y avoir un problème lors de l'ajout de certaines pièces jointes, veuillez réessayer",
             "link_copying_error": "Il semble y avoir un problème lors de la génération du lien public, veuillez réessayer",
             "att_err_adding": "Il semble y avoir un problème lors de l'ajout de pièces jointes, veuillez réessayer",
             "all_link_copied": "Le lien public a été copié avec succès",
-            "all_att_added": "Les pièces jointes ont été ajoutées avec succès"
+            "all_att_added": "Les pièces jointes ont été ajoutées avec succès",
+            "series_deleted_no_notification": "La série a été déplacée à la corbeille."
         },
         "somebody_is_organizer": "<strong>{{somebody}}</strong> est l'organisateur",
         "sure_to_delete_all_occurences_appointment": "Êtes-vous sûr de vouloir supprimer toutes les occurrences de ce rendez-vous ?",
