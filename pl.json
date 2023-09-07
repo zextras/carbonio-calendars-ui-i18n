@@ -419,11 +419,11 @@
                 "public": "Publiczne"
             },
             "free_busy_opts": {
-                "allow_all": "Zezwól użytkownikom spoza jak i ze swojej domeny na sprawdzanie swojego statusu Wolny/zajęty",
-                "allow_domain": "Zezwól tylko użytkownikom ze swojej domeny na sprawdzanie swojego statusu Wolny/zajęty",
-                "allow_following": "Zezwól tylko wybranym użytkownikom ze swojej domeny na sprawdzanie swojego statusu Wolny/zajęty",
-                "allow_internal": "Zezwól tylko użytkownikom spoza swojej domeny na sprawdzanie swojego statusu Wolny/zajęty",
-                "allow_none": "Nie zezwalaj nikomu na sprawdzanie swojego statusu Wolny/Zajęty"
+                "allow_all": "Zezwól użytkownikom spoza jak i ze swojej domeny na sprawdzanie swojego statusu wolny/zajęty",
+                "allow_domain": "Zezwól tylko użytkownikom ze swojej domeny na sprawdzanie swojego statusu wolny/zajęty",
+                "allow_following": "Zezwól tylko wybranym użytkownikom ze swojej domeny na sprawdzanie swojego statusu wolny/zajęty",
+                "allow_internal": "Zezwól tylko użytkownikom spoza swojej domeny na sprawdzanie swojego statusu wolny/zajęty",
+                "allow_none": "Nie zezwalaj nikomu na sprawdzanie swojego statusu wolny/zajęty"
             },
             "invt_opts": {
                 "allow_all": "Zezwól użytkownikom spoza jak i z mojej domeny na zapraszanie mnie na spotkania",
