@@ -2,13 +2,204 @@
     "action": {
         "search": "Keresés",
         "reset": "Visszaállítás",
-        "show_original": "Mutassa az eredetit"
+        "show_original": "Mutassa az eredetit",
+        "Trash_already_empty": "a kuka már üres",
+        "move_to_root": "Áthelyezés a gyökérbe",
+        "preview": "Kattintson az előnézethez",
+        "save_to_preview": "Mentés előnézetbe",
+        "send": "Küldés",
+        "send_cancellation": "Lemondás küldése",
+        "send_edit": "Szerkesztés küldése",
+        "share_calendar": "Naptár megosztása",
+        "edit_calendar_properties": "Naptár tulajdonságainak szerkesztése",
+        "calendar_access_share": "Hozzáférés megosztása a naptárban",
+        "delete_calendar": "Naptár törlése",
+        "edit_message": "Üzenet szerkesztése",
+        "empty_trash": "Kuka ürítése",
+        "empty_trash_confirmation": "Ez a művelet az összes elemet kitörli az E-mailek, Partnerek, Naptár, Feladatok és Táska Kuka mappákban. Biztos benne, hogy véglegesen törölni akar mindent ezekben a Kuka mappákban?"
     },
     "composer": {
         "attachment": {
             "files": "Hozzáadás a fájlokból",
             "local": "Hozzáadás a helyi mappából",
-            "url": "Nyilvános link hozzáadása a fájlokból"
+            "url": "Nyilvános link hozzáadása a fájlokból",
+            "drive": "Hozzáadás a meghajtóról",
+            "contactsMod": "névjegykártya hozzáadása",
+            "draganddrop": {
+                "content": "Húzza ide a mellékleteket, hogy gyorsan hozzáadhassa őket az időponthoz",
+                "title": "Drag&Drop mód"
+            }
         }
+    },
+    "add": "Hozzáadás",
+    "administer": "Felügyelet",
+    "allowed_actions": "Engedélyezett műveletek",
+    "appointments": "Találkozók",
+    "appt_restored_successfully": "Időpont sikeresen visszaállítva",
+    "attendee_unavailable": "A résztvevő nem érhető el az esemény kiválasztott időpontjában",
+    "creation_timezone_tooltip": "Létrehozás időzónájának dátuma és időpontja:",
+    "edit_share_properties": "Megosztási tulajdonságok",
+    "event": {
+        "action": {
+            "accept": "Elfogad",
+            "decline": "Elutasít",
+            "expand": "Megnyit",
+            "invitation_not_sent_yet": "A meghívó még nincs elküldve",
+            "needs_action": "Beavatkozás szükséges",
+            "no": "Nem",
+            "yes": "Igen"
+        },
+        "is_exception": "Kivétel"
+    },
+    "find_shares": "Megosztások keresése",
+    "folder": {
+        "modal": {
+            "footer": {
+                "go_back": "Vissza"
+            },
+            "move": {
+                "input": {
+                    "filter": "Naptárak szűrése"
+                },
+                "body": {
+                    "message3": "Válasszon ki egy naptárat, amelybe áthelyezi a tervezett találkozót:"
+                }
+            },
+            "restore": {
+                "footer": "Létrehozás és visszaállítás"
+            },
+            "new": {
+                "duplicate_warning": "Ilyen nevű naptár már létezik",
+                "title2": "Új naptár létrehozása"
+            }
+        },
+        "share_info": "Információ megosztása"
+    },
+    "label": {
+        "access_revoked": "Hozzáférés visszavonva",
+        "appointment_is_private": "Az időpont privát.",
+        "appt_reminder": "Időpont-emlékeztető",
+        "appt_reminder_plural": "Időpont-emlékeztetők",
+        "attachment": "csatolmány",
+        "attachment_plural": "csatolmányok",
+        "loading_results": "Eredmények betöltése…",
+        "move": "Áthelyezés",
+        "no_special_char_allowed": "A név nem tartalmazhat különleges karaktert",
+        "no_subject": "Nincs tárgy",
+        "of": "a",
+        "preview": "Előnézet",
+        "private": "Privát",
+        "resend": "Újraküldés",
+        "restore": "Helyreállítás",
+        "undo": "Visszavonás",
+        "keywords": "Kulcsszavak",
+        "all_calendars": "Összes naptár",
+        "all_day": "Egész nap",
+        "app_name": "Naptárak",
+        "apple_ical": "Apple iCal",
+        "action_performed": "Ezt a műveletet már végrehajtotta",
+        "add_share": "Megosztás hozzáadása",
+        "advanced_filters": "{{count}} Speciális szűrő",
+        "advanced_filters_plural": "{{count}} Speciális szűrő",
+        "calendar": "Naptár",
+        "attendee_plural": "Résztvevők",
+        "choose_file": "Fájl kiválasztása",
+        "create": "Létrehoz",
+        "create_tag": "Címke létrehozása",
+        "delete_tag": "Címke törlése",
+        "discard_changes": "Módosítások elvetése",
+        "download": "Letöltés",
+        "download_plural": "Összes letöltése",
+        "edit": "Szerkesztés",
+        "edit_access": "Hozzáférés szerkesztése",
+        "edit_tag": "Címke szerkesztése",
+        "empty": "Üres",
+        "error_try_again": "Valami hiba történt, kérjük, próbálja újra",
+        "save": "Mentés",
+        "revoke": "Visszavon",
+        "results_for_error": "A keresés nem indítható el, törölje és próbálja újra: ",
+        "select": "Kiválaszt",
+        "select_color": "Szín kiválasztása",
+        "share": "Megosztás",
+        "share_public_link": "Nyilvános hivatkozás megosztása",
+        "share_with": "Megosztás a következőkkel",
+        "single_advanced_filter": "Speciális szűrők",
+        "subject": "Tárgy",
+        "tag": "Címke",
+        "tag_max_length": "Legfeljebb 128 karakter megengedett",
+        "tag_name": "Címke neve",
+        "tags": "Címkék",
+        "time": "Idő",
+        "warning": "Figyelmeztetés"
+    },
+    "message": {
+        "delete_tag_message2": "A törlés után minden vele megjelölt elemből eltávolításra kerül.",
+        "snackbar": {
+            "all_att_added": "Csatolmányok sikeresen hozzáadva",
+            "all_link_copied": "Nyilvános hivatkozás másolása sikeres",
+            "link_copying_error": "Úgy tűnik, probléma merült fel a nyilvános hivatkozás létrehozása közben, próbálja újra",
+            "calendar_edits_saved": "A szerkesztések mentése sikeres",
+            "att_err_adding": "Probléma merült fel a mellékletek hozzáadásakor, próbálkozzon újra",
+            "some_att_add_fails": "Probléma merült fel a mellékletek hozzáadásakor, próbálja újra",
+            "some_link_copying_error": "Úgy tűnik, probléma merült fel néhány fájl nyilvános URL-címének létrehozása során, próbálkozzon újra"
+        },
+        "copy": "Másolat"
+    },
+    "share": {
+        "options": {
+            "share_calendar_with": {
+                "internal_users_groups": "Belső felhasználók vagy csoportok",
+                "external_guests": "Külső vendégek (csak megtekintés)",
+                "public": "Nyilvános (csak megtekintés, jelszó nem szükséges)"
+            },
+            "share_calendar_role": {
+                "none": "Nincs"
+            }
+        }
+    },
+    "tooltip": {
+        "add_attachments": "Csatolmányok hozzáadása",
+        "revoke": "Hozzáférés visszavonása",
+        "edit": "Megosztási tulajdonságok"
+    },
+    "messages": {
+        "snackbar": {
+            "tag_deleted": "{{name}} címke sikeresen törölve",
+            "tag_created": "{{name}} címke sikeresen létrehozva",
+            "tag_updated": "Sikeresen frissítve"
+        }
+    },
+    "attendees_unavailable": "Egy vagy több résztvevő nem érhető el az esemény kiválasztott időpontjában",
+    "button": {
+        "customize_modal": "Nyissa meg a Testreszabás modult"
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "title": "Munkaidő testreszabása"
+            }
+        }
+    },
+    "cannot_edit_name": "Nem szerkesztheti egy rendszernaptár nevét",
+    "find_calendar_shares": "Naptármegosztások keresése",
+    "freebusy": "SzabadFoglalt",
+    "items": {
+        "last": "Utolsó",
+        "second": "Második",
+        "third": "Harmadik",
+        "weekend_day": "Hétvégi nap",
+        "working_day": "Munkanap",
+        "first": "Első",
+        "fourth": "Negyedik"
+    },
+    "has_attachments": "Vannak mellékletek",
+    "insert": "Beszúr",
+    "is_private": "Privát",
+    "is_recurrent": "Ismétlődő",
+    "preview": {
+        "close": "Előnézet bezárása"
+    },
+    "snackbar": {
+        "email_copied_to_clipboard": "E-mail a vágólapra másolva."
     }
 }
