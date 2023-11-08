@@ -15,7 +15,8 @@
         "send_edit": "Envoyer la modification",
         "search": "Rechercher",
         "reset": "Réinitialisation",
-        "show_original": "Voir l'original"
+        "show_original": "Voir l'original",
+        "Trash_already_empty": "la corbeille est déjà vide"
     },
     "add": "Ajouter",
     "administer": "Administrer",
@@ -320,7 +321,8 @@
             "att_err_adding": "Il semble y avoir un problème lors de l'ajout de pièces jointes, veuillez réessayer",
             "all_link_copied": "Le lien public a été copié avec succès",
             "all_att_added": "Les pièces jointes ont été ajoutées avec succès",
-            "series_deleted_no_notification": "La série a été déplacée à la corbeille."
+            "series_deleted_no_notification": "La série a été déplacée à la corbeille.",
+            "shared_calendar_removed": "Calendrier enlevé avec succès"
         },
         "somebody_is_organizer": "<strong>{{somebody}}</strong> est l'organisateur",
         "sure_to_delete_all_occurences_appointment": "Êtes-vous sûr de vouloir supprimer toutes les occurrences de ce rendez-vous ?",
@@ -691,5 +693,8 @@
     "mountpoint_success": "Le partage a été ajouté avec succès à la section Calendriers partagés",
     "mountpoint_warning": "{{failed}} sur {{total}} calendriers partagés n'ont pas pu être ajouté aux Calendriers partagés",
     "attendees_unavailable": "Un ou plusieurs participants ne sont pas disponibles à l'heure de l'évènement",
-    "attendee_unavailable": "Le participant n'est pas disponible à l'heure de l'évènement"
+    "attendee_unavailable": "Le participant n'est pas disponible à l'heure de l'évènement",
+    "creation_timezone_tooltip": "Date et heure du fuseau horaire de création :",
+    "local_timezone_tooltip": "Date et heure du fuseau horaire local :",
+    "new_appointment": "Nouveau rendez-vous"
 }
