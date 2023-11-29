@@ -285,7 +285,9 @@
         "no_rights": "Vous n'avez pas les droits pour réaliser cette action",
         "single_advanced_filter": "Filtres avancés",
         "time": "Horaire",
-        "optionals": "Optionnels"
+        "optionals": "Optionnels",
+        "equipment": "Équipement",
+        "meeting_room": "Salle de réunion"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -559,7 +561,8 @@
         "resend": "Envoyer par email les notifications à propos de ce partage",
         "revoke": "Révoquer les accès",
         "virtual_room": "Salle virtuelle",
-        "folder_linked_status": "Lié à moi"
+        "folder_linked_status": "Lié à moi",
+        "meetingRooms": "Salles de réunion"
     },
     "type": "Type",
     "workflow": "Flux de travail",
@@ -698,5 +701,11 @@
     "creation_timezone_tooltip": "Date et heure du fuseau horaire de création :",
     "local_timezone_tooltip": "Date et heure du fuseau horaire local :",
     "new_appointment": "Nouveau rendez-vous",
-    "private_info_tooltip": "Lorsque vous partagez un calendrier, les autres utilisateurs peuvent voir les détails de votre rendez-vous (titre, description et participants), à l'exception de ceux qui sont marqués comme étant privés. Dans ce cas, les autres utilisateurs verront votre temps libre/occupé mais pas les détails du rendez-vous. Souhaitez-vous que les autres utilisateurs puissent également voir les détails de vos rendez-vous privés ?"
+    "private_info_tooltip": "Lorsque vous partagez un calendrier, les autres utilisateurs peuvent voir les détails de votre rendez-vous (titre, description et participants), à l'exception de ceux qui sont marqués comme étant privés. Dans ce cas, les autres utilisateurs verront votre temps libre/occupé mais pas les détails du rendez-vous. Souhaitez-vous que les autres utilisateurs puissent également voir les détails de vos rendez-vous privés ?",
+    "next_day": "Jour suivant",
+    "next_month": "Mois suivant",
+    "next_week": "Semaine suivante",
+    "previous_day": "Jour précédent",
+    "previous_month": "Mois précédent",
+    "previous_week": "Semaine précédente"
 }
