@@ -579,7 +579,7 @@
             "tag_updated": "Étiquette mise à jour avec succès"
         }
     },
-    "read": "Lire",
+    "read": "Lu",
     "remove_from_this_list": "Retirer le calendrier partagé",
     "revoke_access": "Révoquer l'accès",
     "revoke_without_custom_message": "Révoquer l'accès en envoyant une notification standard",
