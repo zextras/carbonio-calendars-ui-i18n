@@ -1,7 +1,7 @@
 {
     "action": {
         "empty_trash_confirmation": "Ta czynność usunie wszystkie elementy w koszach: E-mailów, Kontaktów, Kalendarza, Zadań oraz Aktówki. Czy na pewno chcesz trwale usunąć całą zawartość tych koszy?",
-        "calendar_access_share": "Udostępnij dostęp do kalendarza",
+        "calendar_access_share": "Udostępnij kalendarz (ICS/Outlook)",
         "delete_calendar": "Usuń kalendarz",
         "edit_calendar_properties": "Edytuj właściwości kalendarza",
         "edit_message": "Edytuj wiadomość",
@@ -148,7 +148,7 @@
         "save": "Zapisz",
         "series": "Seria",
         "set_new_time": "Ustaw nowy czas",
-        "share_calendar_url": "Udostępnij dostęp do {{title}}",
+        "share_calendar_url": "Udostępnij {{title}} (ICS/Outlook)",
         "shares_items": "Udostępnione kalendarze użytkownika <bold>{{user}}</bold>",
         "sharing_of_this_folder": "Udostępnianie tego folderu",
         "show_0": "Pokaż",
@@ -272,7 +272,7 @@
         "delete_future_occurences_warning": "Ta czynność usunie również wszystkie wyjątki (przed i po tym przypadku) w serii",
         "invited_you": "Zaprosił(a) Cię na wydarzenie",
         "meeting_canceled": "Następujące spotkanie zostało anulowane",
-        "share_calendar_url_msg": "Możesz szybko udostępnić {{title}} swoim współpracownikom klikjąc na jeden z tych linków:",
+        "share_calendar_url_msg": "Możesz szybko udostępnić {{title}} Twoim współpracownikom klikając na jeden z tych linków:",
         "share_calendar_url_note": "Tylko Twoi współpracownicy mają dostęp do Twoich danych przy użyciu tych linków.",
         "invite_has_no_message": "To zaproszenie nie zawiera tekstu",
         "snackbar": {
