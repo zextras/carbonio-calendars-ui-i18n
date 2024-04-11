@@ -16,7 +16,10 @@
         "reset": "Sıfırla",
         "search": "Ara",
         "show_original": "Orjinali göster",
-        "Trash_already_empty": "çöp kutusu zaten boş"
+        "Trash_already_empty": "çöp kutusu zaten boş",
+        "calendar_upload": "ICS Dosyasını İçeri Aktar",
+        "download_ics": "ICS'yi indir",
+        "export_calendar_ics": "ICS dosyasını dışa aktar"
     },
     "edit_share_properties": "Paylaşım özelliklerini düzenle",
     "button": {
