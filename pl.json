@@ -16,7 +16,10 @@
         "reset": "Zresetuj",
         "search": "Wyszukaj",
         "show_original": "Pokaż oryginał",
-        "Trash_already_empty": "kosz jest już pusty"
+        "Trash_already_empty": "kosz jest już pusty",
+        "download_ics": "Pobierz ICS",
+        "export_calendar_ics": "Eksportuj plik ICS",
+        "calendar_upload": "Importuj plik ICS"
     },
     "event": {
         "action": {
