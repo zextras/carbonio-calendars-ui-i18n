@@ -1,5 +1,17 @@
 {
     "label": {
         "save": "Сактоо"
+    },
+    "action": {
+        "reset": "Өчүрүп салуу",
+        "search": "Издөө",
+        "show_original": "Түп нускасын көрсөтүү"
+    },
+    "composer": {
+        "attachment": {
+            "files": "Files кошуу",
+            "local": "Локалдыктан кошуу",
+            "url": "Files жалпы шилтемени кошуу"
+        }
     }
 }
