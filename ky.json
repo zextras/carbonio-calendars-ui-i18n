@@ -1,6 +1,10 @@
 {
     "label": {
-        "save": "Сактоо"
+        "save": "Сактоо",
+        "calendar": "Календарь",
+        "choose_file": "Файлды тандоо",
+        "create": "Түзүү",
+        "create_tag": "Tag түзүү"
     },
     "action": {
         "reset": "Өчүрүп салуу",
