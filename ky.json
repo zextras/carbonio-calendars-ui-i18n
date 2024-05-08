@@ -4,7 +4,16 @@
         "calendar": "Календарь",
         "choose_file": "Файлды тандоо",
         "create": "Түзүү",
-        "create_tag": "Tag түзүү"
+        "create_tag": "Tag түзүү",
+        "delete_tag": "Tag өчүрүү",
+        "discard_changes": "Өзгөртүүнү жокко чыгаруу",
+        "download": "Жүктөө",
+        "download_plural": "Жүктөөлөр",
+        "edit": "Редакциялоо",
+        "edit_access": "Кирүү укугун өзгөртүү",
+        "edit_tag": "Tag редакциялоо",
+        "empty": "Тазалоо",
+        "error_try_again": "Бир жерден ката кетти, кайра аракет кылыңыз"
     },
     "action": {
         "reset": "Өчүрүп салуу",
