@@ -39,7 +39,9 @@
         "time": "Убакыт",
         "undo": "Жокко чыгаруу",
         "warning": "Көңүл бургула",
-        "no_special_char_allowed": "Аты өзүнчө символдорду камтыбашы керек"
+        "no_special_char_allowed": "Аты өзүнчө символдорду камтыбашы керек",
+        "attachment": "Тиркеме",
+        "attachment_plural": "Тиркемелер"
     },
     "action": {
         "reset": "Өчүрүп салуу",
