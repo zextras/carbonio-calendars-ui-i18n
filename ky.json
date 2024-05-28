@@ -41,7 +41,8 @@
         "warning": "Көңүл бургула",
         "no_special_char_allowed": "Аты өзүнчө символдорду камтыбашы керек",
         "attachment": "Тиркеме",
-        "attachment_plural": "Тиркемелер"
+        "attachment_plural": "Тиркемелер",
+        "days": "күн"
     },
     "action": {
         "reset": "Өчүрүп салуу",
