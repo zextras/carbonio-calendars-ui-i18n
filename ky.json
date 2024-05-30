@@ -42,7 +42,10 @@
         "no_special_char_allowed": "Аты өзүнчө символдорду камтыбашы керек",
         "attachment": "Тиркеме",
         "attachment_plural": "Тиркемелер",
-        "days": "күн"
+        "days": "күн",
+        "equipment": "Жабдуу",
+        "invites": "Чакыруу",
+        "location": "Орду"
     },
     "action": {
         "reset": "Өчүрүп салуу",
