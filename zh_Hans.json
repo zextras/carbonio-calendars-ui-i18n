@@ -60,8 +60,6 @@
         "organizer": "组织者",
         "send_email": "发送邮件",
         "more": "更多…",
-        "required_participant": "{{count}} 参与者",
-        "optional_participant": "{{count}} 可选",
         "search_hints": " ",
         "edit_series_warning": "当您修改系列时，所有先前被删除或修改的实例都将按照新的系列设置进行恢复。",
         "appointment_invitation_sent": "预约邀请已发送",
@@ -139,7 +137,6 @@
         "share_info": "共享信息"
     },
     "label": {
-        "download": "下载全部",
         "edit": "编辑",
         "edit_share": "编辑分享",
         "end": "结束",
@@ -148,7 +145,6 @@
         "now": "现在",
         "of": "of",
         "permissions": "权限",
-        "attachment": "附件",
         "busy": "忙碌",
         "custom": "自定义",
         "save": "保存",
@@ -195,7 +191,6 @@
         "work_week": "工作周",
         "your_pref_timezone_msg": "您首选的时区为：GMT +01:00 阿姆斯特丹、柏林、伯尔尼、罗马、斯德哥尔摩、维也纳。",
         "apple_ical": "Apple iCal",
-        "attendee_plural": "参与者",
         "auto_add_rcvd_app": "自动将收到的约会添加至日历",
         "calendar": "日历",
         "calendar_color": "日历颜色",
@@ -209,7 +204,6 @@
         "default_appt_vsblty": "默认预约可见性",
         "default_view": "默认视图",
         "delete_permanently": "永久删除",
-        "dismiss": "收起全部",
         "revoke": "撤销",
         "revoke_share": "撤销 {{title}} 的共享",
         "series": "系列",
@@ -217,7 +211,6 @@
         "shares_items": "<bold>{{user}}</bold>的共享日历",
         "sharing_of_this_folder": "共享此文件夹",
         "show_declined_meetings": "显示拒绝的会议",
-        "show": "显示全部",
         "start_date": "开始日期",
         "start_date_and_time": "开始日期和时间",
         "tentative": "暂定",
@@ -233,9 +226,7 @@
         "notify_organizer": "通知组织者",
         "number": "号码",
         "occurrences": "次数",
-        "optional": "可选",
         "create": "创建",
-        "delete": "删除",
         "edits_saved": "编辑保存正确",
         "error_try_again": "出现了一些错误，请重试",
         "move": "移动",
@@ -251,7 +242,6 @@
         "empty": "空",
         "event_title": "活动标题",
         "settings_saved": "设置已保存",
-        "appt_reminder": "预约提醒",
         "access_revoked": "访问权限已撤销",
         "calendar_shared": "日历已共享成功",
         "changes_saved": "变更已保存",
@@ -314,7 +304,6 @@
         "appointment_is_private": "预约为私密。",
         "create_copy": "拷贝",
         "action_performed": "您已执行此操作",
-        "advanced_filters": " ",
         "keywords": "关键词",
         "no_rights": "您没有执行此操作的权限",
         "single_advanced_filter": "高级过滤条件",
@@ -339,17 +328,10 @@
     "reminder": {
         "never": "永不",
         "at_time_of_event": "活动进行时",
-        "day_before": "{{count}}天前",
-        "hour_before": "{{count}}小时前",
-        "minute_before": "{{count}}分钟前",
-        "week_before": "{{count}}周前",
         "modal": {
             "set_new_time_message": "您想为错过的预约设定一个新的时间吗？点击“确定”后，所有其他提醒将自动取消。"
         },
-        "all_time": "所有活动",
-        "minutes": "{{count}} 分钟",
-        "hours": "{{count}} 小时",
-        "second_before": "{{count}}秒前"
+        "all_time": "所有活动"
     },
     "repeat": {
         "customize": "自定义",
@@ -455,20 +437,12 @@
     "type": "类型",
     "read": "已读",
     "participants": {
-        "Attendees_declined_count": "<strong>{{count}}名参与者</strong>已拒绝",
-        "Attendees_accepted_count": "<strong>{{count}}名参与者</strong>已接受",
         "Accepted": "已接受",
         "Tentative": "暂定接受",
         "visitors": "及另外{{others}}名参与者",
-        "Attendees_not_answered_count": "<strong>{{count}}名参与者</strong>未答复",
-        "Attendees_tentative_count": "<strong>{{count}}名参与者</strong>已暂定接受",
-        "DE_with_count": "已拒绝（{{count}}）",
-        "AC_with_count": "已接受（{{count}}）",
         "Declined": "已拒绝",
         "Invited_Visitor": "已邀请",
-        "Not_answered": "未答复",
-        "NE_with_count": "未答复（{{count}}）",
-        "TE_with_count": "暂定 ({{count}})"
+        "Not_answered": "未答复"
     },
     "cannot_edit_name": "您无法编辑系统日历名称",
     "composer": {
@@ -514,7 +488,6 @@
         "equipment": "设备",
         "location": "位置",
         "chat_room": "虚拟房间链接",
-        "calendar_sharing_status": " ",
         "calendar_sharing_status_one": "已与 1 人分享",
         "revoke": "撤销访问权限",
         "resend": "发送有关此共享的邮件通知",

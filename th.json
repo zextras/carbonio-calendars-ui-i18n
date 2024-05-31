@@ -1,25 +1,15 @@
 {
     "participants": {
-        "AC_with_count": "ยอมรับ",
-        "TE_with_count": "ไม่แน่นอน ({{count}})",
         "visitors": "และผู้เข้าร่วมอีก {{others}} คน",
         "Invited_Visitor": "ได้รับเชิญ",
-        "NE_with_count": "ยังไม่ตอบ ({{count}})",
         "Tentative": "ตอบรับเบื้องต้นว่ายังไม่แน่นอน",
         "Not_answered": "ยังไม่ตอบ",
         "Accepted": "ยอมรับ",
-        "Attendees_accepted_count": "<strong> ผู้เข้าร่วม {{count}} คน </strong> ยอมรับแล้ว",
-        "Attendees_declined_count": "<strong> ผู้เข้าร่วม {{count}} คน </strong> ปฏิเสธ",
-        "Attendees_not_answered_count": "<strong> ผู้เข้าร่วม {{count}} คน </strong> ยังไม่ได้ตอบ",
-        "DE_with_count": "ปฏิเสธ {{count}}",
-        "Declined": "ปฏิเสธ",
-        "Attendees_tentative_count": "<strong> ผู้เข้าร่วม {{count}} คน </strong> ได้ตอบรับเบื้องต้นว่ายังไม่แน่นอน"
+        "Declined": "ปฏิเสธ"
     },
     "label": {
         "custom": "กำหนดเอง",
-        "attachment": "สิ่งที่แนบมา",
         "busy": "ไม่ว่าง",
-        "download": "ดาวน์โหลดทั้งหมด",
         "edit": "แก้ไข",
         "edit_share": "แก้ไขการแชร์",
         "end": "จบ",
@@ -45,7 +35,6 @@
         "week": "สัปดาห์",
         "weeks_on": "สัปดาห์ใน",
         "add_share": "เพิ่มการแชร์",
-        "attendee_plural": "ผู้เข้าร่วม",
         "calendar": "ปฏิทิน",
         "calendar_color": "สีปฏิทิน",
         "cancelled": "ยกเลิกแล้ว",
@@ -57,7 +46,6 @@
         "default_view": "มุมมองเริ่มต้น",
         "edit_access": "แก้ไขการเข้าถึง",
         "delete_permanently": "ลบอย่างถาวร",
-        "dismiss": "ยกเลิกทั้งหมด",
         "display": "แสดง",
         "email_input_message": "ใส่ที่อยู่อีเมล",
         "enable_dlgtn_for_ical": "เปิดใช้การมอบหมายงานสำหรับ Apple iCal CalDAV Client",
@@ -84,7 +72,6 @@
         "occurrences": "เหตุการณ์",
         "of_every": "ของทุกๆ",
         "ongoing": "ต่อเนื่อง",
-        "optional": "ไม่จำเป็น",
         "out_of_office": "ไม่อยู่",
         "outlook_url": "Outlook URL",
         "private": "ส่วนตัว",
@@ -96,7 +83,6 @@
         "set_new_time": "ตั้งเวลาใหม่",
         "share_calendar_url": "{{title}} แชร์การเข้าถึง",
         "sharing_of_this_folder": "การแชร์ของโฟลเดอร์นี้",
-        "show": "แสดงทั้งหมด",
         "show_declined_meetings": "แสดงการปฏิเสธการประชุม",
         "time_zones": "โซนเวลา",
         "to": "ถึง",
@@ -112,7 +98,6 @@
         "your_pref_timezone_msg": "เขตเวลาที่คุณต้องการคือ: GMT +01:00 อัมสเตอร์ดัม, เบอร์ลิน, เบิร์น, โรม, สตอกโฮล์ม, เวียนนา",
         "snooze": "เลื่อนต่อเวลา",
         "create": "สร้าง",
-        "delete": "ลบ",
         "start_week_on": "เริ่มสัปดาห์ใน",
         "undo": "ย้อนกลับ",
         "error_try_again": "เกิดข้อผิดพลาดบางอย่าง โปรดลองใหม่อีกครั้ง",
@@ -126,7 +111,6 @@
         "restore": "การกู้คืนข้อมูล (Restore)",
         "restore_calendar": "กู้คืนปฏิทิน",
         "results_for": "ผลลัพธ์สำหรับ:",
-        "appt_reminder": "การแจ้งเตือนการนัดหมาย",
         "event_title": "ชื่องาน",
         "access_revoked": "การเข้าถึงถูกเพิกถอน",
         "calendar_shared": "แชร์ปฏิทินเรียบร้อยแล้ว",
@@ -192,7 +176,6 @@
         "keywords": "คำหลัก",
         "no_rights": "คุณไม่ได้รับอนุญาตให้ดำเนินการนี้",
         "single_advanced_filter": "ตัวกรองขั้นสูง",
-        "advanced_filters_0": "{{count}} ตัวกรองขั้นสูง",
         "optionals": "ไม่จำเป็น",
         "time": "เวลา"
     },
@@ -335,17 +318,10 @@
     "reminder": {
         "never": "ไม่มี",
         "at_time_of_event": "ในช่วงเวลาของเหตุการณ์",
-        "day_before": "{{count}} วันก่อน",
-        "hour_before": "{{count}} ชั่วโมงก่อน",
-        "minute_before": "{{count}} นาทีก่อน",
-        "week_before": "{{count}} สัปดาห์ก่อน",
         "all_time": "ตลอดช่วงเวลาของเหตุการณ์",
         "modal": {
             "set_new_time_message": "คุณต้องการตั้งเวลาใหม่สำหรับการนัดหมายที่พลาดไปหรือไม่? หากคุณคลิกตกลง การเตือนความจำอื่น ๆ ทั้งหมดจะถูกปิดโดยอัตโนมัติ"
-        },
-        "minutes": "{{count}} นาที",
-        "hours": "{{count}} ชั่วโมง",
-        "second_before": "{{count}} วินาทีก่อนหน้า"
+        }
     },
     "repeat": {
         "customize": "กำหนดเอง",
@@ -459,8 +435,6 @@
         "organizer": "ผู้จัดงาน",
         "send_email": "ส่งอีเมล",
         "more": "เพิ่มเติม…",
-        "required_participant": "ผู้เข้าร่วม {{count}}",
-        "optional_participant": "{{count}} ตัวเลือก",
         "edit_series_warning": "ในขณะที่คุณดำเนินการแก้ไขซีรีส์ อินสแตนซ์ที่ถูกลบหรือแก้ไขก่อนหน้านี้ทั้งหมดจะถูกกู้คืนด้วยการตั้งค่าซีรีส์ใหม่",
         "appointment_invitation_sent": "ส่งคำเชิญนัดหมายแล้ว",
         "meeting_modified": "การประชุมต่อไปนี้ได้รับการแก้ไขแล้ว",
@@ -479,7 +453,6 @@
         "location": "สถานที่",
         "chat_room": "ลิงก์ของห้องเสมือนจริง",
         "calendar_sharing_status_one": "แชร์กับ 1 คน",
-        "calendar_sharing_status": "แชร์กับ {{count}} คน",
         "revoke": "เพิกถอนการเข้าถึง",
         "edit": "แก้ไขคุณสมบัติการแชร์",
         "virtual_room": "ห้องเสมือนจริง",
