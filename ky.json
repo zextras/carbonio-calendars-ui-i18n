@@ -41,7 +41,8 @@
         "days": "күн",
         "equipment": "Жабдуу",
         "invites": "Чакыруу",
-        "location": "Орду"
+        "location": "Орду",
+        "required": "Керектүү"
     },
     "action": {
         "reset": "Өчүрүп салуу",
