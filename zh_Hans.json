@@ -488,7 +488,6 @@
         "equipment": "设备",
         "location": "位置",
         "chat_room": "虚拟房间链接",
-        "calendar_sharing_status_one": "已与 1 人分享",
         "revoke": "撤销访问权限",
         "resend": "发送有关此共享的邮件通知",
         "edit": "编辑共享属性",

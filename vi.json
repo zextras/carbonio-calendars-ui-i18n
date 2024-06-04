@@ -363,8 +363,7 @@
         "chat_room": "Liên kết phòng ảo",
         "equipment": "Thiết bị",
         "location": "Địa điểm",
-        "chat": "Thiết bị",
-        "calendar_sharing_status_one": "Chia sẻ với 1 người"
+        "chat": "Thiết bị"
     },
     "find_shares": "Tìm chia sẻ",
     "is_recurrent": "Lặp lại",
