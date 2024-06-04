@@ -42,7 +42,16 @@
         "equipment": "Жабдуу",
         "invites": "Чакыруу",
         "location": "Орду",
-        "required": "Керектүү"
+        "required": "Керектүү",
+        "week_day": {
+            "friday": "Жума",
+            "sunday": "Жекшемби",
+            "monday": "Дүйшөмбү",
+            "saturday": "Ишемби",
+            "thursday": "Бейшемби",
+            "tuesday": "Шейшемби",
+            "wednesday": "Шаршемби"
+        }
     },
     "action": {
         "reset": "Өчүрүп салуу",
