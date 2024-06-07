@@ -51,7 +51,8 @@
             "thursday": "Бейшемби",
             "tuesday": "Шейшемби",
             "wednesday": "Шаршемби"
-        }
+        },
+        "delete_permanently": "Биротоло өчүрүү"
     },
     "action": {
         "reset": "Өчүрүп салуу",
@@ -107,5 +108,46 @@
         "add_attachments": "Тиркеме кошуу",
         "edit": "Жалпы кирүү мүмкүнчүлүгүнүн каситин өзгөртүү",
         "revoke": "Кирүү мүмкүнчүлүгүн жокко чыгаруу"
+    },
+    "timezone": {
+        "azores": "{{value}} Азор аралдары",
+        "abu_dhabi_muscat": "{{value}} Абу-Даби, Маскат",
+        "alaska": "{{value}} Аляска",
+        "amsterdam_berlin_bern_rome_stockholm_vienna": "{{value}} Амстердам, Берлин, Берн, Рим, Стокгольм, Вена",
+        "anadyr_petropavlovsk_kamchatsky_rtz11": "{{value}} Анадырь, Петропавловск-Камчатский (RTZ 11)",
+        "argentina": "{{value}} Аргентина",
+        "arizona": "{{value}} Аризона",
+        "asuncion": "{{value}} Асунсьон",
+        "athens_beirut_bucharest_istanbul": "{{value}} Афины, Бейрут, Бухарест, Стамбул",
+        "atlantic_time_canada": "{{value}}Атлантика убактысы (Канада)",
+        "baja_california": "{{value}} Төмөнкү Калифорния",
+        "baku": "{{value}} Баку",
+        "bangkok_hanoi_jakarta": "{{value}} Бангкок, Ханой, Джакарта",
+        "beijing_chongqing_hong_kong_urumqi": "{{value}} Пекин, Чунцин, Гонконг, Урумиай",
+        "beirut": "{{value}} Бейрут",
+        "belgrade_bratislava_budapest_ljubljana_prague": "{{value}} Белград, Братислава, Будапешт, Любляна, Прага",
+        "brasilia": "{{value}} Бразилия",
+        "britain_ireland_portugal": "{{value}} Улуубритания, Ирландия, Португалия",
+        "cayenne_fortaleza": "{{value}} Кайенна, Фортелеза",
+        "central_america": "{{value}} Борбордук Америка",
+        "cape_verde_is": "{{value}} Кабо-Верде аралдары.",
+        "caracas": "{{value}} Каракас",
+        "casablanca": "{{value}} Касабланка",
+        "chennai_kolkata_mumbai_new_delhi": "{{value}} Ченнаи, Калькутта, Мумбаи, Нью-Дели",
+        "chihuahua_la_paz_mazatlan": "{{value}} Чиуауа, Ла-Пас, Масатлан",
+        "christmas_island": "{{value}} Рождество аралы",
+        "colombia": "{{value}} Колумбия",
+        "coordinated_universal_time": "{{value}} Координацияланган дүйнөлүк убакыт",
+        "cuiaba": "{{value}} Куяба",
+        "damascus": "{{value}} Дамаск",
+        "darwin": "{{value}} Дарвин",
+        "dateline": "{{value}} Меридиан",
+        "dhaka": "{{value}} Дакка",
+        "egypt": "{{value}} Египет",
+        "ekaterinburg_rtz_4": "{{value}} Екатеринбург (RTZ 4)",
+        "eucla": "{{value}} Евкла",
+        "georgetown_la_paz_manaus_san_juan": "{{value}} Джорджтаун, Ла-Пас, Манаус, Сан-Хуан",
+        "gmt_02": "{{value}} GMT-02",
+        "chita": "{{value}} Чита"
     }
 }
