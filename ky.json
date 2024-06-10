@@ -32,12 +32,12 @@
         "single_advanced_filter": "Кеңейтилген чыпкалар",
         "subject": "Тема",
         "tag": "Tag",
-        "tag_name": "Tag аты",
+        "tag_name": "Tag аталышы",
         "tags": "Tags",
         "time": "Убакыт",
         "undo": "Жокко чыгаруу",
         "warning": "Көңүл бургула",
-        "no_special_char_allowed": "Аты өзүнчө символдорду камтыбашы керек",
+        "no_special_char_allowed": "Аталышы өзүнчө символдорду камтыбашы керек",
         "days": "күн",
         "equipment": "Жабдуу",
         "invites": "Чакыруу",
@@ -52,7 +52,10 @@
             "tuesday": "Шейшемби",
             "wednesday": "Шаршемби"
         },
-        "delete_permanently": "Биротоло өчүрүү"
+        "delete_permanently": "Биротоло өчүрүү",
+        "new_tag": "Жаңы Tag",
+        "results_for": "Издөөнүн жыйынтыгы:",
+        "root": "Тамыр"
     },
     "action": {
         "reset": "Өчүрүп салуу",
@@ -83,7 +86,8 @@
         "snackbar": {
             "tag_created": "Tag {{name}} ийгиликтүү түзүлдү",
             "tag_deleted": "Tag {{name}} ийгиликтүү өчүрүлдү",
-            "tag_updated": "Tag ийгиликтүү жаңыланды"
+            "tag_updated": "Tag ийгиликтүү жаңыланды",
+            "tag_not_updated": "Бир жерден ката кетти, tag жаңыланган жок. Сураныч, кайра аракет кылыңыз."
         }
     },
     "preview": {
@@ -148,6 +152,59 @@
         "eucla": "{{value}} Евкла",
         "georgetown_la_paz_manaus_san_juan": "{{value}} Джорджтаун, Ла-Пас, Манаус, Сан-Хуан",
         "gmt_02": "{{value}} GMT-02",
-        "chita": "{{value}} Чита"
+        "chita": "{{value}} Чита",
+        "harare_pretoria": "{{value}} Хараре, Претория",
+        "minsk": "{{value}} Минск",
+        "gmt_11": "{{value}} GMT-11",
+        "greenland": "{{value}}Гренландия",
+        "hawaii": "{{value}} Гавайи",
+        "helsinki_kyiv_riga_sofia_tallinn_vilnius": "{{value}} Хельсинки, Киев, Рига, София, Таллинн, Вильнюс",
+        "indiana_east": "{{value}} Индиана (Чыгыш)",
+        "iraq": "{{value}} Ирак",
+        "irkutsk_rtz_7": "{{value}} Иркутск (RTZ 7)",
+        "istanbul": "{{value}}⁣ Стамбул",
+        "jerusalem": "{{value}} Иерусалим",
+        "jordan": "{{value}} Иордания",
+        "kabul": "{{value}} Кабул",
+        "kaliningrad_rtz_1": "{{value}} Калининград (RTZ 1)",
+        "kathmandu": "{{value}} Катманду",
+        "korea": "{{value}} Корея",
+        "krasnoyarsk_rtz_6": "{{value}} Красноярск (RTZ 6)",
+        "kuwait_riyadh": "{{value}} Кувейт, Эр-Рияд",
+        "la_paz": "{{value}} Ла-Пас",
+        "magadan": "{{value}} Магадан",
+        "manaus": "{{value}} Манаус",
+        "mid_atlantic": "{{value}} Орто Атлантика",
+        "monrovia": "{{value}} Монровия",
+        "montevideo": "{{value}} Монтевидео",
+        "moscow_st_petersburg_volgograd_rtz_2": "{{value}} Москва, Санкт-Петербург, Волгоград (RTZ 2)",
+        "nairobi": "{{value}} Найроби",
+        "namibia": "{{value}} Намибия",
+        "sarajevo_skopje_warsaw_zagreb": "{{value}} Сараево, Скопье, Варшава, Загреб",
+        "saskatchewan": "{{value}} Саскачеван",
+        "sri_jayawardenepura_kotte": "{{value}} Шри Джаяварденепура Котте",
+        "tbilisi": "{{value}} Тбилиси",
+        "tehran": "{{value}} Тегеран",
+        "us_canada_central": "{{value}} АКШ/Борбордук Канада",
+        "us_canada_eastern": "{{value}} АКШ/Чыгыш Канада",
+        "us_canada_mountain": "{{value}} США/Канада",
+        "us_canada_pacific": "{{value}} АКШ/Канада Тынч океаны",
+        "vladivostok_magadan": "{{value}} владивосток_магадан_rtz_9",
+        "west_central_africa": "{{value}} Батыш-Борбордук Африка",
+        "yangon": "{{value}} Янгон",
+        "yerevan": "{{value}} Ереван",
+        "newfoundland": "{{value}} Ньюфаундленд",
+        "nuku_alofa": "{{value}} Нукуалофа",
+        "pacific_south_america": "{{value}} Тынч океаны Түштүк Америка",
+        "port_louis": "{{value}} Порт-Луи",
+        "pyongyang": "{{value}} Пхеньян",
+        "samoa": "{{value}} Самоа"
+    },
+    "folder": {
+        "modal": {
+            "footer": {
+                "go_back": "Артка"
+            }
+        }
     }
 }
