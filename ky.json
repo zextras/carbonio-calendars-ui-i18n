@@ -321,17 +321,39 @@
     "share": {
         "options": {
             "share_calendar_role": {
-                "none": "Эч ким"
+                "none": "Эч ким",
+                "manager": "Менеджер (көрүү, редакциялоо, кошуу, өчүрүү, жолугушууларды кабыл алуу жана аларды бөлүшүү укугуна ээ)",
+                "admin": "Редактор (көрүү, редакциялоо, кошуу жана өчүрүү укугуна ээ, бирок жолугушууларды кабыл алып, аларды бөлүшө албайт)                ",
+                "viewer": "Көрүүчү (көрө алат)"
             },
             "share_calendar_with": {
-                "external_guests": "Тышкы пайдалануучулар (көрүү)",
+                "external_guests": "Тышкы пайдалануучулар (көрүүгө гана укуктуу)",
                 "internal_users_groups": "Ички Пайдалануучулар же Топтор",
                 "public": "Жалпыга жеткиликтүү (көрүү гана, пароль талап кылынбайт)"
             }
+        },
+        "placeholder": {
+            "recipients_address": "Алуучулардын электрондук почталарынын даректери",
+            "standard_message": "Стандарттык билдирүүгө эскертүү кошуу"
+        },
+        "label": {
+            "allow_to_see_private_appt": "Пайдалануучуларга жеке жолугушууларды көрүүгө уруксат берүү",
+            "send_notification": "Бул жарыя тууралуу кабарлоо жөнөтүү"
+        },
+        "note": {
+            "share_note": "Стандарттык билдирүү сиздин атыңызды, жалпы элементтин атын, алуучуларга берилген уруксаттарды жана кирүү маалыматын чагылдырат."
         }
     },
     "snackbar": {
-        "email_copied_to_clipboard": "Электрондук кат алмашуу буферине көчүрүлдү."
+        "email_copied_to_clipboard": "Кат алмашуу буферине көчүрүлдү.",
+        "invite": {
+            "error": "Ката"
+        },
+        "proposed_time_accepted": "Сунушталган убакытты кабыл алдыңыз",
+        "share_folder_success": "Календарга кирүү мүмкүнчүлүгү берилди",
+        "tag_applied": "Тег {{tag}} колдонулду",
+        "tag_removed": "Тег {{tag}} өчүрүлдү",
+        "url_copied": "{{title}} көчүрүлдү"
     },
     "tooltip": {
         "add_attachments": "Тиркеме кошуу",
@@ -350,7 +372,7 @@
         "folder_linked_status": "Мени менен байланыштуу",
         "location": "Орун",
         "meetingRooms": "Бөлүмдөр",
-        "resend": "Бул биргелешкен ресурс жөнүндө электрондук почта боюнча билдирүү жөнөтүңүз"
+        "resend": "Бул биргелешкен ресурс жөнүндө электрондук почта менен билдирүү жөнөтүңүз"
     },
     "timezone": {
         "azores": "{{value}} Азор аралдары",
@@ -362,18 +384,18 @@
         "arizona": "{{value}} Аризона",
         "asuncion": "{{value}} Асунсьон",
         "athens_beirut_bucharest_istanbul": "{{value}} Афины, Бейрут, Бухарест, Стамбул",
-        "atlantic_time_canada": "{{value}}Атлантика убактысы (Канада)",
-        "baja_california": "{{value}} Төмөнкү Калифорния",
+        "atlantic_time_canada": "{{value}} Атлантика убактысы (Канада)",
+        "baja_california": "{{value}} Байа Калифорния",
         "baku": "{{value}} Баку",
         "bangkok_hanoi_jakarta": "{{value}} Бангкок, Ханой, Джакарта",
-        "beijing_chongqing_hong_kong_urumqi": "{{value}} Пекин, Чунцин, Гонконг, Урумиай",
+        "beijing_chongqing_hong_kong_urumqi": "{{value}} Пекин, Чунцин, Гонконг, Урумчи",
         "beirut": "{{value}} Бейрут",
         "belgrade_bratislava_budapest_ljubljana_prague": "{{value}} Белград, Братислава, Будапешт, Любляна, Прага",
         "brasilia": "{{value}} Бразилия",
-        "britain_ireland_portugal": "{{value}} Улуубритания, Ирландия, Португалия",
+        "britain_ireland_portugal": "{{value}} Улуу Британия, Ирландия, Португалия",
         "cayenne_fortaleza": "{{value}} Кайенна, Фортелеза",
         "central_america": "{{value}} Борбордук Америка",
-        "cape_verde_is": "{{value}} Кабо-Верде аралдары.",
+        "cape_verde_is": "{{value}} Кабо-Верде аралдары",
         "caracas": "{{value}} Каракас",
         "casablanca": "{{value}} Касабланка",
         "chennai_kolkata_mumbai_new_delhi": "{{value}} Ченнаи, Калькутта, Мумбаи, Нью-Дели",
@@ -381,7 +403,7 @@
         "christmas_island": "{{value}} Рождество аралы",
         "colombia": "{{value}} Колумбия",
         "coordinated_universal_time": "{{value}} Координацияланган дүйнөлүк убакыт",
-        "cuiaba": "{{value}} Куяба",
+        "cuiaba": "{{value}} Куйаба",
         "damascus": "{{value}} Дамаск",
         "darwin": "{{value}} Дарвин",
         "dateline": "{{value}} Меридиан",
@@ -395,7 +417,7 @@
         "harare_pretoria": "{{value}} Хараре, Претория",
         "minsk": "{{value}} Минск",
         "gmt_11": "{{value}} GMT-11",
-        "greenland": "{{value}}Гренландия",
+        "greenland": "{{value}} Гренландия",
         "hawaii": "{{value}} Гавайи",
         "helsinki_kyiv_riga_sofia_tallinn_vilnius": "{{value}} Хельсинки, Киев, Рига, София, Таллинн, Вильнюс",
         "indiana_east": "{{value}} Индиана (Чыгыш)",
@@ -407,13 +429,13 @@
         "kabul": "{{value}} Кабул",
         "kaliningrad_rtz_1": "{{value}} Калининград (RTZ 1)",
         "kathmandu": "{{value}} Катманду",
-        "korea": "{{value}} Корея",
+        "korea": "{{value}} Түштүк Корея",
         "krasnoyarsk_rtz_6": "{{value}} Красноярск (RTZ 6)",
         "kuwait_riyadh": "{{value}} Кувейт, Эр-Рияд",
         "la_paz": "{{value}} Ла-Пас",
         "magadan": "{{value}} Магадан",
         "manaus": "{{value}} Манаус",
-        "mid_atlantic": "{{value}} Орто Атлантика",
+        "mid_atlantic": "{{value}} Ортоатлантика региону",
         "monrovia": "{{value}} Монровия",
         "montevideo": "{{value}} Монтевидео",
         "moscow_st_petersburg_volgograd_rtz_2": "{{value}} Москва, Санкт-Петербург, Волгоград (RTZ 2)",
@@ -421,23 +443,25 @@
         "namibia": "{{value}} Намибия",
         "sarajevo_skopje_warsaw_zagreb": "{{value}} Сараево, Скопье, Варшава, Загреб",
         "saskatchewan": "{{value}} Саскачеван",
-        "sri_jayawardenepura_kotte": "{{value}} Шри Джаяварденепура Котте",
+        "sri_jayawardenepura_kotte": "{{value}} Шри- Джаяварденепура Котте",
         "tbilisi": "{{value}} Тбилиси",
         "tehran": "{{value}} Тегеран",
         "us_canada_central": "{{value}} АКШ/Борбордук Канада",
-        "us_canada_eastern": "{{value}} АКШ/Чыгыш Канада",
-        "us_canada_mountain": "{{value}} США/Канада",
-        "us_canada_pacific": "{{value}} АКШ/Канада Тынч океаны",
-        "vladivostok_magadan": "{{value}} владивосток_магадан_rtz_9",
+        "us_canada_eastern": "{{value}} АКШ/ Канада Чыгыш бөлүгү",
+        "us_canada_mountain": "{{value}} АКШ/Канада тоосу",
+        "us_canada_pacific": "{{value}} АКШ/Канада, Тынч океан региону",
+        "vladivostok_magadan": "{{value}} Владивосток, Магадан_rtz_9",
         "west_central_africa": "{{value}} Батыш-Борбордук Африка",
         "yangon": "{{value}} Янгон",
         "yerevan": "{{value}} Ереван",
         "newfoundland": "{{value}} Ньюфаундленд",
         "nuku_alofa": "{{value}} Нукуалофа",
-        "pacific_south_america": "{{value}} Тынч океаны Түштүк Америка",
+        "pacific_south_america": "{{value}} Тынч океан региону Түштүк Америка",
         "port_louis": "{{value}} Порт-Луи",
         "pyongyang": "{{value}} Пхеньян",
-        "samoa": "{{value}} Самоа"
+        "samoa": "{{value}} Самоа",
+        "guadalajara_mexico_city_monterrey ": "{{value}} Гвадалахара, Мехико, Монтеррей",
+        "brussels_copenhagen_madrid_paris ": "{{value}} Брюссель, Копенгаген, Мадрид, Париж"
     },
     "folder": {
         "modal": {
@@ -669,5 +693,11 @@
     },
     "type": "Тип",
     "workflow": "Иш процесси",
-    "write": "Жазуу"
+    "write": "Жазуу",
+    "share_invite_resent": "Кирүү мүмкүнчүлүгү жөнүндө кабарлоо",
+    "shared_folders": "Жалпы календарлар",
+    "shared_items": "Жалпы элементтер",
+    "shares_info": "Жалпы кирүү мүмкүнчүлүгү жөнүндө маалымат",
+    "success": "Ийгиликтүү",
+    "timezones": "Саат алкактары"
 }
