@@ -19,7 +19,8 @@
         "Trash_already_empty": "kosz jest już pusty",
         "download_ics": "Pobierz ICS",
         "export_calendar_ics": "Eksportuj plik ICS",
-        "calendar_upload": "Importuj plik ICS"
+        "calendar_upload": "Importuj plik ICS",
+        "answer": "Odpowiedz"
     },
     "event": {
         "action": {
@@ -293,7 +294,7 @@
             "appt_restored": "Spotkanie zostało przywrócone do",
             "appointment_permanently_deleted_succesfully": "Trwałe usunięcie zostało ukończone",
             "calendar_deleted_successfully": "Kalendarz został usunięty.",
-            "calendar_moved_to_root_folder": "Kalendarz został przeniesiony do Folderu źródłowego",
+            "calendar_moved_to_root_folder": "Kalendarz został przeniesiony do folderu źródłowego",
             "calendar_moved_to_trash": "Kalendarz został przeniesiony do kosza",
             "calendar_permanently_deleted": "Kalendarz został trwale usunięty",
             "calendar_restored": "Kalendarz został przywrócony",
@@ -339,7 +340,8 @@
         "optional_participant_many": "{{count}} opcjonalnych",
         "required_participant_one": "{{count}} uczestnik",
         "required_participant_few": "{{count}} uczestników",
-        "required_participant_many": "{{count}} uczestników"
+        "required_participant_many": "{{count}} uczestników",
+        "original_invite": "-----Oryginalne zaproszenie-----"
     },
     "participants": {
         "Accepted": "Zaakceptowano",
@@ -726,5 +728,6 @@
     "attendees_equipments_unavailable": "Co najmniej jeden ekwipunek nie jest dostępny o wybranym czasie wydarzenia",
     "timezones": "Strefy czasowe",
     "import": "Importuj",
-    "import_appointments": "Importuj spotkania"
+    "import_appointments": "Importuj spotkania",
+    "empty_trash_deleting_confirmation": "Usuwasz wszystkie elementy w koszu kalendarza. Tej czynności nie da się cofnąć. Czy na pewno chcesz usunąć wszystkie elementy?"
 }
