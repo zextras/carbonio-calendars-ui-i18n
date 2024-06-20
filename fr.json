@@ -19,7 +19,8 @@
         "Trash_already_empty": "la corbeille est déjà vide",
         "download_ics": "Télécharger le fichier ICS",
         "calendar_upload": "Importer un fichier ICS",
-        "export_calendar_ics": "Exporter le fichier ICS"
+        "export_calendar_ics": "Exporter le fichier ICS",
+        "answer": "Réponse"
     },
     "add": "Ajouter",
     "administer": "Administrer",
@@ -376,7 +377,8 @@
         "required_participant_other": "{{count}} participants",
         "optional_participant_one": "{{count}} optionnel",
         "optional_participant_many": "{{count}} optionnels",
-        "optional_participant_other": "{{count}} optionnels"
+        "optional_participant_other": "{{count}} optionnels",
+        "original_invite": "-----Invitation initiale-----"
     },
     "months": {
         "april": "Avril",
@@ -726,5 +728,6 @@
     "attendee_equipment_unavailable": "Matériel indisponible à l'heure choisie pour l'événement",
     "timezones": "Fuseaux horaires",
     "import_appointments": "Importer des rendez-vous",
-    "import": "Importer"
+    "import": "Importer",
+    "empty_trash_deleting_confirmation": "Vous êtes sur le point de supprimer tous les éléments du dossier Corbeille du calendrier. La suppression est permanente. Êtes-vous sûr de vouloir supprimer tous les éléments ?"
 }
