@@ -10,6 +10,8 @@
         "location": "Luogo",
         "chat_room": "Link alla Stanza Virtuale",
         "calendar_sharing_status_one": "Condiviso con una persona",
+        "calendar_sharing_status_many": "",
+        "calendar_sharing_status_other": "",
         "revoke": "Revoca accesso",
         "resend": "Invia notifica per questa condivisione",
         "edit": "Modifica proprietà di condivisione",
@@ -23,7 +25,22 @@
         "all_time": "Per tutta la durata dell'evento",
         "modal": {
             "set_new_time_message": "Vuoi proporre un nuovo orario per l'appuntamento mancato? Se selezioni OK, tutti i relativi promemoria verranno automaticamente cancellati."
-        }
+        },
+        "minute_before_one": "{{count}} minuto prima",
+        "minute_before_many": "{{count}} minuti prima",
+        "minute_before_other": "{{count}} minuti prima",
+        "day_before_one": "{{count}} giorno prima",
+        "day_before_many": "{{count}} giorni prima",
+        "day_before_other": "{{count}} giorni prima",
+        "hour_before_one": "{{count}} ora prima",
+        "hour_before_many": "{{count}} ore prima",
+        "hour_before_other": "{{count}} ore prima",
+        "second_before_one": "{{count}} secondo prima",
+        "second_before_many": "{{count}} secondi prima",
+        "second_before_other": "{{count}} secondi prima",
+        "week_before_one": "{{count}} settimana prima",
+        "week_before_many": "{{count}} settimane prima",
+        "week_before_other": "{{count}} settimane prima"
     },
     "participants": {
         "Tentative": "Risposto: forse",
@@ -274,7 +291,19 @@
         "time": "Ora",
         "optionals": "Opzionali",
         "equipment": "Attrezzatura",
-        "meeting_room": "Sala riunioni"
+        "meeting_room": "Sala riunioni",
+        "available": "Sei disponibile",
+        "advanced_filters_one": "{{count}} filtro avanzato",
+        "advanced_filters_many": "{{count}} filtri avanzati",
+        "advanced_filters_other": "{{count}} filtri avanzati",
+        "appt_reminder_one": "Promemoria Appuntamento",
+        "appt_reminder_many": "Promemoria Appuntamenti",
+        "appt_reminder_other": "Promemoria Appuntamenti",
+        "attachment_one": "Allegato",
+        "attachment_many": "allegati",
+        "attachment_other": "allegati",
+        "check_availability": "Controlla la tua disponibilità",
+        "checking_availability": "Verifica della disponibilità"
     },
     "action": {
         "send": "Invia",
@@ -293,7 +322,10 @@
         "search": "Cerca",
         "reset": "Reimposta",
         "show_original": "Mostra originale",
-        "Trash_already_empty": "il cestino è vuoto"
+        "Trash_already_empty": "il cestino è vuoto",
+        "calendar_upload": "Importa file .ICS",
+        "download_ics": "Scarica ICS",
+        "export_calendar_ics": "Esporta file .ICS"
     },
     "button": {
         "customize_modal": "Personalizza"
@@ -634,5 +666,7 @@
     "public": "pubblico",
     "attendee_room_unavailable": "Stanza non disponibile nell'orario selezionato per l'evento",
     "attendees_rooms_unavailable": "Una o più Meeting Room non sono disponibili nell'orario selezionato per l'evento",
-    "timezones": "Fuso orario"
+    "timezones": "Fuso orario",
+    "import": "Importa",
+    "import_appointments": "Importa appuntamenti"
 }
