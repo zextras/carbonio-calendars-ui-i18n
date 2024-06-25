@@ -40,7 +40,13 @@
         "second_before_other": "{{count}} secondi prima",
         "week_before_one": "{{count}} settimana prima",
         "week_before_many": "{{count}} settimane prima",
-        "week_before_other": "{{count}} settimane prima"
+        "week_before_other": "{{count}} settimane prima",
+        "hours_one": "{{count}} ora",
+        "hours_many": "{{count}} ore",
+        "hours_other": "{{count}} ore",
+        "minutes_one": "{{count}} minuto",
+        "minutes_many": "{{count}} minuti",
+        "minutes_other": "{{count}} minuti"
     },
     "participants": {
         "Tentative": "Risposto: forse",
@@ -48,7 +54,31 @@
         "Accepted": "accettato",
         "Declined": "rifiutato",
         "Invited_Visitor": "è stato invitato",
-        "Not_answered": "non ha risposto"
+        "Not_answered": "non ha risposto",
+        "Attendees_tentative_count_one": "<strong>{{count}} partecipante </strong> ha accettato con riserva",
+        "Attendees_tentative_count_many": "<strong>{{count}} partecipanti </strong> hanno accettato con riserva",
+        "Attendees_tentative_count_other": "<strong>{{count}} partecipanti </strong> hanno accettato con riserva",
+        "AC_with_count_one": "Accettato",
+        "AC_with_count_many": "({{count}}) Accettati",
+        "AC_with_count_other": "({{count}}) Accettati",
+        "Attendees_accepted_count_one": "<strong>{{count}} partecipante </strong> ha accettato",
+        "Attendees_accepted_count_many": "<strong>{{count}} partecipanti </strong> hanno accettato",
+        "Attendees_accepted_count_other": "<strong>{{count}} partecipanti </strong> hanno accettato",
+        "Attendees_declined_count_one": "<strong>{{count}} partecipante </strong> ha declinato",
+        "Attendees_declined_count_many": "<strong>{{count}} partecipanti </strong> hanno declinato",
+        "Attendees_declined_count_other": "<strong>{{count}} partecipanti </strong> hanno declinato",
+        "Attendees_not_answered_count_one": "<strong>{{count}} partecipante </strong> non ha risposto",
+        "Attendees_not_answered_count_many": "<strong>{{count}} partecipanti </strong> non hanno risposto",
+        "Attendees_not_answered_count_other": "<strong>{{count}} partecipanti </strong> non hanno risposto",
+        "DE_with_count_one": "Declinato",
+        "DE_with_count_many": "{{count}} Declinati",
+        "DE_with_count_other": "{{count}} Declinati",
+        "NE_with_count_one": "Non ha risposto",
+        "NE_with_count_many": "({{count}}) Non hanno risposto",
+        "NE_with_count_other": "({{count}}) Non hanno risposto",
+        "TE_with_count_one": "Con riserva",
+        "TE_with_count_many": "({{count}}) con riserva",
+        "TE_with_count_other": "({{count}}) con riserva"
     },
     "message": {
         "you_are_organizer": "<Row><Text> <BoldText>Tu </BoldText> sei l'organizzatore </Text></Row>",
@@ -117,7 +147,15 @@
         "appointment_invitation_sent": "Invito all'appuntamento inviato",
         "want_to_edit_modified_msg": "Le modifiche verranno notificate ai partecipanti via email. Vuoi aggiungere un messaggio personalizzato?",
         "meeting_modified": "La riunione seguente è stata modificata",
-        "copy": "Copia"
+        "copy": "Copia",
+        "import_appointment_modal": "L'appuntameneto nel  {{fileName}} verrà caricato nel calendario \"{{calendarName}}\"",
+        "original_invite": "-----Invito Originale-----",
+        "optional_participant_one": "{{count}} Opzionale",
+        "optional_participant_many": "{{count}} Opzionali",
+        "optional_participant_other": "{{count}} Opzionali",
+        "required_participant_one": "Partecipante",
+        "required_participant_many": "Partecipanti",
+        "required_participant_other": "Partecipanti"
     },
     "label": {
         "to": "A",
@@ -269,7 +307,7 @@
         "tag_name": "Nome etichetta",
         "tags": "Etichette",
         "no_title": "Nessun Titolo",
-        "scheduled_in": "Calendario",
+        "scheduled_in": "Pianificato in",
         "public_link_description": "Generato da {{title}} il {{date}}",
         "continue": "Continua",
         "warning": "Attenzione",
@@ -303,7 +341,28 @@
         "attachment_many": "allegati",
         "attachment_other": "allegati",
         "check_availability": "Controlla la tua disponibilità",
-        "checking_availability": "Verifica della disponibilità"
+        "checking_availability": "Verifica della disponibilità",
+        "import_calendar_success": "Caricamento completato",
+        "show_event": "Doppio click per vedere i dettagli dei calendari",
+        "attendee_one": "Partecipante",
+        "attendee_many": "Partecipanti",
+        "attendee_other": "Partecipanti",
+        "delete_one": "Cancella",
+        "delete_many": "Cancella tutto",
+        "delete_other": "Cancella tutto",
+        "dismiss_one": "Annulla",
+        "dismiss_many": "Annulla tutto",
+        "dismiss_other": "Annulla tutto",
+        "download_one": "Scarica",
+        "download_many": "Scaricat tutto",
+        "download_other": "Scaricat tutti",
+        "import_calendar_ongoing": "Sto caricando sul calendario selezionato",
+        "optional_one": "Optional",
+        "optional_many": "Optional",
+        "optional_other": "Optional",
+        "show_one": "Mostra",
+        "show_many": "Mostra tutto",
+        "show_other": "Mostra tutti"
     },
     "action": {
         "send": "Invia",
@@ -325,7 +384,8 @@
         "Trash_already_empty": "il cestino è vuoto",
         "calendar_upload": "Importa file .ICS",
         "download_ics": "Scarica ICS",
-        "export_calendar_ics": "Esporta file .ICS"
+        "export_calendar_ics": "Esporta file .ICS",
+        "answer": "Risposta"
     },
     "button": {
         "customize_modal": "Personalizza"
@@ -668,5 +728,6 @@
     "attendees_rooms_unavailable": "Una o più Meeting Room non sono disponibili nell'orario selezionato per l'evento",
     "timezones": "Fuso orario",
     "import": "Importa",
-    "import_appointments": "Importa appuntamenti"
+    "import_appointments": "Importa appuntamenti",
+    "empty_trash_deleting_confirmation": "Stai per cancellare tutti i calendari nel cestino. L'azione é irreversibile. Confermi di voler procedere?"
 }
