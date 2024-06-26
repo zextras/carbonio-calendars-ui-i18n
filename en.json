@@ -20,7 +20,8 @@
         "send_edit": "Send Edit",
         "share_calendar": "Share Calendar",
         "show_original": "Show original",
-        "answer": "Answer"
+        "answer": "Answer",
+        "delete": "Delete"
     },
     "add": "Add",
     "administer": "Administer",
