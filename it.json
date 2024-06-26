@@ -120,7 +120,7 @@
         "somebody_is_organizer": "<strong>{{somebody}}</strong> è l'organizzatore",
         "you": "Tu",
         "are_organizer": "sei l'organizzatore",
-        "delete_all_occurences": "Cancella tutte le occorrenze",
+        "delete_all_occurences": "Elimina tutte le occorrenze",
         "delete_future_occurences": "Elimina questa istanza e tutte le occorrenze future",
         "delete_future_occurences_warning": "Saranno eliminate anche tutte le eccezioni (prima e dopo questa istanza) della serie",
         "invited_you": "ti ha invitato a un evento",
@@ -338,8 +338,8 @@
         "appt_reminder_many": "Promemoria Appuntamenti",
         "appt_reminder_other": "Promemoria Appuntamenti",
         "attachment_one": "Allegato",
-        "attachment_many": "allegati",
-        "attachment_other": "allegati",
+        "attachment_many": "Allegati",
+        "attachment_other": "Allegati",
         "check_availability": "Controlla la tua disponibilità",
         "checking_availability": "Verifica della disponibilità",
         "import_calendar_success": "Caricamento completato",
@@ -347,9 +347,9 @@
         "attendee_one": "Partecipante",
         "attendee_many": "Partecipanti",
         "attendee_other": "Partecipanti",
-        "delete_one": "Cancella",
-        "delete_many": "Cancella tutto",
-        "delete_other": "Cancella tutto",
+        "delete_one": "Elimina",
+        "delete_many": "Elimina tutto",
+        "delete_other": "Elimina tutto",
         "dismiss_one": "Annulla",
         "dismiss_many": "Annulla tutto",
         "dismiss_other": "Annulla tutto",
@@ -385,7 +385,8 @@
         "calendar_upload": "Importa file .ICS",
         "download_ics": "Scarica ICS",
         "export_calendar_ics": "Esporta file .ICS",
-        "answer": "Risposta"
+        "answer": "Risposta",
+        "delete": "Elimina"
     },
     "button": {
         "customize_modal": "Personalizza"
