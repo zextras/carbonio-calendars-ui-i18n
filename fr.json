@@ -507,7 +507,7 @@
             "delete_invt_on_rply": "Supprimer l'invitation lors de la réponse",
             "enable_reminder_sound": "Jouer un son (nécessite le plugin QuickTime ou Windows Media)",
             "enter_email": "Entrer l'adresse email",
-            "flash_browser_title": "Flasher le titre du navigateur",
+            "flash_browser_title": "Faire scintiller le titre du navigateur",
             "show_popup_notification": "Montrer une notification popup",
             "show_reminders": "Afficher les Rappels",
             "show_rmndr_past_due_meetings": "Afficher les rappels pour les réunions en retard",
