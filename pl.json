@@ -20,7 +20,8 @@
         "download_ics": "Pobierz ICS",
         "export_calendar_ics": "Eksportuj plik ICS",
         "calendar_upload": "Importuj plik ICS",
-        "answer": "Odpowiedz"
+        "answer": "Odpowiedz",
+        "delete": "Usuń"
     },
     "event": {
         "action": {
