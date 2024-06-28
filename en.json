@@ -311,7 +311,8 @@
         "weeks_on": "Week(s) on",
         "work_hour": "Work hour",
         "work_week": "Work week",
-        "your_pref_timezone_msg": "Your preferred timezone is: GMT +01:00 Amsterdam, Berlin, Bern, Rome, Stockholm,Vienna."
+        "your_pref_timezone_msg": "Your preferred timezone is: GMT +01:00 Amsterdam, Berlin, Bern, Rome, Stockholm,Vienna.",
+        "attendees": "Attendees"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
