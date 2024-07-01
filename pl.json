@@ -265,7 +265,8 @@
         "optional_many": "Opcjonalnych",
         "show_one": "Pokaż",
         "show_few": "Pokaż wszystkie",
-        "show_many": "Pokaż wszystkie"
+        "show_many": "Pokaż wszystkie",
+        "attendees": "Uczestnicy"
     },
     "message": {
         "modal": {
