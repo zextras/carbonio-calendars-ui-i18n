@@ -300,7 +300,8 @@
         "advanced_filters_other": "{{count}} filtres avancés",
         "download_one": "Télécharger",
         "download_many": "Tout télécharger",
-        "download_other": "Tout télécharger"
+        "download_other": "Tout télécharger",
+        "attendees": "Participants"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
