@@ -187,7 +187,10 @@
         "send_edit": "Enviar modificación",
         "search": "Buscar",
         "reset": "Restablecer",
-        "show_original": "Mostrar original"
+        "show_original": "Mostrar original",
+        "Trash_already_empty": "la papelera ya está vacía",
+        "delete": "Eliminar",
+        "calendar_upload": "Importar archivo ICS"
     },
     "event": {
         "action": {
@@ -488,6 +491,8 @@
         "location": "Ubicación",
         "chat_room": "Enlace de la Sala Virtual",
         "calendar_sharing_status_one": "Compartido con 1 persona",
+        "calendar_sharing_status_many": "",
+        "calendar_sharing_status_other": "",
         "revoke": "Revocar acceso",
         "resend": "Enviar una notificación por correo sobre este uso compartido",
         "edit": "Editar propiedades de uso compartido",
