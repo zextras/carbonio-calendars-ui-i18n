@@ -177,7 +177,26 @@
         "checking_availability": "Verificando sua disponibilidade",
         "import_calendar_ongoing": "Importação para o calendário selecionado em andamento.",
         "import_calendar_success": "Importação concluída com sucesso",
-        "show_event": "Clique duas vezes para ver mais detalhes sobre os Calendários"
+        "show_event": "Clique duas vezes para ver mais detalhes sobre os Calendários",
+        "delete_one": "Excluir",
+        "delete_many": "Excluir tudo",
+        "delete_other": "Excluir tudo",
+        "attendees": "Participantes",
+        "advanced_filters_one": "{{count}} Filtro Avançado",
+        "advanced_filters_many": "{{count}} Filtros Avançados",
+        "advanced_filters_other": "{{count}} Filtros Avançados",
+        "appt_reminder_one": "Lembrete de Compromisso",
+        "appt_reminder_many": "Lembretes de Compromisso",
+        "appt_reminder_other": "Lembretes de Compromisso",
+        "attachment_one": "Anexo",
+        "attachment_many": "Anexos",
+        "attachment_other": "Anexos",
+        "attendee_one": "Participante",
+        "attendee_many": "Participantes",
+        "attendee_other": "Participantes",
+        "dismiss_one": "Ignorar",
+        "dismiss_many": "Ignorar tudo",
+        "dismiss_other": "Ignorar tudo"
     },
     "action": {
         "send": "Enviar",
@@ -199,7 +218,9 @@
         "Trash_already_empty": "A lixeira já está vazia",
         "calendar_upload": "Importar arquivo ICS",
         "download_ics": "Baixar ICS",
-        "export_calendar_ics": "Exportar arquivo ICS"
+        "export_calendar_ics": "Exportar arquivo ICS",
+        "answer": "Responder",
+        "delete": "Excluir"
     },
     "event": {
         "action": {
@@ -313,7 +334,14 @@
         "meeting_modified": "A seguinte reunião foi modificada",
         "want_to_edit_modified_msg": "As alterações serão informadas por e-mail aos participantes. Gostaria de incluir uma mensagem personalizada?",
         "copy": "Copiar",
-        "import_appointment_modal": "O compromisso de {{fileName}} será importado para o calendário \"{{calendarName}}\"."
+        "import_appointment_modal": "O compromisso de {{fileName}} será importado para o calendário \"{{calendarName}}\".",
+        "original_invite": "-----Convite Original-----",
+        "optional_participant_one": "{{count}} Opcional",
+        "optional_participant_many": "{{count}} Opcionais",
+        "optional_participant_other": "{{count}} Opcionais",
+        "required_participant_one": "{{count}} Participante",
+        "required_participant_many": "{{count}} Participantes",
+        "required_participant_other": "{{count}} Participantes"
     },
     "months": {
         "april": "Abril",
@@ -336,7 +364,16 @@
         "Declined": "recusado",
         "Accepted": "aceito",
         "Invited_Visitor": "tem sido convidados",
-        "visitors": "e outros {{others}} participantes"
+        "visitors": "e outros {{others}} participantes",
+        "AC_with_count_one": "Aceito",
+        "AC_with_count_many": "Aceitos ({{count}})",
+        "AC_with_count_other": "Aceitos ({{count}})",
+        "Attendees_accepted_count_one": "<strong>{{count}} participante</strong> aceitou",
+        "Attendees_accepted_count_many": "<strong>{{count}} participantes</strong> aceitaram",
+        "Attendees_accepted_count_other": "<strong>{{count}} participantes</strong> aceitaram",
+        "Attendees_declined_count_one": "<strong>{{count}} participante</strong> recusou",
+        "Attendees_declined_count_many": "<strong>{{count}} participantes</strong> recusaram",
+        "Attendees_declined_count_other": "<strong>{{count}} participantes</strong> recusaram"
     },
     "reminder": {
         "never": "Nunca",
@@ -344,7 +381,28 @@
         "all_time": "Toda a duração do evento",
         "modal": {
             "set_new_time_message": "Deseja definir um novo horário para o compromisso perdido? Se você clicar em OK, todos os lembretes serão automaticamente descartados."
-        }
+        },
+        "minute_before_one": "{{count}} minuto antes",
+        "minute_before_many": "{{count}} minutos antes",
+        "minute_before_other": "{{count}} minutos antes",
+        "day_before_one": "{{count}} dia antes",
+        "day_before_many": "{{count}} dias antes",
+        "day_before_other": "{{count}} dias antes",
+        "hour_before_one": "{{count}} hora antes",
+        "hour_before_many": "{{count}} horas antes",
+        "hour_before_other": "{{count}} horas antes",
+        "hours_one": "{{count}} hora",
+        "hours_many": "{{count}} horas",
+        "hours_other": "{{count}} horas",
+        "minutes_one": "{{count}} minuto",
+        "minutes_many": "{{count}} minutos",
+        "minutes_other": "{{count}} minutos",
+        "second_before_one": "{{count}} segundo antes",
+        "second_before_many": "{{count}} segundos antes",
+        "second_before_other": "{{count}} segundos antes",
+        "week_before_one": "{{count}} semana antes",
+        "week_before_many": "{{count}} semanas antes",
+        "week_before_other": "{{count}} semanas antes"
     },
     "repeat": {
         "customize": "Personalizar",
@@ -486,6 +544,8 @@
         "location": "Local",
         "chat_room": "Link da sala virtual",
         "calendar_sharing_status_one": "Compartilhado com 1 pessoa",
+        "calendar_sharing_status_many": "",
+        "calendar_sharing_status_other": "",
         "revoke": "Revogar acesso",
         "resend": "Enviar notificação por e-mail sobre este compartilhamento",
         "edit": "Editar propriedades do compartilhamento",
@@ -646,5 +706,6 @@
     "private_info_tooltip": "Ao compartilhar um calendário, os outros usuários podem ver os detalhes do compromisso (título, descrição e participantes), exceto os marcados como privados. Nesse caso, os outros usuários verão seu horário livre/ocupado, mas não os detalhes do compromisso. Deseja que os outros usuários também exibam os detalhes dos seus compromissos privados?",
     "timezones": "Zonas horárias",
     "import": "Importar",
-    "import_appointments": "Importar compromissos"
+    "import_appointments": "Importar compromissos",
+    "empty_trash_deleting_confirmation": "Você está excluindo todos os itens na pasta da lixeira do Calendário. A exclusão é permanente. Tem certeza que deseja excluir todos os itens?"
 }
