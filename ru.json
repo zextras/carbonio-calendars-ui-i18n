@@ -327,7 +327,7 @@
         "edit": "Изменить свойства общего доступа",
         "virtual_room": "Конференц зал",
         "meetingRooms": "Комнаты",
-        "folder_linked_status": "Связано со мной"
+        "folder_linked_status": "Адресовано мне"
     },
     "action": {
         "send": "Отправить",
