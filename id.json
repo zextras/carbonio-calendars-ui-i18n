@@ -15,7 +15,8 @@
         "send_edit": "Kirim Edit",
         "reset": "Reset",
         "search": "Cari",
-        "show_original": "Tampilkan aslinya"
+        "show_original": "Tampilkan aslinya",
+        "delete": "Hapus"
     },
     "label": {
         "busy": "Sibuk",
