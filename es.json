@@ -190,7 +190,9 @@
         "show_original": "Mostrar original",
         "Trash_already_empty": "la papelera ya está vacía",
         "delete": "Eliminar",
-        "calendar_upload": "Importar archivo ICS"
+        "calendar_upload": "Importar archivo ICS",
+        "download_ics": "Descargar ICS",
+        "export_calendar_ics": "Exportar archivo ICS"
     },
     "event": {
         "action": {
@@ -617,5 +619,9 @@
     "mountpoint_error": "No se pudo añadir a la sección de Calendarios compartidos",
     "mountpoint_success": "Se ha añadido correctamente a la sección de Calendarios compartidos",
     "attendee_unavailable": "El participante no está disponible a la hora seleccionada del evento",
-    "attendees_unavailable": "Uno o más participantes no están disponibles a la hora seleccionada del evento"
+    "attendees_unavailable": "Uno o más participantes no están disponibles a la hora seleccionada del evento",
+    "attendee_equipment_unavailable": "Equipamiento no disponible a la hora seleccionada del evento",
+    "attendee_room_unavailable": "No hay espacio disponible a la hora seleccionada del evento",
+    "attendees_equipments_unavailable": "Uno o más equipamientos no están disponibles a la hora seleccionada del evento",
+    "attendees_rooms_unavailable": "Una o más salas de reuniones no está disponibles a la hora elegida del evento"
 }
