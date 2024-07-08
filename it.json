@@ -362,7 +362,8 @@
         "optional_other": "Optional",
         "show_one": "Mostra",
         "show_many": "Mostra tutto",
-        "show_other": "Mostra tutti"
+        "show_other": "Mostra tutti",
+        "attendees": "Partecipanti"
     },
     "action": {
         "send": "Invia",
