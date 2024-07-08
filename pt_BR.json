@@ -196,7 +196,10 @@
         "attendee_other": "Participantes",
         "dismiss_one": "Ignorar",
         "dismiss_many": "Ignorar tudo",
-        "dismiss_other": "Ignorar tudo"
+        "dismiss_other": "Ignorar tudo",
+        "download_one": "Baixar",
+        "download_many": "Baixar tudo",
+        "download_other": "Baixar tudo"
     },
     "action": {
         "send": "Enviar",
