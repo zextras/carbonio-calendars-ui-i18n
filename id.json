@@ -16,7 +16,12 @@
         "reset": "Reset",
         "search": "Cari",
         "show_original": "Tampilkan aslinya",
-        "delete": "Hapus"
+        "delete": "Hapus",
+        "Trash_already_empty": "sampah sudah kosong",
+        "answer": "Jawab",
+        "calendar_upload": "Impor file ICS",
+        "download_ics": "Unduh ICS",
+        "export_calendar_ics": "Ekspor file ICS"
     },
     "label": {
         "busy": "Sibuk",
@@ -39,7 +44,7 @@
         "work_hour": "Jam kerja",
         "create_appt_settings": "Membuat Janji Temu",
         "time_zones": "Zona waktu",
-        "tentative": "sementara",
+        "tentative": "Sementara",
         "apple_ical": "Apple iCal",
         "auto_add_rcvd_app": "Menambahkan janji temu yang diterima secara otomatis ke kalender",
         "calendar": "Kalender",
@@ -146,7 +151,7 @@
         },
         "exclude_free_busy": "Kecualikan kalender ini saat melaporkan waktu bebas/sibuk",
         "maybe": "mungkin",
-        "propose_new_time": "AJUKAN WAKTU BARU",
+        "propose_new_time": "Ajukan waktu baru",
         "share_with": "Bagikan kepada",
         "app_name": "Kalender",
         "new_appointment": "Janji temu baru",
@@ -168,7 +173,7 @@
         "other_actions": "Tindakan lain",
         "single_instance": "SATU INSTANS",
         "no_title": "Tanpa Judul",
-        "scheduled_in": "Kalender",
+        "scheduled_in": "Dijadwalkan pada",
         "warning": "Peringatan",
         "trash": "Sampah",
         "tag": "Tag",
@@ -188,7 +193,25 @@
         "single_advanced_filter": "Filter Lanjutan",
         "keywords": "Kata sandi",
         "optionals": "Opsional",
-        "time": "Waktu"
+        "time": "Waktu",
+        "equipment": "Peralatan",
+        "available": "Anda tersedia",
+        "checking_availability": "Memeriksa ketersediaan Anda",
+        "import_calendar_ongoing": "Impor ke kalender yang dipilih sedang berlangsung.",
+        "import_calendar_success": "Berhasil mengimpor",
+        "meeting_room": "Ruang rapat",
+        "show_event": "Klik dua kali untuk melihat detail selengkapnya tentang Kalender",
+        "attendees": "Peserta",
+        "advanced_filters_other": "{{count}} Filter Lanjutan",
+        "appt_reminder_other": "Pengingat Janji Temu",
+        "attachment_other": "Lampiran",
+        "attendee_other": "Peserta",
+        "check_availability": "Periksa ketersediaan Anda",
+        "delete_other": "Hapus semua",
+        "dismiss_other": "Tolak semuanya",
+        "download_other": "Unduh semua",
+        "optional_other": "Opsional",
+        "show_other": "Tampilkan semua"
     },
     "calendar": {
         "modal": {
@@ -270,7 +293,8 @@
             "att_err_adding": "Tampaknya ada masalah saat menambahkan lampiran, coba lagi",
             "all_link_copied": "Tautan publik berhasil disalin",
             "all_att_added": "Lampiran berhasil ditambahkan",
-            "series_deleted_no_notification": "Seri dipindahkan ke sampah."
+            "series_deleted_no_notification": "Seri dipindahkan ke sampah.",
+            "shared_calendar_removed": "Kalender berhasil dihapus"
         },
         "invite_has_no_message": "Undangan ini tidak berisi pesan teks",
         "invited_you": "mengundang Anda ke acara",
@@ -307,7 +331,11 @@
         "appointment_invitation_sent": "Undangan janji temu dikirim",
         "meeting_modified": "Rapat berikut telah diubah",
         "want_to_edit_modified_msg": "Perubahan akan diberitahukan melalui email kepada para peserta. Anda ingin menambahkan pesan kustom?",
-        "copy": "Salin"
+        "copy": "Salin",
+        "import_appointment_modal": "Janji temu yang terdapat pada {{fileName}} akan diimpor ke kalender \"{{calendarName}}\".",
+        "original_invite": "-----Undangan Asli-----",
+        "required_participant_other": "{{count}} Peserta",
+        "optional_participant_other": "{{count}} Opsional"
     },
     "months": {
         "april": "April",
@@ -331,7 +359,14 @@
         "all_time": "Sepanjang waktu acara",
         "modal": {
             "set_new_time_message": "Anda ingin mengatur waktu baru untuk janji temu yang terlewat? Jika mengklik OK, semua pengingat lain akan otomatis dibuang."
-        }
+        },
+        "day_before_other": "{{count}} hari sebelumnya",
+        "hour_before_other": "{{count}} jam sebelumnya",
+        "hours_other": "{{count}} jam",
+        "minute_before_other": "{{count}} menit sebelumnya",
+        "minutes_other": "{{count}} menit",
+        "second_before_other": "{{count}} detik sebelumnya",
+        "week_before_other": "{{count}} minggu sebelumnya"
     },
     "repeat": {
         "customize": "Sesuaikan",
@@ -397,9 +432,9 @@
     "share": {
         "options": {
             "share_calendar_role": {
-                "manager": "Pengelola (dapat melihat, mengedit, menambahkan, dan menghapus)",
+                "manager": "Pengelola (dapat melihat, mengedit, menambahkan, menghapus, menerima, dan membagikan ulang janji temu)",
                 "viewer": "Pemirsa (dapat melihat)",
-                "admin": "Admin (bisa melihat,mengedit,menambahkan,menghapus,dan mengelola)",
+                "admin": "Editor (dapat melihat,mengedit, menambahkan, dan menghapus tetapi tidak dapat menerima atau membagikan ulang janji temu)                ",
                 "none": "Tidak Ada"
             },
             "share_calendar_with": {
@@ -409,7 +444,7 @@
             }
         },
         "label": {
-            "allow_to_see_private_appt": "Izinkan pengguna melihat janji temu pribadi saya",
+            "allow_to_see_private_appt": "Izinkan pengguna melihat detail janji temu pribadi",
             "send_notification": "Kirim pemberitahuan tentang berbagi ini"
         },
         "placeholder": {
@@ -444,7 +479,15 @@
         "Accepted": "diterima",
         "Declined": "ditolak",
         "Invited_Visitor": "telah diundang",
-        "Not_answered": "belum menjawab"
+        "Not_answered": "belum menjawab",
+        "Attendees_tentative_count_other": "<strong>{{count}} peserta </strong> telah menerima sebagai sementara",
+        "Attendees_accepted_count_other": "<strong>{{count}} peserta </strong> telah menyetujui",
+        "Attendees_declined_count_other": "<strong>{{count}} peserta </strong> telah menolak",
+        "AC_with_count_other": "Menyetujui ({{count}})",
+        "Attendees_not_answered_count_other": "<strong>{{count}} peserta </strong> belum menjawab",
+        "DE_with_count_other": "Menolak {{count}}",
+        "NE_with_count_other": "Tidak menjawab ({{count}})",
+        "TE_with_count_other": "Sementara ({{count}})"
     },
     "administer": "Kelola",
     "allowed_actions": "Tindakan yang diizinkan",
@@ -467,7 +510,7 @@
     "insert": "Sisipkan",
     "find_calendar_shares": "Temukan Berbagi Kalender",
     "find_shares": "Temukan berbagi",
-    "remove_from_this_list": "Hapus dari daftar ini",
+    "remove_from_this_list": "Hapus kalender bersama",
     "resend_mail_notification_about_this_share": "Kirim notifikasi email tentang berbagi ini",
     "search": {
         "organized_by": "dikelola oleh",
@@ -490,7 +533,10 @@
         "virtual_room": "Ruang Virtual",
         "revoke": "Batalkan akses",
         "resend": "Kirim pemberitahuan email tentang berbagi ini",
-        "edit": "Edit properti berbagi"
+        "edit": "Edit properti berbagi",
+        "calendar_sharing_status_other": "Berbagi dengan {{count}} orang",
+        "folder_linked_status": "Ditautkan ke saya",
+        "meetingRooms": "Ruang rapat"
     },
     "share_invite_resent": "Undangan berbagi dikirim ulang",
     "shared_folders": "Kalender Bersama",
@@ -612,5 +658,24 @@
     "mountpoint_success": "Berbagi berhasil ditambahkan ke bagian Kalender Bersama",
     "mountpoint_warning": "{{failed}} dari {{total}} kalender bersama tidak bisa ditambahkan ke Kalender Bersama",
     "attendee_unavailable": "Peserta tidak tersedia pada waktu acara yang dipilih",
-    "attendees_unavailable": "Satu peserta atau lebih tidak tersedia di waktu acara yang dipilih"
+    "attendees_unavailable": "Satu peserta atau lebih tidak tersedia di waktu acara yang dipilih",
+    "creation_timezone_tooltip": "Tanggal dan waktu pada zona waktu pembuatan:",
+    "local_timezone_tooltip": "Tanggal dan waktu pada zona waktu lokal:",
+    "new_appointment": "Janji temu baru",
+    "private_info_tooltip": "Saat berbagi kalender, pengguna lain dapat melihat detail janji temu Anda (judul, deskripsi, dan peserta) kecuali yang ditandai sebagai pribadi. Dalam hal ini, pengguna lain akan melihat waktu senggang/sibuk Anda tetapi tidak melihat detail janji temu. Apakah Anda ingin pengguna lain juga melihat detail janji temu pribadi Anda?",
+    "public": "publik",
+    "empty_trash_deleting_confirmation": "Anda menghapus semua item di folder sampah Kalender. Item akan dihapus secara permanen. Anda yakin ingin menghapus semua item?",
+    "attendee_equipment_unavailable": "Peralatan tidak tersedia pada waktu acara yang dipilih",
+    "attendee_room_unavailable": "Ruang tidak tersedia pada waktu acara yang dipilih",
+    "attendees_equipments_unavailable": "Satu Peralatan atau lebih tidak tersedia pada waktu acara yang dipilih",
+    "attendees_rooms_unavailable": "Satu Ruang Rapat atau lebih tidak tersedia pada waktu acara yang dipilih",
+    "import": "Impor",
+    "import_appointments": "Impor janji temu",
+    "next_week": "Minggu berikutnya",
+    "next_day": "Hari berikutnya",
+    "previous_day": "Hari sebelumnya",
+    "next_month": "Bulan berikutnya",
+    "previous_month": "Bulan sebelumnya",
+    "previous_week": "Minggu sebelumnya",
+    "timezones": "Zona waktu"
 }
