@@ -486,6 +486,8 @@
         "location": "Local",
         "chat_room": "Link da sala virtual",
         "calendar_sharing_status_one": "Partilhado com 1 pessoa",
+        "calendar_sharing_status_many": "",
+        "calendar_sharing_status_other": "",
         "revoke": "Revogar acesso",
         "resend": "Enviar notificação por e-mail sobre este compartilhamento",
         "edit": "Editar propriedades do compartilhamento",
