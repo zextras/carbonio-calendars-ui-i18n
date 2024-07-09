@@ -16,7 +16,7 @@
         "resend": "Invia notifica per questa condivisione",
         "edit": "Modifica proprietà di condivisione",
         "virtual_room": "Stanza Virtuale",
-        "folder_linked_status": "Collegato a me",
+        "folder_linked_status": "Condivisa con me",
         "meetingRooms": "Sale riunioni"
     },
     "reminder": {
