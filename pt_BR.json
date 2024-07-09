@@ -575,7 +575,7 @@
         "edit": "Editar propriedades do compartilhamento",
         "virtual_room": "Sala Virtual",
         "meetingRooms": "Salas de reuniões",
-        "folder_linked_status": "Vinculado a mim"
+        "folder_linked_status": "Compartilhado comigo"
     },
     "cannot_edit_name": "Não é possível editar o nome de um calendário do sistema",
     "edit_share_properties": "Editar propriedades do compartilhamento",
