@@ -111,7 +111,7 @@
         "restore": "กู้คืน",
         "restore_calendar": "กู้คืนปฏิทิน",
         "results_for": "ผลลัพธ์สำหรับ:",
-        "event_title": "ชื่องาน",
+        "event_title": "ชื่อกิจกรรม",
         "access_revoked": "การเข้าถึงถูกเพิกถอน",
         "calendar_shared": "แชร์ปฏิทินเรียบร้อยแล้ว",
         "changes_saved": "บันทึกการเปลี่ยนแปลงแล้ว",
@@ -177,7 +177,13 @@
         "no_rights": "คุณไม่ได้รับอนุญาตให้ดำเนินการนี้",
         "single_advanced_filter": "ตัวกรองขั้นสูง",
         "optionals": "ไม่จำเป็น",
-        "time": "เวลา"
+        "time": "เวลา",
+        "check_availability": "ตรวจสอบความพร้อมของคุณ",
+        "appt_reminder_other": "การแจ้งเตือนการนัดหมาย",
+        "attachment_other": "สิ่งที่แนบมา",
+        "attendee_other": "ผู้เข้าร่วม",
+        "available": "คุณว่าง",
+        "checking_availability": "กำลังตรวจสอบความพร้อมของคุณ"
     },
     "calendar": {
         "modal": {
@@ -202,7 +208,12 @@
         "send_edit": "ส่งการแก้ไข",
         "reset": "รีเซ็ต",
         "search": "ค้นหา",
-        "show_original": "แสดงต้นฉบับ"
+        "show_original": "แสดงต้นฉบับ",
+        "Trash_already_empty": "ถังขยะว่างเปล่าอยู่แล้ว",
+        "delete": "ลบ",
+        "export_calendar_ics": "ส่งออกไฟล์ ICS",
+        "calendar_upload": "นำเข้าไฟล์ ICS",
+        "download_ics": "ดาวน์โหลด ICS"
     },
     "event": {
         "action": {
@@ -611,5 +622,12 @@
     "mountpoint_success": "เพิ่มการแชร์ลงในส่วนปฏิทินที่แชร์เรียบร้อยแล้ว",
     "mountpoint_warning": "{{failed}} จาก {{total}} ปฏิทินที่แชร์ไม่สามารถเพิ่มไปยังปฏิทินที่แชร์",
     "attendee_unavailable": "ผู้เข้าร่วมไม่ว่างในเวลาที่ถูกเลือกไว้ของกิจกรรม",
-    "attendees_unavailable": "ผู้เข้าร่วมตั้งแต่หนึ่งคนขึ้นไปไม่ว่างในเวลาที่ถูกเลือกไว้ของกิจกรรม"
+    "attendees_unavailable": "ผู้เข้าร่วมตั้งแต่หนึ่งคนขึ้นไปไม่ว่างในเวลาที่ถูกเลือกไว้ของกิจกรรม",
+    "attendee_room_unavailable": "ห้องไม่พร้อมใช้งานในเวลาที่เลือกของกิจกรรม",
+    "attendees_rooms_unavailable": "ห้องประชุมอย่างน้อยหนึ่งห้องไม่พร้อมใช้งานในเวลาที่เลือกของกิจกรรม",
+    "attendee_equipment_unavailable": "อุปกรณ์ไม่พร้อมใช้งานในเวลาที่เลือกของกิจกรรม",
+    "attendees_equipments_unavailable": "อุปกรณ์อย่างน้อยหนึ่งชิ้นไม่พร้อมใช้งานในเวลาที่เลือกของกิจกรรม",
+    "creation_timezone_tooltip": "วันที่และเวลาตามโซนเวลาที่สร้าง:",
+    "import": "นำเข้า",
+    "import_appointments": "นําเข้าการนัดหมาย"
 }
