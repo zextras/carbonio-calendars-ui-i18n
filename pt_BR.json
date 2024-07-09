@@ -199,7 +199,13 @@
         "dismiss_other": "Ignorar tudo",
         "download_one": "Baixar",
         "download_many": "Baixar tudo",
-        "download_other": "Baixar tudo"
+        "download_other": "Baixar tudo",
+        "optional_one": "Opcional",
+        "optional_many": "Opcionais",
+        "optional_other": "Opcionais",
+        "show_one": "Exibir",
+        "show_many": "Exibir tudo",
+        "show_other": "Exibir tudo"
     },
     "action": {
         "send": "Enviar",
@@ -376,7 +382,22 @@
         "Attendees_accepted_count_other": "<strong>{{count}} participantes</strong> aceitaram",
         "Attendees_declined_count_one": "<strong>{{count}} participante</strong> recusou",
         "Attendees_declined_count_many": "<strong>{{count}} participantes</strong> recusaram",
-        "Attendees_declined_count_other": "<strong>{{count}} participantes</strong> recusaram"
+        "Attendees_declined_count_other": "<strong>{{count}} participantes</strong> recusaram",
+        "Attendees_not_answered_count_one": "<strong>{{count}} participante</strong> não respondeu",
+        "Attendees_not_answered_count_many": "<strong>{{count}} participantes</strong> não responderam",
+        "Attendees_not_answered_count_other": "<strong>{{count}} participantes</strong> não responderam",
+        "Attendees_tentative_count_one": "<strong>{{count}} participante</strong> aceitou como provisório",
+        "Attendees_tentative_count_many": "<strong>{{count}} participantes</strong> aceitaram como provisório",
+        "Attendees_tentative_count_other": "<strong>{{count}} participantes</strong> aceitaram como provisório",
+        "DE_with_count_one": "Recusado",
+        "DE_with_count_many": "Recusados {{count}}",
+        "DE_with_count_other": "Recusados {{count}}",
+        "NE_with_count_one": "Não respondeu",
+        "NE_with_count_many": "Não responderam ({{count}})",
+        "NE_with_count_other": "Não responderam ({{count}})",
+        "TE_with_count_one": "Provisório",
+        "TE_with_count_many": "Provisórios ({{count}})",
+        "TE_with_count_other": "Provisórios ({{count}})"
     },
     "reminder": {
         "never": "Nunca",
