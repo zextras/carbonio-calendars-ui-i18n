@@ -576,7 +576,7 @@
         "resend": "Envoyer par email les notifications à propos de ce partage",
         "revoke": "Révoquer les accès",
         "virtual_room": "Salle virtuelle",
-        "folder_linked_status": "Connecté avec moi",
+        "folder_linked_status": "Partagé avec moi",
         "meetingRooms": "Salles de réunion"
     },
     "type": "Type",
