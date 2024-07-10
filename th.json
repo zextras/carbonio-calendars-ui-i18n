@@ -5,7 +5,15 @@
         "Tentative": "ตอบรับเบื้องต้นว่ายังไม่แน่นอน",
         "Not_answered": "ยังไม่ตอบ",
         "Accepted": "ยอมรับ",
-        "Declined": "ปฏิเสธ"
+        "Declined": "ปฏิเสธ",
+        "Attendees_accepted_count_other": "<strong>ผู้เข้าร่วม {{count}} คน </strong> ยอมรับแล้ว",
+        "AC_with_count_other": "ยอมรับแล้ว ({{count}})",
+        "Attendees_declined_count_other": "ผู้เข้าร่วม <strong>{{count}} คน </strong> ปฏิเสธแล้ว",
+        "Attendees_not_answered_count_other": "<strong>ผู้เข้าร่วม {{count}} คน </strong> ยังไม่ได้ตอบ",
+        "Attendees_tentative_count_other": "<strong>ผู้เข้าร่วม {{count}} คน </strong> ยอมรับว่ายังไม่แน่นอน",
+        "DE_with_count_other": "ปฏิเสธ {{count}}",
+        "NE_with_count_other": "ไม่ตอบ ({{count}})",
+        "TE_with_count_other": "ไม่แน่นอน ({{count}})"
     },
     "label": {
         "custom": "กำหนดเอง",
@@ -66,7 +74,7 @@
         "revoke": "เพิกถอน",
         "months": "เดือน",
         "no_end_date": "ไม่มีกำหนดสิ้นสุด",
-        "no_subject": "ไม่มีหัวข้อ",
+        "no_subject": "ไม่มีหัวเรื่อง",
         "notify_organizer": "แจ้งผู้จัดงาน",
         "number": "หมายเลข",
         "occurrences": "เหตุการณ์",
@@ -156,7 +164,7 @@
         "new_tag": "แท็กใหม่",
         "other_actions": "การกระทำอื่นๆ",
         "single_instance": "อินสแตนซ์เดียว",
-        "scheduled_in": "ปฏิทิน",
+        "scheduled_in": "กําหนดใน",
         "no_title": "ไม่มีชื่อเรื่อง",
         "warning": "คำเตือน",
         "trash": "ถังขยะ",
@@ -168,7 +176,7 @@
         "public_link_description": "สร้างจาก {{title}} เมื่อวันที่ {{date}}",
         "continue": "ดำเนินการต่อ",
         "new_time_proposed": "เวลาใหม่ที่เสนอ",
-        "subject": "เรื่อง",
+        "subject": "หัวเรื่อง",
         "cancel": "ยกเลิก",
         "appointment_is_private": "การนัดหมายเป็นแบบส่วนตัว",
         "create_copy": "คัดลอก",
@@ -176,14 +184,26 @@
         "keywords": "คำหลัก",
         "no_rights": "คุณไม่ได้รับอนุญาตให้ดำเนินการนี้",
         "single_advanced_filter": "ตัวกรองขั้นสูง",
-        "optionals": "ไม่จำเป็น",
+        "optionals": "ตัวเลือก",
         "time": "เวลา",
         "check_availability": "ตรวจสอบความพร้อมของคุณ",
         "appt_reminder_other": "การแจ้งเตือนการนัดหมาย",
         "attachment_other": "สิ่งที่แนบมา",
         "attendee_other": "ผู้เข้าร่วม",
         "available": "คุณว่าง",
-        "checking_availability": "กำลังตรวจสอบความพร้อมของคุณ"
+        "checking_availability": "กำลังตรวจสอบความพร้อมของคุณ",
+        "equipment": "อุปกรณ์",
+        "show_event": "ดับเบิลคลิกเพื่อดูรายละเอียดเพิ่มเติมเกี่ยวกับปฏิทิน",
+        "attendees": "ผู้เข้าร่วม",
+        "import_calendar_ongoing": "นำเข้าไปยังปฏิทินที่เลือกอยู่ระหว่างดำเนินการ",
+        "import_calendar_success": "นำเข้าเรียบร้อยแล้ว",
+        "advanced_filters_other": "{{count}} ตัวกรองขั้นสูง",
+        "delete_other": "ลบทั้งหมด",
+        "dismiss_other": "ยกเลิกทั้งหมด",
+        "download_other": "ดาวน์โหลดทั้งหมด",
+        "meeting_room": "ห้องประชุม",
+        "optional_other": "ตัวเลือก",
+        "show_other": "แสดงทั้งหมด"
     },
     "calendar": {
         "modal": {
@@ -213,7 +233,8 @@
         "delete": "ลบ",
         "export_calendar_ics": "ส่งออกไฟล์ ICS",
         "calendar_upload": "นำเข้าไฟล์ ICS",
-        "download_ics": "ดาวน์โหลด ICS"
+        "download_ics": "ดาวน์โหลด ICS",
+        "answer": "ตอบ"
     },
     "event": {
         "action": {
@@ -332,7 +353,14 @@
         "all_time": "ตลอดช่วงเวลาของเหตุการณ์",
         "modal": {
             "set_new_time_message": "คุณต้องการตั้งเวลาใหม่สำหรับการนัดหมายที่พลาดไปหรือไม่? หากคุณคลิกตกลง การเตือนความจำอื่น ๆ ทั้งหมดจะถูกปิดโดยอัตโนมัติ"
-        }
+        },
+        "second_before_other": "{{count}} วินาทีก่อน",
+        "day_before_other": "{{count}} วันก่อน",
+        "hour_before_other": "{{count}} ชั่วโมงก่อน",
+        "hours_other": "{{count}} ชั่วโมง",
+        "minute_before_other": "{{count}} นาทีก่อน",
+        "minutes_other": "{{count}} นาที",
+        "week_before_other": "{{count}} สัปดาห์ก่อน"
     },
     "repeat": {
         "customize": "กำหนดเอง",
@@ -361,8 +389,8 @@
     "share": {
         "options": {
             "share_calendar_role": {
-                "admin": "ผู้ดูแลระบบ (สามารถดู, แก้ไข, เพิ่ม, ลบ, และจัดการได้)",
-                "manager": "ผู้จัดการ (สามารถดู, แก้ไข, เพิ่ม, และลบ)",
+                "admin": "ผู้แก้ไข (สามารถดู แก้ไข เพิ่ม และลบได้ แต่ไม่สามารถยอมรับหรือแชร์การนัดหมายต่อได้)                ",
+                "manager": "ผู้จัดการ (สามารถดู แก้ไข เพิ่ม ลบ ยอมรับ และแชร์การนัดหมายต่อได้)",
                 "viewer": "ผู้ชม (สามารถดูได้)",
                 "none": "ไม่มี"
             },
@@ -377,7 +405,7 @@
         },
         "label": {
             "send_notification": "ส่งการแจ้งเตือนเกี่ยวกับการแชร์นี้",
-            "allow_to_see_private_appt": "อนุญาตให้ผู้ใช้เหล่านี้ดูการนัดหมายส่วนตัวของฉันได้"
+            "allow_to_see_private_appt": "อนุญาตให้ผู้ใช้สามารถดูรายละเอียดการนัดหมายส่วนตัวได้"
         },
         "placeholder": {
             "recipients_address": "ที่อยู่อีเมลของผู้รับ",
@@ -413,7 +441,8 @@
             "att_err_adding": "ดูเหมือนว่าจะมีปัญหาในการเพิ่มไฟล์แนบ โปรดลองใหม่อีกครั้ง",
             "all_link_copied": "คัดลอกลิงก์สาธารณะเรียบร้อยแล้ว",
             "all_att_added": "เพิ่มไฟล์แนบเรียบร้อยแล้ว",
-            "series_deleted_no_notification": "ซีรีส์ย้ายไปถังขยะแล้ว"
+            "series_deleted_no_notification": "ซีรีส์ย้ายไปถังขยะแล้ว",
+            "shared_calendar_removed": "ลบปฏิทินเรียบร้อยแล้ว"
         },
         "share_calendar_url_note2": "ผู้ร่วมงานของคุณเท่านั้นที่จะสามารถเข้าถึงข้อมูลของคุณโดยใช้ URL เหล่านี้ <br/> คุณสามารถค้นหาลิงก์เหล่านั้นได้ด้วยการคลิกขวาที่รายการปฏิทินของคุณ",
         "delete_all_occurences": "ลบเหตุการณ์ทั้งหมด",
@@ -450,7 +479,11 @@
         "appointment_invitation_sent": "ส่งคำเชิญนัดหมายแล้ว",
         "meeting_modified": "การประชุมต่อไปนี้ได้รับการแก้ไขแล้ว",
         "want_to_edit_modified_msg": "จะแจ้งการเปลี่ยนแปลงผ่านทางอีเมลไปยังผู้เข้าร่วม คุณต้องการเพิ่มข้อความที่กำหนดเองหรือไม่?",
-        "copy": "คัดลอก"
+        "copy": "คัดลอก",
+        "original_invite": "----- คำเชิญต้นฉบับ -----",
+        "import_appointment_modal": "การนัดหมายที่อยู่ใน {{fileName}} จะถูกนำเข้าไปยังปฏิทิน \"{{calendarName}}\"",
+        "optional_participant_other": "{{count}} ตัวเลือก",
+        "required_participant_other": "ผู้เข้าร่วม {{count}} คน"
     },
     "type": "รูปแบบ",
     "tooltip": {
@@ -466,7 +499,10 @@
         "revoke": "เพิกถอนการเข้าถึง",
         "edit": "แก้ไขคุณสมบัติการแชร์",
         "virtual_room": "ห้องเสมือนจริง",
-        "resend": "ส่งอีเมลแจ้งเตือนเกี่ยวกับการแชร์นี้"
+        "resend": "ส่งอีเมลแจ้งเตือนเกี่ยวกับการแชร์นี้",
+        "meetingRooms": "ห้องประชุม",
+        "folder_linked_status": "แชร์กับฉัน",
+        "calendar_sharing_status_other": "แชร์กับ {{count}} คน"
     },
     "button": {
         "customize_modal": "เปิด Customize Modal"
@@ -481,7 +517,7 @@
             },
             "local": "เพิ่มจาก local",
             "url": "เพิ่มลิงก์สาธารณะจาก Files",
-            "files": "เพิ่มจากไฟล์"
+            "files": "เพิ่มจาก Files"
         }
     },
     "administer": "ดูแล",
@@ -498,7 +534,7 @@
         "from_date": "จากวันที่",
         "to_date": "ถึงวันที่"
     },
-    "remove_from_this_list": "ลบออกจากรายการนี้",
+    "remove_from_this_list": "ลบปฏิทินที่แชร์",
     "revoke_access": "เพิกถอนการเข้าถึง",
     "revoke_with_custom_message": "ถอนการเข้าถึงโดยส่งการแจ้งเตือนแบบกำหนดเอง",
     "revoke_without_notification": "ถอนการเข้าถึงโดยไม่ต้องส่งการแจ้งเตือน",
@@ -629,5 +665,17 @@
     "attendees_equipments_unavailable": "อุปกรณ์อย่างน้อยหนึ่งชิ้นไม่พร้อมใช้งานในเวลาที่เลือกของกิจกรรม",
     "creation_timezone_tooltip": "วันที่และเวลาตามโซนเวลาที่สร้าง:",
     "import": "นำเข้า",
-    "import_appointments": "นําเข้าการนัดหมาย"
+    "import_appointments": "นําเข้าการนัดหมาย",
+    "local_timezone_tooltip": "วันที่และเวลาตามโซนเวลาท้องถิ่น:",
+    "next_day": "วันถัดไป",
+    "next_month": "เดือนหน้า",
+    "next_week": "อาทิตย์หน้า",
+    "previous_week": "สัปดาห์ก่อน",
+    "previous_month": "เดือนก่อน",
+    "new_appointment": "การนัดหมายใหม่",
+    "private_info_tooltip": "เมื่อแชร์ปฏิทิน ผู้ใช้รายอื่นสามารถดูรายละเอียดการนัดหมายของคุณ (ชื่อ คำอธิบาย และผู้เข้าร่วม) ยกเว้นการนัดหมายที่ทำเครื่องหมายว่าเป็นส่วนตัว ในกรณีนี้ ผู้ใช้อื่นจะเห็นเวลาว่าง/ไม่ว่างของคุณ แต่จะไม่เห็นรายละเอียดการนัดหมาย คุณต้องการให้ผู้ใช้รายอื่นเห็นรายละเอียดการนัดหมายส่วนตัวของคุณด้วยหรือไม่?",
+    "empty_trash_deleting_confirmation": "คุณกำลังลบรายการทั้งหมดในโฟลเดอร์ถังขยะของปฏิทิน การลบเป็นแบบถาวร คุณแน่ใจหรือไม่ว่าต้องการลบรายการทั้งหมด?",
+    "timezones": "โซนเวลา",
+    "previous_day": "วันก่อน",
+    "public": "สาธารณะ"
 }
