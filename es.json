@@ -87,7 +87,7 @@
         "week": "Semana",
         "work_hour": "Horario laboral",
         "work_week": "Semana laboral",
-        "tentative": "Provisoriamente",
+        "tentative": "Tentativa",
         "your_pref_timezone_msg": "La zona horaria preferida es GMT +01:00 Ámsterdam, Berlín, Berna, Roma, Estocolmo, Viena.",
         "snooze": "Posponer",
         "create": "Crear",
@@ -128,7 +128,7 @@
         "exclude_free_busy": "Excluir este calendario al informar disponibilidad libre/ocupado",
         "loading": "Cargando…",
         "maybe": "tal vez",
-        "propose_new_time": "PROPONER UN NUEVO HORARIO",
+        "propose_new_time": "PROPONER HORA NUEVA",
         "share_with": "Compartir con",
         "app_name": "Calendarios",
         "preview": "Vista previa",
@@ -148,7 +148,7 @@
         "delete_tag_name": "Eliminar etiqueta {{name}}",
         "edit_tag": "Editar etiqueta",
         "edit_tag_name": "Editar etiqueta {{name}}",
-        "scheduled_in": "Calendario",
+        "scheduled_in": "Programado en",
         "no_title": "Sin Título",
         "warning": "Atención",
         "trash": "Papelera",
@@ -169,7 +169,43 @@
         "no_rights": "No tienes permiso para realizar esta acción",
         "single_advanced_filter": "Filtros avanzados",
         "optionals": "Opcionales",
-        "time": "Hora"
+        "time": "Hora",
+        "equipment": "Equipamiento",
+        "meeting_room": "Sala de reunión",
+        "available": "Estás disponible",
+        "attendees": "Asistentes",
+        "optional_one": "Opcional",
+        "optional_many": "Opcionales",
+        "optional_other": "Opcionales",
+        "check_availability": "Comprobar tu disponibilidad",
+        "checking_availability": "Comprobando tu disponibilidad",
+        "import_calendar_ongoing": "Importar el calendario seleccionado en curso.",
+        "import_calendar_success": "Importado correctamente",
+        "delete_one": "Borrar",
+        "delete_many": "Borrar todos",
+        "delete_other": "Borrar todos",
+        "dismiss_one": "Descartar",
+        "dismiss_many": "Descartar todos",
+        "dismiss_other": "Descartar todos",
+        "download_one": "Descargar",
+        "download_many": "Descargar todos",
+        "download_other": "Descargar todos",
+        "advanced_filters_one": "{{count}} Filtro avanzado",
+        "advanced_filters_many": "{{count}} Filtros avanzados",
+        "advanced_filters_other": "{{count}} Filtros avanzados",
+        "appt_reminder_one": "Recordatorio de cita",
+        "appt_reminder_many": "Recordatorios de citas",
+        "appt_reminder_other": "Recordatorios de citas",
+        "attachment_one": "Adjunto",
+        "attachment_many": "Adjuntos",
+        "attachment_other": "Adjuntos",
+        "attendee_one": "Asistente",
+        "attendee_many": "Asistentes",
+        "attendee_other": "Asistentes",
+        "show_one": "Mostrar",
+        "show_many": "Mostrar todos",
+        "show_other": "Mostrar todos",
+        "show_event": "Doble clic para ver más detalles en Calendars"
     },
     "action": {
         "send": "Enviar",
@@ -192,7 +228,8 @@
         "delete": "Eliminar",
         "calendar_upload": "Importar archivo ICS",
         "download_ics": "Descargar ICS",
-        "export_calendar_ics": "Exportar archivo ICS"
+        "export_calendar_ics": "Exportar archivo ICS",
+        "answer": "Respuesta"
     },
     "event": {
         "action": {
@@ -266,7 +303,31 @@
         "Tentative": "Aceptado provisoriamente",
         "Invited_Visitor": "han sido invitados",
         "Not_answered": "no respondieron",
-        "visitors": "y otros {{others}} participantes"
+        "visitors": "y otros {{others}} participantes",
+        "Attendees_accepted_count_one": "<strong>{{count}} asistente </strong> ha aceptado",
+        "Attendees_accepted_count_many": "<strong>{{count}} asistentes </strong> han aceptado",
+        "Attendees_accepted_count_other": "<strong>{{count}} asistentes </strong> han aceptado",
+        "Attendees_not_answered_count_one": "<strong>{{count}}asistente</strong> no ha respondido",
+        "Attendees_not_answered_count_many": "<strong>{{count}}asistentes</strong> no han respondido",
+        "Attendees_not_answered_count_other": "<strong>{{count}}asistentes</strong> no han respondido",
+        "AC_with_count_one": "Aceptado",
+        "AC_with_count_many": "{{count}} aceptados",
+        "AC_with_count_other": "{{count}} aceptados",
+        "Attendees_declined_count_one": "<strong>{{count}} asistente </strong>ha rechazado",
+        "Attendees_declined_count_many": "<strong>{{count}} asistentes </strong>han rechazado",
+        "Attendees_declined_count_other": "<strong>{{count}} asistentes </strong>han rechazado",
+        "Attendees_tentative_count_one": "<strong>{{count}}asistente</strong> ha aceptado por ahora",
+        "Attendees_tentative_count_many": "<strong>{{count}}asistentes</strong> han aceptado por ahora",
+        "Attendees_tentative_count_other": "<strong>{{count}}asistentes</strong> han aceptado por ahora",
+        "DE_with_count_one": "Rechazado",
+        "DE_with_count_many": "{{count}} rechazados",
+        "DE_with_count_other": "{{count}} rechazados",
+        "NE_with_count_one": "No respondió",
+        "NE_with_count_many": "{{count}} no respondieron",
+        "NE_with_count_other": "{{count}} no respondieron",
+        "TE_with_count_one": "Provisional",
+        "TE_with_count_many": "{{count}} provisionales",
+        "TE_with_count_other": "{{count}} provisionales"
     },
     "read": "Leido",
     "reminder": {
@@ -275,7 +336,28 @@
         "all_time": "Toda la duración del evento",
         "modal": {
             "set_new_time_message": "¿Quieres definir un nuevo horario para la cita perdida? Si haces clic en ACEPTAR, todos los demás recordatorios serán descartados automáticamente."
-        }
+        },
+        "day_before_one": "{{count}} día antes",
+        "day_before_many": "{{count}} días antes",
+        "day_before_other": "{{count}} días antes",
+        "hour_before_one": "{{count}} hora antes",
+        "hour_before_many": "{{count}} horas antes",
+        "hour_before_other": "{{count}} horas antes",
+        "hours_one": "{{count}} hora",
+        "hours_many": "{{count}} horas",
+        "hours_other": "{{count}} horas",
+        "minute_before_one": "{{count}} minuto antes",
+        "minute_before_many": "{{count}} minutos antes",
+        "minute_before_other": "{{count}} minutos antes",
+        "minutes_one": "{{count}} minuto",
+        "minutes_many": "{{count}} minutos",
+        "minutes_other": "{{count}} minutos",
+        "second_before_one": "{{count}} segundo antes",
+        "second_before_many": "{{count}} segundos antes",
+        "second_before_other": "{{count}} segundos antes",
+        "week_before_one": "{{count}} semana antes",
+        "week_before_many": "{{count}} semanas antes",
+        "week_before_other": "{{count}} semanas antes"
     },
     "repeat": {
         "customize": "Personalizar",
@@ -342,8 +424,8 @@
         "options": {
             "share_calendar_role": {
                 "viewer": "Visualizador (puede ver)",
-                "admin": "Administrador (puede ver, editar, remover y administrar)",
-                "manager": "Controlador (puede ver, editar, añadir y remover)",
+                "admin": "Editor (puede ver, editar y eliminar pero no puede aceptar o volver a compartir citas)                ",
+                "manager": "Administrador (puede ver, editar, añadir, eliminar, aceptar y volver a compartir citas)",
                 "none": "Ninguno"
             },
             "share_calendar_with": {
@@ -353,7 +435,7 @@
             }
         },
         "label": {
-            "allow_to_see_private_appt": "Permitir a los usuarios ver mis citas privadas",
+            "allow_to_see_private_appt": "Permitir a los usuarios ver los detalles de mis citas privadas",
             "send_notification": "Enviar una notificación sobre este uso compartido"
         },
         "placeholder": {
@@ -373,7 +455,7 @@
         "url_copied": "{{title}} copiado",
         "tag_applied": "Etiqueta {{tag}} aplicada",
         "tag_removed": "Etiqueta {{tag}} removida",
-        "email_copied_to_clipboard": "E-mail copiado al portapapeles."
+        "email_copied_to_clipboard": "Email copiado al portapapeles."
     },
     "success": "Éxito",
     "type": "Tipo",
@@ -401,14 +483,15 @@
             "calendar_restored": "El calendario ha sido restaurado",
             "appointment_permanently_deleted": "Cita eliminada permanentemente",
             "calendar_edits_saved": "Se han guardado los cambios",
-            "series_deleted": "Se ha eliminado la serie. Los participantes recibirán una notificación de la cancelación.",
+            "series_deleted": "Se ha movido la serie a la papelera. Los participantes recibirán una notificación de la cancelación.",
             "some_link_copying_error": "Hay un problema al generar el enlace público para algunos archivos. Intenta nuevamente",
             "some_att_add_fails": "Hay un problema al agregar algunos archivos adjuntos. Intenta nuevamente",
             "link_copying_error": "Error al generar el enlace público. Por favor intenta nuevamente",
             "att_err_adding": "Ha habido un problema al agregar los adjuntos. Intenta nuevamente",
             "all_link_copied": "El enlace público ha sido copiado al portapapeles",
             "all_att_added": "Los adjuntos han sido añadidos",
-            "series_deleted_no_notification": "Serie movida a la papelera."
+            "series_deleted_no_notification": "Serie movida a la papelera.",
+            "shared_calendar_removed": "Calendario eliminado con éxito"
         },
         "invite_has_no_message": "Esta invitación no contiene mensaje de texto",
         "invited_you": "te ha invitado a un evento",
@@ -445,7 +528,15 @@
         "appointment_invitation_sent": "Invitación enviada",
         "meeting_modified": "La siguiente reunión ha sido modificada",
         "want_to_edit_modified_msg": "Los cambios serán notificados por correo a los participantes. ¿Te gustaría añadir un mensaje personalizado?",
-        "copy": "Copiar"
+        "copy": "Copiar",
+        "original_invite": "-----Invitación original-----",
+        "import_appointment_modal": "Las citas contenidas en {{fileName}} serán importadas al calendario \"{{calendarName}}\".",
+        "optional_participant_one": "{{count}} opcional",
+        "optional_participant_many": "{{count}} opcionales",
+        "optional_participant_other": "{{count}} opcionales",
+        "required_participant_one": "{{count}} Participante",
+        "required_participant_many": "{{count}} Participantes",
+        "required_participant_other": "{{count}} Participantes"
     },
     "button": {
         "customize_modal": "Abrir menú de personalización"
@@ -471,7 +562,7 @@
     "find_calendar_shares": "Encontrar uso compartido del calendario",
     "find_shares": "Encontrar uso compartido",
     "insert": "Insertar",
-    "remove_from_this_list": "Remover de esta lista",
+    "remove_from_this_list": "Quitar calendario compartido",
     "revoke_access": "Revocar acceso",
     "revoke_with_custom_message": "Revocar acceso enviando una notificación personalizada",
     "revoke_without_custom_message": "Revocar acceso enviando la notificación estándar",
@@ -498,7 +589,9 @@
         "revoke": "Revocar acceso",
         "resend": "Enviar una notificación por correo sobre este uso compartido",
         "edit": "Editar propiedades de uso compartido",
-        "virtual_room": "Sala Virtual"
+        "virtual_room": "Sala Virtual",
+        "folder_linked_status": "Compartido conmigo",
+        "meetingRooms": "Salas de reuniones"
     },
     "share_invite_resent": "Se ha reenviado la invitación de uso compartido",
     "shared_folders": "Calendarios compartidos",
@@ -623,5 +716,20 @@
     "attendee_equipment_unavailable": "Equipamiento no disponible a la hora seleccionada del evento",
     "attendee_room_unavailable": "No hay espacio disponible a la hora seleccionada del evento",
     "attendees_equipments_unavailable": "Uno o más equipamientos no están disponibles a la hora seleccionada del evento",
-    "attendees_rooms_unavailable": "Una o más salas de reuniones no está disponibles a la hora elegida del evento"
+    "attendees_rooms_unavailable": "Una o más salas de reuniones no está disponibles a la hora elegida del evento",
+    "local_timezone_tooltip": "Fecha y hora en la franja horaria local:",
+    "new_appointment": "Nueva cita",
+    "next_day": "Día siguiente",
+    "next_week": "Semana siguiente",
+    "previous_week": "Semana anterior",
+    "empty_trash_deleting_confirmation": "Estás eliminando todos los objetos de la carpeta de la papelera del Calendario. El borrado es permanente. ¿Seguro que quieres eliminar todos los objetos?",
+    "creation_timezone_tooltip": "Fecha y hora en la franja horaria de creación:",
+    "import": "Importar",
+    "import_appointments": "Importar citas",
+    "previous_day": "Día anterior",
+    "private_info_tooltip": "Al compartir un calendario, los demás usuarios podrán ver los detalles de tus citas (título, descripción y asistentes) excepto las marcadas como privadas. En este caso, los otros usuarios podrán ver tus horas libre/ocupadas pero no los detalles de la cita. ¿Quieres que otros usuarios puedan ver también los detalles de tus citas privadas?",
+    "public": "público",
+    "previous_month": "Mes anterior",
+    "timezones": "Husos horarios",
+    "next_month": "Mes siguiente"
 }
