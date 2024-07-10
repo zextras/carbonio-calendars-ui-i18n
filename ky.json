@@ -217,7 +217,8 @@
         "send_edit": "Өзгөртүүнү жөнөтүү",
         "share_calendar": "Календарь менен бөлүшүү",
         "Trash_already_empty": "Себет тазаланды",
-        "calendar_access_share": "Календарга жалпы кирүү мүмкүнчүлүгү"
+        "calendar_access_share": "Календарга жалпы кирүү мүмкүнчүлүгү",
+        "delete": "Өчүрүү"
     },
     "composer": {
         "attachment": {
