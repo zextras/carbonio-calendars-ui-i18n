@@ -698,7 +698,7 @@
         "resend": "Wyślij powiadomienie e-mail dot. tego udostępnienia",
         "edit": "Edytuj właściwości udostępniania",
         "virtual_room": "Wirtualny pokój",
-        "folder_linked_status": "Powiązane ze mną",
+        "folder_linked_status": "Udostępnione dla mnie",
         "meetingRooms": "Pokoje spotkań"
     },
     "type": "Typ",
