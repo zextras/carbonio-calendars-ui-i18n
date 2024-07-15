@@ -349,7 +349,8 @@
         "Trash_already_empty": "Корзина очищена",
         "calendar_upload": "Импортировать файл ICS",
         "download_ics": "Скачать ICS",
-        "export_calendar_ics": "Экспортировать файл ICS"
+        "export_calendar_ics": "Экспортировать файл ICS",
+        "delete": "Удалить"
     },
     "folder": {
         "modal": {
