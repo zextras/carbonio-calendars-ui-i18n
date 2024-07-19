@@ -28,7 +28,13 @@
         "Attendees_accepted_count_many": "<strong>{{count}} участников </strong> приняли приглашение",
         "Attendees_not_answered_count_one": "<strong>{{count}} участник </strong> не ответил",
         "Attendees_not_answered_count_few": "<strong>{{count}} участника </strong> не ответили",
-        "Attendees_not_answered_count_many": "<strong>{{count}} участников </strong> не ответили"
+        "Attendees_not_answered_count_many": "<strong>{{count}} участников </strong> не ответили",
+        "DE_with_count_one": "Отклонено",
+        "DE_with_count_few": "Отклонили {{count}}",
+        "DE_with_count_many": "Отклонило {{count}}",
+        "NE_with_count_one": "Не ответил",
+        "NE_with_count_few": "Не ответили ({{count}})",
+        "NE_with_count_many": "Не ответили ({{count}})"
     },
     "message": {
         "invite_has_no_message": "Это приглашения не содержит текста",
