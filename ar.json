@@ -12,6 +12,17 @@
         }
     },
     "label": {
-        "calendar": "التقويم"
+        "calendar": "التقويم",
+        "delete_tag": "حذف العلامة",
+        "create_tag": "انشئ علامة",
+        "download_zero": "لم ينزل ولا مرة",
+        "download_one": "نُزل مرة واحدة",
+        "download_two": "نُزل مرتان",
+        "download_few": "تنزيلات",
+        "download_many": "تنزيلة",
+        "download_other": "تنزيلة",
+        "create": "انشئ",
+        "choose_file": "اختر ملف",
+        "discard_changes": "تجاهل التغييرات"
     }
 }
