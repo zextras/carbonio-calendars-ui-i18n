@@ -23,6 +23,19 @@
         "download_other": "تنزيلة",
         "create": "انشئ",
         "choose_file": "اختر ملف",
-        "discard_changes": "تجاهل التغييرات"
+        "discard_changes": "تجاهل التغييرات",
+        "private": "خاص",
+        "no_subject": "لا يوجد موضوع",
+        "empty": "فارغ",
+        "error_try_again": "حدث خطأ ما، يرجى المحاولة مرة أخرى",
+        "loading_results": "تحميل النتائج…",
+        "edit": "‬عدل",
+        "edit_access": "عدل صلاحيات الوصول",
+        "edit_tag": "عدل العلامة",
+        "of": "من",
+        "keywords": "الكلمات الرئيسيه",
+        "no_special_char_allowed": "يجب ألا يحتوي الاسم على أي حرف خاص",
+        "preview": "معاينه",
+        "move": "نقل"
     }
 }
