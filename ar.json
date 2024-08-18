@@ -43,6 +43,21 @@
         "resend": "إعادة إرسال",
         "restore": "إستعادة",
         "results_for_error": "غير قادر على بدء البحث ، امسحه وأعد المحاولة: ",
-        "select_color": "حدد اللون"
+        "select_color": "حدد اللون",
+        "subject": "عنوان",
+        "share": "مشاركة",
+        "tags": "علامات",
+        "warning": "تحذير",
+        "share_public_link": "مشاركة رابط عام",
+        "tag_name": "اسم العلامة",
+        "share_with": "شارك مع",
+        "time": "الوقت",
+        "undo": "تراجع",
+        "single_advanced_filter": "مرشحات متقدمة",
+        "tag": "علامه",
+        "tag_max_length": "يسمح بحد أقصى 128 حرفا"
+    },
+    "message": {
+        "copy": "نسخ"
     }
 }
