@@ -55,7 +55,9 @@
         "undo": "تراجع",
         "single_advanced_filter": "مرشحات متقدمة",
         "tag": "علامه",
-        "tag_max_length": "يسمح بحد أقصى 128 حرفا"
+        "tag_max_length": "يسمح بحد أقصى 128 حرفا",
+        "months": "شهور",
+        "days": "أيام"
     },
     "message": {
         "copy": "نسخ"
