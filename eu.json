@@ -1,1 +1,14 @@
-{}
+{
+    "action": {
+        "search": "Bilatu",
+        "reset": "Berrezarri",
+        "show_original": "Erakutsi jatorrizkoa"
+    },
+    "composer": {
+        "attachment": {
+            "url": "Gehitu esteka publikoa Fitxategietatik",
+            "local": "Gehitu lokaletik",
+            "files": "Gehitu Fitxategietatik"
+        }
+    }
+}
