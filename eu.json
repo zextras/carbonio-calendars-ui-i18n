@@ -10,5 +10,86 @@
             "local": "Gehitu lokaletik",
             "files": "Gehitu Fitxategietatik"
         }
+    },
+    "label": {
+        "create_tag": "Sortu etiketa berria",
+        "discard_changes": "BAZTERTU ALDAKETAK",
+        "download_one": "Deskargatu",
+        "download_other": "Deskargatu guztiak",
+        "edit": "Editatu",
+        "edit_access": "Editatu sarbidea",
+        "edit_tag": "Editatu Etiketa",
+        "empty": "Hutsik",
+        "loading_results": "Emaitzak kargatzen…",
+        "months": "Hilabeteak",
+        "private": "Pribatua",
+        "revoke": "Ezeztatu",
+        "save": "Gorde",
+        "select": "Hautatu",
+        "select_color": "Hautatu kolorea",
+        "share_with": "Partekatu honekin:",
+        "tag": "Etiketa",
+        "tag_max_length": "Gehienez 128 karaktere onartzen dira",
+        "tag_name": "Etiketa-izena",
+        "tags": "Etiketak",
+        "time": "Ordua",
+        "calendar": "Egutegia",
+        "keywords": "Gako-hitzak",
+        "choose_file": "Aukeratu fitxategia",
+        "delete_tag": "Ezabatu Etiketa",
+        "error_try_again": "Arazoren bat izan da, saiatu berriro",
+        "move": "Mugitu",
+        "create": "Sortu",
+        "no_special_char_allowed": "Izenak ez du karaktere berezirik eduki behar",
+        "no_subject": "Gairik ez",
+        "preview": "Aurrebista",
+        "restore": "Berrezarri",
+        "results_for_error": "Ezin da bilaketa hasi, garbitu eta saiatu berriro: ",
+        "resend": "Berbidali",
+        "share": "Partekatu",
+        "undo": "Desegin",
+        "warning": "Kontuz",
+        "share_public_link": "Partekatu esteka publikoa",
+        "single_advanced_filter": "Iragazki aurreratuak",
+        "subject": "Gaia",
+        "days": "Egunak"
+    },
+    "message": {
+        "snackbar": {
+            "all_att_added": "Eranskinak ondo gehitu dira",
+            "all_link_copied": "Esteka publikoa ondo kopiatu da",
+            "calendar_edits_saved": "Aldaketak behar bezala gorde dira",
+            "some_link_copying_error": "Fitxategi batzuen URL publikoa sortzean arazo bat dagoela dirudi. Saiatu berriro",
+            "att_err_adding": "Eranskinak gehitzean arazoren bat dagoela dirudi. Saiatu berriro",
+            "link_copying_error": "Esteka publikoa sortzean arazo bat dagoela dirudi. Saiatu berriro",
+            "some_att_add_fails": "Eranskin batzuk gehitzean arazoren bat dagoela dirudi. Saiatu berriro"
+        },
+        "copy": "Kopiatu",
+        "delete_tag_message2": "Ezabatu ondoren, horrekin markatutako elementu guztietatik kenduko da."
+    },
+    "messages": {
+        "snackbar": {
+            "tag_deleted": "{{name}} Etiketa behar bezala ezabatu da",
+            "tag_updated": "Etiketa behar bezala eguneratu da",
+            "tag_created": "{{name}} etiketa behar bezala sortu da"
+        }
+    },
+    "share": {
+        "options": {
+            "share_calendar_with": {
+                "external_guests": "Kanpoko gonbidatuak (ikusteko soilik)",
+                "internal_users_groups": "Barne Erabiltzaileak edo Taldeak",
+                "public": "Publikoa (ikusteko soilik, ez da pasahitzik behar)"
+            },
+            "share_calendar_role": {
+                "none": "Bat ere ez"
+            }
+        }
+    },
+    "snackbar": {
+        "email_copied_to_clipboard": "E-posta arbelean kopiatu da."
+    },
+    "preview": {
+        "close": "Itxi aurrebista"
     }
 }
