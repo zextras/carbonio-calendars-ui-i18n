@@ -2,13 +2,38 @@
     "action": {
         "search": "Bilatu",
         "reset": "Berrezarri",
-        "show_original": "Erakutsi jatorrizkoa"
+        "show_original": "Erakutsi jatorrizkoa",
+        "calendar_access_share": "Egutegiaren sarbide partekatua",
+        "calendar_upload": "Inportatu ICS fitxategia",
+        "download_ics": "Deskargatu ICS",
+        "edit_calendar_properties": "Editatu egutegiaren propietateak",
+        "edit_message": "Editatu mezua",
+        "export_calendar_ics": "Esportatu ICS fitxategia",
+        "move_to_root": "Mugitu errora",
+        "save_to_preview": "Gorde aurrebistarako",
+        "send": "Bidali",
+        "send_cancellation": "Bidali Ezeztapena",
+        "send_edit": "Bidali aldaketa",
+        "answer": "Erantzuna",
+        "delete": "Ezabatu",
+        "delete_calendar": "Ezabatu egutegia",
+        "share_calendar": "Partekatu egutegia",
+        "Trash_already_empty": "zaborrontzia jada hutsik dago",
+        "empty_trash_confirmation": "Ekintza honek Posta elektronikoa, Kontaktuak, Egutegia, Zereginak eta Maletinaren zaborrontzietako elementu guztiak ezabatuko ditu. Ziur zaude zabor-karpeta horietan dena betiko ezabatu nahi duzula?",
+        "empty_trash": "Hustu zakarrontzia",
+        "preview": "Egin klik aurrebista ikusteko"
     },
     "composer": {
         "attachment": {
             "url": "Gehitu esteka publikoa Fitxategietatik",
             "local": "Gehitu lokaletik",
-            "files": "Gehitu Fitxategietatik"
+            "files": "Gehitu Fitxategietatik",
+            "contactsMod": "gehitu kontaktu txartela",
+            "draganddrop": {
+                "title": "Arrastatu eta Jaregin modua",
+                "content": "Utzi hemen zure eranskinak hitzorduan azkar gehitzeko"
+            },
+            "drive": "Gehitu Drive-tik"
         }
     },
     "label": {
@@ -52,7 +77,97 @@
         "share_public_link": "Partekatu esteka publikoa",
         "single_advanced_filter": "Iragazki aurreratuak",
         "subject": "Gaia",
-        "days": "Egunak"
+        "days": "Egunak",
+        "access_revoked": "Sarbidea baliogabetuta dago",
+        "action_performed": "Dagoeneko egin duzu ekintza hau",
+        "add_share": "Gehitu partekatzea",
+        "all_day": "Egun osoa",
+        "app_name": "Egutegiak",
+        "apple_ical": "Apple iCal",
+        "appointment_is_private": "Hitzordua pribatua da.",
+        "appt_reminder_one": "Hitzordu-abisua",
+        "appt_reminder_other": "Hitzorduen abisuak",
+        "attachment_one": "Eranskina",
+        "attachment_other": "eranskinak",
+        "attendee_one": "Parte-hartzailea",
+        "attendee_other": "Parte-hartzaileak",
+        "available": "Libre zaude",
+        "busy": "Lanpetuta",
+        "calendar_color": "Egutegiaren kolorea",
+        "calendar_setting": "Egutegiaren ezarpenak",
+        "calendar_shared": "Egutegia behar bezala partekatu da",
+        "cancel": "utzi",
+        "cancelled": "Utzia",
+        "changes_saved": "Aldaketak gorde dira",
+        "check_availability": "Egiaztatu ea libre zauden",
+        "checking_availability": "Libre zauden egiaztatzen",
+        "continue": "Jarraitu",
+        "create_appt_settings": "Hitzorduak Sortzen",
+        "create_copy": "Kopiatu",
+        "custom": "Pertsonalizatua",
+        "custom_repeat": "Errepikapen pertsonalizatua",
+        "day": "Eguna",
+        "default_view": "Ikuspegi lehenetsia",
+        "delete_one": "Ezabatu",
+        "delete_other": "Ezabatu denak",
+        "delete_permanently": "Betirako ezabatu",
+        "delete_tag_name": "Ezabatu {{name}} etiketa",
+        "dismiss_one": "Baztertu",
+        "dismiss_other": "Baztertu guztiak",
+        "display": "Erakutsi",
+        "edit_share": "Editatu partekatzea",
+        "edit_tag_name": "Editatu {{name}} etiketa",
+        "edits_saved": "Aldaketak behar bezala gorde dira",
+        "email_input_message": "Sartu helbide elektronikoak",
+        "enable_dlgtn_for_ical": "Aktibatu delegazioa Apple iCal-eko CalDAV bezeroarentzat",
+        "end_date": "Amaiera data",
+        "end_date_and_time": "Amaiera-data eta ordua",
+        "entire_serires": "SERIE OSOA",
+        "equipment": "Ekipamendua",
+        "event_title": "Ekitaldiaren izenburua",
+        "every": "Errepikatze-aldia",
+        "every_day": "Egunero",
+        "every_year_on": "Urtero egun honetan",
+        "filter_sharer_user": "Karpetaren jabea",
+        "free": "Libre",
+        "free_busy": "Libre/Lanpetuta",
+        "from": "hemendik",
+        "general": "Orokorra",
+        "ics_url": "ICS URLa",
+        "import_calendar_success": "Inportazioa ondo joan da",
+        "instance": "Instantzia",
+        "invitation_not_sent": "Oraindik ez diezu gonbidapena bidali parte-hartzaileei",
+        "invites": "Gonbidapenak",
+        "loading": "Kargatzen…",
+        "location": "Kokapena",
+        "maybe": "agian",
+        "meeting_room": "Bilera gela",
+        "month": "Hilabetea",
+        "new_appointment": "Hitzordu berria",
+        "new_calendar": "Egutegi berria",
+        "new_tag": "Etiketa berria",
+        "new_time_proposed": "Ordu berria proposatuta",
+        "no_end_date": "Amaiera-datarik gabe",
+        "no_title": "Izenbururik ez",
+        "none": "Bat ere ez",
+        "notify_organizer": "Jakinarazi antolatzaileari",
+        "now": "Orain",
+        "number": "Zenbakia",
+        "occurrences": "Gertaera(k)",
+        "advanced_filters_one": "Iragazki aurreratu {{count}}",
+        "advanced_filters_other": "{{count}} iragazki aurreratuak",
+        "create_new_calendar": "Sortu Egutegi Berri bat",
+        "delete_instance": "Ziur \"{title}\" hitzorduaren instantzia hau ezabatu nahi duzula?",
+        "end": "Amaiera",
+        "exclude_free_busy": "Baztertu egutegi hau libre/lanpetuta dauden orduen berri ematerakoan",
+        "import_calendar_ongoing": "Inportazioa abian aukeratutako egutegian .",
+        "all_calendars": "Egutegi guztiak",
+        "no_rights": "Ez duzu ekintza hau egiteko baimenik",
+        "auto_add_rcvd_app": "Gehitu automatikoki jasotako hitzorduak egutegian",
+        "default_appt_vsblty": "Hitzordu lehenetsiaren ikusgarritasuna",
+        "end_after": "Amaitu honen ondoren",
+        "every_weekday": "Astegunero",
+        "find_shares": "Hautatu zein egutegi ikusi nahi dituzun egutegien zuhaitzean"
     },
     "message": {
         "snackbar": {
@@ -91,5 +206,79 @@
     },
     "preview": {
         "close": "Itxi aurrebista"
-    }
+    },
+    "add": "Gehitu",
+    "administer": "Administratu",
+    "allowed_actions": "Baimendutako ekintzak",
+    "attendee_equipment_unavailable": "Ekipamendua ez dago eskuragarri ekitaldirako hautatutako orduan",
+    "attendee_room_unavailable": "Gela ez dago eskuragarri ekitaldirako hautatutako orduan",
+    "attendees_equipments_unavailable": "Ekipamendu bat edo gehiago ez daude eskuragarri ekitaldirako hautatutako orduan",
+    "attendees_rooms_unavailable": "Bilera-areto bat edo gehiago ez daude eskuragarri ekitaldirako hautatutako orduan",
+    "cannot_edit_name": "Ezin duzu sistemaren egutegi baten izena editatu",
+    "creation_timezone_tooltip": "Data eta ordua sorrera ordu-eremuan:",
+    "edit_share_properties": "Editatu partekatzeko propietateak",
+    "event": {
+        "action": {
+            "accept": "Onartu",
+            "decline": "Ezetsi",
+            "needs_action": "Ekintza behar du",
+            "no": "Ez",
+            "yes": "Bai",
+            "invitation_not_sent_yet": "Gonbidapena oraindik ez da bidali",
+            "expand": "Ireki"
+        },
+        "is_exception": "Salbuespena"
+    },
+    "find_calendar_shares": "Bilatu Egutegiko Partekatzeak",
+    "find_shares": "Bilatu partekatutako elementuak",
+    "folder": {
+        "modal": {
+            "footer": {
+                "go_back": "Itzuli"
+            },
+            "move": {
+                "body": {
+                    "message3": "Hautatu egutegi bat hartutako hitzordua bertara eramateko:"
+                },
+                "input": {
+                    "filter": "Iragazi egutegiak"
+                }
+            },
+            "new": {
+                "title2": "Egutegi berri baten sorrera",
+                "duplicate_warning": "Izen bereko egutegia dagoeneko badago"
+            },
+            "restore": {
+                "footer": "Sortu eta Berrezarri"
+            }
+        },
+        "share_info": "Partekatu informazioa"
+    },
+    "has_attachments": "Eranskinak ditu",
+    "import": "Inportatu",
+    "insert": "Txertatu",
+    "is_private": "Pribatua da",
+    "is_recurrent": "Errepikatzen da",
+    "items": {
+        "first": "Lehena",
+        "fourth": "Laugarrena",
+        "last": "Azkena",
+        "second": "Bigarrena",
+        "working_day": "Laneguna",
+        "third": "Hirugarrena",
+        "weekend_day": "Asteburuko eguna"
+    },
+    "appointments": "Hitzorduak",
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "title": "Pertsonalizatu lan orduak"
+            }
+        }
+    },
+    "freebusy": "Libre/Okupatua",
+    "appt_restored_successfully": "Hitzordua behar bezala leheneratu da",
+    "attendee_unavailable": "Parte-hartzailea ez dago eskuragarri ekitaldirako hautatutako orduan",
+    "attendees_unavailable": "Parte-hartzaile bat edo gehiago ez daude eskuragarri ekitaldirako hautatutako orduan",
+    "import_appointments": "Inportatu hitzorduak"
 }
