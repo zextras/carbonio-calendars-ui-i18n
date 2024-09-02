@@ -155,7 +155,8 @@
         "optional_participant_other": "{{count}} Opzionali",
         "required_participant_one": "Partecipante",
         "required_participant_many": "Partecipanti",
-        "required_participant_other": "Partecipanti"
+        "required_participant_other": "Partecipanti",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> ha invitato {{owner}}"
     },
     "label": {
         "to": "A",
@@ -731,5 +732,12 @@
     "timezones": "Fuso orario",
     "import": "Importa",
     "import_appointments": "Importa appuntamenti",
-    "empty_trash_deleting_confirmation": "Stai per cancellare tutti i calendari nel cestino. L'azione é irreversibile. Confermi di voler procedere?"
+    "empty_trash_deleting_confirmation": "Stai per cancellare tutti i calendari nel cestino. L'azione é irreversibile. Confermi di voler procedere?",
+    "modal": {
+        "initializeError": {
+            "title": "Oops!...Qualcosa è andato storto",
+            "content": "Per favore, ricarica la pagina o riprova più tardi",
+            "buttonConfirm": "RICARICA"
+        }
+    }
 }
