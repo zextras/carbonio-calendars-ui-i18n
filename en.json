@@ -389,7 +389,8 @@
         "you_sure_delete_calendar": "Are you sure you want to permanently delete the {{name}} calendar?",
         "you_sure_delete_instance": "Are you sure you want to delete this instance of {{title}} appointment?",
         "you_sure_move_calendar_trash": "Are you sure you want to delete the {{name}} calendar?",
-        "original_invite": "-----Original Invite-----"
+        "original_invite": "-----Original Invite-----",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> invited {{owner}}"
     },
     "messages": {
         "format_as_plain_text": "Format as Plain Text",
@@ -708,5 +709,12 @@
     "type": "Type",
     "workflow": "WorkFlow",
     "write": "Write",
-    "empty_trash_deleting_confirmation": "You are deleting all items in the Calendar trash folder. The deletion is permanent. Are you sure you want to delete all the items?"
+    "empty_trash_deleting_confirmation": "You are deleting all items in the Calendar trash folder. The deletion is permanent. Are you sure you want to delete all the items?",
+    "modal": {
+        "initializeError": {
+            "title": "Oops!…Something went wrong",
+            "content": "Please reload the page or try again later",
+            "buttonConfirm": "RELOAD"
+        }
+    }
 }
