@@ -343,7 +343,8 @@
         "required_participant_one": "{{count}} uczestnik",
         "required_participant_few": "{{count}} uczestników",
         "required_participant_many": "{{count}} uczestników",
-        "original_invite": "-----Oryginalne zaproszenie-----"
+        "original_invite": "-----Oryginalne zaproszenie-----",
+        "somebody_invited_owner": "Użytkownik <strong>{{somebody}}</strong> zaprosił {{owner}}"
     },
     "participants": {
         "Accepted": "Zaakceptowano",
@@ -731,5 +732,12 @@
     "timezones": "Strefy czasowe",
     "import": "Importuj",
     "import_appointments": "Importuj spotkania",
-    "empty_trash_deleting_confirmation": "Usuwasz wszystkie elementy w koszu kalendarza. Tej czynności nie da się cofnąć. Czy na pewno chcesz usunąć wszystkie elementy?"
+    "empty_trash_deleting_confirmation": "Usuwasz wszystkie elementy w koszu kalendarza. Tej czynności nie da się cofnąć. Czy na pewno chcesz usunąć wszystkie elementy?",
+    "modal": {
+        "initializeError": {
+            "buttonConfirm": "ODŚWIEŻ",
+            "title": "Ups! Coś poszło nie tak",
+            "content": "Odśwież stronę lub spróbuj ponownie później"
+        }
+    }
 }
