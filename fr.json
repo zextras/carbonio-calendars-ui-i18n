@@ -380,7 +380,8 @@
         "optional_participant_one": "{{count}} optionnel",
         "optional_participant_many": "{{count}} optionnels",
         "optional_participant_other": "{{count}} optionnels",
-        "original_invite": "-----Invitation initiale-----"
+        "original_invite": "-----Invitation initiale-----",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> a invité {{owner}}"
     },
     "months": {
         "april": "Avril",
@@ -731,5 +732,12 @@
     "timezones": "Fuseaux horaires",
     "import_appointments": "Importer des rendez-vous",
     "import": "Importer",
-    "empty_trash_deleting_confirmation": "Vous êtes sur le point de supprimer tous les éléments du dossier Corbeille du calendrier. La suppression est permanente. Êtes-vous sûr de vouloir supprimer tous les éléments ?"
+    "empty_trash_deleting_confirmation": "Vous êtes sur le point de supprimer tous les éléments du dossier Corbeille du calendrier. La suppression est permanente. Êtes-vous sûr de vouloir supprimer tous les éléments ?",
+    "modal": {
+        "initializeError": {
+            "title": "Oups !... Quelque chose s'est mal passé",
+            "buttonConfirm": "RECHARGER",
+            "content": "Merci de recharger la page ou d'essayer plus tard"
+        }
+    }
 }
