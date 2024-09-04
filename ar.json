@@ -81,5 +81,20 @@
             "tag_updated": "تم تحديث العلامة بنجاح",
             "tag_deleted": "تم حذف العلامة {{name}} بنجاح"
         }
+    },
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "لا"
+            },
+            "share_calendar_with": {
+                "internal_users_groups": "المستخدمون الداخليون أو المجموعات الداخلية",
+                "public": "عام (للعرض فقط، لا يلزم وجود كلمة مرور)",
+                "external_guests": "الضيوف الخارجيون (للعرض فقط)"
+            }
+        }
+    },
+    "snackbar": {
+        "email_copied_to_clipboard": "تم نسخ البريد الإلكتروني إلى الحافظة."
     }
 }
