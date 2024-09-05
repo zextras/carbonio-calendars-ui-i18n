@@ -2,7 +2,8 @@
     "action": {
         "show_original": "إظهار الأصل",
         "reset": "اعاده تعيين",
-        "search": "بحث"
+        "search": "بحث",
+        "delete": "حذف"
     },
     "composer": {
         "attachment": {
@@ -96,5 +97,16 @@
     },
     "snackbar": {
         "email_copied_to_clipboard": "تم نسخ البريد الإلكتروني إلى الحافظة."
+    },
+    "tooltip": {
+        "folder_linked_status": "تمت مشاركتها معي",
+        "revoke": "تعطيل الوصول"
+    },
+    "modal": {
+        "initializeError": {
+            "title": "عفوا!... حدث خطأ ما",
+            "content": "يرجى إعادة تحميل الصفحة أو المحاولة مرة أخرى لاحقا",
+            "buttonConfirm": "إعادة التحميل"
+        }
     }
 }
