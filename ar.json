@@ -3,13 +3,36 @@
         "show_original": "إظهار الأصل",
         "reset": "اعاده تعيين",
         "search": "بحث",
-        "delete": "حذف"
+        "delete": "حذف",
+        "calendar_access_share": "مشاركة الوصول إلى التقويم",
+        "delete_calendar": "حذف التقويم",
+        "move_to_root": "نقلها إلى الرئيسي",
+        "send": "ارسل",
+        "send_cancellation": "إرسال الإلغاء",
+        "calendar_upload": "استيراد ملف بصيغة .ics",
+        "download_ics": "تنزيل ملف بصيغة .ics",
+        "empty_trash_confirmation": "سيؤدي هذا الإجراء إلى حذف جميع العناصر الموجودة في مجلدات البريد الإلكتروني وجهات الاتصال والتقويم والمهام وسلة المهملات الخاصة بحقيبة الملفات. هل أنت متأكد من أنك تريد حذف كل شيء نهائيا في مجلدات المهملات هذه؟",
+        "Trash_already_empty": "سلة المهملات فارغة مسبقاً",
+        "edit_calendar_properties": "تحرير خصائص التقويم",
+        "edit_message": "تحرير الرسالة",
+        "empty_trash": "إفراغ سلة المهملات",
+        "export_calendar_ics": "تصدير ملف بصيغة .ics",
+        "preview": "انقر للمعاينة",
+        "save_to_preview": "إحفظ للمعاينة",
+        "send_edit": "إرسال تحرير",
+        "share_calendar": "مشاركة التقويم"
     },
     "composer": {
         "attachment": {
             "local": "إضافة من الجهاز",
             "url": "إضافة رابط عام من الملفات",
-            "files": "إضافة من الملفات"
+            "files": "إضافة من الملفات",
+            "contactsMod": "إضافة بطاقة جهة اتصال",
+            "draganddrop": {
+                "title": "وضع السحب والإفلات",
+                "content": "قم بإفلات المرفقات الخاصة بك هنا لإضافتها بسرعة إلى الموعد"
+            },
+            "drive": "إضافة من القرص"
         }
     },
     "label": {
@@ -108,5 +131,41 @@
             "content": "يرجى إعادة تحميل الصفحة أو المحاولة مرة أخرى لاحقا",
             "buttonConfirm": "إعادة التحميل"
         }
+    },
+    "add": "اضافه",
+    "allowed_actions": "الإجراءات المسموح بها",
+    "appointments": "المواعيد",
+    "appt_restored_successfully": "تمت استعادة المواعيد بنجاح",
+    "cannot_edit_name": "لا يمكنك تحرير اسم تقويم النظام",
+    "event": {
+        "action": {
+            "invitation_not_sent_yet": "لم يتم إرسال الدعوة بعد",
+            "accept": "قبول",
+            "decline": "رفض",
+            "expand": "فتح",
+            "needs_action": "يحتاج إلى عمل",
+            "no": "لا",
+            "yes": "نعم"
+        },
+        "is_exception": "استثنِ"
+    },
+    "attendee_unavailable": "الحضور غير متاح في الوقت المحدد للحدث",
+    "attendees_unavailable": "لا يتوفر حاضر واحد أو أكثر في الوقت المحدد للحدث",
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "title": "تخصيص ساعات العمل"
+            }
+        }
+    },
+    "attendee_equipment_unavailable": "المعدات غير متوفرة في الوقت المحدد للحدث",
+    "attendee_room_unavailable": "لا تتوفر القاعة في الوقت المحدد للحدث",
+    "attendees_equipments_unavailable": "لا تتوفر معدات واحدة أو أكثر في الوقت المحدد للحدث",
+    "attendees_rooms_unavailable": "لا تتوفر غرفة اجتماعات واحدة أو أكثر في الوقت المحدد للحدث",
+    "creation_timezone_tooltip": "التاريخ والوقت في منطقة زمنية الإنشاء:",
+    "edit_share_properties": "تعديل خصائص المشاركة",
+    "administer": "اداره",
+    "button": {
+        "customize_modal": "فتح تخصيص مشروط"
     }
 }
