@@ -312,7 +312,8 @@
         "work_hour": "Work hour",
         "work_week": "Work week",
         "your_pref_timezone_msg": "Your preferred timezone is: GMT +01:00 Amsterdam, Berlin, Bern, Rome, Stockholm,Vienna.",
-        "attendees": "Attendees"
+        "attendees": "Attendees",
+        "forward": "Forward"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -594,7 +595,10 @@
         "share_folder_success": "Calendar shared successfully",
         "tag_applied": "{{tag}} tag applied",
         "tag_removed": "{{tag}} tag removed",
-        "url_copied": "{{title}} copied"
+        "url_copied": "{{title}} copied",
+        "forwardAppointment": {
+            "success": "Appointment forwarded"
+        }
     },
     "success": "Success",
     "timezone": {
@@ -715,6 +719,14 @@
             "title": "Oops!…Something went wrong",
             "content": "Please reload the page or try again later",
             "buttonConfirm": "RELOAD"
+        },
+        "forwardAppointment": {
+            "title": "Forward appointment",
+            "content": "You are forwarding this appointment to one or more attendees who will receive an invitation to join the meeting.",
+            "placeholder": "Add new attendees"
+        },
+        "buttonLabel": {
+            "forward": "FORWARD"
         }
     }
 }
