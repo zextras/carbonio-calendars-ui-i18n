@@ -364,7 +364,8 @@
         "show_one": "Mostra",
         "show_many": "Mostra tutto",
         "show_other": "Mostra tutti",
-        "attendees": "Partecipanti"
+        "attendees": "Partecipanti",
+        "forward": "Inoltra"
     },
     "action": {
         "send": "Invia",
@@ -472,7 +473,10 @@
         "url_copied": "{{title}} copiato",
         "tag_applied": "Etichetta {{tag}} applicata",
         "tag_removed": "Etichetta {{tag}} rimossa",
-        "email_copied_to_clipboard": "Email copiata negli appunti."
+        "email_copied_to_clipboard": "Email copiata negli appunti.",
+        "forwardAppointment": {
+            "success": "Appuntamento inoltrato"
+        }
     },
     "add": "Aggiungi",
     "allowed_actions": "Azioni consentite",
@@ -738,6 +742,14 @@
             "title": "Oops!...Qualcosa è andato storto",
             "content": "Per favore, ricarica la pagina o riprova più tardi",
             "buttonConfirm": "RICARICA"
+        },
+        "buttonLabel": {
+            "forward": "INOLTRA"
+        },
+        "forwardAppointment": {
+            "title": "Inoltra appuntamento",
+            "placeholder": "Aggiungi nuovi partecipanti",
+            "content": "Stai inoltrando questo appuntamento a uno o più partecipanti che riceveranno un invito a partecipare all'appuntamento."
         }
     }
 }
