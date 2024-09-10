@@ -266,7 +266,8 @@
         "show_one": "Pokaż",
         "show_few": "Pokaż wszystkie",
         "show_many": "Pokaż wszystkie",
-        "attendees": "Uczestnicy"
+        "attendees": "Uczestnicy",
+        "forward": "Przekaż dalej"
     },
     "message": {
         "modal": {
@@ -469,7 +470,10 @@
         "url_copied": "skopiowano {{title}}",
         "tag_applied": "Etykieta {{tag}} została zastosowana",
         "tag_removed": "Etykieta {{tag}} została zdjęta",
-        "email_copied_to_clipboard": "E-mail został skopiowany do schowka."
+        "email_copied_to_clipboard": "E-mail został skopiowany do schowka.",
+        "forwardAppointment": {
+            "success": "Spotkanie zostało przekazane dalej"
+        }
     },
     "timezone": {
         "brussels_copenhagen_madrid_paris ": "{{value}} Bruksela, Kopenhaga, Madryt, Paryż",
@@ -738,6 +742,14 @@
             "buttonConfirm": "ODŚWIEŻ",
             "title": "Ups! Coś poszło nie tak",
             "content": "Odśwież stronę lub spróbuj ponownie później"
+        },
+        "buttonLabel": {
+            "forward": "PRZEKAŻ DALEJ"
+        },
+        "forwardAppointment": {
+            "placeholder": "Dodaj nowych uczestników",
+            "content": "Przekazujesz dalej to spotkanie do jednego lub więcej uczestników, którzy otrzymają zaproszenie do dołączenia na spotkanie.",
+            "title": "Przekaż dalej spotkanie"
         }
     }
 }
