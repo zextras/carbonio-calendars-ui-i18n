@@ -301,7 +301,8 @@
         "download_one": "Télécharger",
         "download_many": "Tout télécharger",
         "download_other": "Tout télécharger",
-        "attendees": "Participants"
+        "attendees": "Participants",
+        "forward": "Transférer"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -530,7 +531,10 @@
         "url_copied": "{{title}} copié",
         "tag_applied": "Étiquette {{tag}} appliquée",
         "tag_removed": "L'étiquette {{tag}} a été supprimée",
-        "email_copied_to_clipboard": "Email copié dans le presse papier."
+        "email_copied_to_clipboard": "Email copié dans le presse papier.",
+        "forwardAppointment": {
+            "success": "Le rendez-vous a été transféré"
+        }
     },
     "share_invite_resent": "Invitation à partager envoyée",
     "resend_mail_notification_about_this_share": "Envoyer une notification par email à propos de ce partage",
@@ -738,6 +742,14 @@
             "title": "Oups !... Quelque chose s'est mal passé",
             "buttonConfirm": "RECHARGER",
             "content": "Merci de recharger la page ou d'essayer plus tard"
+        },
+        "buttonLabel": {
+            "forward": "TRANSFÉRER"
+        },
+        "forwardAppointment": {
+            "placeholder": "Ajouter de nouveaux participants",
+            "content": "Vous transmettez ce rendez-vous à un ou plusieurs participants qui recevront une invitation à se joindre à la réunion.",
+            "title": "Transférer le rendez-vous"
         }
     }
 }
