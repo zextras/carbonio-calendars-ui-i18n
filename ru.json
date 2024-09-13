@@ -5,7 +5,28 @@
         "all_time": "Все время мероприятия",
         "modal": {
             "set_new_time_message": "Вы хотите установить новое время для пропущенной встречи? Если вы нажмете ОК, все остальные напоминания будут автоматически отменены."
-        }
+        },
+        "hours_one": "{{count}} час",
+        "hours_few": "{{count}} часа",
+        "hours_many": "{{count}} часов",
+        "minute_before_one": "{{count}} минут назад",
+        "minute_before_few": "{{count}} минуты назад",
+        "minute_before_many": "{{count}} минут назад",
+        "day_before_one": "{{count}} день назад",
+        "day_before_few": "{{count}} дня назад",
+        "day_before_many": "{{count}} дней назад",
+        "hour_before_one": "{{count}} час назад",
+        "hour_before_few": "{{count}} часа назад",
+        "hour_before_many": "{{count}} часов назад",
+        "minutes_one": "{{count}} минута",
+        "minutes_few": "{{count}} минуты",
+        "minutes_many": "{{count}} минут",
+        "second_before_one": "{{count}} секунду назад",
+        "second_before_few": "{{count}} секунды назад",
+        "second_before_many": "{{count}} секунд назад",
+        "week_before_one": "{{count}} неделю назад",
+        "week_before_few": "{{count}} недели назад",
+        "week_before_many": "{{count}} недель назад"
     },
     "participants": {
         "visitors": "и другие {{others}} участники",
@@ -110,7 +131,8 @@
         "required_participant_many": "{{count}} участников",
         "optional_participant_one": "{{count}} Необязательно",
         "optional_participant_few": "{{count}} Необязательно",
-        "optional_participant_many": "{{count}} Необязательно"
+        "optional_participant_many": "{{count}} Необязательно",
+        "original_invite": "-----Оригинальное приглашение-----"
     },
     "label": {
         "no_subject": "(без темы)",
@@ -313,7 +335,11 @@
         "optional_many": "Опционально",
         "show_one": "Показать",
         "show_few": "Показать всё",
-        "show_many": "Показать всё"
+        "show_many": "Показать всё",
+        "attendees": "Участники",
+        "dismiss_one": "Отклонить",
+        "dismiss_few": "Отклонить",
+        "dismiss_many": "Отклонить"
     },
     "tooltip": {
         "enable_disable_rich_text": "Включение/отключение редактора форматированного текста",
@@ -356,7 +382,8 @@
         "calendar_upload": "Импортировать файл ICS",
         "download_ics": "Скачать ICS",
         "export_calendar_ics": "Экспортировать файл ICS",
-        "delete": "Удалить"
+        "delete": "Удалить",
+        "answer": "Ответить"
     },
     "folder": {
         "modal": {
@@ -699,5 +726,6 @@
     "public": "публичная",
     "timezones": "Часовые пояса",
     "import": "Импортировать",
-    "import_appointments": "Импортировать встречи"
+    "import_appointments": "Импортировать встречи",
+    "empty_trash_deleting_confirmation": "Вы удаляете все элементы из папки \"Корзина календаря\". Удаление является необратимым. Вы уверены, что хотите удалить все элементы?"
 }
