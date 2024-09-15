@@ -280,5 +280,18 @@
     "appt_restored_successfully": "Hitzordua behar bezala leheneratu da",
     "attendee_unavailable": "Parte-hartzailea ez dago eskuragarri ekitaldirako hautatutako orduan",
     "attendees_unavailable": "Parte-hartzaile bat edo gehiago ez daude eskuragarri ekitaldirako hautatutako orduan",
-    "import_appointments": "Inportatu hitzorduak"
+    "import_appointments": "Inportatu hitzorduak",
+    "tooltip": {
+        "folder_linked_status": "Nirekin partekatua",
+        "add_attachments": "Gehitu eranskinak",
+        "revoke": "Ezeztatu sarbidea",
+        "edit": "Editatu partekatze-propietateak"
+    },
+    "modal": {
+        "initializeError": {
+            "title": "Ups!... Zerbait gaizki atera da.",
+            "content": "Mesedez, berriro kargatu orria edo saiatu berriro geroago",
+            "buttonConfirm": "BIRKARGATU"
+        }
+    }
 }
