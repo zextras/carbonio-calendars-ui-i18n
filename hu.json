@@ -16,7 +16,10 @@
         "delete_calendar": "Naptár törlése",
         "edit_message": "Üzenet szerkesztése",
         "empty_trash": "Kuka ürítése",
-        "empty_trash_confirmation": "Ez a művelet az összes elemet kitörli az E-mailek, Partnerek, Naptár, Feladatok és Táska Kuka mappákban. Biztos benne, hogy véglegesen törölni akar mindent ezekben a Kuka mappákban?"
+        "empty_trash_confirmation": "Ez a művelet az összes elemet kitörli az E-mailek, Partnerek, Naptár, Feladatok és Táska Kuka mappákban. Biztos benne, hogy véglegesen törölni akar mindent ezekben a Kuka mappákban?",
+        "delete": "Törlés",
+        "calendar_upload": "ICS fájl importálása",
+        "download_ics": "ICS letöltése"
     },
     "composer": {
         "attachment": {
@@ -245,7 +248,9 @@
         "trash_emptied": "Kuka kiürítése sikeres",
         "view_url": "URL megtekintése",
         "week": "Hét",
-        "weeks_on": "Hetenként, a következő napon"
+        "weeks_on": "Hetenként, a következő napon",
+        "download_one": "Letöltés",
+        "download_other": "Összes letöltése"
     },
     "message": {
         "delete_tag_message2": "A törlés után minden vele megjelölt elemből eltávolításra kerül.",
@@ -620,5 +625,12 @@
     "shared_folders": "Megosztott Naptárak",
     "shared_items": "Megosztott elemek",
     "shares_info": "Információ megosztása",
-    "success": "Sikeres"
+    "success": "Sikeres",
+    "modal": {
+        "initializeError": {
+            "title": "Hoppá, valami hiba történt",
+            "content": "Kérjük töltse be újra az oldalt, vagy próbálkozzon újra később!",
+            "buttonConfirm": "ÚJRATÖLTÉS"
+        }
+    }
 }
