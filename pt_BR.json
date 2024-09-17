@@ -205,7 +205,8 @@
         "optional_other": "Opcionais",
         "show_one": "Exibir",
         "show_many": "Exibir tudo",
-        "show_other": "Exibir tudo"
+        "show_other": "Exibir tudo",
+        "forward": "Encaminhar"
     },
     "action": {
         "send": "Enviar",
@@ -350,7 +351,8 @@
         "optional_participant_other": "{{count}} Opcionais",
         "required_participant_one": "{{count}} Participante",
         "required_participant_many": "{{count}} Participantes",
-        "required_participant_other": "{{count}} Participantes"
+        "required_participant_other": "{{count}} Participantes",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> convidou {{owner}}"
     },
     "months": {
         "april": "Abril",
@@ -524,7 +526,10 @@
         "share_folder_success": "Calendário compartilhado com sucesso",
         "tag_applied": "Marcador \"{{tag}}\" aplicado",
         "tag_removed": "Marcador \"{{tag}}\" removido",
-        "email_copied_to_clipboard": "E-mail copiado para área de transferência."
+        "email_copied_to_clipboard": "E-mail copiado para área de transferência.",
+        "forwardAppointment": {
+            "success": "Compromisso encaminhado"
+        }
     },
     "success": "Sucesso",
     "type": "Tipo",
@@ -567,9 +572,9 @@
         "equipment": "Equipamento",
         "location": "Local",
         "chat_room": "Link da sala virtual",
-        "calendar_sharing_status_one": "Compartilhado com 1 pessoa",
-        "calendar_sharing_status_many": "",
-        "calendar_sharing_status_other": "",
+        "calendar_sharing_status_one": "Compartilhado com {{count}} pessoa",
+        "calendar_sharing_status_many": "Compartilhado com {{count}} pessoas",
+        "calendar_sharing_status_other": "Compartilhado com {{count}} pessoas",
         "revoke": "Revogar acesso",
         "resend": "Enviar notificação por e-mail sobre este compartilhamento",
         "edit": "Editar propriedades do compartilhamento",
@@ -731,5 +736,20 @@
     "timezones": "Zonas horárias",
     "import": "Importar",
     "import_appointments": "Importar compromissos",
-    "empty_trash_deleting_confirmation": "Você está excluindo todos os itens na pasta da lixeira do Calendário. A exclusão é permanente. Tem certeza que deseja excluir todos os itens?"
+    "empty_trash_deleting_confirmation": "Você está excluindo todos os itens na pasta da lixeira do Calendário. A exclusão é permanente. Tem certeza que deseja excluir todos os itens?",
+    "modal": {
+        "initializeError": {
+            "title": "Oops!… Algo deu errado",
+            "content": "Atualize a página ou tente novamente",
+            "buttonConfirm": "ATUALIZAR"
+        },
+        "forwardAppointment": {
+            "content": "Você está encaminhando este compromisso para um ou mais participantes que receberão um convite para participar da reunião.",
+            "title": "Encaminhar compromisso",
+            "placeholder": "Adicione os novos participantes"
+        },
+        "buttonLabel": {
+            "forward": "ENCAMINHAR"
+        }
+    }
 }
