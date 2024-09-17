@@ -211,7 +211,8 @@
         "dismiss_other": "Tolak semuanya",
         "download_other": "Unduh semua",
         "optional_other": "Opsional",
-        "show_other": "Tampilkan semua"
+        "show_other": "Tampilkan semua",
+        "forward": "Teruskan"
     },
     "calendar": {
         "modal": {
@@ -335,7 +336,8 @@
         "import_appointment_modal": "Janji temu yang terdapat pada {{fileName}} akan diimpor ke kalender \"{{calendarName}}\".",
         "original_invite": "-----Undangan Asli-----",
         "required_participant_other": "{{count}} Peserta",
-        "optional_participant_other": "{{count}} Opsional"
+        "optional_participant_other": "{{count}} Opsional",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> mengundang {{owner}}"
     },
     "months": {
         "april": "April",
@@ -464,7 +466,10 @@
         "share_folder_success": "Kalender berhasil dibagikan",
         "tag_removed": "Tag {{tag}}: dihapus",
         "tag_applied": "Tag {{tag}} diterapkan",
-        "email_copied_to_clipboard": "Email disalin ke clipboard."
+        "email_copied_to_clipboard": "Email disalin ke clipboard.",
+        "forwardAppointment": {
+            "success": "Janji temu diteruskan"
+        }
     },
     "success": "Berhasil",
     "add": "Tambahkan",
@@ -677,5 +682,20 @@
     "next_month": "Bulan berikutnya",
     "previous_month": "Bulan sebelumnya",
     "previous_week": "Minggu sebelumnya",
-    "timezones": "Zona waktu"
+    "timezones": "Zona waktu",
+    "modal": {
+        "initializeError": {
+            "title": "Ups!…Ada yang salah",
+            "content": "Muat ulang halaman atau coba lagi nanti",
+            "buttonConfirm": "MUAT ULANG"
+        },
+        "forwardAppointment": {
+            "content": "Anda meneruskan janji temu ini ke satu atau beberapa peserta yang akan menerima undangan untuk bergabung dalam rapat.",
+            "title": "Teruskan janji temu",
+            "placeholder": "Tambahkan peserta baru"
+        },
+        "buttonLabel": {
+            "forward": "TERUSKAN"
+        }
+    }
 }
