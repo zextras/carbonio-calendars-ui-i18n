@@ -205,7 +205,8 @@
         "show_one": "Mostrar",
         "show_many": "Mostrar todos",
         "show_other": "Mostrar todos",
-        "show_event": "Doble clic para ver más detalles en Calendars"
+        "show_event": "Doble clic para ver más detalles en Calendars",
+        "forward": "Reenviar"
     },
     "action": {
         "send": "Enviar",
@@ -455,7 +456,10 @@
         "url_copied": "{{title}} copiado",
         "tag_applied": "Etiqueta {{tag}} aplicada",
         "tag_removed": "Etiqueta {{tag}} removida",
-        "email_copied_to_clipboard": "Email copiado al portapapeles."
+        "email_copied_to_clipboard": "Email copiado al portapapeles.",
+        "forwardAppointment": {
+            "success": "Cita reenviada"
+        }
     },
     "success": "Éxito",
     "type": "Tipo",
@@ -536,7 +540,8 @@
         "optional_participant_other": "{{count}} opcionales",
         "required_participant_one": "{{count}} Participante",
         "required_participant_many": "{{count}} Participantes",
-        "required_participant_other": "{{count}} Participantes"
+        "required_participant_other": "{{count}} Participantes",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> invitó{{owner}}"
     },
     "button": {
         "customize_modal": "Abrir menú de personalización"
@@ -731,5 +736,20 @@
     "public": "público",
     "previous_month": "Mes anterior",
     "timezones": "Husos horarios",
-    "next_month": "Mes siguiente"
+    "next_month": "Mes siguiente",
+    "modal": {
+        "initializeError": {
+            "title": "¡Vaya! Algo salió mal",
+            "content": "Por favor, recarga la página o prueba de nuevo más tarde",
+            "buttonConfirm": "RECARGAR"
+        },
+        "buttonLabel": {
+            "forward": "REENVIAR"
+        },
+        "forwardAppointment": {
+            "content": "Estás reenviando esta cita a uno o más asistentes que recibirán una invitación para unirse a la reunión.",
+            "placeholder": "Añadir asistentes nuevos",
+            "title": "Reenviar cita"
+        }
+    }
 }
