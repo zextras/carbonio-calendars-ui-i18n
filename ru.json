@@ -55,7 +55,10 @@
         "DE_with_count_many": "Отклонило {{count}}",
         "NE_with_count_one": "Не ответил",
         "NE_with_count_few": "Не ответили ({{count}})",
-        "NE_with_count_many": "Не ответили ({{count}})"
+        "NE_with_count_many": "Не ответили ({{count}})",
+        "TE_with_count_one": "Возможно",
+        "TE_with_count_few": "Возможно",
+        "TE_with_count_many": "Возможно"
     },
     "message": {
         "invite_has_no_message": "Это приглашения не содержит текста",
@@ -340,7 +343,8 @@
         "attendees": "Участники",
         "dismiss_one": "Отклонить",
         "dismiss_few": "Отклонить",
-        "dismiss_many": "Отклонить"
+        "dismiss_many": "Отклонить",
+        "forward": "Перенаправить"
     },
     "tooltip": {
         "enable_disable_rich_text": "Включение/отключение редактора форматированного текста",
@@ -360,7 +364,7 @@
         "edit": "Изменить свойства общего доступа",
         "virtual_room": "Конференц зал",
         "meetingRooms": "Комнаты",
-        "folder_linked_status": "Адресовано мне"
+        "folder_linked_status": "Поделились со мной"
     },
     "action": {
         "send": "Отправить",
@@ -569,7 +573,10 @@
         "share_folder_success": "Доступ к календарю предоставлен",
         "tag_applied": "Тег {{tag}} применен",
         "tag_removed": "Тег {{tag}} удален",
-        "email_copied_to_clipboard": "Письмо скопировано в буфер обмена."
+        "email_copied_to_clipboard": "Письмо скопировано в буфер обмена.",
+        "forwardAppointment": {
+            "success": "Встреча перенаправлена"
+        }
     },
     "owner": "Владелец",
     "workflow": "Рабочий процесс",
@@ -736,7 +743,12 @@
             "content": "Пожалуйста, перезагрузите страницу или повторите попытку позже"
         },
         "forwardAppointment": {
-            "content": "Вы перенаправляете эту встречу одному или нескольким участникам, которые получат приглашение присоединиться к собранию."
+            "content": "Вы перенаправляете эту встречу одному или нескольким участникам, которые получат приглашение присоединиться к собранию.",
+            "title": "Перенаправить встречу",
+            "placeholder": "Добавить новых участников"
+        },
+        "buttonLabel": {
+            "forward": "ПЕРЕНАПРАВИТЬ"
         }
     }
 }
