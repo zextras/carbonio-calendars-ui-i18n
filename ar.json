@@ -264,8 +264,37 @@
             "all_link_copied": "تم نسخ الرابط العام بنجاح",
             "link_copying_error": "يبدو أن هناك مشكلة أثناء إنشاء رابط عام ، يرجى المحاولة مرة أخرى",
             "some_att_add_fails": "يبدو أن هناك مشكلة عند إضافة بعض المرفقات ، يرجى المحاولة مرة أخرى",
-            "some_link_copying_error": "يبدو أن هناك مشكلة أثناء إنشاء رابط عام لبعض الملفات ، يرجى المحاولة مرة أخرى"
-        }
+            "some_link_copying_error": "يبدو أن هناك مشكلة أثناء إنشاء رابط عام لبعض الملفات ، يرجى المحاولة مرة أخرى",
+            "invite": {
+                "accept": "لقد قمت بالرد بالقبول",
+                "decline": "لقد أجبت بالرفض",
+                "tentative": "لقد قمت بالرد كموافقه مبدئيه"
+            },
+            "calendar_deleted_successfully": "تم حذف التقويم بنجاح.",
+            "calendar_restored": "تمت استعادة التقويم بنجاح",
+            "calendar_moved_to_root_folder": "تم نقل التقويم إلى المجلد الرئيسي",
+            "new_calendar_created": "تم إنشاء تقويم جديد",
+            "appt_moved_to_trash": "تم نقل الموعد إلى سلة المهملات",
+            "appt_restored": "تمت استعادة الموعد بنجاح إلى",
+            "calendar_moved_to_trash": "تم نقل التقويم إلى المهملات",
+            "calendar_permanently_deleted": "تم حذف التقويم نهائيا",
+            "series_deleted_no_notification": "انتقل الموعد المتكرر إلى سلة المهملات.",
+            "series_deleted": "انتقل الموعد المتكرر إلى سلة المهملات. سيتلقى الحاضرون إشعار الإلغاء.",
+            "shared_calendar_removed": "تمت إزالة التقويم بنجاح"
+        },
+        "want_to_edit_modified_msg": "سيتم إخطار الحاضرين بالتغييرات عبر البريد الإلكتروني. هل ترغب في إضافة رسالة مخصصة؟",
+        "sure_to_delete_appointment": "هل أنت متأكد من رغبتك في حذف الموعد؟",
+        "sure_to_delete_appointment_permanently": "هل أنت متأكد من أنك تريد حذف هذا الموعد نهائيا؟",
+        "you_are_organizer": "<Row><Text><BoldText>أنت..</BoldText>المنظم</Text></Row>",
+        "you": "أنت",
+        "somebody_is_organizer": "المنظم هو <strong>{{somebody}}</strong>",
+        "sure_to_delete_all_occurences_appointment": "هل أنت متأكد من رغبتك في حذف جميع تكرارات هذا الموعد؟",
+        "somebody_invited_you": "دعاك <strong>{{somebody}}</strong>",
+        "want_to_edit_cancellation_msg": "هل تريد تعديل رسالة إلغاء الموعد؟",
+        "want_to_send_cancellation_msg": "هل تريد إرسال رسالة إلغاء إلى الحضور؟",
+        "you_sure_delete_calendar": "هل أنت متأكد من أنك تريد حذف التقويم بإسم {{name}} بشكل نهائي؟",
+        "you_sure_delete_instance": "هل أنت متأكد من أنك تريد حذف طلب الموعد هذا {{title}}؟",
+        "you_sure_move_calendar_trash": "هل أنت متأكد من أنك تريد حذف تقويم بإسم {{name}}؟"
     },
     "preview": {
         "close": "إغلاق المعاينة"
@@ -274,8 +303,10 @@
         "snackbar": {
             "tag_created": "تم إنشاء العلامة {{name}} بنجاح",
             "tag_updated": "تم تحديث العلامة بنجاح",
-            "tag_deleted": "تم حذف العلامة {{name}} بنجاح"
-        }
+            "tag_deleted": "تم حذف العلامة {{name}} بنجاح",
+            "tag_not_updated": "حدث خطأ ما ، لم يتم تحديث العلامة. يرجى المحاولة مرة أخرى."
+        },
+        "format_as_plain_text": "تنسيق كنص عادي"
     },
     "share": {
         "options": {
@@ -381,5 +412,22 @@
     "import_appointments": "استيراد المواعيد",
     "insert": "أَدْرَج",
     "is_private": "هل هو خاص",
-    "is_recurrent": "هل هو متكرر"
+    "is_recurrent": "هل هو متكرر",
+    "months": {
+        "september": "سبتمبر",
+        "february": "فبراير",
+        "july": "يوليو",
+        "june": "يونيو",
+        "march": "مارس",
+        "november": "نوفمبر",
+        "october": "أكتوبر",
+        "august": "أغسطس",
+        "may": "مايو",
+        "april": "أبريل",
+        "december": "ديسمبر",
+        "january": "يناير"
+    },
+    "mountpoint_error": "تعذر إضافة المشاركة إلى قسم التقاويم المشتركة",
+    "mountpoint_success": "تمت إضافة المشاركة بنجاح إلى قسم التقاويم المشتركة",
+    "mountpoint_warning": "تعذر إضافة {{failed}} من أصل {{total}} من التقاويم المشتركة إلى قائمة التقاويم المشتركة."
 }
