@@ -483,7 +483,8 @@
         "original_invite": "----- คำเชิญต้นฉบับ -----",
         "import_appointment_modal": "การนัดหมายที่อยู่ใน {{fileName}} จะถูกนำเข้าไปยังปฏิทิน \"{{calendarName}}\"",
         "optional_participant_other": "{{count}} ตัวเลือก",
-        "required_participant_other": "ผู้เข้าร่วม {{count}} คน"
+        "required_participant_other": "ผู้เข้าร่วม {{count}} คน",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> ได้เชิญ {{owner}}"
     },
     "type": "รูปแบบ",
     "tooltip": {
@@ -677,5 +678,12 @@
     "empty_trash_deleting_confirmation": "คุณกำลังลบรายการทั้งหมดในโฟลเดอร์ถังขยะของปฏิทิน การลบเป็นแบบถาวร คุณแน่ใจหรือไม่ว่าต้องการลบรายการทั้งหมด?",
     "timezones": "โซนเวลา",
     "previous_day": "วันก่อน",
-    "public": "สาธารณะ"
+    "public": "สาธารณะ",
+    "modal": {
+        "initializeError": {
+            "title": "อุ๊ย!…มีบางอย่างผิดพลาด",
+            "buttonConfirm": "โหลดซ้ำ",
+            "content": "โปรดโหลดหน้าเพจนี้ใหม่หรือลองอีกครั้งในภายหลัง"
+        }
+    }
 }
