@@ -160,7 +160,7 @@
     },
     "label": {
         "to": "A",
-        "tentative": "Tentativo",
+        "tentative": "Forse",
         "no_subject": "Nessun oggetto",
         "start_date_and_time": "Data ed ora di inizio",
         "start_date": "Data di inizio",
