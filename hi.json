@@ -194,7 +194,11 @@
         "send_edit": "बदलाव भेजें",
         "reset": "रीसेट करें",
         "search": "खोजें",
-        "show_original": "ओरिजिनल दिखाएँ"
+        "show_original": "ओरिजिनल दिखाएँ",
+        "Trash_already_empty": "हटाए गए आइटम का बॉक्स पहले से ही खाली है",
+        "calendar_upload": "ICS फ़ाइल के रूप में निकाले",
+        "download_ics": "ICS डाउनलोड करें",
+        "export_calendar_ics": "ICS फ़ाइल निर्यात करें"
     },
     "message": {
         "you": "आप",
@@ -483,6 +487,7 @@
         "location": "स्थान",
         "chat_room": "Virtual Room लिंक",
         "calendar_sharing_status_one": "1 व्यक्ति के साथ शेयर किया गया",
+        "calendar_sharing_status_other": "",
         "revoke": "एक्सेस बंद करें",
         "resend": "इस शेयर के बारे में मेल नोटिफिकेशन भेजें",
         "edit": "शेयर गुणों में संशोधन",
@@ -612,5 +617,7 @@
     "mountpoint_success": "शेर को Shared Calendars सेक्शन में जोड़ दिया गया है",
     "mountpoint_warning": "{{total}} में से {{failed}} शेयर्ड कैलेंडर Shared Calendars में नहीं जोड़े जा सके",
     "attendee_unavailable": "इवेंट के चुने हुए समय पर प्रतिभागी उपलब्ध नहीं है",
-    "attendees_unavailable": "इवेंट के चुने हुए समय पर एक या अधिक प्रतिभागी उपलब्ध नहीं हैं"
+    "attendees_unavailable": "इवेंट के चुने हुए समय पर एक या अधिक प्रतिभागी उपलब्ध नहीं हैं",
+    "attendee_room_unavailable": "कार्यक्रम के चयनित समय पर कमरा उपलब्ध नहीं है",
+    "attendee_equipment_unavailable": "कार्यक्रम के चयनित समय पर उपकरण उपलब्ध नहीं है"
 }
