@@ -252,11 +252,26 @@
         "show_few": "عروض",
         "show_many": "عرض",
         "show_other": "عرض",
-        "trash": "سلة المهملات"
+        "trash": "سلة المهملات",
+        "week_day": {
+            "sunday": "الأحد",
+            "saturday": "السبت",
+            "friday": "الجمعة",
+            "monday": "الاثنين",
+            "thursday": "الخميس",
+            "tuesday": "الثلاثاء",
+            "wednesday": "الأربعاء"
+        },
+        "view_url": "عرض الرابط",
+        "week": "أسبوع",
+        "your_pref_timezone_msg": "منطقتك الزمنية المفضلة هي: GMT +01:00 أمستردام, برلين, برن, روما, ستوكهولم,فيينا.",
+        "weeks_on": "أسبوعياً في",
+        "work_hour": "ساعات العمل",
+        "work_week": "أسبوع العمل"
     },
     "message": {
         "copy": "نسخ",
-        "delete_tag_message2": "بمجرد حذفه ، ستتم إزالته من كل عنصر مميز به.",
+        "delete_tag_message2": "بمجرد حذفه ، ستتم إزالته من كل عنصر المعلمه به.",
         "snackbar": {
             "calendar_edits_saved": "تم حفظ التعديلات بشكل صحيح",
             "att_err_adding": "يبدو أن هناك مشكلة عند إضافة المرفقات، يرجى المحاولة مرة أخرى",
@@ -294,7 +309,26 @@
         "want_to_send_cancellation_msg": "هل تريد إرسال رسالة إلغاء إلى الحضور؟",
         "you_sure_delete_calendar": "هل أنت متأكد من أنك تريد حذف التقويم بإسم {{name}} بشكل نهائي؟",
         "you_sure_delete_instance": "هل أنت متأكد من أنك تريد حذف طلب الموعد هذا {{title}}؟",
-        "you_sure_move_calendar_trash": "هل أنت متأكد من أنك تريد حذف تقويم بإسم {{name}}؟"
+        "you_sure_move_calendar_trash": "هل أنت متأكد من أنك تريد حذف تقويم بإسم {{name}}؟",
+        "meeting_modified": "تم تعديل الاجتماع التالي",
+        "appointment_invitation_sent": "تم إرسال دعوة موعد",
+        "delete_future_occurences": "حذف هذا الموعد وجميع الجميع المتكرره المستقبلية",
+        "are_organizer": "المنظم",
+        "delete_future_occurences_warning": "سيؤدي هذا أيضا إلى حذف جميع الاستثناءات (قبل هذا المثيل وبعده) في سلسلة المواعيد",
+        "invite_has_no_message": "لا تحتوي هذه الدعوة على رسالة نصية",
+        "delete_tag_message1": "هل أنت متأكد من حذف العلامة {{name}}؟",
+        "more": "أكثر…",
+        "modal": {
+            "delete": {
+                "sure_delete_appointment_all_instances_permanently": "سيؤدي هذا إلى حذف جميع تكرارات هذا الموعد ولن تتمكن من استعادتها مرة أخرى ، تابع؟"
+            }
+        },
+        "appointment_type_handle": "موعد بإسم {{name}} هو موعد متكرر. هل ترغب في فتح هذا الموعد فقط أو كل التكرارت؟",
+        "meeting_canceled": "تم إلغاء الاجتماع التالي",
+        "edit_series_warning": "أثناء تعديل سلسلة الموعد ، ستتم استعادة جميع الموعيد المحذوفة أو المعدلة مسبقا باستخدام إعدادات السلسلة الجديدة.",
+        "import_appointment_modal": "سيتم استيراد المواعيد من الملف {{fileName}} إلى التقويم \"{{calendarName}}\".",
+        "invited_you": "دعوتك إلى حدث",
+        "delete_all_occurences": "حذف جميع المواعيد المتكرره"
     },
     "preview": {
         "close": "إغلاق المعاينة"
@@ -429,5 +463,6 @@
     },
     "mountpoint_error": "تعذر إضافة المشاركة إلى قسم التقاويم المشتركة",
     "mountpoint_success": "تمت إضافة المشاركة بنجاح إلى قسم التقاويم المشتركة",
-    "mountpoint_warning": "تعذر إضافة {{failed}} من أصل {{total}} من التقاويم المشتركة إلى قائمة التقاويم المشتركة."
+    "mountpoint_warning": "تعذر إضافة {{failed}} من أصل {{total}} من التقاويم المشتركة إلى قائمة التقاويم المشتركة.",
+    "local_timezone_tooltip": "التاريخ والوقت على المنطقة الزمنية المحلية:"
 }
