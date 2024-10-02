@@ -716,8 +716,8 @@
     "empty_trash_deleting_confirmation": "You are deleting all items in the Calendar trash folder. The deletion is permanent. Are you sure you want to delete all the items?",
     "modal": {
         "initializeError": {
-            "title": "Oops!…Something went wrong",
-            "content": "Please reload the page or try again later",
+            "title": "Something went wrong",
+            "content": "Please refresh the page or try again later. Other modules might still be available on limited functionality.",
             "buttonConfirm": "RELOAD"
         },
         "forwardAppointment": {
