@@ -739,8 +739,8 @@
     "empty_trash_deleting_confirmation": "Stai per cancellare tutti i calendari nel cestino. L'azione é irreversibile. Confermi di voler procedere?",
     "modal": {
         "initializeError": {
-            "title": "Oops!...Qualcosa è andato storto",
-            "content": "Per favore, ricarica la pagina o riprova più tardi",
+            "title": "Qualcosa è andato storto",
+            "content": "Per favore, aggiorna la pagina o riprova più tardi. Altri moduli potrebbero essere ancora disponibili con funzionalità limitate.",
             "buttonConfirm": "RICARICA"
         },
         "buttonLabel": {
