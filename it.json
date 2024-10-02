@@ -76,9 +76,9 @@
         "NE_with_count_one": "Non ha risposto",
         "NE_with_count_many": "({{count}}) Non hanno risposto",
         "NE_with_count_other": "({{count}}) Non hanno risposto",
-        "TE_with_count_one": "Con riserva",
-        "TE_with_count_many": "({{count}}) con riserva",
-        "TE_with_count_other": "({{count}}) con riserva"
+        "TE_with_count_one": "Forse",
+        "TE_with_count_many": "({{count}}) forse",
+        "TE_with_count_other": "({{count}}) forse"
     },
     "message": {
         "you_are_organizer": "<Row><Text> <BoldText>Tu </BoldText> sei l'organizzatore </Text></Row>",
