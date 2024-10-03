@@ -740,8 +740,8 @@
     "modal": {
         "initializeError": {
             "buttonConfirm": "ODŚWIEŻ",
-            "title": "Ups! Coś poszło nie tak",
-            "content": "Odśwież stronę lub spróbuj ponownie później"
+            "title": "Coś poszło nie tak",
+            "content": "Odśwież stronę lub spróbuj ponownie później. Inne moduły dalej mogą być dostępne z ograniczonymi funkcjonalnościami."
         },
         "buttonLabel": {
             "forward": "PRZEKAŻ DALEJ"
