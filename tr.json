@@ -19,7 +19,9 @@
         "Trash_already_empty": "çöp kutusu zaten boş",
         "calendar_upload": "ICS Dosyasını İçeri Aktar",
         "download_ics": "ICS'yi indir",
-        "export_calendar_ics": "ICS dosyasını dışa aktar"
+        "export_calendar_ics": "ICS dosyasını dışa aktar",
+        "answer": "Yanıtla",
+        "delete": "Sil"
     },
     "edit_share_properties": "Paylaşım özelliklerini düzenle",
     "button": {
@@ -166,7 +168,14 @@
         "want_to_edit_modified_msg": "Katılımcılara değişiklikler hakkında bilgilendirme e-postası gönderilecek. Özel bir mesaj eklemek ister misiniz?",
         "meeting_modified": "Bu toplantı değiştirildi",
         "search_hints": " ",
-        "copy": "Kopyala"
+        "copy": "Kopyala",
+        "import_appointment_modal": "{{fileName}} içinde yer alan randevular \"{{calendarName}}\" takvimine aktarılacak.",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> davet etti {{owner}}",
+        "optional_participant_one": "{{count}} İsteğe bağlı",
+        "optional_participant_other": "{{count}} İsteğe bağlılar",
+        "original_invite": "-----Orijinal Davet-----",
+        "required_participant_one": "{{count}} Katılımcı",
+        "required_participant_other": "{{count}} Katılımcılar"
     },
     "search": {
         "organized_by": "Organize eden",
@@ -182,7 +191,10 @@
         "url_copied": "{{title}} kopyalandı",
         "tag_applied": "{{tag}} etiketi uygulandı",
         "tag_removed": "{{tag}} etiketi kaldırıldı",
-        "email_copied_to_clipboard": "E-posta panoya kopyalandı."
+        "email_copied_to_clipboard": "E-posta panoya kopyalandı.",
+        "forwardAppointment": {
+            "success": "Randevu iletildi"
+        }
     },
     "label": {
         "invitation_not_sent": "Katılımcılara henüz davet göndermediniz",
@@ -334,7 +346,7 @@
         "tag_name": "Etiket adı",
         "tags": "Etiketler",
         "no_title": "Başlık Yok",
-        "scheduled_in": "Takvim",
+        "scheduled_in": "Planlanan Takvim",
         "warning": "Uyarı",
         "trash": "Çöp Kutusu",
         "tag": "Etiket",
@@ -361,7 +373,30 @@
         "meeting_room": "Toplantı odası",
         "available": "Uygun durumdasınız",
         "check_availability": "Uygunluk durumunuzu kontrol edin",
-        "checking_availability": "Uygunluk durumu kontrolü"
+        "checking_availability": "Uygunluk durumu kontrolü",
+        "show_event": "Takvimlerde daha fazla ayrıntı görmek için çift tıklayın",
+        "forward": "İlet",
+        "attendees": "Katılımcılar",
+        "advanced_filters_one": "{{count}} Gelişmiş Filtre",
+        "advanced_filters_other": "{{count}} Gelişmiş Filtreler",
+        "import_calendar_ongoing": "Devam eden seçili takvime içe aktarın.",
+        "optional_one": "İsteğe bağlı",
+        "optional_other": "İsteğe bağlılar",
+        "delete_one": "Sil",
+        "delete_other": "Tümünü Sil",
+        "appt_reminder_one": "Randevu Anımsatıcı",
+        "appt_reminder_other": "Randevu Anımsatıcılar",
+        "attachment_one": "Ek",
+        "attachment_other": "ekler",
+        "attendee_one": "Katılımcı",
+        "attendee_other": "Katılımcılar",
+        "download_one": "İndir",
+        "download_other": "Tümünü İndir",
+        "dismiss_one": "Kapat",
+        "dismiss_other": "Tümünü Kapat",
+        "import_calendar_success": "İçe aktarma başarılı",
+        "show_one": "Göster",
+        "show_other": "Tümünü Göster"
     },
     "resend_mail_notification_about_this_share": "Bu paylaşım hakkında posta bildirimi gönder",
     "participants": {
@@ -370,7 +405,23 @@
         "Not_answered": "yanıtlamadı",
         "Tentative": "belirsiz olarak kabul etti",
         "visitors": "ve diğer {{others}} katılımcı",
-        "Accepted": "kabul edildi"
+        "Accepted": "kabul edildi",
+        "AC_with_count_one": "Kabul Eden ({{count}})",
+        "AC_with_count_other": "Kabul Edenler ({{count}})",
+        "Attendees_accepted_count_one": "<strong>{{count}} katılımcı</strong> kabul etti",
+        "Attendees_accepted_count_other": "<strong>{{count}} katılımcı</strong> kabul etti",
+        "Attendees_declined_count_one": "<strong>{{count}} katılımcı</strong> reddetti",
+        "Attendees_declined_count_other": "<strong>{{count}} katılımcı</strong> reddetti",
+        "Attendees_not_answered_count_one": "<strong>{{count}} katılımcı</strong> yanıt vermedi",
+        "Attendees_not_answered_count_other": "<strong>{{count}} katılımcı</strong> yanıt vermedi",
+        "Attendees_tentative_count_one": "<strong>{{count}} katılımcı</strong> belirsiz olarak kabul etti",
+        "Attendees_tentative_count_other": "<strong>{{count}} katılımcı</strong> belirsiz olarak kabul etti",
+        "DE_with_count_one": "Reddetti",
+        "DE_with_count_other": "Reddetti {{count}}",
+        "NE_with_count_one": "Yanıtlamadı",
+        "NE_with_count_other": "Yanıtlamadı ({{count}})",
+        "TE_with_count_one": "Belirsiz",
+        "TE_with_count_other": "Belirsiz ({{count}})"
     },
     "tooltip": {
         "add_attachments": "Eklenti ekle",
@@ -388,7 +439,7 @@
         "resend": "Bu paylaşım hakkında e-posta bildirimi gönder",
         "edit": "Paylaşım özelliklerini düzenle",
         "virtual_room": "Sanal Oda",
-        "folder_linked_status": "Benimle bağlantılı",
+        "folder_linked_status": "Benimle paylaşılan",
         "meetingRooms": "Toplantı Odaları"
     },
     "revoke_with_custom_message": "Özel bildirim göndererek erişim yetkisini kaldır",
@@ -502,7 +553,21 @@
         "all_time": "Etkinliğin tüm süresi",
         "modal": {
             "set_new_time_message": "Zamanı geçen randevu için yeni bir zaman belirlemek ister misiniz? TAMAM tuşuna tıkladığınızda tüm diğer hatırlatmalar otomatik olarak iptal edilecek."
-        }
+        },
+        "day_before_one": "{{count}} gün önce",
+        "day_before_other": "{{count}} gün önce",
+        "week_before_one": "{{count}} hafta önce",
+        "week_before_other": "{{count}} hafta önce",
+        "hour_before_one": "{{count}} saat önce",
+        "hour_before_other": "{{count}} saat önce",
+        "hours_one": "{{count}} saat",
+        "hours_other": "{{count}} saat",
+        "minute_before_one": "{{count}} dakika önce",
+        "minute_before_other": "{{count}} dakika önce",
+        "minutes_one": "{{count}} dakika",
+        "minutes_other": "{{count}} dakika",
+        "second_before_one": "{{count}} dakika önce",
+        "second_before_other": "{{count}} dakika önce"
     },
     "remove_from_this_list": "Paylaşılan takvimi kaldır",
     "revoke_access": "Erişimi iptal et",
@@ -645,5 +710,22 @@
     "public": "genel",
     "next_day": "Sonraki gün",
     "import": "İçeri Aktar",
-    "import_appointments": "Randevuları içeri aktar"
+    "import_appointments": "Randevuları içeri aktar",
+    "modal": {
+        "initializeError": {
+            "content": "Lütfen sayfayı yenileyin veya daha sonra tekrar deneyin. Diğer modüller halen sınırlı olarak kullanılabilir durumda olabilir.",
+            "buttonConfirm": "YENİDEN YÜKLE",
+            "title": "Bir hata oluştu"
+        },
+        "forwardAppointment": {
+            "content": "Bu randevuyu, toplantıya katılma daveti alacak bir veya daha fazla katılımcıya iletiyorsunuz.",
+            "title": "Randevuyu ilet",
+            "placeholder": "Yeni katılımcılar ekle"
+        },
+        "buttonLabel": {
+            "forward": "İLET"
+        }
+    },
+    "timezones": "Zaman dilimleri",
+    "empty_trash_deleting_confirmation": "Takvim çöp kutusu klasöründeki tüm öğeleri siliyorsunuz. Silme kalıcıdır. Tüm öğeleri silmek istediğinizden emin misiniz?"
 }
