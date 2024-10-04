@@ -167,7 +167,21 @@
         "default_appt_vsblty": "Hitzordu lehenetsiaren ikusgarritasuna",
         "end_after": "Amaitu honen ondoren",
         "every_weekday": "Astegunero",
-        "find_shares": "Hautatu zein egutegi ikusi nahi dituzun egutegien zuhaitzean"
+        "find_shares": "Hautatu zein egutegi ikusi nahi dituzun egutegien zuhaitzean",
+        "of_every": "bakoitzaren",
+        "of_every_month": "hileko, behin",
+        "ok": "OK",
+        "on_behalf_of": "{{accountName}} {{identity}} <{{otherAccount}}>-ren izenean",
+        "ongoing": "Etengabe",
+        "optional_one": "Aukerakoa",
+        "optional_other": "Aukerakoak",
+        "optionals": "Aukerakoak",
+        "other_actions": "Beste ekintza batzuk",
+        "out_of_office": "Bulegotik kanpo",
+        "outlook_url": "Outlook URLa",
+        "permissions": "Baimenak",
+        "proposal_declined": "Proposamena baztertu egin da",
+        "propose_new_time": "Denbora berria proposatu"
     },
     "message": {
         "snackbar": {
@@ -293,5 +307,8 @@
             "content": "Mesedez, berriro kargatu orria edo saiatu berriro geroago",
             "buttonConfirm": "BIRKARGATU"
         }
+    },
+    "button": {
+        "customize_modal": "Ireki Pertsonalizatu modala"
     }
 }
