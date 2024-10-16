@@ -111,7 +111,7 @@
         "delete_instance": "Tem certeza que deseja excluir esta instância do compromisso “{title}”?",
         "event_title": "Título do evento",
         "on_behalf_of": "{{accountName}} em nome de {{identity}} <{{otherAccount}}>",
-        "trash_emptied": "Lixeira esvaziada!",
+        "trash_emptied": "A Lixeira foi esvaziada",
         "settings_saved": "As configurações foram salvas",
         "today": "hoje",
         "week_day": {
@@ -559,7 +559,7 @@
         }
     },
     "button": {
-        "customize_modal": "Abrir menú de personalização"
+        "customize_modal": "Abrir menu de personalização"
     },
     "shared_folders": "Calendários compartilhados",
     "tooltip": {
@@ -670,13 +670,13 @@
         "nairobi": "{{value}} Nairóbi",
         "namibia": "{{value}} Namíbia",
         "newfoundland": "{{value}} Terra Nova",
-        "nuku_alofa": "{{value}} Nuku’alofa",
+        "nuku_alofa": "{{value}} Nucualofa",
         "pacific_south_america": "{{value}} Pacífico de América do Sul",
         "port_louis": "{{value}} Porto Louis",
         "pyongyang": "{{value}} Pyongyang",
         "samoa": "{{value}} Samoa",
         "saskatchewan": "{{value}} Saskatchewan",
-        "sri_jayawardenepura_kotte": "{{value}} Sri Jayawardenepura Kotte",
+        "sri_jayawardenepura_kotte": "{{value}} Seri Jaiavardenapura-Cota",
         "tbilisi": "{{value}} Tbilisi",
         "tehran": "{{value}} Teerã",
         "us_canada_central": "{{value}} EUA/Canadá Central",
@@ -739,8 +739,8 @@
     "empty_trash_deleting_confirmation": "Você está excluindo todos os itens na pasta da lixeira do Calendário. A exclusão é permanente. Tem certeza que deseja excluir todos os itens?",
     "modal": {
         "initializeError": {
-            "title": "Oops!… Algo deu errado",
-            "content": "Atualize a página ou tente novamente",
+            "title": "Algo deu errado",
+            "content": "Atualize a página ou tente novamente mais tarde. Outros módulos ainda podem estar disponíveis com funcionalidade limitada.",
             "buttonConfirm": "ATUALIZAR"
         },
         "forwardAppointment": {
