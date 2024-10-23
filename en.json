@@ -728,5 +728,10 @@
         "buttonLabel": {
             "forward": "FORWARD"
         }
+    },
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "Join the virtual room"
+        }
     }
 }
