@@ -63,7 +63,7 @@
     "message": {
         "invite_has_no_message": "Это приглашения не содержит текста",
         "you_are_organizer": "<Row><Text> <BoldText> Вы организатор</BoldText> </Text></Row>",
-        "somebody_invited_you": "<strong> {{кто-то}} </strong> пригласил вас",
+        "somebody_invited_you": "<strong> {{somebody}} </strong> пригласил вас",
         "meeting_canceled": "Следующая встреча отменена",
         "you_sure_move_calendar_trash": "Вы уверены, что хотите удалить календарь {{name}}?",
         "you_sure_delete_calendar": "Вы уверены, чтохотите навсегда удалить календарь {{name}}?",
