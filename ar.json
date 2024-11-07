@@ -295,7 +295,10 @@
             "calendar_permanently_deleted": "تم حذف التقويم نهائيا",
             "series_deleted_no_notification": "انتقل الموعد المتكرر إلى سلة المهملات.",
             "series_deleted": "انتقل الموعد المتكرر إلى سلة المهملات. سيتلقى الحاضرون إشعار الإلغاء.",
-            "shared_calendar_removed": "تمت إزالة التقويم بنجاح"
+            "shared_calendar_removed": "تمت إزالة التقويم بنجاح",
+            "appt_moved": "نُقل الموعد بنجاحٍ إلى",
+            "appointment_permanently_deleted": "حُذف الموعد نهائيا",
+            "appointment_permanently_deleted_succesfully": "حُذف الموعد بنجاح"
         },
         "want_to_edit_modified_msg": "سيتم إخطار الحاضرين بالتغييرات عبر البريد الإلكتروني. هل ترغب في إضافة رسالة مخصصة؟",
         "sure_to_delete_appointment": "هل أنت متأكد من رغبتك في حذف الموعد؟",
@@ -320,7 +323,8 @@
         "more": "أكثر…",
         "modal": {
             "delete": {
-                "sure_delete_appointment_all_instances_permanently": "سيؤدي هذا إلى حذف جميع تكرارات هذا الموعد ولن تتمكن من استعادتها مرة أخرى ، تابع؟"
+                "sure_delete_appointment_all_instances_permanently": "سيؤدي هذا إلى حذف جميع تكرارات هذا الموعد ولن تتمكن من استعادتها مرة أخرى ، تابع؟",
+                "sure_delete_appointment_permanently": "عندما تقوم بحذف هذا الموعد ، لن تتمكن من استعادته بعد الآن ، تابع؟"
             }
         },
         "appointment_type_handle": "موعد بإسم {{name}} هو موعد متكرر. هل ترغب في فتح هذا الموعد فقط أو كل التكرارت؟",
@@ -328,7 +332,24 @@
         "edit_series_warning": "أثناء تعديل سلسلة الموعد ، ستتم استعادة جميع الموعيد المحذوفة أو المعدلة مسبقا باستخدام إعدادات السلسلة الجديدة.",
         "import_appointment_modal": "سيتم استيراد المواعيد من الملف {{fileName}} إلى التقويم \"{{calendarName}}\".",
         "invited_you": "دعوتك إلى حدث",
-        "delete_all_occurences": "حذف جميع المواعيد المتكرره"
+        "delete_all_occurences": "حذف جميع المواعيد المتكرره",
+        "send_email": "إرسال بريد إلكتروني",
+        "share_calendar_url_msg": "يمكنك مشاركة {{title}} بسرعة مع المتعاونين باستخدام أحد الروابط التالية:",
+        "organizer": "المنظم",
+        "share_calendar_url_note": "يمكن للمتعاونين فقط الوصول إلى بياناتك باستخدام الروابط هذه.",
+        "share_calendar_url_note2": "يمكن للمتعاونين فقط الوصول إلى بياناتك باستخدام الروابط هذه.<br/> يمكنك العثور على هذه الروابط أيضا بالنقر بزر الفأرة الأيمن فوق قائمة التقاويم الخاصة بك.",
+        "optional_participant_zero": "{{count}} إختياري",
+        "optional_participant_one": "إختياري {{count}}",
+        "optional_participant_two": "إختيارين {{count}}",
+        "optional_participant_few": "{{count}} إختيارات",
+        "optional_participant_many": "{{count}} إختيار",
+        "optional_participant_other": "{{count}} إختيار",
+        "required_participant_zero": "{{count}} مشاركٍ",
+        "required_participant_one": "مشارك {{count}}",
+        "required_participant_two": "مشاركان {{count}}",
+        "required_participant_few": "{{count}} مشاركون",
+        "required_participant_many": "{{count}} مشاركاً",
+        "required_participant_other": "{{count}} مشاركٍ"
     },
     "preview": {
         "close": "إغلاق المعاينة"
@@ -464,5 +485,25 @@
     "mountpoint_error": "تعذر إضافة المشاركة إلى قسم التقاويم المشتركة",
     "mountpoint_success": "تمت إضافة المشاركة بنجاح إلى قسم التقاويم المشتركة",
     "mountpoint_warning": "تعذر إضافة {{failed}} من أصل {{total}} من التقاويم المشتركة إلى قائمة التقاويم المشتركة.",
-    "local_timezone_tooltip": "التاريخ والوقت على المنطقة الزمنية المحلية:"
+    "local_timezone_tooltip": "التاريخ والوقت على المنطقة الزمنية المحلية:",
+    "next_week": "الأسبوع القادم",
+    "next_day": "اليوم التالي",
+    "next_month": "الشهر المقبل",
+    "new_appointment": "موعد جديد",
+    "owner": "المالك",
+    "participants": {
+        "Accepted": "قُبلت",
+        "AC_with_count_zero": "قُبلت",
+        "AC_with_count_one": "قُبلت من {{count}}",
+        "AC_with_count_two": "قُبلت من {{count}}",
+        "AC_with_count_few": "قُبلت من {{count}}",
+        "AC_with_count_many": "قُبلت من {{count}}",
+        "AC_with_count_other": "قُبلت من {{count}}",
+        "Attendees_accepted_count_zero": "<strong>{{count}}</strong> قَبَل الحضور",
+        "Attendees_accepted_count_one": "<strong>{{count}}</strong> قَبَل الحضور",
+        "Attendees_accepted_count_two": "<strong>{{count}}</strong> قَبَلا الحضور",
+        "Attendees_accepted_count_few": "<strong>{{count}}</strong> قَبَلوا الحضور",
+        "Attendees_accepted_count_many": "<strong>{{count}}</strong> قَبَلوا الحضور",
+        "Attendees_accepted_count_other": "<strong>{{count}}</strong> قَبَلوا الحضور"
+    }
 }
