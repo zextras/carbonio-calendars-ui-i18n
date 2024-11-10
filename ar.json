@@ -505,5 +505,87 @@
         "Attendees_accepted_count_few": "<strong>{{count}}</strong> قَبَلوا الحضور",
         "Attendees_accepted_count_many": "<strong>{{count}}</strong> قَبَلوا الحضور",
         "Attendees_accepted_count_other": "<strong>{{count}}</strong> قَبَلوا الحضور"
-    }
+    },
+    "reminder": {
+        "week_before_zero": "قبل {{count}} أسبوع",
+        "week_before_one": "قبل {{count}} أسبوع",
+        "week_before_two": "قبل {{count}} أسبوع",
+        "week_before_few": "قبل {{count}} أسابيع",
+        "week_before_many": "قبل {{count}} أسبوع",
+        "week_before_other": "قبل {{count}} أسبوع",
+        "all_time": "كل وقت الحدث",
+        "never": "أبدا",
+        "at_time_of_event": "في وقت الحدث",
+        "modal": {
+            "set_new_time_message": "هل تريد تحديد موعد جديد للموعد الفائت؟ إذا نقرت على \"موافق\" ، سيتم رفض جميع التذكيرات الأخرى تلقائيا."
+        },
+        "day_before_zero": "قبل {{count}} يوم",
+        "day_before_one": "قبل {{count}} يوم",
+        "day_before_two": "قبل {{count}} يوم",
+        "day_before_few": "قبل {{count}} أيام",
+        "day_before_many": "قبل {{count}} يوم",
+        "day_before_other": "قبل {{count}} يوم",
+        "hour_before_zero": "قبل {{count}} ساعة",
+        "hour_before_one": "قبل {{count}} ساعة",
+        "hour_before_two": "قبل {{count}} ساعة",
+        "hour_before_few": "قبل {{count}} ساعات",
+        "hour_before_many": "قبل {{count}} ساعة",
+        "hour_before_other": "قبل {{count}} ساعة",
+        "hours_zero": "{{count}} ساعة",
+        "hours_one": "{{count}} ساعة",
+        "hours_two": "{{count}} ساعة",
+        "hours_few": "{{count}} ساعات",
+        "hours_many": "{{count}} ساعة",
+        "hours_other": "{{count}} ساعة",
+        "minute_before_zero": "قبل {{count}} دقيقة",
+        "minute_before_one": "قبل {{count}} دقيقة",
+        "minute_before_two": "قبل {{count}} دقيقة",
+        "minute_before_few": "قبل {{count}} دفائق",
+        "minute_before_many": "قبل {{count}} دقيقة",
+        "minute_before_other": "قبل {{count}} دقيقة",
+        "minutes_zero": "{{count}} دقيقة",
+        "minutes_one": "{{count}} دقيقة",
+        "minutes_two": "{{count}} دقيقة",
+        "minutes_few": "{{count}} دقائق",
+        "minutes_many": "{{count}} دقيقة",
+        "minutes_other": "{{count}} دقيقة",
+        "second_before_zero": "قبل {{count}} ثانية",
+        "second_before_one": "قبل {{count}} ثانية",
+        "second_before_two": "قبل {{count}} ثانية",
+        "second_before_few": "قبل {{count}} ثواني",
+        "second_before_many": "قبل {{count}} ثانية",
+        "second_before_other": "قبل {{count}} ثانية"
+    },
+    "repeat": {
+        "customize": "تخصيص",
+        "everyMonth": "كل شهر",
+        "everyWeek": "كل أسبوع",
+        "everyYear": "كل عام",
+        "monthly": "شهري",
+        "weekly": "أسبوعي",
+        "yearly": "السنويه",
+        "daily": "يوميا"
+    },
+    "revoke_access": "إلغاء الوصول",
+    "settings": {
+        "ical_note": "يمكن تهيئة تقويم أبل Apple iCal للوصول إلى التقويمات الخاصة بك باستخدام بروتوكول كالداف -CalDAV-. عند تمكين هذا التفضيل، يتم عرض التقويمات المشتركة في علامة التبويب تفويض الحساب ical حتى تتمكن من تفويض الوصول إلى التقاويم الخاصة بك إلى مستخدمين آخرين.",
+        "label": {
+            "enable_reminder_sound": "تشغيل تنبيهات صوتية (يتطلب البرنامج المساعد كويكتايم QuickTime أو ويندوز ميديا Windows Media)",
+            "default_calendar": "التقويم الافتراضي",
+            "enter_email": "أدخل عنوان البريد الإلكتروني",
+            "default_appt_dur": "المدة الافتراضية للموعد",
+            "delete_invt_on_rply": "حذف الدعوة عند الرد"
+        },
+        "invalid_email": "بريد إلكتروني غير صالح"
+    },
+    "search": {
+        "organized_by": "منظم من قبل",
+        "from_date": "من تاريخ",
+        "to_date": "حتى الآن"
+    },
+    "remove_from_this_list": "إزالة التقويم المشترك",
+    "resend_mail_notification_about_this_share": "إرسال إعلام بالبريد الإلكتروني حول هذه المشاركة",
+    "revoke_with_custom_message": "إبطال الوصول بإرسال إشعار مخصص",
+    "revoke_without_custom_message": "إبطال الوصول بإرسال إشعار قياسي",
+    "revoke_without_notification": "إبطال الوصول بدون إرسال إشعار"
 }
