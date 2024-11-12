@@ -21,7 +21,8 @@
         "share_calendar": "Share Calendar",
         "show_original": "Show original",
         "answer": "Answer",
-        "delete": "Delete"
+        "delete": "Delete",
+        "edit_group": "Edit group"
     },
     "add": "Add",
     "administer": "Administer",
@@ -93,6 +94,20 @@
             },
             "restore": {
                 "footer": "Create and Restore"
+            },
+            "creategroup": {
+                "title": "Create new Calendar Group",
+                "footer": "Create Group",
+                "default_group_name": "New Calendar Group"
+            },
+            "editgroup": {
+                "footer": "Save changes",
+                "title": "Edit Calendar Group"
+            },
+            "deletegroup": {
+                "confirm": "Delete permanently",
+                "title": "Delete group permanently?",
+                "text": "Are you sure you want to delete this group permanently? This action is irreversible and does not affect individual calendars."
             }
         },
         "share_info": "Share Info"
@@ -313,7 +328,25 @@
         "work_week": "Work week",
         "your_pref_timezone_msg": "Your preferred timezone is: GMT +01:00 Amsterdam, Berlin, Bern, Rome, Stockholm,Vienna.",
         "attendees": "Attendees",
-        "forward": "Forward"
+        "forward": "Forward",
+        "type_group_name_here": "Group Name",
+        "calendar_groups": "Calendar Groups",
+        "group_empty_calendars_list": "There are no calendars in this group yet. Start typing the calendars in the input, then click “+” to add them to the group.",
+        "create_group": "Create new group",
+        "newgroup": {
+            "note": "This group will appear in your personal account.",
+            "calendars": "Calendars in this group"
+        },
+        "group_not_found": "Group not found",
+        "calendar_selector": {
+            "placeholder": "Add Calendars"
+        },
+        "invalid_group_name": "Type a group name to save changes",
+        "editgroup": {
+            "calendars": "Calendars in this group"
+        },
+        "group_is_empty": "This group is empty",
+        "calendars": "Calendars"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -375,7 +408,10 @@
             "series_deleted_no_notification": "Series moved to trash.",
             "shared_calendar_removed": "Calendar removed successfully",
             "some_att_add_fails": "There seems to be a problem when adding some attachments, please try again",
-            "some_link_copying_error": "There seems to be a problem while generating public url for some files, please try again"
+            "some_link_copying_error": "There seems to be a problem while generating public url for some files, please try again",
+            "group_edited": "Changes saved",
+            "new_group_created": "New group created",
+            "group_deleted": "Calendar group permanently deleted"
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
@@ -732,6 +768,16 @@
     "appointment": {
         "virtualRoom": {
             "displayerLink": "Join the virtual room"
+        }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "A group with the same name already exists"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "A group with the same name already exists"
+            }
         }
     }
 }
