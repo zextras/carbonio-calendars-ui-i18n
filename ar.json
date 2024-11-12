@@ -20,7 +20,8 @@
         "preview": "انقر للمعاينة",
         "save_to_preview": "إحفظ للمعاينة",
         "send_edit": "إرسال تحرير",
-        "share_calendar": "مشاركة التقويم"
+        "share_calendar": "مشاركة التقويم",
+        "answer": "الجواب"
     },
     "composer": {
         "attachment": {
@@ -172,7 +173,7 @@
         "edits_saved": "تم حفظ التعديلات بشكل صحيح",
         "equipment": "الغرف/المعدات",
         "meeting_room": "قاعة الاجتماعات",
-        "ok": "حسناً",
+        "ok": "تم",
         "month": "الشهر",
         "import_calendar_ongoing": "يتم استيراد إلى التقويم المحدد .",
         "maybe": "ربما",
@@ -267,7 +268,9 @@
         "your_pref_timezone_msg": "منطقتك الزمنية المفضلة هي: GMT +01:00 أمستردام, برلين, برن, روما, ستوكهولم,فيينا.",
         "weeks_on": "أسبوعياً في",
         "work_hour": "ساعات العمل",
-        "work_week": "أسبوع العمل"
+        "work_week": "أسبوع العمل",
+        "forward": "اعادة التوجيه",
+        "attendees": "الحضور"
     },
     "message": {
         "copy": "نسخ",
@@ -349,7 +352,9 @@
         "required_participant_two": "مشاركان {{count}}",
         "required_participant_few": "{{count}} مشاركون",
         "required_participant_many": "{{count}} مشاركاً",
-        "required_participant_other": "{{count}} مشاركٍ"
+        "required_participant_other": "{{count}} مشاركٍ",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> دعا/دعت {{owner}}",
+        "original_invite": "-----الدعوة الأصلية-----"
     },
     "preview": {
         "close": "إغلاق المعاينة"
@@ -376,19 +381,47 @@
         }
     },
     "snackbar": {
-        "email_copied_to_clipboard": "تم نسخ البريد الإلكتروني إلى الحافظة."
+        "email_copied_to_clipboard": "تم نسخ البريد الإلكتروني إلى الحافظة.",
+        "forwardAppointment": {
+            "success": "إعادة توجيه الموعد"
+        }
     },
     "tooltip": {
         "folder_linked_status": "تمت مشاركتها معي",
         "revoke": "تعطيل الوصول",
         "add_attachments": "لإضافة المرفقات",
-        "edit": "تحرير خصائص المشاركة"
+        "edit": "تحرير خصائص المشاركة",
+        "copy_outlook_url": "نسخ عنوان رابط أوتلوك -Outlook-",
+        "copy_ics_url": "نسخ رابط بصيغة اشتراك تقويم -ICS-",
+        "enable_disable_rich_text": "تمكين / تعطيل محرر النص المنسق",
+        "meetingRooms": "قاعات الاجتماعات",
+        "virtual_room": "غرفة افتراضية",
+        "chat": "المعدات",
+        "copy_vector_url": "نسخ عنوان رابط للعرض فقط",
+        "location": "المكان",
+        "resend": "إرسال إشعار بالبريد حول هذه المشاركة",
+        "chat_room": "رابط الغرفة الافتراضية",
+        "equipment": "المعدات",
+        "calendar_sharing_status_zero": "مشترك مع {{count}} أشخاص",
+        "calendar_sharing_status_one": "مشترك مع شخص {{count}}",
+        "calendar_sharing_status_two": "مشترك مع شخصان {{count}}",
+        "calendar_sharing_status_few": "مشترك مع {{count}} أشخاص",
+        "calendar_sharing_status_many": "مشترك مع {{count}} شخص",
+        "calendar_sharing_status_other": "مشترك مع {{count}} شخص"
     },
     "modal": {
         "initializeError": {
             "title": "حدث خطأ ما",
             "content": "يرجى تحديث الصفحة أو المحاولة مرة أخرى لاحقًا. قد تظل وحدات أخرى متاحة بوظائف محدودة.",
             "buttonConfirm": "إعادة التحميل"
+        },
+        "forwardAppointment": {
+            "content": "أنت تقوم بإعادة توجيه هذا الموعد إلى حاضر أو أكثر سيتلقون دعوة للانضمام إلى الاجتماع.",
+            "title": "إعادة توجيه الموعد",
+            "placeholder": "إضافة حضور جدد"
+        },
+        "buttonLabel": {
+            "forward": "اعاده التوجيه"
         }
     },
     "add": "اضافه",
@@ -504,7 +537,48 @@
         "Attendees_accepted_count_two": "<strong>{{count}}</strong> قَبَلا الحضور",
         "Attendees_accepted_count_few": "<strong>{{count}}</strong> قَبَلوا الحضور",
         "Attendees_accepted_count_many": "<strong>{{count}}</strong> قَبَلوا الحضور",
-        "Attendees_accepted_count_other": "<strong>{{count}}</strong> قَبَلوا الحضور"
+        "Attendees_accepted_count_other": "<strong>{{count}}</strong> قَبَلوا الحضور",
+        "TE_with_count_zero": "متردد",
+        "TE_with_count_one": "متردد",
+        "TE_with_count_two": "{{count}} مترددان",
+        "TE_with_count_few": "{{count}} مترددون",
+        "TE_with_count_many": "{{count}} متردداً",
+        "TE_with_count_other": "{{count}} مترددٍ",
+        "Declined": "رافض",
+        "Invited_Visitor": "تمت دعوتهم",
+        "Tentative": "قبل كمتردد",
+        "Not_answered": "لم يجب",
+        "visitors": "و{{others}} غيرهم من الحاضرين",
+        "Attendees_declined_count_zero": "<strong>{{count}} حاضر</strong> امتنع",
+        "Attendees_declined_count_one": "<strong>{{count}} حاضر</strong> امتنع",
+        "Attendees_declined_count_two": "<strong>{{count}} حاضرين</strong> امتنعوا",
+        "Attendees_declined_count_few": "<strong>{{count}} حضور</strong> امتنعوا",
+        "Attendees_declined_count_many": "<strong>{{count}} حاضر</strong> امتنعوا",
+        "Attendees_declined_count_other": "<strong>{{count}} حاضر</strong> امتنعوا",
+        "Attendees_not_answered_count_zero": "<strong>{{count}} حاضر</strong> لم يجب",
+        "Attendees_not_answered_count_one": "<strong>{{count}} حاضر</strong> لم يجب",
+        "Attendees_not_answered_count_two": "<strong>{{count}} حاضرين</strong> لم يجيبان",
+        "Attendees_not_answered_count_few": "<strong>{{count}} حضور</strong> لم يجيبوا",
+        "Attendees_not_answered_count_many": "<strong>{{count}} حاضر</strong> لم يجيبوا",
+        "Attendees_not_answered_count_other": "<strong>{{count}} حاضر</strong> لم يجيبوا",
+        "Attendees_tentative_count_zero": "<strong>{{count}} حاضر</strong> متردد",
+        "Attendees_tentative_count_one": "<strong>{{count}} حاضر</strong> متردد",
+        "Attendees_tentative_count_two": "<strong>{{count}} حاضرين</strong> مترددين",
+        "Attendees_tentative_count_few": "<strong>{{count}} حضور</strong> مترددون",
+        "Attendees_tentative_count_many": "<strong>{{count}} حاضراً</strong> متردداً",
+        "Attendees_tentative_count_other": "<strong>{{count}} حاضرٍ</strong> مترددٍ",
+        "DE_with_count_zero": "رفض",
+        "DE_with_count_one": "{{count}} رافض",
+        "DE_with_count_two": "{{count}} رافضان",
+        "DE_with_count_few": "{{count}} رافضون",
+        "DE_with_count_many": "{{count}} رافضٍ",
+        "DE_with_count_other": "{{count}} رافض",
+        "NE_with_count_zero": "لم يجب",
+        "NE_with_count_one": "لم يجب",
+        "NE_with_count_two": "{{count}} لم يجبان",
+        "NE_with_count_few": "{{count}} لم يجيبوا",
+        "NE_with_count_many": "{{count}} لم يجب",
+        "NE_with_count_other": "{{count}} لم يجيبوا"
     },
     "reminder": {
         "week_before_zero": "قبل {{count}} أسبوع",
@@ -574,7 +648,14 @@
             "default_calendar": "التقويم الافتراضي",
             "enter_email": "أدخل عنوان البريد الإلكتروني",
             "default_appt_dur": "المدة الافتراضية للموعد",
-            "delete_invt_on_rply": "حذف الدعوة عند الرد"
+            "delete_invt_on_rply": "حذف الدعوة عند الرد",
+            "flash_browser_title": "أومض عنوان المتصفح",
+            "show_rmndr_past_due_meetings": "إظهار تذكيرات للاجتماعات التي فات موعدها",
+            "show_popup_notification": "إظهار إشعار منبثق",
+            "show_timezones": "إظهار المنطقة الزمنية أثناء إنشاء موعد جديد",
+            "forward_invites": "إرسال الدعوات",
+            "invitation_response": "جواب الدعوة",
+            "show_reminders": "إظهار التذكيرات"
         },
         "invalid_email": "بريد إلكتروني غير صالح"
     },
@@ -587,5 +668,100 @@
     "resend_mail_notification_about_this_share": "إرسال إعلام بالبريد الإلكتروني حول هذه المشاركة",
     "revoke_with_custom_message": "إبطال الوصول بإرسال إشعار مخصص",
     "revoke_without_custom_message": "إبطال الوصول بإرسال إشعار قياسي",
-    "revoke_without_notification": "إبطال الوصول بدون إرسال إشعار"
+    "revoke_without_notification": "إبطال الوصول بدون إرسال إشعار",
+    "empty_trash_deleting_confirmation": "أنت تقوم بحذف جميع العناصر الموجودة في مجلد سلة مهملات التقويم. الحذف دائم. هل أنت متأكد من أنك تريد حذف جميع العناصر؟",
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "انضم إلى الغرفة الافتراضية"
+        }
+    },
+    "timezone": {
+        "vladivostok_magadan": "{{value}} فلاديفوستوك ماجادان RTZ 9",
+        "eucla": "{{value}} يوكلا",
+        "georgetown_la_paz_manaus_san_juan": "{{value}} جورجتاون، لاباز، ماناوس، سان خوان",
+        "kabul": "{{value}} كابل",
+        "kuwait_riyadh": "{{value}} الكويت, الرياض",
+        "la_paz": "{{value}} لاباز",
+        "greenland": "{{value}} غرينلاند",
+        "dateline": "{{value}} ديتلاين",
+        "chihuahua_la_paz_mazatlan": "{{value}} تشيهواهوا، لاباز، مازاتلان",
+        "gmt_02": "{{value}} جرينتش-02",
+        "gmt_11": "{{value}} جرينتش-11",
+        "pacific_south_america": "{{value}} المحيط الهادئ أمريكا الجنوبية",
+        "samoa": "{{value}} ساموا",
+        "tbilisi": "{{value}} تبيليسي",
+        "west_central_africa": "{{value}} غرب وسط أفريقيا",
+        "brussels_copenhagen_madrid_paris ": "{{value}} بروكسل, كوبنهاغن, مدريد, باريس",
+        "ekaterinburg_rtz_4": "{{value}} ايكاترينبرغ (RTZ 4)",
+        "newfoundland": "{{value}} نيوفاوندلاند",
+        "tehran": "{{value}} طهران",
+        "us_canada_central": "{{value}} وسط الولايات المتحدة / كندا",
+        "cape_verde_is": "{{value}} الرأس الأخضر",
+        "colombia": "{{value}} كولومبيا",
+        "cuiaba": "{{value}} كويابا",
+        "jordan": "{{value}} الأردن",
+        "minsk": "{{value}} منسك",
+        "namibia": "{{value}} ناميبيا",
+        "yerevan": "{{value}} يريفان",
+        "beirut": "{{value}} بيروت",
+        "belgrade_bratislava_budapest_ljubljana_prague": "{{value}} بلغراد، براتيسلافا، بودابست، ليوبليانا، براغ",
+        "brasilia": "{{value}} برازيليا",
+        "britain_ireland_portugal": "{{value}} بريطانيا، ايرلندا، البرتغال",
+        "casablanca": "{{value}} الدار البيضاء",
+        "kathmandu": "{{value}} كاثماندو",
+        "korea": "{{value}} كوريا",
+        "krasnoyarsk_rtz_6": "{{value}} كراسنويارسك (RTZ 6)",
+        "magadan": "{{value}} ماجادان",
+        "manaus": "{{value}} ماناوس",
+        "mid_atlantic": "{{value}} وسط المحيط الأطلسي",
+        "nuku_alofa": "{{value}} نوكوالوفا",
+        "port_louis": "{{value}} بورت لويس",
+        "pyongyang": "{{value}} بيونغ يانغ",
+        "saskatchewan": "{{value}} ساسكاتشوان",
+        "sri_jayawardenepura_kotte": "{{value}} سري جاياواردنابورا كوتي",
+        "us_canada_eastern": "{{value}} الولايات المتحدة / كندا الشرقية",
+        "us_canada_mountain": "{{value}} جبل الولايات المتحدة / كندا",
+        "yangon": "{{value}} يانغون",
+        "christmas_island": "{{value}} جزيرة كريسماس",
+        "coordinated_universal_time": "{{value}} التوقيت العالمي المنسق",
+        "damascus": "{{value}} دمشق",
+        "dhaka": "{{value}} دكا",
+        "irkutsk_rtz_7": "{{value}} إيركوتسك (RTZ 7)",
+        "istanbul": "{{value}} إسطنبول",
+        "jerusalem": "{{value}} القدس",
+        "moscow_st_petersburg_volgograd_rtz_2": "{{value}} موسكو ، سانت بطرسبرغ ، فولغوغراد (RTZ 2)",
+        "nairobi": "{{value}} نيروبي",
+        "us_canada_pacific": "{{value}} الولايات المتحدة / كندا والمحيط الهادئ",
+        "cayenne_fortaleza": "{{value}} كايين ، فورتاليزا",
+        "egypt": "{{value}} مصر",
+        "guadalajara_mexico_city_monterrey ": "{{value}} غوادالاخارا، مدينة مكسيكو، مونتيري",
+        "harare_pretoria": "{{value}} هراري, بريتوريا",
+        "hawaii": "{{value}} هاواي",
+        "helsinki_kyiv_riga_sofia_tallinn_vilnius": "{{value}} هلسنكي, كييف, ريغا, صوفيا, تالين, فيلنيوس",
+        "indiana_east": "{{value}} إنديانا (شرق)",
+        "iraq": "{{value}} العراق",
+        "monrovia": "{{value}} مونروفيا",
+        "montevideo": "{{value}} مونتفيديو",
+        "sarajevo_skopje_warsaw_zagreb": "{{value}} سراييفو, سكوبي, وارسو, زغرب",
+        "caracas": "{{value}} كراكاس",
+        "central_america": "{{value}} أمريكا الوسطى",
+        "chennai_kolkata_mumbai_new_delhi": "{{value}} تشيناي ، كولكاتا ، مومباي ، نيودلهي",
+        "chita": "{{value}} تشيتا",
+        "darwin": "{{value}} داروين",
+        "kaliningrad_rtz_1": "{{value}} كالينينغراد (RTZ 1)"
+    },
+    "previous_day": "اليوم السابق",
+    "previous_month": "الشهر السابق",
+    "previous_week": "الأسبوع السابق",
+    "timezones": "المناطق الزمنية",
+    "private_info_tooltip": "عند مشاركة تقويم، يمكن للمستخدمين الآخرين رؤية تفاصيل مواعيدك (العنوان والوصف والحضور) باستثناء المواعيد التي تم وضع علامة خاصه عليها. في هذه الحالة ، سيرى المستخدمون الآخرون وقت التوفر / الانشغال ولكن ليس تفاصيل الموعد. هل ترغب في أن يُعرض للمستخدمين الآخرين أيضا تفاصيل مواعيدك الخاصة؟",
+    "recurrent_in_allday": "لا يمكنك جعل مواعيدك المتكرره طوال اليوم",
+    "workflow": "سير العمل",
+    "write": "كتابه",
+    "placeholder": {
+        "organizer": "المنظم"
+    },
+    "public": "عامه",
+    "read": "قراءة",
+    "type": "النوع"
 }
