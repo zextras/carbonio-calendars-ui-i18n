@@ -111,7 +111,10 @@
             "all_link_copied": "Link pubblico copiato con successo",
             "all_att_added": "Allegati aggiunti correttamente",
             "series_deleted_no_notification": "Serie spostata nel cestino.",
-            "shared_calendar_removed": "Calendario eliminato correttamente"
+            "shared_calendar_removed": "Calendario eliminato correttamente",
+            "group_edited": "Modifiche salvate",
+            "group_deleted": "Gruppo di calendari eliminato definitivamente",
+            "new_group_created": "Nuovo gruppo creato"
         },
         "share_calendar_url_note2": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL.<br/> Puoi trovare questi collegamenti anche con un clic destro del mouse sull'elenco dei calendari.",
         "share_calendar_url_note": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL.",
@@ -365,7 +368,25 @@
         "show_many": "Mostra tutto",
         "show_other": "Mostra tutti",
         "attendees": "Partecipanti",
-        "forward": "Inoltra"
+        "forward": "Inoltra",
+        "calendar_groups": "Gruppi di Calendari",
+        "create_group": "Crea nuovo gruppo",
+        "type_group_name_here": "Nome Gruppo",
+        "group_empty_calendars_list": "Non ci sono ancora calendari in questo gruppo. Scrivi i nomi dei calendari nell'input, poi clicca \"+\" per aggiungerli al gruppo.",
+        "calendar_selector": {
+            "placeholder": "Aggiungi Calendari"
+        },
+        "invalid_group_name": "Scrivi il nome del gruppo per salvare modifiche",
+        "calendars": "Calendari",
+        "newgroup": {
+            "note": "Questo gruppo apparirà nel tuo account personale.",
+            "calendars": "Calendari in questo gruppo"
+        },
+        "group_not_found": "Nessun gruppo trovato",
+        "editgroup": {
+            "calendars": "Calendari in questo gruppo"
+        },
+        "group_is_empty": "Questo gruppo è vuoto"
     },
     "action": {
         "send": "Invia",
@@ -389,7 +410,8 @@
         "download_ics": "Scarica ICS",
         "export_calendar_ics": "Esporta file .ICS",
         "answer": "Risposta",
-        "delete": "Elimina"
+        "delete": "Elimina",
+        "edit_group": "Modifica gruppo"
     },
     "button": {
         "customize_modal": "Personalizza"
@@ -420,6 +442,20 @@
             },
             "footer": {
                 "go_back": "Indietro"
+            },
+            "creategroup": {
+                "default_group_name": "Nuovo gruppo di calendari",
+                "title": "Crea un nuovo gruppo di calendari",
+                "footer": "Crea Gruppo"
+            },
+            "editgroup": {
+                "title": "Modifica gruppo di calendari",
+                "footer": "Salva modifiche"
+            },
+            "deletegroup": {
+                "confirm": "Elimina definitivamente",
+                "title": "Elimina gruppo definitivamente?",
+                "text": "Sei sicuro di voler eliminare definitivamente questo gruppo? Questa azione è irreversibile e non influenza i calendari individuali."
             }
         },
         "share_info": "Informazioni sulla condivisione"
@@ -755,6 +791,16 @@
     "appointment": {
         "virtualRoom": {
             "displayerLink": "Unisciti alla Stanza Virtuale"
+        }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Esiste già un gruppo con questo nome"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Esiste già un gruppo con questo nome"
+            }
         }
     }
 }
