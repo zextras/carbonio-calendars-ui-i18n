@@ -80,6 +80,9 @@
             },
             "restore": {
                 "footer": "Créer et restaurer"
+            },
+            "creategroup": {
+                "title": "Créer un nouveau groupe de calendriers"
             }
         },
         "share_info": "Partager l'information"
@@ -302,7 +305,10 @@
         "download_many": "Tout télécharger",
         "download_other": "Tout télécharger",
         "attendees": "Participants",
-        "forward": "Transférer"
+        "forward": "Transférer",
+        "calendar_groups": "Groupes de calendriers",
+        "create_group": "Créer un nouveau groupe",
+        "type_group_name_here": "Nom du groupe"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
