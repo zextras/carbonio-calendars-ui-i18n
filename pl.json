@@ -54,6 +54,15 @@
             },
             "restore": {
                 "footer": "Stwórz i przywróć"
+            },
+            "editgroup": {
+                "footer": "Zapisz zmiany",
+                "title": "Edytuj grupę kalendarzy"
+            },
+            "creategroup": {
+                "footer": "Stwórz grupę",
+                "title": "Stwórz nową grupę kalendarzy",
+                "default_group_name": "Nowa grupa kalendarzy"
             }
         },
         "share_info": "Udostępnij informacje"
@@ -267,7 +276,15 @@
         "show_few": "Pokaż wszystkie",
         "show_many": "Pokaż wszystkie",
         "attendees": "Uczestnicy",
-        "forward": "Przekaż dalej"
+        "forward": "Przekaż dalej",
+        "calendar_groups": "Grupy kalendarzy",
+        "create_group": "Stwórz nową grupę",
+        "type_group_name_here": "Nazwa grupy",
+        "group_empty_calendars_list": "W tej grupie nie ma jeszcze kalendarzy. Zacznij wpisywać kalendarze, a następnie kliknij \"+\", aby dodać je do grupy.",
+        "newgroup": {
+            "note": "Ta grupa pojawi się na Twoim koncie."
+        },
+        "group_not_found": "Nie znaleziono grupy"
     },
     "message": {
         "modal": {
@@ -316,7 +333,9 @@
             "all_link_copied": "Publiczny link został skopiowany",
             "all_att_added": "Załączniki zostały dodane",
             "series_deleted_no_notification": "Seria została przeniesiona do kosza.",
-            "shared_calendar_removed": "Kalendarz został usunięty"
+            "shared_calendar_removed": "Kalendarz został usunięty",
+            "group_edited": "Zmiany zostały zapisane",
+            "new_group_created": "Nowa grupa została stworzona"
         },
         "sure_to_delete_appointment_permanently": "Na pewno chcesz trwale usunąć to spotkanie?",
         "want_to_send_cancellation_msg": "Czy chcesz wysłać wiadomość dot. anulacji spotkania do uczestników?",
