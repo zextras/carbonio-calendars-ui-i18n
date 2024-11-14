@@ -21,7 +21,8 @@
         "save_to_preview": "إحفظ للمعاينة",
         "send_edit": "إرسال تحرير",
         "share_calendar": "مشاركة التقويم",
-        "answer": "الجواب"
+        "answer": "الجواب",
+        "edit_group": "تعديل المجموعة"
     },
     "composer": {
         "attachment": {
@@ -270,7 +271,25 @@
         "work_hour": "ساعات العمل",
         "work_week": "أسبوع العمل",
         "forward": "اعادة التوجيه",
-        "attendees": "الحضور"
+        "attendees": "الحضور",
+        "calendar_groups": "مجموعات التقويم",
+        "group_empty_calendars_list": "لا توجد تقاويم في هذه المجموعة حتى الآن. ابدأ بكتابة التقاويم في الإدخال، ثم انقر فوق \"+\" لإضافتها إلى المجموعة.",
+        "create_group": "إنشاء مجموعة جديدة",
+        "newgroup": {
+            "note": "ستظهر هذه المجموعة في حسابك الشخصي.",
+            "calendars": "التقاويم في هذه المجموعة"
+        },
+        "group_not_found": "لم يتم العثور على المجموعة",
+        "calendar_selector": {
+            "placeholder": "إضافة التقاويم"
+        },
+        "invalid_group_name": "اكتب اسم المجموعة لحفظ التغييرات",
+        "editgroup": {
+            "calendars": "التقاويم في هذه المجموعة"
+        },
+        "group_is_empty": "هذه المجموعة فارغة",
+        "calendars": "التقاويم",
+        "type_group_name_here": "اسم المجموعة"
     },
     "message": {
         "copy": "نسخ",
@@ -301,7 +320,10 @@
             "shared_calendar_removed": "تمت إزالة التقويم بنجاح",
             "appt_moved": "نُقل الموعد بنجاحٍ إلى",
             "appointment_permanently_deleted": "حُذف الموعد نهائيا",
-            "appointment_permanently_deleted_succesfully": "حُذف الموعد بنجاح"
+            "appointment_permanently_deleted_succesfully": "حُذف الموعد بنجاح",
+            "group_edited": "تم حفظ التعديلات",
+            "group_deleted": "تم حذف مجموعة التقويم نهائيًا",
+            "new_group_created": "تم إنشاء مجموعة جديدة"
         },
         "want_to_edit_modified_msg": "سيتم إخطار الحاضرين بالتغييرات عبر البريد الإلكتروني. هل ترغب في إضافة رسالة مخصصة؟",
         "sure_to_delete_appointment": "هل أنت متأكد من رغبتك في حذف الموعد؟",
@@ -402,7 +424,11 @@
         "proposed_time_accepted": "لقد قبلت الوقت المقترح",
         "invite": {
             "error": "خطأ"
-        }
+        },
+        "share_folder_success": "تمت مشاركة التقويم بنجاح",
+        "tag_applied": "تم تطبيق العلامة {{tag}}",
+        "tag_removed": "تمت إزالة العلامة {{tag}}",
+        "url_copied": "تم نسخ {{title}}"
     },
     "tooltip": {
         "folder_linked_status": "تمت مشاركتها معي",
@@ -497,6 +523,20 @@
                 "input": {
                     "filter": "تصفية التقويمات"
                 }
+            },
+            "creategroup": {
+                "footer": "إنشاء مجموعة",
+                "default_group_name": "مجموعة التقويم الجديدة",
+                "title": "إنشاء مجموعة تقويم جديدة"
+            },
+            "editgroup": {
+                "title": "تعديل مجموعة التقويم",
+                "footer": "حفظ التعديلات"
+            },
+            "deletegroup": {
+                "confirm": "الحذف بشكل نهائي",
+                "title": "هل تريد حذف المجموعة نهائيًا؟",
+                "text": "هل أنت متأكد أنك تريد حذف هذه المجموعة نهائيًا؟ لا يمكن التراجع عن هذا الإجراء ولا يؤثر على التقاويم الفردية."
             }
         },
         "share_info": "شارك المعلومات"
@@ -799,7 +839,21 @@
         "chennai_kolkata_mumbai_new_delhi": "{{value}} تشيناي ، كولكاتا ، مومباي ، نيودلهي",
         "chita": "{{value}} تشيتا",
         "darwin": "{{value}} داروين",
-        "kaliningrad_rtz_1": "{{value}} كالينينغراد (RTZ 1)"
+        "kaliningrad_rtz_1": "{{value}} كالينينغراد (RTZ 1)",
+        "abu_dhabi_muscat": "{{value}} أبو ظبي، مسقط",
+        "anadyr_petropavlovsk_kamchatsky_rtz11": "{{value}} أنادير، بتروبافلوفسك كامتشاتسكي (RTZ 11)",
+        "athens_beirut_bucharest_istanbul": "{{value}} أثينا، بيروت، بوخارست، اسطنبول",
+        "baja_california": "{{value}} باها كاليفورنيا",
+        "baku": "{{value}} باكو",
+        "alaska": "{{value}} ألاسكا",
+        "argentina": "{{value}} الأرجنتين",
+        "bangkok_hanoi_jakarta": "{{value}} بانكوك، هانوي، جاكرتا",
+        "beijing_chongqing_hong_kong_urumqi": "{{value}} بكين، تشونغتشينغ، هونغ كونغ، أورومتشي",
+        "amsterdam_berlin_bern_rome_stockholm_vienna": "{{value}} أمستردام، برلين، برن، روما، ستوكهولم، فيينا",
+        "arizona": "{{value}} أريزونا",
+        "atlantic_time_canada": "{{value}} التوقيت الأطلسي (كندا)",
+        "azores": "{{value}} جزر الأزور",
+        "asuncion": "{{value}} أسونسيون"
     },
     "previous_day": "اليوم السابق",
     "previous_month": "الشهر السابق",
@@ -818,5 +872,16 @@
     "share_invite_resent": "مشاركة دعوة إعادة الإرسال",
     "shared_folders": "التقاويم المشتركة",
     "shared_items": "العناصر المشتركة",
-    "shares_info": "معلومات المشاركة"
+    "shares_info": "معلومات المشاركة",
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "توجد مجموعة بنفس الاسم بالفعل"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "توجد مجموعة بنفس الاسم"
+            }
+        }
+    },
+    "success": "نجاح"
 }
