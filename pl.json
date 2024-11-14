@@ -21,7 +21,8 @@
         "export_calendar_ics": "Eksportuj plik ICS",
         "calendar_upload": "Importuj plik ICS",
         "answer": "Odpowiedz",
-        "delete": "Usuń"
+        "delete": "Usuń",
+        "edit_group": "Edytuj grupę"
     },
     "event": {
         "action": {
@@ -63,6 +64,11 @@
                 "footer": "Stwórz grupę",
                 "title": "Stwórz nową grupę kalendarzy",
                 "default_group_name": "Nowa grupa kalendarzy"
+            },
+            "deletegroup": {
+                "confirm": "Trwale usuń",
+                "title": "Trwale usunąć grupę?",
+                "text": "Czy na pewno chcesz trwale usunąć tę grupę? Tej czynności nie da się cofnąć i nie wpływa ona na indywidualne kalendarze."
             }
         },
         "share_info": "Udostępnij informacje"
@@ -282,9 +288,19 @@
         "type_group_name_here": "Nazwa grupy",
         "group_empty_calendars_list": "W tej grupie nie ma jeszcze kalendarzy. Zacznij wpisywać kalendarze, a następnie kliknij \"+\", aby dodać je do grupy.",
         "newgroup": {
-            "note": "Ta grupa pojawi się na Twoim koncie."
+            "note": "Ta grupa pojawi się na Twoim koncie.",
+            "calendars": "Kalendarze w tej grupie"
         },
-        "group_not_found": "Nie znaleziono grupy"
+        "group_not_found": "Nie znaleziono grupy",
+        "calendar_selector": {
+            "placeholder": "Dodaj kalendarze"
+        },
+        "group_is_empty": "Ta grupa jest pusta",
+        "calendars": "Kalendarze",
+        "editgroup": {
+            "calendars": "Kalendarze w tej grupie"
+        },
+        "invalid_group_name": "Wprowadź nazwę grupy, aby zapisać zmiany"
     },
     "message": {
         "modal": {
@@ -335,7 +351,8 @@
             "series_deleted_no_notification": "Seria została przeniesiona do kosza.",
             "shared_calendar_removed": "Kalendarz został usunięty",
             "group_edited": "Zmiany zostały zapisane",
-            "new_group_created": "Nowa grupa została stworzona"
+            "new_group_created": "Nowa grupa została stworzona",
+            "group_deleted": "Grupa kalendarzy została trwale usunięta"
         },
         "sure_to_delete_appointment_permanently": "Na pewno chcesz trwale usunąć to spotkanie?",
         "want_to_send_cancellation_msg": "Czy chcesz wysłać wiadomość dot. anulacji spotkania do uczestników?",
@@ -774,6 +791,16 @@
     "appointment": {
         "virtualRoom": {
             "displayerLink": "Dołącz do wirtualnego pokoju"
+        }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Grupa z taką samą nazwą już istnieje"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Grupa z tą samą nazwą już istnieje"
+            }
         }
     }
 }
