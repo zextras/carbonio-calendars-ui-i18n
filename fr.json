@@ -21,7 +21,8 @@
         "calendar_upload": "Importer un fichier ICS",
         "export_calendar_ics": "Exporter le fichier ICS",
         "answer": "Réponse",
-        "delete": "Supprimer"
+        "delete": "Supprimer",
+        "edit_group": "Modifier le groupe"
     },
     "add": "Ajouter",
     "administer": "Administrer",
@@ -82,7 +83,18 @@
                 "footer": "Créer et restaurer"
             },
             "creategroup": {
-                "title": "Créer un nouveau groupe de calendriers"
+                "title": "Créer un nouveau groupe de calendriers",
+                "default_group_name": "Nouveau groupe de calendriers",
+                "footer": "Créer un groupe"
+            },
+            "deletegroup": {
+                "confirm": "Supprimer définitivement",
+                "title": "Supprimer le groupe définitivement ?",
+                "text": "Êtes-vous sûr de vouloir supprimer définitivement ce groupe ? Cette action est irréversible et n'affecte pas les calendriers individuels."
+            },
+            "editgroup": {
+                "footer": "Enregistrer les modifications",
+                "title": "Modifier le groupe de calendriers"
             }
         },
         "share_info": "Partager l'information"
@@ -308,7 +320,22 @@
         "forward": "Transférer",
         "calendar_groups": "Groupes de calendriers",
         "create_group": "Créer un nouveau groupe",
-        "type_group_name_here": "Nom du groupe"
+        "type_group_name_here": "Nom du groupe",
+        "newgroup": {
+            "note": "Ce groupe apparaîtra dans votre compte personnel.",
+            "calendars": "Calendriers dans ce groupe"
+        },
+        "group_not_found": "Le groupe n'a pas été trouvé",
+        "calendar_selector": {
+            "placeholder": "Ajouter des calendriers"
+        },
+        "calendars": "Calendriers",
+        "invalid_group_name": "Entrez un nom de groupe pour enregistrer les modifications",
+        "group_empty_calendars_list": "Il n'y a pas encore de calendrier dans ce groupe. Commencez à saisir les calendriers dans la zone de saisie, puis cliquez sur « + » pour les ajouter au groupe.",
+        "editgroup": {
+            "calendars": "Calendriers dans ce groupe"
+        },
+        "group_is_empty": "Ce groupe est vide"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -345,7 +372,10 @@
             "all_link_copied": "Le lien public a été copié avec succès",
             "all_att_added": "Les pièces jointes ont été ajoutées avec succès",
             "series_deleted_no_notification": "La série a été déplacée à la corbeille.",
-            "shared_calendar_removed": "Calendrier enlevé avec succès"
+            "shared_calendar_removed": "Calendrier enlevé avec succès",
+            "new_group_created": "Le nouveau groupe a été crée",
+            "group_edited": "Les modifications ont été enregistrées",
+            "group_deleted": "Le groupe de calendriers a été supprimé définitivement"
         },
         "somebody_is_organizer": "<strong>{{somebody}}</strong> est l'organisateur",
         "sure_to_delete_all_occurences_appointment": "Êtes-vous sûr de vouloir supprimer toutes les occurrences de ce rendez-vous ?",
@@ -761,6 +791,16 @@
     "appointment": {
         "virtualRoom": {
             "displayerLink": "Rejoindre la salle virtuelle"
+        }
+    },
+    "api": {
+        "error": {
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Il existe déjà un groupe portant ce nom"
+            },
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Il existe déjà un groupe portant ce nom"
+            }
         }
     }
 }
