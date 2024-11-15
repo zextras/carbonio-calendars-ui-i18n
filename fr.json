@@ -802,5 +802,20 @@
                 "group_name_already_exists": "Il existe déjà un groupe portant ce nom"
             }
         }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "hide": "MASQUER L'OUTIL DE PLANIFICATION",
+                "show": "AFFICHER L'OUTIL DE PLANIFICATION"
+            }
+        }
+    },
+    "daily_planner": {
+        "end_time": "Heure de fin",
+        "free": "Libre",
+        "tentative": "Tentative",
+        "start_time": "Heure de début",
+        "busy": "Occupé"
     }
 }
