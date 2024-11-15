@@ -779,5 +779,27 @@
                 "group_name_already_exists": "A group with the same name already exists"
             }
         }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "show": "SHOW ORGANIZER TOOL",
+                "hide": "HIDE ORGANIZER TOOL"
+            }
+        }
+    },
+    "daily_planner": {
+        "free": "Free",
+        "non-working": "Non-working",
+        "end_time": "End time",
+        "start_time": "Start time",
+        "busy": "Busy",
+        "tentative": "Tentative",
+        "out-of-office": "Out of office",
+        "unknown": "Unknown",
+        "participant": {
+            "organizer": "Organizer",
+            "attendee": "Attendee"
+        }
     }
 }
