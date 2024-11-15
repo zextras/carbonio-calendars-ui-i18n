@@ -802,5 +802,27 @@
                 "group_name_already_exists": "Esiste già un gruppo con questo nome"
             }
         }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "show": "MOSTRA STRUMENTO ORGANIZZATORE",
+                "hide": "NASCONDI STRUMENTO ORGANIZZATORE"
+            }
+        }
+    },
+    "daily_planner": {
+        "start_time": "Orario di inizio",
+        "non-working": "Non lavorativo",
+        "end_time": "Orario di fine",
+        "free": "Libero",
+        "busy": "Occupato",
+        "tentative": "Provvisorio",
+        "out-of-office": "Fuori ufficio",
+        "participant": {
+            "organizer": "Organizzatore",
+            "attendee": "Partecipante"
+        },
+        "unknown": "Sconosciuto"
     }
 }
