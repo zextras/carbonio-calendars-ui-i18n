@@ -821,8 +821,15 @@
         "out-of-office": "Fuori ufficio",
         "participant": {
             "organizer": "Organizzatore",
-            "attendee": "Partecipante"
+            "attendee": "Partecipante",
+            "meetingRoom": "Sala riunioni",
+            "unknown": "Sconosciuto",
+            "equipment": "Attrezzatura",
+            "optionalAttendee": "Opzionale"
         },
-        "unknown": "Sconosciuto"
+        "unknown": "Sconosciuto",
+        "status": "Stato",
+        "from": "dalle",
+        "to": "alle"
     }
 }
