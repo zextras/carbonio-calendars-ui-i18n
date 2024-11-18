@@ -816,6 +816,20 @@
         "free": "Libre",
         "tentative": "Tentative",
         "start_time": "Heure de début",
-        "busy": "Occupé"
+        "busy": "Occupé",
+        "non-working": "hors travail",
+        "out-of-office": "Hors bureau",
+        "unknown": "Inconnu",
+        "participant": {
+            "organizer": "Organisateur",
+            "attendee": "Participant",
+            "equipment": "Équipement",
+            "unknown": "Unconnu",
+            "meetingRoom": "Salle de réunion",
+            "optionalAttendee": "Optionnel"
+        },
+        "to": "à",
+        "status": "Statut",
+        "from": "de"
     }
 }
