@@ -799,7 +799,14 @@
         "unknown": "Unknown",
         "participant": {
             "organizer": "Organizer",
-            "attendee": "Attendee"
-        }
+            "attendee": "Attendee",
+            "meetingRoom": "Meeting room",
+            "equipment": "Equipment",
+            "unknown": "Unknown",
+            "optionalAttendee": "Optional"
+        },
+        "status": "Status",
+        "from": "from",
+        "to": "to"
     }
 }
