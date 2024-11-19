@@ -802,5 +802,34 @@
                 "group_name_already_exists": "Grupa z tą samą nazwą już istnieje"
             }
         }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "show": "POKAŻ PLANER",
+                "hide": "UKRYJ PLANER"
+            }
+        }
+    },
+    "daily_planner": {
+        "free": "Wolny",
+        "busy": "Zajęty",
+        "tentative": "Niepewne",
+        "out-of-office": "Poza biurem",
+        "non-working": "Nie pracuje",
+        "unknown": "Nie wiadomo",
+        "participant": {
+            "organizer": "Organizator",
+            "attendee": "Uczestnik",
+            "equipment": "Ekwipunek",
+            "unknown": "Nie wiadomo",
+            "optionalAttendee": "Opcjonalny",
+            "meetingRoom": "Pokój spotkań"
+        },
+        "status": "Status",
+        "to": "do",
+        "end_time": "Czas zakończenia",
+        "from": "od",
+        "start_time": "Czas rozpoczęcia"
     }
 }
