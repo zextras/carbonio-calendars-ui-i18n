@@ -206,7 +206,25 @@
         "show_one": "Exibir",
         "show_many": "Exibir tudo",
         "show_other": "Exibir tudo",
-        "forward": "Encaminhar"
+        "forward": "Encaminhar",
+        "calendar_groups": "Grupos de Calendários",
+        "create_group": "Criar novo grupo",
+        "type_group_name_here": "Nome do Grupo",
+        "calendar_selector": {
+            "placeholder": "Adicionar Calendário"
+        },
+        "newgroup": {
+            "calendars": "Calendários neste grupo",
+            "note": "Este grupo aparecerá na sua conta pessoal."
+        },
+        "invalid_group_name": "Digite o nome do grupo para salvar as alterações",
+        "group_is_empty": "Este grupo está vazio",
+        "calendars": "Calendários",
+        "editgroup": {
+            "calendars": "Calendário neste grupo"
+        },
+        "group_not_found": "Grupo não localizado",
+        "group_empty_calendars_list": "Ainda não há calendários neste grupo. Comece a digitar os calendários no campo e clique em “+” para adicioná-los ao grupo."
     },
     "action": {
         "send": "Enviar",
@@ -230,7 +248,8 @@
         "download_ics": "Baixar ICS",
         "export_calendar_ics": "Exportar arquivo ICS",
         "answer": "Responder",
-        "delete": "Excluir"
+        "delete": "Excluir",
+        "edit_group": "Editar grupo"
     },
     "event": {
         "action": {
@@ -263,6 +282,20 @@
             },
             "footer": {
                 "go_back": "Voltar"
+            },
+            "creategroup": {
+                "title": "Criar novo Grupo de Calendário",
+                "footer": "Criar Grupo",
+                "default_group_name": "Novo Grupo de Calendário"
+            },
+            "editgroup": {
+                "footer": "Salvar alterações",
+                "title": "Editar Grupo de Calendário"
+            },
+            "deletegroup": {
+                "title": "Excluir este grupo permanentemente?",
+                "text": "Tem certeza de que deseja excluir este grupo permanentemente? Esta ação é irreversível e não afeta calendários individuais.",
+                "confirm": "Excluir permanentemente"
             }
         },
         "share_info": "Compartilhar informações"
@@ -308,7 +341,10 @@
             "all_link_copied": "Link público copiado para a área de transferência",
             "all_att_added": "Anexos adicionados com sucesso",
             "series_deleted_no_notification": "A série foi movida para a lixeira.",
-            "shared_calendar_removed": "Calendário removido corretamente"
+            "shared_calendar_removed": "Calendário removido corretamente",
+            "group_edited": "Alterações armazenadas",
+            "new_group_created": "Novo grupo criado",
+            "group_deleted": "Grupo de calendário excluído permanentemente"
         },
         "share_calendar_url_note2": "Apenas seus colaboradores podem acessar seus dados usando essas URLs.<br/>Também é possível encontrar esses links clicando com o botão direito em sua lista de calendários.",
         "delete_all_occurences": "Excluir todas as ocorrências",
@@ -756,5 +792,44 @@
         "virtualRoom": {
             "displayerLink": "Participe da sala virtual"
         }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Já existe um grupo com o mesmo nome"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Já existe um grupo com o mesmo nome"
+            }
+        }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "show": "MOSTRAR FERRAMENTA DE ORGANIZAÇÃO",
+                "hide": "OCULTAR FERRAMENTA DE ORGANIZAÇÃO"
+            }
+        }
+    },
+    "daily_planner": {
+        "start_time": "Hora de início",
+        "free": "Livre",
+        "busy": "Ocupado",
+        "tentative": "Tentativa",
+        "out-of-office": "Fora do escritório",
+        "non-working": "Não trabalhando",
+        "unknown": "Desconhecido",
+        "participant": {
+            "organizer": "Organizador",
+            "attendee": "Participante",
+            "equipment": "Equipamento",
+            "optionalAttendee": "Opcional",
+            "unknown": "Desconhecido",
+            "meetingRoom": "Sala de reunião"
+        },
+        "status": "Status",
+        "from": "de",
+        "to": "às",
+        "end_time": "Hora de término"
     }
 }
