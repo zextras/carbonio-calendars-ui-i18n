@@ -206,7 +206,9 @@
         "show_many": "Mostrar todos",
         "show_other": "Mostrar todos",
         "show_event": "Doble clic para ver más detalles en Calendars",
-        "forward": "Reenviar"
+        "forward": "Reenviar",
+        "create_group": "Crear un nuevo grupo",
+        "calendars": "Calendarios"
     },
     "action": {
         "send": "Enviar",
@@ -230,7 +232,8 @@
         "calendar_upload": "Importar archivo ICS",
         "download_ics": "Descargar ICS",
         "export_calendar_ics": "Exportar archivo ICS",
-        "answer": "Respuesta"
+        "answer": "Respuesta",
+        "edit_group": "Editar grupo"
     },
     "event": {
         "action": {
@@ -272,6 +275,9 @@
             "new": {
                 "duplicate_warning": "Ya existe un calendario con el mismo nombre",
                 "title2": "Creación de nuevo calendario"
+            },
+            "creategroup": {
+                "footer": "Nuevo grupo"
             }
         },
         "share_info": "Compartir información"
@@ -739,7 +745,7 @@
     "next_month": "Mes siguiente",
     "modal": {
         "initializeError": {
-            "title": "¡Vaya! Algo salió mal",
+            "title": "Algo salió mal",
             "content": "Por favor, recarga la página o prueba de nuevo más tarde",
             "buttonConfirm": "RECARGAR"
         },
@@ -751,5 +757,14 @@
             "placeholder": "Añadir asistentes nuevos",
             "title": "Reenviar cita"
         }
+    },
+    "daily_planner": {
+        "non-working": "No laborable",
+        "participant": {
+            "organizer": "Organizador",
+            "equipment": "Recuros",
+            "meetingRoom": "Sala de reunión"
+        },
+        "status": "Estado"
     }
 }
