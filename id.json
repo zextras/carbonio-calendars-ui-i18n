@@ -21,7 +21,8 @@
         "answer": "Jawab",
         "calendar_upload": "Impor file ICS",
         "download_ics": "Unduh ICS",
-        "export_calendar_ics": "Ekspor file ICS"
+        "export_calendar_ics": "Ekspor file ICS",
+        "edit_group": "Edit grup"
     },
     "label": {
         "busy": "Sibuk",
@@ -212,7 +213,10 @@
         "download_other": "Unduh semua",
         "optional_other": "Opsional",
         "show_other": "Tampilkan semua",
-        "forward": "Teruskan"
+        "forward": "Teruskan",
+        "create_group": "Buat grup baru",
+        "type_group_name_here": "Nama Kelompok",
+        "calendars": "Kalender"
     },
     "calendar": {
         "modal": {
@@ -252,6 +256,15 @@
             },
             "footer": {
                 "go_back": "Kembali"
+            },
+            "creategroup": {
+                "footer": "Buat Grup"
+            },
+            "editgroup": {
+                "footer": "Simpan perubahan"
+            },
+            "deletegroup": {
+                "confirm": "Hapus secara permanen"
             }
         },
         "share_info": "Bagikan Info"
@@ -295,7 +308,8 @@
             "all_link_copied": "Tautan publik berhasil disalin",
             "all_att_added": "Lampiran berhasil ditambahkan",
             "series_deleted_no_notification": "Seri dipindahkan ke tempat sampah.",
-            "shared_calendar_removed": "Kalender berhasil dihapus"
+            "shared_calendar_removed": "Kalender berhasil dihapus",
+            "group_edited": "Perubahan disimpan"
         },
         "invite_has_no_message": "Undangan ini tidak berisi pesan teks",
         "invited_you": "mengundang Anda ke acara",
@@ -685,7 +699,7 @@
     "timezones": "Zona waktu",
     "modal": {
         "initializeError": {
-            "title": "Ups!…Ada yang salah",
+            "title": "Ada yang salah",
             "content": "Muat ulang halaman atau coba lagi nanti",
             "buttonConfirm": "MUAT ULANG"
         },
@@ -697,5 +711,20 @@
         "buttonLabel": {
             "forward": "TERUSKAN"
         }
+    },
+    "daily_planner": {
+        "end_time": "Waktu akhir",
+        "start_time": "Waktu mulai",
+        "free": "Senggang",
+        "busy": "Sibuk",
+        "tentative": "Bisa berubah",
+        "out-of-office": "Di luar kantor",
+        "unknown": "Tidak dikenal",
+        "participant": {
+            "organizer": "Penyelenggara",
+            "meetingRoom": "Ruang rapat",
+            "equipment": "Peralatan"
+        },
+        "status": "Status"
     }
 }
