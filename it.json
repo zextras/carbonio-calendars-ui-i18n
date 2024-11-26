@@ -822,7 +822,7 @@
         "participant": {
             "organizer": "Organizzatore",
             "attendee": "Partecipante",
-            "meetingRoom": "Sala riunioni",
+            "meetingRoom": "Sala Riunioni",
             "unknown": "Sconosciuto",
             "equipment": "Attrezzatura",
             "optionalAttendee": "Opzionale"
