@@ -800,7 +800,7 @@
         "participant": {
             "organizer": "Organizer",
             "attendee": "Attendee",
-            "meetingRoom": "Meeting room",
+            "meetingRoom": "Meeting Room",
             "equipment": "Equipment",
             "unknown": "Unknown",
             "optionalAttendee": "Optional"
