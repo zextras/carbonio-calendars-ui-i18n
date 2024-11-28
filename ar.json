@@ -883,5 +883,33 @@
             }
         }
     },
-    "success": "نجاح"
+    "success": "نجاح",
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "show": "عرض أداة المنظم",
+                "hide": "إخفاء أداة المنظم"
+            }
+        }
+    },
+    "daily_planner": {
+        "free": "شاغِر",
+        "end_time": "النهاية",
+        "start_time": "البداية",
+        "busy": "مَشْغُول",
+        "tentative": "متردد",
+        "out-of-office": "خارج المكتب",
+        "unknown": "مجهول",
+        "status": "الحالة",
+        "participant": {
+            "attendee": "حاضر",
+            "meetingRoom": "غرفة الاجتماعات",
+            "equipment": "مُعَدَّات",
+            "unknown": "مجهول",
+            "optionalAttendee": "اختياري",
+            "organizer": "منظم"
+        },
+        "from": "من",
+        "to": "إلى"
+    }
 }
