@@ -783,7 +783,7 @@
     "editor": {
         "daily_planner": {
             "button": {
-                "show": "SHOW ORGANIZER TOOL",
+                "show": "SHOW ORGANIZER",
                 "hide": "HIDE ORGANIZER TOOL"
             }
         }
