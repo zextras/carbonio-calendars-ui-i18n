@@ -806,8 +806,8 @@
     "editor": {
         "daily_planner": {
             "button": {
-                "show": "MOSTRA STRUMENTO ORGANIZZATORE",
-                "hide": "NASCONDI STRUMENTO ORGANIZZATORE"
+                "show": "MOSTRA ORGANIZZATORE",
+                "hide": "NASCONDI ORGANIZZATORE"
             }
         }
     },
@@ -817,7 +817,7 @@
         "end_time": "Orario di fine",
         "free": "Libero",
         "busy": "Occupato",
-        "tentative": "Provvisorio",
+        "tentative": "Forse",
         "out-of-office": "Fuori ufficio",
         "participant": {
             "organizer": "Organizzatore",
