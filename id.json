@@ -773,8 +773,8 @@
     "editor": {
         "daily_planner": {
             "button": {
-                "hide": "SEMBUNYIKAN ALAT PENYELENGGARA",
-                "show": "TAMPILKAN ALAT PENYELENGGARA"
+                "hide": "SEMBUNYIKAN PENYELENGGARA",
+                "show": "TAMPILKAN PENYELENGGARA"
             }
         }
     }
