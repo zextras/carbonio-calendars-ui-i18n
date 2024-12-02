@@ -208,7 +208,23 @@
         "show_event": "Doble clic para ver más detalles en Calendars",
         "forward": "Reenviar",
         "create_group": "Crear un nuevo grupo",
-        "calendars": "Calendarios"
+        "calendars": "Calendarios",
+        "calendar_groups": "Grupos de Calendar",
+        "type_group_name_here": "Nombre del grupo",
+        "newgroup": {
+            "note": "Este grupo aparecerá en tu cuenta personal.",
+            "calendars": "Calendarios en este grupo"
+        },
+        "group_not_found": "Grupo no encontrado",
+        "calendar_selector": {
+            "placeholder": "Añadir Calendarios"
+        },
+        "editgroup": {
+            "calendars": "Calendarios en este grupo"
+        },
+        "invalid_group_name": "Introduce el nombre de un grupo para guardar los cambios",
+        "group_is_empty": "El grupo está vació",
+        "group_empty_calendars_list": "No hay calendarios en este grupo aún. Empieza a introducir los calendarios en la entrada, luego haz clic en \"+\" para añadirlos al grupo."
     },
     "action": {
         "send": "Enviar",
@@ -277,7 +293,18 @@
                 "title2": "Creación de nuevo calendario"
             },
             "creategroup": {
-                "footer": "Nuevo grupo"
+                "footer": "Nuevo grupo",
+                "title": "Crear una nueva reunión de Calendar",
+                "default_group_name": "Nuevo Grupo de Calendar"
+            },
+            "editgroup": {
+                "title": "Editar Grupo de Calendar",
+                "footer": "Guardar cambios"
+            },
+            "deletegroup": {
+                "confirm": "Borrar permanentemente",
+                "title": "¿Borrar grupo permanentemente?",
+                "text": "¿Seguro que quieres borrar este grupo permanentemente? Esta acción es irreversible y no afecta a los calendarios individuales."
             }
         },
         "share_info": "Compartir información"
@@ -501,7 +528,10 @@
             "all_link_copied": "El enlace público ha sido copiado al portapapeles",
             "all_att_added": "Los adjuntos han sido añadidos",
             "series_deleted_no_notification": "Serie movida a la papelera.",
-            "shared_calendar_removed": "Calendario eliminado con éxito"
+            "shared_calendar_removed": "Calendario eliminado con éxito",
+            "group_edited": "Cambios guardados",
+            "new_group_created": "Grupo nuevo creado",
+            "group_deleted": "Grupo de calendario borrado permanentemente"
         },
         "invite_has_no_message": "Esta invitación no contiene mensaje de texto",
         "invited_you": "te ha invitado a un evento",
@@ -763,8 +793,43 @@
         "participant": {
             "organizer": "Organizador",
             "equipment": "Recuros",
-            "meetingRoom": "Sala de reunión"
+            "meetingRoom": "Sala de reunión",
+            "attendee": "Asistente",
+            "unknown": "Desconocido",
+            "optionalAttendee": "Opcional"
         },
-        "status": "Estado"
+        "status": "Estado",
+        "free": "Libre",
+        "end_time": "Hora de finalización",
+        "start_time": "Hora de inicio",
+        "busy": "Ocupado",
+        "tentative": "Tentativa",
+        "out-of-office": "Fuera de la oficina",
+        "unknown": "Desconocido",
+        "from": "de",
+        "to": "para"
+    },
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "Unirse a la sala virtual"
+        }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Ya existe un grupo con ese nombre"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Ya existe un grupo con ese mismo nombre"
+            }
+        }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "hide": "OCULTAR ORGANIZADOR",
+                "show": "MOSTRAR ORGANIZADOR"
+            }
+        }
     }
 }
