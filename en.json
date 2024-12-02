@@ -784,7 +784,7 @@
         "daily_planner": {
             "button": {
                 "show": "SHOW ORGANIZER",
-                "hide": "HIDE ORGANIZER TOOL"
+                "hide": "HIDE ORGANIZER"
             }
         }
     },
