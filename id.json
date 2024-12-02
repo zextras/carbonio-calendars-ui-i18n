@@ -216,7 +216,22 @@
         "forward": "Teruskan",
         "create_group": "Buat grup baru",
         "type_group_name_here": "Nama Kelompok",
-        "calendars": "Kalender"
+        "calendars": "Kalender",
+        "calendar_groups": "Grup Kalender",
+        "newgroup": {
+            "note": "Grup ini akan muncul di akun pribadi Anda.",
+            "calendars": "Kalender di grup ini"
+        },
+        "group_empty_calendars_list": "Belum ada kalender di grup ini. Mulailah mengetik kalender di input, lalu klik “+” untuk menambahkannya ke dalam grup.",
+        "group_not_found": "Grup tidak ditemukan",
+        "calendar_selector": {
+            "placeholder": "Tambahkan Kalender"
+        },
+        "editgroup": {
+            "calendars": "Kalender di grup ini"
+        },
+        "invalid_group_name": "Ketik nama grup untuk menyimpan perubahan",
+        "group_is_empty": "Grup ini kosong"
     },
     "calendar": {
         "modal": {
@@ -258,13 +273,18 @@
                 "go_back": "Kembali"
             },
             "creategroup": {
-                "footer": "Buat Grup"
+                "footer": "Buat Grup",
+                "title": "Buat Grup Kalender baru",
+                "default_group_name": "Grup Kalender Baru"
             },
             "editgroup": {
-                "footer": "Simpan perubahan"
+                "footer": "Simpan perubahan",
+                "title": "Edit Grup Kalender"
             },
             "deletegroup": {
-                "confirm": "Hapus secara permanen"
+                "confirm": "Hapus secara permanen",
+                "title": "Hapus grup secara permanen?",
+                "text": "Anda yakin ingin menghapus grup ini secara permanen? Tindakan ini tidak dapat dibatalkan dan tidak memengaruhi kalender individu."
             }
         },
         "share_info": "Bagikan Info"
@@ -309,7 +329,9 @@
             "all_att_added": "Lampiran berhasil ditambahkan",
             "series_deleted_no_notification": "Seri dipindahkan ke tempat sampah.",
             "shared_calendar_removed": "Kalender berhasil dihapus",
-            "group_edited": "Perubahan disimpan"
+            "group_edited": "Perubahan disimpan",
+            "new_group_created": "Grup baru dibuat",
+            "group_deleted": "Grup kalender dihapus secara permanen"
         },
         "invite_has_no_message": "Undangan ini tidak berisi pesan teks",
         "invited_you": "mengundang Anda ke acara",
@@ -700,7 +722,7 @@
     "modal": {
         "initializeError": {
             "title": "Ada yang salah",
-            "content": "Muat ulang halaman atau coba lagi nanti",
+            "content": "Segarkan halaman atau coba lagi nanti. Modul lain mungkin masih tersedia dengan fungsionalitas terbatas.",
             "buttonConfirm": "MUAT ULANG"
         },
         "forwardAppointment": {
@@ -722,9 +744,38 @@
         "unknown": "Tidak dikenal",
         "participant": {
             "organizer": "Penyelenggara",
-            "meetingRoom": "Ruang rapat",
-            "equipment": "Peralatan"
+            "meetingRoom": "Ruang Rapat",
+            "equipment": "Peralatan",
+            "attendee": "Peserta",
+            "optionalAttendee": "Opsional",
+            "unknown": "Tidak diketahui"
         },
-        "status": "Status"
+        "status": "Status",
+        "non-working": "Bukan jam kerja",
+        "from": "dari",
+        "to": "hingga"
+    },
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "Gabung ke ruang virtual"
+        }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Grup dengan nama yang sama sudah ada"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Grup dengan nama yang sama sudah ada"
+            }
+        }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "hide": "SEMBUNYIKAN ALAT PENYELENGGARA",
+                "show": "TAMPILKAN ALAT PENYELENGGARA"
+            }
+        }
     }
 }
