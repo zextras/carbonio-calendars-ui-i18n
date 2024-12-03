@@ -806,8 +806,8 @@
     "editor": {
         "daily_planner": {
             "button": {
-                "show": "MOSTRAR FERRAMENTA DE ORGANIZAÇÃO",
-                "hide": "OCULTAR FERRAMENTA DE ORGANIZAÇÃO"
+                "show": "MOSTRAR ORGANIZADOR",
+                "hide": "OCULTAR ORGANIZADOR"
             }
         }
     },
@@ -825,7 +825,7 @@
             "equipment": "Equipamento",
             "optionalAttendee": "Opcional",
             "unknown": "Desconhecido",
-            "meetingRoom": "Sala de reunião"
+            "meetingRoom": "Sala de Reunião"
         },
         "status": "Status",
         "from": "de",
