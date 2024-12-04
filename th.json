@@ -204,7 +204,25 @@
         "meeting_room": "ห้องประชุม",
         "optional_other": "ตัวเลือก",
         "show_other": "แสดงทั้งหมด",
-        "forward": "ส่งต่อ"
+        "forward": "ส่งต่อ",
+        "calendar_groups": "ปฏิทินกลุ่ม",
+        "create_group": "สร้างกลุ่มใหม่",
+        "type_group_name_here": "ชื่อกลุ่ม",
+        "newgroup": {
+            "note": "กลุ่มนี้จะปรากฏในบัญชีส่วนตัวของคุณ",
+            "calendars": "ปฏิทินในกลุ่มนี้"
+        },
+        "group_empty_calendars_list": "ยังไม่มีปฏิทินในกลุ่มนี้ เริ่มพิมพ์ปฏิทินในช่องป้อนข้อมูล จากนั้นคลิก \"+\" เพื่อเพิ่มปฏิทินลงในกลุ่ม",
+        "group_not_found": "ไม่พบกลุ่ม",
+        "calendar_selector": {
+            "placeholder": "เพิ่มปฏิทิน"
+        },
+        "editgroup": {
+            "calendars": "ปฏิทินในกลุ่มนี้"
+        },
+        "invalid_group_name": "พิมพ์ชื่อกลุ่มเพื่อบันทึกการเปลี่ยนแปลง",
+        "group_is_empty": "กลุ่มนี้ว่างเปล่า",
+        "calendars": "ปฏิทิน"
     },
     "calendar": {
         "modal": {
@@ -235,7 +253,8 @@
         "export_calendar_ics": "ส่งออกไฟล์ ICS",
         "calendar_upload": "นำเข้าไฟล์ ICS",
         "download_ics": "ดาวน์โหลด ICS",
-        "answer": "ตอบ"
+        "answer": "ตอบ",
+        "edit_group": "แก้ไขกลุ่ม"
     },
     "event": {
         "action": {
@@ -319,6 +338,20 @@
             },
             "footer": {
                 "go_back": "ย้อนกลับ"
+            },
+            "creategroup": {
+                "footer": "สร้างกลุ่ม",
+                "default_group_name": "ปฏิทินกลุ่มใหม่",
+                "title": "สร้างปฏิทินกลุ่มใหม่"
+            },
+            "editgroup": {
+                "title": "แก้ไขปฏิทินกลุ่ม",
+                "footer": "บันทึกการเปลี่ยนแปลง"
+            },
+            "deletegroup": {
+                "title": "ลบกลุ่มอย่างถาวร?",
+                "confirm": "ลบอย่างถาวร",
+                "text": "คุณแน่ใจหรือไม่ว่าต้องการลบกลุ่มนี้อย่างถาวร? การดําเนินการนี้ไม่สามารถย้อนกลับได้และไม่ส่งผลต่อปฏิทินอื่น ๆ"
             }
         },
         "share_info": "แชร์ข้อมูล"
@@ -446,7 +479,10 @@
             "all_link_copied": "คัดลอกลิงก์สาธารณะเรียบร้อยแล้ว",
             "all_att_added": "เพิ่มไฟล์แนบเรียบร้อยแล้ว",
             "series_deleted_no_notification": "ซีรีส์ย้ายไปถังขยะแล้ว",
-            "shared_calendar_removed": "ลบปฏิทินเรียบร้อยแล้ว"
+            "shared_calendar_removed": "ลบปฏิทินเรียบร้อยแล้ว",
+            "group_edited": "บันทึกการเปลี่ยนแปลงแล้ว",
+            "new_group_created": "สร้างกลุ่มใหม่แล้ว",
+            "group_deleted": "ปฏิทินกลุ่มถูกลบอย่างถาวรแล้ว"
         },
         "share_calendar_url_note2": "ผู้ร่วมงานของคุณเท่านั้นที่จะสามารถเข้าถึงข้อมูลของคุณโดยใช้ URL เหล่านี้ <br/> คุณสามารถค้นหาลิงก์เหล่านั้นได้ด้วยการคลิกขวาที่รายการปฏิทินของคุณ",
         "delete_all_occurences": "ลบเหตุการณ์ทั้งหมด",
@@ -685,9 +721,9 @@
     "public": "สาธารณะ",
     "modal": {
         "initializeError": {
-            "title": "อุ๊ย!…มีบางอย่างผิดพลาด",
+            "title": "มีบางอย่างผิดพลาด",
             "buttonConfirm": "โหลดซ้ำ",
-            "content": "โปรดโหลดหน้าเพจนี้ใหม่หรือลองอีกครั้งในภายหลัง"
+            "content": "โปรดรีเฟรชหน้าเพจหรือลองอีกครั้งในภายหลัง โมดูลอื่น ๆ อาจยังใช้งานได้ในฟังก์ชันที่จำกัด"
         },
         "forwardAppointment": {
             "content": "คุณกำลังส่งต่อการนัดหมายนี้ไปยังผู้เข้าร่วมประชุมอย่างน้อยหนึ่งคนหรือมากกว่าหนึ่งคน ซึ่งพวกเขาจะได้รับคำเชิญให้เข้าร่วมประชุม",
@@ -696,6 +732,50 @@
         },
         "buttonLabel": {
             "forward": "ส่งต่อ"
+        }
+    },
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "เข้าร่วมห้องเสมือนจริง"
+        }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "มีกลุ่มที่มีชื่อเดียวกันอยู่แล้ว"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "มีกลุ่มที่มีชื่อเดียวกันอยู่แล้ว"
+            }
+        }
+    },
+    "daily_planner": {
+        "end_time": "เวลาสิ้นสุด",
+        "start_time": "เวลาเริ่มต้น",
+        "free": "ว่าง",
+        "busy": "ไม่ว่าง",
+        "tentative": "ไม่แน่นอน",
+        "out-of-office": "ไม่อยู่",
+        "non-working": "ไม่ได้ทำงาน",
+        "unknown": "ไม่ทราบ",
+        "participant": {
+            "organizer": "ผู้จัดงาน",
+            "attendee": "ผู้เข้าร่วม",
+            "meetingRoom": "ห้องประชุม",
+            "equipment": "อุปกรณ์",
+            "optionalAttendee": "ไม่จำเป็น",
+            "unknown": "ไม่ทราบ"
+        },
+        "status": "สถานะ",
+        "from": "ตั้งแต่",
+        "to": "ถึง"
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "hide": "ซ่อนผู้จัดงาน",
+                "show": "แสดงผู้จัดงาน"
+            }
         }
     }
 }
