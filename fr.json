@@ -806,8 +806,8 @@
     "editor": {
         "daily_planner": {
             "button": {
-                "hide": "MASQUER L'OUTIL DE PLANIFICATION",
-                "show": "AFFICHER L'OUTIL DE PLANIFICATION"
+                "hide": "MASQUER LE PLANIFICATEUR",
+                "show": "AFFICHER LE PLANIFICATEUR"
             }
         }
     },
