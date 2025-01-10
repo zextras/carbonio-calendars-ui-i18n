@@ -96,7 +96,10 @@
             "all_link_copied": "Публичная ссылка успешно скопирована",
             "all_att_added": "Вложения успешно добавлены",
             "series_deleted_no_notification": "Серия встреч перенесена в корзину.",
-            "shared_calendar_removed": "Календарь успешно удален"
+            "shared_calendar_removed": "Календарь успешно удален",
+            "group_edited": "Изменения сохранены",
+            "group_deleted": "Группа календаря удалена навсегда",
+            "new_group_created": "Создана новая группа"
         },
         "modal": {
             "delete": {
@@ -344,7 +347,25 @@
         "dismiss_one": "Отклонить",
         "dismiss_few": "Отклонить",
         "dismiss_many": "Отклонить",
-        "forward": "Перенаправить"
+        "forward": "Перенаправить",
+        "type_group_name_here": "Название группы",
+        "group_empty_calendars_list": "В этой группе пока нет календарей. Начните вводить календари в поле ввода, затем нажмите «+», чтобы добавить их в группу.",
+        "group_not_found": "Группа не найдена",
+        "calendar_groups": "Группы календарей",
+        "newgroup": {
+            "note": "Эта группа появится в вашем личном аккаунте.",
+            "calendars": "Календари в этой группе"
+        },
+        "create_group": "Создать новую группу",
+        "calendar_selector": {
+            "placeholder": "Добавить календари"
+        },
+        "group_is_empty": "Эта группа пуста",
+        "editgroup": {
+            "calendars": "Календари в этой группе"
+        },
+        "invalid_group_name": "Введите имя группы, чтобы сохранить изменения",
+        "calendars": "Календари"
     },
     "tooltip": {
         "enable_disable_rich_text": "Включение/отключение редактора форматированного текста",
@@ -388,7 +409,8 @@
         "download_ics": "Скачать ICS",
         "export_calendar_ics": "Экспортировать файл ICS",
         "delete": "Удалить",
-        "answer": "Ответить"
+        "answer": "Ответить",
+        "edit_group": "Редактировать группу"
     },
     "folder": {
         "modal": {
@@ -409,6 +431,20 @@
             },
             "restore": {
                 "footer": "Создать и Восстановить"
+            },
+            "creategroup": {
+                "footer": "Создать группу",
+                "default_group_name": "Новая группа Календаря",
+                "title": "Создать новую группу Календарей"
+            },
+            "editgroup": {
+                "title": "Редактировать группу Календарей",
+                "footer": "Сохранить изменения"
+            },
+            "deletegroup": {
+                "title": "Удалить группу навсегда?",
+                "text": "Вы уверены, что хотите удалить эту группу навсегда? Это действие необратимо и не влияет на отдельные календари.",
+                "confirm": "Удалить навсегда"
             }
         },
         "share_info": "Информация об общей папке"
@@ -749,6 +785,40 @@
         },
         "buttonLabel": {
             "forward": "ПЕРЕНАПРАВИТЬ"
+        }
+    },
+    "daily_planner": {
+        "tentative": "Под вопросом",
+        "participant": {
+            "attendee": "Участник",
+            "optionalAttendee": "Необязательно",
+            "equipment": "Оборудование",
+            "meetingRoom": "Конференц-зал"
+        },
+        "status": "Статус",
+        "from": "с",
+        "to": "до",
+        "start_time": "Время начала",
+        "free": "Свободен/на",
+        "end_time": "Редактировать время",
+        "busy": "Занят/а",
+        "out-of-office": "Вне офиса",
+        "non-working": "Нерабочий",
+        "unknown": "Неизвестный"
+    },
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "Войти в Виртуальную комнату"
+        }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Группа с таким названием уже существует"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Группа с таким названием уже существует"
+            }
         }
     }
 }
