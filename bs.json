@@ -6,18 +6,18 @@
         "download_ics": "Preuzimanje ICS",
         "edit_message": "Uredi poruku",
         "empty_trash": "Izprazni Smeće",
-        "export_calendar_ics": "Izvoz datoteke ICS",
+        "export_calendar_ics": "Izvezi ICS datoteku",
         "move_to_root": "Premjesti u korjensku mapu",
         "preview": "Kliknite za pregled",
         "save_to_preview": "Spremi za pregled",
         "send": "Pošalji",
-        "send_cancellation": "Pošalji otkazivanje",
-        "share_calendar": "Podijelite kalendar",
+        "send_cancellation": "Pošalji Otkazivanje",
+        "share_calendar": "Podijeli Kalendar",
         "edit_calendar_properties": "Uredi svojstva kalendara",
-        "answer": "Odgovor",
+        "answer": "Odgovori",
         "edit_group": "Uredi grupu",
         "Trash_already_empty": "Smeće je već prazno",
-        "empty_trash_confirmation": "Ova akcija će obrisati sve stavke u Smeće mapama E-pošte, Kontakata, Kalendara, Zadataka i \"Briefcase\". Jeste li sigurni da želite trajno obrisati sve u ovim Smeće mapama?",
+        "empty_trash_confirmation": "Ova akcija će izbrisati sve stavke u mapama za Smeće E-mail-a, Kontakata, Kalendara, Zadataka i Briefcase-a. Jeste li sigurni da želite trajno izbrisati sve u tim mapama za Smeće?",
         "send_edit": "Pošalji Uredi"
     },
     "add": "Dodaj",
@@ -253,7 +253,7 @@
         "start_date": "Datum početka",
         "start_week_on": "Početak sedmice na",
         "subject": "Predmet",
-        "tentative": "Uslovno",
+        "tentative": "Privremeno",
         "time": "Vrijeme",
         "time_zones": "Vremenske zone",
         "today": "danas",
@@ -298,7 +298,11 @@
         "calendars": "Kalendari",
         "timezone_pref_msg": "Vremena se poklapaju sa vašim preferencijama vremenske zone.",
         "sharing_of_this_folder": "Dijeljenje ove mape",
-        "start_date_and_time": "Datum i vrijeme početka"
+        "start_date_and_time": "Datum i vrijeme početka",
+        "download_one": "Preuzmi",
+        "download_few": "Preuzmi sve",
+        "download_other": "Preuzmi sve",
+        "to": "za"
     },
     "freebusy": "Slobodno/Zauzeto",
     "has_attachments": "Ima priložene datoteke",
@@ -333,8 +337,8 @@
         },
         "more": "Više…",
         "optional_participant_one": "{{count}} Opcija",
-        "optional_participant_few": "{{count}} Opciono",
-        "optional_participant_other": "{{count}} Opciono",
+        "optional_participant_few": "{{count}} Opcije",
+        "optional_participant_other": "{{count}} Opcije",
         "organizer": "Organizator",
         "required_participant_one": "{{count}} Učesnik",
         "required_participant_few": "{{count}} Učesnici",
@@ -426,7 +430,23 @@
         "Attendees_accepted_count_other": "<strong>{{count}} prisutnih </strong> je prihvatilo poziv",
         "Attendees_declined_count_one": "<strong>{{count}} prisutan  </strong> je odbio poziv",
         "Attendees_declined_count_few": "<strong>{{count}} prisutna </strong> je odbila poziv",
-        "Attendees_declined_count_other": "<strong>{{count}} prisutnih </strong> je odbilo poziv"
+        "Attendees_declined_count_other": "<strong>{{count}} prisutnih </strong> je odbilo poziv",
+        "Attendees_not_answered_count_one": "</strong><strong>{{count}} sudionik</strong> nije odgovorio",
+        "Attendees_not_answered_count_few": "<strong>{{count}} sudionika</strong> nisu odgovorila",
+        "Attendees_not_answered_count_other": "<strong>{{count}} sudionika</strong> nije odgovorilo",
+        "Attendees_tentative_count_one": "<strong>{{count}} sudionik</strong> je prihvatio kao privremeno",
+        "Attendees_tentative_count_few": "<strong>{{count}} sudionika</strong> su prihvatila kao privremeno",
+        "Attendees_tentative_count_other": "<strong>{{count}} sudionika</strong> je prihvatilo kao privremeno",
+        "DE_with_count_one": "Odbijeno {{count}}",
+        "DE_with_count_few": "Odbijeno {{count}}",
+        "DE_with_count_other": "Odbijeno {{count}}",
+        "NE_with_count_one": "Nije odgovorio({{count}})",
+        "NE_with_count_few": "Nisu odgovorila ({{count}})",
+        "NE_with_count_other": "Nisu odgovorili ({{count}})",
+        "TE_with_count_one": "Privremen ({{count}})",
+        "TE_with_count_few": "Privremena ({{count}})",
+        "TE_with_count_other": "Privremenih ({{count}})",
+        "Tentative": "Prihvaćeno kao privremeno"
     },
     "placeholder": {
         "organizer": "Organizator"
@@ -436,19 +456,226 @@
     "public": "javno",
     "reminder": {
         "all_time": "Sve vrijeme događaja",
-        "never": "Nikad"
+        "never": "Nikad",
+        "at_time_of_event": "U vrijeme događaja",
+        "hour_before_one": "{{count}} sat prije",
+        "hour_before_few": "{{count}} sati prije",
+        "hour_before_other": "{{count}} sati prije",
+        "hours_one": "{{count}} sat",
+        "hours_few": "{{count}} sati",
+        "hours_other": "{{count}} sati",
+        "minute_before_one": "{{count}} minuta prije",
+        "minute_before_few": "{{count}} minute prije",
+        "minute_before_other": "{{count}} minuta prije",
+        "minutes_one": "{{count}} minuta",
+        "minutes_few": "{{count}} minute",
+        "minutes_other": "{{count}} minuta",
+        "modal": {
+            "set_new_time_message": "Želite li postaviti novo vrijeme za propušteni sastanak? Ako kliknete OK, svi ostali podsjetnici bit će automatski odbačeni."
+        },
+        "second_before_one": "{{count}} sekunda prije",
+        "second_before_few": "{{count}} sekunde prije",
+        "second_before_other": "{{count}} sekundi prije",
+        "week_before_one": "{{count}} sedmica prije",
+        "week_before_few": "{{count}} sedmice prije",
+        "week_before_other": "{{count}} sedmica prije",
+        "day_before_one": "{{count}} dan prije",
+        "day_before_few": "{{count}} dana prije",
+        "day_before_other": "{{count}} dana prije"
     },
     "daily_planner": {
-        "from": "Od"
+        "from": "Od",
+        "free": "Slobodno",
+        "non-working": "Neradni",
+        "end_time": "Vrijeme završetka",
+        "start_time": "Vrijeme početka",
+        "busy": "Zauzet",
+        "tentative": "Privremeno",
+        "out-of-office": "Van kancelarije",
+        "unknown": "Nepoznato",
+        "participant": {
+            "organizer": "Organizator",
+            "attendee": "Sudionik",
+            "meetingRoom": "Soba za sastanke",
+            "equipment": "Oprema",
+            "unknown": "Nepoznato",
+            "optionalAttendee": "Opcionalno"
+        },
+        "status": "Status",
+        "to": "do"
     },
     "editor": {
         "daily_planner": {
             "button": {
-                "hide": "SAKRIJ ORGANIZATOR"
+                "hide": "SAKRIJ ORGANIZATORA",
+                "show": "PRIKAŽI ORGANIZATORA"
             }
         }
     },
     "mountpoint_warning": "{{failed}} od {{total}} dijeljenih kalendarā nije moglo biti dodano u Dijeljene kalendare",
     "previous_week": "Prošla sedmica",
-    "mountpoint_error": "Dijeljenje nije bilo moguće dodati u sekciju Dijeljeni kalendari"
+    "mountpoint_error": "Dijeljenje nije bilo moguće dodati u sekciju Dijeljeni kalendari",
+    "recurrent_in_allday": "Ne možete povući ponavljajući sastanak u slot za cijeli dan",
+    "remove_from_this_list": "Uklonite dijeljeni kalendar",
+    "repeat": {
+        "customize": "Prilagodi",
+        "daily": "Dnevno",
+        "everyMonth": "Svaki mjesec",
+        "everyWeek": "Svake sedmice",
+        "everyYear": "Svake godine",
+        "monthly": "Mjesečno",
+        "weekly": "Sedmično",
+        "yearly": "Godišnje"
+    },
+    "resend_mail_notification_about_this_share": "Pošaljite e-mail obavijest o ovoj dijeljenoj stavci",
+    "revoke_access": "Opozovi pristup",
+    "read": "Pročitano",
+    "revoke_without_custom_message": "Oduzmite pristup slanjem standardne obavijesti",
+    "revoke_without_notification": "Oduzmite pristup bez slanja obavijesti",
+    "search": {
+        "from_date": "Od datuma",
+        "organized_by": "organizirano od strane",
+        "to_date": "Do datuma"
+    },
+    "settings": {
+        "invalid_email": "Nevalidna e-mail adresa",
+        "label": {
+            "default_appt_dur": "Zadano trajanje sastanka",
+            "default_calendar": "Zadani kalendar",
+            "delete_invt_on_rply": "Izbriši pozivnicu pri odgovoru",
+            "enable_reminder_sound": "Pusti zvuk (potreban je QuickTime ili Windows Media plugin)",
+            "enter_email": "Unesi e-mail adresu",
+            "flash_browser_title": "Prikazati naziv pregledača",
+            "forward_invites": "Proslijedi pozivnice",
+            "invitation_response": "Odgovor na pozivnicu",
+            "show_popup_notification": "Prikaži obavještenje u obliku popup poruke",
+            "show_reminders": "Prikaži podsjetnike",
+            "show_rmndr_past_due_meetings": "Prikaži podsjetnike za sastanke kojima je prošao rok",
+            "show_timezones": "Prikaži vremensku zonu prilikom kreiranja novog sastanka",
+            "span_time": "Vrijeme trajanja",
+            "snd_autorply_users": "Pošaljite automatski odgovor korisnicima koji nisu dopušteni da me pozovu."
+        },
+        "options": {
+            "free_busy_opts": {
+                "allow_following": "Dopusti samo sljedećim internim korisnicima da vide moje informacije o slobodnom/zauzetom vremenu",
+                "allow_none": "Nemoj dopustiti nikome da vidi moje informacije o slobodnom/zauzetom vremenu",
+                "allow_domain": "Dopusti samo korisnicima moje domene da vide moje informacije o slobodnom/zauzetom vremenu",
+                "allow_all": "Dopusti i internim i eksternim korisnicima da vide moje informacije o slobodnom/zauzetom vremenu",
+                "allow_internal": "Dopusti samo korisnicima unutar internog domena da vide moje informacije o slobodnom/zauzetom vremenu."
+            },
+            "invt_opts": {
+                "allow_all": "Dopusti i internim i eksternim korisnicima da me pozovu na sastanke",
+                "allow_following": "Dopusti samo sljedećim internim korisnicima da me pozovu na sastanke",
+                "allow_internal": "Dopusti samo internim korisnicima da me pozovu na sastanke",
+                "allow_none": "Nemoj dopustiti nikome da me pozove na sastanke"
+            },
+            "default_view": {
+                "day": "Dnevni prikaz",
+                "list": "Prikaz liste",
+                "month": "Mjesečni prikaz",
+                "week": "Sedmični prikaz",
+                "work_week": "Pregled radne sedmice"
+            },
+            "dflt_vsblty_opt": {
+                "public": "Javno"
+            },
+            "timezones": {
+                "amsterdam": "GMT +01:00 Amsterdam, Berlin, Bern, Rim, Stockholm, Beč",
+                "chennai": "GMT +05:30 Chennai, Kolkata, Mumbai, New Delhi",
+                "egypt": "GMT +02:00 Egipat"
+            }
+        },
+        "ical_note": "Apple iCal se može kofigurisati za pristup vašim kalendarima koristeći CalDAV protokol. Kada je ova postavka omogućena, Dijeljeni kalendari se prikazuju u kartici Delegacija iCal računa, tako da možete delegirati pristup vašim kalendarima drugim korisnicima.",
+        "permissions_note": "Korisnici u nastavku moraju biti na ovom e-mail sistemu (zextras.com). Možete koristiti punu e-mail adresu ili samo korisničko ime"
+    },
+    "share": {
+        "label": {
+            "allow_to_see_private_appt": "Dopusti korisniku/korisnicima da vide detalje privatnih sastanaka",
+            "send_notification": "Pošaljite obavijest o ovoj dijeljenoj stavci"
+        },
+        "options": {
+            "share_calendar_role": {
+                "admin": "Urednik (može pregledavati, uređivati, dodavati i brisati, ali ne može prihvatiti ili ponovo podijeliti sastanke)                ",
+                "manager": "Menadžer (može pregledavati, uređivati, dodavati, brisati, prihvatiti i ponovo dijeliti sastanke)",
+                "viewer": "Pregledač (može pregledavati)"
+            }
+        },
+        "placeholder": {
+            "recipients_address": "E-mail adrese primatelja",
+            "standard_message": "Dodajte bilješku u standardnu poruku"
+        },
+        "note": {
+            "share_note": "Standardna poruka prikazuje vaše ime, ime dijeljene stavke, dozvole date primaocima i informacije za prijavu."
+        }
+    },
+    "share_invite_resent": "Ponovno poslana pozivnica za dijeljenje",
+    "shared_folders": "Dijeljeni kalendari",
+    "shared_items": "Dijeljeni stavka",
+    "shares_info": "Informacije o dijeljenjima",
+    "snackbar": {
+        "invite": {
+            "error": "Greška"
+        },
+        "share_folder_success": "Kalendar uspješno podijeljen",
+        "tag_applied": "{{tag}} oznaka primijenjena",
+        "tag_removed": "{{tag}} oznaka uklonjena",
+        "url_copied": "{{title}} kopirano",
+        "forwardAppointment": {
+            "success": "Sastanak proslijeđen"
+        },
+        "proposed_time_accepted": "Prihvatili ste predloženo vrijeme"
+    },
+    "success": "Uspjeh",
+    "timezone": {
+        "guadalajara_mexico_city_monterrey ": "{{value}} Guadalajara, Mexico City, Monterrey",
+        "brussels_copenhagen_madrid_paris ": "{{value}} Brisel, Kopenhagen, Madrid, Pariz"
+    },
+    "timezones": "Vremenske zone",
+    "tooltip": {
+        "calendar_sharing_status_one": "Dijeljeno s {{count}} osobom",
+        "calendar_sharing_status_few": "Dijeljeno s {{count}} osobe",
+        "calendar_sharing_status_other": "Dijeljeno s {{count}} osoba",
+        "chat": "Oprema",
+        "chat_room": "Link Virtualne Sobe",
+        "copy_ics_url": "Kopiraj ICS URL",
+        "copy_outlook_url": "Kopiraj Outlook URL",
+        "enable_disable_rich_text": "Omogući/Onemogući uređivač bogatog teksta",
+        "equipment": "Oprema",
+        "location": "Lokacija",
+        "meetingRooms": "Sobe za sastanke",
+        "resend": "Pošaljite e-mail obavijest o ovoj dijeljenoj stavci.",
+        "virtual_room": "Virtuelna soba",
+        "copy_vector_url": "Kopiraj URL za pregled"
+    },
+    "type": "Tip",
+    "workflow": "Tok rada",
+    "write": "Piši",
+    "empty_trash_deleting_confirmation": "Brisanje svih stavki u mapi za Smeće Kalendara. Brisanje je trajno. Jeste li sigurni da želite izbrisati sve stavke?",
+    "modal": {
+        "forwardAppointment": {
+            "title": "Proslijedi sastanak",
+            "content": "Prosljeđujete ovaj sastanak jednom ili više sudionika koji će primiti pozivnicu za pridruživanje sastanku",
+            "placeholder": "Dodaj nove sudionike"
+        },
+        "buttonLabel": {
+            "forward": "PROSLIJEDI"
+        }
+    },
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "Pridruži e se virtualnoj sobi"
+        }
+    },
+    "api": {
+        "error": {
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Grupa s istim imenom već postoji"
+            },
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Grupa s istim imenom već postoji"
+            }
+        }
+    },
+    "revoke_with_custom_message": "Opozovi pristup slanjem prilagođene obavijesti",
+    "private_info_tooltip": "Kada dijelite kalendar, drugi korisnici mogu vidjeti detalje vaših sastanaka (naslov, opis i sudionike), osim onih označenih kao privatni. U tom slučaju, drugi korisnici će vidjeti vaše slobodno/zauzeto vrijeme, ali ne i detalje sastanka. Želite li da drugi korisnici vide i detalje vaših privatnih sastanaka?"
 }
