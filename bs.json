@@ -42,7 +42,7 @@
     "cannot_edit_name": "Nije moguće urediti ime sistemskog kalendara",
     "composer": {
         "attachment": {
-            "contactsMod": "Dodaj karticu za kontakt",
+            "contactsMod": "dodaj karticu za kontakt",
             "draganddrop": {
                 "content": "Ovdje prevucite vaše priložene datoteke kako biste ih brzo dodali na sastanak",
                 "title": "Drag&Drop način rada"
@@ -63,7 +63,7 @@
         },
         "is_exception": "Izuzetak"
     },
-    "find_calendar_shares": "Pronađite dijeljenje kalendara",
+    "find_calendar_shares": "Pronađi dijeljena u Kalendaru",
     "find_shares": "Pronađi dijeljenja",
     "folder": {
         "modal": {
@@ -71,20 +71,20 @@
                 "go_back": "Nazad"
             },
             "new": {
-                "title2": "Novi kalendar",
+                "title2": "Kreiranje novog kalendara",
                 "duplicate_warning": "Kalendar sa istim imenom već postoji"
             },
             "creategroup": {
                 "footer": "Kreiraj Grupu",
                 "title": "Kreiraj novu grupu kalendara",
-                "default_group_name": "Nova Kalendarska Grupa"
+                "default_group_name": "Nova Grupa Kalendara"
             },
             "restore": {
                 "footer": "Kreirajte i Vratite"
             },
             "editgroup": {
                 "footer": "Spremi promjene",
-                "title": "Uredi Kalendar Grupu"
+                "title": "Uredi Grupu Kalendara"
             },
             "deletegroup": {
                 "confirm": "Trajno obriši",
@@ -115,20 +115,20 @@
     "label": {
         "action_performed": "Već ste izvršili ovu akciju",
         "add_share": "Dodaj dijeljenje",
-        "advanced_filters_one": "Napredni filter",
-        "advanced_filters_few": "Napredni filteri",
-        "advanced_filters_other": "{{count}} Napredni filteri",
+        "advanced_filters_one": "{{count}} Napredni filter",
+        "advanced_filters_few": "{{count}} Napredna filtera",
+        "advanced_filters_other": "{{count}} Naprednih filtera",
         "all_calendars": "Svi kalendari",
         "all_day": "Cijeli dan",
-        "app_name": "Kalendari",
+        "app_name": "Kalendarima",
         "apple_ical": "Apple iCal",
         "appointment_is_private": "Sastanak je privatan.",
         "appt_reminder_one": "Podsjetnik",
         "appt_reminder_few": "Podsjetnici",
         "appt_reminder_other": "Podsjetnici",
         "attachment_one": "Prilog",
-        "attachment_few": "Prilozi",
-        "attachment_other": "Prilozi",
+        "attachment_few": "prilozi",
+        "attachment_other": "prilozi",
         "attendee_one": "Prisutan",
         "attendee_few": "Prisutni",
         "attendee_other": "Prisutni",
@@ -141,7 +141,7 @@
         "create_appt_settings": "Kreiranje sastanaka",
         "create_copy": "Kopiraj",
         "create_new_calendar": "Kreiraj novi kalendar",
-        "available": "Dostupan",
+        "available": "Dostupni ste",
         "busy": "Zauzet",
         "calendar_color": "Boja kalendara",
         "calendar_setting": "Podešavanja kalendara",
@@ -149,21 +149,21 @@
         "custom_repeat": "Prilagođeno ponavljanje",
         "day": "Dan",
         "days": "Dani",
-        "default_appt_vsblty": "Zadana vidljivost termina",
+        "default_appt_vsblty": "Zadana vidljivost sastanka",
         "default_view": "Zadani prikaz",
         "delete_attachment_one": "Obrisati",
         "delete_attachment_few": "Obrisati sve",
         "delete_attachment_other": "Obrisati sve",
-        "delete_tag_name": "Izbriši \"{{name}}\" oznaku",
+        "delete_tag_name": "Izbriši {{name}} oznaku",
         "dismiss_one": "Odbaci",
         "dismiss_few": "Odbaci sve",
         "dismiss_other": "Odbaci sve",
         "display": "Prikaz",
-        "edit_share": "Uredi Dijeljenje",
-        "edit_tag_name": "Uredi \"{{name}}\" oznaku",
+        "edit_share": "Uredi dijeljenje",
+        "edit_tag_name": "Uredi {{name}} oznaku",
         "edits_saved": "Izmjene su ispravno sačuvane",
-        "email_input_message": "Unesite e-mail adrese",
-        "enable_dlgtn_for_ical": "Omogući delegiranje za Apple iCal CalDAV klijenta",
+        "email_input_message": "Unesi e-mail adrese",
+        "enable_dlgtn_for_ical": "Omogući delegiranje za Apple iCal CalDAV klijent",
         "end": "Kraj",
         "end_after": "Završi nakon",
         "end_date": "Datum završetka",
@@ -174,11 +174,11 @@
         "every": "Svaki",
         "every_day": "Svaki dan",
         "every_year_on": "Svake godine na",
-        "exclude_free_busy": "Izuzmi ovaj kalendar pri izvještavanju o vremenima dostupnosti/zauzetosti",
+        "exclude_free_busy": "Izuzmi ovaj Kalendar pri izvještavanju o vremenima dostupnosti/zauzetosti",
         "filter_sharer_user": "Vlasnik mape",
-        "free_busy": "Slobodno/Zauzeto",
+        "free_busy": "Slobodna/Zauzeta",
         "free": "Slobodno",
-        "from": "Od",
+        "from": "od",
         "general": "Općenito",
         "ics_url": "ICS URL adresa",
         "import_calendar_success": "Uvoz uspješan",
@@ -211,7 +211,7 @@
         "required": "Potrebno",
         "calendar_shared": "Kalendar uspješno podijeljen",
         "auto_add_rcvd_app": "Automatski dodajte primljene sastanke u kalendar",
-        "delete_instance": "Jeste li sigurni da želite izbrisati ovaj primjer termina \"{title}\"?",
+        "delete_instance": "Jeste li sigurni da želite izbrisati ovu instancu sastanka „{title}”?",
         "import_calendar_ongoing": "Uvoz u odabrani kalendar je u toku.",
         "access_revoked": "Pristup je opozvan",
         "every_weekday": "Svakog radnog dana",
@@ -296,13 +296,15 @@
         },
         "group_is_empty": "Ova grupa je prazna",
         "calendars": "Kalendari",
-        "timezone_pref_msg": "Vremena se poklapaju sa vašim preferencijama vremenske zone.",
+        "timezone_pref_msg": "Vremenski raspored slijedi vaše postavke vremenske zone.",
         "sharing_of_this_folder": "Dijeljenje ove mape",
         "start_date_and_time": "Datum i vrijeme početka",
         "download_one": "Preuzmi",
         "download_few": "Preuzmi sve",
         "download_other": "Preuzmi sve",
-        "to": "za"
+        "to": "za",
+        "search_hint": "Savjet za pretragu",
+        "select_in": "Odaberite u"
     },
     "freebusy": "Slobodno/Zauzeto",
     "has_attachments": "Ima priložene datoteke",
@@ -312,7 +314,7 @@
     "is_private": "Privatno",
     "attendee_room_unavailable": "Soba nije dostupna u odabranom vremenu događaja",
     "attendees_rooms_unavailable": "Jedna ili više Soba za sastanke nije dostupna u izabranom vremenu događaja",
-    "creation_timezone_tooltip": "Datum i vrijeme vremenske zone kreiranje:",
+    "creation_timezone_tooltip": "Datum i vrijeme u vremenskoj zoni kreiranja:",
     "local_timezone_tooltip": "Datum i vrijeme u lokalnoj vremenskoj zoni:",
     "message": {
         "appointment_invitation_sent": "Poziv za sastanak poslan",
@@ -484,7 +486,7 @@
         "day_before_other": "{{count}} dana prije"
     },
     "daily_planner": {
-        "from": "Od",
+        "from": "od",
         "free": "Slobodno",
         "non-working": "Neradni",
         "end_time": "Vrijeme završetka",
@@ -645,7 +647,8 @@
         "meetingRooms": "Sobe za sastanke",
         "resend": "Pošaljite e-mail obavijest o ovoj dijeljenoj stavci.",
         "virtual_room": "Virtuelna soba",
-        "copy_vector_url": "Kopiraj URL za pregled"
+        "copy_vector_url": "Kopiraj URL za pregled",
+        "edit": "Uredi zajedničke postavke"
     },
     "type": "Tip",
     "workflow": "Tok rada",
