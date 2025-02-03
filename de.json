@@ -75,7 +75,7 @@
         "day": "Tag",
         "email_input_message": "E-Mail-Adressen eingeben",
         "enable_dlgtn_for_ical": "Befugnisübertragung für Apple iCal CalDAV Client aktivieren",
-        "week": "Wochen",
+        "week": "Woche",
         "create_appt_settings": "Termine erstellen",
         "add_share": "Teilen hinzufügen",
         "calendar_color": "Kalenderfarbe",
@@ -263,7 +263,12 @@
         "send_edit": "Bearbeiten senden",
         "reset": "Wiederherstellen",
         "search": "Suche",
-        "show_original": "Original anzeigen"
+        "show_original": "Original anzeigen",
+        "answer": "Antworten",
+        "Trash_already_empty": "Der Papierkorb ist bereits geleert",
+        "calendar_upload": "ICS-Datei importieren",
+        "download_ics": "ICS herunterladen",
+        "export_calendar_ics": "ICS-Datei exportieren"
     },
     "calendar": {
         "modal": {
@@ -488,6 +493,7 @@
         "location": "Ort",
         "chat_room": "Link des virtuellen Raums",
         "calendar_sharing_status_one": "Mit 1 Person geteilt",
+        "calendar_sharing_status_other": "",
         "revoke": "Zugriff widerrufen",
         "resend": "E-Mail-Benachrichtigung über dieses geteilte Element senden",
         "edit": "Eigenschaften für das Teilen bearbeiten",
