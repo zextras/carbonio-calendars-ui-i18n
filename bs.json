@@ -319,13 +319,13 @@
     "message": {
         "appointment_invitation_sent": "Poziv za sastanak poslan",
         "appointment_type_handle": "{{name}} je ponavljajući sastanak. Želite li otvoriti samo ovu instancu ili cijelu seriju?",
-        "are_organizer": "je organizator",
+        "are_organizer": "ste organizator",
         "copy": "Kopiraj",
         "delete_future_occurences": "Izbrišite ovu instancu i sva buduća pojavljivanja",
-        "delete_all_occurences": "Izbrišite sva ponavljanja događaja",
-        "delete_future_occurences_warning": "Ovo će također izbrisati sve izuzetke (prije i nakon ove instance) u nizu",
+        "delete_all_occurences": "Izbriši sva pojavljivanja",
+        "delete_future_occurences_warning": "Ovo će također izbrisati sve izuzetke (prije i nakon ove instance) u seriji",
         "delete_tag_message1": "Jeste li sigurni da želite izbrisati oznaku \"{{name}}\"?",
-        "edit_series_warning": "Tokom produženja serije, sve prethodno obrisane ili izmijenjene instance će biti obnovljene sa novim podešavanjima serije.",
+        "edit_series_warning": "Kako nastavite sa modifikacijom serije, sve prethodno obrisane ili izmijenjene instance će biti vraćene s novim postavkama serije.",
         "import_appointment_modal": "Termini zakazani u {{fileName}} će biti uvezeni u kalendar \"{{calendarName}}\".",
         "invite_has_no_message": "Ova pozivnica nema tekstualnog poruke",
         "invited_you": "Pozvao/la vas je na događaj",
@@ -377,23 +377,25 @@
             "group_deleted": "Grupa Kalendara je trajno izbrisana.",
             "appt_restored": "Sastanak je uspješno vraćen na",
             "link_copying_error": "Čini se da je došlo do problema prilikom generisanja javne veze, pokušajte ponovo",
-            "calendar_moved_to_root_folder": "Kalendar je premješten u / mapu",
+            "calendar_moved_to_root_folder": "Kalendar je premješten u / korijensku mapu",
             "some_att_add_fails": "Čini se da postoji problem prilikom dodavanja nekih priloga, pokušajte ponovo"
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> vas je pozvao",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> je organizator",
-        "sure_to_delete_all_occurences_appointment": "Jeste li sigurni da želite izbrisati sve pojave ovog sastanka?",
+        "sure_to_delete_all_occurences_appointment": "Jeste li sigurni da želite izbrisati sva pojavljivanja ovog sastanka?",
         "sure_to_delete_appointment": "Jeste li sigurni da želite obrisati taj sastanak?",
         "want_to_edit_cancellation_msg": "Da li želite urediti poruku o otkazivanju termina?",
         "want_to_edit_modified_msg": "Učesnici će biti obaviješteni o promjenama putem e-maila. Želite li dodati prilagođenu poruku?",
         "want_to_send_cancellation_msg": "Da li želite učesnicima poslati poruku o otkazivanju ?",
         "you_sure_delete_calendar": "Jeste li sigurni da želite trajno izbrisati {{name}} kalendar?",
-        "you_sure_delete_instance": "Jeste li sigurni da želite izbrisati ovu instancu {{title}} sastanka?",
+        "you_sure_delete_instance": "Jeste li sigurni da želite izbrisati ovu instancu sastanka {{title}} ?",
         "you_sure_move_calendar_trash": "Jeste li sigurni da želite izbrisati {{name}} kalendar?",
         "original_invite": "-----Originalna pozivnica-----",
         "somebody_invited_owner": "<strong>{{somebody}}</strong> pozvao {{owner}}",
         "sure_to_delete_appointment_permanently": "Jeste li sigurni da želite trajno obrisati ovaj sastanak?",
-        "you_are_organizer": "<Row><Text> <BoldText> Ti  </BoldText> si organizator </Text></Row>"
+        "you_are_organizer": "<Row><Text> <BoldText> Ti  </BoldText> si organizator </Text></Row>",
+        "search_hints": "Savjeti za pretragu",
+        "you": "Ti"
     },
     "messages": {
         "format_as_plain_text": "Formatiraj kao obični tekst"
@@ -680,5 +682,6 @@
         }
     },
     "revoke_with_custom_message": "Opozovi pristup slanjem prilagođene obavijesti",
-    "private_info_tooltip": "Kada dijelite kalendar, drugi korisnici mogu vidjeti detalje vaših sastanaka (naslov, opis i sudionike), osim onih označenih kao privatni. U tom slučaju, drugi korisnici će vidjeti vaše slobodno/zauzeto vrijeme, ali ne i detalje sastanka. Želite li da drugi korisnici vide i detalje vaših privatnih sastanaka?"
+    "private_info_tooltip": "Kada dijelite kalendar, drugi korisnici mogu vidjeti detalje vaših sastanaka (naslov, opis i sudionike), osim onih označenih kao privatni. U tom slučaju, drugi korisnici će vidjeti vaše slobodno/zauzeto vrijeme, ali ne i detalje sastanka. Želite li da drugi korisnici vide i detalje vaših privatnih sastanaka?",
+    "no_title": "Bez naslova"
 }
