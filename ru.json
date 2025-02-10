@@ -38,9 +38,9 @@
         "Attendees_declined_count_one": "<strong>{{count}} участник </strong> отклонил",
         "Attendees_declined_count_few": "<strong>{{count}} участника </strong> отклонили",
         "Attendees_declined_count_many": "<strong>{{count}} участника </strong> отклонили",
-        "Attendees_tentative_count_one": "<strong>{{count}} участник </strong> принял участие в предварительном порядке",
-        "Attendees_tentative_count_few": "",
-        "Attendees_tentative_count_many": "",
+        "Attendees_tentative_count_one": "Участие <strong>{{count}} приглашенного </strong> под вопросом",
+        "Attendees_tentative_count_few": "Участие <strong>{{count}} приглашенных </strong> под вопросом",
+        "Attendees_tentative_count_many": "Участие <strong>{{count}} приглашенных </strong> под вопросом",
         "AC_with_count_one": "Принял(а)",
         "AC_with_count_few": "Приняли",
         "AC_with_count_many": "Приняли",
@@ -794,7 +794,9 @@
             "attendee": "Участник",
             "optionalAttendee": "Необязательно",
             "equipment": "Оборудование",
-            "meetingRoom": "Конференц-зал"
+            "meetingRoom": "Конференц-зал",
+            "organizer": "Ежедневник",
+            "unknown": "Неизвестный"
         },
         "status": "Статус",
         "from": "с",
@@ -819,6 +821,14 @@
             },
             "ModifyCalendarGroup": {
                 "group_name_already_exists": "Группа с таким названием уже существует"
+            }
+        }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "hide": "Скрыть ежедневник",
+                "show": "Показать ежедневник"
             }
         }
     }
