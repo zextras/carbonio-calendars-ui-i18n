@@ -387,7 +387,9 @@
         "editgroup": {
             "calendars": "Calendari in questo gruppo"
         },
-        "group_is_empty": "Questo gruppo è vuoto"
+        "group_is_empty": "Questo gruppo è vuoto",
+        "hide_event_detail": "Nascondi dettagli",
+        "show_event_detail": "Mostra dettagli"
     },
     "action": {
         "send": "Invia",
