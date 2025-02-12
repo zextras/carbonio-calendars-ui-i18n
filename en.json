@@ -347,7 +347,9 @@
             "calendars": "Calendars in this group"
         },
         "group_is_empty": "This group is empty",
-        "calendars": "Calendars"
+        "calendars": "Calendars",
+        "hide_event_detail": "Hide details",
+        "show_event_detail": "Show details"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
