@@ -336,7 +336,9 @@
         "editgroup": {
             "calendars": "Calendriers dans ce groupe"
         },
-        "group_is_empty": "Ce groupe est vide"
+        "group_is_empty": "Ce groupe est vide",
+        "hide_event_detail": "Masquer les détails",
+        "show_event_detail": "Afficher les détails"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
