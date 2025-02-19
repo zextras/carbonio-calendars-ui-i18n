@@ -366,7 +366,9 @@
             "calendars": "Календари в этой группе"
         },
         "invalid_group_name": "Введите имя группы, чтобы сохранить изменения",
-        "calendars": "Календари"
+        "calendars": "Календари",
+        "hide_event_detail": "Скрыть детали",
+        "show_event_detail": "Показать детали"
     },
     "tooltip": {
         "enable_disable_rich_text": "Включение/отключение редактора форматированного текста",
