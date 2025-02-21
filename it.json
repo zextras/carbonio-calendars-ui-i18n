@@ -159,7 +159,13 @@
         "required_participant_one": "Partecipante",
         "required_participant_many": "Partecipanti",
         "required_participant_other": "Partecipanti",
-        "somebody_invited_owner": "<strong>{{somebody}}</strong> ha invitato {{owner}}"
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> ha invitato {{owner}}",
+        "you_accepted_as_tentative": "Hai risposto in forse",
+        "you_did_not_answer": "Non hai risposto",
+        "you_accepted": "Hai accettato",
+        "you_declined": "Hai declinato",
+        "the_organizer": "L'organizzatore",
+        "who_set_this": "{{whoSetThis}} ha impostato questo appuntamento come <strong>{{status}}</strong>"
     },
     "label": {
         "to": "A",
