@@ -139,7 +139,13 @@
         "optional_participant_few": "{{count}} Необязательно",
         "optional_participant_many": "{{count}} Необязательно",
         "original_invite": "-----Оригинальное приглашение-----",
-        "somebody_invited_owner": "<strong>{{somebody}}</strong> пригласил(а) {{owner}}"
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> пригласил(а) {{owner}}",
+        "the_organizer": "Организатор",
+        "you_accepted": "Вы приняли",
+        "who_set_this": "{{whoSetThis}} настроить эту встречу как <strong>{{status}}</strong>",
+        "you_accepted_as_tentative": "Ваше участие под вопросом",
+        "you_did_not_answer": "Вы не ответили",
+        "you_declined": "Вы отклонили"
     },
     "label": {
         "no_subject": "(без темы)",
