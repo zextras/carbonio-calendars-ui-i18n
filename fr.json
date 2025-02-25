@@ -421,7 +421,13 @@
         "optional_participant_many": "{{count}} optionnels",
         "optional_participant_other": "{{count}} optionnels",
         "original_invite": "-----Invitation initiale-----",
-        "somebody_invited_owner": "<strong>{{somebody}}</strong> a invité {{owner}}"
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> a invité {{owner}}",
+        "the_organizer": "L'organisateur",
+        "you_did_not_answer": "Vous n'avez par répondu",
+        "you_declined": "Vous avez décliné",
+        "you_accepted_as_tentative": "You avez accepté comme tentative",
+        "you_accepted": "Vous avez accepté",
+        "who_set_this": "{{whoSetThis}} fixer ce rendez-vous comme <strong>{{status}}</strong>"
     },
     "months": {
         "april": "Avril",
