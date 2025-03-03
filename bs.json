@@ -304,7 +304,10 @@
         "download_other": "Preuzmi sve",
         "to": "za",
         "search_hint": "Savjet za pretragu",
-        "select_in": "Odaberite u"
+        "select_in": "Odaberite u",
+        "hide_event_detail": "Sakrij detalje",
+        "show_event_detail": "Prikaži detalje",
+        "the": " "
     },
     "freebusy": "Slobodno/Zauzeto",
     "has_attachments": "Ima priložene datoteke",
@@ -395,7 +398,13 @@
         "sure_to_delete_appointment_permanently": "Jeste li sigurni da želite trajno obrisati ovaj sastanak?",
         "you_are_organizer": "<Row><Text> <BoldText> Ti  </BoldText> si organizator </Text></Row>",
         "search_hints": "Savjeti za pretragu",
-        "you": "Ti"
+        "you": "Ti",
+        "the_organizer": "Organizator",
+        "you_did_not_answer": "Niste odgovorili",
+        "you_accepted": "Prihvatili ste",
+        "you_declined": "Odbili ste",
+        "you_accepted_as_tentative": "Prihvatili ste kao uslovno",
+        "who_set_this": "{{whoSetThis}} je postavio ovaj sastanak kao <strong>{{status}}</strong>"
     },
     "messages": {
         "format_as_plain_text": "Formatiraj kao obični tekst"
