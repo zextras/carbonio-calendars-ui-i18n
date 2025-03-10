@@ -337,7 +337,7 @@
         "modal": {
             "delete": {
                 "sure_delete_appointment_all_instances_permanently": "Ova akcija će izbrisati sve instance ovog sastanka i nećete moći ih ponovno vratiti. Da li želite nastaviti?",
-                "sure_delete_appointment_permanently": "Brisanjem ovog termina će biti trajno  i nećete ga moći ponovo vratiti. Da li želite nastaviti?"
+                "sure_delete_appointment_permanently": "Brisanjem ovog termina će biti trajno i nećete ga moći ponovo vratiti. Da li želite nastaviti?"
             }
         },
         "more": "Više…",
@@ -373,11 +373,11 @@
             "new_calendar_created": "Kreiran novi kalendar",
             "series_deleted": "Serijska je premještena u Smeće. Sudionici će primiti obavijest o otkazivanju.",
             "series_deleted_no_notification": "Serija je premještena u Smeće.",
-            "shared_calendar_removed": "Kalendar je uspješno uklonjen.",
+            "shared_calendar_removed": "Kalendar je uspješno uklonjen",
             "some_link_copying_error": "Čini se da postoji problema prilikom generiranja javne URL adrese za neke datoteke, pokušajte ponovo",
             "group_edited": "Promjene spremljene",
             "new_group_created": "Nova grupa napravljena",
-            "group_deleted": "Grupa Kalendara je trajno izbrisana.",
+            "group_deleted": "Grupa Kalendara je trajno izbrisana",
             "appt_restored": "Sastanak je uspješno vraćen na",
             "link_copying_error": "Čini se da je došlo do problema prilikom generisanja javne veze, pokušajte ponovo",
             "calendar_moved_to_root_folder": "Kalendar je premješten u / korijensku mapu",
@@ -430,7 +430,7 @@
     "next_week": "Sljedeću sedmicu",
     "owner": "Vlasnik",
     "participants": {
-        "AC_with_count_one": "Prihvaćeno",
+        "AC_with_count_one": "Prihvaćeno ({{count}})",
         "AC_with_count_few": "Prihvaćeni ({{count}})",
         "AC_with_count_other": "Prihvaćeni ({{count}})",
         "Accepted": "prihvaćeno",
@@ -438,19 +438,19 @@
         "Invited_Visitor": "je pozvan",
         "Not_answered": "nije odgovorio",
         "visitors": "i ostali {{others}} prisutni",
-        "Attendees_accepted_count_one": "<strong>{{count}} prisutan  </strong> je prihvatilo poziv",
+        "Attendees_accepted_count_one": "<strong>{{count}} prisutan </strong> je prihvatilo poziv",
         "Attendees_accepted_count_few": "<strong>{{count}} prisutna </strong> je prihvatila poziv",
         "Attendees_accepted_count_other": "<strong>{{count}} prisutnih </strong> je prihvatilo poziv",
-        "Attendees_declined_count_one": "<strong>{{count}} prisutan  </strong> je odbio poziv",
+        "Attendees_declined_count_one": "<strong>{{count}} prisutan </strong> je odbio poziv",
         "Attendees_declined_count_few": "<strong>{{count}} prisutna </strong> je odbila poziv",
         "Attendees_declined_count_other": "<strong>{{count}} prisutnih </strong> je odbilo poziv",
-        "Attendees_not_answered_count_one": "</strong><strong>{{count}} sudionik</strong> nije odgovorio",
+        "Attendees_not_answered_count_one": "<strong>{{count}} sudionik</strong> nije odgovorio",
         "Attendees_not_answered_count_few": "<strong>{{count}} sudionika</strong> nisu odgovorila",
         "Attendees_not_answered_count_other": "<strong>{{count}} sudionika</strong> nije odgovorilo",
         "Attendees_tentative_count_one": "<strong>{{count}} sudionik</strong> je prihvatio kao privremeno",
         "Attendees_tentative_count_few": "<strong>{{count}} sudionika</strong> su prihvatila kao privremeno",
         "Attendees_tentative_count_other": "<strong>{{count}} sudionika</strong> je prihvatilo kao privremeno",
-        "DE_with_count_one": "Odbijeno {{count}}",
+        "DE_with_count_one": "Odbijen {{count}}",
         "DE_with_count_few": "Odbijeno {{count}}",
         "DE_with_count_other": "Odbijeno {{count}}",
         "NE_with_count_one": "Nije odgovorio({{count}})",
@@ -566,7 +566,7 @@
             "show_rmndr_past_due_meetings": "Prikaži podsjetnike za sastanke kojima je prošao rok",
             "show_timezones": "Prikaži vremensku zonu prilikom kreiranja novog sastanka",
             "span_time": "Vrijeme trajanja",
-            "snd_autorply_users": "Pošaljite automatski odgovor korisnicima koji nisu dopušteni da me pozovu."
+            "snd_autorply_users": "Pošaljite automatski odgovor korisnicima koji nisu dopušteni da me pozovu"
         },
         "options": {
             "free_busy_opts": {
@@ -574,7 +574,7 @@
                 "allow_none": "Nemoj dopustiti nikome da vidi moje informacije o slobodnom/zauzetom vremenu",
                 "allow_domain": "Dopusti samo korisnicima moje domene da vide moje informacije o slobodnom/zauzetom vremenu",
                 "allow_all": "Dopusti i internim i eksternim korisnicima da vide moje informacije o slobodnom/zauzetom vremenu",
-                "allow_internal": "Dopusti samo korisnicima unutar internog domena da vide moje informacije o slobodnom/zauzetom vremenu."
+                "allow_internal": "Dopusti samo korisnicima unutar internog domena da vide moje informacije o slobodnom/zauzetom vremenu"
             },
             "invt_opts": {
                 "allow_all": "Dopusti i internim i eksternim korisnicima da me pozovu na sastanke",
@@ -599,7 +599,7 @@
             }
         },
         "ical_note": "Apple iCal se može kofigurisati za pristup vašim kalendarima koristeći CalDAV protokol. Kada je ova postavka omogućena, Dijeljeni kalendari se prikazuju u kartici Delegacija iCal računa, tako da možete delegirati pristup vašim kalendarima drugim korisnicima.",
-        "permissions_note": "Korisnici u nastavku moraju biti na ovom e-mail sistemu (zextras.com). Možete koristiti punu e-mail adresu ili samo korisničko ime"
+        "permissions_note": "Korisnici u nastavku moraju biti na ovom e-mail sistemu (zextras.com). Možete koristiti punu e-mail adresu ili samo korisničko ime."
     },
     "share": {
         "label": {
@@ -656,7 +656,7 @@
         "equipment": "Oprema",
         "location": "Lokacija",
         "meetingRooms": "Sobe za sastanke",
-        "resend": "Pošaljite e-mail obavijest o ovoj dijeljenoj stavci.",
+        "resend": "Pošaljite e-mail obavijest o ovoj dijeljenoj stavci",
         "virtual_room": "Virtuelna soba",
         "copy_vector_url": "Kopiraj URL za pregled",
         "edit": "Uredi zajedničke postavke"
@@ -668,7 +668,7 @@
     "modal": {
         "forwardAppointment": {
             "title": "Proslijedi sastanak",
-            "content": "Prosljeđujete ovaj sastanak jednom ili više sudionika koji će primiti pozivnicu za pridruživanje sastanku",
+            "content": "Prosljeđujete ovaj sastanak jednom ili više sudionika koji će primiti pozivnicu za pridruživanje sastanku.",
             "placeholder": "Dodaj nove sudionike"
         },
         "buttonLabel": {
