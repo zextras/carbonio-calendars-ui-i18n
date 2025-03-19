@@ -176,7 +176,9 @@
         "single_advanced_filter": "एड्वान्स्ड फ़िल्टर",
         "keywords": "कीवर्ड",
         "optionals": "विकल्‍प",
-        "time": "समय"
+        "time": "समय",
+        "download_one": "डाउनलोड",
+        "download_other": "सभी डाउनलोड करें"
     },
     "action": {
         "send": "भेजें",
