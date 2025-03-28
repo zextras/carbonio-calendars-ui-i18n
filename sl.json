@@ -1,1 +1,136 @@
-{}
+{
+    "action": {
+        "calendar_access_share": "Dostop do skupne rabe koledarja",
+        "calendar_upload": "Uvozi datoteko ICS",
+        "delete_calendar": "Izbriši koledar",
+        "download_ics": "Prenesi datoteko ICS",
+        "edit_calendar_properties": "Uredi lastnosti koledarja",
+        "empty_trash": "Izprazni smetnjak",
+        "edit_message": "Uredi sporočilo",
+        "export_calendar_ics": "Izvozi datoteko ICS",
+        "move_to_root": "Premakni v korensko mapo",
+        "preview": "Kliknite za predogled",
+        "reset": "Ponastavi",
+        "save_to_preview": "Shrani za predogled",
+        "search": "Iskanje",
+        "send": "Pošlji",
+        "send_cancellation": "Pošlji preklic",
+        "edit_group": "Uredi skupino",
+        "answer": "Odgovori",
+        "send_edit": "Pošlji urejanje",
+        "share_calendar": "Deli koledar",
+        "delete": "Izbriši",
+        "empty_trash_confirmation": "To dejanje bo izbrisalo vse elemente v mapah smetnjaka za e-pošto, stike, koledar, naloge in kovček. Ali ste prepričani, da želite trajno izbrisati vse te elemente?",
+        "Trash_already_empty": "Smetnjak je že prazen",
+        "show_original": "Pokaži izvirn"
+    },
+    "add": "Dodaj",
+    "administer": "Upravljaj",
+    "allowed_actions": "Dovoljena dejanja",
+    "appointments": "Sestanki",
+    "appt_restored_successfully": "Sestanek uspešno obnovljen",
+    "attendee_equipment_unavailable": "Oprema ni na voljo ob izbranem času dogodka",
+    "attendee_room_unavailable": "Soba ni na voljo ob izbranem času dogodka",
+    "attendee_unavailable": "Udeleženec ni na voljo ob izbranem času dogodka",
+    "attendees_rooms_unavailable": "Ena ali več sejnih sob ni na voljo ob izbranem času dogodka",
+    "attendees_unavailable": "Eden ali več udeležencev ni na voljo ob izbranem času dogodka",
+    "button": {
+        "customize_modal": "Odpri prilagojeno pojavno okno"
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "title": "Prilagodi delovni čas"
+            }
+        }
+    },
+    "composer": {
+        "attachment": {
+            "contactsMod": "Dodaj kontaktno kartico",
+            "draganddrop": {
+                "content": "Spustite priponke tukaj za hitro dodajanje k sestanku",
+                "title": "Način povleci in spusti"
+            },
+            "drive": "Dodaj iz Drive",
+            "files": "Dodaj iz datotek",
+            "local": "Dodaj iz lokalnega",
+            "url": "Dodaj javno povezavo iz datotek"
+        }
+    },
+    "edit_share_properties": "Uredi lastnosti skupne rabe",
+    "event": {
+        "action": {
+            "accept": "Sprejmi",
+            "decline": "Zavrni",
+            "expand": "Odpri",
+            "no": "Ne",
+            "yes": "Da",
+            "needs_action": "Zahteva dejanje"
+        },
+        "is_exception": "Izjema"
+    },
+    "find_calendar_shares": "Poišči skupne koledarje",
+    "find_shares": "Najdi skupne rabe",
+    "folder": {
+        "modal": {
+            "footer": {
+                "go_back": "Pojdi nazaj"
+            },
+            "move": {
+                "input": {
+                    "filter": "Filtriraj koledarje"
+                },
+                "body": {
+                    "message3": "Izberite koledar, v katerega želite premakniti izbrani sestanek:"
+                }
+            },
+            "new": {
+                "title2": "Ustvarjanje novega koledarja",
+                "duplicate_warning": "Koledar s tem imenom že obstaja"
+            },
+            "restore": {
+                "footer": "Ustvari in obnovi"
+            },
+            "creategroup": {
+                "footer": "Ustvari skupino",
+                "default_group_name": "Nova skupina koledarjev",
+                "title": "Ustvari novo skupino koledarjev"
+            },
+            "editgroup": {
+                "footer": "Shrani spremembe",
+                "title": "Uredi skupino koledarjev"
+            },
+            "deletegroup": {
+                "confirm": "Trajno izbriši",
+                "title": "Trajno izbrisati skupino?",
+                "text": "Ali ste prepričani, da želite to skupino trajno izbrisati? To dejanje je nepovratno in ne vpliva na posamezne koledarje."
+            }
+        },
+        "share_info": "Informacije o skupni rabi"
+    },
+    "freebusy": "Zasedenost",
+    "has_attachments": "Ima priloge",
+    "import": "Uvozi",
+    "import_appointments": "Uvozi sestanke",
+    "insert": "Vstavi",
+    "is_private": "Je zasebno",
+    "is_recurrent": "Je ponavljajoče",
+    "items": {
+        "first": "Prvi",
+        "fourth": "Četrti",
+        "last": "Zadnji",
+        "second": "Drugi",
+        "third": "Tretji",
+        "weekend_day": "Dan vikenda",
+        "working_day": "Delovni dan"
+    },
+    "label": {
+        "access_revoked": "Dostop preklican",
+        "action_performed": "To dejanje je bilo že izvedeno",
+        "add_share": "Dodaj skupno rabo",
+        "all_calendars": "Vsi koledarji"
+    },
+    "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
+    "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
+    "attendees_equipments_unavailable": "Eden ali več kosov opreme ni na voljo ob izbranem času dogodka"
+}
