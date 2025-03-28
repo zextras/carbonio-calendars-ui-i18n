@@ -254,7 +254,8 @@
         "save": "Shrani",
         "scheduled_in": "Načrtovano v",
         "select": "Izberite",
-        "select_color": "Izberite barvo"
+        "select_color": "Izberite barvo",
+        "select_in": ":"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
