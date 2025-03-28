@@ -236,7 +236,8 @@
         "preview": "Predogled",
         "proposal_declined": "Predlog zavrnjen",
         "propose_new_time": "Predlagaj novočas",
-        "private": "Zasebno"
+        "private": "Zasebno",
+        "public_link_description": "Generirano iz {{title}} na {{date}}"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
