@@ -255,7 +255,9 @@
         "scheduled_in": "Načrtovano v",
         "select": "Izberite",
         "select_color": "Izberite barvo",
-        "select_in": ":"
+        "select_in": ":",
+        "series": "Serija",
+        "set_new_time": "Nastavi novo čas"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
