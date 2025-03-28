@@ -252,7 +252,8 @@
         "role": "Vloga",
         "root": "Koren",
         "save": "Shrani",
-        "scheduled_in": "Načrtovano"
+        "scheduled_in": "Načrtovano v",
+        "select": "Izberite"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
