@@ -235,7 +235,7 @@
         "permissions": "Dovoljenja",
         "preview": "Predogled",
         "proposal_declined": "Predlog zavrnjen",
-        "propose_new_time": "Predlagaj novočas",
+        "propose_new_time": "Predlagaj nov čas",
         "private": "Zasebno",
         "public_link_description": "Generirano iz {{title}} na {{date}}"
     },
