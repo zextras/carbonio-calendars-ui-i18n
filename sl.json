@@ -266,7 +266,8 @@
         "show_declined_meetings": "Prikaži zavrnjene sestanke",
         "show_event": "Dvojni klik za prikaz več podrobnosti o koledarjih",
         "sharing_of_this_folder": "Deljenje te mape",
-        "shares_items": "Skupni koledarji uporabnika <bold>{{user}}</bold>"
+        "shares_items": "Skupni koledarji uporabnika <bold>{{user}}</bold>",
+        "single_advanced_filter": "Napredni filtri"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
