@@ -257,14 +257,16 @@
         "select_color": "Izberite barvo",
         "select_in": ":",
         "series": "Serija",
-        "set_new_time": "Nastavi novo čas",
+        "set_new_time": "Nastavi nov čas",
         "settings_saved": "Nastavitve shranjene",
         "share": "Delite",
         "share_calendar_url": "{{title}} dostop do delitve",
         "share_public_link": "Delite javno povezavo",
         "share_with": "Delite z",
         "show_declined_meetings": "Prikaži zavrnjene sestanke",
-        "show_event": "Dvojni klik za prikaz več podrobnosti o koledarjih"
+        "show_event": "Dvojni klik za prikaz več podrobnosti o koledarjih",
+        "sharing_of_this_folder": "Deljenje te mape",
+        "shares_items": "Skupni koledarji uporabnika <bold>{{user}}</bold>"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
