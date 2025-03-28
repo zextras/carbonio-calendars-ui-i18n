@@ -128,7 +128,8 @@
         "access_revoked": "Dostop preklican",
         "action_performed": "To dejanje je bilo že izvedeno",
         "add_share": "Dodaj skupno rabo",
-        "all_calendars": "Vsi koledarji"
+        "all_calendars": "Vsi koledarji",
+        "all_day": "Cel dan"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
