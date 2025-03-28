@@ -237,7 +237,13 @@
         "proposal_declined": "Predlog zavrnjen",
         "propose_new_time": "Predlagaj nov čas",
         "private": "Zasebno",
-        "public_link_description": "Generirano iz {{title}} na {{date}}"
+        "public_link_description": "Generirano iz {{title}} dne {{date}}",
+        "regular": "Redno",
+        "reminder": "Opomnik",
+        "required": "Obvezno",
+        "results_for_error": "Ni mogoče začeti iskanja, počistite in poskusite znova: ",
+        "revoke": "Prekliči",
+        "revoke_share": "Prekliči skupno rabo {{title}}"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
