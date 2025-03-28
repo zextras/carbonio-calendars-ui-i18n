@@ -171,7 +171,7 @@
         "auto_add_rcvd_app": "Samodejno dodaj prejete sestanke v koledar",
         "invitation_not_sent": "Še niste poslali povabila udeležencem",
         "check_availability": "Preveri razpoložljivost",
-        "no_special_char_allowed": "Ime ne sme vsebovati nobenih specialnih znakov",
+        "no_special_char_allowed": "Ime ne sme vsebovati nobenih posebnih znakov",
         "ics_url": "ICS URL",
         "new_time_proposed": "Nova predlagana ura",
         "custom_repeat": "Ponavljanje po meri",
@@ -214,7 +214,10 @@
         "no_rights": "Nimate dovoljenja za izvedbo tega dejanja",
         "discard_changes": "Zavrzi spremembe",
         "email_input_message": "Vnesite e-poštne naslove",
-        "find_shares": "Izberite, katere koledarje želite videti v drevesu koledarjev"
+        "find_shares": "Izberite, katere koledarje želite videti v drevesu koledarjev",
+        "no_subject": "Brez zadeve",
+        "none": "Nobeden",
+        "ongoing": "V teku"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
