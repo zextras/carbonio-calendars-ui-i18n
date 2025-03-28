@@ -253,7 +253,8 @@
         "root": "Koren",
         "save": "Shrani",
         "scheduled_in": "Načrtovano v",
-        "select": "Izberite"
+        "select": "Izberite",
+        "select_color": "Izberite barvo"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
