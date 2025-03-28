@@ -243,7 +243,16 @@
         "required": "Obvezno",
         "results_for_error": "Ni mogoče začeti iskanja, počistite in poskusite znova: ",
         "revoke": "Prekliči",
-        "revoke_share": "Prekliči skupno rabo {{title}}"
+        "revoke_share": "Prekliči skupno rabo {{title}}",
+        "repeat": "Ponovi",
+        "resend": "Ponovno pošlji",
+        "restore": "Obnovi",
+        "restore_calendar": "Obnovi koledar",
+        "results_for": "Rezultati za:",
+        "role": "Vloga",
+        "root": "Koren",
+        "save": "Shrani",
+        "scheduled_in": "Načrtovano"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
