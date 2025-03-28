@@ -228,7 +228,9 @@
         "of_every_month": "mesečno, vsak",
         "ok": "V redu",
         "on_behalf_of": "{{accountName}} v imenu {{identity}} <{{otherAccount}}>",
-        "optionals": "Izbirna"
+        "optionals": "Izbirno",
+        "other_actions": "Druge možnosti",
+        "out_of_office": "Odsoten"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
