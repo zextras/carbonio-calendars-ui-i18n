@@ -270,15 +270,380 @@
         "single_advanced_filter": "Napredni filtri",
         "single_instance": "ENKRATNI DOGODEK",
         "snooze": "Preloži",
-        "start_date": "Začetni datum",
-        "start_date_and_time": "Začetni datum in čas",
+        "start_date": "Datum začetka",
+        "start_date_and_time": "Datum in ura začetka",
         "start_week_on": "Začni teden na",
         "subject": "Zadeva",
         "tag": "Oznaka",
         "tag_name": "Ime oznake",
-        "tag_max_length": "Dovoljeno največ 128 znakov"
+        "tag_max_length": "Dovoljeno največ 128 znakov",
+        "tags": "Oznake",
+        "the": "The",
+        "time": "Čas",
+        "time_zones": "Časovni pasovi",
+        "to": "do",
+        "today": "danes",
+        "trash": "Smeti",
+        "trash_emptied": "Smeti uspešno izpraznjene",
+        "type_name_here": "Ime koledarja",
+        "undo": "Razveljavi",
+        "view_url": "Ogled URL-ja",
+        "warning": "Opozorilo",
+        "week": "Teden",
+        "week_day": {
+            "friday": "Petek",
+            "monday": "Ponedeljek",
+            "saturday": "Sobota",
+            "sunday": "Nedelja",
+            "thursday": "Četrtek",
+            "tuesday": "Torek",
+            "wednesday": "Sreda"
+        },
+        "weeks_on": "Teden(-ni) na",
+        "work_hour": "Delovni čas",
+        "work_week": "Delovni teden",
+        "your_pref_timezone_msg": "Vaš prednostni časovni pas je: GMT +01:00 Amsterdam, Berlin, Bern, Rim, Stockholm, Dunaj.",
+        "attendees": "Udeleženci",
+        "forward": "Posreduj",
+        "type_group_name_here": "Ime skupine",
+        "calendar_groups": "Skupine koledarjev",
+        "create_group": "Ustvarite novo skupino",
+        "newgroup": {
+            "note": "Ta skupina bo prikazana v vašem osebnem računu.",
+            "calendars": "Koledarji v tej skupini"
+        },
+        "group_not_found": "Skupina ni najdena",
+        "calendar_selector": {
+            "placeholder": "Dodaj koledarje"
+        },
+        "invalid_group_name": "Vnesite ime skupine, da shranite spremembe",
+        "editgroup": {
+            "calendars": "Koledarji v tej skupini"
+        },
+        "group_is_empty": "Ta skupina je prazna",
+        "calendars": "Koledarji",
+        "hide_event_detail": "Skrij podrobnosti",
+        "show_event_detail": "Prikaži podrobnosti",
+        "timezone_pref_msg": "Časi upoštevajo vaše nastavitve časovnega pasu.",
+        "group_empty_calendars_list": "V tej skupini še ni koledarjev. Začnite pisati ime koledarja v vnosno polje, nato kliknite “+” za dodajanje v skupino.",
+        "tentative": "Nezavezujoče"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
-    "attendees_equipments_unavailable": "Eden ali več kosov opreme ni na voljo ob izbranem času dogodka"
+    "attendees_equipments_unavailable": "Eden ali več kosov opreme ni na voljo ob izbranem času dogodka",
+    "local_timezone_tooltip": "Datum in čas v lokalnem časovnem pasu:",
+    "message": {
+        "appointment_invitation_sent": "Vabilo na sestanek poslano",
+        "appointment_type_handle": "{{name}} je ponavljajoči se sestanek. Želite odpreti samo to instanco ali celotno serijo?",
+        "are_organizer": "ste organizator",
+        "copy": "Kopiraj",
+        "delete_all_occurences": "Izbriši vse ponovitve",
+        "delete_future_occurences_warning": "To bo prav tako izbrisalo vse izjeme (pred in po tem dogodku) v seriji",
+        "delete_future_occurences": "Izbriši ta dogodek in vse prihodnje ponovitve",
+        "delete_tag_message1": "Ali ste prepričani, da želite izbrisati oznako {{name}}?",
+        "import_appointment_modal": "Sestanki,  ki so v  {{fileName}}, bodo uvoženi v koledar \\\"{{calendarName}}\\\"",
+        "invite_has_no_message": "To vabilo ne vsebuje besedilnega sporočila",
+        "invited_you": "vas je povabil na dogodek",
+        "meeting_canceled": "Naslednji sestanek je bil preklican",
+        "modal": {
+            "delete": {
+                "sure_delete_appointment_permanently": "Z dokončnim izbrisom tega sestanka ga ne boste mogli več obnoviti. Nadaljujem?",
+                "sure_delete_appointment_all_instances_permanently": "To bo izbrisalo vse ponovitve tega sestanka in jih ne boste mogli obnoviti. Nadaljujem?"
+            }
+        },
+        "more": "Več…",
+        "organizer": "Organizator",
+        "send_email": "Pošlji e-pošto",
+        "search_hints": ":",
+        "share_calendar_url_note": "Samo vaši sodelavci lahko dostopajo do vaših podatkov s temi povezavami.",
+        "snackbar": {
+            "all_att_added": "Priloge so bile uspešno dodane",
+            "all_link_copied": "Javna povezava uspešno kopirana",
+            "appointment_permanently_deleted": "Sestanek trajno izbrisan",
+            "appt_moved": "Sestanek uspešno premaknjen v",
+            "appt_moved_to_trash": "Sestanek premaknjen v smeti",
+            "appt_restored": "Sestanek uspešno obnovljen v",
+            "att_err_adding": "Pri dodajanju prilog je prišlo do težave, poskusite znova",
+            "calendar_edits_saved": "Spremembe uspešno shranjene",
+            "calendar_moved_to_root_folder": "Koledar premaknjen v korensko mapo",
+            "calendar_moved_to_trash": "Koledar premaknjen v smeti",
+            "calendar_restored": "Koledar uspešno obnovljen",
+            "invite": {
+                "accept": "Odgovorili ste kot Sprejeto",
+                "decline": "Odgovorili ste kot Zavrnjeno",
+                "tentative": "Odgovorili ste kot Nezavezujoče"
+            },
+            "new_calendar_created": "Nov koledar ustvarjen",
+            "series_deleted": "Serija premaknjena v smeti. Udeleženci bodo prejeli obvestilo o preklicu.",
+            "series_deleted_no_notification": "Serija premaknjena v smeti.",
+            "shared_calendar_removed": "Koledar uspešno odstranjen",
+            "group_edited": "Spremembe shranjene",
+            "new_group_created": "Nova skupina ustvarjena",
+            "group_deleted": "Skupina koledarjev trajno izbrisana",
+            "appointment_permanently_deleted_succesfully": "Trajni izbris uspešno zaključen",
+            "calendar_deleted_successfully": "Koledar uspešno izbrisan.",
+            "calendar_permanently_deleted": "Koledar trajno izbrisan",
+            "some_att_add_fails": "Pri dodajanju nekaterih prilog je prišlo do težave, poskusite znova",
+            "link_copying_error": "Pri ustvarjanju javne povezave je prišlo do težave, poskusite znova",
+            "some_link_copying_error": "Pri ustvarjanju javne povezave za nekatere datoteke je prišlo do težave, poskusite znova"
+        },
+        "somebody_invited_you": "<strong>{{somebody}}</strong> vas je povabil",
+        "somebody_is_organizer": "<strong>{{somebody}}</strong> je organizator",
+        "sure_to_delete_all_occurences_appointment": "Ali ste prepričani, da želite izbrisati vse ponovitve tega sestanka?",
+        "sure_to_delete_appointment": "Ali ste prepričani, da želite izbrisati ta sestanek?",
+        "want_to_edit_cancellation_msg": "Ali želite urediti sporočilo o preklicu sestanka?",
+        "want_to_edit_modified_msg": "Spremembe bodo poslane udeležencem po e-pošti. Želite dodati prilagojeno sporočilo?",
+        "want_to_send_cancellation_msg": "Ali želite poslati sporočilo o preklicu udeležencem?",
+        "you": "Vi",
+        "you_sure_delete_calendar": "Ali ste prepričani, da želite trajno izbrisati koledar {{name}}?",
+        "you_sure_delete_instance": "Ali ste prepričani, da želite izbrisati to instanco sestanka {{title}}?",
+        "original_invite": "-----Prvotno povabilo-----",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> je povabil {{owner}}",
+        "the_organizer": "Organizator",
+        "you_are_organizer": "<Row><Text> <BoldText> Vi  </BoldText> ste organizator </Text></Row>",
+        "you_did_not_answer": "Niste odgovorili",
+        "you_accepted": "Potrdili ste",
+        "you_declined": "Zavrnili ste",
+        "you_accepted_as_tentative": "Potrdili ste kot Neobvezno",
+        "share_calendar_url_msg": "Koledar {{title}} lahko hitro delite s sodelavci z eno od teh povezav:",
+        "sure_to_delete_appointment_permanently": "Ali ste prepričani, da želite trajno izbrisati ta sestanek?",
+        "you_sure_move_calendar_trash": "Ali ste prepričani, da želite izbrisati koledar {{name}}?",
+        "share_calendar_url_note2": "Samo vaši sodelavci lahko dostopajo do vaših podatkov s temi povezavami.<br/> Te povezave lahko najdete tudi z desnim klikom na seznam koledarjev.",
+        "delete_tag_message2": "Ko bo izbrisan, bo odstranjen iz vseh elementov, na katere je bila dodeljen.",
+        "meeting_modified": "Naslednji sestanek je bil spremenjen",
+        "edit_series_warning": "Ko spremenite serijo, bodo vsi predhodno izbrisani ali spremenjeni dogodki obnovljeni z novimi nastavitvami serije."
+    },
+    "messages": {
+        "format_as_plain_text": "Oblikuj kot golo besedilo",
+        "snackbar": {
+            "tag_not_updated": "Nekaj je šlo narobe, oznaka ni bila posodobljena. Poskusite znova.",
+            "tag_updated": "Oznaka uspešno posodobljena",
+            "tag_created": "Oznaka {{name}} uspešno ustvarjena",
+            "tag_deleted": "Oznaka {{name}} uspešno izbrisana"
+        }
+    },
+    "months": {
+        "april": "April",
+        "august": "Avgust",
+        "december": "December",
+        "february": "Februar",
+        "january": "Januar",
+        "july": "Julij",
+        "june": "Junij",
+        "march": "Marec",
+        "may": "Maj",
+        "november": "November",
+        "october": "Oktober",
+        "september": "September"
+    },
+    "mountpoint_success": "Skupna raba je bila uspešno dodana v razdelek Skupni koledarji",
+    "mountpoint_warning": "{{failed}} od {{total}} skupnih koledarjev ni bilo mogoče dodati v razdelek Skupni koledarji",
+    "new_appointment": "Nov sestanek",
+    "next_day": "Naslednji dan",
+    "next_month": "Naslednji mesec",
+    "next_week": "Naslednji teden",
+    "no_title": " ",
+    "owner": "Lastnik",
+    "participants": {
+        "Accepted": "Sprejeto",
+        "Declined": "zavrnjeno",
+        "Attendees_declined_count_one": "<strong>{{count}} udeleženec </strong> je zavrnil",
+        "Attendees_declined_count_two": "<strong>{{count}} udeleženca </strong> sta zavrnila",
+        "Attendees_declined_count_few": "<strong>{{count}} udeleženci </strong> so zavrnili",
+        "Attendees_declined_count_other": "<strong>{{count}} udeleženci </strong> so zavrnili",
+        "Attendees_tentative_count_one": "<strong>{{count}} udeleženec </strong> je sprejel kot nezavezujoče",
+        "Attendees_tentative_count_two": "<strong>{{count}} udeleženca </strong> sta sprejela kot nezavezujoče",
+        "Attendees_tentative_count_few": "<strong>{{count}} udeleženci </strong> so sprejeli kot nezavezujoče",
+        "Attendees_tentative_count_other": "<strong>{{count}} udeleženci </strong> so sprejeli kot nezavezujoče",
+        "DE_with_count_one": "Zavrnil {{count}}",
+        "DE_with_count_two": "Zavrnila {{count}}",
+        "DE_with_count_few": "Zavrnili {{count}}",
+        "DE_with_count_other": "Zavrnili {{count}}",
+        "Invited_Visitor": "so bili povabljeni",
+        "Not_answered": "ni odgovoril",
+        "Tentative": "sprejeto kot nezavezujoče",
+        "visitors": "in drugih {{others}} udeležencev",
+        "Attendees_not_answered_count_one": "<strong>{{count}} udeleženec </strong> ni odgovoril",
+        "Attendees_not_answered_count_two": "<strong>{{count}} udeleženca </strong> nista odgovorila",
+        "Attendees_not_answered_count_few": "<strong>{{count}} udeleženci </strong> niso odgovorili",
+        "Attendees_not_answered_count_other": "<strong>{{count}} udeleženci </strong> niso odgovorili",
+        "NE_with_count_one": "Ni odgovoril {{count}}",
+        "NE_with_count_two": "Nista odgovorila ({{count}})",
+        "NE_with_count_few": "Ni odgovorilo ({{count}})",
+        "NE_with_count_other": "Ni odgovorilo ({{count}})",
+        "TE_with_count_one": "Nezavezujoč ({{count}})",
+        "TE_with_count_two": "Nezavezujoča ({{count}})",
+        "TE_with_count_few": "Nezavezujoče ({{count}})",
+        "TE_with_count_other": "Nezavezujoče ({{count}})",
+        "Attendees_accepted_count_one": "<strong>{{count}} udeleženec </strong> je sprejel",
+        "Attendees_accepted_count_two": "<strong>{{count}} udeleženca </strong> sta sprejela",
+        "Attendees_accepted_count_few": "<strong>{{count}} udeleženci </strong> so sprejeli",
+        "Attendees_accepted_count_other": "<strong>{{count}} udeleženci </strong> so sprejeli"
+    },
+    "placeholder": {
+        "organizer": "Organizator"
+    },
+    "preview": {
+        "close": "Zapri predogled"
+    },
+    "previous_day": "Prejšnji dan",
+    "previous_month": "Prejšnji mesec",
+    "previous_week": "Prejšnji teden",
+    "public": "javno",
+    "read": "Preberi",
+    "recurrent_in_allday": "Ponovitvenega sestanka ni mogoče premakniti v celodnevni termin",
+    "reminder": {
+        "all_time": "Ves čas dogodka",
+        "at_time_of_event": "Ob času dogodka",
+        "hour_before_one": "{{count}} uro prej",
+        "hour_before_two": "{{count}} uri prej",
+        "hour_before_few": "{{count}} ur prej",
+        "hour_before_other": "{{count}} ur prej",
+        "hours_one": "{{count}} ura",
+        "hours_two": "{{count}} uri",
+        "hours_few": "{{count}} ur",
+        "hours_other": "{{count}} ur",
+        "minutes_one": "{{count}} minuta",
+        "minutes_two": "{{count}} minuti",
+        "minutes_few": "{{count}} minut",
+        "minutes_other": "{{count}} minut",
+        "never": "Nikoli",
+        "second_before_one": "{{count}} sekundo prej",
+        "second_before_two": "{{count}} sekundi prej",
+        "second_before_few": "{{count}} sekund prej",
+        "second_before_other": "{{count}} sekund prej",
+        "modal": {
+            "set_new_time_message": "Ali želite nastaviti nov čas za zamujeni sestanek? Če kliknete V redu, bodo vsi drugi opomniki samodejno zavrnjeni."
+        },
+        "week_before_one": "{{count}} teden prej",
+        "week_before_two": "{{count}} tedna prej",
+        "week_before_few": "{{count}} tednov prej",
+        "week_before_other": "{{count}} tednov prej",
+        "day_before_one": "{{count}} dan prej",
+        "day_before_two": "{{count}} dneva prej",
+        "day_before_few": "{{count}} dni prej",
+        "day_before_other": "{{count}} dni prej",
+        "minute_before_one": "{{count}} minuto prej",
+        "minute_before_two": "{{count}} minuti prej",
+        "minute_before_few": "{{count}} minut prej",
+        "minute_before_other": "{{count}} minut prej"
+    },
+    "remove_from_this_list": "Odstrani skupni koledar",
+    "repeat": {
+        "customize": "Prilagodi",
+        "daily": "Dnevno",
+        "everyMonth": "Vsak mesec",
+        "everyWeek": "Vsak teden",
+        "everyYear": "Vsako leto",
+        "monthly": "Mesečno",
+        "weekly": "Tedensko",
+        "yearly": "Letno"
+    },
+    "revoke_access": "Prekliči dostop",
+    "revoke_without_custom_message": "Prekliči dostop s pošiljanjem standardnega obvestila",
+    "revoke_without_notification": "Prekliči dostop brez pošiljanja obvestila",
+    "search": {
+        "from_date": "Od datuma",
+        "organized_by": "organiziral",
+        "to_date": "Do datuma"
+    },
+    "settings": {
+        "invalid_email": "Neveljaven e-poštni naslov",
+        "label": {
+            "default_appt_dur": "Privzeto trajanje sestanka",
+            "default_calendar": "Privzeti koledar",
+            "delete_invt_on_rply": "Izbriši vabilo ob odgovoru",
+            "enable_reminder_sound": "Predvajaj zvok (zahteva QuickTime ali Windows Media vtičnik)",
+            "enter_email": "Vnesite e-poštni naslov",
+            "flash_browser_title": "Utripanje naslova brskalnika",
+            "forward_invites": "Posreduj vabila",
+            "invitation_response": "Odziv na vabilo",
+            "show_popup_notification": "Pokaži pojavno obvestilo",
+            "show_reminders": "Pokaži opomnike",
+            "show_rmndr_past_due_meetings": "Pokaži opomnike za pretekle sestanke",
+            "show_timezones": "Prikaži časovni pas pri ustvarjanju novega sestanka",
+            "snd_autorply_users": "Pošlji samodejni odgovor uporabnikom, ki me ne morejo povabiti",
+            "span_time": "Časovni razpon"
+        },
+        "options": {
+            "default_view": {
+                "day": "Dnevni pogled",
+                "list": "Seznamni pogled",
+                "month": "Mesečni pogled",
+                "week": "Tedenski pogled",
+                "work_week": "Delovni teden pogled"
+            },
+            "dflt_vsblty_opt": {
+                "public": "Javno"
+            },
+            "free_busy_opts": {
+                "allow_all": "Dovoli tako notranjim kot zunanjim uporabnikom, da vidijo moje informacije o prostem/zasedenem času",
+                "allow_following": "Dovoli samo naslednjim notranjim uporabnikom, da vidijo moje informacije o prostem/zasedenem času",
+                "allow_internal": "Dovoli samo uporabnikom notranjih domen, da vidijo moje informacije o prostem/zasedenem času",
+                "allow_none": "Ne dovoli nikomur, da vidi moje informacije o prostem/zasedenem času",
+                "allow_domain": "Dovoli samo uporabnikom v moji domeni, da vidijo moje informacije o prostem/zasedenem času"
+            },
+            "invt_opts": {
+                "allow_all": "Dovoli tako notranjim kot zunanjim uporabnikom, da me povabijo na sestanke",
+                "allow_following": "Dovoli samo naslednjim notranjim uporabnikom, da me povabijo na sestanke",
+                "allow_internal": "Dovoli samo notranjim uporabnikom, da me povabijo na sestanke",
+                "allow_none": "Ne dovoli nikomur, da me povabi na sestanke"
+            },
+            "timezones": {
+                "amsterdam": "GMT +01:00 Amsterdam, Berlin, Bern, Rim, Stockholm, Dunaj",
+                "chennai": "GMT +05:30 Čenaj, Kolkata, Mumbai, New Delhi",
+                "egypt": "GMT +02:00 Egipt"
+            }
+        },
+        "ical_note": "Apple iCal je mogoče konfigurirati za dostop do vaših koledarjev prek protokola CalDAV. Ko je ta možnost omogočena, so skupni koledarji prikazani v zavihku Delegacija računa iCal, kjer lahko drugim uporabnikom dodelite dostop do svojih koledarjev.",
+        "permissions_note": "Uporabniki spodaj morajo biti v tem e-poštnem sistemu (zextras.com). Uporabite lahko celoten e-poštni naslov ali samo uporabniško ime."
+    },
+    "share": {
+        "label": {
+            "allow_to_see_private_appt": "Dovoli uporabniku(-om) ogled podrobnosti zasebnih sestankov",
+            "send_notification": "Pošlji obvestilo o tej skupni rabi"
+        },
+        "options": {
+            "share_calendar_role": {
+                "admin": "Urejevalec (lahko vidi, ureja, dodaja in briše, vendar ne more sprejeti ali ponovno deliti sestankov)                ",
+                "manager": "Upravitelj (lahko vidi, ureja, dodaja, briše, sprejema in ponovno deli sestanke)",
+                "none": "Brez",
+                "viewer": "Gledalec (lahko samo vidi)"
+            },
+            "share_calendar_with": {
+                "external_guests": "Zunanji gostje (samo ogled)",
+                "internal_users_groups": "Notranji uporabniki ali skupine",
+                "public": "Javno (samo ogled, geslo ni potrebno)"
+            }
+        },
+        "placeholder": {
+            "recipients_address": "E-poštni naslovi prejemnikov",
+            "standard_message": "Dodajte opombo k standardnemu sporočilu"
+        },
+        "note": {
+            "share_note": "Standardno sporočilo prikazuje vaše ime, ime deljenega elementa, dodeljena dovoljenja prejemnikom in podatke za prijavo."
+        }
+    },
+    "share_invite_resent": "Vabilo za skupno rabo ponovno poslano",
+    "shared_folders": "Skupni koledarji",
+    "shared_items": "Skupni elementi",
+    "shares_info": "Podatki o skupni rabi",
+    "snackbar": {
+        "invite": {
+            "error": "Napaka"
+        },
+        "proposed_time_accepted": "Sprejeli ste predlagani čas",
+        "share_folder_success": "Koledar uspešno deljen",
+        "tag_applied": "Oznaka {{tag}} uporabljena",
+        "tag_removed": "Oznaka {{tag}} odstranjena",
+        "url_copied": "{{title}} kopirano",
+        "email_copied_to_clipboard": "E-pošta kopirana v odložišče.",
+        "forwardAppointment": {
+            "success": "Sestanek posredovan"
+        }
+    },
+    "mountpoint_error": "Skupne rabe ni bilo mogoče dodati v razdelek Skupni koledarji",
+    "revoke_with_custom_message": "Prekliči dostop s pošiljanjem prilagojenega obvestila",
+    "resend_mail_notification_about_this_share": "Pošlji e-poštno obvestilo o tej skupni rabi",
+    "private_info_tooltip": "Pri deljenju koledarja lahko drugi uporabniki vidijo podrobnosti vaših sestankov (naslov, opis in udeležence), razen tistih, ki so označeni kot zasebni. V tem primeru bodo drugi uporabniki videli samo vaš prost/zaseden čas, ne pa podrobnosti sestanka. Ali želite, da lahko drugi uporabniki vidijo tudi podrobnosti vaših zasebnih sestankov?"
 }
