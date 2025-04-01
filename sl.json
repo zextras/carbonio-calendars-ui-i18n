@@ -688,6 +688,10 @@
         "darwin": "{{value}} Darwin",
         "cape_verde_is": "{{value}} Zelenortski otoki",
         "coordinated_universal_time": "{{value}} Univerzalni koordinirani čas (UTC)",
-        "harare_pretoria": "{{value}} Harare, Pretoria"
+        "harare_pretoria": "{{value}} Harare, Pretoria",
+        "caracas": "Caracas",
+        "ekaterinburg_rtz_4": "Jekaterinburg (RTZ 4)",
+        "eucla": "Eucla",
+        "georgetown_la_paz_manaus_san_juan": "Georgetown, La Paz, Manaus, San Juan"
     }
 }
