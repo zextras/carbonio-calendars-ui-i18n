@@ -65,7 +65,8 @@
             "expand": "Odpri",
             "no": "Ne",
             "yes": "Da",
-            "needs_action": "Zahteva dejanje"
+            "needs_action": "Zahteva dejanje",
+            "invitation_not_sent_yet": "Vabilo še ni bilo poslano"
         },
         "is_exception": "Izjema"
     },
@@ -326,7 +327,44 @@
         "show_event_detail": "Prikaži podrobnosti",
         "timezone_pref_msg": "Časi upoštevajo vaše nastavitve časovnega pasu.",
         "group_empty_calendars_list": "V tej skupini še ni koledarjev. Začnite pisati ime koledarja v vnosno polje, nato kliknite “+” za dodajanje v skupino.",
-        "tentative": "Nezavezujoče"
+        "tentative": "Nezavezujoče",
+        "advanced_filters_one": "{{count}} napreden filter",
+        "advanced_filters_two": "{{count}} napredna filtra",
+        "advanced_filters_few": "{{count}} napredni filtri",
+        "advanced_filters_other": "{{count}} napredni filtri",
+        "appt_reminder_one": "Opomnik za sestanek",
+        "appt_reminder_two": "Opomnika za sestanek",
+        "appt_reminder_few": "Opomniki za sestanek",
+        "appt_reminder_other": "Opomniki za sestanek",
+        "attachment_one": "Priloga",
+        "attachment_two": "Prilogi",
+        "attachment_few": "Priloge",
+        "attachment_other": "Priloge",
+        "attendee_one": "Prisoten",
+        "attendee_two": "Prisotna",
+        "attendee_few": "Prisotni",
+        "attendee_other": "Prisotni",
+        "delete_attachment_one": "Izbriši",
+        "delete_attachment_two": "Izbriši vse",
+        "delete_attachment_few": "Izbriši vse",
+        "delete_attachment_other": "Izbriši vse",
+        "dismiss_one": "Zavrni",
+        "dismiss_two": "Zavrni vse",
+        "dismiss_few": "Zavrni vse",
+        "dismiss_other": "Zavrni vse",
+        "download_one": "Prenesi",
+        "download_two": "Prenesi vse",
+        "download_few": "Prenesi vse",
+        "download_other": "Prenesi vse",
+        "optional_one": "Neobvezno",
+        "optional_two": "Neobvezna",
+        "optional_few": "Neobvezni",
+        "optional_other": "Neobvezni",
+        "search_hint": "",
+        "show_one": "Prikaži",
+        "show_two": "Prikaži vse",
+        "show_few": "Prikaži vse",
+        "show_other": "Prikaži vse"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
@@ -411,7 +449,15 @@
         "share_calendar_url_note2": "Samo vaši sodelavci lahko dostopajo do vaših podatkov s temi povezavami.<br/> Te povezave lahko najdete tudi z desnim klikom na seznam koledarjev.",
         "delete_tag_message2": "Ko bo izbrisan, bo odstranjen iz vseh elementov, na katere je bila dodeljen.",
         "meeting_modified": "Naslednji sestanek je bil spremenjen",
-        "edit_series_warning": "Ko spremenite serijo, bodo vsi predhodno izbrisani ali spremenjeni dogodki obnovljeni z novimi nastavitvami serije."
+        "edit_series_warning": "Ko spremenite serijo, bodo vsi predhodno izbrisani ali spremenjeni dogodki obnovljeni z novimi nastavitvami serije.",
+        "optional_participant_one": "{{count}} Neobvezen",
+        "optional_participant_two": "{{count}} Neobvezna",
+        "optional_participant_few": "{{count}} Neobvezni",
+        "optional_participant_other": "{{count}} Neobvezni",
+        "required_participant_one": "{{count}} neobvezen",
+        "required_participant_two": "{{count}} neobvezna",
+        "required_participant_few": "{{count}} neobvezni",
+        "required_participant_other": "{{count}} neobvezni"
     },
     "messages": {
         "format_as_plain_text": "Oblikuj kot golo besedilo",
@@ -478,7 +524,11 @@
         "Attendees_accepted_count_one": "<strong>{{count}} udeleženec </strong> je sprejel",
         "Attendees_accepted_count_two": "<strong>{{count}} udeleženca </strong> sta sprejela",
         "Attendees_accepted_count_few": "<strong>{{count}} udeleženci </strong> so sprejeli",
-        "Attendees_accepted_count_other": "<strong>{{count}} udeleženci </strong> so sprejeli"
+        "Attendees_accepted_count_other": "<strong>{{count}} udeleženci </strong> so sprejeli",
+        "AC_with_count_one": "Sprejeto",
+        "AC_with_count_two": "Sprejeto",
+        "AC_with_count_few": "Sprejeto",
+        "AC_with_count_other": "Sprejeto"
     },
     "placeholder": {
         "organizer": "Organizator"
@@ -656,7 +706,7 @@
         "asuncion": "{{value}} Asuncion",
         "athens_beirut_bucharest_istanbul": "{{value}} Atene, Bejrut, Bukarešta, Istanbul",
         "azores": "{{value}} Azori",
-        "baja_california": "{{value}} Baja California",
+        "baja_california": "{{value}} Baja Kalifornija",
         "baku": "{{value}} Baku",
         "bangkok_hanoi_jakarta": "{{value}} Bangkok, Hanoj, Džakarta",
         "beijing_chongqing_hong_kong_urumqi": "{{value}} Peking, Chongqing, Hongkong, Urumqi",
@@ -688,10 +738,129 @@
         "darwin": "{{value}} Darwin",
         "cape_verde_is": "{{value}} Zelenortski otoki",
         "coordinated_universal_time": "{{value}} Univerzalni koordinirani čas (UTC)",
-        "harare_pretoria": "{{value}} Harare, Pretoria",
+        "harare_pretoria": "{{value}} Harare, Pretorija",
         "caracas": "Caracas",
         "ekaterinburg_rtz_4": "Jekaterinburg (RTZ 4)",
         "eucla": "Eucla",
-        "georgetown_la_paz_manaus_san_juan": "Georgetown, La Paz, Manaus, San Juan"
-    }
+        "georgetown_la_paz_manaus_san_juan": "Georgetown, La Paz, Manaus, San Juan",
+        "indiana_east": "{{value}} Indiana (Vzhod)",
+        "iraq": "{{value}} Irak",
+        "irkutsk_rtz_7": "{{value}} Irkutsk (RTZ 7)",
+        "istanbul": "{{value}} Istanbul",
+        "jerusalem": "{{value}} Jeruzalem",
+        "jordan": "{{value}} Jordanija",
+        "kabul": "{{value}} Kabul",
+        "kaliningrad_rtz_1": "{{value}} Kaliningrad (RTZ 1)",
+        "kathmandu": "{{value}} Katmandu",
+        "korea": "{{value}} Koreja",
+        "krasnoyarsk_rtz_6": "{{value}} Krasnojarsk (RTZ 6)",
+        "kuwait_riyadh": "{{value}} Kuvajt, Rijad",
+        "la_paz": "{{value}} La Paz",
+        "magadan": "{{value}} Magadan",
+        "manaus": "{{value}} Manaus",
+        "mid_atlantic": "{{value}} Srednji Atlantik",
+        "minsk": "{{value}} Minsk",
+        "monrovia": "{{value}} Monrovija",
+        "montevideo": "{{value}} Montevideo",
+        "nairobi": "{{value}} Nairobi",
+        "namibia": "{{value}} Namibija",
+        "nuku_alofa": "{{value}} Nuku’alofa",
+        "pacific_south_america": "{{value}} Pacifiška Južna Amerika",
+        "port_louis": "{{value}} Port Louis",
+        "newfoundland": "{{value}} Nova Fundlandija",
+        "samoa": "{{value}} Samoa",
+        "sarajevo_skopje_warsaw_zagreb": "{{value}} Sarajevo, Skopje, Varšava, Zagreb",
+        "saskatchewan": "{{value}} Saskatchewan",
+        "tbilisi": "{{value}} Tbilisi",
+        "tehran": "{{value}} Teheran",
+        "us_canada_central": "{{value}} ZDA/Kanada Srednji",
+        "us_canada_eastern": "{{value}} ZDA/Kanada Vzhodni",
+        "us_canada_mountain": "{{value}} ZDA/Kanada Gorski",
+        "us_canada_pacific": "{{value}} ZDA/Kanada Tihooceanski",
+        "vladivostok_magadan": "{{value}} Vladivostok, Magadan (RTZ 9)",
+        "yangon": "{{value}} Yangon",
+        "yerevan": "{{value}} Ereván",
+        "helsinki_kyiv_riga_sofia_tallinn_vilnius": "{{value}} Helsinki, Kijev, Riga, Sofija, Talin, Vilna",
+        "pyongyang": "{{value}} Pjongjang",
+        "moscow_st_petersburg_volgograd_rtz_2": "{{value}} Moskva, St. Peterburg, Volgograd (RTZ 2)",
+        "sri_jayawardenepura_kotte": "{{value}} Sri Jayawardenepura Kotte",
+        "west_central_africa": "{{value}} Zahodna Srednja Afrika"
+    },
+    "timezones": "Časovni pasovi",
+    "tooltip": {
+        "chat": "Oprema",
+        "chat_room": "Povezava do virtualne sobe",
+        "copy_ics_url": "Kopiraj ICS URL",
+        "copy_outlook_url": "Kopiraj Outlook URL",
+        "copy_vector_url": "Kopiraj Pogled URL",
+        "edit": "Uredi lastnosti skupne rabe",
+        "enable_disable_rich_text": "Omogoči/Onemogoči urejevalnik obogatenega besedila",
+        "equipment": "Oprema",
+        "folder_linked_status": "V skupni rabi z mano",
+        "location": "Lokacija",
+        "meetingRooms": "Sobe za sestanke",
+        "revoke": "Prekliči dostop",
+        "virtual_room": "Virtualna soba",
+        "resend": "Pošlji e-poštno obvestilo o tej skupni rabi",
+        "add_attachments": "Dodaj priloge",
+        "calendar_sharing_status_one": "V skupni rabi z {{count}} osebo",
+        "calendar_sharing_status_two": "V skupni rabi z {{count}} osebama",
+        "calendar_sharing_status_few": "V skupni rabi z {{count}} osebami",
+        "calendar_sharing_status_other": "V skupni rabi z {{count}} osebami"
+    },
+    "type": "Vrsta",
+    "workflow": "Potek dela",
+    "write": "Piši",
+    "modal": {
+        "initializeError": {
+            "title": "Nekaj je šlo narobe",
+            "content": "Osvežite stran ali poskusite znova kasneje. Drugi moduli so lahko še vedno na voljo z omejeno funkcionalnostjo.",
+            "buttonConfirm": "OSVEŽI"
+        },
+        "forwardAppointment": {
+            "title": "Posreduj sestanek",
+            "placeholder": "Dodaj nove udeležence",
+            "content": "Posredujete ta sestanek enemu ali več udeležencem, ki bodo prejeli vabilo na sestanek."
+        },
+        "buttonLabel": {
+            "forward": "POSREDUJ"
+        }
+    },
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "Pridruži se virtualni sobi"
+        }
+    },
+    "api": {
+        "error": {
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Skupina s tem imenom že obstaja"
+            },
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Skupina s tem imenom že obstaja"
+            }
+        }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "show": "PRIKAŽI ORGANIZATORJA",
+                "hide": "SKRIJ ORGANIZATORJA"
+            }
+        }
+    },
+    "daily_planner": {
+        "free": "Prost",
+        "non-working": "Ne-delovni",
+        "start_time": "Začetni čas",
+        "busy": "Zaseden",
+        "tentative": "Nezavezujoč",
+        "out-of-office": "Odsoten iz pisarne",
+        "participant": {
+            "optionalAttendee": "Neobvezen"
+        },
+        "status": "Status",
+        "end_time": "Končni čas"
+    },
+    "empty_trash_deleting_confirmation": "Brisali boste vse elemente v mapi Smeti koledarja. Brisanje je trajno. Ali ste prepričani, da želite izbrisati vse elemente?"
 }
