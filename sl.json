@@ -127,7 +127,7 @@
     },
     "label": {
         "access_revoked": "Dostop preklican",
-        "action_performed": "To dejanje je bilo že izvedeno",
+        "action_performed": "Ta dejanje ste že izvedli",
         "add_share": "Dodaj skupno rabo",
         "all_calendars": "Vsi koledarji",
         "all_day": "Cel dan",
