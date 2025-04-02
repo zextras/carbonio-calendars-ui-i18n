@@ -857,10 +857,18 @@
         "tentative": "Nezavezujoč",
         "out-of-office": "Odsoten iz pisarne",
         "participant": {
-            "optionalAttendee": "Neobvezen"
+            "optionalAttendee": "Neobvezen",
+            "organizer": "Organizator",
+            "attendee": "Udeleženec",
+            "meetingRoom": "Soba za sestanke",
+            "unknown": "Neznano",
+            "equipment": "Oprema"
         },
         "status": "Status",
-        "end_time": "Končni čas"
+        "end_time": "Končni čas",
+        "unknown": "Neznano",
+        "from": "od",
+        "to": "do"
     },
     "empty_trash_deleting_confirmation": "Brisali boste vse elemente v mapi Smeti koledarja. Brisanje je trajno. Ali ste prepričani, da želite izbrisati vse elemente?"
 }
