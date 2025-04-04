@@ -17,7 +17,11 @@
         "edit": "Modifica proprietà di condivisione",
         "virtual_room": "Stanza Virtuale",
         "folder_linked_status": "Condivisa con me",
-        "meetingRooms": "Sale riunioni"
+        "meetingRooms": "Sale riunioni",
+        "out_of_office_appointment": "Appuntamento non in ufficio",
+        "free_appointment": "Appuntamento disponibile",
+        "tentative_appointment": "Appuntamento in forse",
+        "busy_appointment": "Appuntamento occupato"
     },
     "reminder": {
         "never": "Mai",
