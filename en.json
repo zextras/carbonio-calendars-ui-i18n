@@ -753,7 +753,11 @@
         "meetingRooms": "MeetingRooms",
         "resend": "Send mail notification about this share",
         "revoke": "Revoke access",
-        "virtual_room": "Virtual Room"
+        "virtual_room": "Virtual Room",
+        "out_of_office_appointment": "Out of office appointment",
+        "free_appointment": "Free appointment",
+        "tentative_appointment": "Tentative appointment",
+        "busy_appointment": "Busy appointment"
     },
     "type": "Type",
     "workflow": "WorkFlow",
