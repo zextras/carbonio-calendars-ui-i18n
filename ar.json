@@ -298,7 +298,7 @@
         "calendars": "التقاويم",
         "type_group_name_here": "اسم المجموعة",
         "hide_event_detail": "إخفاء التفاصيل",
-        "show_event_detail": "اظهر التفاصيل"
+        "show_event_detail": "اظهار التفاصيل"
     },
     "message": {
         "copy": "نسخ",
@@ -385,7 +385,8 @@
         "required_participant_many": "{{count}} مشاركاً",
         "required_participant_other": "{{count}} مشاركٍ",
         "somebody_invited_owner": "<strong>{{somebody}}</strong> دعا/دعت {{owner}}",
-        "original_invite": "-----الدعوة الأصلية-----"
+        "original_invite": "-----الدعوة الأصلية-----",
+        "you_did_not_answer": "لم تجيب"
     },
     "preview": {
         "close": "إغلاق المعاينة"
