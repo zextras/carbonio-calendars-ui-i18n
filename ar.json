@@ -387,7 +387,7 @@
         "somebody_invited_owner": "<strong>{{somebody}}</strong> دعا/دعت {{owner}}",
         "original_invite": "-----الدعوة الأصلية-----",
         "you_did_not_answer": "لم تجيب",
-        "you_accepted": "قبلت"
+        "you_accepted": "لقد قبلت"
     },
     "preview": {
         "close": "إغلاق المعاينة"
