@@ -468,7 +468,8 @@
         "calendar_sharing_status_many": "مشترك مع {{count}} شخص",
         "calendar_sharing_status_other": "مشترك مع {{count}} شخص",
         "free_appointment": "مواعيد متاح",
-        "busy_appointment": "مواعيد مشغولة"
+        "busy_appointment": "مواعيد مشغولة",
+        "out_of_office_appointment": "مواعيد خارج المكتب"
     },
     "modal": {
         "initializeError": {
