@@ -391,7 +391,7 @@
         "you_declined": "لقد رفضت",
         "you_accepted_as_tentative": "لقد قبلت بتردد",
         "the_organizer": "المنظم",
-        "who_set_this": "{{whoSetThis}}حدد هذا الموعد ك<strong>{{status}}</strong>"
+        "who_set_this": "{{whoSetThis}}حدد هذا الموعد كـ<strong>{{status}}</strong>"
     },
     "preview": {
         "close": "إغلاق المعاينة"
