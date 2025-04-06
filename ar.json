@@ -466,7 +466,8 @@
         "calendar_sharing_status_two": "مشترك مع شخصان {{count}}",
         "calendar_sharing_status_few": "مشترك مع {{count}} أشخاص",
         "calendar_sharing_status_many": "مشترك مع {{count}} شخص",
-        "calendar_sharing_status_other": "مشترك مع {{count}} شخص"
+        "calendar_sharing_status_other": "مشترك مع {{count}} شخص",
+        "free_appointment": "مواعيد مجانية"
     },
     "modal": {
         "initializeError": {
