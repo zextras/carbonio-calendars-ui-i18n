@@ -159,6 +159,11 @@
         "every": "كل",
         "custom_repeat": "تكرار مخصص",
         "delete_zero": "حذف",
+        "delete_one": "",
+        "delete_two": "",
+        "delete_few": "",
+        "delete_many": "",
+        "delete_other": "",
         "delete": "حذف",
         "delete_attachment_zero": "حذف",
         "delete_attachment_one": "حذف",
@@ -291,7 +296,9 @@
         },
         "group_is_empty": "هذه المجموعة فارغة",
         "calendars": "التقاويم",
-        "type_group_name_here": "اسم المجموعة"
+        "type_group_name_here": "اسم المجموعة",
+        "hide_event_detail": "إخفاء التفاصيل",
+        "show_event_detail": "اظهر التفاصيل"
     },
     "message": {
         "copy": "نسخ",
