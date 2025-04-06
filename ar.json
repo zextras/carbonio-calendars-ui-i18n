@@ -386,7 +386,8 @@
         "required_participant_other": "{{count}} مشاركٍ",
         "somebody_invited_owner": "<strong>{{somebody}}</strong> دعا/دعت {{owner}}",
         "original_invite": "-----الدعوة الأصلية-----",
-        "you_did_not_answer": "لم تجيب"
+        "you_did_not_answer": "لم تجيب",
+        "you_accepted": "قبلت"
     },
     "preview": {
         "close": "إغلاق المعاينة"
