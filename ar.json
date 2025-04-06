@@ -389,7 +389,7 @@
         "you_did_not_answer": "لم تجيب",
         "you_accepted": "لقد قبلت",
         "you_declined": "لقد رفضت",
-        "you_accepted_as_tentative": "قبلت مؤقتا",
+        "you_accepted_as_tentative": "لقد قبلت بتردد",
         "the_organizer": "المنظم",
         "who_set_this": "{{whoSetThis}}حدد هذا الموعد ك<strong>{{status}}</strong>"
     },
