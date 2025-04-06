@@ -469,7 +469,7 @@
         "calendar_sharing_status_other": "مشترك مع {{count}} شخص",
         "free_appointment": "مواعيد متاح",
         "busy_appointment": "موعد مشغول",
-        "out_of_office_appointment": "مواعيد خارج المكتب",
+        "out_of_office_appointment": "موعد خارج المكتب",
         "tentative_appointment": "موعد مؤقت"
     },
     "modal": {
