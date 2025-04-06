@@ -388,7 +388,8 @@
         "original_invite": "-----الدعوة الأصلية-----",
         "you_did_not_answer": "لم تجيب",
         "you_accepted": "لقد قبلت",
-        "you_declined": "لقد رفضت"
+        "you_declined": "لقد رفضت",
+        "you_accepted_as_tentative": "قبلت مؤقتا"
     },
     "preview": {
         "close": "إغلاق المعاينة"
