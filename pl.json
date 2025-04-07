@@ -749,7 +749,10 @@
         "edit": "Edytuj właściwości udostępniania",
         "virtual_room": "Wirtualny pokój",
         "folder_linked_status": "Udostępnione dla mnie",
-        "meetingRooms": "Pokoje spotkań"
+        "meetingRooms": "Pokoje spotkań",
+        "out_of_office_appointment": "Poza biurem",
+        "free_appointment": "Wolny termin",
+        "busy_appointment": "Zajęty termin"
     },
     "type": "Typ",
     "workflow": "Organizacja pracy",
