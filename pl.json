@@ -752,7 +752,8 @@
         "meetingRooms": "Pokoje spotkań",
         "out_of_office_appointment": "Poza biurem",
         "free_appointment": "Wolny termin",
-        "busy_appointment": "Zajęty termin"
+        "busy_appointment": "Zajęty termin",
+        "tentative_appointment": "Niepewny termin"
     },
     "type": "Typ",
     "workflow": "Organizacja pracy",
