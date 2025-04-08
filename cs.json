@@ -1,1 +1,16 @@
-{}
+{
+    "label": {
+        "choose_file": "Vybrat soubor",
+        "calendar": "Kalendář",
+        "create": "Vytvořit",
+        "create_tag": "Vytvořit štítek",
+        "delete": "Smazat"
+    },
+    "composer": {
+        "attachment": {
+            "files": "Přidat ze souborů",
+            "local": "Přidat z lokálního úložiště",
+            "url": "Přidat veřejný odkaz na soubory"
+        }
+    }
+}
