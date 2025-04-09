@@ -805,7 +805,8 @@
         "calendar_sharing_status_one": "V skupni rabi z {{count}} osebo",
         "calendar_sharing_status_two": "V skupni rabi z {{count}} osebama",
         "calendar_sharing_status_few": "V skupni rabi z {{count}} osebami",
-        "calendar_sharing_status_other": "V skupni rabi z {{count}} osebami"
+        "calendar_sharing_status_other": "V skupni rabi z {{count}} osebami",
+        "busy_appointment": "Zaseden termin"
     },
     "type": "Vrsta",
     "workflow": "Potek dela",
