@@ -260,10 +260,10 @@
         "series": "Serija",
         "set_new_time": "Nastavi nov čas",
         "settings_saved": "Nastavitve shranjene",
-        "share": "Delite",
+        "share": "Deli",
         "share_calendar_url": "{{title}} dostop do delitve",
         "share_public_link": "Delite javno povezavo",
-        "share_with": "Delite z",
+        "share_with": "Deli z",
         "show_declined_meetings": "Prikaži zavrnjene sestanke",
         "show_event": "Dvojni klik za prikaz več podrobnosti v koledarjih",
         "sharing_of_this_folder": "Deljenje te mape",
@@ -814,7 +814,7 @@
         "initializeError": {
             "title": "Nekaj je šlo narobe",
             "content": "Osvežite stran ali poskusite znova kasneje. Drugi moduli so lahko še vedno na voljo z omejeno funkcionalnostjo.",
-            "buttonConfirm": "OSVEŽI"
+            "buttonConfirm": "PONOVNO NALOŽI"
         },
         "forwardAppointment": {
             "title": "Posreduj sestanek",
