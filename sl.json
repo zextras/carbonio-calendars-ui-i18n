@@ -855,7 +855,7 @@
         "start_time": "Začetni čas",
         "busy": "Zaseden",
         "tentative": "Nezavezujoč",
-        "out-of-office": "Odsoten iz pisarne",
+        "out-of-office": "Odsoten",
         "participant": {
             "optionalAttendee": "Neobvezen",
             "organizer": "Organizator",
