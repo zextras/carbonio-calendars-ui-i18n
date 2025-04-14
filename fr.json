@@ -627,7 +627,11 @@
         "revoke": "Révoquer les accès",
         "virtual_room": "Salle virtuelle",
         "folder_linked_status": "Partagé avec moi",
-        "meetingRooms": "Salles de réunion"
+        "meetingRooms": "Salles de réunion",
+        "out_of_office_appointment": "Rendez-vous en dehors du bureau",
+        "free_appointment": "Rendez-vous libre",
+        "busy_appointment": "Rendez-vous occupé",
+        "tentative_appointment": "Nomination provisoire"
     },
     "type": "Type",
     "workflow": "Flux de travail",
