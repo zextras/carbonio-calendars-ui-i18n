@@ -363,7 +363,8 @@
         "show_one": "Prikaži",
         "show_two": "Prikaži vse",
         "show_few": "Prikaži vse",
-        "show_other": "Prikaži vse"
+        "show_other": "Prikaži vse",
+        "search_hint": "\"\""
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
@@ -456,7 +457,8 @@
         "required_participant_one": "{{count}} neobvezen",
         "required_participant_two": "{{count}} neobvezna",
         "required_participant_few": "{{count}} neobvezni",
-        "required_participant_other": "{{count}} neobvezni"
+        "required_participant_other": "{{count}} neobvezni",
+        "who_set_this": "{{whoSetThis}} je to srečanje označil kot <strong>{{status}}</strong>"
     },
     "messages": {
         "format_as_plain_text": "Oblikuj kot golo besedilo",
@@ -806,7 +808,10 @@
         "calendar_sharing_status_two": "V skupni rabi z {{count}} osebama",
         "calendar_sharing_status_few": "V skupni rabi z {{count}} osebami",
         "calendar_sharing_status_other": "V skupni rabi z {{count}} osebami",
-        "busy_appointment": "Zaseden termin"
+        "busy_appointment": "Zaseden termin",
+        "free_appointment": "Prosto srečanje",
+        "out_of_office_appointment": "Srečanje izven pisarne",
+        "tentative_appointment": "Nepotrjeno srečanje"
     },
     "type": "Vrsta",
     "workflow": "Potek dela",
