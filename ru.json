@@ -394,7 +394,11 @@
         "edit": "Изменить свойства общего доступа",
         "virtual_room": "Конференц зал",
         "meetingRooms": "Комнаты",
-        "folder_linked_status": "Поделились со мной"
+        "folder_linked_status": "Поделились со мной",
+        "free_appointment": "Свободен",
+        "out_of_office_appointment": "Вне офиса",
+        "tentative_appointment": "Под вопросом",
+        "busy_appointment": "Занят/а"
     },
     "action": {
         "send": "Отправить",
