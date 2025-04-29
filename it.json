@@ -21,7 +21,10 @@
         "out_of_office_appointment": "Appuntamento non in ufficio",
         "free_appointment": "Appuntamento disponibile",
         "tentative_appointment": "Appuntamento in forse",
-        "busy_appointment": "Appuntamento occupato"
+        "busy_appointment": "Appuntamento occupato",
+        "calendarSelector": {
+            "disabled": "Per spostare questo evento in un altro calendario utilizza l'opzione 'Sposta'"
+        }
     },
     "reminder": {
         "never": "Mai",
