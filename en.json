@@ -757,7 +757,10 @@
         "out_of_office_appointment": "Out of office appointment",
         "free_appointment": "Free appointment",
         "tentative_appointment": "Tentative appointment",
-        "busy_appointment": "Busy appointment"
+        "busy_appointment": "Busy appointment",
+        "calendarSelector": {
+            "disabled": "To move this event to another calendar use the 'Move' option"
+        }
     },
     "type": "Type",
     "workflow": "WorkFlow",
