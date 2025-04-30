@@ -759,8 +759,8 @@
         "calendarSelector": {
             "disabled": "To move this event to another calendar use the 'Move' option"
         },
-        "folder_sharing_status_one": "Shared with {{count}} user",
-        "folder_sharing_status_other": "Shared with {{count}} users"
+        "folder_sharing_status_one": "Shared with {{count}} person",
+        "folder_sharing_status_other": "Shared with {{count}} people"
     },
     "type": "Type",
     "workflow": "WorkFlow",
