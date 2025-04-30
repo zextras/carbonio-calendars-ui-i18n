@@ -576,7 +576,6 @@
         "revoke": "Batalkan akses",
         "resend": "Kirim pemberitahuan email tentang berbagi ini",
         "edit": "Edit properti berbagi",
-        "calendar_sharing_status_other": "Berbagi dengan {{count}} orang",
         "folder_linked_status": "Dibagikan dengan saya",
         "meetingRooms": "Ruang rapat"
     },
