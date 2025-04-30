@@ -13,7 +13,7 @@
         "send_cancellation": "Wyślij anulację",
         "share_calendar": "Udostępnij kalendarz",
         "send_edit": "Wyślij edycję",
-        "reset": "Zresetuj",
+        "reset": "Zresetuj filtry",
         "search": "Wyszukaj",
         "show_original": "Pokaż oryginał",
         "Trash_already_empty": "kosz jest już pusty",
@@ -750,7 +750,13 @@
         "out_of_office_appointment": "Poza biurem",
         "free_appointment": "Wolny termin",
         "busy_appointment": "Zajęty termin",
-        "tentative_appointment": "Niepewny termin"
+        "tentative_appointment": "Niepewny termin",
+        "calendarSelector": {
+            "disabled": "Użyj opcji \"Przenieś\", aby przenieść to wydarzenie do innego kalendarza"
+        },
+        "folder_sharing_status_one": "Udostępniono {{count}} osobie",
+        "folder_sharing_status_few": "Udostępniono {{count}} osobom",
+        "folder_sharing_status_many": "Udostępniono {{count}} osobom"
     },
     "type": "Typ",
     "workflow": "Organizacja pracy",
