@@ -412,8 +412,7 @@
         "colorCyan": "Ciano",
         "colorBlue": "Blu",
         "colorGreen": "Verde",
-        "colorOrange": "Arancione",
-        "clear_search_query": "PULISCI RICERCA"
+        "colorOrange": "Arancione"
     },
     "action": {
         "send": "Invia",
