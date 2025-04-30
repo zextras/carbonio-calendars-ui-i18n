@@ -488,8 +488,6 @@
         "equipment": "उपकरण",
         "location": "स्थान",
         "chat_room": "Virtual Room लिंक",
-        "calendar_sharing_status_one": "1 व्यक्ति के साथ शेयर किया गया",
-        "calendar_sharing_status_other": "",
         "revoke": "एक्सेस बंद करें",
         "resend": "इस शेयर के बारे में मेल नोटिफिकेशन भेजें",
         "edit": "शेयर गुणों में संशोधन",
