@@ -543,8 +543,7 @@
         "virtual_room": "ห้องเสมือนจริง",
         "resend": "ส่งอีเมลแจ้งเตือนเกี่ยวกับการแชร์นี้",
         "meetingRooms": "ห้องประชุม",
-        "folder_linked_status": "แชร์กับฉัน",
-        "calendar_sharing_status_other": "แชร์กับ {{count}} คน"
+        "folder_linked_status": "แชร์กับฉัน"
     },
     "button": {
         "customize_modal": "เปิด Customize Modal"
