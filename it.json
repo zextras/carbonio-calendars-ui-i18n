@@ -24,7 +24,10 @@
         "busy_appointment": "Appuntamento occupato",
         "calendarSelector": {
             "disabled": "Per spostare questo evento in un altro calendario utilizza l'opzione 'Sposta'"
-        }
+        },
+        "folder_sharing_status_one": "Condiviso con {{count}} utente",
+        "folder_sharing_status_many": "Condiviso con {{count}} utenti",
+        "folder_sharing_status_other": "Condiviso con {{count}} utenti"
     },
     "reminder": {
         "never": "Mai",
