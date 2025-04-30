@@ -738,8 +738,6 @@
     "timezones": "Timezones",
     "tooltip": {
         "add_attachments": "Add attachments",
-        "calendar_sharing_status_one": "Shared with {{count}} person",
-        "calendar_sharing_status_other": "Shared with {{count}} people",
         "chat": "Equipment",
         "chat_room": "Virtual Room's link",
         "copy_ics_url": "Copy ICS url",
