@@ -492,8 +492,6 @@
         "equipment": "Ausstattung",
         "location": "Ort",
         "chat_room": "Link des virtuellen Raums",
-        "calendar_sharing_status_one": "Mit 1 Person geteilt",
-        "calendar_sharing_status_other": "",
         "revoke": "Zugriff widerrufen",
         "resend": "E-Mail-Benachrichtigung über dieses geteilte Element senden",
         "edit": "Eigenschaften für das Teilen bearbeiten",
