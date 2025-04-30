@@ -359,7 +359,8 @@
         "colorYellow": "Yellow",
         "colorPink": "Pink",
         "colorOrange": "Orange",
-        "colorGrey": "Grey"
+        "colorGrey": "Grey",
+        "clear_search_query": "CLEAR SEARCH"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
