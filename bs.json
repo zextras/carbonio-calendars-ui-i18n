@@ -647,9 +647,6 @@
     },
     "timezones": "Vremenske zone",
     "tooltip": {
-        "calendar_sharing_status_one": "Dijeljeno s {{count}} osobom",
-        "calendar_sharing_status_few": "Dijeljeno s {{count}} osobe",
-        "calendar_sharing_status_other": "Dijeljeno s {{count}} osoba",
         "chat": "Oprema",
         "chat_room": "Link Virtualne Sobe",
         "copy_ics_url": "Kopiraj ICS URL",
