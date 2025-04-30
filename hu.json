@@ -361,8 +361,6 @@
         "enable_disable_rich_text": "Rich text szerkesztő engedélyezése/letiltása",
         "equipment": "Felszerelés",
         "copy_ics_url": "ICS URL másolása",
-        "calendar_sharing_status_one": "1 személlyel megosztva",
-        "calendar_sharing_status_other": "",
         "copy_outlook_url": "Outlook URL másolása"
     },
     "messages": {
