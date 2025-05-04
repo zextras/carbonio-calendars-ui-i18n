@@ -22,7 +22,7 @@
         "delete": "Izbriši",
         "empty_trash_confirmation": "To dejanje bo izbrisalo vse elemente v mapah smetnjaka za e-pošto, stike, koledar, naloge in kovček. Ali ste prepričani, da želite trajno izbrisati vse te elemente?",
         "Trash_already_empty": "Smetnjak je že prazen",
-        "show_original": "Pokaži izvirn"
+        "show_original": "Pokaži izvirnik"
     },
     "add": "Dodaj",
     "administer": "Upravljaj",
@@ -152,7 +152,7 @@
         "create_tag": "Ustvari oznako",
         "custom": "Po meri",
         "day": "Dan",
-        "days": "Dni",
+        "days": "Dnevi",
         "import_calendar_ongoing": "Uvoz v izbrani koledar poteka.",
         "import_calendar_success": "Uvoz uspešen",
         "instance": "Primer",
