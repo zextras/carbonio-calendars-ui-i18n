@@ -15,6 +15,15 @@
     "label": {
         "save": "Зберегти",
         "delete_permanently": "Видалити назавжди",
-        "discard_changes": "СКАСУВАТИ ЗМІНИ"
+        "discard_changes": "СКАСУВАТИ ЗМІНИ",
+        "colorGreen": "Зелений",
+        "colorRed": "Червоний",
+        "colorYellow": "Жовтий",
+        "colorPink": "Рожевий",
+        "colorGrey": "Сірий",
+        "colorOrange": "Помаранчевий"
+    },
+    "message": {
+        "delete_tag_message2": "Після видалення він буде вилучений з усіх елементів, до яких був застосований."
     }
 }
