@@ -338,7 +338,17 @@
         },
         "group_is_empty": "Ce groupe est vide",
         "hide_event_detail": "Masquer les détails",
-        "show_event_detail": "Afficher les détails"
+        "show_event_detail": "Afficher les détails",
+        "colorBlack": "Noir",
+        "colorBlue": "Bleu",
+        "colorCyan": "Cyan",
+        "colorGreen": "Vert",
+        "colorPurple": "Violet",
+        "colorRed": "Rouge",
+        "colorYellow": "Jaune",
+        "colorGrey": "Gris",
+        "colorPink": "Rose",
+        "colorOrange": "Orange"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -628,7 +638,13 @@
         "out_of_office_appointment": "Rendez-vous en dehors du bureau",
         "free_appointment": "Rendez-vous libre",
         "busy_appointment": "Rendez-vous occupé",
-        "tentative_appointment": "Nomination provisoire"
+        "tentative_appointment": "Nomination provisoire",
+        "calendarSelector": {
+            "disabled": "Pour déplacer cet évènement dans un autre calendrier utilisez l'option \"Déplacer\""
+        },
+        "folder_sharing_status_one": "Partagé avec {{count}} personne",
+        "folder_sharing_status_many": "Partagé avec {{count}} personnes",
+        "folder_sharing_status_other": "Partagé avec {{count}} personnes"
     },
     "type": "Type",
     "workflow": "Flux de travail",
