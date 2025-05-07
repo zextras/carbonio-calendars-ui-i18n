@@ -18,7 +18,11 @@
         "edit_group": "Uredi grupu",
         "Trash_already_empty": "Smeće je već prazno",
         "empty_trash_confirmation": "Ova akcija će izbrisati sve stavke u mapama za Smeće E-mail-a, Kontakata, Kalendara, Zadataka i Briefcase-a. Jeste li sigurni da želite trajno izbrisati sve u tim mapama za Smeće?",
-        "send_edit": "Pošalji Uredi"
+        "send_edit": "Pošalji Uredi",
+        "show_original": "Prikaži original",
+        "search": "Pretraži",
+        "reset": "Resetuj filtere",
+        "delete": "Izbriši"
     },
     "add": "Dodaj",
     "administer": "Upravljaj",
@@ -47,7 +51,10 @@
                 "content": "Ovdje prevucite vaše priložene datoteke kako biste ih brzo dodali na sastanak",
                 "title": "Drag&Drop način rada"
             },
-            "drive": "Dodaj iz Drive-a"
+            "drive": "Dodaj iz Drive-a",
+            "url": "Dodaj javni link iz Datoteka",
+            "files": "Dodaj iz datoteka",
+            "local": "Dodajte iz lokalnog"
         }
     },
     "edit_share_properties": "Uredi zajedničke postavke",
@@ -309,7 +316,50 @@
         "show_event_detail": "Prikaži detalje",
         "the": " ",
         "delete": "Izbriši",
-        "error_try_again": "Došlo je do greške, pokušaj ponovo"
+        "error_try_again": "Došlo je do greške, pokušaj ponovo",
+        "delete_tag": "Obriši oznaku",
+        "discard_changes": "ODBACI IZMJENE",
+        "edit": "Uredi",
+        "edit_access": "Uredi pristup",
+        "edit_tag": "Uredi oznaku",
+        "empty": "Prazan",
+        "colorBlack": "Crna",
+        "colorBlue": "Plava",
+        "colorCyan": "Cijan",
+        "colorGreen": "Zeleno",
+        "colorPurple": "Ljubičasta",
+        "colorYellow": "Žuta",
+        "colorRed": "Crvena",
+        "colorPink": "Roza",
+        "colorOrange": "Narandžasta",
+        "colorGrey": "Siva",
+        "choose_file": "Izaberi datoteku",
+        "create": "Kreiraj",
+        "create_tag": "Kreiraj oznaku",
+        "delete_permanently": "Trajno obriši",
+        "loading_results": "Učitavanje Rezultata…",
+        "of": "od",
+        "preview": "Pregled",
+        "private": "Privatno",
+        "restore": "Povrati",
+        "results_for": "Rezultati za:",
+        "revoke": "Opozovi",
+        "root": "Korijen",
+        "save": "Sačuvaj",
+        "select": "Odaberi",
+        "select_color": "Odaberi boju",
+        "share": "Dijeli",
+        "share_public_link": "Podijeli javni link",
+        "share_with": "Podijeli sa",
+        "tag_max_length": "Maksimalno 128 znakova je dopušteno",
+        "tag_name": "Naziv oznake",
+        "tags": "Oznake",
+        "undo": "Poništi",
+        "calendar": "Kalendar",
+        "keywords": "Ključne riječi",
+        "tag": "Oznaka",
+        "resend": "Ponovite slanje",
+        "results_for_error": "Nije moguće pokrenuti pretragu, obrišite je i pokušajte ponovo: "
     },
     "freebusy": "Slobodno/Zauzeto",
     "has_attachments": "Ima priložene datoteke",
@@ -406,10 +456,17 @@
         "you_accepted": "Prihvatili ste",
         "you_declined": "Odbili ste",
         "you_accepted_as_tentative": "Prihvatili ste kao uslovno",
-        "who_set_this": "{{whoSetThis}} je postavio ovaj sastanak kao <strong>{{status}}</strong>"
+        "who_set_this": "{{whoSetThis}} je postavio ovaj sastanak kao <strong>{{status}}</strong>",
+        "delete_tag_message2": "Nakon brisanja, bit će uklonjen sa svih stavki označenih njime."
     },
     "messages": {
-        "format_as_plain_text": "Formatiraj kao obični tekst"
+        "format_as_plain_text": "Formatiraj kao obični tekst",
+        "snackbar": {
+            "tag_not_updated": "Desila se greška, oznaka nije ažurirana. Pokušajte ponovo.",
+            "tag_updated": "Oznaka uspješno ažurirana",
+            "tag_created": "Oznaka {{name}} uspješno kreirana",
+            "tag_deleted": "{{name}} Oznaka uspješno obrisana"
+        }
     },
     "months": {
         "april": "April",
@@ -612,7 +669,13 @@
             "share_calendar_role": {
                 "admin": "Urednik (može pregledavati, uređivati, dodavati i brisati, ali ne može prihvatiti ili ponovo podijeliti sastanke)                ",
                 "manager": "Menadžer (može pregledavati, uređivati, dodavati, brisati, prihvatiti i ponovo dijeliti sastanke)",
-                "viewer": "Pregledač (može pregledavati)"
+                "viewer": "Pregledač (može pregledavati)",
+                "none": "Nijedan"
+            },
+            "share_calendar_with": {
+                "internal_users_groups": "Interni Korisnici ili Grupe",
+                "external_guests": "Vanjski gosti (samo za pregled)",
+                "public": "Javno (samo pregled, bez lozinke)"
             }
         },
         "placeholder": {
@@ -638,12 +701,98 @@
         "forwardAppointment": {
             "success": "Sastanak proslijeđen"
         },
-        "proposed_time_accepted": "Prihvatili ste predloženo vrijeme"
+        "proposed_time_accepted": "Prihvatili ste predloženo vrijeme",
+        "email_copied_to_clipboard": "E-mail poruka kopirana u međuspremnik."
     },
     "success": "Uspjeh",
     "timezone": {
         "guadalajara_mexico_city_monterrey ": "{{value}} Guadalajara, Mexico City, Monterrey",
-        "brussels_copenhagen_madrid_paris ": "{{value}} Brisel, Kopenhagen, Madrid, Pariz"
+        "brussels_copenhagen_madrid_paris ": "{{value}} Brisel, Kopenhagen, Madrid, Pariz",
+        "athens_beirut_bucharest_istanbul": "{{value}} Atina, Bejrut, Bukurešt, Istanbul",
+        "casablanca": "{{value}} Casablanca",
+        "cape_verde_is": "{{value}} Cape Verde Is.",
+        "caracas": "{{value}} Caracas",
+        "harare_pretoria": "{{value}} Harare, Pretorija",
+        "hawaii": "{{value}} Havaji",
+        "jerusalem": "{{value}} Jeruzalem",
+        "jordan": "{{value}} Jordan",
+        "kabul": "{{value}} Kabul",
+        "kaliningrad_rtz_1": "{{value}} Kalinjingrad (RTZ 1)",
+        "istanbul": "{{value}} Istanbul",
+        "montevideo": "{{value}} Montevideo",
+        "moscow_st_petersburg_volgograd_rtz_2": "{{value}} Moskva, Sankt Peterburg, Volgograd (RTZ 2)",
+        "nairobi": "{{value}} Nairobi",
+        "monrovia": "{{value}} Monrovia",
+        "sarajevo_skopje_warsaw_zagreb": "{{value}} Sarajevo, Skopje, Varšava, Zagreb",
+        "us_canada_eastern": "{{value}} US/Canada Eastern",
+        "us_canada_mountain": "{{value}} US/Canada Mountain",
+        "us_canada_pacific": "{{value}} US/Canada Pacific",
+        "us_canada_central": "{{value}} US/Canada Central",
+        "yangon": "{{value}} Yangon",
+        "azores": "{{value}} Azores",
+        "baja_california": "{{value}} Baja California",
+        "baku": "{{value}} Baku",
+        "beirut": "{{value}} Bejrut",
+        "brasilia": "{{value}} Brasilia",
+        "britain_ireland_portugal": "{{value}} Britanija, Irska, Portugal",
+        "cayenne_fortaleza": "{{value}} Cayenne, Fortaleza",
+        "cuiaba": "{{value}} Cuiaba",
+        "damascus": "{{value}} Damask",
+        "darwin": "{{value}} Darwin",
+        "dateline": "{{value}} Dateline",
+        "dhaka": "{{value}} Daka",
+        "egypt": "{{value}} Egipat",
+        "ekaterinburg_rtz_4": "{{value}} Ekaterinburg (RTZ 4)",
+        "eucla": "{{value}} Eucla",
+        "gmt_02": "{{value}} GMT-02",
+        "gmt_11": "{{value}} GMT-11",
+        "indiana_east": "{{value}} Indiana (Istok)",
+        "iraq": "{{value}} Irak",
+        "irkutsk_rtz_7": "{{value}} Irkutsk (RTZ 7)",
+        "kathmandu": "{{value}} Kathmandu",
+        "korea": "{{value}} Koreja",
+        "krasnoyarsk_rtz_6": "{{value}} Krasnojarsk (RTZ 6)",
+        "namibia": "{{value}} Namibija",
+        "sri_jayawardenepura_kotte": "{{value}} Sri Jayawardenepura Kotte",
+        "tbilisi": "{{value}} Tbilisi",
+        "tehran": "{{value}} Teheran",
+        "vladivostok_magadan": "{{value}} vladivostok_magadan_rtz_9",
+        "west_central_africa": "{{value}} West Central Africa",
+        "yerevan": "{{value}} Jerevan",
+        "alaska": "{{value}} Aljaska",
+        "argentina": "{{value}} Argentina",
+        "arizona": "{{value}} Arizona",
+        "asuncion": "{{value}} Asuncion",
+        "atlantic_time_canada": "{{value}} Atlantic Time (Canada)",
+        "central_america": "{{value}} Central America",
+        "chihuahua_la_paz_mazatlan": "{{value}} Chihuahua, La Paz, Mazatlan",
+        "chita": "{{value}} Chita",
+        "christmas_island": "{{value}} Christmas Island",
+        "colombia": "{{value}} Kolumbija",
+        "coordinated_universal_time": "{{value}} Coordinated Universal Time",
+        "magadan": "{{value}} Magadan",
+        "kuwait_riyadh": "{{value}} Kuvajt, Rijad",
+        "la_paz": "{{value}} La Paz",
+        "manaus": "{{value}} Manaus",
+        "mid_atlantic": "{{value}} Mid-Atlantic",
+        "minsk": "{{value}} Minsk",
+        "newfoundland": "{{value}} Newfoundland",
+        "nuku_alofa": "{{value}} Nuku’alofa",
+        "pacific_south_america": "{{value}} Pacific South America",
+        "port_louis": "{{value}} Port Louis",
+        "pyongyang": "{{value}} Pyongyang",
+        "samoa": "{{value}} Samoa",
+        "saskatchewan": "{{value}} Saskatchewan",
+        "abu_dhabi_muscat": "{{value}} Abu Dabi, Muskat",
+        "chennai_kolkata_mumbai_new_delhi": "{{value}} Chennai, Kolkata, Mumbai, New Delhi",
+        "greenland": "{{value}} Grenland",
+        "helsinki_kyiv_riga_sofia_tallinn_vilnius": "{{value}} Helsinki, Kijev, Riga, Sofija, Tallinn, Vilnius",
+        "amsterdam_berlin_bern_rome_stockholm_vienna": "{{value}} Amsterdam, Berlin, Bern, Rim, Štokholm, Beč",
+        "beijing_chongqing_hong_kong_urumqi": "{{value}} Beijing, Chongqing, Hong Kong, Urumqi",
+        "belgrade_bratislava_budapest_ljubljana_prague": "{{value}} Beograd, Bratislava, Budimpešta, Ljubljana, Prag",
+        "georgetown_la_paz_manaus_san_juan": "{{value}} Georgetown, La Paz, Manaus, San Juan",
+        "bangkok_hanoi_jakarta": "{{value}} Bangkok, Hanoi, Jakarta",
+        "anadyr_petropavlovsk_kamchatsky_rtz11": "{{value}} Anadyr, Petropavlovsk-Kamchatsky (RTZ 11)"
     },
     "timezones": "Vremenske zone",
     "tooltip": {
@@ -662,7 +811,16 @@
         "out_of_office_appointment": "Vanredni sastanak izvan ureda",
         "free_appointment": "Slobodan termin",
         "tentative_appointment": "Privremeni termin",
-        "busy_appointment": "Zauzet sastanak"
+        "busy_appointment": "Zauzet sastanak",
+        "calendarSelector": {
+            "disabled": "Za premještanje ovog događaja u drugi kalendar koristite opciju 'Premjesti'"
+        },
+        "folder_sharing_status_one": "Dijeljeno s {{count}} korisnikom",
+        "folder_sharing_status_few": "Dijeljeno s {{count}} korisnika",
+        "folder_sharing_status_other": "Dijeljeno s {{count}} korisnika",
+        "add_attachments": "Dodaj priloge",
+        "folder_linked_status": "Dijeljeno sa mnom",
+        "revoke": "Otkaži pristup"
     },
     "type": "Tip",
     "workflow": "Tok rada",
@@ -678,7 +836,9 @@
             "forward": "PROSLIJEDI"
         },
         "initializeError": {
-            "title": "Došlo je do greške"
+            "title": "Došlo je do greške",
+            "buttonConfirm": "PONOVO UČITAJ",
+            "content": "Molimo osvježite stranicu ili pokušajte ponovo kasnije. Ostali moduli mogli bi i dalje biti dostupni uz ograničene funkcije."
         }
     },
     "appointment": {
@@ -698,5 +858,8 @@
     },
     "revoke_with_custom_message": "Opozovi pristup slanjem prilagođene obavijesti",
     "private_info_tooltip": "Kada dijelite kalendar, drugi korisnici mogu vidjeti detalje vaših sastanaka (naslov, opis i sudionike), osim onih označenih kao privatni. U tom slučaju, drugi korisnici će vidjeti vaše slobodno/zauzeto vrijeme, ali ne i detalje sastanka. Želite li da drugi korisnici vide i detalje vaših privatnih sastanaka?",
-    "no_title": "Bez naslova"
+    "no_title": "Bez naslova",
+    "preview": {
+        "close": "Zatvori pregled"
+    }
 }
