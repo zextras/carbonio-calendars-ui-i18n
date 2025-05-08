@@ -298,7 +298,8 @@
         "calendars": "التقاويم",
         "type_group_name_here": "اسم المجموعة",
         "hide_event_detail": "إخفاء التفاصيل",
-        "show_event_detail": "اظهار التفاصيل"
+        "show_event_detail": "اظهار التفاصيل",
+        "colorBlack": "أسود"
     },
     "message": {
         "copy": "نسخ",
