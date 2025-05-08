@@ -307,7 +307,8 @@
         "colorYellow": "أصفر",
         "colorPink": "وردي",
         "colorOrange": "برتقالي",
-        "colorCyan": "سماوي"
+        "colorCyan": "سماوي",
+        "colorGrey": "رمادي"
     },
     "message": {
         "copy": "نسخ",
