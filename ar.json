@@ -1,7 +1,7 @@
 {
     "action": {
         "show_original": "إظهار الأصل",
-        "reset": "اعاده تعيين",
+        "reset": "اعاده تعيين المرشحات",
         "search": "بحث",
         "delete": "حذف",
         "calendar_access_share": "مشاركة الوصول إلى التقويم",
