@@ -179,7 +179,7 @@
         "dismiss_many": "أَبْعَدهم",
         "dismiss_other": "أَبْعَدهم",
         "edits_saved": "تم حفظ التعديلات بشكل صحيح",
-        "equipment": "الجهاز",
+        "equipment": "مورد",
         "meeting_room": "قاعة الاجتماعات",
         "ok": "تم",
         "month": "الشهر",
@@ -306,7 +306,7 @@
         "colorRed": "أحمر",
         "colorYellow": "أصفر",
         "colorPink": "وردي",
-        "colorOrange": "البرتقالي",
+        "colorOrange": "برتقالي",
         "colorCyan": "سماوي"
     },
     "message": {
@@ -464,16 +464,25 @@
         "enable_disable_rich_text": "تمكين / تعطيل محرر النص المنسق",
         "meetingRooms": "قاعات الاجتماعات",
         "virtual_room": "غرفة افتراضية",
-        "chat": "الجهاز",
+        "chat": "موارد -مثلاً غرفه إجتماعات أو طابعة -",
         "copy_vector_url": "نسخ عنوان رابط للعرض فقط",
         "location": "المكان",
         "resend": "إرسال إشعار بالبريد حول هذه المشاركة",
         "chat_room": "رابط الغرفة الافتراضية",
-        "equipment": "الجهاز",
+        "equipment": "موارد -مثلاً غرفه إجتماعات أو طابعة -",
         "free_appointment": "مواعيد متاح",
         "busy_appointment": "موعد مشغول",
         "out_of_office_appointment": "موعد خارج المكتب",
-        "tentative_appointment": "موعد متردد"
+        "tentative_appointment": "موعد متردد",
+        "calendarSelector": {
+            "disabled": "لنقل هذا الحدث إلى تقويم آخر، استخدم خيار \"نقل\""
+        },
+        "folder_sharing_status_zero": "مشارك مع {{count}} شخص",
+        "folder_sharing_status_one": "مشارك مع {{count}} شخص",
+        "folder_sharing_status_two": "مشارك مع {{count}} شخص",
+        "folder_sharing_status_few": "مشارك مع {{count}} أشخاصٍ",
+        "folder_sharing_status_many": "مشارك مع {{count}} شخصاً",
+        "folder_sharing_status_other": "مشارك مع {{count}} شخصٍ"
     },
     "modal": {
         "initializeError": {
@@ -516,9 +525,9 @@
             }
         }
     },
-    "attendee_equipment_unavailable": "الجهاز غير متوفرة في الوقت المحدد للحدث",
+    "attendee_equipment_unavailable": "المورد غير متوفر في الوقت المحدد للحدث",
     "attendee_room_unavailable": "لا تتوفر القاعة في الوقت المحدد للحدث",
-    "attendees_equipments_unavailable": "لا يتوفر جهاز أو أكثر في الوقت المحدد للحدث",
+    "attendees_equipments_unavailable": "لا يتوفر مورد واحدة أو أكثر في الوقت المحدد للحدث",
     "attendees_rooms_unavailable": "لا تتوفر غرفة اجتماعات واحدة أو أكثر في الوقت المحدد للحدث",
     "creation_timezone_tooltip": "التاريخ والوقت في منطقة زمنية الإنشاء:",
     "edit_share_properties": "تعديل خصائص المشاركة",
@@ -926,7 +935,7 @@
         "participant": {
             "attendee": "حاضر",
             "meetingRoom": "غرفة الاجتماعات",
-            "equipment": "الجهاز",
+            "equipment": "مورد",
             "unknown": "مجهول",
             "optionalAttendee": "اختياري",
             "organizer": "منظم"
