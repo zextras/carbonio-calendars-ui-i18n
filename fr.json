@@ -339,8 +339,7 @@
         "group_is_empty": "Ce groupe est vide",
         "hide_event_detail": "Masquer les détails",
         "show_event_detail": "Afficher les détails",
-        "colorGrey": "Gris",
-        "colorOrange": "Orange"
+        "colorGrey": "Gris"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
