@@ -632,9 +632,9 @@
         "calendarSelector": {
             "disabled": "Pour déplacer cet évènement dans un autre calendrier utilisez l'option \"Déplacer\""
         },
-        "folder_sharing_status_one": "Partagé avec {{count}} personne",
-        "folder_sharing_status_many": "Partagé avec {{count}} personnes",
-        "folder_sharing_status_other": "Partagé avec {{count}} personnes"
+        "folder_sharing_status_one": "Partagé avec {{count}} utilisateur",
+        "folder_sharing_status_many": "Partagé avec {{count}} utilisateurs",
+        "folder_sharing_status_other": "Partagé avec {{count}} utilisateurs"
     },
     "type": "Type",
     "workflow": "Flux de travail",
@@ -847,5 +847,8 @@
         "to": "à",
         "status": "Statut",
         "from": "de"
+    },
+    "colors": {
+        "black": "Noir"
     }
 }
