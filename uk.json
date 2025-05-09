@@ -19,8 +19,7 @@
         "save": "Зберегти",
         "delete_permanently": "Видалити назавжди",
         "discard_changes": "СКАСУВАТИ ЗМІНИ",
-        "colorGrey": "Сірий",
-        "colorOrange": "Помаранчевий"
+        "colorGrey": "Сірий"
     },
     "message": {
         "delete_tag_message2": "Після видалення він буде вилучений з усіх елементів, до яких був застосований."
