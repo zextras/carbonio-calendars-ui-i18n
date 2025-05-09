@@ -364,8 +364,7 @@
         "show_two": "Prikaži vse",
         "show_few": "Prikaži vse",
         "show_other": "Prikaži vse",
-        "search_hint": "\"\"",
-        "colorGrey": "Siva"
+        "search_hint": "\"\""
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
