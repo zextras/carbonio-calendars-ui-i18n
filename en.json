@@ -824,5 +824,17 @@
         "status": "Status",
         "from": "from",
         "to": "to"
+    },
+    "colors": {
+        "blue": "Blue",
+        "green": "Green",
+        "black": "Black",
+        "cyan": "Cyan",
+        "purple": "Purple",
+        "grey": "Grey",
+        "yellow": "Yellow",
+        "red": "Red",
+        "pink": "Pink",
+        "orange": "Orange"
     }
 }
