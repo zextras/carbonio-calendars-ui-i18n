@@ -847,5 +847,17 @@
         "status": "Stato",
         "from": "dalle",
         "to": "alle"
+    },
+    "colors": {
+        "blue": "Blu",
+        "green": "Verde",
+        "black": "Nero",
+        "cyan": "Ciano",
+        "purple": "Viola",
+        "grey": "Grigio",
+        "red": "Rosso",
+        "pink": "Rosa",
+        "yellow": "Giallo",
+        "orange": "Arancione"
     }
 }
