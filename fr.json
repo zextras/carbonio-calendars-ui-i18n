@@ -849,6 +849,15 @@
         "from": "de"
     },
     "colors": {
-        "black": "Noir"
+        "black": "Noir",
+        "blue": "Bleu",
+        "green": "Vert",
+        "cyan": "Cyan",
+        "purple": "Violet",
+        "grey": "Gris",
+        "yellow": "Jaune",
+        "red": "Rouge",
+        "pink": "Rose",
+        "orange": "Orange"
     }
 }
