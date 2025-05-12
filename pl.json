@@ -847,5 +847,17 @@
         "end_time": "Czas zakończenia",
         "from": "od",
         "start_time": "Czas rozpoczęcia"
+    },
+    "colors": {
+        "blue": "Niebieski",
+        "green": "Zielony",
+        "cyan": "Cyjan",
+        "purple": "Fioletowy",
+        "grey": "Szary",
+        "red": "Czerwony",
+        "pink": "Różowy",
+        "orange": "Pomarańczowy",
+        "yellow": "Żółty",
+        "black": "Czarny"
     }
 }
