@@ -851,5 +851,17 @@
     "no_title": "Bez naslova",
     "preview": {
         "close": "Zatvori pregled"
+    },
+    "colors": {
+        "blue": "Plava",
+        "cyan": "Cijan",
+        "purple": "Ljubičasta",
+        "green": "Zeleno",
+        "grey": "Siva",
+        "red": "Crvena",
+        "pink": "Roza",
+        "yellow": "Žuta",
+        "orange": "Narandžasta",
+        "black": "Crna"
     }
 }
