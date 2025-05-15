@@ -395,7 +395,13 @@
         "free_appointment": "Свободен",
         "out_of_office_appointment": "Вне офиса",
         "tentative_appointment": "Под вопросом",
-        "busy_appointment": "Занят/а"
+        "busy_appointment": "Занят/а",
+        "calendarSelector": {
+            "disabled": "Чтобы перенести это событие в другой календарь, используйте опцию «Переместить»."
+        },
+        "folder_sharing_status_one": "Поделиться с {{count}} человеком",
+        "folder_sharing_status_few": "Поделиться с {{count}} человеками",
+        "folder_sharing_status_many": "Поделиться с {{count}} человеками"
     },
     "action": {
         "send": "Отправить",
@@ -840,5 +846,17 @@
                 "show": "ПОКАЗАТЬ ЕЖЕДНЕВНИК"
             }
         }
+    },
+    "colors": {
+        "blue": "Синий",
+        "cyan": "Голубой",
+        "purple": "Фиолетовый",
+        "green": "Зеленый",
+        "grey": "Серый",
+        "red": "Красный",
+        "pink": "Розовый",
+        "orange": "Оранжевый",
+        "yellow": "Желтый",
+        "black": "Черный"
     }
 }
