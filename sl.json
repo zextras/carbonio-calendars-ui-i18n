@@ -75,7 +75,7 @@
     "folder": {
         "modal": {
             "footer": {
-                "go_back": "Pojdi nazaj"
+                "go_back": "Nazaj"
             },
             "move": {
                 "input": {
@@ -339,7 +339,7 @@
         "attachment_one": "Priloga",
         "attachment_two": "Prilogi",
         "attachment_few": "Priloge",
-        "attachment_other": "Priloge",
+        "attachment_other": "Prilog",
         "attendee_one": "Udeleženec",
         "attendee_two": "Udeleženca",
         "attendee_few": "Udeleženci",
