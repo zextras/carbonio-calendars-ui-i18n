@@ -808,10 +808,10 @@
         "free_appointment": "Prosto srečanje",
         "out_of_office_appointment": "Srečanje izven pisarne",
         "tentative_appointment": "Nepotrjeno srečanje",
-        "folder_sharing_status_one": "V skupni rabi z {{count}} osebo",
-        "folder_sharing_status_two": "V skupni rabi z {{count}} osebama",
-        "folder_sharing_status_few": "V skupni rabi s {{count}} osebami",
-        "folder_sharing_status_other": "V skupni rabi s {{count}} osebami",
+        "folder_sharing_status_one": "Deljeno z {{count}} uporabnikom",
+        "folder_sharing_status_two": "Deljeno z {{count}} uporabnikoma",
+        "folder_sharing_status_few": "Deljeno s {{count}} uporabniki",
+        "folder_sharing_status_other": "Deljeno s {{count}} uporabniki",
         "calendarSelector": {
             "disabled": "Če želite ta dogodek premakniti v drug koledar, uporabite možnost \"Premakni\""
         }
@@ -878,5 +878,17 @@
         "from": "od",
         "to": "do"
     },
-    "empty_trash_deleting_confirmation": "Brisali boste vse elemente v mapi Smeti koledarja. Brisanje je trajno. Ali ste prepričani, da želite izbrisati vse elemente?"
+    "empty_trash_deleting_confirmation": "Brisali boste vse elemente v mapi Smeti koledarja. Brisanje je trajno. Ali ste prepričani, da želite izbrisati vse elemente?",
+    "colors": {
+        "blue": "Modra",
+        "cyan": "Turkizna",
+        "green": "Zelena",
+        "grey": "Siva",
+        "red": "Rdeča",
+        "purple": "Vijolična",
+        "pink": "Roza",
+        "orange": "Oranžna",
+        "yellow": "Rumena",
+        "black": "Črna"
+    }
 }
