@@ -22,7 +22,8 @@
         "show_original": "Show original",
         "answer": "Answer",
         "delete": "Delete",
-        "edit_group": "Edit group"
+        "edit_group": "Edit group",
+        "edit_and_share_calendar": "Edit and share calendar"
     },
     "add": "Add",
     "administer": "Administer",
@@ -349,7 +350,9 @@
         "group_is_empty": "This group is empty",
         "calendars": "Calendars",
         "hide_event_detail": "Hide details",
-        "show_event_detail": "Show details"
+        "show_event_detail": "Show details",
+        "caldav_url": "CalDAV URL",
+        "webcal_url": "WebCAL URL"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -760,7 +763,9 @@
             "disabled": "To move this event to another calendar use the 'Move' option"
         },
         "folder_sharing_status_one": "Shared with {{count}} person",
-        "folder_sharing_status_other": "Shared with {{count}} people"
+        "folder_sharing_status_other": "Shared with {{count}} people",
+        "copy_webcal_url": "Copy WebCAL url",
+        "copy_caldav_url": "Copy CalDAV url"
     },
     "type": "Type",
     "workflow": "WorkFlow",
