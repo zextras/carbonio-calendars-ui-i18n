@@ -24,7 +24,9 @@
         },
         "folder_sharing_status_one": "Condiviso con {{count}} persona",
         "folder_sharing_status_many": "Condiviso con {{count}} persone",
-        "folder_sharing_status_other": "Condiviso con {{count}} persone"
+        "folder_sharing_status_other": "Condiviso con {{count}} persone",
+        "copy_caldav_url": "Copia CalDAV url",
+        "copy_webcal_url": "Copia WebCAL url"
     },
     "reminder": {
         "never": "Mai",
@@ -402,7 +404,9 @@
         },
         "group_is_empty": "Questo gruppo è vuoto",
         "hide_event_detail": "Nascondi dettagli",
-        "show_event_detail": "Mostra dettagli"
+        "show_event_detail": "Mostra dettagli",
+        "webcal_url": "WebCAL URL",
+        "caldav_url": "CalDAV URL"
     },
     "action": {
         "send": "Invia",
@@ -427,7 +431,8 @@
         "export_calendar_ics": "Esporta file .ICS",
         "answer": "Risposta",
         "delete": "Elimina",
-        "edit_group": "Modifica gruppo"
+        "edit_group": "Modifica gruppo",
+        "edit_and_share_calendar": "Modifica e condividi calendario"
     },
     "button": {
         "customize_modal": "Personalizza"
