@@ -22,7 +22,8 @@
         "calendar_upload": "Importuj plik ICS",
         "answer": "Odpowiedz",
         "delete": "Usuń",
-        "edit_group": "Edytuj grupę"
+        "edit_group": "Edytuj grupę",
+        "edit_and_share_calendar": "Edytuj i udostępnij kalendarz"
     },
     "event": {
         "action": {
@@ -303,7 +304,10 @@
         },
         "invalid_group_name": "Wprowadź nazwę grupy, aby zapisać zmiany",
         "hide_event_detail": "Ukryj szczegóły",
-        "show_event_detail": "Pokaż szczegóły"
+        "show_event_detail": "Pokaż szczegóły",
+        "caldav_url": "URL CalDAV",
+        "webcal_url": "URL WebCAL",
+        "invalid_query": "Znaki specjalne, takie jak !, :, -, \" itp., są ignorowane w wyszukiwaniu. To może prowadzić do nieoczekiwanych wyników."
     },
     "message": {
         "modal": {
@@ -756,7 +760,9 @@
         },
         "folder_sharing_status_one": "Udostępniono {{count}} osobie",
         "folder_sharing_status_few": "Udostępniono {{count}} osobom",
-        "folder_sharing_status_many": "Udostępniono {{count}} osobom"
+        "folder_sharing_status_many": "Udostępniono {{count}} osobom",
+        "copy_webcal_url": "Skopiuj URL WebCAL",
+        "copy_caldav_url": "Skopiuj URL CalDAV"
     },
     "type": "Typ",
     "workflow": "Organizacja pracy",
