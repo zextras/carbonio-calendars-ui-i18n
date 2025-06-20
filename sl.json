@@ -22,7 +22,8 @@
         "delete": "Izbriši",
         "empty_trash_confirmation": "To dejanje bo izbrisalo vse elemente v mapah smetnjaka za e-pošto, stike, koledar, naloge in kovček. Ali ste prepričani, da želite trajno izbrisati vse te elemente?",
         "Trash_already_empty": "Smetnjak je že prazen",
-        "show_original": "Pokaži izvirnik"
+        "show_original": "Pokaži izvirnik",
+        "edit_and_share_calendar": "Uredi in deli koledar"
     },
     "add": "Dodaj",
     "administer": "Upravljaj",
@@ -364,7 +365,10 @@
         "show_two": "Prikaži vse",
         "show_few": "Prikaži vse",
         "show_other": "Prikaži vse",
-        "search_hint": "\"\""
+        "search_hint": "\"\"",
+        "invalid_query": "Posebni znaki, kot so :, \", -, ! itd., so pri iskanju prezrti. To lahko povzroči nepričakovane rezultate.",
+        "caldav_url": "CalDAV URL",
+        "webcal_url": "WebCAL URL"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
@@ -814,7 +818,9 @@
         "folder_sharing_status_other": "Deljeno s {{count}} uporabniki",
         "calendarSelector": {
             "disabled": "Če želite ta dogodek premakniti v drug koledar, uporabite možnost \"Premakni\""
-        }
+        },
+        "copy_webcal_url": "Kopiraj URL WebCAL",
+        "copy_caldav_url": "Kopiraj URL CalDAV"
     },
     "type": "Vrsta",
     "workflow": "Potek dela",
