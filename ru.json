@@ -374,7 +374,10 @@
         "invalid_group_name": "Введите имя группы, чтобы сохранить изменения",
         "calendars": "Календари",
         "hide_event_detail": "Скрыть детали",
-        "show_event_detail": "Показать детали"
+        "show_event_detail": "Показать детали",
+        "invalid_query": "Специальные символы, такие как :, \", -, ! и т. д., при поиске игнорируются. Это может привести к неожиданным результатам.",
+        "webcal_url": "URL-адрес WebCAL",
+        "caldav_url": "URL-адрес CalDAV"
     },
     "tooltip": {
         "enable_disable_rich_text": "Включение/отключение редактора форматированного текста",
@@ -401,7 +404,9 @@
         },
         "folder_sharing_status_one": "Поделиться с {{count}} человеком",
         "folder_sharing_status_few": "Поделиться с {{count}} человеками",
-        "folder_sharing_status_many": "Поделиться с {{count}} человеками"
+        "folder_sharing_status_many": "Поделиться с {{count}} человеками",
+        "copy_webcal_url": "Копировать URL-адрес WebCAL",
+        "copy_caldav_url": "Копировать ссылку CalDAV"
     },
     "action": {
         "send": "Отправить",
@@ -426,7 +431,8 @@
         "export_calendar_ics": "Экспортировать файл ICS",
         "delete": "Удалить",
         "answer": "Ответить",
-        "edit_group": "Редактировать группу"
+        "edit_group": "Редактировать группу",
+        "edit_and_share_calendar": "Редактировать и делиться календарем"
     },
     "folder": {
         "modal": {
