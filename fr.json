@@ -22,7 +22,8 @@
         "export_calendar_ics": "Exporter le fichier ICS",
         "answer": "Réponse",
         "delete": "Supprimer",
-        "edit_group": "Modifier le groupe"
+        "edit_group": "Modifier le groupe",
+        "edit_and_share_calendar": "Modifier et partager le calendrier"
     },
     "add": "Ajouter",
     "administer": "Administrer",
@@ -338,7 +339,10 @@
         },
         "group_is_empty": "Ce groupe est vide",
         "hide_event_detail": "Masquer les détails",
-        "show_event_detail": "Afficher les détails"
+        "show_event_detail": "Afficher les détails",
+        "invalid_query": "Les caractères spéciaux comme :, \", -, !, etc., seront ignorés par la recherche. Cela peut même générer des résultats erronés.",
+        "caldav_url": "URL CalDAV",
+        "webcal_url": "URL WebCAL"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -634,7 +638,9 @@
         },
         "folder_sharing_status_one": "Partagé avec {{count}} utilisateur",
         "folder_sharing_status_many": "Partagé avec {{count}} utilisateurs",
-        "folder_sharing_status_other": "Partagé avec {{count}} utilisateurs"
+        "folder_sharing_status_other": "Partagé avec {{count}} utilisateurs",
+        "copy_webcal_url": "Copier l'URL WebCAL",
+        "copy_caldav_url": "Copier l'URL CalDAV"
     },
     "type": "Type",
     "workflow": "Flux de travail",
