@@ -865,5 +865,11 @@
         "orange": "Pomarańczowy",
         "yellow": "Żółty",
         "black": "Czarny"
+    },
+    "displayer": {
+        "search_list_title1": "Wygląda na to, że nie ma żadnych wyników. Nie poddawaj się!",
+        "search_title1": "Rozpocznij kolejne wyszukiwanie",
+        "search_description1": "Lub wybierz \"Zaawansowane filtry\", aby udoskonalić wyniki wyszukiwania.",
+        "search_title4": "Wybierz jeden lub więcej wyników, aby wykonać czynności lub wyświetlić szczegóły."
     }
 }
