@@ -353,7 +353,7 @@
         "show_event_detail": "Show details",
         "caldav_url": "CalDAV URL",
         "webcal_url": "WebCAL URL",
-        "invalid_query": "Special characters like :, \", -, !, etc., are ignored in the search. This may lead to unexpected results."
+        "invalid_query": "Special characters like :, \", -, !, etc., are ignored in the search. This may lead to unexpected results for:"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -842,5 +842,11 @@
         "pink": "Pink",
         "orange": "Orange",
         "black": "Black"
+    },
+    "displayer": {
+        "search_list_title1": "It looks like there are no results. Keep searching!",
+        "search_title1": "Start another search",
+        "search_title4": "Select one or more results to perform actions or display details.",
+        "search_description1": "Or select \"Advanced Filters\" to refine your search."
     }
 }
