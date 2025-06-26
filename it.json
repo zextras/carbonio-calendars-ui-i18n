@@ -407,7 +407,7 @@
         "show_event_detail": "Mostra dettagli",
         "webcal_url": "WebCAL URL",
         "caldav_url": "CalDAV URL",
-        "invalid_query": "I caratteri speciali come :, \", -, !, ecc. vengono ignorati nella ricerca. Questo potrebbe portare a risultati inattesi."
+        "invalid_query": "I caratteri speciali come :, \", -, !, ecc., vengono ignorati nella ricerca. Questo potrebbe portare a risultati inaspettati per:"
     },
     "action": {
         "send": "Invia",
@@ -865,5 +865,11 @@
         "yellow": "Giallo",
         "orange": "Arancione",
         "black": "Nero"
+    },
+    "displayer": {
+        "search_list_title1": "Nessun risultato trovato. Continua a cercare!",
+        "search_title4": "Seleziona uno o più risultati per completare delle azioni o visualizzare i dettagli.",
+        "search_title1": "Inizia una nuova ricerca",
+        "search_description1": "O seleziona \"Filtri Avanzati\" per rifinire la tua ricerca."
     }
 }
