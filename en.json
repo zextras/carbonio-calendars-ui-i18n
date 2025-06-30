@@ -353,7 +353,9 @@
         "show_event_detail": "Show details",
         "caldav_url": "CalDAV URL",
         "webcal_url": "WebCAL URL",
-        "invalid_query": "Special characters like :, \", -, !, etc., are ignored in the search. This may lead to unexpected results for:"
+        "invalid_query": "Special characters like :, \", -, !, etc., are ignored in the search. This may lead to unexpected results for:",
+        "resources_load_error": "Couldn't load “Meeting room” and “Equipment”. Try closing and reopening the board.",
+        "loading_resources": "Loading “Meeting room” and “Equipment”, please wait..."
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
