@@ -307,7 +307,9 @@
         "show_event_detail": "Pokaż szczegóły",
         "caldav_url": "URL CalDAV",
         "webcal_url": "URL WebCAL",
-        "invalid_query": "Znaki specjalne, takie jak !, :, -, \" itp., są ignorowane w wyszukiwaniu. To może prowadzić do nieoczekiwanych wyników."
+        "invalid_query": "Znaki specjalne, takie jak !, :, -, \" itp., są ignorowane w wyszukiwaniu. To może prowadzić do nieoczekiwanych wyników dla:",
+        "loading_resources": "Ładowanie pokoju spotkań i wyposażenia...",
+        "resources_load_error": "Nie udało się załadować pokoju spotkań i wyposażenia. Spróbuj zamknąć i ponownie otworzyć okienko."
     },
     "message": {
         "modal": {
