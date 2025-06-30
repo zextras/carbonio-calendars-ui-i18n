@@ -22,7 +22,8 @@
         "send_edit": "إرسال تحرير",
         "share_calendar": "مشاركة التقويم",
         "answer": "الجواب",
-        "edit_group": "تعديل المجموعة"
+        "edit_group": "تعديل المجموعة",
+        "edit_and_share_calendar": "تحرير التقويم ومشاركته"
     },
     "composer": {
         "attachment": {
@@ -298,7 +299,9 @@
         "calendars": "التقاويم",
         "type_group_name_here": "اسم المجموعة",
         "hide_event_detail": "إخفاء التفاصيل",
-        "show_event_detail": "اظهار التفاصيل"
+        "show_event_detail": "اظهار التفاصيل",
+        "webcal_url": "رابط ويبكال -WebCAL-",
+        "caldav_url": "رابط كالداف -CalDAV-"
     },
     "message": {
         "copy": "نسخ",
@@ -473,7 +476,9 @@
         "folder_sharing_status_two": "مشارك مع {{count}} شخص",
         "folder_sharing_status_few": "مشارك مع {{count}} أشخاصٍ",
         "folder_sharing_status_many": "مشارك مع {{count}} شخصاً",
-        "folder_sharing_status_other": "مشارك مع {{count}} شخصٍ"
+        "folder_sharing_status_other": "مشارك مع {{count}} شخصٍ",
+        "copy_caldav_url": "نسخ رابط كالداف -CalDAV-",
+        "copy_webcal_url": "نسخ رابط ويبكال -WebCAL-"
     },
     "modal": {
         "initializeError": {
@@ -946,5 +951,11 @@
         "orange": "برتقالي",
         "yellow": "أصفر",
         "black": "أسود"
+    },
+    "displayer": {
+        "search_list_title1": "يبدو أنه لا توجد نتائج. استمر في البحث!",
+        "search_title1": "ابدأ بحثًا آخر",
+        "search_description1": "أو حدد \"المرشحات المتقدمة\" لتحسين بحثك.",
+        "search_title4": "حدد نتيجة واحدة أو أكثر لتنفيذ الإجراءات أو عرض التفاصيل."
     }
 }
