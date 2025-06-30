@@ -407,7 +407,9 @@
         "show_event_detail": "Mostra dettagli",
         "webcal_url": "WebCAL URL",
         "caldav_url": "CalDAV URL",
-        "invalid_query": "I caratteri speciali come :, \", -, !, ecc., vengono ignorati nella ricerca. Questo potrebbe portare a risultati inaspettati per:"
+        "invalid_query": "I caratteri speciali come :, \", -, !, ecc., vengono ignorati nella ricerca. Questo potrebbe portare a risultati inaspettati per:",
+        "resources_load_error": "Impossibile caricare 'Sala riunioni' e 'Attrezzatura'. Prova a chiudere e riaprire la finestra.",
+        "loading_resources": "Caricamento di 'Sala riunioni' e 'Attrezzatura' in corso, per favore attendi..."
     },
     "action": {
         "send": "Invia",
