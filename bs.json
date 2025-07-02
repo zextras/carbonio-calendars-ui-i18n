@@ -22,7 +22,8 @@
         "show_original": "Prikaži original",
         "search": "Pretraži",
         "reset": "Resetuj filtere",
-        "delete": "Izbriši"
+        "delete": "Izbriši",
+        "edit_and_share_calendar": "Uredi i podijeli kalendar"
     },
     "add": "Dodaj",
     "administer": "Upravljaj",
@@ -139,7 +140,7 @@
         "attendee_one": "Prisutan",
         "attendee_few": "Prisutni",
         "attendee_other": "Prisutni",
-        "cancel": "Odustani",
+        "cancel": "odustani",
         "cancelled": "Otkazano",
         "changes_saved": "Promjene spremljene",
         "check_availability": "Provjerite dostupnost",
@@ -349,7 +350,12 @@
         "keywords": "Ključne riječi",
         "tag": "Oznaka",
         "resend": "Ponovite slanje",
-        "results_for_error": "Nije moguće pokrenuti pretragu, obrišite je i pokušajte ponovo: "
+        "results_for_error": "Nije moguće pokrenuti pretragu, obrišite je i pokušajte ponovo: ",
+        "webcal_url": "WebCAL URL",
+        "caldav_url": "CalDAV URL adresa",
+        "loading_resources": "Učitavanje „Sobe za sastanke” i „Opreme”, molimo sačekajte...",
+        "resources_load_error": "Nije moguće učitati „Sobu za sastanke” i „Opremu”. Pokušajte zatvoriti i ponovno otvoriti ploču.",
+        "invalid_query": "Specijalni karakteri kao što su :, \", -, !, itd., ignorišu se u pretrazi. Ovo može dovesti do neočekivanih rezultata za:"
     },
     "freebusy": "Slobodno/Zauzeto",
     "has_attachments": "Ima priložene datoteke",
@@ -810,7 +816,9 @@
         "folder_sharing_status_other": "Dijeljeno s {{count}} korisnika",
         "add_attachments": "Dodaj priloge",
         "folder_linked_status": "Dijeljeno sa mnom",
-        "revoke": "Otkaži pristup"
+        "revoke": "Otkaži pristup",
+        "copy_caldav_url": "Kopiraj CalDAV url",
+        "copy_webcal_url": "Kopirajte WebCAL url"
     },
     "type": "Tip",
     "workflow": "Tok rada",
@@ -863,5 +871,11 @@
         "yellow": "Žuta",
         "orange": "Narandžasta",
         "black": "Crna"
+    },
+    "displayer": {
+        "search_list_title1": "Izgleda da nema rezultata. Nastavite pretragu!",
+        "search_title4": "Odaberi jedan ili više rezultata za izvršenje akcija ili prikaz detalja.",
+        "search_title1": "Pokreni novu pretragu",
+        "search_description1": "Ili odaberi “Napredni filteri” za precizniju pretragu."
     }
 }
