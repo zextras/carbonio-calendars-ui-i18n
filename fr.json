@@ -340,9 +340,11 @@
         "group_is_empty": "Ce groupe est vide",
         "hide_event_detail": "Masquer les détails",
         "show_event_detail": "Afficher les détails",
-        "invalid_query": "Les caractères spéciaux comme :, \", -, !, etc., seront ignorés par la recherche. Cela peut même générer des résultats erronés.",
+        "invalid_query": "Les caractères spéciaux comme :, \", -, !, etc., seront ignorés par la recherche. Cela peut même générer des résultats erronés pour :",
         "caldav_url": "URL CalDAV",
-        "webcal_url": "URL WebCAL"
+        "webcal_url": "URL WebCAL",
+        "resources_load_error": "Impossible de charger la liste des « Salles de réunion » et des « Équipements ». Essayez de fermer et de rouvrir le tableau.",
+        "loading_resources": "Chargement des « salles de réunion » et des « équipements », veuillez patienter..."
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -865,5 +867,11 @@
         "pink": "Rose",
         "orange": "Orange",
         "black": "Noir"
+    },
+    "displayer": {
+        "search_list_title1": "Il semble qu'il n'y ait pas de résultats. Continuez à chercher !",
+        "search_title4": "Sélectionnez un ou plusieurs résultats pour effectuer des actions ou afficher des détails.",
+        "search_title1": "Lancer une autre recherche",
+        "search_description1": "Ou sélectionnez « Filtres avancés » pour affiner votre recherche."
     }
 }
