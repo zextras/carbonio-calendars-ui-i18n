@@ -409,7 +409,8 @@
         "caldav_url": "CalDAV URL",
         "invalid_query": "I caratteri speciali come :, \", -, !, ecc., vengono ignorati nella ricerca. Questo potrebbe portare a risultati inaspettati per:",
         "resources_load_error": "Impossibile caricare 'Sala riunioni' e 'Attrezzatura'. Prova a chiudere e riaprire la finestra.",
-        "loading_resources": "Caricamento di 'Sala riunioni' e 'Attrezzatura' in corso, per favore attendi..."
+        "loading_resources": "Caricamento di 'Sala riunioni' e 'Attrezzatura' in corso, per favore attendi...",
+        "duplicate_resource": "Questa risorsa è stata selezionata diverse volte"
     },
     "action": {
         "send": "Invia",
@@ -873,5 +874,9 @@
         "search_title4": "Seleziona uno o più risultati per completare delle azioni o visualizzare i dettagli.",
         "search_title1": "Inizia una nuova ricerca",
         "search_description1": "O seleziona \"Filtri Avanzati\" per rifinire la tua ricerca."
-    }
+    },
+    "duplicate_rooms_error": "Una o più sale riunioni sono state selezionate diverse volte. Considera di rimuovere i duplicati.",
+    "duplicate_equipment_error": "Una o più attrezzature sono state selezionate diverse volte. Considera di rimuovere i duplicati.",
+    "equipment_invalid": "Una o più attrezzature non sono valide. Prova a modificarle o a inserirne di nuove.",
+    "rooms_invalid": "Una o più sale riunioni non sono valide. Prova a modificarle o inseriscine di nuove."
 }
