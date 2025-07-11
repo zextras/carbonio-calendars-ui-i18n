@@ -309,7 +309,8 @@
         "webcal_url": "URL WebCAL",
         "invalid_query": "Znaki specjalne, takie jak !, :, -, \" itp., są ignorowane w wyszukiwaniu. To może prowadzić do nieoczekiwanych wyników dla:",
         "loading_resources": "Ładowanie pokoju spotkań i wyposażenia...",
-        "resources_load_error": "Nie udało się załadować pokoju spotkań i wyposażenia. Spróbuj zamknąć i ponownie otworzyć okienko."
+        "resources_load_error": "Nie udało się załadować pokoju spotkań i wyposażenia. Spróbuj zamknąć i ponownie otworzyć okienko.",
+        "duplicate_resource": "Ten zasób został wybrany wiele razy"
     },
     "message": {
         "modal": {
@@ -873,5 +874,9 @@
         "search_title1": "Rozpocznij kolejne wyszukiwanie",
         "search_description1": "Lub wybierz \"Zaawansowane filtry\", aby udoskonalić wyniki wyszukiwania.",
         "search_title4": "Wybierz jeden lub więcej wyników, aby wykonać czynności lub wyświetlić szczegóły."
-    }
+    },
+    "duplicate_equipment_error": "Jeden lub więcej elementów zostało wybranych wiele razy. Rozważ usunięcie duplikatów.",
+    "rooms_invalid": "Jeden lub więcej pokojów spotkań są nieprawidłowe. Spróbuj edytować je lub wprowadź nowe.",
+    "equipment_invalid": "Jeden lub więcej elementów są nieprawidłowe. Spróbuj edytować je lub wprowadź nowe.",
+    "duplicate_rooms_error": "Jeden lub więcej pokojów spotkań zostało wybranych wiele razy. Rozważ usunięcie duplikatów."
 }
