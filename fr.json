@@ -344,7 +344,8 @@
         "caldav_url": "URL CalDAV",
         "webcal_url": "URL WebCAL",
         "resources_load_error": "Impossible de charger la liste des « Salles de réunion » et des « Équipements ». Essayez de fermer et de rouvrir le tableau.",
-        "loading_resources": "Chargement des « salles de réunion » et des « équipements », veuillez patienter..."
+        "loading_resources": "Chargement des « salles de réunion » et des « équipements », veuillez patienter...",
+        "duplicate_resource": "Cette ressource a été sélectionnée plusieurs fois"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -873,5 +874,9 @@
         "search_title4": "Sélectionnez un ou plusieurs résultats pour effectuer des actions ou afficher des détails.",
         "search_title1": "Lancer une autre recherche",
         "search_description1": "Ou sélectionnez « Filtres avancés » pour affiner votre recherche."
-    }
+    },
+    "duplicate_equipment_error": "Un ou plusieurs équipements ont été sélectionnés plusieurs fois. Il faudrait prévoir de supprimer les doublons.",
+    "equipment_invalid": "Un ou plusieurs éléments d'équipement ne sont pas valides. Essayez de les modifier ou d'en saisir un nouveau.",
+    "rooms_invalid": "Une ou plusieurs salle de réunion ne sont pas valides. Essayez de les modifier ou d'en saisir une nouvelle.",
+    "duplicate_rooms_error": "Une ou plusieurs salles de réunion ont été sélectionnées plusieurs fois. Il faudrait prévoir de supprimer les doublons."
 }
