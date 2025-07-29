@@ -495,7 +495,9 @@
         "busy_appointment": "Meşgul randevu",
         "calendarSelector": {
             "disabled": "Bu etkinliği başka bir takvime taşımak için 'Taşı' seçeneğini kullanın"
-        }
+        },
+        "folder_sharing_status_one": "Paylaşıldı {{count}} kullanıcı ile",
+        "folder_sharing_status_other": "Paylaşıldı {{count}} kullanıcılar ile"
     },
     "revoke_with_custom_message": "Özel bildirim göndererek erişim yetkisini kaldır",
     "settings": {
