@@ -489,7 +489,8 @@
         "virtual_room": "Sanal Oda",
         "folder_linked_status": "Benimle paylaşılan",
         "meetingRooms": "Toplantı Odaları",
-        "out_of_office_appointment": "Ofis dışında randevu"
+        "out_of_office_appointment": "Ofis dışında randevu",
+        "free_appointment": "Ücretsiz randevu"
     },
     "revoke_with_custom_message": "Özel bildirim göndererek erişim yetkisini kaldır",
     "settings": {
