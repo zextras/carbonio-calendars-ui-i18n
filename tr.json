@@ -497,7 +497,9 @@
             "disabled": "Bu etkinliği başka bir takvime taşımak için 'Taşı' seçeneğini kullanın"
         },
         "folder_sharing_status_one": "Paylaşıldı {{count}} kullanıcı ile",
-        "folder_sharing_status_other": "Paylaşıldı {{count}} kullanıcılar ile"
+        "folder_sharing_status_other": "Paylaşıldı {{count}} kullanıcı ile",
+        "copy_webcal_url": "WebCAL url kopyala",
+        "copy_caldav_url": "CalDAV url kopyala"
     },
     "revoke_with_custom_message": "Özel bildirim göndererek erişim yetkisini kaldır",
     "settings": {
