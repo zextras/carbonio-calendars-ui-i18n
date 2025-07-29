@@ -851,5 +851,5 @@
         "search_title4": "Detayları görüntülemek veya işlem yapmak için bir veya daha fazla sonuç seçin.",
         "search_description1": "Ya da aramanızı daraltmak için \"Gelişmiş Filtreler\" seçeneğini seçin."
     },
-    "duplicate_rooms_error": "Birden fazla toplantı odası birden fazla seçildi. Yinelere dikkat ederek kaldırmayı düşünün."
+    "duplicate_rooms_error": "Birden fazla toplantı odası tekrar seçildi. Tekrar seçili olanları kaldırın."
 }
