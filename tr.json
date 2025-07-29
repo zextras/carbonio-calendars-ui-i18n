@@ -84,7 +84,9 @@
                 "footer": "Değişiklikleri kaydet"
             },
             "deletegroup": {
-                "confirm": "Kalıcı olarak sil"
+                "confirm": "Kalıcı olarak sil",
+                "title": "Grup kalıcı olarak silinsin mi?",
+                "text": "Bu grubu kalıcı olarak silmek istediğinizden emin misiniz? Bu işlem geri alınamaz ve bireysel takvimleri etkilemez."
             }
         },
         "share_info": "Paylaşım Bilgisi"
@@ -397,7 +399,7 @@
         "optional_one": "İsteğe bağlı",
         "optional_other": "İsteğe bağlılar",
         "delete_one": "Sil",
-        "delete_other": "Tümünü Sil",
+        "delete_other": "Sil",
         "appt_reminder_one": "Randevu Anımsatıcı",
         "appt_reminder_other": "Randevu Anımsatıcılar",
         "attachment_one": "Ek",
@@ -410,7 +412,31 @@
         "dismiss_other": "Tümünü Kapat",
         "import_calendar_success": "İçe aktarma başarılı",
         "show_one": "Göster",
-        "show_other": "Tümünü Göster"
+        "show_other": "Tümünü Göster",
+        "calendar_groups": "Takvim Grupları",
+        "create_group": "Yeni grup oluştur",
+        "type_group_name_here": "Grup Adı",
+        "newgroup": {
+            "note": "Bu grup kişisel hesabınızda görünecek.",
+            "calendars": "Bu gruptaki takvimler"
+        },
+        "group_empty_calendars_list": "Bu grupta henüz takvim yok. Takvimleri yazın ve gruba eklemek için “+” simgesine tıklayın.",
+        "group_not_found": "Grup bulunamadı",
+        "calendar_selector": {
+            "placeholder": "Takvimler Ekle"
+        },
+        "editgroup": {
+            "calendars": "Bu gruptaki takvimler"
+        },
+        "group_is_empty": "Bu grup boş",
+        "calendars": "Takvimler",
+        "caldav_url": "CalDAV URL",
+        "invalid_group_name": "Değişiklikleri kaydetmek için grup adı yazın",
+        "webcal_url": "WebCAL URL",
+        "hide_event_detail": "Detayları gizle",
+        "delete_attachment_one": "Sil",
+        "delete_attachment_other": "Tümünü Sil",
+        "show_event_detail": "Detayları göster"
     },
     "resend_mail_notification_about_this_share": "Bu paylaşım hakkında posta bildirimi gönder",
     "participants": {
