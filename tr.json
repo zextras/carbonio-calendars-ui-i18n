@@ -853,6 +853,6 @@
     },
     "duplicate_rooms_error": "Birden fazla toplantı odası tekrar seçildi. Tekrar seçili olanları kaldırın.",
     "duplicate_equipment_error": "Birden fazla ekipman öğesi tekrar seçildi. Tekrar seçili olanları kaldırın.",
-    "equipment_invalid": "Bir veya daha fazla ekipman öğesi geçersiz. Onları düzenlemek veya yeni bir tane girmek için deneyin.",
+    "equipment_invalid": "Bir veya daha fazla ekipman öğesi geçersiz. Onları değiştirmeyi veya yeni bir tane girmeyi deneyin.",
     "rooms_invalid": "Bir veya daha fazla toplantı odası geçersiz. Onları düzenlemek veya yeni bir tane girmek için deneyin."
 }
