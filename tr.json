@@ -824,7 +824,8 @@
             "attendee": "Katılımcı",
             "meetingRoom": "Toplantı Odası",
             "equipment": "Donanım",
-            "unknown": "Bilinmeyen"
+            "unknown": "Bilinmeyen",
+            "optionalAttendee": "İsteğe bağlı"
         }
     }
 }
