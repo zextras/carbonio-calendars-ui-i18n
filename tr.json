@@ -809,5 +809,8 @@
                 "hide": "ORGANİZATÖRÜ GİZLE"
             }
         }
+    },
+    "daily_planner": {
+        "free": "Serbest"
     }
 }
