@@ -446,7 +446,9 @@
         "delete_attachment_one": "Sil",
         "delete_attachment_other": "Tümünü Sil",
         "show_event_detail": "Detayları göster",
-        "invalid_query": "Bu aramada :, \", -, !, vb. gibi özel karakterler yok sayılır. Bu beklenmedik sonuçlara neden olabilir:"
+        "invalid_query": "Bu aramada :, \", -, !, vb. gibi özel karakterler yok sayılır. Bu beklenmedik sonuçlara neden olabilir:",
+        "loading_resources": "“Toplantı odası” ve “Ekipman” yükleniyor, lütfen bekleyin...",
+        "resources_load_error": "“Toplantı odası” ve “Ekipman” yüklenemedi. Panoyu kapatıp yeniden açmayı deneyin."
     },
     "resend_mail_notification_about_this_share": "Bu paylaşım hakkında posta bildirimi gönder",
     "participants": {
@@ -848,5 +850,6 @@
         "search_title1": "Farklı arama başlat",
         "search_title4": "Detayları görüntülemek veya işlem yapmak için bir veya daha fazla sonuç seçin.",
         "search_description1": "Ya da aramanızı daraltmak için \"Gelişmiş Filtreler\" seçeneğini seçin."
-    }
+    },
+    "duplicate_rooms_error": "Birden fazla toplantı odası birden fazla seçildi. Yinelere dikkat ederek kaldırmayı düşünün."
 }
