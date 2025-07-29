@@ -834,6 +834,7 @@
     "colors": {
         "blue": "Mavi",
         "green": "Yeşil",
-        "cyan": "Camgöbeği"
+        "cyan": "Camgöbeği",
+        "purple": "Mor"
     }
 }
