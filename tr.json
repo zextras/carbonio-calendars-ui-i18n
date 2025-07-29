@@ -198,7 +198,8 @@
         "the_organizer": "Organizatör",
         "you_did_not_answer": "Cevap vermediniz",
         "you_accepted": "Kabul ettiniz",
-        "you_declined": "Reddettiniz"
+        "you_declined": "Reddettiniz",
+        "you_accepted_as_tentative": "Muhtemel olarak kabul ettiniz"
     },
     "search": {
         "organized_by": "Organize eden",
