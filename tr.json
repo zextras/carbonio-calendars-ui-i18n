@@ -786,5 +786,10 @@
         }
     },
     "timezones": "Zaman dilimleri",
-    "empty_trash_deleting_confirmation": "Takvim çöp kutusu klasöründeki tüm öğeleri siliyorsunuz. Silme kalıcıdır. Tüm öğeleri silmek istediğinizden emin misiniz?"
+    "empty_trash_deleting_confirmation": "Takvim çöp kutusu klasöründeki tüm öğeleri siliyorsunuz. Silme kalıcıdır. Tüm öğeleri silmek istediğinizden emin misiniz?",
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "Sanal Odasına Katıl"
+        }
+    }
 }
