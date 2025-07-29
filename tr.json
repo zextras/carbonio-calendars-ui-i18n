@@ -801,5 +801,12 @@
                 "group_name_already_exists": "Aynı ada sahip bir grup zaten var"
             }
         }
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "show": "ORGANİZATÖRÜ GÖSTER"
+            }
+        }
     }
 }
