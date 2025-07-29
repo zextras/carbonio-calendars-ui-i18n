@@ -199,7 +199,8 @@
         "you_did_not_answer": "Cevap vermediniz",
         "you_accepted": "Kabul ettiniz",
         "you_declined": "Reddettiniz",
-        "you_accepted_as_tentative": "Muhtemel olarak kabul ettiniz"
+        "you_accepted_as_tentative": "Muhtemel olarak kabul ettiniz",
+        "who_set_this": "{{whoSetThis}} bu randevuyu <strong>{{status}}</strong> olarak ayarladı"
     },
     "search": {
         "organized_by": "Organize eden",
