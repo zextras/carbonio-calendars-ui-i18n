@@ -823,7 +823,8 @@
             "organizer": "Organize eden",
             "attendee": "Katılımcı",
             "meetingRoom": "Toplantı Odası",
-            "equipment": "Donanım"
+            "equipment": "Donanım",
+            "unknown": "Bilinmeyen"
         }
     }
 }
