@@ -82,6 +82,9 @@
             "editgroup": {
                 "title": "Takvim Grubunu düzenle",
                 "footer": "Değişiklikleri kaydet"
+            },
+            "deletegroup": {
+                "confirm": "Kalıcı olarak sil"
             }
         },
         "share_info": "Paylaşım Bilgisi"
