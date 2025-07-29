@@ -839,11 +839,14 @@
         "red": "Kırmızı",
         "pink": "Pembe",
         "orange": "Portakal",
-        "yellow": "Sarı"
+        "yellow": "Sarı",
+        "grey": "Gri",
+        "black": "Siyah"
     },
     "displayer": {
         "search_list_title1": "Sonuç bulunamadı. Yeniden aramayı deneyin!",
         "search_title1": "Farklı arama başlat",
-        "search_title4": "Detayları görüntülemek veya işlem yapmak için bir veya daha fazla sonuç seçin."
+        "search_title4": "Detayları görüntülemek veya işlem yapmak için bir veya daha fazla sonuç seçin.",
+        "search_description1": "Ya da aramanızı daraltmak için \"Gelişmiş Filtreler\" seçeneğini seçin."
     }
 }
