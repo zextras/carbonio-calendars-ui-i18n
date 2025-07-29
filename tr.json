@@ -852,5 +852,6 @@
         "search_description1": "Ya da aramanızı daraltmak için \"Gelişmiş Filtreler\" seçeneğini seçin."
     },
     "duplicate_rooms_error": "Birden fazla toplantı odası tekrar seçildi. Tekrar seçili olanları kaldırın.",
-    "duplicate_equipment_error": "Birden fazla ekipman öğesi tekrar seçildi. Tekrar seçili olanları kaldırın."
+    "duplicate_equipment_error": "Birden fazla ekipman öğesi tekrar seçildi. Tekrar seçili olanları kaldırın.",
+    "equipment_invalid": "Bir veya daha fazla ekipman öğesi geçersiz. Onları düzenlemek veya yeni bir tane girmek için deneyin."
 }
