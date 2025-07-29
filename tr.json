@@ -436,7 +436,8 @@
         "hide_event_detail": "Detayları gizle",
         "delete_attachment_one": "Sil",
         "delete_attachment_other": "Tümünü Sil",
-        "show_event_detail": "Detayları göster"
+        "show_event_detail": "Detayları göster",
+        "invalid_query": "Özel karakterler gibi :, \", -, !, vb., aramada yok sayılır. Bu beklenmedik sonuçlara neden olabilir."
     },
     "resend_mail_notification_about_this_share": "Bu paylaşım hakkında posta bildirimi gönder",
     "participants": {
