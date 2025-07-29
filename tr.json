@@ -815,6 +815,7 @@
         "non-working": "Çalışma saatleri dışı",
         "end_time": "Bitiş zamanı",
         "start_time": "Başlangıç zamanı",
-        "busy": "Meşgul"
+        "busy": "Meşgul",
+        "tentative": "Belirsiz"
     }
 }
