@@ -448,7 +448,8 @@
         "show_event_detail": "Detayları göster",
         "invalid_query": "Bu aramada :, \", -, !, vb. gibi özel karakterler yok sayılır. Bu beklenmedik sonuçlara neden olabilir:",
         "loading_resources": "“Toplantı odası” ve “Ekipman” yükleniyor, lütfen bekleyin...",
-        "resources_load_error": "“Toplantı odası” ve “Ekipman” yüklenemedi. Panoyu kapatıp yeniden açmayı deneyin."
+        "resources_load_error": "“Toplantı odası” ve “Ekipman” yüklenemedi. Panoyu kapatıp yeniden açmayı deneyin.",
+        "duplicate_resource": "Bu kaynak birden fazla seçildi"
     },
     "resend_mail_notification_about_this_share": "Bu paylaşım hakkında posta bildirimi gönder",
     "participants": {
