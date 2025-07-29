@@ -492,7 +492,10 @@
         "out_of_office_appointment": "Ofis dışında randevu",
         "free_appointment": "Serbest randevu",
         "tentative_appointment": "Belirsiz randevu",
-        "busy_appointment": "Meşgul randevu"
+        "busy_appointment": "Meşgul randevu",
+        "calendarSelector": {
+            "disabled": "Bu etkinliği 'Taşı' seçeneğini kullanarak başka bir takvime taşıyın"
+        }
     },
     "revoke_with_custom_message": "Özel bildirim göndererek erişim yetkisini kaldır",
     "settings": {
