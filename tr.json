@@ -822,7 +822,8 @@
         "participant": {
             "organizer": "Organize eden",
             "attendee": "Katılımcı",
-            "meetingRoom": "Toplantı Odası"
+            "meetingRoom": "Toplantı Odası",
+            "equipment": "Donanım"
         }
     }
 }
