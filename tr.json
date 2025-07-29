@@ -818,6 +818,9 @@
         "busy": "Meşgul",
         "tentative": "Belirsiz",
         "out-of-office": "Ofis dışında",
-        "unknown": "Bilinmeyen"
+        "unknown": "Bilinmeyen",
+        "participant": {
+            "organizer": "Organize eden"
+        }
     }
 }
