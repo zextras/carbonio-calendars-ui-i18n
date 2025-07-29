@@ -145,7 +145,8 @@
             "series_deleted_no_notification": "Seriler çöp kutusuna taşındı.",
             "shared_calendar_removed": "Takvim başarıyla kaldırıldı",
             "group_edited": "Değişiklikler kaydedildi",
-            "new_group_created": "Yeni grup oluşturuldu"
+            "new_group_created": "Yeni grup oluşturuldu",
+            "group_deleted": "Takvim grubu kalıcı olarak silindi"
         },
         "are_organizer": "organize eden",
         "meeting_canceled": "Bu toplantı iptal edildi",
