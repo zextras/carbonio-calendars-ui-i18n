@@ -195,7 +195,8 @@
         "original_invite": "-----Orijinal Davet-----",
         "required_participant_one": "{{count}} Katılımcı",
         "required_participant_other": "{{count}} Katılımcılar",
-        "the_organizer": "Organizatör"
+        "the_organizer": "Organizatör",
+        "you_did_not_answer": "Cevap vermediniz"
     },
     "search": {
         "organized_by": "Organize eden",
