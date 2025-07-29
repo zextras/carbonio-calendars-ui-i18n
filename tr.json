@@ -812,7 +812,7 @@
     },
     "daily_planner": {
         "free": "Serbest",
-        "non-working": "Çalışmayan",
+        "non-working": "Çalışma saatleri dışı",
         "end_time": "Bitiş zamanı"
     }
 }
