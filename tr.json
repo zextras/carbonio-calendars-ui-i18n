@@ -196,7 +196,8 @@
         "required_participant_one": "{{count}} Katılımcı",
         "required_participant_other": "{{count}} Katılımcılar",
         "the_organizer": "Organizatör",
-        "you_did_not_answer": "Cevap vermediniz"
+        "you_did_not_answer": "Cevap vermediniz",
+        "you_accepted": "Kabul ettiniz"
     },
     "search": {
         "organized_by": "Organize eden",
