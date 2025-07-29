@@ -832,6 +832,7 @@
         "to": "-"
     },
     "colors": {
-        "blue": "Mavi"
+        "blue": "Mavi",
+        "green": "Yeşil"
     }
 }
