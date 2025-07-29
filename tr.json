@@ -816,6 +816,7 @@
         "end_time": "Bitiş zamanı",
         "start_time": "Başlangıç zamanı",
         "busy": "Meşgul",
-        "tentative": "Belirsiz"
+        "tentative": "Belirsiz",
+        "out-of-office": "Ofis dışında"
     }
 }
