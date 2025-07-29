@@ -827,6 +827,8 @@
             "unknown": "Bilinmeyen",
             "optionalAttendee": "İsteğe bağlı"
         },
-        "status": "Durum"
+        "status": "Durum",
+        "from": "süresi",
+        "to": "-"
     }
 }
