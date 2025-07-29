@@ -820,7 +820,8 @@
         "out-of-office": "Ofis dışında",
         "unknown": "Bilinmeyen",
         "participant": {
-            "organizer": "Organize eden"
+            "organizer": "Organize eden",
+            "attendee": "Katılımcı"
         }
     }
 }
