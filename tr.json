@@ -795,7 +795,7 @@
     "api": {
         "error": {
             "CreateCalendarGroup": {
-                "group_name_already_exists": "Aynı ada sahip bir grup zaten mevcut"
+                "group_name_already_exists": "Aynı ada sahip bir grup zaten var"
             },
             "ModifyCalendarGroup": {
                 "group_name_already_exists": "Aynı ada sahip bir grup zaten var"
