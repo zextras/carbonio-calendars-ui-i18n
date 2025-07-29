@@ -830,5 +830,8 @@
         "status": "Durum",
         "from": "süresi",
         "to": "-"
+    },
+    "colors": {
+        "blue": "Mavi"
     }
 }
