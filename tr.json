@@ -22,7 +22,8 @@
         "export_calendar_ics": "ICS dosyasını dışa aktar",
         "answer": "Yanıtla",
         "delete": "Sil",
-        "edit_group": "Grubu düzenle"
+        "edit_group": "Grubu düzenle",
+        "edit_and_share_calendar": "Takvimi düzenle ve paylaş"
     },
     "edit_share_properties": "Paylaşım özelliklerini düzenle",
     "button": {
@@ -72,6 +73,15 @@
             },
             "restore": {
                 "footer": "Oluştur ve Geri Yükle"
+            },
+            "creategroup": {
+                "footer": "Grup oluştur",
+                "default_group_name": "Yeni Takvim Grubu",
+                "title": "Yeni Takvim Grubu oluştur"
+            },
+            "editgroup": {
+                "title": "Takvim Grubunu düzenle",
+                "footer": "Değişiklikleri kaydet"
             }
         },
         "share_info": "Paylaşım Bilgisi"
