@@ -791,5 +791,12 @@
         "virtualRoom": {
             "displayerLink": "Sanal Odaya Katıl"
         }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Aynı ada sahip bir grup zaten mevcut"
+            }
+        }
     }
 }
