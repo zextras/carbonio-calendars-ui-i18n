@@ -805,7 +805,8 @@
     "editor": {
         "daily_planner": {
             "button": {
-                "show": "ORGANİZATÖRÜ GÖSTER"
+                "show": "ORGANİZATÖRÜ GÖSTER",
+                "hide": "ORGANİZATÖRÜ GİZLE"
             }
         }
     }
