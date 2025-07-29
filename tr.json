@@ -21,7 +21,8 @@
         "download_ics": "ICS'yi indir",
         "export_calendar_ics": "ICS dosyasını dışa aktar",
         "answer": "Yanıtla",
-        "delete": "Sil"
+        "delete": "Sil",
+        "edit_group": "Grubu düzenle"
     },
     "edit_share_properties": "Paylaşım özelliklerini düzenle",
     "button": {
