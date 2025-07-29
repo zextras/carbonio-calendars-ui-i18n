@@ -194,7 +194,8 @@
         "optional_participant_other": "{{count}} İsteğe bağlılar",
         "original_invite": "-----Orijinal Davet-----",
         "required_participant_one": "{{count}} Katılımcı",
-        "required_participant_other": "{{count}} Katılımcılar"
+        "required_participant_other": "{{count}} Katılımcılar",
+        "the_organizer": "Organizatör"
     },
     "search": {
         "organized_by": "Organize eden",
