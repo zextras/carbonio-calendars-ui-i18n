@@ -143,7 +143,8 @@
             "all_link_copied": "Genel bağlantı başarıyla kopyalandı",
             "all_att_added": "Ekler başarıyla eklendi",
             "series_deleted_no_notification": "Seriler çöp kutusuna taşındı.",
-            "shared_calendar_removed": "Takvim başarıyla kaldırıldı"
+            "shared_calendar_removed": "Takvim başarıyla kaldırıldı",
+            "group_edited": "Değişiklikler kaydedildi"
         },
         "are_organizer": "organize eden",
         "meeting_canceled": "Bu toplantı iptal edildi",
