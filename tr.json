@@ -811,6 +811,7 @@
         }
     },
     "daily_planner": {
-        "free": "Serbest"
+        "free": "Serbest",
+        "non-working": "Çalışmayan"
     }
 }
