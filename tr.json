@@ -826,6 +826,7 @@
             "equipment": "Donanım",
             "unknown": "Bilinmeyen",
             "optionalAttendee": "İsteğe bağlı"
-        }
+        },
+        "status": "Durum"
     }
 }
