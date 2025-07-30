@@ -904,5 +904,6 @@
         "search_title4": "Izberite enega ali več rezultatov za izvedbo dejanj ali ogled podrobnosti.",
         "search_title1": "Začnite novo iskanje",
         "search_description1": "Ali izberite \"Napredni filtri\", da izboljšate iskanje."
-    }
+    },
+    "duplicate_rooms_error": "Ena ali več sob za sestanke je bilo izbranih večkrat. Razmislite o odstranitvi podvojitvenih."
 }
