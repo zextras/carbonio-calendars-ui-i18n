@@ -370,7 +370,8 @@
         "caldav_url": "CalDAV URL",
         "webcal_url": "WebCAL URL",
         "loading_resources": "Nalaganje \"Sob za sestanke\" in \"Oprema\", prosim počakajte...",
-        "resources_load_error": "Ni bilo mogoče naložiti \"Sobe za sestanke\" in \"Opreme\". Poskusite zapreti in znova odpreti tablo."
+        "resources_load_error": "Ni bilo mogoče naložiti \"Sobe za sestanke\" in \"Opreme\". Poskusite zapreti in znova odpreti tablo.",
+        "duplicate_resource": "Ta vir je bil izbran večkrat"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
