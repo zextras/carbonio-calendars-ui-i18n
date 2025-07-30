@@ -905,5 +905,6 @@
         "search_title1": "Začnite novo iskanje",
         "search_description1": "Ali izberite \"Napredni filtri\", da izboljšate iskanje."
     },
-    "duplicate_rooms_error": "Ena ali več sob za sestanke je bilo izbranih večkrat. Razmislite o odstranitvi podvojitvenih."
+    "duplicate_rooms_error": "Ena ali več sob za sestanke je bilo izbranih večkrat. Razmislite o odstranitvi podvojenih.",
+    "duplicate_equipment_error": "Ena ali več oprem je bilo izbranih večkrat. Razmislite o odstranitvi podvojenih izbir."
 }
