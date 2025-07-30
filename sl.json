@@ -368,7 +368,9 @@
         "search_hint": "\"\"",
         "invalid_query": "Posebni znaki, kot so :, \", -, ! itd., so pri iskanju prezrti. To lahko povzroči nepričakovane rezultate.",
         "caldav_url": "CalDAV URL",
-        "webcal_url": "WebCAL URL"
+        "webcal_url": "WebCAL URL",
+        "loading_resources": "Nalaganje \"Sob za sestanke\" in \"Oprema\", prosim počakajte...",
+        "resources_load_error": "Nisem mogel naloziti \"Sobane za sestanke\" in \"Opremo\". Poskusite zapreti in ponovno odpreti desko."
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
@@ -900,6 +902,7 @@
     "displayer": {
         "search_list_title1": "Videti je, kot da ni rezultatov. Nadaljujte z iskanjem!",
         "search_title4": "Izberite enega ali več rezultatov za izvedbo dejanj ali ogled podrobnosti.",
-        "search_title1": "Začnite novo iskanje"
+        "search_title1": "Začnite novo iskanje",
+        "search_description1": "Ali izberite \"Napredni filtri\", da izboljšate iskanje."
     }
 }
