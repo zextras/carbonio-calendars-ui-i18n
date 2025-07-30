@@ -896,5 +896,10 @@
         "orange": "Oranžna",
         "yellow": "Rumena",
         "black": "Črna"
+    },
+    "displayer": {
+        "search_list_title1": "Videti je, kot da ni rezultatov. Nadaljujte z iskanjem!",
+        "search_title4": "Izberite enega ali več rezultatov za izvedbo dejanj ali ogled podrobnosti.",
+        "search_title1": "Začnite novo iskanje"
     }
 }
