@@ -410,7 +410,10 @@
         "invalid_query": "I caratteri speciali come :, \", -, !, ecc., vengono ignorati nella ricerca. Questo potrebbe portare a risultati inaspettati per:",
         "resources_load_error": "Impossibile caricare 'Sala riunioni' e 'Attrezzatura'. Prova a chiudere e riaprire la finestra.",
         "loading_resources": "Caricamento di 'Sala riunioni' e 'Attrezzatura' in corso, per favore attendi...",
-        "duplicate_resource": "Questa risorsa è stata selezionata diverse volte"
+        "duplicate_resource": "Questa risorsa è stata selezionata diverse volte",
+        "close": "Chiudi",
+        "show_more": "+ {{count}} eventi",
+        "show_all_events": "Mostra tutti gli eventi"
     },
     "action": {
         "send": "Invia",
