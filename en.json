@@ -356,7 +356,10 @@
         "invalid_query": "Special characters like :, \", -, !, etc., are ignored in the search. This may lead to unexpected results for:",
         "resources_load_error": "Couldn't load “Meeting room” and “Equipment”. Try closing and reopening the board.",
         "loading_resources": "Loading “Meeting room” and “Equipment”, please wait...",
-        "duplicate_resource": "This resource was selected multiple times"
+        "duplicate_resource": "This resource was selected multiple times",
+        "show_more": "+ {{count}} more",
+        "show_all_events": "Show all events",
+        "close": "Close"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
