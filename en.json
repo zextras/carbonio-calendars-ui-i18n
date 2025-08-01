@@ -359,7 +359,12 @@
         "duplicate_resource": "This resource was selected multiple times",
         "show_more": "+ {{count}} more",
         "show_all_events": "Show all events",
-        "close": "Close"
+        "close": "Close",
+        "splitLayoutDisabledTooltip": "Split layout not available in the current view",
+        "email_attendees": "Email attendees",
+        "recurrent": "Recurrent appointment",
+        "disableSplitLayoutTooltip": "Disable split layout",
+        "enableSplitLayoutTooltip": "Enable split layout"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
