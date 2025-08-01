@@ -310,7 +310,10 @@
         "invalid_query": "Znaki specjalne, takie jak !, :, -, \" itp., są ignorowane w wyszukiwaniu. To może prowadzić do nieoczekiwanych wyników dla:",
         "loading_resources": "Ładowanie pokoju spotkań i wyposażenia...",
         "resources_load_error": "Nie udało się załadować pokoju spotkań i wyposażenia. Spróbuj zamknąć i ponownie otworzyć okienko.",
-        "duplicate_resource": "Ten zasób został wybrany wiele razy"
+        "duplicate_resource": "Ten zasób został wybrany wiele razy",
+        "close": "Zamknij",
+        "show_more": "+ {{count}} więcej",
+        "show_all_events": "Pokaż wszystkie wydarzenia"
     },
     "message": {
         "modal": {
