@@ -413,7 +413,12 @@
         "duplicate_resource": "Questa risorsa è stata selezionata diverse volte",
         "close": "Chiudi",
         "show_more": "+ {{count}} eventi",
-        "show_all_events": "Mostra tutti gli eventi"
+        "show_all_events": "Mostra tutti gli eventi",
+        "splitLayoutDisabledTooltip": "Visualizzazione in colonne non disponibile nella vista attuale",
+        "email_attendees": "Manda un'email ai partecipanti",
+        "recurrent": "Appuntamento ricorrente",
+        "disableSplitLayoutTooltip": "Disabilita visualizzazione in colonne",
+        "enableSplitLayoutTooltip": "Abilita visualizzazione in colonne"
     },
     "action": {
         "send": "Invia",
