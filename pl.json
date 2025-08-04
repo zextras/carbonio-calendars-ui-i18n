@@ -313,7 +313,12 @@
         "duplicate_resource": "Ten zasób został wybrany wiele razy",
         "close": "Zamknij",
         "show_more": "+ {{count}} więcej",
-        "show_all_events": "Pokaż wszystkie wydarzenia"
+        "show_all_events": "Pokaż wszystkie wydarzenia",
+        "splitLayoutDisabledTooltip": "Podzielony widok nie jest dostępny",
+        "recurrent": "Powtarzające się spotkanie",
+        "enableSplitLayoutTooltip": "Włącz podzielony widok",
+        "email_attendees": "E-mail do uczestników",
+        "disableSplitLayoutTooltip": "Wyłącz podzielony widok"
     },
     "message": {
         "modal": {
