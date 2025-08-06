@@ -355,7 +355,16 @@
         "caldav_url": "CalDAV URL adresa",
         "loading_resources": "Učitavanje „Sobe za sastanke” i „Opreme”, molimo sačekajte...",
         "resources_load_error": "Nije moguće učitati „Sobu za sastanke” i „Opremu”. Pokušajte zatvoriti i ponovno otvoriti ploču.",
-        "invalid_query": "Specijalni karakteri kao što su :, \", -, !, itd., ignorišu se u pretrazi. Ovo može dovesti do neočekivanih rezultata za:"
+        "invalid_query": "Specijalni karakteri kao što su :, \", -, !, itd., ignorišu se u pretrazi. Ovo može dovesti do neočekivanih rezultata za:",
+        "duplicate_resource": "Ovaj resurs je odabran više puta",
+        "show_more": "+ {{count}} više",
+        "close": "Zatvori",
+        "splitLayoutDisabledTooltip": "Raspored sa podebljanim poljem nije dostupan u trenutnom prikazu",
+        "email_attendees": "Pošalji e-poruku učesnicima",
+        "recurrent": "Ponavljajući sastanak",
+        "disableSplitLayoutTooltip": "Onemogući raspored podeljenog ekrana",
+        "show_all_events": "Prikaži sve događaje",
+        "enableSplitLayoutTooltip": "Omogući podijeljeni raspored"
     },
     "freebusy": "Slobodno/Zauzeto",
     "has_attachments": "Ima priložene datoteke",
@@ -877,5 +886,9 @@
         "search_title4": "Odaberi jedan ili više rezultata za izvršenje akcija ili prikaz detalja.",
         "search_title1": "Pokreni novu pretragu",
         "search_description1": "Ili odaberi “Napredni filteri” za precizniju pretragu."
-    }
+    },
+    "duplicate_rooms_error": "Jedan ili više sala za sastanke izabrano je više puta. Razmotrite uklanjanje duplikata.",
+    "duplicate_equipment_error": "Jedan ili više komada opreme izabrani su više puta. Razmotrite uklanjanje duplikata.",
+    "equipment_invalid": "Jedan ili više komada opreme nije važeći. Pokušajte ih urediti ili unijeti novi.",
+    "rooms_invalid": "Jedan ili više sastajnih soba nije važeći. Pokušajte ih urediti ili unijeti novu."
 }
