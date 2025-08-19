@@ -160,7 +160,7 @@
         "want_to_edit_modified_msg": "Le modifiche verranno notificate ai partecipanti via email. Vuoi aggiungere un messaggio personalizzato?",
         "meeting_modified": "La riunione seguente è stata modificata",
         "copy": "Copia",
-        "import_appointment_modal": "L'appuntameneto nel  {{fileName}} verrà caricato nel calendario \"{{calendarName}}\"",
+        "import_appointment_modal": "L'appuntamento nel {{fileName}} verrà caricato nel calendario \"{{calendarName}}\".",
         "original_invite": "-----Invito Originale-----",
         "optional_participant_one": "{{count}} Opzionale",
         "optional_participant_many": "{{count}} Opzionali",
