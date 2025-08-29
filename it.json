@@ -418,7 +418,9 @@
         "email_attendees": "Manda un'email ai partecipanti",
         "recurrent": "Appuntamento ricorrente",
         "disableSplitLayoutTooltip": "Disabilita visualizzazione in colonne",
-        "enableSplitLayoutTooltip": "Abilita visualizzazione in colonne"
+        "enableSplitLayoutTooltip": "Abilita visualizzazione in colonne",
+        "cannot_send": "L'invio è disabilitato per questo evento",
+        "no_recipients": "Aggiungi almeno un partecipante o risorsa per inviare"
     },
     "action": {
         "send": "Invia",
