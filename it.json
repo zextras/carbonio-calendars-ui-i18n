@@ -420,7 +420,9 @@
         "disableSplitLayoutTooltip": "Disabilita visualizzazione in colonne",
         "enableSplitLayoutTooltip": "Abilita visualizzazione in colonne",
         "cannot_send": "L'invio è disabilitato per questo evento",
-        "no_recipients": "Aggiungi almeno un partecipante o risorsa per inviare"
+        "no_recipients": "Aggiungi almeno un partecipante o risorsa per inviare",
+        "add_event_title_to_save": "Aggiungi il titolo dell'evento per salvare",
+        "add_event_title_to_send": "Aggiungi il titolo dell'evento per inviare"
     },
     "action": {
         "send": "Invia",
