@@ -366,7 +366,9 @@
         "disableSplitLayoutTooltip": "Disable split layout",
         "enableSplitLayoutTooltip": "Enable split layout",
         "cannot_send": "Sending is disabled for this event",
-        "no_recipients": "Add at least one attendee or resource to send"
+        "no_recipients": "Add at least one attendee or resource to send",
+        "add_event_title_to_send": "Add event title to send",
+        "add_event_title_to_save": "Add event title to save"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
