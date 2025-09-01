@@ -318,7 +318,11 @@
         "recurrent": "Powtarzające się spotkanie",
         "enableSplitLayoutTooltip": "Włącz podzielony widok",
         "email_attendees": "E-mail do uczestników",
-        "disableSplitLayoutTooltip": "Wyłącz podzielony widok"
+        "disableSplitLayoutTooltip": "Wyłącz podzielony widok",
+        "cannot_send": "Wysyłanie jest wyłączone dla tego wydarzenia",
+        "no_recipients": "Dodaj co najmniej jednego uczestnika lub zasób, aby wysłać",
+        "add_event_title_to_send": "Dodaj tytuł wydarzenia, aby wysłać",
+        "add_event_title_to_save": "Dodaj tytuł wydarzenia, aby zapisać"
     },
     "message": {
         "modal": {
