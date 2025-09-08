@@ -258,7 +258,7 @@
         "single_advanced_filter": "Napredni filteri",
         "single_instance": "JEDAN PRIMERAK",
         "snooze": "Odgoditi",
-        "start_date": "Datum početka",
+        "start_date": "Početni datum",
         "start_week_on": "Početak sedmice na",
         "subject": "Predmet",
         "tentative": "Privremeno",
@@ -364,7 +364,11 @@
         "recurrent": "Ponavljajući sastanak",
         "disableSplitLayoutTooltip": "Onemogući raspored podeljenog ekrana",
         "show_all_events": "Prikaži sve događaje",
-        "enableSplitLayoutTooltip": "Omogući podijeljeni raspored"
+        "enableSplitLayoutTooltip": "Omogući podijeljeni raspored",
+        "cannot_send": "Slanje je onemogućeno za ovaj događaj",
+        "no_recipients": "Dodajte barem jednog prisutnog ili resurs za slanje",
+        "add_event_title_to_send": "Dodajte naslov događaja za slanje",
+        "add_event_title_to_save": "Dodajte naslov događaja da biste ga sačuvali"
     },
     "freebusy": "Slobodno/Zauzeto",
     "has_attachments": "Ima priložene datoteke",
