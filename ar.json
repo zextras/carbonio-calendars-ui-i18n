@@ -315,7 +315,9 @@
         "disableSplitLayoutTooltip": "تعطيل العرض المنقسم",
         "cannot_send": "تم تعطيل الإرسال لهذا الحدث",
         "no_recipients": "أضف مشاركًا واحدًا على الأقل لإرساله",
-        "enableSplitLayoutTooltip": "تمكين العرض المنقسم"
+        "enableSplitLayoutTooltip": "تمكين العرض المنقسم",
+        "add_event_title_to_save": "أضف عنوان الحدث لحفظه",
+        "add_event_title_to_send": "أضف عنوان الحدث لإرساله"
     },
     "message": {
         "copy": "نسخ",
