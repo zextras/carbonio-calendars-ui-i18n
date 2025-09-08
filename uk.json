@@ -29,7 +29,9 @@
         "disableSplitLayoutTooltip": "Вимкнути розділений макет",
         "splitLayoutDisabledTooltip": "Розділений макет недоступний у поточному поданні",
         "email_attendees": "Надіслати електронного листа учасникам",
-        "enableSplitLayoutTooltip": "Увімкнути розділений макет"
+        "enableSplitLayoutTooltip": "Увімкнути розділений макет",
+        "add_event_title_to_send": "Додати назву події для відправлення",
+        "add_event_title_to_save": "Додати назву події для збереження"
     },
     "message": {
         "delete_tag_message2": "Після видалення він буде вилучений з усіх елементів, до яких був застосований."
