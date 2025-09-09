@@ -371,7 +371,8 @@
         "webcal_url": "WebCAL URL",
         "loading_resources": "Nalaganje \"Sob za sestanke\" in \"Oprema\", prosim počakajte...",
         "resources_load_error": "Ni bilo mogoče naložiti \"Sobe za sestanke\" in \"Opreme\". Poskusite zapreti in znova odpreti tablo.",
-        "duplicate_resource": "Ta vir je bil izbran večkrat"
+        "duplicate_resource": "Ta vir je bil izbran večkrat",
+        "show_all_events": "Prikaži vse dogodke za ta dan"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
