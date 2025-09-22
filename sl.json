@@ -366,7 +366,7 @@
         "show_few": "Prikaži vse",
         "show_other": "Prikaži vse",
         "search_hint": "\"\"",
-        "invalid_query": "Posebni znaki, kot so :, \", -, ! itd., so pri iskanju prezrti. To lahko povzroči nepričakovane rezultate.",
+        "invalid_query": "Posebni znaki, kot so :, \", -, ! itd., so pri iskanju prezrti. To lahko povzroči nepričakovane rezultate za:",
         "caldav_url": "CalDAV URL",
         "webcal_url": "WebCAL URL",
         "loading_resources": "Nalaganje \"Sob za sestanke\" in \"Oprema\", prosim počakajte...",
