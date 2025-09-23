@@ -322,7 +322,12 @@
         "cannot_send": "Wysyłanie jest wyłączone dla tego wydarzenia",
         "no_recipients": "Dodaj co najmniej jednego uczestnika lub zasób, aby wysłać",
         "add_event_title_to_send": "Dodaj tytuł wydarzenia, aby wysłać",
-        "add_event_title_to_save": "Dodaj tytuł wydarzenia, aby zapisać"
+        "add_event_title_to_save": "Dodaj tytuł wydarzenia, aby zapisać",
+        "duplicate_share": "Już udostępniłeś ten kalendarz temu użytkownikowi",
+        "duplicate_shares": "Już udostępniłeś ten kalendarz jednemu lub więcej użytkowników",
+        "confirm": "Potwierdź",
+        "duplicate_share_info": "Już udostępniłeś ten kalendarz jednemu lub więcej użytkownikom. Zmień rolę lub wpisz inny adres.",
+        "no_changes": "Jeszcze nie dokonałeś jeszcze żadnych zmian"
     },
     "message": {
         "modal": {
