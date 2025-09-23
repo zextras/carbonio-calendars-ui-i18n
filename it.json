@@ -422,7 +422,12 @@
         "cannot_send": "L'invio è disabilitato per questo evento",
         "no_recipients": "Aggiungi almeno un partecipante o risorsa per inviare",
         "add_event_title_to_save": "Aggiungi il titolo dell'evento per salvare",
-        "add_event_title_to_send": "Aggiungi il titolo dell'evento per inviare"
+        "add_event_title_to_send": "Aggiungi il titolo dell'evento per inviare",
+        "duplicate_shares": "Hai già condiviso questo calendario con uno o più utenti",
+        "duplicate_share": "Hai già condiviso questo calendario con questo utente",
+        "confirm": "Conferma",
+        "no_changes": "Non hai ancora apportato modifiche",
+        "duplicate_share_info": "Hai già condiviso questo calendario con uno o più utenti. Prova a cambiare ruolo o a scrivere un altro indirizzo."
     },
     "action": {
         "send": "Invia",
