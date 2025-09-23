@@ -368,7 +368,11 @@
         "cannot_send": "Sending is disabled for this event",
         "no_recipients": "Add at least one attendee or resource to send",
         "add_event_title_to_send": "Add event title to send",
-        "add_event_title_to_save": "Add event title to save"
+        "add_event_title_to_save": "Add event title to save",
+        "duplicate_shares": "You've already shared this calendar with one or more users",
+        "duplicate_share_info": "You've already shared this calendar with one or more users. Try changing role or typing another address.",
+        "duplicate_share": "You've already shared this calendar with this user",
+        "no_changes": "You haven’t made any changes yet"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
