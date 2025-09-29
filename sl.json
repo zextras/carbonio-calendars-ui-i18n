@@ -376,7 +376,8 @@
         "cannot_send": "Pošiljanje je onemogočeno za ta dogodek",
         "confirm": "Potrdi",
         "duplicate_share_info": "Ta koledar ste že delili z enim ali več uporabniki. Poskusite spremeniti vlogo ali vnesti drug naslov.",
-        "no_changes": "Še niste naredili nobenih sprememb"
+        "no_changes": "Še niste naredili nobenih sprememb",
+        "duplicate_share": "Ta koledar ste že delil z uporabnikom"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
