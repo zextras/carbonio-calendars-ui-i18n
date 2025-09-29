@@ -373,7 +373,8 @@
         "resources_load_error": "Ni bilo mogoče naložiti \"Sobe za sestanke\" in \"Opreme\". Poskusite zapreti in znova odpreti tablo.",
         "duplicate_resource": "Ta vir je bil izbran večkrat",
         "show_all_events": "Prikaži vse dogodke",
-        "cannot_send": "Pošiljanje je onemogočeno za ta dogodek"
+        "cannot_send": "Pošiljanje je onemogočeno za ta dogodek",
+        "confirm": "Potrdi"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
