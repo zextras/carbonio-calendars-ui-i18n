@@ -377,7 +377,7 @@
         "confirm": "Potrdi",
         "duplicate_share_info": "Ta koledar ste že delili z enim ali več uporabniki. Poskusite spremeniti vlogo ali vnesti drug naslov.",
         "no_changes": "Niste še naredili nobenih sprememb",
-        "duplicate_share": "Ta koledar ste že delil z uporabnikom",
+        "duplicate_share": "Ta koledar ste že delili s tem uporabnikom",
         "duplicate_shares": "Ta koledar ste že delili z enim ali več uporabniki"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
