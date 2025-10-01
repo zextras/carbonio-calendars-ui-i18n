@@ -895,5 +895,5 @@
     "duplicate_rooms_error": "Jedan ili više sala za sastanke izabrano je više puta. Razmotrite uklanjanje duplikata.",
     "duplicate_equipment_error": "Jedan ili više komada opreme izabrani su više puta. Razmotrite uklanjanje duplikata.",
     "equipment_invalid": "Jedan ili više komada opreme nije važeći. Pokušajte ih izmijeniti ili unijeti novi.",
-    "rooms_invalid": "Jedna ili više soba za sastanke su nevažeće. Pokušajte ih izmijeniti ili unijeti novu."
+    "rooms_invalid": "Jedan ili više sala za sastanke nisu važeći. Pokušajte ih urediti ili unijeti novu."
 }
