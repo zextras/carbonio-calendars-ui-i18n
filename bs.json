@@ -368,7 +368,8 @@
         "cannot_send": "Slanje je onemogućeno za ovaj događaj",
         "no_recipients": "Dodajte barem jednog prisutnog ili resurs za slanje",
         "add_event_title_to_send": "Dodajte naslov događaja za slanje",
-        "add_event_title_to_save": "Dodajte naslov događaja da biste ga sačuvali"
+        "add_event_title_to_save": "Dodajte naslov događaja da biste ga sačuvali",
+        "duplicate_share": "Već ste podijelili kalendar sa ovim korisnikom"
     },
     "freebusy": "Slobodno/Zauzeto",
     "has_attachments": "Ima priložene datoteke",
@@ -893,6 +894,6 @@
     },
     "duplicate_rooms_error": "Jedan ili više sala za sastanke izabrano je više puta. Razmotrite uklanjanje duplikata.",
     "duplicate_equipment_error": "Jedan ili više komada opreme izabrani su više puta. Razmotrite uklanjanje duplikata.",
-    "equipment_invalid": "Jedan ili više komada opreme nije važeći. Pokušajte ih urediti ili unijeti novi.",
-    "rooms_invalid": "Jedan ili više sastajnih soba nije važeći. Pokušajte ih urediti ili unijeti novu."
+    "equipment_invalid": "Jedan ili više komada opreme nije važeći. Pokušajte ih izmijeniti ili unijeti novi.",
+    "rooms_invalid": "Jedna ili više soba za sastanke su nevažeće. Pokušajte ih izmijeniti ili unijeti novu."
 }
