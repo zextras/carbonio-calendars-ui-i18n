@@ -128,7 +128,7 @@
         "advanced_filters_other": "{{count}} Naprednih filtera",
         "all_calendars": "Svi kalendari",
         "all_day": "Cijeli dan",
-        "app_name": "Kalendarima",
+        "app_name": "Kalendari",
         "apple_ical": "Apple iCal",
         "appointment_is_private": "Sastanak je privatan.",
         "appt_reminder_one": "Podsjetnik",
@@ -369,7 +369,11 @@
         "no_recipients": "Dodajte barem jednog prisutnog ili resurs za slanje",
         "add_event_title_to_send": "Dodajte naslov događaja za slanje",
         "add_event_title_to_save": "Dodajte naslov događaja da biste ga sačuvali",
-        "duplicate_share": "Već ste podijelili kalendar sa ovim korisnikom"
+        "duplicate_share": "Već ste podijelili kalendar sa ovim korisnikom",
+        "no_changes": "Još niste napravili nikakve promjene",
+        "confirm": "Potvrdi",
+        "duplicate_share_info": "Već ste dijelili ovaj kalendar s jednim ili više korisnika. Pokušajte promijeniti ulogu ili upisati drugu adresu.",
+        "duplicate_shares": "Već ste podijelili ovaj kalendar s jednim ili više korisnika"
     },
     "freebusy": "Slobodno/Zauzeto",
     "has_attachments": "Ima priložene datoteke",
