@@ -357,7 +357,12 @@
         "cannot_send": "L'envoi n'est pas disponible pour cet évènement",
         "no_recipients": "Ajouter au moins un participant ou une ressource pour envoyer",
         "add_event_title_to_send": "Ajouter un titre à l'évènement pour envoyer",
-        "add_event_title_to_save": "Ajouter un titre à l'évènement pour l'enregistrer"
+        "add_event_title_to_save": "Ajouter un titre à l'évènement pour l'enregistrer",
+        "duplicate_shares": "Vous avez déjà partagé ce calendrier avec un ou plusieurs utilisateurs",
+        "duplicate_share": "Vous avez déjà partagé ce calendrier avec cet utilisateur",
+        "no_changes": "Vous n'avez apporté aucune modification",
+        "confirm": "Valider",
+        "duplicate_share_info": "Vous avez déjà partagé ce calendrier avec un ou plusieurs utilisateurs. Essayez de changer de rôle ou de saisir une autre adresse."
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
