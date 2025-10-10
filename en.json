@@ -373,7 +373,8 @@
         "duplicate_share_info": "You've already shared this calendar with one or more users. Try changing role or typing another address.",
         "duplicate_share": "You've already shared this calendar with this user",
         "no_changes": "You haven’t made any changes yet",
-        "confirm": "Confirm"
+        "confirm": "Confirm",
+        "reschedule_appointment": "Reschedule appointment"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -545,7 +546,7 @@
         "minutes_one": "{{count}} minute",
         "minutes_other": "{{count}} minutes",
         "modal": {
-            "set_new_time_message": "Do you want to set a new time for the missed appointment? If you click OK, all the other reminders will be automatically dismissed."
+            "set_new_time_message": "Are you sure you want to reschedule the missed appointment? If you click OK, all the other reminders will be automatically dismissed."
         },
         "never": "Never",
         "second_before_one": "{{count}} second before",
