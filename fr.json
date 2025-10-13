@@ -362,7 +362,8 @@
         "duplicate_share": "Vous avez déjà partagé ce calendrier avec cet utilisateur",
         "no_changes": "Vous n'avez apporté aucune modification",
         "confirm": "Valider",
-        "duplicate_share_info": "Vous avez déjà partagé ce calendrier avec un ou plusieurs utilisateurs. Essayez de changer de rôle ou de saisir une autre adresse."
+        "duplicate_share_info": "Vous avez déjà partagé ce calendrier avec un ou plusieurs utilisateurs. Essayez de changer de rôle ou de saisir une autre adresse.",
+        "reschedule_appointment": "Replanifier le rendez-vous"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -505,7 +506,7 @@
         "at_time_of_event": "Au moment de l'évènement",
         "never": "Jamais",
         "modal": {
-            "set_new_time_message": "Souhaitez-vous replanifier une heure pour le rendez-vous manqué ? Si vous cliquez sur OK, tous les autres rappels seront automatiquement annulés."
+            "set_new_time_message": "Êtes-vous certain de vouloir replanifier le rendez-vous manqué ? Si vous cliquez sur OK, tous les autres rappels seront automatiquement annulés."
         },
         "day_before_one": "{{count}} jour avant",
         "day_before_many": "{{count}} jours avant",
