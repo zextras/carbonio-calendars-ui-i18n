@@ -378,7 +378,8 @@
         "duplicate_share_info": "Ta koledar ste že delili z enim ali več uporabniki. Poskusite spremeniti vlogo ali vnesti drug naslov.",
         "no_changes": "Niste še naredili nobenih sprememb",
         "duplicate_share": "Ta koledar ste že delili s tem uporabnikom",
-        "duplicate_shares": "Ta koledar ste že delili z enim ali več uporabniki"
+        "duplicate_shares": "Ta koledar ste že delili z enim ali več uporabniki",
+        "reschedule_appointment": "Preložitev termina"
     },
     "cannot_edit_name": "Imena sistemskega koledarja ni mogoče urediti",
     "creation_timezone_tooltip": "Datum in čas v časovnem pasu ustvarjanja:",
