@@ -327,7 +327,8 @@
         "duplicate_shares": "Już udostępniłeś ten kalendarz jednemu lub więcej użytkowników",
         "confirm": "Potwierdź",
         "duplicate_share_info": "Już udostępniłeś ten kalendarz jednemu lub więcej użytkownikom. Zmień rolę lub wpisz inny adres.",
-        "no_changes": "Jeszcze nie dokonałeś jeszcze żadnych zmian"
+        "no_changes": "Jeszcze nie dokonałeś jeszcze żadnych zmian",
+        "reschedule_appointment": "Przełóż spotkanie"
     },
     "message": {
         "modal": {
@@ -450,7 +451,7 @@
     },
     "reminder": {
         "modal": {
-            "set_new_time_message": "Czy chcesz ustalić nowy termin dla przeoczonego spotkania? Jeśli naciśniesz OK, wszystkie inne przypomnienia zostaną automatycznie usunięte."
+            "set_new_time_message": "Czy na pewno chcesz przełożyć przeoczone spotkanie? Jeśli naciśniesz OK, wszystkie inne przypomnienia zostaną automatycznie usunięte."
         },
         "all_time": "Na czas trwania wydarzenia",
         "at_time_of_event": "O czasie rozpoczęcia wydarzenia",
