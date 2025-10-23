@@ -461,7 +461,8 @@
         "you_accepted": "You accepted",
         "you_declined": "You declined",
         "you_accepted_as_tentative": "You accepted as tentative",
-        "who_set_this": "{{whoSetThis}} set this appointment as <strong>{{status}}</strong>"
+        "who_set_this": "{{whoSetThis}} set this appointment as <strong>{{status}}</strong>",
+        "organizer_invited_you": "<text>{{organizer}} invited you to an event <bold>{{title}}</bold></text>"
     },
     "messages": {
         "format_as_plain_text": "Format as Plain Text",
@@ -624,7 +625,8 @@
                 "egypt": "GMT +02:00 Egypt"
             }
         },
-        "permissions_note": "Users below must be on this e-mail system (zextras.com). You may use the full e-mail address or just the username."
+        "permissions_note": "Users below must be on this e-mail system (zextras.com). You may use the full e-mail address or just the username.",
+        "permissions_description": "Users provide below must be on this mail system ({{domain}}). You may use the full e-mail address or just the username."
     },
     "share": {
         "label": {
