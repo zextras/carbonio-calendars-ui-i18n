@@ -174,7 +174,8 @@
         "you_accepted": "Hai accettato",
         "you_declined": "Hai declinato",
         "the_organizer": "L'organizzatore",
-        "who_set_this": "{{whoSetThis}} ha impostato questo appuntamento come <strong>{{status}}</strong>"
+        "who_set_this": "{{whoSetThis}} ha impostato questo appuntamento come <strong>{{status}}</strong>",
+        "organizer_invited_you": "<text>{{organizer}} ti ha invitato a un evento <bold>{{title}}</bold></text>"
     },
     "label": {
         "to": "A",
@@ -427,7 +428,8 @@
         "duplicate_share": "Hai già condiviso questo calendario con questo utente",
         "confirm": "Conferma",
         "no_changes": "Non hai ancora apportato modifiche",
-        "duplicate_share_info": "Hai già condiviso questo calendario con uno o più utenti. Prova a cambiare ruolo o a scrivere un altro indirizzo."
+        "duplicate_share_info": "Hai già condiviso questo calendario con uno o più utenti. Prova a cambiare ruolo o a scrivere un altro indirizzo.",
+        "reschedule_appointment": "Riprogramma appuntamento"
     },
     "action": {
         "send": "Invia",
@@ -650,7 +652,8 @@
         },
         "invalid_email": "E-mail non valida",
         "permissions_note": "Gli utenti devono essere su questo sistema e-mail (zextras.com). Puoi utilizzare l'indirizzo e-mail completo oppure solo il nome utente.",
-        "ical_note": "Apple iCal può essere configurato per accedere ai tuoi Calendari tramite il protocollo CalDAV. Quando questa impostazione è attiva, i calendari condivisi vengono mostrati nella finestra \"Delega\" dell'account iCal e potrei delegare l'accesso ad altri utenti."
+        "ical_note": "Apple iCal può essere configurato per accedere ai tuoi Calendari tramite il protocollo CalDAV. Quando questa impostazione è attiva, i calendari condivisi vengono mostrati nella finestra \"Delega\" dell'account iCal e potrei delegare l'accesso ad altri utenti.",
+        "permissions_description": "Gli utenti devono essere su questo sistema e-mail ({{domain}}). Puoi utilizzare l'indirizzo e-mail completo oppure solo il nome utente."
     },
     "freebusy": "LiberoOccupato",
     "months": {
