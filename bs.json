@@ -835,8 +835,8 @@
         "add_attachments": "Dodaj priloge",
         "folder_linked_status": "Dijeljeno sa mnom",
         "revoke": "Otkaži pristup",
-        "copy_caldav_url": "Kopiraj CalDAV url",
-        "copy_webcal_url": "Kopiraj WebCAL url"
+        "copy_caldav_url": "Kopirajte CalDAV URL",
+        "copy_webcal_url": "Kopirajte WebCAL URL"
     },
     "type": "Tip",
     "workflow": "Tok rada",
