@@ -822,7 +822,7 @@
         "virtual_room": "Virtuelna soba",
         "copy_vector_url": "Kopiraj URL za pregled",
         "edit": "Uredi zajedničke postavke",
-        "out_of_office_appointment": "Vanredni sastanak",
+        "out_of_office_appointment": "Sastanak izvan kancelarije",
         "free_appointment": "Slobodan termin",
         "tentative_appointment": "Privremeni termin",
         "busy_appointment": "Zauzet sastanak",
@@ -836,7 +836,7 @@
         "folder_linked_status": "Dijeljeno sa mnom",
         "revoke": "Otkaži pristup",
         "copy_caldav_url": "Kopiraj CalDAV url",
-        "copy_webcal_url": "Kopirajte WebCAL url"
+        "copy_webcal_url": "Kopiraj WebCAL url"
     },
     "type": "Tip",
     "workflow": "Tok rada",
