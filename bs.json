@@ -835,8 +835,8 @@
         "add_attachments": "Dodaj priloge",
         "folder_linked_status": "Dijeljeno sa mnom",
         "revoke": "Otkaži pristup",
-        "copy_caldav_url": "Kopirajte CalDAV URL",
-        "copy_webcal_url": "Kopirajte WebCAL URL"
+        "copy_caldav_url": "Kopiraj CalDAV URL",
+        "copy_webcal_url": "Kopiraj WebCAL URL"
     },
     "type": "Tip",
     "workflow": "Tok rada",
@@ -853,7 +853,7 @@
         },
         "initializeError": {
             "title": "Došlo je do greške",
-            "buttonConfirm": "PONOVO UČITAJ",
+            "buttonConfirm": "UČITAJ PONOVO",
             "content": "Molimo osvježite stranicu ili pokušajte ponovo kasnije. Ostali moduli mogli bi i dalje biti dostupni uz ograničene funkcije."
         }
     },
@@ -865,10 +865,10 @@
     "api": {
         "error": {
             "ModifyCalendarGroup": {
-                "group_name_already_exists": "Grupa s istim imenom već postoji"
+                "group_name_already_exists": "Grupa s tim imenom već postoji"
             },
             "CreateCalendarGroup": {
-                "group_name_already_exists": "Grupa s istim imenom već postoji"
+                "group_name_already_exists": "Grupa s tim imenom već postoji"
             }
         }
     },
