@@ -415,7 +415,8 @@
         "you_accepted": "Zaakceptowałeś",
         "you_declined": "Odrzuciłeś",
         "who_set_this": "{{whoSetThis}} ustawił(a) to spotkanie jako <strong>{{status}}</strong>",
-        "you_accepted_as_tentative": "Zaakceptowałeś jako niepewne"
+        "you_accepted_as_tentative": "Zaakceptowałeś jako niepewne",
+        "organizer_invited_you": "<text>{{organizer}} zaprosił(a) Cię na wydarzenie <bold>{{title}}</bold></text>"
     },
     "participants": {
         "Accepted": "Zaakceptowano",
