@@ -530,7 +530,8 @@
                 "egypt": "GMT +02:00 Egipt"
             }
         },
-        "invalid_email": "Nieprawidłowy adres e-mail"
+        "invalid_email": "Nieprawidłowy adres e-mail",
+        "permissions_description": "Użytkownicy podani poniżej muszą znajdować się w tym systemie pocztowym ({{domain}}). Możesz użyć pełnego adresu e-mail lub nazwy użytkownika."
     },
     "snackbar": {
         "share_folder_success": "Kalendarz został udostępniony",
