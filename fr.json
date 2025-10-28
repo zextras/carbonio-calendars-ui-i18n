@@ -452,7 +452,8 @@
         "you_declined": "Vous avez décliné",
         "you_accepted_as_tentative": "You avez accepté comme à confirmer",
         "you_accepted": "Vous avez accepté",
-        "who_set_this": "{{whoSetThis}} fixer ce rendez-vous comme <strong>{{status}}</strong>"
+        "who_set_this": "{{whoSetThis}} fixer ce rendez-vous comme <strong>{{status}}</strong>",
+        "organizer_invited_you": "<text>{{organizer}} vous a invité à un évènement <bold>{{title}}</bold></text>"
     },
     "months": {
         "april": "Avril",
@@ -590,7 +591,8 @@
             "forward_invites": "Faire suivre les invitations",
             "invitation_response": "Réponse à l'invitation",
             "span_time": "Durée de l'intervalle"
-        }
+        },
+        "permissions_description": "Les utilisateurs indiqués ci-dessous doivent être enregistrés sur ce système de messagerie ({{domain}}). Vous pouvez utiliser l'adresse e-mail complète ou simplement le nom d'utilisateur."
     },
     "snackbar": {
         "invite": {
