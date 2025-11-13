@@ -363,9 +363,6 @@
             "calendars": "Календари в этой группе"
         },
         "create_group": "Создать новую группу",
-        "calendar_selector": {
-            "placeholder": "Добавить календари"
-        },
         "group_is_empty": "Эта группа пуста",
         "editgroup": {
             "calendars": "Календари в этой группе"
