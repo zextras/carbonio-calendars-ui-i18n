@@ -324,7 +324,11 @@
         "confirm": "Potwierdź",
         "duplicate_share_info": "Już udostępniłeś ten kalendarz jednemu lub więcej użytkownikom. Zmień rolę lub wpisz inny adres.",
         "no_changes": "Jeszcze nie dokonałeś jeszcze żadnych zmian",
-        "reschedule_appointment": "Przełóż spotkanie"
+        "reschedule_appointment": "Przełóż spotkanie",
+        "empty_group_calendars_list": "W tej grupie nie ma jeszcze żadnych kalendarzy.",
+        "calendars_group_selector": {
+            "placeholder": "Wyszukaj kalendarz"
+        }
     },
     "message": {
         "modal": {
