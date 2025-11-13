@@ -287,9 +287,6 @@
             "calendars": "التقاويم في هذه المجموعة"
         },
         "group_not_found": "لم يتم العثور على المجموعة",
-        "calendar_selector": {
-            "placeholder": "إضافة التقاويم"
-        },
         "invalid_group_name": "اكتب اسم المجموعة لحفظ التغييرات",
         "editgroup": {
             "calendars": "التقاويم في هذه المجموعة"
