@@ -389,9 +389,6 @@
         "calendar_groups": "Gruppi di Calendari",
         "create_group": "Crea nuovo gruppo",
         "type_group_name_here": "Nome Gruppo",
-        "calendar_selector": {
-            "placeholder": "Aggiungi Calendari"
-        },
         "invalid_group_name": "Scrivi il nome del gruppo per salvare modifiche",
         "calendars": "Calendari",
         "newgroup": {
