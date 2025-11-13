@@ -370,7 +370,11 @@
         "duplicate_share": "You've already shared this calendar with this user",
         "no_changes": "You haven’t made any changes yet",
         "confirm": "Confirm",
-        "reschedule_appointment": "Reschedule appointment"
+        "reschedule_appointment": "Reschedule appointment",
+        "empty_group_calendars_list": "There are no calendars in this group yet.",
+        "calendars_group_selector": {
+            "placeholder": "Type a calendar"
+        }
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
