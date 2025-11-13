@@ -339,9 +339,6 @@
             "calendars": "Calendars in this group"
         },
         "group_not_found": "Group not found",
-        "calendar_selector": {
-            "placeholder": "Add Calendars"
-        },
         "invalid_group_name": "Type a group name to save changes",
         "editgroup": {
             "calendars": "Calendars in this group"
