@@ -293,9 +293,6 @@
             "calendars": "Kalendarze w tej grupie"
         },
         "group_not_found": "Nie znaleziono grupy",
-        "calendar_selector": {
-            "placeholder": "Dodaj kalendarze"
-        },
         "group_is_empty": "Ta grupa jest pusta",
         "calendars": "Kalendarze",
         "editgroup": {
