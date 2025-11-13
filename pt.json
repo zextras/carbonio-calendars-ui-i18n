@@ -224,8 +224,7 @@
         "editgroup": {
             "calendars": "Calendário neste grupo"
         },
-        "group_not_found": "Grupo não localizado",
-        "group_empty_calendars_list": "Ainda não há calendários neste grupo. Comece a digitar os calendários no campo e clique em “+” para adicioná-los ao grupo."
+        "group_not_found": "Grupo não localizado"
     },
     "action": {
         "send": "Enviar",
