@@ -429,7 +429,6 @@
             "note": "Bu grup kişisel hesabınızda görünecek.",
             "calendars": "Bu gruptaki takvimler"
         },
-        "group_empty_calendars_list": "Bu grupta henüz takvim yok. Takvimleri yazın ve gruba eklemek için “+” simgesine tıklayın.",
         "group_not_found": "Grup bulunamadı",
         "calendar_selector": {
             "placeholder": "Takvimler Ekle"
