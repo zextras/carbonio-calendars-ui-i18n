@@ -327,7 +327,6 @@
         "hide_event_detail": "Skrij podrobnosti",
         "show_event_detail": "Prikaži podrobnosti",
         "timezone_pref_msg": "Časi upoštevajo vaše nastavitve časovnega pasu.",
-        "group_empty_calendars_list": "V tej skupini še ni koledarjev. Začnite pisati ime koledarja v vnosno polje, nato kliknite “+” za dodajanje v skupino.",
         "tentative": "Nezavezujoče",
         "advanced_filters_one": "{{count}} napreden filter",
         "advanced_filters_two": "{{count}} napredna filtra",
