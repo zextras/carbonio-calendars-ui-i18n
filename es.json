@@ -224,8 +224,7 @@
             "calendars": "Calendarios en este grupo"
         },
         "invalid_group_name": "Introduce el nombre de un grupo para guardar los cambios",
-        "group_is_empty": "El grupo está vació",
-        "group_empty_calendars_list": "No hay calendarios en este grupo aún. Empieza a introducir los calendarios en la entrada, luego haz clic en \"+\" para añadirlos al grupo."
+        "group_is_empty": "El grupo está vació"
     },
     "action": {
         "send": "Enviar",
