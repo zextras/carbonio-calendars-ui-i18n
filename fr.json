@@ -333,7 +333,6 @@
         },
         "calendars": "Calendriers",
         "invalid_group_name": "Entrez un nom de groupe pour enregistrer les modifications",
-        "group_empty_calendars_list": "Il n'y a pas encore de calendrier dans ce groupe. Commencez à saisir les calendriers dans la zone de saisie, puis cliquez sur « + » pour les ajouter au groupe.",
         "editgroup": {
             "calendars": "Calendriers dans ce groupe"
         },
