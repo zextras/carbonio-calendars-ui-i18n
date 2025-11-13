@@ -389,7 +389,6 @@
         "calendar_groups": "Gruppi di Calendari",
         "create_group": "Crea nuovo gruppo",
         "type_group_name_here": "Nome Gruppo",
-        "group_empty_calendars_list": "Non ci sono ancora calendari in questo gruppo. Scrivi i nomi dei calendari nell'input, poi clicca \"+\" per aggiungerli al gruppo.",
         "calendar_selector": {
             "placeholder": "Aggiungi Calendari"
         },
