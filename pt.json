@@ -211,9 +211,6 @@
         "calendar_groups": "Grupos de Calendários",
         "create_group": "Criar novo grupo",
         "type_group_name_here": "Nome do Grupo",
-        "calendar_selector": {
-            "placeholder": "Adicionar Calendário"
-        },
         "newgroup": {
             "calendars": "Calendários neste grupo",
             "note": "Este grupo aparecerá na sua conta pessoal."
