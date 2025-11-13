@@ -288,7 +288,6 @@
         "calendar_groups": "Grupy kalendarzy",
         "create_group": "Stwórz nową grupę",
         "type_group_name_here": "Nazwa grupy",
-        "group_empty_calendars_list": "W tej grupie nie ma jeszcze kalendarzy. Zacznij wpisywać kalendarze, a następnie kliknij \"+\", aby dodać je do grupy.",
         "newgroup": {
             "note": "Ta grupa pojawi się na Twoim koncie.",
             "calendars": "Kalendarze w tej grupie"
