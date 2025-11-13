@@ -328,9 +328,6 @@
             "calendars": "Calendriers dans ce groupe"
         },
         "group_not_found": "Le groupe n'a pas été trouvé",
-        "calendar_selector": {
-            "placeholder": "Ajouter des calendriers"
-        },
         "calendars": "Calendriers",
         "invalid_group_name": "Entrez un nom de groupe pour enregistrer les modifications",
         "editgroup": {
