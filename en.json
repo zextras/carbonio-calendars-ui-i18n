@@ -333,7 +333,6 @@
         "forward": "Forward",
         "type_group_name_here": "Group Name",
         "calendar_groups": "Calendar Groups",
-        "group_empty_calendars_list": "There are no calendars in this group yet. Start typing the calendars in the input, then click “+” to add them to the group.",
         "create_group": "Create new group",
         "newgroup": {
             "note": "This group will appear in your personal account.",
