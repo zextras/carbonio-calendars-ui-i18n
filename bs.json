@@ -294,9 +294,6 @@
             "calendars": "Kalendari u ovoj grupi"
         },
         "group_not_found": "Grupa nije pronađena",
-        "calendar_selector": {
-            "placeholder": "Dodaj kalendare"
-        },
         "invalid_group_name": "Unesite naziv grupe za spašavanje promena",
         "editgroup": {
             "calendars": "Kalendari u ovoj grupi"
