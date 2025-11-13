@@ -288,7 +288,6 @@
         "forward": "Proslijedi",
         "type_group_name_here": "Naziv grupe",
         "calendar_groups": "Grupe kalendara",
-        "group_empty_calendars_list": "Nema kalendara u ovoj grupi. Počnite unositi kalendare u polje za unos, a zatim kliknite \"+\" kako biste ih dodali u grupu.",
         "create_group": "Stvori novu grupu",
         "newgroup": {
             "note": "Ova grupa će se pojaviti u vašem ličnom računu.",
