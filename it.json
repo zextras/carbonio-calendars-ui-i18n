@@ -425,7 +425,11 @@
         "confirm": "Conferma",
         "no_changes": "Non hai ancora apportato modifiche",
         "duplicate_share_info": "Hai già condiviso questo calendario con uno o più utenti. Prova a cambiare ruolo o a scrivere un altro indirizzo.",
-        "reschedule_appointment": "Riprogramma appuntamento"
+        "reschedule_appointment": "Riprogramma appuntamento",
+        "empty_group_calendars_list": "Non ci sono ancora calendari in questo gruppo.",
+        "calendars_group_selector": {
+            "placeholder": "Digita un calendario"
+        }
     },
     "action": {
         "send": "Invia",
