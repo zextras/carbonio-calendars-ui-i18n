@@ -315,9 +315,6 @@
             "calendars": "Koledarji v tej skupini"
         },
         "group_not_found": "Skupina ni najdena",
-        "calendar_selector": {
-            "placeholder": "Dodaj koledarje"
-        },
         "invalid_group_name": "Vnesite ime skupine, da shranite spremembe",
         "editgroup": {
             "calendars": "Koledarji v tej skupini"
