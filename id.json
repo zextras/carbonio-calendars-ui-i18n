@@ -223,7 +223,6 @@
             "note": "Grup ini akan muncul di akun pribadi Anda.",
             "calendars": "Kalender di grup ini"
         },
-        "group_empty_calendars_list": "Belum ada kalender di grup ini. Mulailah mengetik kalender di input, lalu klik “+” untuk menambahkannya ke dalam grup.",
         "group_not_found": "Grup tidak ditemukan",
         "calendar_selector": {
             "placeholder": "Tambahkan Kalender"
