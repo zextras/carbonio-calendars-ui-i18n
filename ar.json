@@ -137,7 +137,7 @@
         "email_input_message": "أدخل عناوين البريد الإلكتروني",
         "end_date": "تاريخ الانتهاء",
         "end_date_and_time": "تاريخ ووقت الانتهاء",
-        "event_title": "عنوان الحدث",
+        "event_title": "عنوان الواقعة",
         "entire_serires": "جميع سلسلة الحدث",
         "every_day": "كل يوم",
         "every_weekday": "كل يوم من أيام الأسبوع",
@@ -304,22 +304,26 @@
         "duplicate_resource": "تم اختيار هذا المورد عدة مرات",
         "show_more": "+ {{count}} مزيد",
         "close": "إغلاق",
-        "show_all_events": "عرض جميع الأحداث",
+        "show_all_events": "عرض جميع الوقائع",
         "splitLayoutDisabledTooltip": "العرض المنقسم غير متاح في العرض الحالي",
         "email_attendees": "البريد الإلكتروني للحضور",
         "recurrent": "موعد متكرر",
         "disableSplitLayoutTooltip": "تعطيل العرض المنقسم",
-        "cannot_send": "تم تعطيل الإرسال لهذا الحدث",
+        "cannot_send": "تم تعطيل الإرسال لهذه الواقعة",
         "no_recipients": "أضف مشاركًا واحدًا على الأقل لإرساله",
         "enableSplitLayoutTooltip": "تمكين العرض المنقسم",
         "add_event_title_to_save": "أضف عنوان الحدث لحفظه",
-        "add_event_title_to_send": "أضف عنوان الحدث لإرساله",
+        "add_event_title_to_send": "أضف عنوان الواقعة لإرساله",
         "duplicate_share": "لقد قمت بالفعل بمشاركة هذا التقويم مع هذا المستخدم",
         "duplicate_shares": "لقد قمت بالفعل بمشاركة هذا التقويم مع مستخدم واحد أو أكثر",
         "no_changes": "لم تقم بإجراء أي تغييرات بعد",
         "confirm": "تأكيد",
         "duplicate_share_info": "لقد قمت بالفعل بمشاركة هذا التقويم مع مستخدم واحد أو أكثر. حاول تغيير الدور أو إختيار مستخدم أخر.",
-        "reschedule_appointment": "أعد جدولة الموعد"
+        "reschedule_appointment": "أعد جدولة الموعد",
+        "empty_group_calendars_list": "لا يوجد تقويمات في هذه المجموعة بعد.",
+        "calendars_group_selector": {
+            "placeholder": "اكتب تقويمًا"
+        }
     },
     "message": {
         "copy": "نسخ",
@@ -412,7 +416,8 @@
         "you_declined": "لقد رفضت",
         "you_accepted_as_tentative": "لقد قبلت بتردد",
         "the_organizer": "المنظم",
-        "who_set_this": "{{whoSetThis}}حدد هذا الموعد كـ<strong>{{status}}</strong>"
+        "who_set_this": "{{whoSetThis}}حدد هذا الموعد كـ<strong>{{status}}</strong>",
+        "organizer_invited_you": "<text>لقد دعاك {{organizer}} إلى واقعة <bold>{{title}}</bold></text>"
     },
     "preview": {
         "close": "إغلاق المعاينة"
@@ -487,7 +492,7 @@
         "out_of_office_appointment": "موعد خارج المكتب",
         "tentative_appointment": "موعد متردد",
         "calendarSelector": {
-            "disabled": "لنقل هذا الحدث إلى تقويم آخر، استخدم خيار \"نقل\""
+            "disabled": "لنقل هذه الواقعة إلى تقويم آخر، استخدم خيار \"نقل\""
         },
         "folder_sharing_status_zero": "مشارك مع {{count}} شخص",
         "folder_sharing_status_one": "مشارك مع {{count}} شخص",
@@ -530,8 +535,8 @@
         },
         "is_exception": "استثنِ"
     },
-    "attendee_unavailable": "الحضور غير متاح في الوقت المحدد للحدث",
-    "attendees_unavailable": "لا يتوفر حاضر واحد أو أكثر في الوقت المحدد للحدث",
+    "attendee_unavailable": "الحضور غير متاح في الوقت المحدد للواقعة",
+    "attendees_unavailable": "لا يتوفر حاضر واحد أو أكثر في الوقت المحدد للواقعة",
     "calendar": {
         "modal": {
             "custom_schedule": {
@@ -539,10 +544,10 @@
             }
         }
     },
-    "attendee_equipment_unavailable": "المورد غير متوفر في الوقت المحدد للحدث",
-    "attendee_room_unavailable": "لا تتوفر القاعة في الوقت المحدد للحدث",
-    "attendees_equipments_unavailable": "لا يتوفر مورد واحدة أو أكثر في الوقت المحدد للحدث",
-    "attendees_rooms_unavailable": "لا تتوفر غرفة اجتماعات واحدة أو أكثر في الوقت المحدد للحدث",
+    "attendee_equipment_unavailable": "المورد غير متوفر في الوقت المحدد للواقعة",
+    "attendee_room_unavailable": "لا تتوفر القاعة في الوقت المحدد للواقعة",
+    "attendees_equipments_unavailable": "لا يتوفر مورد واحدة أو أكثر في الوقت المحدد للواقعة",
+    "attendees_rooms_unavailable": "لا تتوفر غرفة اجتماعات واحدة أو أكثر في الوقت المحدد للواقعة",
     "creation_timezone_tooltip": "التاريخ والوقت في منطقة زمنية الإنشاء:",
     "edit_share_properties": "تعديل خصائص المشاركة",
     "administer": "اداره",
@@ -690,9 +695,9 @@
         "week_before_few": "قبل {{count}} أسابيع",
         "week_before_many": "قبل {{count}} أسبوع",
         "week_before_other": "قبل {{count}} أسبوع",
-        "all_time": "كل وقت الحدث",
+        "all_time": "كل وقت الواقعة",
         "never": "أبدا",
-        "at_time_of_event": "في وقت الحدث",
+        "at_time_of_event": "في وقت الواقعة",
         "modal": {
             "set_new_time_message": "هل أنت متأكد أنك تريد إعادة جدولة الموعد الفائت؟ إذا قمت بالنقر فوق \"موافق\"، فسيتم إغلاق جميع التذكيرات الأخرى تلقائيًا."
         },
@@ -793,7 +798,8 @@
                 "allow_none": "لا تسمح لأحد بدعوتي إلى الاجتماعات"
             }
         },
-        "permissions_note": "يجب أن يكون المستخدمون على نظام البريد الإلكتروني هذا (zextras.com). يمكنك استخدام عنوان البريد الإلكتروني بالكامل أو اسم المستخدم فقط."
+        "permissions_note": "يجب أن يكون المستخدمون على نظام البريد الإلكتروني هذا (zextras.com). يمكنك استخدام عنوان البريد الإلكتروني بالكامل أو اسم المستخدم فقط.",
+        "permissions_description": "يجب أن يكون المستخدمون المذكورون أدناه على نظام البريد الإلكتروني هذا ({{domain}}). يمكنك استخدام عنوان البريد الإلكتروني كاملاً أو اسم المستخدم فقط."
     },
     "search": {
         "organized_by": "منظم من قبل",
