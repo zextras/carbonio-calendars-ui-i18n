@@ -374,7 +374,10 @@
         "empty_group_calendars_list": "There are no calendars in this group yet.",
         "calendars_group_selector": {
             "placeholder": "Type a calendar"
-        }
+        },
+        "cannot_save": "Saving is disabled for this event",
+        "fix_input_errors_to_save": "Fix input errors to save",
+        "fix_input_errors_to_send": "Fix input errors to send"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -875,5 +878,6 @@
     "duplicate_rooms_error": "One or more Meeting rooms were selected multiple times. Consider removing the duplicates.",
     "duplicate_equipment_error": "One or more items of equipment were selected multiple times. Consider removing the duplicates.",
     "equipment_invalid": "One or more items of equipment are invalid. Try editing them or entering a new one.",
-    "rooms_invalid": "One or more Meeting rooms are invalid. Try editing them or entering a new one."
+    "rooms_invalid": "One or more Meeting rooms are invalid. Try editing them or entering a new one.",
+    "reset_date": "Reset Date"
 }
