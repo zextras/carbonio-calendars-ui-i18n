@@ -429,7 +429,10 @@
         "empty_group_calendars_list": "Non ci sono ancora calendari in questo gruppo.",
         "calendars_group_selector": {
             "placeholder": "Digita un calendario"
-        }
+        },
+        "cannot_save": "Il salvataggio è disabilitato per questo evento",
+        "fix_input_errors_to_save": "Sistema gli errori negli input per salvare",
+        "fix_input_errors_to_send": "Sistema gli errori negli input per inviare"
     },
     "action": {
         "send": "Invia",
@@ -898,5 +901,6 @@
     "duplicate_rooms_error": "Una o più sale riunioni sono state selezionate diverse volte. Considera di rimuovere i duplicati.",
     "duplicate_equipment_error": "Una o più attrezzature sono state selezionate diverse volte. Considera di rimuovere i duplicati.",
     "equipment_invalid": "Una o più attrezzature non sono valide. Prova a modificarle o a inserirne di nuove.",
-    "rooms_invalid": "Una o più sale riunioni non sono valide. Prova a modificarle o inseriscine di nuove."
+    "rooms_invalid": "Una o più sale riunioni non sono valide. Prova a modificarle o inseriscine di nuove.",
+    "reset_date": "Ripristina Data"
 }
