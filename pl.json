@@ -328,7 +328,10 @@
         "empty_group_calendars_list": "W tej grupie nie ma jeszcze żadnych kalendarzy.",
         "calendars_group_selector": {
             "placeholder": "Wyszukaj kalendarz"
-        }
+        },
+        "cannot_save": "Zapisywanie jest wyłączone dla tego wydarzenia",
+        "fix_input_errors_to_save": "Napraw nieprawidłowości, aby zapisać",
+        "fix_input_errors_to_send": "Napraw nieprawidłowości, aby wysłać"
     },
     "message": {
         "modal": {
@@ -898,5 +901,6 @@
     "duplicate_equipment_error": "Jeden lub więcej elementów zostało wybranych wiele razy. Rozważ usunięcie duplikatów.",
     "rooms_invalid": "Jeden lub więcej pokojów spotkań są nieprawidłowe. Spróbuj edytować je lub wprowadź nowe.",
     "equipment_invalid": "Jeden lub więcej elementów są nieprawidłowe. Spróbuj edytować je lub wprowadź nowe.",
-    "duplicate_rooms_error": "Jeden lub więcej pokojów spotkań zostało wybranych wiele razy. Rozważ usunięcie duplikatów."
+    "duplicate_rooms_error": "Jeden lub więcej pokojów spotkań zostało wybranych wiele razy. Rozważ usunięcie duplikatów.",
+    "reset_date": "Zresetuj datę"
 }
