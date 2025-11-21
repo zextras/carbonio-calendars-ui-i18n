@@ -448,7 +448,7 @@
         "you_declined": "Vous avez décliné",
         "you_accepted_as_tentative": "You avez accepté comme à confirmer",
         "you_accepted": "Vous avez accepté",
-        "who_set_this": "{{whoSetThis}} fixer ce rendez-vous comme <strong>{{status}}</strong>",
+        "who_set_this": "{{whoSetThis}} a défini ce rendez-vous comme <strong>{{status}}</strong>",
         "organizer_invited_you": "<text>{{organizer}} vous a invité à un évènement <bold>{{title}}</bold></text>"
     },
     "months": {
