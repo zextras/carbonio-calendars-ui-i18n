@@ -359,7 +359,14 @@
         "no_changes": "Vous n'avez apporté aucune modification",
         "confirm": "Valider",
         "duplicate_share_info": "Vous avez déjà partagé ce calendrier avec un ou plusieurs utilisateurs. Essayez de changer de rôle ou de saisir une autre adresse.",
-        "reschedule_appointment": "Replanifier le rendez-vous"
+        "reschedule_appointment": "Replanifier le rendez-vous",
+        "fix_input_errors_to_send": "Corrigez les erreurs de saisie pour être en mesure d'envoyer",
+        "empty_group_calendars_list": "Il n'y a pas encore de calendrier dans ce groupe.",
+        "calendars_group_selector": {
+            "placeholder": "Saisir un calendrier"
+        },
+        "cannot_save": "L'enregistrement est désactivé pour cet évènemnet",
+        "fix_input_errors_to_save": "Vous devez corriger les erreurs pour permettre l'enregistrement"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -894,5 +901,6 @@
     "duplicate_equipment_error": "Un ou plusieurs équipements ont été sélectionnés plusieurs fois. Il faudrait prévoir de supprimer les doublons.",
     "equipment_invalid": "Un ou plusieurs éléments d'équipement ne sont pas valides. Essayez de les modifier ou d'en saisir un nouveau.",
     "rooms_invalid": "Une ou plusieurs salle de réunion ne sont pas valides. Essayez de les modifier ou d'en saisir une nouvelle.",
-    "duplicate_rooms_error": "Une ou plusieurs salles de réunion ont été sélectionnées plusieurs fois. Il faudrait prévoir de supprimer les doublons."
+    "duplicate_rooms_error": "Une ou plusieurs salles de réunion ont été sélectionnées plusieurs fois. Il faudrait prévoir de supprimer les doublons.",
+    "reset_date": "Réinitialiser la date"
 }
