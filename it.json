@@ -93,7 +93,7 @@
         "you_are_organizer": "<Row><Text> <BoldText>Tu </BoldText> sei l'organizzatore </Text></Row>",
         "somebody_invited_you": "<strong>{{somebody}}</strong> ti ha invitato",
         "meeting_canceled": "La riunione seguente è stata annullata",
-        "invite_has_no_message": "Questo invito non ha messaggi di testo",
+        "invite_has_no_message": "Questo invito non ha alcun messaggio di testo",
         "snackbar": {
             "invite": {
                 "tentative": "Hai risposto Forse",
