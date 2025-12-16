@@ -616,7 +616,9 @@
     "share": {
         "label": {
             "send_notification": "Envoyer une notification concernant ce partage",
-            "allow_to_see_private_appt": "Autoriser un ou plusieurs utilisateurs à voir les détails des rendez-vous privés"
+            "allow_to_see_private_appt": "Autoriser un ou plusieurs utilisateurs à voir les détails des rendez-vous privés",
+            "internal_sharing": "Partage interne",
+            "public_sharing": "Partage public"
         },
         "note": {
             "share_note": "Le message standard affiche votre nom, le nom de l'élément partagé, les autorisations accordées aux destinataires et les informations de connexion."
@@ -630,13 +632,16 @@
             },
             "share_calendar_with": {
                 "external_guests": "Invité(e)s externes (vue seulement)",
-                "public": "Public (affichage uniquement, pas de mot de passe requis)",
+                "public": "Partager publiquement (affichage uniquement, pas de mot de passe requis)",
                 "internal_users_groups": "Utilisateurs ou Groupes internes"
             }
         },
         "placeholder": {
             "recipients_address": "Adresses électroniques des destinataires",
             "standard_message": "Ajouter une note au message standard"
+        },
+        "description": {
+            "recipients_address": "Saisissez uniquement des adresses internes. Les destinataires externes ne pourront pas accéder au calendrier."
         }
     },
     "tooltip": {
