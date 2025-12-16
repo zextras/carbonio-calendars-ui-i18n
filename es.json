@@ -462,12 +462,14 @@
             "share_calendar_with": {
                 "external_guests": "Invitados externos (solo ver)",
                 "internal_users_groups": "Usuarios o grupos internos",
-                "public": "Público (solo ver, no se necesita contraseña)"
+                "public": "Compartir públicamente (solo ver, no se necesita contraseña)"
             }
         },
         "label": {
             "allow_to_see_private_appt": "Permitir a los usuarios ver los detalles de mis citas privadas",
-            "send_notification": "Enviar una notificación sobre este uso compartido"
+            "send_notification": "Enviar una notificación sobre este uso compartido",
+            "internal_sharing": "Uso compartido interno",
+            "public_sharing": "Uso compartido público"
         },
         "placeholder": {
             "recipients_address": "Dirección de e-mail de los destinatarios",
@@ -475,6 +477,9 @@
         },
         "note": {
             "share_note": "El mensaje estándar muestra tu nombre, el nombre del recurso compartido, los permisos otorgados a los usuarios y la información de acceso."
+        },
+        "description": {
+            "recipients_address": "Introduce solo direcciones internas. Los destinatarios externos no podrán acceder al calendario."
         }
     },
     "snackbar": {
