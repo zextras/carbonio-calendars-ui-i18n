@@ -634,7 +634,9 @@
     "share": {
         "label": {
             "allow_to_see_private_appt": "Allow user(s) to see private appointments’ detail",
-            "send_notification": "Send notification about this share"
+            "send_notification": "Send notification about this share",
+            "internal_sharing": "Internal sharing",
+            "public_sharing": "Public sharing"
         },
         "note": {
             "share_note": "The standard message displays your name, the name of the shared item, permissions granted to the recipients, and sign-in information."
@@ -649,12 +651,15 @@
             "share_calendar_with": {
                 "external_guests": "External guests (view only)",
                 "internal_users_groups": "Internal Users or Groups",
-                "public": "Public (view only, no password required)"
+                "public": "Share with public (view only, no password required)"
             }
         },
         "placeholder": {
             "recipients_address": "Recipients e-mail addresses",
             "standard_message": "Add a note to standard message"
+        },
+        "description": {
+            "recipients_address": "Enter internal addresses only. External recipients won’t be able to access the calendar."
         }
     },
     "share_invite_resent": "Share invite resent",
