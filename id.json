@@ -474,13 +474,15 @@
             },
             "share_calendar_with": {
                 "internal_users_groups": "Pengguna atau Grup Internal",
-                "public": "Publik (hanya lihat, tidak diperlukan kata sandi)",
+                "public": "Bagikan ke publik (hanya lihat, tidak diperlukan kata sandi)",
                 "external_guests": "Tamu eksternal (hanya lihat)"
             }
         },
         "label": {
             "allow_to_see_private_appt": "Izinkan pengguna melihat detail janji temu pribadi",
-            "send_notification": "Kirim pemberitahuan tentang berbagi ini"
+            "send_notification": "Kirim pemberitahuan tentang berbagi ini",
+            "internal_sharing": "Berbagi internal",
+            "public_sharing": "Berbagi publik"
         },
         "placeholder": {
             "recipients_address": "Alamat email penerima",
@@ -488,6 +490,9 @@
         },
         "note": {
             "share_note": "Pesan standar ini menampilkan nama Anda, nama item bersama, izin yang diberikan kepada penerima, dan informasi masuk."
+        },
+        "description": {
+            "recipients_address": "Masukkan hanya alamat internal. Penerima eksternal tidak akan dapat mengakses kalender."
         }
     },
     "snackbar": {
