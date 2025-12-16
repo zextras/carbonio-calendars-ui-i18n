@@ -572,7 +572,7 @@
     "share": {
         "options": {
             "share_calendar_with": {
-                "public": "Pubblico (solo visualizzazione, password non richiesta)",
+                "public": "Condividi col pubblico (solo visualizzazione, password non richiesta)",
                 "external_guests": "Invitati Esterni (solo visualizzazione)",
                 "internal_users_groups": "Utenti Interni o Gruppi"
             },
@@ -589,10 +589,15 @@
         },
         "label": {
             "allow_to_see_private_appt": "Consenti agli utenti di vedere i dettagli dei miei appuntamenti privati",
-            "send_notification": "Invia notifica per questa condivisione"
+            "send_notification": "Invia notifica per questa condivisione",
+            "public_sharing": "Condivisione col pubblico",
+            "internal_sharing": "Condivisione interna"
         },
         "note": {
             "share_note": "Il messaggio predefinito mostra il tuo nome, il nome dell'elemento condiviso, i permessi dati ai destinatari e le informazioni di accesso."
+        },
+        "description": {
+            "recipients_address": "Inserisci solo indirizzi interni. Quelli esterni non potranno avere accesso al calendario."
         }
     },
     "repeat": {
