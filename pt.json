@@ -535,12 +535,14 @@
             "share_calendar_with": {
                 "external_guests": "Convidados externos (apenas visualizar)",
                 "internal_users_groups": "Usuários ou grupos internos",
-                "public": "Público (apenas ver, senha não requerida)"
+                "public": "Partilhar publicamente (apenas ver, senha não requerida)"
             }
         },
         "label": {
             "send_notification": "Enviar notificação sobre este compartilhamento",
-            "allow_to_see_private_appt": "Permitir que os usuários vejam meus compromissos particulares"
+            "allow_to_see_private_appt": "Permitir que os usuários vejam meus compromissos particulares",
+            "internal_sharing": "Partilha interna",
+            "public_sharing": "Partilha pública"
         },
         "placeholder": {
             "recipients_address": "Endereço de e-mail dos destinatários",
@@ -548,6 +550,9 @@
         },
         "note": {
             "share_note": "A mensagem padrão exibe seu nome, o nome do item compartilhado, as permissões concedidas aos destinatários e as informações de acesso."
+        },
+        "description": {
+            "recipients_address": "Introduza apenas endereços internos. Os destinatários externos não poderão aceder ao calendário."
         }
     },
     "snackbar": {
