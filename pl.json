@@ -515,17 +515,17 @@
                 "public": "Publiczne"
             },
             "free_busy_opts": {
-                "allow_all": "Zezwól użytkownikom spoza jak i ze swojej domeny na sprawdzanie swojego statusu wolny/zajęty",
+                "allow_all": "Zezwalaj użytkownikom spoza jak i z mojej organizacji na sprawdzanie mojego statusu wolny/zajęty",
                 "allow_domain": "Zezwól tylko użytkownikom ze swojej domeny na sprawdzanie swojego statusu wolny/zajęty",
-                "allow_following": "Zezwól tylko wybranym użytkownikom ze swojej domeny na sprawdzanie swojego statusu wolny/zajęty",
-                "allow_internal": "Zezwól tylko użytkownikom spoza swojej domeny na sprawdzanie swojego statusu wolny/zajęty",
+                "allow_following": "Zezwalaj tylko następującym użytkownikom z obrębu organizacji na sprawdzanie mojego statusu wolny/zajęty",
+                "allow_internal": "Zezwalaj tylko użytkownikom z obrębu organizacji na sprawdzanie mojego statusu wolny/zajęty",
                 "allow_none": "Nie zezwalaj nikomu na sprawdzanie swojego statusu wolny/zajęty"
             },
             "invt_opts": {
-                "allow_all": "Zezwól użytkownikom spoza jak i z mojej domeny na zapraszanie mnie na spotkania",
-                "allow_following": "Zezwól tylko wybranym użytkownikom z mojej domeny na zapraszanie mnie na spotkania",
+                "allow_all": "Zezwól użytkownikom spoza jak i z mojej organizacji na zapraszanie mnie na spotkania",
+                "allow_following": "Zezwól tylko wybranym użytkownikom z mojej organizacji na zapraszanie mnie na spotkania",
                 "allow_none": "Nie zezwalaj nikomu na zapraszanie mnie na spotkania",
-                "allow_internal": "Zezwól tylko użytkownikom z mojej domeny na zapraszanie mnie na spotkania"
+                "allow_internal": "Zezwól tylko użytkownikom z mojej organizacji na zapraszanie mnie na spotkania"
             },
             "timezones": {
                 "amsterdam": "GMT +01:00 Amsterdam, Berlin, Berno, Rzym, Sztokholm, Wiedeń",
@@ -651,8 +651,8 @@
                 "none": "Brak uprawnień"
             },
             "share_calendar_with": {
-                "internal_users_groups": "Użytkownicy lub grupy z mojej domeny",
-                "public": "Publiczny (można tylko wyświetlać, hasło niewymagane)",
+                "internal_users_groups": "Użytkownicy lub grupy z mojej organizacji",
+                "public": "Udostępnij publicznie (można tylko wyświetlać, hasło niewymagane)",
                 "external_guests": "Goście spoza mojej domeny (mogą tylko wyświetlać)"
             }
         },
@@ -662,7 +662,12 @@
         },
         "label": {
             "allow_to_see_private_appt": "Pozwól użytkownikom widzieć szczegóły prywatnych spotkań",
-            "send_notification": "Wyślij powiadomienie o tym udostępnieniu"
+            "send_notification": "Wyślij powiadomienie o tym udostępnieniu",
+            "internal_sharing": "Udostępnianie wewnątrz organizacji",
+            "public_sharing": "Udostępnianie publiczne"
+        },
+        "description": {
+            "recipients_address": "Wprowadź tylko adresy należące do Twojej organizacji. Odbiorcy spoza Twojej organizacji nie będą mogli uzyskać dostępu do kalendarza."
         }
     },
     "add": "Dodaj",
