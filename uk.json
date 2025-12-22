@@ -32,7 +32,8 @@
         "enableSplitLayoutTooltip": "Увімкнути розділений макет",
         "add_event_title_to_send": "Додати назву події для відправлення",
         "add_event_title_to_save": "Додати назву події для збереження",
-        "reschedule_appointment": "Перенести зустріч"
+        "reschedule_appointment": "Перенести зустріч",
+        "room_request_not_sent": "Ви ще не надіслали запит на ресурси"
     },
     "message": {
         "delete_tag_message2": "Після видалення він буде вилучений з усіх елементів, до яких був застосований."
@@ -44,5 +45,14 @@
         "yellow": "Жовтий",
         "orange": "Помаранчевий",
         "black": "Чорний"
+    },
+    "share": {
+        "label": {
+            "internal_sharing": "Внутрішній доступ",
+            "public_sharing": "Публічний доступ"
+        },
+        "description": {
+            "recipients_address": "Вводьте лише внутрішні адреси. Зовнішні отримувачі не матимуть доступу до календаря."
+        }
     }
 }
