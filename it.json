@@ -432,7 +432,9 @@
         },
         "cannot_save": "Il salvataggio è disabilitato per questo evento",
         "fix_input_errors_to_save": "Sistema gli errori negli input per salvare",
-        "fix_input_errors_to_send": "Sistema gli errori negli input per inviare"
+        "fix_input_errors_to_send": "Sistema gli errori negli input per inviare",
+        "room_request_not_sent": "Non hai ancora inviato la richiesta per le risorse",
+        "generic_invitation_not_sent": "Non hai ancora inviato l'invito"
     },
     "action": {
         "send": "Invia",
