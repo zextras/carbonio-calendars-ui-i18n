@@ -377,7 +377,9 @@
         },
         "cannot_save": "Saving is disabled for this event",
         "fix_input_errors_to_save": "Fix input errors to save",
-        "fix_input_errors_to_send": "Fix input errors to send"
+        "fix_input_errors_to_send": "Fix input errors to send",
+        "room_request_not_sent": "You haven't sent the request for the resources yet",
+        "generic_invitation_not_sent": "You haven't sent the invitation yet"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
