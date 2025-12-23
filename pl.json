@@ -331,7 +331,9 @@
         },
         "cannot_save": "Zapisywanie jest wyłączone dla tego wydarzenia",
         "fix_input_errors_to_save": "Napraw nieprawidłowości, aby zapisać",
-        "fix_input_errors_to_send": "Napraw nieprawidłowości, aby wysłać"
+        "fix_input_errors_to_send": "Napraw nieprawidłowości, aby wysłać",
+        "room_request_not_sent": "Nie wysłałeś/aś jeszcze prośby o zasoby",
+        "generic_invitation_not_sent": "Nie wysłałeś/aś jeszcze zaproszenia"
     },
     "message": {
         "modal": {
