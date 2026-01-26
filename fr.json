@@ -634,7 +634,7 @@
             },
             "share_calendar_with": {
                 "external_guests": "Invité(e)s externes (vue seulement)",
-                "public": "Partager publiquement (affichage uniquement, pas de mot de passe requis)",
+                "public": "Partagé publiquement (affichage uniquement, pas de mot de passe requis)",
                 "internal_users_groups": "Utilisateurs ou Groupes internes"
             }
         },
