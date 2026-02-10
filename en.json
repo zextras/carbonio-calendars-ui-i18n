@@ -841,6 +841,9 @@
                 "show": "SHOW ORGANIZER",
                 "hide": "HIDE ORGANIZER"
             }
+        },
+        "repeat": {
+            "set-custom-repeat": "Set custom repeat"
         }
     },
     "daily_planner": {
