@@ -864,6 +864,9 @@
                 "show": "MOSTRA ORGANIZZATORE",
                 "hide": "NASCONDI ORGANIZZATORE"
             }
+        },
+        "repeat": {
+            "set-custom-repeat": "Personalizza"
         }
     },
     "daily_planner": {
