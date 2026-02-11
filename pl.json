@@ -864,6 +864,9 @@
                 "show": "POKAŻ PLANER",
                 "hide": "UKRYJ PLANER"
             }
+        },
+        "repeat": {
+            "set-custom-repeat": "Ustaw niestandardowe powtarzanie"
         }
     },
     "daily_planner": {
