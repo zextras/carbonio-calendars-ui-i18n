@@ -434,7 +434,14 @@
         "fix_input_errors_to_save": "Sistema gli errori negli input per salvare",
         "fix_input_errors_to_send": "Sistema gli errori negli input per inviare",
         "room_request_not_sent": "Non hai ancora inviato la richiesta per le risorse",
-        "generic_invitation_not_sent": "Non hai ancora inviato l'invito"
+        "generic_invitation_not_sent": "Non hai ancora inviato l'invito",
+        "repeat_every": "Ripeti ogni",
+        "day_of_month_recurrence": "{{day}} del mese",
+        "ordinal_weekday_of_month": "Ogni {{ordinal}} {{weekday}} del mese",
+        "on": "Di",
+        "end_after_events": "Evento/i",
+        "end_on": "Termina il",
+        "end_after_date": "Data"
     },
     "action": {
         "send": "Invia",
@@ -610,7 +617,11 @@
         "everyYear": "Ogni Anno",
         "monthly": "Mensile",
         "weekly": "Settimanale",
-        "yearly": "Annuale"
+        "yearly": "Annuale",
+        "days_plural": "Giorno/i",
+        "weeks_plural": "Settimana/e",
+        "months_plural": "Mese/i",
+        "years_plural": "Anno/i"
     },
     "resend_mail_notification_about_this_share": "Invia e-mail di notifica per questa condivisione",
     "settings": {
@@ -912,5 +923,17 @@
     "duplicate_equipment_error": "Una o più attrezzature sono state selezionate diverse volte. Considera di rimuovere i duplicati.",
     "equipment_invalid": "Una o più attrezzature non sono valide. Prova a modificarle o a inserirne di nuove.",
     "rooms_invalid": "Una o più sale riunioni non sono valide. Prova a modificarle o inseriscine di nuove.",
-    "reset_date": "Ripristina Data"
+    "reset_date": "Ripristina Data",
+    "ordinal": {
+        "suffix": {
+            "th": "\"\"",
+            "st": "\"\"",
+            "nd": "\"\"",
+            "rd": "\"\""
+        },
+        "third": "terzo",
+        "first": "primo",
+        "second": "secondo",
+        "last": "ultimo"
+    }
 }
