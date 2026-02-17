@@ -333,7 +333,14 @@
         "fix_input_errors_to_save": "Napraw nieprawidłowości, aby zapisać",
         "fix_input_errors_to_send": "Napraw nieprawidłowości, aby wysłać",
         "room_request_not_sent": "Nie wysłałeś/aś jeszcze prośby o zasoby",
-        "generic_invitation_not_sent": "Nie wysłałeś/aś jeszcze zaproszenia"
+        "generic_invitation_not_sent": "Nie wysłałeś/aś jeszcze zaproszenia",
+        "repeat_every": "Powtarzaj co każde",
+        "day_of_month_recurrence": "{{day}} dnia miesiąca",
+        "ordinal_weekday_of_month": "Każdy {{ordinal}} {{weekday}} miesiąca",
+        "on": "W",
+        "end_after_events": "Wydarzenia",
+        "end_on": "Zakończ",
+        "end_after_date": "Data"
     },
     "message": {
         "modal": {
@@ -727,7 +734,11 @@
         "everyYear": "Każdego roku",
         "monthly": "Co miesiąc",
         "weekly": "Co tydzień",
-        "yearly": "Co rok"
+        "yearly": "Co rok",
+        "days_plural": "Dni",
+        "weeks_plural": "Tygodnie",
+        "months_plural": "Miesiące",
+        "years_plural": "Lata"
     },
     "revoke_without_custom_message": "Odbierz dostęp i wyślij domyślną notkę",
     "revoke_without_notification": "Odbierz dostęp i nie wysyłaj notatki",
@@ -912,5 +923,17 @@
     "rooms_invalid": "Jeden lub więcej pokojów spotkań są nieprawidłowe. Spróbuj edytować je lub wprowadź nowe.",
     "equipment_invalid": "Jeden lub więcej elementów są nieprawidłowe. Spróbuj edytować je lub wprowadź nowe.",
     "duplicate_rooms_error": "Jeden lub więcej pokojów spotkań zostało wybranych wiele razy. Rozważ usunięcie duplikatów.",
-    "reset_date": "Zresetuj datę"
+    "reset_date": "Zresetuj datę",
+    "ordinal": {
+        "suffix": {
+            "th": "-ego",
+            "st": "-ego",
+            "rd": "-ego",
+            "nd": "-ego"
+        },
+        "third": "trzeci",
+        "first": "pierwszy",
+        "second": "drugi",
+        "last": "ostatni"
+    }
 }
