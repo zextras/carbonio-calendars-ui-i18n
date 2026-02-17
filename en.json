@@ -379,7 +379,14 @@
         "fix_input_errors_to_save": "Fix input errors to save",
         "fix_input_errors_to_send": "Fix input errors to send",
         "room_request_not_sent": "You haven't sent the request for the resources yet",
-        "generic_invitation_not_sent": "You haven't sent the invitation yet"
+        "generic_invitation_not_sent": "You haven't sent the invitation yet",
+        "repeat_every": "Repeat every",
+        "day_of_month_recurrence": "{{day}} of the Month",
+        "ordinal_weekday_of_month": "Every {{ordinal}} {{weekday}} of the Month",
+        "on": "On",
+        "end_after_events": "Event(s)",
+        "end_on": "End on",
+        "end_after_date": "Date"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -569,7 +576,11 @@
         "everyYear": "Every Year",
         "monthly": "Monthly",
         "weekly": "Weekly",
-        "yearly": "Yearly"
+        "yearly": "Yearly",
+        "days_plural": "Day(s)",
+        "weeks_plural": "Week(s)",
+        "months_plural": "Month(s)",
+        "years_plural": "Year(s)"
     },
     "resend_mail_notification_about_this_share": "Send e-mail notification about this share",
     "revoke_access": "Revoke access",
@@ -889,5 +900,17 @@
     "duplicate_equipment_error": "One or more items of equipment were selected multiple times. Consider removing the duplicates.",
     "equipment_invalid": "One or more items of equipment are invalid. Try editing them or entering a new one.",
     "rooms_invalid": "One or more Meeting rooms are invalid. Try editing them or entering a new one.",
-    "reset_date": "Reset Date"
+    "reset_date": "Reset Date",
+    "ordinal": {
+        "suffix": {
+            "th": "th",
+            "st": "st",
+            "nd": "nd",
+            "rd": "rd"
+        },
+        "third": "third",
+        "first": "first",
+        "second": "second",
+        "last": "last"
+    }
 }
