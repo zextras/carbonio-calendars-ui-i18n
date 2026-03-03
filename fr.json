@@ -544,7 +544,11 @@
         "daily": "Quotidiennement",
         "everyMonth": "Chaque Mois",
         "everyWeek": "Chaque Semaine",
-        "monthly": "Mensuel"
+        "monthly": "Mensuel",
+        "days_plural": "Jour(s)",
+        "weeks_plural": "Semaine(s)",
+        "months_plural": "Mois",
+        "years_plural": "An(s)"
     },
     "revoke_with_custom_message": "Révoquer l'accès en envoyant une notification personnalisée",
     "settings": {
@@ -864,6 +868,9 @@
                 "hide": "MASQUER LE PLANIFICATEUR",
                 "show": "AFFICHER LE PLANIFICATEUR"
             }
+        },
+        "repeat": {
+            "set-custom-repeat": "Personnaliser la répétition"
         }
     },
     "daily_planner": {
