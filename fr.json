@@ -368,7 +368,8 @@
         "cannot_save": "L'enregistrement est désactivé pour cet évènemnet",
         "fix_input_errors_to_save": "Vous devez corriger les erreurs pour permettre l'enregistrement",
         "room_request_not_sent": "Vous n'avez pas encore envoyé la demande de ressources",
-        "generic_invitation_not_sent": "Vous n'avez pas encore envoyé l'invitation"
+        "generic_invitation_not_sent": "Vous n'avez pas encore envoyé l'invitation",
+        "repeat_every": "Répéter chaque"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -916,5 +917,10 @@
     "equipment_invalid": "Un ou plusieurs éléments d'équipement ne sont pas valides. Essayez de les modifier ou d'en saisir un nouveau.",
     "rooms_invalid": "Une ou plusieurs salle de réunion ne sont pas valides. Essayez de les modifier ou d'en saisir une nouvelle.",
     "duplicate_rooms_error": "Une ou plusieurs salles de réunion ont été sélectionnées plusieurs fois. Il faudrait prévoir de supprimer les doublons.",
-    "reset_date": "Réinitialiser la date"
+    "reset_date": "Réinitialiser la date",
+    "ordinal": {
+        "suffix": {
+            "th": " "
+        }
+    }
 }
