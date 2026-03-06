@@ -194,13 +194,15 @@
         "share_calendar": "कैलेंडर साझा करें",
         "empty_trash_confirmation": "ऐसा करने से आपकी ईमेल, Contacts, Calendar, Tasks और Briefcase के रद्दी फोल्डरों के सभी आइटम डिलीट हो जाएंगे। क्या आप वाकई में इन रद्दी फोल्डरों की हर चीज जो परमानेंट डिलीट करना चाहते हैं?",
         "send_edit": "बदलाव भेजें",
-        "reset": "रीसेट करें",
+        "reset": "फिल्टर रीसेट करें",
         "search": "खोजें",
         "show_original": "ओरिजिनल दिखाएँ",
         "Trash_already_empty": "हटाए गए आइटम का बॉक्स पहले से ही खाली है",
         "calendar_upload": "ICS फ़ाइल के रूप में निकाले",
         "download_ics": "ICS डाउनलोड करें",
-        "export_calendar_ics": "ICS फ़ाइल निर्यात करें"
+        "export_calendar_ics": "ICS फ़ाइल निर्यात करें",
+        "delete": "मिटाना",
+        "answer": "जबाब दें"
     },
     "message": {
         "you": "आप",
@@ -624,5 +626,7 @@
     "attendee_unavailable": "इवेंट के चुने हुए समय पर प्रतिभागी उपलब्ध नहीं है",
     "attendees_unavailable": "इवेंट के चुने हुए समय पर एक या अधिक प्रतिभागी उपलब्ध नहीं हैं",
     "attendee_room_unavailable": "कार्यक्रम के चयनित समय पर कमरा उपलब्ध नहीं है",
-    "attendee_equipment_unavailable": "कार्यक्रम के चयनित समय पर उपकरण उपलब्ध नहीं है"
+    "attendee_equipment_unavailable": "कार्यक्रम के चयनित समय पर उपकरण उपलब्ध नहीं है",
+    "attendees_equipments_unavailable": "इवेंट के चुने हुए समय पर एक या ज़्यादा इक्विपमेंट उपलब्ध नहीं हैं",
+    "attendees_rooms_unavailable": "एक या एक से अधिक मीटिंग रूम घटना के चयनित समय पर उपलब्ध नहीं हैं"
 }
