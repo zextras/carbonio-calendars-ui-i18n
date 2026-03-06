@@ -926,7 +926,6 @@
     "reset_date": "Réinitialiser la date",
     "ordinal": {
         "suffix": {
-            "th": "",
             "st": "er"
         },
         "third": "troisième",
