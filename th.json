@@ -244,7 +244,8 @@
         "reschedule_appointment": "เปลี่ยนเวลานัดหมาย",
         "hide_event_detail": "ซ่อนรายละเอียด",
         "show_event_detail": "แสดงรายละเอียด",
-        "close": "ปิด"
+        "close": "ปิด",
+        "loading_resources": "กำลังโหลด “ห้องประชุม” และ “อุปกรณ์” กรุณารอ..."
     },
     "calendar": {
         "modal": {
