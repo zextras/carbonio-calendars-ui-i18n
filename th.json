@@ -219,7 +219,8 @@
         },
         "invalid_group_name": "พิมพ์ชื่อกลุ่มเพื่อบันทึกการเปลี่ยนแปลง",
         "group_is_empty": "กลุ่มนี้ว่างเปล่า",
-        "calendars": "ปฏิทิน"
+        "calendars": "ปฏิทิน",
+        "caldav_url": "URL CalDAV"
     },
     "calendar": {
         "modal": {
