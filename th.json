@@ -241,7 +241,10 @@
         "duplicate_share": "คุณได้แชร์ปฏิทินนี้กับผู้ใช้รายนี้แล้ว",
         "no_changes": "คุณยังไม่ได้ทำการเปลี่ยนแปลงใดๆ",
         "confirm": "ยืนยัน",
-        "reschedule_appointment": "เปลี่ยนเวลานัดหมาย"
+        "reschedule_appointment": "เปลี่ยนเวลานัดหมาย",
+        "hide_event_detail": "ซ่อนรายละเอียด",
+        "show_event_detail": "แสดงรายละเอียด",
+        "close": "ปิด"
     },
     "calendar": {
         "modal": {
