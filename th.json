@@ -220,7 +220,28 @@
         "invalid_group_name": "พิมพ์ชื่อกลุ่มเพื่อบันทึกการเปลี่ยนแปลง",
         "group_is_empty": "กลุ่มนี้ว่างเปล่า",
         "calendars": "ปฏิทิน",
-        "caldav_url": "URL CalDAV"
+        "caldav_url": "URL ของ CalDAV",
+        "invalid_query": "อักขระพิเศษ เช่น :, \", -, ! เป็นต้น จะถูกละเว้นในการค้นหา ซึ่งอาจทำให้ผลลัพธ์สำหรับรายการต่อไปนี้ไม่เป็นไปตามที่คาดไว้:",
+        "webcal_url": "URL ของ WebCAL",
+        "resources_load_error": "ไม่สามารถโหลด \"ห้องประชุม\" และ \"อุปกรณ์\" ได้ โปรดลองปิดและเปิดบอร์ดอีกครั้ง",
+        "duplicate_resource": "ทรัพยากรนี้ถูกเลือกหลายครั้ง",
+        "show_more": "+ อีก {{count}}",
+        "show_all_events": "แสดงเหตุการณ์ทั้งหมด",
+        "splitLayoutDisabledTooltip": "เลย์เอาต์แบบแบ่งหน้าจอไม่สามารถใช้งานได้ในมุมมองปัจจุบัน",
+        "email_attendees": "ส่งอีเมลถึงผู้เข้าร่วม",
+        "recurrent": "การนัดหมายแบบเกิดซ้ำ",
+        "disableSplitLayoutTooltip": "ปิดเลย์เอาต์แบบแบ่งหน้าจอ",
+        "enableSplitLayoutTooltip": "เปิดเลย์เอาต์แบบแบ่งหน้าจอ",
+        "cannot_send": "การส่งถูกปิดใช้งานสำหรับเหตุการณ์นี้",
+        "no_recipients": "เพิ่มผู้เข้าร่วมหรือทรัพยากรอย่างน้อยหนึ่งรายการเพื่อส่ง",
+        "add_event_title_to_send": "เพิ่มชื่อเหตุการณ์ก่อนส่ง",
+        "add_event_title_to_save": "เพิ่มชื่อเหตุการณ์เพื่อบันทึก",
+        "duplicate_shares": "คุณได้แชร์ปฏิทินนี้กับผู้ใช้หนึ่งคนหรือมากกว่านั้นแล้ว",
+        "duplicate_share_info": "คุณได้แชร์ปฏิทินนี้กับผู้ใช้หนึ่งคนหรือมากกว่านั้นแล้ว ลองเปลี่ยนบทบาทหรือพิมพ์ที่อยู่อื่น",
+        "duplicate_share": "คุณได้แชร์ปฏิทินนี้กับผู้ใช้รายนี้แล้ว",
+        "no_changes": "คุณยังไม่ได้ทำการเปลี่ยนแปลงใดๆ",
+        "confirm": "ยืนยัน",
+        "reschedule_appointment": "เปลี่ยนเวลานัดหมาย"
     },
     "calendar": {
         "modal": {
@@ -385,7 +406,7 @@
         "at_time_of_event": "ในช่วงเวลาของเหตุการณ์",
         "all_time": "ตลอดช่วงเวลาของเหตุการณ์",
         "modal": {
-            "set_new_time_message": "คุณต้องการตั้งเวลาใหม่สำหรับการนัดหมายที่พลาดไปหรือไม่? หากคุณคลิกตกลง การเตือนความจำอื่น ๆ ทั้งหมดจะถูกปิดโดยอัตโนมัติ"
+            "set_new_time_message": "แน่ใจหรือไม่ว่าคุณต้องการตั้งเวลาใหม่สำหรับการนัดหมายที่พลาดไป? หากคุณคลิกตกลง การแจ้งเตือนอื่น ๆ ทั้งหมดจะถูกปิดโดยอัตโนมัติ"
         },
         "second_before_other": "{{count}} วินาทีก่อน",
         "day_before_other": "{{count}} วันก่อน",
@@ -528,7 +549,14 @@
         "import_appointment_modal": "การนัดหมายที่อยู่ใน {{fileName}} จะถูกนำเข้าไปยังปฏิทิน \"{{calendarName}}\"",
         "optional_participant_other": "{{count}} ตัวเลือก",
         "required_participant_other": "ผู้เข้าร่วม {{count}} คน",
-        "somebody_invited_owner": "<strong>{{somebody}}</strong> ได้เชิญ {{owner}}"
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> ได้เชิญ {{owner}}",
+        "the_organizer": "ผู้จัด",
+        "you_did_not_answer": "คุณยังไม่ได้ตอบ",
+        "you_accepted": "คุณยอมรับแล้ว",
+        "you_declined": "คุณปฏิเสธแล้ว",
+        "you_accepted_as_tentative": "คุณตอบรับแบบไม่แน่นอน",
+        "who_set_this": "{{whoSetThis}} ตั้งค่าสถานะการนัดหมายนี้เป็น <strong>{{status}}</strong>",
+        "organizer_invited_you": "<text>{{organizer}} เชิญคุณเข้าร่วมกิจกรรม <bold>{{title}}</bold></text>"
     },
     "type": "รูปแบบ",
     "tooltip": {
@@ -780,5 +808,16 @@
                 "show": "แสดงผู้จัดงาน"
             }
         }
+    },
+    "colors": {
+        "black": "สีดำ",
+        "purple": "สีม่วง",
+        "blue": "สีน้ำเงิน",
+        "cyan": "สีฟ้า",
+        "red": "สีแดง",
+        "green": "สีเขียว",
+        "orange": "สีส้ม",
+        "pink": "สีชมพู",
+        "yellow": "สีเหลือง"
     }
 }
