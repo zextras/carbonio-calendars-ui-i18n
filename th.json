@@ -245,7 +245,23 @@
         "hide_event_detail": "ซ่อนรายละเอียด",
         "show_event_detail": "แสดงรายละเอียด",
         "close": "ปิด",
-        "loading_resources": "กำลังโหลด “ห้องประชุม” และ “อุปกรณ์” กรุณารอ..."
+        "loading_resources": "กำลังโหลด “ห้องประชุม” และ “อุปกรณ์” กรุณารอ...",
+        "empty_group_calendars_list": "ยังไม่มีปฏิทินในกลุ่มนี้",
+        "calendars_group_selector": {
+            "placeholder": "ระบุชื่อปฏิทิน"
+        },
+        "cannot_save": "ไม่สามารถบันทึกกิจกรรมนี้ได้",
+        "fix_input_errors_to_save": "แก้ไขข้อผิดพลาดของข้อมูลที่กรอกเพื่อบันทึก",
+        "fix_input_errors_to_send": "แก้ไขข้อผิดพลาดของข้อมูลที่กรอกเพื่อส่ง",
+        "room_request_not_sent": "คุณยังไม่ได้ส่งคำขอใช้ทรัพยากร",
+        "generic_invitation_not_sent": "คุณยังไม่ได้ส่งคำเชิญ",
+        "repeat_every": "ทำซ้ำทุก",
+        "day_of_month_recurrence": "วันที่ {{day}} ของเดือน",
+        "ordinal_weekday_of_month": "ทุก{{weekday}}ที่ {{ordinal}} ของเดือน",
+        "on": "วัน",
+        "end_after_events": "เหตุการณ์",
+        "end_on": "สิ้นสุดเมื่อ",
+        "end_after_date": "วันที่"
     },
     "calendar": {
         "modal": {
@@ -341,7 +357,8 @@
         },
         "invalid_email": "อีเมลไม่ถูกต้อง",
         "ical_note": "คุณสามารถกำหนดค่า Apple iCal เพื่อเข้าถึงปฏิทินของคุณโดยใช้โปรโตคอล CalDAV เมื่อเปิดใช้งานการตั้งค่านี้ ปฏิทินที่แชร์จะแสดงในแท็บการมอบหมายของบัญชี ical ดังนั้นคุณจึงสามารถมอบสิทธิ์การเข้าถึงปฏิทินของคุณให้กับผู้ใช้รายอื่นได้",
-        "permissions_note": "ผู้ใช้ด้านล่างต้องอยู่ในระบบอีเมลนี้ (zextras.com) คุณสามารถใช้ที่อยู่อีเมลแบบเต็มหรือเพียงแค่ชื่อผู้ใช้ก็ได้"
+        "permissions_note": "ผู้ใช้ด้านล่างต้องอยู่ในระบบอีเมลนี้ (zextras.com) คุณสามารถใช้ที่อยู่อีเมลแบบเต็มหรือเพียงแค่ชื่อผู้ใช้ก็ได้",
+        "permissions_description": "ผู้ใช้ที่ระบุด้านล่างต้องอยู่ในระบบอีเมลนี้ ({{domain}}) โดยคุณสามารถระบุที่อยู่อีเมลแบบเต็มหรือเฉพาะชื่อผู้ใช้ก็ได้"
     },
     "folder": {
         "modal": {
@@ -428,7 +445,11 @@
         "monthly": "ทุกเดือน",
         "weekly": "ทุกสัปดาห์",
         "yearly": "ทุกปี",
-        "everyMonth": "ทุกเดือน"
+        "everyMonth": "ทุกเดือน",
+        "days_plural": "วัน",
+        "weeks_plural": "สัปดาห์",
+        "months_plural": "เดือน",
+        "years_plural": "ปี"
     },
     "snackbar": {
         "invite": {
@@ -578,7 +599,17 @@
         "virtual_room": "ห้องเสมือนจริง",
         "resend": "ส่งอีเมลแจ้งเตือนเกี่ยวกับการแชร์นี้",
         "meetingRooms": "ห้องประชุม",
-        "folder_linked_status": "แชร์กับฉัน"
+        "folder_linked_status": "แชร์กับฉัน",
+        "out_of_office_appointment": "นัดหมายนอกสถานที่ทำงาน",
+        "free_appointment": "นัดหมายที่ว่างอยู่",
+        "tentative_appointment": "นัดหมายชั่วคราว",
+        "busy_appointment": "นัดหมายที่ไม่สามารถเข้าร่วมได้",
+        "calendarSelector": {
+            "disabled": "หากต้องการย้ายกิจกรรมนี้ไปยังปฏิทินอื่น โปรดใช้ตัวเลือก ‘ย้าย’"
+        },
+        "folder_sharing_status_other": "แชร์กับ {{count}} คน",
+        "copy_webcal_url": "คัดลอก URL ของ WebCAL",
+        "copy_caldav_url": "คัดลอก URL ของ CalDAV"
     },
     "button": {
         "customize_modal": "เปิด Customize Modal"
@@ -771,7 +802,7 @@
     },
     "appointment": {
         "virtualRoom": {
-            "displayerLink": "เข้าร่วมห้องเสมือนจริง"
+            "displayerLink": "เข้าร่วมห้อง Virtual Room"
         }
     },
     "api": {
@@ -811,6 +842,9 @@
                 "hide": "ซ่อนผู้จัดงาน",
                 "show": "แสดงผู้จัดงาน"
             }
+        },
+        "repeat": {
+            "set-custom-repeat": "ตั้งค่าการทำซ้ำแบบกำหนดเอง"
         }
     },
     "colors": {
@@ -822,6 +856,30 @@
         "green": "สีเขียว",
         "orange": "สีส้ม",
         "pink": "สีชมพู",
-        "yellow": "สีเหลือง"
+        "yellow": "สีเหลือง",
+        "grey": "สีเทา"
+    },
+    "displayer": {
+        "search_list_title1": "ไม่มีผลลัพธ์ ค้นหาต่อไป!",
+        "search_title1": "เริ่มการค้นหาอื่น",
+        "search_title4": "เลือกผลลัพธ์อย่างน้อยหนึ่งรายการเพื่อดำเนินการหรือแสดงรายละเอียดเพิ่มเติม",
+        "search_description1": "หรือเลือก \"ตัวกรองขั้นสูง\" เพื่อปรับแต่งการค้นหาของคุณ"
+    },
+    "duplicate_rooms_error": "มีการเลือกห้องประชุมซ้ำหนึ่งห้องหรือมากกว่า โปรดลบรายการที่ซ้ำออก",
+    "duplicate_equipment_error": "มีการเลือกอุปกรณ์ซ้ำหนึ่งรายการหรือมากกว่า โปรดลบรายการที่ซ้ำออก",
+    "equipment_invalid": "มีอุปกรณ์บางรายการไม่ถูกต้อง โปรดลองแก้ไขหรือเพิ่มรายการใหม่",
+    "rooms_invalid": "มีห้องประชุมบางห้องไม่ถูกต้อง โปรดลองแก้ไขหรือเพิ่มรายการใหม่",
+    "reset_date": "รีเซ็ตวันที่",
+    "ordinal": {
+        "suffix": {
+            "th": "ที่",
+            "st": "ที่",
+            "nd": "ที่",
+            "rd": "ที่"
+        },
+        "third": "ที่สาม",
+        "first": "ที่หนึ่ง",
+        "second": "ที่สอง",
+        "last": "สุดท้าย"
     }
 }
