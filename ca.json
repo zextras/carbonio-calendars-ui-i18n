@@ -3,7 +3,15 @@
         "days_plural": "Dia(s)",
         "weeks_plural": "Setmana(s)",
         "months_plural": "Mes(os)",
-        "years_plural": "Any(s)"
+        "years_plural": "Any(s)",
+        "customize": "Personalitza",
+        "daily": "Cada dia",
+        "everyMonth": "Cada mes",
+        "everyWeek": "Cada setmana",
+        "everyYear": "Cada any",
+        "monthly": "Mensualment",
+        "weekly": "Setmanalment",
+        "yearly": "Anualment"
     },
     "label": {
         "repeat_every": "Repetir cada",
@@ -94,7 +102,131 @@
         "calendar_groups": "Grups de calendari",
         "newgroup": {
             "note": "Aquest grup apareixerà al teu compte personal."
-        }
+        },
+        "end_after_date": "Data",
+        "all_day": "Tot el dia",
+        "app_name": "Agendes",
+        "appt_reminder_one": "Recordatori de cita",
+        "appt_reminder_many": "",
+        "appt_reminder_other": "Recordatori de cita",
+        "attachment_one": "Fitxer adjunt",
+        "attachment_many": "",
+        "attachment_other": "fitxers adjunts",
+        "attendee_one": "",
+        "attendee_many": "",
+        "attendee_other": "Assistents",
+        "auto_add_rcvd_app": "Afegeix automàticament les cites rebudes a l’agenda",
+        "busy": "Ocupat",
+        "calendar": "Agenda",
+        "cancelled": "Cancel·lat",
+        "create": "Creat",
+        "create_appt_settings": "Crear cites",
+        "create_copy": "Copia",
+        "create_new_calendar": "Crea agenda nova",
+        "custom": "Personalitzat",
+        "custom_repeat": "Repetició personalitzada",
+        "day": "Dia",
+        "default_appt_vsblty": "Visibilitat de cita per defecte",
+        "delete": "Suprimeix",
+        "delete_attachment_one": "Suprimeix",
+        "delete_attachment_many": "",
+        "delete_attachment_other": "Eliminar tot",
+        "delete_instance": "Esteu segur que voleu suprimir aquesta instància de cita \"{0}\"?",
+        "dismiss_one": "Rebutja",
+        "dismiss_many": "",
+        "dismiss_other": "Desestimar tot",
+        "display": "Visualització",
+        "download_one": "Descarrega",
+        "download_many": "",
+        "download_other": "Descarregar tot",
+        "edit": "Edita",
+        "email_input_message": "Introduïu adreça de correu",
+        "empty": "Buida",
+        "enable_dlgtn_for_ical": "Habilita la delegació per al client CalDAV d’Apple iCal",
+        "end": "Fi",
+        "equipment": "Equip",
+        "every_day": "Cada dia",
+        "every_weekday": "Cada dia laborable",
+        "exclude_free_busy": "Exclou aquesta agenda quan s’informi d’hores lliures/ocupades",
+        "free": "Lliure",
+        "general": "General",
+        "ics_url": "URL d’ICS:",
+        "instance": "Instància",
+        "invites": "Invitacions:",
+        "location": "Ubicació",
+        "month": "Mes",
+        "months": "Mesos",
+        "move": "Mou",
+        "new_appointment": "Cita nova",
+        "new_calendar": "Agenda nova",
+        "new_tag": "Etiqueta nova",
+        "new_time_proposed": "Nova hora proposada",
+        "no_end_date": "Sense data final",
+        "none": "Cap",
+        "notify_organizer": "Notifica l’organitzador",
+        "now": "Ara",
+        "number": "Número",
+        "ok": "Accepta",
+        "optional_one": "Opcional",
+        "optional_many": "",
+        "optional_other": "Opcional",
+        "optionals": "Opcional",
+        "permissions": "Permisos",
+        "preview": "Visualització prèvia",
+        "private": "Privat",
+        "reminder": "Recordatori",
+        "repeat": "Repeteix",
+        "required": "Obligatori",
+        "resend": "Reenvia",
+        "revoke": "Revoca",
+        "role": "Rol",
+        "root": "Arrel",
+        "save": "Desa",
+        "select": "Selecciona",
+        "series": "Sèrie",
+        "share": "Comparteix",
+        "share_with": "Comparteix amb:",
+        "sharing_of_this_folder": "Compartició per aquesta carpeta",
+        "show_one": "Mostra",
+        "show_many": "",
+        "show_other": "Mostra tot",
+        "show_declined_meetings": "Mostra reunions rebutjades",
+        "single_advanced_filter": "Filtres avançats",
+        "snooze": "Ajorna",
+        "start_date": "Data d’inici",
+        "start_week_on": "Comença la setmana el:",
+        "subject": "Assumpte",
+        "tag": "Etiqueta",
+        "tag_name": "Nom d’etiqueta",
+        "tags": "Etiquetes",
+        "tentative": "Provisional",
+        "time": "Hora",
+        "time_zones": "Zona horària",
+        "today": "avui",
+        "trash": "Paperera",
+        "undo": "Desfés",
+        "warning": "Advertència",
+        "week": "Setmana",
+        "week_day": {
+            "friday": "Divendres",
+            "monday": "Dilluns",
+            "saturday": "Dissabte",
+            "sunday": "Diumenge",
+            "thursday": "Dijous",
+            "tuesday": "Dimarts",
+            "wednesday": "Dimecres"
+        },
+        "work_hour": "Hores de treball:",
+        "work_week": "Setmana laboral",
+        "attendees": "Assistents",
+        "forward": "Reenvia",
+        "type_group_name_here": "Nom del grup",
+        "create_group": "Crea un grup nou",
+        "calendars": "Agendes",
+        "hide_event_detail": "Amaga els detalls",
+        "show_event_detail": "Mostra els detalls",
+        "close": "Tancar",
+        "confirm": "Confirma"
     },
     "ordinal": {
         "suffix": {
@@ -104,7 +236,9 @@
             "rd": "rd"
         },
         "first": "primer",
-        "third": "tercer"
+        "third": "tercer",
+        "second": "segon",
+        "last": "últim"
     },
     "composer": {
         "attachment": {
@@ -121,7 +255,13 @@
     "edit_share_properties": "Editar propietats de compartició",
     "event": {
         "action": {
-            "invitation_not_sent_yet": "La invitació no s'ha enviat encara"
+            "invitation_not_sent_yet": "La invitació no s'ha enviat encara",
+            "accept": "Accepta",
+            "decline": "Declina",
+            "expand": "Obre",
+            "needs_action": "Requereix atenció",
+            "no": "No",
+            "yes": "Sí"
         },
         "is_exception": "Excepció"
     },
@@ -138,6 +278,16 @@
                 "input": {
                     "filter": "Filtrar calendari"
                 }
+            },
+            "new": {
+                "duplicate_warning": "Ja existeix un àlies amb el mateix nom."
+            },
+            "creategroup": {
+                "title": "Crea agenda nova",
+                "default_group_name": "Agenda nova"
+            },
+            "editgroup": {
+                "footer": "Desa els canvis"
             }
         }
     },
@@ -163,7 +313,11 @@
         "virtual_room": "Sala Virtual",
         "out_of_office_appointment": "Cita fora de l'oficina",
         "free_appointment": "Cita lliure",
-        "tentative_appointment": "Cita provisional"
+        "tentative_appointment": "Cita provisional",
+        "add_attachments": "Afegeix fitxers adjunts",
+        "chat": "Equip",
+        "equipment": "Equip",
+        "location": "Ubicació"
     },
     "editor": {
         "daily_planner": {
@@ -175,9 +329,217 @@
     "daily_planner": {
         "end_time": "Hora de finalització",
         "participant": {
-            "meetingRoom": "Sala de reunions"
+            "meetingRoom": "Sala de reunions",
+            "organizer": "Organitzador",
+            "attendee": "Assistents",
+            "equipment": "Equip",
+            "unknown": "Desconegut",
+            "optionalAttendee": "Opcional"
         },
         "from": "des de",
-        "to": "a"
+        "to": "a",
+        "free": "Lliure",
+        "non-working": "No laborable",
+        "start_time": "Hora d’inici",
+        "busy": "Ocupat",
+        "tentative": "Provisional",
+        "unknown": "Desconegut",
+        "status": "Estat"
+    },
+    "action": {
+        "calendar_upload": "Importa fitxer .ICS",
+        "download_ics": "Descarrega",
+        "edit_message": "Edita missatge",
+        "empty_trash": "Buida la paperera",
+        "empty_trash_confirmation": "Aquesta acció eliminarà tots els elements de les carpetes paperera de Correu, Contactes, Agenda, Tasques i Maletí.  Segur que voleu suprimir permanentment tots els elements d’aquestes carpetes paperera?",
+        "export_calendar_ics": "Exporta com a fitxer .ICS",
+        "search": "Cerca",
+        "send": "Envia",
+        "send_cancellation": "Envia cancel·lació",
+        "share_calendar": "Comparteix una agenda",
+        "show_original": "Mostra l’original",
+        "delete": "Suprimeix",
+        "edit_group": "Edita grup"
+    },
+    "add": "Afegeix",
+    "administer": "Administra",
+    "appointments": "Cites",
+    "attendees_equipments_unavailable": "Una o més ubicacions no estan disponibles a l’hora seleccionada",
+    "attendees_rooms_unavailable": "Una o més ubicacions no estan disponibles a l’hora seleccionada",
+    "attendees_unavailable": "Un o més assistents no estan disponibles a l’hora seleccionada.",
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "title": "Personalitza les hores de treball"
+            }
+        }
+    },
+    "find_shares": "Cerca comparticions",
+    "has_attachments": "té un fitxer adjunt",
+    "import": "Importa",
+    "items": {
+        "first": "Nom",
+        "last": "Cognoms",
+        "weekend_day": "dia de cap de setmana"
+    },
+    "message": {
+        "copy": "Copia",
+        "delete_all_occurences": "Suprimeix totes les repeticions",
+        "delete_future_occurences": "Suprimeix aquesta instància i totes les repeticions futures.",
+        "delete_future_occurences_warning": "Això també suprimirà totes les excepcions (abans i després d’aquesta instància) a la sèrie",
+        "meeting_canceled": "La cita següent s’ha cancel·lat:",
+        "meeting_modified": "S’ha modificat la reunió següent:",
+        "more": "Més",
+        "organizer": "Organitzador",
+        "sure_to_delete_all_occurences_appointment": "Esteu segur que voleu suprimir totes les repeticions d’aquesta cita?",
+        "sure_to_delete_appointment": "Esteu segur que voleu suprimir aquestes cites?",
+        "sure_to_delete_appointment_permanently": "Esteu segur que voleu suprimir aquesta cita?",
+        "want_to_edit_cancellation_msg": "Voleu editar el missatge de modificació de cita?",
+        "want_to_send_cancellation_msg": "Voleu enviar un missatge de cancel·lació als assistents?",
+        "you_sure_delete_calendar": "Esteu segur que voleu suprimir de forma permanent l’agenda \"{0}\"?",
+        "you_sure_delete_instance": "Esteu segur que voleu suprimir aquesta instància de cita \"{0}\"?",
+        "you_sure_move_calendar_trash": "Esteu segur que voleu suprimir la cerca desada \"{0}\"?"
+    },
+    "messages": {
+        "format_as_plain_text": "Formata com text sense format"
+    },
+    "months": {
+        "april": "Abril",
+        "august": "Agost",
+        "december": "Desembre",
+        "february": "Febrer",
+        "january": "Gener",
+        "july": "Juliol",
+        "june": "Juny",
+        "march": "Març",
+        "may": "Maig",
+        "november": "Novembre",
+        "october": "Octubre",
+        "september": "Setembre"
+    },
+    "new_appointment": "Cita nova",
+    "next_month": "Mes següent",
+    "owner": "Propietari",
+    "participants": {
+        "AC_with_count_one": "Acceptat",
+        "AC_with_count_many": "",
+        "AC_with_count_other": "Acceptat ({{count}})",
+        "Accepted": "Acceptat",
+        "DE_with_count_one": "Rebutjat",
+        "DE_with_count_many": "",
+        "DE_with_count_other": "",
+        "Declined": "Rebutjat",
+        "TE_with_count_one": "Provisional",
+        "TE_with_count_many": "",
+        "TE_with_count_other": ""
+    },
+    "placeholder": {
+        "organizer": "Organitzador"
+    },
+    "previous_day": "Dia anterior",
+    "previous_month": "Mes anterior",
+    "previous_week": "Setmana anterior",
+    "read": "Llegit",
+    "reminder": {
+        "all_time": "En el moment de l’esdeveniment",
+        "at_time_of_event": "En el moment de l’esdeveniment",
+        "never": "Mai"
+    },
+    "settings": {
+        "ical_note": "<b>Nota:</b> Es pot configurar l’Apple iCal per accedir a les agendes mitjançant el protocol CalDAV. Quan aquesta preferència està activada, les agendes compartides es mostren a la pestanya Delegació del compte iCal per poder delegar l’accés a les agendes a altres usuaris.",
+        "label": {
+            "delete_invt_on_rply": "Suprimeix la invitació després de respondre",
+            "enable_reminder_sound": "Reprodueix un so (requereix un complement QuickTime o WindowsMedia)",
+            "enter_email": "Introduïu adreça de correu",
+            "flash_browser_title": "Títol del navegador intermitent",
+            "forward_invites": "Reenvia invitacions:",
+            "invitation_response": "Resposta a la invitació:",
+            "show_popup_notification": "Mostra una notificació emergent",
+            "show_rmndr_past_due_meetings": "Mostra recordatoris de reunions vençudes",
+            "snd_autorply_users": "Envia resposta automàtica als usuaris que no em poden invitar"
+        },
+        "options": {
+            "default_view": {
+                "day": "Vista de dia",
+                "list": "Vista de llista",
+                "month": "Vista de mes",
+                "work_week": "Vista de setmana laboral"
+            },
+            "dflt_vsblty_opt": {
+                "public": "Públic"
+            },
+            "free_busy_opts": {
+                "allow_all": "Permet veure la meva informació d’estat lliure/ocupat a tots els usuaris interns i externs",
+                "allow_domain": "Permet veure la meva informació d’estat lliure/ocupat només als usuaris del meu domini",
+                "allow_following": "Permet veure la meva informació d’estat lliure/ocupat només als usuaris interns següents:",
+                "allow_internal": "Permet veure la meva informació d’estat lliure /ocupat només als usuaris de dominis interns",
+                "allow_none": "No permetis a ningú veure la meva informació d’estat lliure/ocupat"
+            },
+            "invt_opts": {
+                "allow_all": "Permet als usuaris interns i externs invitar-me a reunions",
+                "allow_following": "Permet només a aquests usuaris interns invitar-me a reunions:",
+                "allow_internal": "Permet només als usuaris interns invitar-me a reunions",
+                "allow_none": "No permetis que ningú m’inviti a reunions"
+            }
+        },
+        "permissions_note": "<b>Nota:</b> Els usuaris indicats a continuació han d’estar en aquest sistema de correu ({0}). Podeu fer servir l’adreça de correu completa o només el nom d’usuari.",
+        "permissions_description": "<b>Nota:</b> Els usuaris indicats a continuació han d’estar en aquest sistema de correu ({0}). Podeu fer servir l’adreça de correu completa o només el nom d’usuari."
+    },
+    "share": {
+        "label": {
+            "allow_to_see_private_appt": "Permet als usuaris veure les meves cites privades.",
+            "internal_sharing": "Compartició externa",
+            "public_sharing": "Compartició pública"
+        },
+        "note": {
+            "share_note": "<b>Nota:</b> El missatge estàndard inclou el vostre nom, el nom de l’element compartit, els permisos concedits als destinataris i les dades d’inici de sessió, si s’escau."
+        },
+        "options": {
+            "share_calendar_role": {
+                "none": "Cap"
+            },
+            "share_calendar_with": {
+                "external_guests": "Convidats externs (només visualitza)",
+                "internal_users_groups": "Usuaris o grups interns",
+                "public": "Públic (només visualitza, sense contrasenya)"
+            }
+        },
+        "placeholder": {
+            "standard_message": "Afegeix nota al missatge estàndard"
+        }
+    },
+    "shared_folders": "Comparteix una agenda",
+    "snackbar": {
+        "invite": {
+            "error": "Error"
+        }
+    },
+    "success": "Correcte",
+    "type": "Tipus",
+    "workflow": "Flux de treball",
+    "modal": {
+        "forwardAppointment": {
+            "placeholder": "Afegeix assistents"
+        }
+    },
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "Ja existeix un àlies amb el mateix nom."
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "Ja existeix un àlies amb el mateix nom."
+            }
+        }
+    },
+    "colors": {
+        "blue": "Blau",
+        "green": "Verd",
+        "cyan": "Cian",
+        "purple": "Porpra",
+        "grey": "Gris",
+        "yellow": "Groc",
+        "pink": "Rosa",
+        "orange": "Taronja"
     }
 }
