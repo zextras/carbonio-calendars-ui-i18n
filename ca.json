@@ -226,7 +226,10 @@
         "hide_event_detail": "Amaga els detalls",
         "show_event_detail": "Mostra els detalls",
         "close": "Tancar",
-        "confirm": "Confirma"
+        "confirm": "Confirma",
+        "loading": "Carregant",
+        "meeting_room": "Sala de reunions",
+        "out_of_office": "Fora del despatx"
     },
     "ordinal": {
         "suffix": {
@@ -317,7 +320,8 @@
         "add_attachments": "Afegeix fitxers adjunts",
         "chat": "Equip",
         "equipment": "Equip",
-        "location": "Ubicació"
+        "location": "Ubicació",
+        "meetingRooms": "Sala de reunions"
     },
     "editor": {
         "daily_planner": {
@@ -344,7 +348,8 @@
         "busy": "Ocupat",
         "tentative": "Provisional",
         "unknown": "Desconegut",
-        "status": "Estat"
+        "status": "Estat",
+        "out-of-office": "Fora del despatx"
     },
     "action": {
         "calendar_upload": "Importa fitxer .ICS",
@@ -380,7 +385,8 @@
     "items": {
         "first": "Nom",
         "last": "Cognoms",
-        "weekend_day": "dia de cap de setmana"
+        "weekend_day": "dia de cap de setmana",
+        "second": "Segons"
     },
     "message": {
         "copy": "Copia",
@@ -398,7 +404,10 @@
         "want_to_send_cancellation_msg": "Voleu enviar un missatge de cancel·lació als assistents?",
         "you_sure_delete_calendar": "Esteu segur que voleu suprimir de forma permanent l’agenda \"{0}\"?",
         "you_sure_delete_instance": "Esteu segur que voleu suprimir aquesta instància de cita \"{0}\"?",
-        "you_sure_move_calendar_trash": "Esteu segur que voleu suprimir la cerca desada \"{0}\"?"
+        "you_sure_move_calendar_trash": "Esteu segur que voleu suprimir la cerca desada \"{0}\"?",
+        "snackbar": {
+            "calendar_deleted_successfully": "El volum s'ha esborrat correctament"
+        }
     },
     "messages": {
         "format_as_plain_text": "Formata com text sense format"
@@ -456,7 +465,9 @@
             "invitation_response": "Resposta a la invitació:",
             "show_popup_notification": "Mostra una notificació emergent",
             "show_rmndr_past_due_meetings": "Mostra recordatoris de reunions vençudes",
-            "snd_autorply_users": "Envia resposta automàtica als usuaris que no em poden invitar"
+            "snd_autorply_users": "Envia resposta automàtica als usuaris que no em poden invitar",
+            "default_calendar": "Vista de calendari per defecte",
+            "show_reminders": "Mostra recordatoris:"
         },
         "options": {
             "default_view": {
@@ -541,5 +552,7 @@
         "yellow": "Groc",
         "pink": "Rosa",
         "orange": "Taronja"
-    }
+    },
+    "freebusy": "Ocupat/Lliure",
+    "public": "Públic"
 }
