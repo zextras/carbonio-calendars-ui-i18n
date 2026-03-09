@@ -1,1 +1,183 @@
-{}
+{
+    "repeat": {
+        "days_plural": "Dia(s)",
+        "weeks_plural": "Setmana(s)",
+        "months_plural": "Mes(os)",
+        "years_plural": "Any(s)"
+    },
+    "label": {
+        "repeat_every": "Repetir cada",
+        "end_after_events": "Esdeveniment(s)",
+        "day_of_month_recurrence": "{{day}} del mes",
+        "ordinal_weekday_of_month": "Cada {{ordinal}} {{weekday}} del mes",
+        "on": "El",
+        "end_on": "Finalitza el",
+        "calendar_color": "Color del calendari",
+        "calendar_setting": "Configuració del calendari",
+        "calendar_shared": "Calendari compartit amb èxit",
+        "cancel": "cancel·lar",
+        "changes_saved": "Canvis desats",
+        "check_availability": "Comprova la teva disponibilitat",
+        "checking_availability": "S'està comprovant la teva disponibilitat",
+        "choose_file": "Triar fitxer",
+        "continue": "Continuar",
+        "create_tag": "Crea etiqueta",
+        "days": "Dies",
+        "default_view": "Vista per defecte",
+        "delete_permanently": "Eliminar permanentment",
+        "delete_tag": "Eliminar etiqueta",
+        "delete_tag_name": "Eliminar etiqueta {{name}}",
+        "discard_changes": "DESCARTAR CANVIS",
+        "edit_access": "Editar accés",
+        "edit_share": "Editar compartició",
+        "edit_tag": "Editar etiqueta",
+        "edit_tag_name": "Editar etiqueta {{name}}",
+        "edits_saved": "Edicions desades correctament",
+        "end_after": "Fi després",
+        "end_date": "Data de finalització",
+        "end_date_and_time": "Data i hora de finalització",
+        "entire_serires": "SÈRIE SENCERA",
+        "error_try_again": "Alguna cosa ha anat malament, torneu-ho a provar",
+        "event_title": "Títol de l'esdeveniment",
+        "every": "Cada",
+        "every_year_on": "Cada any el",
+        "filter_sharer_user": "Propietari de la carpeta",
+        "find_shares": "Seleccioneu quins calendaris voleu veure a l'arbre de calendaris",
+        "free_busy": "Ocupat/Lliure",
+        "from": "des de",
+        "import_calendar_ongoing": "S'està important al calendari seleccionat.",
+        "import_calendar_success": "Importació realitzada amb èxit",
+        "invitation_not_sent": "No has enviat la invitació als assistents encara",
+        "keywords": "Paraules clau",
+        "loading_results": "Carregant resultats…",
+        "maybe": "potser",
+        "no_rights": "No teniu permís per realitzar aquesta acció",
+        "no_special_char_allowed": "El nom no hauria de contenir cap caràcter especial",
+        "no_subject": "Sense assignatura",
+        "no_title": "Sense títol",
+        "occurrences": "Occurencies",
+        "of": "de",
+        "of_every": "de cada",
+        "of_every_month": "del mes, cada",
+        "on_behalf_of": "{{accountName}} en nom de {{identity}} <{{otherAccount}}>",
+        "ongoing": "Continuat",
+        "other_actions": "Altres accions",
+        "outlook_url": "Adreça URL d'Outlook",
+        "proposal_declined": "Proposta rebutjada",
+        "propose_new_time": "Proposar nova hora",
+        "public_link_description": "Generat a partir de {{title}} el {{date}}",
+        "regular": "Normal",
+        "restore": "Restaurar",
+        "restore_calendar": "Restaurar calendari",
+        "results_for": "Resultats per:",
+        "results_for_error": "No es pot iniciar la cerca, netegeu-la i torneu-ho a provar: ",
+        "revoke_share": "Revocar la compartició de {{title}}",
+        "scheduled_in": "Programat en",
+        "select_color": "Selecciona color",
+        "set_new_time": "Estableix nova hora",
+        "settings_saved": "Preferències desades",
+        "share_calendar_url": "{{title}} accedir a compartir",
+        "share_public_link": "Compartir enllaç públic",
+        "shares_items": "<bold>{{user}}</bold> calendari compartit",
+        "show_event": "Feu doble clic per veure més detalls als Calendaris",
+        "single_instance": "INSTÀNCIA ÚNICA",
+        "start_date_and_time": "Data i hora d'inici",
+        "tag_max_length": "S'allowen com a màxim 128 caràcters",
+        "the": "El",
+        "timezone_pref_msg": "Els horaris segueixen les preferències de zona horària.",
+        "to": "a",
+        "trash_emptied": "Escombraries buidades correctament",
+        "type_name_here": "Nom del calendari",
+        "view_url": "Veure URL",
+        "weeks_on": "Setmana(s) a",
+        "your_pref_timezone_msg": "La teva zona horària preferida és: GMT +01:00 Amsterdam, Berlin, Berna, Roma, Estocolm, Viena.",
+        "calendar_groups": "Grups de calendari",
+        "newgroup": {
+            "note": "Aquest grup apareixerà al teu compte personal."
+        }
+    },
+    "ordinal": {
+        "suffix": {
+            "th": "è",
+            "st": "st",
+            "nd": "nd",
+            "rd": "rd"
+        },
+        "first": "primer",
+        "third": "tercer"
+    },
+    "composer": {
+        "attachment": {
+            "draganddrop": {
+                "title": "Mode d'arrosatge"
+            },
+            "drive": "Afegir des de Drive",
+            "files": "Afegir des d'arxius",
+            "local": "Afegir des de local",
+            "url": "Afegir enllaç públic des d'arxius"
+        }
+    },
+    "creation_timezone_tooltip": "Data i hora de creació zona horària:",
+    "edit_share_properties": "Editar propietats de compartició",
+    "event": {
+        "action": {
+            "invitation_not_sent_yet": "La invitació no s'ha enviat encara"
+        },
+        "is_exception": "Excepció"
+    },
+    "find_calendar_shares": "Cercar comparticions de calendari",
+    "folder": {
+        "modal": {
+            "footer": {
+                "go_back": "Tornar"
+            },
+            "move": {
+                "body": {
+                    "message3": "Seleccioneu un calendari per moure la cita considerada:"
+                },
+                "input": {
+                    "filter": "Filtrar calendari"
+                }
+            }
+        }
+    },
+    "mountpoint_error": "No s'ha pogut afegir la compartició a la secció de Calendaris compartits",
+    "mountpoint_success": "La compartició s'ha afegit correctament a la secció de Calendaris compartits",
+    "mountpoint_warning": "{{failed}} de {{total}} calendaris compartits no s'han pogut afegir a la secció de Calendaris compartits",
+    "next_day": "Pròxim dia",
+    "next_week": "Pròxima setmana",
+    "timezone": {
+        "yerevan": "{{value}} Erevan"
+    },
+    "timezones": "Fusos horaris",
+    "tooltip": {
+        "chat_room": "Enllaç de la Sala Virtual",
+        "copy_ics_url": "Copiar adreça url d'ICS",
+        "copy_outlook_url": "Copiar adreça url d'Outlook",
+        "copy_vector_url": "Copiar adreça url de Visualització",
+        "edit": "Editar propietats de compartició",
+        "enable_disable_rich_text": "Habilitar/Deshabilitar editor de text ric",
+        "folder_linked_status": "Compartit amb mi",
+        "resend": "Enviar notificació per correu electrònic sobre aquesta compartició",
+        "revoke": "Revoke accés",
+        "virtual_room": "Sala Virtual",
+        "out_of_office_appointment": "Cita fora de l'oficina",
+        "free_appointment": "Cita lliure",
+        "tentative_appointment": "Cita provisional"
+    },
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "hide": "AMAGAT ORGANITZADOR"
+            }
+        }
+    },
+    "daily_planner": {
+        "end_time": "Hora de finalització",
+        "participant": {
+            "meetingRoom": "Sala de reunions"
+        },
+        "from": "des de",
+        "to": "a"
+    }
+}
