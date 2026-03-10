@@ -438,7 +438,7 @@
         "repeat_every": "Ripeti ogni",
         "day_of_month_recurrence": "{{day}} del mese",
         "ordinal_weekday_of_month": "Ogni {{ordinal}} {{weekday}} del mese",
-        "on": "Di",
+        "on": "Il",
         "end_after_events": "Evento/i",
         "end_on": "Termina il",
         "end_after_date": "Data"
@@ -926,10 +926,10 @@
     "reset_date": "Ripristina Data",
     "ordinal": {
         "suffix": {
-            "th": "\"\"",
-            "st": "\"\"",
-            "nd": "\"\"",
-            "rd": "\"\""
+            "th": "˚",
+            "st": "˚",
+            "nd": "˚",
+            "rd": "˚"
         },
         "third": "terzo",
         "first": "primo",
