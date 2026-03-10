@@ -202,7 +202,9 @@
         "download_ics": "ICS डाउनलोड करें",
         "export_calendar_ics": "ICS फ़ाइल निर्यात करें",
         "delete": "मिटाना",
-        "answer": "जबाब दें"
+        "answer": "जबाब दें",
+        "edit_group": "समूह संपादित करें",
+        "edit_and_share_calendar": "कैलेंडर संपादित करें और साझा करें"
     },
     "message": {
         "you": "आप",
@@ -628,5 +630,6 @@
     "attendee_room_unavailable": "कार्यक्रम के चयनित समय पर कमरा उपलब्ध नहीं है",
     "attendee_equipment_unavailable": "कार्यक्रम के चयनित समय पर उपकरण उपलब्ध नहीं है",
     "attendees_equipments_unavailable": "इवेंट के चुने हुए समय पर एक या ज़्यादा इक्विपमेंट उपलब्ध नहीं हैं",
-    "attendees_rooms_unavailable": "एक या एक से अधिक मीटिंग रूम घटना के चयनित समय पर उपलब्ध नहीं हैं"
+    "attendees_rooms_unavailable": "एक या एक से अधिक मीटिंग रूम घटना के चयनित समय पर उपलब्ध नहीं हैं",
+    "creation_timezone_tooltip": "निर्माण समय क्षेत्र पर तिथि और समय:"
 }
