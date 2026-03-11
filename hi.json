@@ -178,7 +178,27 @@
         "optionals": "विकल्‍प",
         "time": "समय",
         "download_one": "डाउनलोड",
-        "download_other": "सभी डाउनलोड करें"
+        "download_other": "सभी डाउनलोड करें",
+        "advanced_filters_one": "{{count}} उन्नत फ़िल्टर",
+        "advanced_filters_other": "{{count}} उन्नत फ़िल्टर",
+        "appt_reminder_one": "नियुक्ति स्मरणपत्र",
+        "appt_reminder_other": "नियुक्ति स्मरणपत्रों",
+        "attachment_one": "संलग्नक",
+        "attachment_other": "संलग्नक",
+        "attendee_one": "उपस्थित व्यक्ति",
+        "attendee_other": "उपस्थित लोग",
+        "available": "आप उपलब्ध हैं",
+        "check_availability": "अपनी उपलब्धता जांचें",
+        "checking_availability": "आपकी उपलब्धता की जांच कर रहा हूँ",
+        "delete": "मिटाना",
+        "delete_attachment_one": "हटाएँ",
+        "delete_attachment_other": "सभी हटाएं",
+        "dismiss_one": "खारिज करें",
+        "dismiss_other": "सभी खारिज करें",
+        "equipment": "उपकरण",
+        "import_calendar_ongoing": "चयनित कैलेंडर में आयात जारी है।",
+        "import_calendar_success": "आयात सफलतापूर्वक हुआ",
+        "meeting_room": "बैठक कक्ष"
     },
     "action": {
         "send": "भेजें",
@@ -305,6 +325,20 @@
             "new": {
                 "duplicate_warning": "इसी नाम का कैलेंडर पहले से ही है",
                 "title2": "नए कैलेंडर की रचना"
+            },
+            "creategroup": {
+                "title": "नया पंचांग समूह बनाएं",
+                "footer": "समूह बनाएं",
+                "default_group_name": "नई पंचांग समूह"
+            },
+            "editgroup": {
+                "footer": "परिवर्तन सहेजें",
+                "title": "पंचांग समूह संपादित करें"
+            },
+            "deletegroup": {
+                "confirm": "सदा के लिए मिटाएँ",
+                "title": "समूह को स्थायी रूप से हटाएं?",
+                "text": "क्या आप वाकई इस समूह को स्थायी रूप से हटाना चाहते हैं? यह कार्रवाई अविवर्तनीय है और व्यक्तिगत कैलेंडर पर इसका कोई प्रभाव नहीं पड़ता है।"
             }
         },
         "share_info": "जानकारी बाँटें"
@@ -631,5 +665,7 @@
     "attendee_equipment_unavailable": "कार्यक्रम के चयनित समय पर उपकरण उपलब्ध नहीं है",
     "attendees_equipments_unavailable": "इवेंट के चुने हुए समय पर एक या ज़्यादा इक्विपमेंट उपलब्ध नहीं हैं",
     "attendees_rooms_unavailable": "एक या एक से अधिक मीटिंग रूम घटना के चयनित समय पर उपलब्ध नहीं हैं",
-    "creation_timezone_tooltip": "निर्माण समय क्षेत्र पर तिथि और समय:"
+    "creation_timezone_tooltip": "निर्माण समय क्षेत्र पर तिथि और समय:",
+    "import": "आयात",
+    "import_appointments": "नियुक्तियों को आयात करें"
 }
