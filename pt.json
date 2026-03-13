@@ -246,7 +246,8 @@
         "export_calendar_ics": "Exportar arquivo ICS",
         "answer": "Responder",
         "delete": "Excluir",
-        "edit_group": "Editar grupo"
+        "edit_group": "Editar grupo",
+        "edit_and_share_calendar": "Editar e compartilhar calendário"
     },
     "event": {
         "action": {
