@@ -342,7 +342,9 @@
         "copy": "कॉपी करें",
         "import_appointment_modal": "{{fileName}} में निहित नियुक्तियाँ \"{{calendarName}}\" कैलेंडर में आयात की जाएंगी।",
         "optional_participant_one": "{{count}} वैकल्पिक",
-        "optional_participant_other": "{{count}} वैकल्पिक"
+        "optional_participant_other": "{{count}} वैकल्पिक",
+        "required_participant_one": "{{count}} प्रतिभागी",
+        "required_participant_other": "{{count}} प्रतिभागी"
     },
     "event": {
         "action": {
