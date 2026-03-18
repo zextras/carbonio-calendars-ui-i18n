@@ -215,7 +215,27 @@
         "forward": "आगे",
         "type_group_name_here": "समूह का नाम",
         "calendar_groups": "कैलेंडर समूह",
-        "create_group": "नया समूह बनाएं"
+        "create_group": "नया समूह बनाएं",
+        "newgroup": {
+            "note": "यह समूह आपके व्यक्तिगत खाते में दिखाई देगा।",
+            "calendars": "इस समूह में कैलेंडर"
+        },
+        "group_not_found": "समूह नहीं मिला",
+        "invalid_group_name": "समूह नाम टाइप करें बदलावों को सेव करने के लिए",
+        "editgroup": {
+            "calendars": "इस समूह में कैलेंडर"
+        },
+        "group_is_empty": "यह समूह खाली है",
+        "calendars": "कैलेंडर",
+        "duplicate_resource": "इस संसाधन का चयन कई बार किया गया",
+        "show_more": "+ {{count}} और अधिक",
+        "show_all_events": "सभी घटनाएँ दिखाएँ",
+        "close": "बंद",
+        "splitLayoutDisabledTooltip": "वर्तमान दृश्य में विभाजित लेआउट उपलब्ध नहीं है",
+        "email_attendees": "सभी उपस्थित लोगों को ईमेल करें",
+        "recurrent": "पुनरावृत्ति नियुक्ति",
+        "disableSplitLayoutTooltip": "स्प्लिट लेआउट अक्षम करें",
+        "enableSplitLayoutTooltip": "विभाजित लेआउट सक्षम करें"
     },
     "action": {
         "send": "भेजें",
