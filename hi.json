@@ -340,7 +340,9 @@
         "meeting_modified": "निम्न मीटिंग बदल दी गई है",
         "want_to_edit_modified_msg": "बदलाव मीटिंग अटेंड करने वालों को ईमेल के जरिए सूचित कर दिए जाएंगे। क्या आप कोई कस्टम मैसेज डालना चाहते हैं?",
         "copy": "कॉपी करें",
-        "import_appointment_modal": "{{fileName}} में निहित नियुक्तियाँ \"{{calendarName}}\" कैलेंडर में आयात की जाएंगी।"
+        "import_appointment_modal": "{{fileName}} में निहित नियुक्तियाँ \"{{calendarName}}\" कैलेंडर में आयात की जाएंगी।",
+        "optional_participant_one": "{{count}} वैकल्पिक",
+        "optional_participant_other": "{{count}} वैकल्पिक"
     },
     "event": {
         "action": {
