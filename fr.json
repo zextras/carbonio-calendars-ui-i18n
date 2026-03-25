@@ -415,7 +415,9 @@
             "shared_calendar_removed": "Calendrier enlevé avec succès",
             "new_group_created": "Le nouveau groupe a été crée",
             "group_edited": "Les modifications ont été enregistrées",
-            "group_deleted": "Le groupe de calendriers a été supprimé définitivement"
+            "group_deleted": "Le groupe de calendriers a été supprimé définitivement",
+            "new_calendar_added": "Le calendrier a été ajouté avec succès",
+            "external_calendar_syncing": "La synchronisation de calendrier a été lancée"
         },
         "somebody_is_organizer": "<strong>{{somebody}}</strong> est l'organisateur",
         "sure_to_delete_all_occurences_appointment": "Êtes-vous sûr de vouloir supprimer toutes les occurrences de ce rendez-vous ?",
@@ -684,7 +686,9 @@
         "folder_sharing_status_many": "Partagé avec {{count}} utilisateurs",
         "folder_sharing_status_other": "Partagé avec {{count}} utilisateurs",
         "copy_webcal_url": "Copier l'URL WebCAL",
-        "copy_caldav_url": "Copier l'URL CalDAV"
+        "copy_caldav_url": "Copier l'URL CalDAV",
+        "folder_external_status": "Ajouté à partir de l'URL",
+        "copy_url": "Copier l'URL"
     },
     "type": "Type",
     "workflow": "Flux de travail",
