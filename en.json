@@ -23,7 +23,9 @@
         "answer": "Answer",
         "delete": "Delete",
         "edit_group": "Edit group",
-        "edit_and_share_calendar": "Edit and share calendar"
+        "edit_and_share_calendar": "Edit and share calendar",
+        "add_ics_from_url": "Add ICS from URL",
+        "edit_calendar": "Edit calendar"
     },
     "add": "Add",
     "administer": "Administer",
@@ -386,7 +388,12 @@
         "on": "On",
         "end_after_events": "Event(s)",
         "end_on": "End on",
-        "end_after_date": "Date"
+        "end_after_date": "Date",
+        "add": "Add",
+        "external_calendar_event": "Event from a calendar added from URL",
+        "last_sync": "Last sync",
+        "save_changes": "Save changes",
+        "sync": "Sync"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -451,7 +458,10 @@
             "some_link_copying_error": "There seems to be a problem while generating public url for some files, please try again",
             "group_edited": "Changes saved",
             "new_group_created": "New group created",
-            "group_deleted": "Calendar group permanently deleted"
+            "group_deleted": "Calendar group permanently deleted",
+            "external_calendar_synced": "Calendar synced successfully",
+            "external_calendar_syncing": "Calendar sync has started",
+            "new_calendar_added": "Calendar added successfully"
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
@@ -810,7 +820,9 @@
         "folder_sharing_status_one": "Shared with {{count}} person",
         "folder_sharing_status_other": "Shared with {{count}} people",
         "copy_webcal_url": "Copy WebCAL url",
-        "copy_caldav_url": "Copy CalDAV url"
+        "copy_caldav_url": "Copy CalDAV url",
+        "copy_url": "Copy URL",
+        "folder_external_status": "Added from URL"
     },
     "type": "Type",
     "workflow": "WorkFlow",
@@ -912,5 +924,9 @@
         "first": "first",
         "second": "second",
         "last": "last"
+    },
+    "add_ics_from_url": {
+        "calendar_name": "Calendar name*",
+        "url": "Calendar URL*"
     }
 }
