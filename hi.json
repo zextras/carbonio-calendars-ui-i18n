@@ -300,7 +300,11 @@
             "att_err_adding": "अटैचमेंट जोड़ने में कुछ समस्या आ रही है, कृपया दोबारा कोशिश करें",
             "all_link_copied": "पब्लिक लिंक कॉपी हुई",
             "all_att_added": "अटैचमेंट जोड़ा गया",
-            "series_deleted_no_notification": "सीरीज़ को रद्दी में ले जाया गया।"
+            "series_deleted_no_notification": "सीरीज़ को रद्दी में ले जाया गया।",
+            "shared_calendar_removed": "कैलेंडर सफलतापूर्वक हटा दिया गया है",
+            "group_edited": "बदलाव सेव किए गए",
+            "new_group_created": "नया समूह बनाया गया",
+            "group_deleted": "कैलेंडर समूह स्थायी रूप से हटा दिया गया"
         },
         "somebody_is_organizer": "ऑर्गनाइज़र <strong>{{somebody}}</strong> है",
         "are_organizer": "वाक्य इस तरह से माना जाएगा मानो आप ऑर्गनाइज़र हों",
@@ -344,7 +348,11 @@
         "optional_participant_one": "{{count}} वैकल्पिक",
         "optional_participant_other": "{{count}} वैकल्पिक",
         "required_participant_one": "{{count}} प्रतिभागी",
-        "required_participant_other": "{{count}} प्रतिभागी"
+        "required_participant_other": "{{count}} प्रतिभागी",
+        "original_invite": "-----मूल आमंत्रण-----",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> ने {{owner}} को आमंत्रित किया",
+        "the_organizer": "आयोजक",
+        "you_did_not_answer": "आपने उत्तर नहीं दिया।"
     },
     "event": {
         "action": {
@@ -728,5 +736,16 @@
             "buttonConfirm": "पुनः लोड करें"
         }
     },
-    "local_timezone_tooltip": "स्थानीय समय क्षेत्र में दिनांक और समय:"
+    "local_timezone_tooltip": "स्थानीय समय क्षेत्र में दिनांक और समय:",
+    "colors": {
+        "black": "काला",
+        "purple": "बैंगनी",
+        "blue": "नीला",
+        "cyan": "आसमानी नीला",
+        "red": "लाल",
+        "green": "हरा",
+        "orange": "केसरी",
+        "pink": "गुलाबी",
+        "yellow": "पीला"
+    }
 }
