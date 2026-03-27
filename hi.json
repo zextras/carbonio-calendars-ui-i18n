@@ -352,7 +352,12 @@
         "original_invite": "-----मूल आमंत्रण-----",
         "somebody_invited_owner": "<strong>{{somebody}}</strong> ने {{owner}} को आमंत्रित किया",
         "the_organizer": "आयोजक",
-        "you_did_not_answer": "आपने उत्तर नहीं दिया।"
+        "you_did_not_answer": "आपने उत्तर नहीं दिया।",
+        "you_accepted": "आपने स्वीकार कर लिया",
+        "you_declined": "आपने अस्वीकार कर दिया",
+        "you_accepted_as_tentative": "अस्थायी रूप से स्वीकार किया गया",
+        "who_set_this": "{{whoSetThis}} इस अपॉइंटमेंट को <strong>{{status}}</strong> के रूप में सेट करें",
+        "organizer_invited_you": "<text>{{organizer}} ने आपको <bold>{{title}}</bold></text> नामक एक आयोजन में आमंत्रित किया है"
     },
     "event": {
         "action": {
@@ -549,7 +554,23 @@
         "Tentative": "सभावित है के साथ स्वीकार किया",
         "Invited_Visitor": "को इन्वाइट किया गया है",
         "Not_answered": "जबाब नहीं दिया",
-        "visitors": "और दूसरे {{others}} व्यक्ति"
+        "visitors": "और दूसरे {{others}} व्यक्ति",
+        "TE_with_count_one": "संभावित",
+        "TE_with_count_other": "संभावित ({{count}})",
+        "AC_with_count_one": "स्वीकृत",
+        "AC_with_count_other": "स्वीकृत ({{count}})",
+        "Attendees_accepted_count_one": "<strong>{{count}} प्रतिभागी</strong> ने स्वीकार कर लिया है।",
+        "Attendees_accepted_count_other": "<strong>{{count}} प्रतिभागियों</strong> ने स्वीकार कर लिया है।",
+        "Attendees_declined_count_one": "<strong>{{count}} प्रतिभागी </strong> ने अस्वीकार कर दिया है",
+        "Attendees_declined_count_other": "<strong>{{count}} प्रतिभागियों</strong> ने स्वीकार कर लिया है।",
+        "Attendees_not_answered_count_one": "<strong>{{count}} उपस्थित लोग </strong> ने उत्तर नहीं दिया है",
+        "Attendees_not_answered_count_other": "<strong>{{count}} उपस्थित लोग </strong> ने उत्तर नहीं दिया है",
+        "Attendees_tentative_count_one": "<strong>{{count}} प्रतिभागी </strong> ने अस्थायी रूप से स्वीकार किया है",
+        "Attendees_tentative_count_other": "<strong>{{count}} प्रतिभागियों </strong> ने अस्थायी रूप से स्वीकार किया है",
+        "DE_with_count_one": "अस्वीकृत",
+        "DE_with_count_other": "अस्वीकृत {{count}}",
+        "NE_with_count_one": "जबाब नहीं दिया",
+        "NE_with_count_other": "{{count}} ने जबाब नहीं दिया"
     },
     "button": {
         "customize_modal": "अनुरूप बनाने का मोडल खोलें"
@@ -747,5 +768,14 @@
         "orange": "केसरी",
         "pink": "गुलाबी",
         "yellow": "पीला"
-    }
+    },
+    "new_appointment": "नई नियुक्ति",
+    "next_day": "अगला दिन",
+    "next_month": "अगला माह",
+    "next_week": "अगले सप्ताह",
+    "previous_day": "पिछला दिन",
+    "previous_month": "पिछला माह",
+    "previous_week": "पिछला सप्ताह",
+    "private_info_tooltip": "जब आप कैलेंडर साझा करते हैं, तो अन्य उपयोगकर्ता आपकी सभी अपॉइंटमेंट के विवरण (शीर्षक, विवरण, और उपस्थित लोग) देख सकते हैं, सिवाय उन अपॉइंटमेंट के जो प्राइवेट के रूप में चिह्नित हैं।\nऐसे प्राइवेट अपॉइंटमेंट के लिए, अन्य उपयोगकर्ता केवल आपका फ्री/बिजी समय देख पाएंगे, लेकिन विवरण नहीं देख पाएंगे।  क्या आप चाहते हैं कि अन्य उपयोगकर्ता आपके प्राइवेट अपॉइंटमेंट का विवरण भी देख सकें?",
+    "public": "सार्वजनिक"
 }
