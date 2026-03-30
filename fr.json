@@ -23,7 +23,9 @@
         "answer": "Réponse",
         "delete": "Supprimer",
         "edit_group": "Modifier le groupe",
-        "edit_and_share_calendar": "Modifier et partager le calendrier"
+        "edit_and_share_calendar": "Modifier et partager le calendrier",
+        "add_ics_from_url": "Ajouter un ICS depuis une URL",
+        "edit_calendar": "Modifier le calendrier"
     },
     "add": "Ajouter",
     "administer": "Administrer",
@@ -375,7 +377,12 @@
         "on": "Les",
         "end_after_events": "Évènement(s)",
         "end_on": "Termine le",
-        "end_after_date": "Date"
+        "end_after_date": "Date",
+        "add": "Ajouter",
+        "external_calendar_event": "Évènement provenant d'un calendrier ajouté à partir une URL",
+        "last_sync": "Dernière synchronisation",
+        "save_changes": "Enregistrer les changements",
+        "sync": "Synchronisation"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -417,7 +424,8 @@
             "group_edited": "Les modifications ont été enregistrées",
             "group_deleted": "Le groupe de calendriers a été supprimé définitivement",
             "new_calendar_added": "Le calendrier a été ajouté avec succès",
-            "external_calendar_syncing": "La synchronisation de calendrier a été lancée"
+            "external_calendar_syncing": "La synchronisation de calendrier a été lancée",
+            "external_calendar_synced": "Le calendrier a été synchronisé avec succès"
         },
         "somebody_is_organizer": "<strong>{{somebody}}</strong> est l'organisateur",
         "sure_to_delete_all_occurences_appointment": "Êtes-vous sûr de vouloir supprimer toutes les occurrences de ce rendez-vous ?",
@@ -936,5 +944,9 @@
         "first": "premier",
         "second": "deuxième",
         "last": "dernier"
+    },
+    "add_ics_from_url": {
+        "calendar_name": "Nom du calendrier*",
+        "url": "URL du calendrier*"
     }
 }
