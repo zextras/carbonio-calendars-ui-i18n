@@ -24,7 +24,8 @@
         "show_original": "Показати оригінал",
         "answer": "Відповідь",
         "edit_group": "Редагування групи",
-        "edit_and_share_calendar": "Редагувати та поділіться календарем"
+        "edit_and_share_calendar": "Редагувати та поділіться календарем",
+        "preview": "Натисніть, щоб переглянути"
     },
     "label": {
         "save": "Зберегти",
@@ -93,5 +94,6 @@
     },
     "allowed_actions": "Дозволені дії",
     "appointments": "Зустрічі",
-    "appt_restored_successfully": "Зустріч успішно відновлена"
+    "appt_restored_successfully": "Зустріч успішно відновлена",
+    "add": "Додати"
 }
