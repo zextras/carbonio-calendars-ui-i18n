@@ -15,7 +15,16 @@
         "calendar_upload": "Імпортувати ICS-файл",
         "download_ics": "Завантажити ICS",
         "add_ics_from_url": "Додати ICS з URL-адреси",
-        "edit_calendar": "Редагувати календар"
+        "edit_calendar": "Редагувати календар",
+        "export_calendar_ics": "Експортувати файл ICS",
+        "move_to_root": "Перемістити в корінь",
+        "send_cancellation": "Відправити скасування",
+        "send_edit": "Відправити редагування",
+        "share_calendar": "Поділитися календарем",
+        "show_original": "Показати оригінал",
+        "answer": "Відповідь",
+        "edit_group": "Редагування групи",
+        "edit_and_share_calendar": "Редагувати та поділіться календарем"
     },
     "label": {
         "save": "Зберегти",
@@ -81,5 +90,8 @@
     "tooltip": {
         "copy_url": "Копіювати URL-адресу",
         "folder_external_status": "Додано з URL-адреси"
-    }
+    },
+    "allowed_actions": "Дозволені дії",
+    "appointments": "Зустрічі",
+    "appt_restored_successfully": "Зустріч успішно відновлена"
 }
