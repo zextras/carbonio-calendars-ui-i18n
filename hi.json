@@ -430,7 +430,21 @@
         "all_time": "ईवेंट के पूरे टाइम पर",
         "modal": {
             "set_new_time_message": "क्या आप मिस हो चुके एपोइंटमेंट के लिए कोई नया टाइम सेट करना चाहते हैं? यदि आप ठीक है पर क्लिक करेंगे तो दूसरे सभी रिमाइन्डर अपने-आप डिसमिस हो जाएंगे।"
-        }
+        },
+        "day_before_one": "{{count}} दिन पहले",
+        "day_before_other": "{{count}} दिन पहले",
+        "hour_before_one": "{{count}} घंटा पहले",
+        "hour_before_other": "{{count}} घंटे पहले",
+        "hours_one": "{{count}} घंटा",
+        "hours_other": "{{count}} घंटे",
+        "minute_before_one": "{{count}} मिनट पहले",
+        "minute_before_other": "{{count}} मिनट पहले",
+        "minutes_one": "{{count}} मिनट",
+        "minutes_other": "{{count}} मिनट",
+        "second_before_one": "{{count}} सेकंड पहले",
+        "second_before_other": "{{count}} सेकंड पहले",
+        "week_before_one": "{{count}} सप्ताह पहले",
+        "week_before_other": "{{count}} सप्ताह पहले"
     },
     "repeat": {
         "daily": "प्रतिदिन",
