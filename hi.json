@@ -254,7 +254,19 @@
         "fix_input_errors_to_save": "सहेजने के लिए इनपुट त्रुटियों को ठीक करें।",
         "fix_input_errors_to_send": "इनपुट त्रुटियों को ठीक करें और भेजें",
         "room_request_not_sent": "आप अभी तक संसाधनों के लिए अनुरोध नहीं भेजे हैं",
-        "generic_invitation_not_sent": "आपने अभी तक निमंत्रण नहीं भेजा है।"
+        "generic_invitation_not_sent": "आपने अभी तक निमंत्रण नहीं भेजा है।",
+        "repeat_every": "प्रत्येक पर दोहराएँ",
+        "day_of_month_recurrence": "महीने का {{day}}",
+        "ordinal_weekday_of_month": "हर महीने का {{ordinal}} {{weekday}}",
+        "on": "चालू",
+        "end_after_events": "कार्यक्रम",
+        "end_on": "समापन",
+        "end_after_date": "तारीख",
+        "add": "जोड़ें",
+        "external_calendar_event": "URL से जोड़े गए कैलेंडर का ईवेंट",
+        "last_sync": "अंतिम सिंक",
+        "save_changes": "परिवर्तन सहेजें",
+        "sync": "सिंक"
     },
     "action": {
         "send": "भेजें",
@@ -280,7 +292,9 @@
         "delete": "मिटाना",
         "answer": "जबाब दें",
         "edit_group": "समूह संपादित करें",
-        "edit_and_share_calendar": "कैलेंडर संपादित करें और साझा करें"
+        "edit_and_share_calendar": "कैलेंडर संपादित करें और साझा करें",
+        "add_ics_from_url": "लिंक के जरिए ICS जोड़ना”",
+        "edit_calendar": "कैलेंडर संपादित करें"
     },
     "message": {
         "you": "आप",
@@ -313,7 +327,10 @@
             "shared_calendar_removed": "कैलेंडर सफलतापूर्वक हटा दिया गया है",
             "group_edited": "बदलाव सेव किए गए",
             "new_group_created": "नया समूह बनाया गया",
-            "group_deleted": "कैलेंडर समूह स्थायी रूप से हटा दिया गया"
+            "group_deleted": "कैलेंडर समूह स्थायी रूप से हटा दिया गया",
+            "external_calendar_synced": "कैलेंडर सफलतापूर्वक सिंक हो गया",
+            "external_calendar_syncing": "कैलेंडर सिंक शुरू हो गया है",
+            "new_calendar_added": "कैलेंडर सफलतापूर्वक जोड़ दिया गया है"
         },
         "somebody_is_organizer": "ऑर्गनाइज़र <strong>{{somebody}}</strong> है",
         "are_organizer": "वाक्य इस तरह से माना जाएगा मानो आप ऑर्गनाइज़र हों",
@@ -466,7 +483,8 @@
         "everyYear": "हर साल",
         "days_plural": "दिन",
         "weeks_plural": "सप्ताहों",
-        "months_plural": "महीने"
+        "months_plural": "महीने",
+        "years_plural": "वर्ष"
     },
     "settings": {
         "options": {
@@ -658,7 +676,9 @@
         "folder_sharing_status_one": "{{count}} व्यक्ति के साथ साझा किया गया",
         "folder_sharing_status_other": "{{count}} व्यक्तियों के साथ शेयर किया गया",
         "copy_webcal_url": "वेबकैल यूआरएल की प्रतिलिपि बनाएं",
-        "copy_caldav_url": "CalDAV यूआरएल कॉपी करें"
+        "copy_caldav_url": "CalDAV यूआरएल कॉपी करें",
+        "copy_url": "लिंक कॉपी करें",
+        "folder_external_status": "लिंक से जोड़ा गया"
     },
     "remove_from_this_list": "इस लिस्ट से हटाएँ",
     "resend_mail_notification_about_this_share": "इस शेयर के बारे में ई-मेल नोटिफिकेशन भेजें",
@@ -888,5 +908,21 @@
     "duplicate_equipment_error": "एक या एक से अधिक उपकरणों की वस्तुओं का चयन कई बार किया गया है। डुप्लिकेट को हटाने पर विचार करें।",
     "equipment_invalid": "एक या एक से अधिक उपकरण अमान्य हैं। उन्हें संपादित करने या एक नया दर्ज करने का प्रयास करें।",
     "rooms_invalid": "एक या एक से अधिक मीटिंग रूम अमान्य हैं। उन्हें संपादित करने या एक नया दर्ज करने का प्रयास करें।",
-    "reset_date": "रीसेट तिथि"
+    "reset_date": "रीसेट तिथि",
+    "ordinal": {
+        "suffix": {
+            "th": "थ",
+            "st": "st",
+            "nd": "nd",
+            "rd": "आरडी"
+        },
+        "third": "तीसरा",
+        "first": "पहला",
+        "second": "दूसरा",
+        "last": "अंतिम"
+    },
+    "add_ics_from_url": {
+        "calendar_name": "कैलेंडर नाम",
+        "url": "कैलेंडर URL"
+    }
 }
