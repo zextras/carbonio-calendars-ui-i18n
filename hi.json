@@ -230,7 +230,7 @@
         "duplicate_resource": "इस संसाधन का चयन कई बार किया गया",
         "show_more": "+ {{count}} और अधिक",
         "show_all_events": "सभी घटनाएँ दिखाएँ",
-        "close": "बंद",
+        "close": "बंद करें",
         "splitLayoutDisabledTooltip": "वर्तमान दृश्य में विभाजित लेआउट उपलब्ध नहीं है",
         "email_attendees": "सभी उपस्थित लोगों को ईमेल करें",
         "recurrent": "पुनरावृत्ति नियुक्ति",
