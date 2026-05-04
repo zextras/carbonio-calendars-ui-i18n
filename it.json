@@ -35,7 +35,7 @@
         "at_time_of_event": "Al momento dell'evento",
         "all_time": "Per tutta la durata dell'evento",
         "modal": {
-            "set_new_time_message": "Vuoi proporre un nuovo orario per l'appuntamento mancato? Se selezioni OK, tutti i relativi promemoria verranno automaticamente cancellati."
+            "set_new_time_message": "Sei sicuro di voler riprogrammare l'appuntamento mancato? Se fai clic su OK, tutti gli altri promemoria verranno annullati automaticamente."
         },
         "minute_before_one": "{{count}} minuto prima",
         "minute_before_many": "{{count}} minuti prima",
@@ -593,7 +593,7 @@
     "share": {
         "options": {
             "share_calendar_with": {
-                "public": "Condividi col pubblico (solo visualizzazione, password non richiesta)",
+                "public": "Pubblico (solo visualizzazione, password non richiesta)",
                 "external_guests": "Invitati Esterni (solo visualizzazione)",
                 "internal_users_groups": "Utenti Interni o Gruppi"
             },
@@ -868,7 +868,7 @@
     },
     "appointment": {
         "virtualRoom": {
-            "displayerLink": "Unisciti alla Stanza Virtuale"
+            "displayerLink": "Accedi alla Virtual Room"
         }
     },
     "api": {
