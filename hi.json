@@ -239,7 +239,7 @@
         "cannot_send": "इस घटना के लिए भेजने की सुविधा अक्षम कर दी गई है",
         "no_recipients": "कम से कम एक भागीदार या संसाधन जोड़ने के लिए भेजें",
         "add_event_title_to_send": "भेजने के लिए इवेंट का शीर्षक जोड़ें",
-        "add_event_title_to_save": "इवेंट शीर्षक जोड़ें और सहेजें",
+        "add_event_title_to_save": "सहेजने के लिए इवेंट का शीर्षक जोड़ें।",
         "duplicate_shares": "आपने पहले से ही इस कैलेंडर को एक या एक से अधिक उपयोगकर्ताओं के साथ साझा कर दिया है",
         "duplicate_share_info": "आप पहले से ही इस कैलेंडर को एक या एक से अधिक उपयोगकर्ताओं के साथ साझा कर चुके हैं। भूमिका बदलने या किसी अन्य पते पर टाइप करने का प्रयास करें।",
         "duplicate_share": "आप पहले से ही इस कैलेंडर को इस उपयोगकर्ता के साथ साझा कर चुके हैं",
@@ -370,7 +370,7 @@
         "meeting_modified": "निम्न मीटिंग बदल दी गई है",
         "want_to_edit_modified_msg": "बदलाव मीटिंग अटेंड करने वालों को ईमेल के जरिए सूचित कर दिए जाएंगे। क्या आप कोई कस्टम मैसेज डालना चाहते हैं?",
         "copy": "कॉपी करें",
-        "import_appointment_modal": "{{fileName}} में निहित नियुक्तियाँ \"{{calendarName}}\" कैलेंडर में आयात की जाएंगी।",
+        "import_appointment_modal": "{{fileName}} में मौजूद नियुक्तियाँ \"{{calendarName}}\" कैलेंडर में आयात की जाएँगी।",
         "optional_participant_one": "{{count}} वैकल्पिक",
         "optional_participant_other": "{{count}} वैकल्पिक",
         "required_participant_one": "{{count}} प्रतिभागी",
@@ -383,7 +383,7 @@
         "you_declined": "आपने अस्वीकार कर दिया",
         "you_accepted_as_tentative": "अस्थायी रूप से स्वीकार किया गया",
         "who_set_this": "{{whoSetThis}} इस अपॉइंटमेंट को <strong>{{status}}</strong> के रूप में सेट करें",
-        "organizer_invited_you": "<text>{{organizer}} ने आपको <bold>{{title}}</bold></text> नामक एक आयोजन में आमंत्रित किया है"
+        "organizer_invited_you": "<text>{{organizer}} ने आपको एक कार्यक्रम में आमंत्रित किया <bold>{{title}}</bold></text>"
     },
     "event": {
         "action": {
