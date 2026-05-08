@@ -228,7 +228,25 @@
         "webcal_url": "URL WebCAL",
         "resources_load_error": "Não foi possível carregar 'Sala de Reuniões' e 'Equipamentos'. Tente fechar e abrir a janela novamente.",
         "loading_resources": "Carregando “Sala de reunião” e “Equipamento”. Por favor, aguarde...",
-        "duplicate_resource": "Este recurso foi selecionado várias vezes"
+        "duplicate_resource": "Este recurso foi selecionado várias vezes",
+        "show_more": "+ mais {{count}}",
+        "show_all_events": "Mostrar todos os eventos",
+        "close": "Fechar",
+        "splitLayoutDisabledTooltip": "Layout dividido não disponível na visualização atual",
+        "email_attendees": "Enviar e-mail aos participantes",
+        "recurrent": "Compromisso recorrente",
+        "disableSplitLayoutTooltip": "Desativar layout dividido",
+        "enableSplitLayoutTooltip": "Ativar layout dividido",
+        "cannot_send": "O envio está desativado para este evento",
+        "no_recipients": "Adicione pelo menos um participante ou recurso para enviar",
+        "add_event_title_to_send": "Adicione o título do evento para enviar",
+        "add_event_title_to_save": "Adicione o título do evento para salvar",
+        "duplicate_shares": "Você já compartilhou este calendário com um ou mais usuários",
+        "duplicate_share_info": "Você já compartilhou este calendário com um ou mais usuários. Tente alterar a função ou digitar outro endereço.",
+        "duplicate_share": "Você já compartilhou este calendário com este usuário",
+        "no_changes": "Você ainda não fez nenhuma alteração",
+        "confirm": "Confirmar",
+        "reschedule_appointment": "Reagendar compromisso"
     },
     "action": {
         "send": "Enviar",
@@ -393,7 +411,13 @@
         "required_participant_one": "{{count}} Participante",
         "required_participant_many": "{{count}} Participantes",
         "required_participant_other": "{{count}} Participantes",
-        "somebody_invited_owner": "<strong>{{somebody}}</strong> convidou {{owner}}"
+        "somebody_invited_owner": "<strong>{{somebody}}</strong> convidou {{owner}}",
+        "the_organizer": "O organizador",
+        "you_did_not_answer": "Você não respondeu",
+        "you_accepted": "Você aceitou",
+        "you_declined": "Você recusou",
+        "who_set_this": "{{whoSetThis}} definiu este compromisso como <strong>{{status}}</strong>",
+        "organizer_invited_you": "<text>{{organizer}} convidou você para um evento <bold>{{title}}</bold></text>"
     },
     "months": {
         "april": "Abril",
@@ -838,5 +862,16 @@
         "from": "de",
         "to": "às",
         "end_time": "Hora de término"
+    },
+    "colors": {
+        "black": "Preto",
+        "purple": "Roxo",
+        "blue": "Azul",
+        "cyan": "Ciano",
+        "red": "Vermelho",
+        "green": "Verde",
+        "orange": "Laranja",
+        "pink": "Rosa",
+        "yellow": "Amarelo"
     }
 }
