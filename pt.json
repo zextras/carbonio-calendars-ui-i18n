@@ -221,7 +221,14 @@
         "editgroup": {
             "calendars": "Calendário neste grupo"
         },
-        "group_not_found": "Grupo não localizado"
+        "group_not_found": "Grupo não localizado",
+        "invalid_query": "Caracteres especiais como :, \", -, ! etc. são ignorados na pesquisa. Isso pode levar a resultados inesperados para:",
+        "show_event_detail": "Mostrar detalhes",
+        "caldav_url": "URL CalDAV",
+        "webcal_url": "URL WebCAL",
+        "resources_load_error": "Não foi possível carregar 'Sala de Reuniões' e 'Equipamentos'. Tente fechar e abrir a janela novamente.",
+        "loading_resources": "Carregando “Sala de reunião” e “Equipamento”. Por favor, aguarde...",
+        "duplicate_resource": "Este recurso foi selecionado várias vezes"
     },
     "action": {
         "send": "Enviar",
