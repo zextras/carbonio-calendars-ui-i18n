@@ -28,7 +28,8 @@
         "copy_caldav_url": "Copia CalDAV url",
         "copy_webcal_url": "Copia WebCAL url",
         "copy_url": "Copia URL",
-        "folder_external_status": "Aggiunto tramite URL"
+        "folder_external_status": "Aggiunto tramite URL",
+        "readonly_action": "Questo calendario è in sola lettura"
     },
     "reminder": {
         "never": "Mai",
@@ -128,7 +129,9 @@
             "new_group_created": "Nuovo gruppo creato",
             "external_calendar_synced": "Calendario sincronizzato con successo",
             "external_calendar_syncing": "Sincronizzazione del calendario iniziata",
-            "new_calendar_added": "Calendario aggiunto con successo"
+            "new_calendar_added": "Calendario aggiunto con successo",
+            "caldav_calendars_synced": "Calendari sincronizzati con successo",
+            "caldav_calendars_syncing": "Sincronizzazione dei calendari iniziata"
         },
         "share_calendar_url_note2": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL.<br/> Puoi trovare questi collegamenti anche con un clic destro del mouse sull'elenco dei calendari.",
         "share_calendar_url_note": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL.",
@@ -451,7 +454,10 @@
         "external_calendar_event": "Evento di un calendario aggiunto tramite URL",
         "last_sync": "Ultima sincronizzazione",
         "save_changes": "Salva modifiche",
-        "sync": "Sincronizza"
+        "sync": "Sincronizza",
+        "deleting_please_wait": "Eliminazione in corso, per favore attendi...",
+        "loading_please_wait": "Caricamento in corso, per favore attendi...",
+        "yes_delete": "Sì, elimina"
     },
     "action": {
         "send": "Invia",
@@ -479,7 +485,9 @@
         "edit_group": "Modifica gruppo",
         "edit_and_share_calendar": "Modifica e condividi calendario",
         "add_ics_from_url": "Aggiungi ICS tramite URL",
-        "edit_calendar": "Modifica calendario"
+        "edit_calendar": "Modifica calendario",
+        "add_external_calendars": "Aggiungi calendari esterni",
+        "edit_name": "Modifica nome"
     },
     "button": {
         "customize_modal": "Personalizza"
@@ -951,5 +959,14 @@
     "add_ics_from_url": {
         "calendar_name": "Nome del calendario*",
         "url": "URL del calendario*"
-    }
+    },
+    "add_external_calendar": {
+        "caldav": {
+            "calendar_name": "Nome dei calendari",
+            "host": "Indirizzo host (calendar.example.com)",
+            "password": "Password",
+            "username": "Nome utente"
+        }
+    },
+    "cannot_edit_caldav_readonly": "Non puoi modificare il nome di questo calendario"
 }
