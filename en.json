@@ -25,7 +25,9 @@
         "edit_group": "Edit group",
         "edit_and_share_calendar": "Edit and share calendar",
         "add_ics_from_url": "Add ICS from URL",
-        "edit_calendar": "Edit calendar"
+        "edit_calendar": "Edit calendar",
+        "add_external_calendars": "Add external calendars",
+        "edit_name": "Edit name"
     },
     "add": "Add",
     "administer": "Administer",
@@ -393,7 +395,10 @@
         "external_calendar_event": "Event from a calendar added from URL",
         "last_sync": "Last sync",
         "save_changes": "Save changes",
-        "sync": "Sync"
+        "sync": "Sync",
+        "deleting_please_wait": "Deleting, please wait...",
+        "loading_please_wait": "Loading, please wait...",
+        "yes_delete": "Yes, delete"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -461,7 +466,9 @@
             "group_deleted": "Calendar group permanently deleted",
             "external_calendar_synced": "Calendar synced successfully",
             "external_calendar_syncing": "Calendar sync has started",
-            "new_calendar_added": "Calendar added successfully"
+            "new_calendar_added": "Calendar added successfully",
+            "caldav_calendars_synced": "Calendars synced successfully",
+            "caldav_calendars_syncing": "Calendars sync has started"
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
@@ -822,7 +829,8 @@
         "copy_webcal_url": "Copy WebCAL url",
         "copy_caldav_url": "Copy CalDAV url",
         "copy_url": "Copy URL",
-        "folder_external_status": "Added from URL"
+        "folder_external_status": "Added from URL",
+        "readonly_action": "This calendar is read-only"
     },
     "type": "Type",
     "workflow": "WorkFlow",
@@ -928,5 +936,14 @@
     "add_ics_from_url": {
         "calendar_name": "Calendar name*",
         "url": "Calendar URL*"
-    }
+    },
+    "add_external_calendar": {
+        "caldav": {
+            "calendar_name": "Calendars' name",
+            "host": "Host address (calendar.example.com)",
+            "password": "Password",
+            "username": "Username"
+        }
+    },
+    "cannot_edit_caldav_readonly": "You cannot edit the name of this calendar"
 }
