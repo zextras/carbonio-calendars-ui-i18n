@@ -246,7 +246,8 @@
         "duplicate_share": "Você já compartilhou este calendário com este usuário",
         "no_changes": "Você ainda não fez nenhuma alteração",
         "confirm": "Confirmar",
-        "reschedule_appointment": "Reagendar compromisso"
+        "reschedule_appointment": "Reagendar compromisso",
+        "hide_event_detail": "Ocultar detalhes"
     },
     "action": {
         "send": "Enviar",
@@ -417,7 +418,8 @@
         "you_accepted": "Você aceitou",
         "you_declined": "Você recusou",
         "who_set_this": "{{whoSetThis}} definiu este compromisso como <strong>{{status}}</strong>",
-        "organizer_invited_you": "<text>{{organizer}} convidou você para um evento <bold>{{title}}</bold></text>"
+        "organizer_invited_you": "<text>{{organizer}} convidou você para um evento <bold>{{title}}</bold></text>",
+        "you_accepted_as_tentative": "Você aceitou como tentativa"
     },
     "months": {
         "april": "Abril",
