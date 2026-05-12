@@ -398,7 +398,10 @@
         "sync": "Sync",
         "deleting_please_wait": "Deleting, please wait...",
         "loading_please_wait": "Loading, please wait...",
-        "yes_delete": "Yes, delete"
+        "yes_delete": "Yes, delete",
+        "close_appointment_editor": "Unsaved changes",
+        "keep_editing": "Keep editing",
+        "save_and_close": "Save and close"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -491,7 +494,8 @@
         "you_declined": "You declined",
         "you_accepted_as_tentative": "You accepted as tentative",
         "who_set_this": "{{whoSetThis}} set this appointment as <strong>{{status}}</strong>",
-        "organizer_invited_you": "<text>{{organizer}} invited you to an event <bold>{{title}}</bold></text>"
+        "organizer_invited_you": "<text>{{organizer}} invited you to an event <bold>{{title}}</bold></text>",
+        "close_appointment_editor_confirmation": "Your appointment has unsaved changes. Closing the editor now will discard them."
     },
     "messages": {
         "format_as_plain_text": "Format as Plain Text",
