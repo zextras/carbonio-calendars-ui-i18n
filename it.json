@@ -183,7 +183,8 @@
         "you_declined": "Hai declinato",
         "the_organizer": "L'organizzatore",
         "who_set_this": "{{whoSetThis}} ha impostato questo appuntamento come <strong>{{status}}</strong>",
-        "organizer_invited_you": "<text>{{organizer}} ti ha invitato a un evento <bold>{{title}}</bold></text>"
+        "organizer_invited_you": "<text>{{organizer}} ti ha invitato a un evento <bold>{{title}}</bold></text>",
+        "close_appointment_editor_confirmation": "Il tuo appuntamento ha delle modifiche non salvate. Chiudere l'editor le annullerà."
     },
     "label": {
         "to": "A",
@@ -457,7 +458,10 @@
         "sync": "Sincronizza",
         "deleting_please_wait": "Eliminazione in corso, per favore attendi...",
         "loading_please_wait": "Caricamento in corso, per favore attendi...",
-        "yes_delete": "Sì, elimina"
+        "yes_delete": "Sì, elimina",
+        "close_appointment_editor": "Modifiche non salvate",
+        "keep_editing": "Continua a modificare",
+        "save_and_close": "Salva e chiudi"
     },
     "action": {
         "send": "Invia",
