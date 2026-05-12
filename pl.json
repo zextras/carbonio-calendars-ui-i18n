@@ -25,7 +25,9 @@
         "edit_group": "Edytuj grupę",
         "edit_and_share_calendar": "Edytuj i udostępnij kalendarz",
         "add_ics_from_url": "Dodaj ICS poprzez URL",
-        "edit_calendar": "Edytuj kalendarz"
+        "edit_calendar": "Edytuj kalendarz",
+        "add_external_calendars": "Dodaj kalendarze zewnętrzne",
+        "edit_name": "Edytuj nazwę"
     },
     "event": {
         "action": {
@@ -347,7 +349,10 @@
         "external_calendar_event": "Wydarzenie z kalendarza dodanego poprzez URL",
         "last_sync": "Ostatnia",
         "save_changes": "Zapisz zmiany",
-        "sync": "Synchronizuj"
+        "sync": "Synchronizuj",
+        "deleting_please_wait": "Usuwanie...",
+        "loading_please_wait": "Ładowanie...",
+        "yes_delete": "Tak, usuń"
     },
     "message": {
         "modal": {
@@ -402,7 +407,9 @@
             "group_deleted": "Grupa kalendarzy została trwale usunięta",
             "external_calendar_synced": "Kalendarz został zsynchronizowany",
             "external_calendar_syncing": "Synchronizacja kalendarza została rozpoczęta",
-            "new_calendar_added": "Kalendarz został dodany"
+            "new_calendar_added": "Kalendarz został dodany",
+            "caldav_calendars_synced": "Kalendarze zostały zsynchronizowane",
+            "caldav_calendars_syncing": "Rozpoczęto synchronizację kalendarzy"
         },
         "sure_to_delete_appointment_permanently": "Na pewno chcesz trwale usunąć to spotkanie?",
         "want_to_send_cancellation_msg": "Czy chcesz wysłać wiadomość dot. anulacji spotkania do uczestników?",
@@ -818,7 +825,8 @@
         "copy_webcal_url": "Skopiuj URL WebCAL",
         "copy_caldav_url": "Skopiuj URL CalDAV",
         "copy_url": "Skopiuj URL",
-        "folder_external_status": "Dodane poprzez URL"
+        "folder_external_status": "Dodane poprzez URL",
+        "readonly_action": "Ten kalendarz można tylko wyświetlać"
     },
     "type": "Typ",
     "workflow": "Organizacja pracy",
@@ -951,5 +959,14 @@
     "add_ics_from_url": {
         "calendar_name": "Nazwa kalendarza*",
         "url": "URL kalendarza*"
-    }
+    },
+    "add_external_calendar": {
+        "caldav": {
+            "calendar_name": "Nazwa kalendarza",
+            "host": "Adres hosta (kalendarz.przyklad.com)",
+            "password": "Hasło",
+            "username": "Nazwa użytkownika"
+        }
+    },
+    "cannot_edit_caldav_readonly": "Nie możesz edytować nazwy tego kalendarza"
 }
