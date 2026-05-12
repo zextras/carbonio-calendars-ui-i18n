@@ -473,7 +473,7 @@
         "at_time_of_event": "Na hora do evento",
         "all_time": "Toda a duração do evento",
         "modal": {
-            "set_new_time_message": "Deseja definir um novo horário para o compromisso perdido? Se você clicar em OK, todos os lembretes serão automaticamente descartados."
+            "set_new_time_message": "Você tem certeza de que deseja reagendar o compromisso perdido? Se clicar em OK, todos os outros lembretes serão dispensados automaticamente."
         },
         "minute_before_one": "{{count}} minuto antes",
         "minute_before_many": "{{count}} minutos antes",
