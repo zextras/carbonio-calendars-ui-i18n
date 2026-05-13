@@ -269,7 +269,10 @@
         "sync": "सिंक",
         "deleting_please_wait": "हटा रहा है, कृपया प्रतीक्षा करें..।",
         "loading_please_wait": "लोड हो रहा है, कृपया प्रतीक्षा करें..।",
-        "yes_delete": "हाँ, हटाएँ"
+        "yes_delete": "हाँ, हटाएँ",
+        "close_appointment_editor": "असहेजे परिवर्तन",
+        "keep_editing": "संपादन जारी रखें",
+        "save_and_close": "सहेजें और बंद करें"
     },
     "action": {
         "send": "भेजें",
@@ -390,7 +393,8 @@
         "you_declined": "आपने अस्वीकार कर दिया",
         "you_accepted_as_tentative": "अस्थायी रूप से स्वीकार किया गया",
         "who_set_this": "{{whoSetThis}} इस अपॉइंटमेंट को <strong>{{status}}</strong> के रूप में सेट करें",
-        "organizer_invited_you": "<text>{{organizer}} ने आपको एक कार्यक्रम में आमंत्रित किया <bold>{{title}}</bold></text>"
+        "organizer_invited_you": "<text>{{organizer}} ने आपको एक कार्यक्रम में आमंत्रित किया <bold>{{title}}</bold></text>",
+        "close_appointment_editor_confirmation": "आपकी नियुक्ति में सहेजे न गए परिवर्तन हैं। अभी संपादक बंद करने से वे निरस्त हो जाएंगे।"
     },
     "event": {
         "action": {
