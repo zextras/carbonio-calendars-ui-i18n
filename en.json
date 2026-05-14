@@ -392,7 +392,7 @@
         "end_on": "End on",
         "end_after_date": "Date",
         "add": "Add",
-        "external_calendar_event": "Event from a calendar added from URL",
+        "external_calendar_event": "Event from an ICS calendar added from URL",
         "last_sync": "Last sync",
         "save_changes": "Save changes",
         "sync": "Sync",
@@ -401,7 +401,8 @@
         "yes_delete": "Yes, delete",
         "close_appointment_editor": "Unsaved changes",
         "keep_editing": "Keep editing",
-        "save_and_close": "Save and close"
+        "save_and_close": "Save and close",
+        "type": "Type"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -471,7 +472,8 @@
             "external_calendar_syncing": "Calendar sync has started",
             "new_calendar_added": "Calendar added successfully",
             "caldav_calendars_synced": "Calendars synced successfully",
-            "caldav_calendars_syncing": "Calendars sync has started"
+            "caldav_calendars_syncing": "Calendars sync has started",
+            "caldav_first_sync_started": "First sync has started and may take a while. You will be notified once its complete"
         },
         "somebody_invited_you": "<strong>{{somebody}}</strong> invited you",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> is the organizer",
@@ -833,7 +835,7 @@
         "copy_webcal_url": "Copy WebCAL url",
         "copy_caldav_url": "Copy CalDAV url",
         "copy_url": "Copy URL",
-        "folder_external_status": "Added from URL",
+        "folder_external_status": "ICS calendar added from URL",
         "readonly_action": "This calendar is read-only"
     },
     "type": "Type",
@@ -946,7 +948,15 @@
             "calendar_name": "Calendars' name",
             "host": "Host address (calendar.example.com)",
             "password": "Password",
-            "username": "Username"
+            "username": "Username",
+            "no_credentials": "This host does not require credentials",
+            "calendar_name_hint": "Choose a name to identify all calendars from this host",
+            "host_name_hint": "Added calendars will be read-only and will sync every 12 hours"
+        },
+        "error": {
+            "caldav_server_unavailable": "Server is currently unavailable, please try again",
+            "caldav_auth_failed": "Authentication failed. Please check your username and password",
+            "caldav_host_unreachable": "This host address could not be reached"
         }
     },
     "cannot_edit_caldav_readonly": "You cannot edit the name of this calendar"
