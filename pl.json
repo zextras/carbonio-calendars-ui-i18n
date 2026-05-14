@@ -346,13 +346,17 @@
         "end_on": "Zakończ",
         "end_after_date": "Data",
         "add": "Dodaj",
-        "external_calendar_event": "Wydarzenie z kalendarza dodanego poprzez URL",
+        "external_calendar_event": "Wydarzenie z kalendarza ICS dodanego poprzez URL",
         "last_sync": "Ostatnia",
         "save_changes": "Zapisz zmiany",
         "sync": "Synchronizuj",
         "deleting_please_wait": "Usuwanie...",
         "loading_please_wait": "Ładowanie...",
-        "yes_delete": "Tak, usuń"
+        "yes_delete": "Tak, usuń",
+        "type": "Typ",
+        "close_appointment_editor": "Niezapisane zmiany",
+        "keep_editing": "Edytuj dalej",
+        "save_and_close": "Zapisz i zamknij"
     },
     "message": {
         "modal": {
@@ -409,7 +413,8 @@
             "external_calendar_syncing": "Synchronizacja kalendarza została rozpoczęta",
             "new_calendar_added": "Kalendarz został dodany",
             "caldav_calendars_synced": "Kalendarze zostały zsynchronizowane",
-            "caldav_calendars_syncing": "Rozpoczęto synchronizację kalendarzy"
+            "caldav_calendars_syncing": "Rozpoczęto synchronizację kalendarzy",
+            "caldav_first_sync_started": "Pierwsza synchronizacja się rozpoczęła i może chwilę potrwać. Dostaniesz powiadomienie, kiedy będzie ukończona"
         },
         "sure_to_delete_appointment_permanently": "Na pewno chcesz trwale usunąć to spotkanie?",
         "want_to_send_cancellation_msg": "Czy chcesz wysłać wiadomość dot. anulacji spotkania do uczestników?",
@@ -445,7 +450,8 @@
         "you_declined": "Odrzuciłeś",
         "who_set_this": "{{whoSetThis}} ustawił(a) to spotkanie jako <strong>{{status}}</strong>",
         "you_accepted_as_tentative": "Zaakceptowałeś jako niepewne",
-        "organizer_invited_you": "<text>{{organizer}} zaprosił(a) Cię na wydarzenie <bold>{{title}}</bold></text>"
+        "organizer_invited_you": "<text>{{organizer}} zaprosił(a) Cię na wydarzenie <bold>{{title}}</bold></text>",
+        "close_appointment_editor_confirmation": "Twoje spotkanie ma niezapisane zmiany. Zamknięcie edytora odrzuci te zmiany."
     },
     "participants": {
         "Accepted": "Zaakceptowano",
@@ -825,7 +831,7 @@
         "copy_webcal_url": "Skopiuj URL WebCAL",
         "copy_caldav_url": "Skopiuj URL CalDAV",
         "copy_url": "Skopiuj URL",
-        "folder_external_status": "Dodane poprzez URL",
+        "folder_external_status": "Kalendarz ICS dodany poprzez URL",
         "readonly_action": "Ten kalendarz można tylko wyświetlać"
     },
     "type": "Typ",
@@ -965,7 +971,15 @@
             "calendar_name": "Nazwa kalendarza",
             "host": "Adres hosta (kalendarz.przyklad.com)",
             "password": "Hasło",
-            "username": "Nazwa użytkownika"
+            "username": "Nazwa użytkownika",
+            "no_credentials": "Ten host nie wymaga danych logowania",
+            "calendar_name_hint": "Wybierz nazwę dla wszystkich kalendarzy tego hosta",
+            "host_name_hint": "Dodane kalendarze będzie można tylko wyświetlać i będą się one synchronizować co 12 godzin"
+        },
+        "error": {
+            "caldav_server_unavailable": "Serwer jest aktualnie niedostępny, spróbuj ponownie",
+            "caldav_auth_failed": "Uwierzytelnianie się nie powiodło. Sprawdź swoją nazwę użytkownika i hasło",
+            "caldav_host_unreachable": "Nie udało się osiągnąć tego adresu hosta"
         }
     },
     "cannot_edit_caldav_readonly": "Nie możesz edytować nazwy tego kalendarza"
