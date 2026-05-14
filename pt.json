@@ -247,7 +247,35 @@
         "no_changes": "Você ainda não fez nenhuma alteração",
         "confirm": "Confirmar",
         "reschedule_appointment": "Reagendar compromisso",
-        "hide_event_detail": "Ocultar detalhes"
+        "hide_event_detail": "Ocultar detalhes",
+        "repeat_every": "Repetir a cada",
+        "day_of_month_recurrence": "{{day}} dia do mês",
+        "ordinal_weekday_of_month": "Todo(a) {{ordinal}} {{weekday}} do mês",
+        "on": "Em",
+        "end_after_events": "Evento(s)",
+        "end_on": "Terminar em",
+        "end_after_date": "Data",
+        "add": "Adicionar",
+        "external_calendar_event": "Evento de um calendário ICS adicionado a partir de um URL",
+        "last_sync": "Última sincronização",
+        "save_changes": "Salvar alterações",
+        "sync": "Sincronizar",
+        "deleting_please_wait": "Excluindo, aguarde...",
+        "loading_please_wait": "Carregando, aguarde...",
+        "yes_delete": "Sim, excluir",
+        "close_appointment_editor": "Alterações não salvas",
+        "keep_editing": "Continuar editando",
+        "save_and_close": "Salvar e fechar",
+        "type": "Tipo",
+        "empty_group_calendars_list": "Ainda não há calendários neste grupo.",
+        "calendars_group_selector": {
+            "placeholder": "Digite um calendário"
+        },
+        "cannot_save": "O salvamento está desativado para este evento",
+        "fix_input_errors_to_save": "Corrija os erros de entrada para salvar",
+        "fix_input_errors_to_send": "Corrija os erros de entrada para enviar",
+        "room_request_not_sent": "Você ainda não enviou a solicitação de recursos",
+        "generic_invitation_not_sent": "Você ainda não enviou o convite"
     },
     "action": {
         "send": "Enviar",
@@ -273,7 +301,11 @@
         "answer": "Responder",
         "delete": "Excluir",
         "edit_group": "Editar grupo",
-        "edit_and_share_calendar": "Editar e compartilhar calendário"
+        "edit_and_share_calendar": "Editar e compartilhar calendário",
+        "add_ics_from_url": "Adicionar ICS a partir de URL",
+        "edit_calendar": "Editar calendário",
+        "add_external_calendars": "Adicionar calendários externos",
+        "edit_name": "Editar nome"
     },
     "event": {
         "action": {
@@ -368,7 +400,13 @@
             "shared_calendar_removed": "Calendário removido corretamente",
             "group_edited": "Alterações armazenadas",
             "new_group_created": "Novo grupo criado",
-            "group_deleted": "Grupo de calendário excluído permanentemente"
+            "group_deleted": "Grupo de calendário excluído permanentemente",
+            "external_calendar_synced": "Calendário sincronizado com sucesso",
+            "external_calendar_syncing": "A sincronização do calendário foi iniciada",
+            "new_calendar_added": "Calendário adicionado com sucesso",
+            "caldav_calendars_synced": "Calendários sincronizados com sucesso",
+            "caldav_calendars_syncing": "A sincronização dos calendários foi iniciada",
+            "caldav_first_sync_started": "A primeira sincronização foi iniciada e pode demorar um pouco. Você será notificado assim que ela for concluída"
         },
         "share_calendar_url_note2": "Apenas seus colaboradores podem acessar seus dados usando essas URLs.<br/>Também é possível encontrar esses links clicando com o botão direito em sua lista de calendários.",
         "delete_all_occurences": "Excluir todas as ocorrências",
@@ -419,7 +457,8 @@
         "you_declined": "Você recusou",
         "who_set_this": "{{whoSetThis}} definiu este compromisso como <strong>{{status}}</strong>",
         "organizer_invited_you": "<text>{{organizer}} convidou você para um evento <bold>{{title}}</bold></text>",
-        "you_accepted_as_tentative": "Você aceitou como tentativa"
+        "you_accepted_as_tentative": "Você aceitou como tentativa",
+        "close_appointment_editor_confirmation": "Seu compromisso tem alterações não salvas. Fechar o editor agora irá descartá-las."
     },
     "months": {
         "april": "Abril",
@@ -505,7 +544,11 @@
         "everyYear": "Todo ano",
         "monthly": "Mensalmente",
         "yearly": "Anualmente",
-        "weekly": "Semanalmente"
+        "weekly": "Semanalmente",
+        "days_plural": "Dia(s)",
+        "weeks_plural": "Semana(s)",
+        "months_plural": "Mês(es)",
+        "years_plural": "Ano(s)"
     },
     "settings": {
         "options": {
@@ -556,7 +599,8 @@
         },
         "invalid_email": "Não é um e-mail válido",
         "permissions_note": "Os usuários abaixo devem fazer parte deste sistema de e-mail (zextras.com). Você pode usar o endereço de e-mail completo ou apenas o nome de usuário.",
-        "ical_note": "iCal da Apple pode ser configurado para acessar seus calendários usando o protocolo CalDAV. Quando esta opção for ativada, os calendários compartilhados são exibidos na aba de Delegação de conta iCal para que você possa delegar o acesso a seus calendários a outros usuários."
+        "ical_note": "iCal da Apple pode ser configurado para acessar seus calendários usando o protocolo CalDAV. Quando esta opção for ativada, os calendários compartilhados são exibidos na aba de Delegação de conta iCal para que você possa delegar o acesso a seus calendários a outros usuários.",
+        "permissions_description": "Os usuários informados abaixo devem estar neste sistema de e-mail ({{domain}}). Você pode usar o endereço de e-mail completo ou apenas o nome de usuário."
     },
     "share": {
         "options": {
@@ -569,7 +613,7 @@
             "share_calendar_with": {
                 "external_guests": "Convidados externos (apenas visualizar)",
                 "internal_users_groups": "Usuários ou grupos internos",
-                "public": "Partilhar publicamente (apenas ver, senha não requerida)"
+                "public": "Compartilhar publicamente (somente visualização, sem necessidade de senha)"
             }
         },
         "label": {
@@ -649,7 +693,22 @@
         "edit": "Editar propriedades do compartilhamento",
         "virtual_room": "Sala Virtual",
         "meetingRooms": "Salas de reuniões",
-        "folder_linked_status": "Compartilhado comigo"
+        "folder_linked_status": "Compartilhado comigo",
+        "copy_url": "Copiar URL",
+        "folder_external_status": "Calendário ICS adicionado a partir de URL",
+        "readonly_action": "Este calendário é somente leitura",
+        "out_of_office_appointment": "Compromisso fora do escritório",
+        "free_appointment": "Agendamento livre",
+        "tentative_appointment": "Agendamento a ser confirmado",
+        "busy_appointment": "Agendamento ocupado",
+        "calendarSelector": {
+            "disabled": "Para mover este evento para outro calendário, use a opção \"Mover\""
+        },
+        "folder_sharing_status_one": "Compartilhado com {{count}} pessoa",
+        "folder_sharing_status_many": "Compartilhado com {{count}} pessoas",
+        "folder_sharing_status_other": "Compartilhado com {{count}} pessoas",
+        "copy_webcal_url": "Copiar URL WebCal",
+        "copy_caldav_url": "Copiar URL CalDAV"
     },
     "cannot_edit_name": "Não é possível editar o nome de um calendário do sistema",
     "edit_share_properties": "Editar propriedades do compartilhamento",
@@ -842,6 +901,9 @@
                 "show": "MOSTRAR ORGANIZADOR",
                 "hide": "OCULTAR ORGANIZADOR"
             }
+        },
+        "repeat": {
+            "set-custom-repeat": "Defina repetição personalizada"
         }
     },
     "daily_planner": {
@@ -874,6 +936,51 @@
         "green": "Verde",
         "orange": "Laranja",
         "pink": "Rosa",
-        "yellow": "Amarelo"
-    }
+        "yellow": "Amarelo",
+        "grey": "Cinza"
+    },
+    "ordinal": {
+        "suffix": {
+            "th": "º dia do mês",
+            "st": "º",
+            "nd": "º",
+            "rd": "º"
+        },
+        "third": "terceiro(a)",
+        "first": "primeiro(a)",
+        "second": "segundo(a)",
+        "last": "último(a)"
+    },
+    "add_ics_from_url": {
+        "calendar_name": "Nome do calendário*",
+        "url": "URL do calendário*"
+    },
+    "add_external_calendar": {
+        "caldav": {
+            "calendar_name": "Nome do calendário",
+            "host": "Endereço do host (calendar.exemplo.com)",
+            "password": "Senha",
+            "username": "Nome de usuário",
+            "no_credentials": "Este host não requer credenciais",
+            "calendar_name_hint": "Escolha um nome para identificar todos os calendários deste host",
+            "host_name_hint": "Os calendários adicionados serão somente leitura e serão sincronizados a cada 12 horas"
+        },
+        "error": {
+            "caldav_server_unavailable": "O servidor está indisponível no momento. Tente novamente",
+            "caldav_auth_failed": "A autenticação falhou. Verifique seu nome de usuário e senha",
+            "caldav_host_unreachable": "Não foi possível acessar este endereço de host"
+        }
+    },
+    "cannot_edit_caldav_readonly": "Você não pode editar o nome deste calendário",
+    "displayer": {
+        "search_list_title1": "Parece que não há resultados. Continue buscando!",
+        "search_title1": "Iniciar nova busca",
+        "search_title4": "Selecione um ou mais resultados para realizar ações ou exibir os detalhes.",
+        "search_description1": "Ou selecione \"Filtros avançados\" para refinar sua busca."
+    },
+    "duplicate_rooms_error": "Uma ou mais salas de reunião foram selecionadas várias vezes. Considere remover as duplicadas.",
+    "duplicate_equipment_error": "Um ou mais itens de equipamento foram selecionados várias vezes. Considere remover as duplicatas.",
+    "equipment_invalid": "Um ou mais itens de equipamento são inválidos. Tente editá-los ou inserir um novo.",
+    "rooms_invalid": "Uma ou mais salas de reunião são inválidas. Tente editá-las ou inserir uma nova.",
+    "reset_date": "Redefinir data"
 }
