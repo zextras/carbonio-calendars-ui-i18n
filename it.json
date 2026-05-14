@@ -28,7 +28,7 @@
         "copy_caldav_url": "Copia CalDAV url",
         "copy_webcal_url": "Copia WebCAL url",
         "copy_url": "Copia URL",
-        "folder_external_status": "Aggiunto tramite URL",
+        "folder_external_status": "Calendario ICS aggiunto tramite URL",
         "readonly_action": "Questo calendario è in sola lettura"
     },
     "reminder": {
@@ -131,7 +131,8 @@
             "external_calendar_syncing": "Sincronizzazione del calendario iniziata",
             "new_calendar_added": "Calendario aggiunto con successo",
             "caldav_calendars_synced": "Calendari sincronizzati con successo",
-            "caldav_calendars_syncing": "Sincronizzazione dei calendari iniziata"
+            "caldav_calendars_syncing": "Sincronizzazione dei calendari iniziata",
+            "caldav_first_sync_started": "La prima sincronizzazione è iniziata. Riceverai una notifica appena sarà completa"
         },
         "share_calendar_url_note2": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL.<br/> Puoi trovare questi collegamenti anche con un clic destro del mouse sull'elenco dei calendari.",
         "share_calendar_url_note": "Solo i tuoi collaboratori possono accedere ai tuoi dati utilizzando questi URL.",
@@ -452,7 +453,7 @@
         "end_on": "Termina il",
         "end_after_date": "Data",
         "add": "Aggiungi",
-        "external_calendar_event": "Evento di un calendario aggiunto tramite URL",
+        "external_calendar_event": "Evento di un calendario ICS aggiunto tramite URL",
         "last_sync": "Ultima sincronizzazione",
         "save_changes": "Salva modifiche",
         "sync": "Sincronizza",
@@ -461,7 +462,8 @@
         "yes_delete": "Sì, elimina",
         "close_appointment_editor": "Modifiche non salvate",
         "keep_editing": "Continua a modificare",
-        "save_and_close": "Salva e chiudi"
+        "save_and_close": "Salva e chiudi",
+        "type": "Tipo"
     },
     "action": {
         "send": "Invia",
@@ -961,15 +963,23 @@
         "last": "ultimo"
     },
     "add_ics_from_url": {
-        "calendar_name": "Nome del calendario*",
-        "url": "URL del calendario*"
+        "calendar_name": "Nome del calendario",
+        "url": "URL del calendario"
     },
     "add_external_calendar": {
         "caldav": {
             "calendar_name": "Nome dei calendari",
             "host": "Indirizzo host (calendar.example.com)",
             "password": "Password",
-            "username": "Nome utente"
+            "username": "Nome utente",
+            "no_credentials": "Questo host non richiede credenziali",
+            "calendar_name_hint": "Scegli un nome per identificare tutti i calendari di questo host",
+            "host_name_hint": "I calendari aggiunti saranno in sola lettura e si sincronizzeranno ogni 12 ore"
+        },
+        "error": {
+            "caldav_host_unreachable": "Non è stato possibile raggiungere l'indirizzo di questo host",
+            "caldav_server_unavailable": "Il server non è raggiungibile, per favore riprova",
+            "caldav_auth_failed": "Autenticazione fallita. Per favore controlla nome utente e password"
         }
     },
     "cannot_edit_caldav_readonly": "Non puoi modificare il nome di questo calendario"
