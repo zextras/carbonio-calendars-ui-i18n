@@ -364,7 +364,8 @@
         "share_calendar": "Comparteix una agenda",
         "show_original": "Mostra l’original",
         "delete": "Suprimeix",
-        "edit_group": "Edita grup"
+        "edit_group": "Edita grup",
+        "Trash_already_empty": "La paperera és buida"
     },
     "add": "Afegeix",
     "administer": "Administra",
