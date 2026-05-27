@@ -25,7 +25,9 @@
         "edit_group": "Modifier le groupe",
         "edit_and_share_calendar": "Modifier et partager le calendrier",
         "add_ics_from_url": "Ajouter un ICS depuis une URL",
-        "edit_calendar": "Modifier le calendrier"
+        "edit_calendar": "Modifier le calendrier",
+        "add_external_calendars": "Ajouter des calendriers externes",
+        "edit_name": "Éditer le nom du calendrier"
     },
     "add": "Ajouter",
     "administer": "Administrer",
@@ -379,10 +381,17 @@
         "end_on": "Termine le",
         "end_after_date": "Date",
         "add": "Ajouter",
-        "external_calendar_event": "Évènement provenant d'un calendrier ajouté à partir une URL",
+        "external_calendar_event": "Évènement provenant d'un calendrier ICS ajouté à partir d'une URL",
         "last_sync": "Dernière synchronisation",
         "save_changes": "Enregistrer les changements",
-        "sync": "Synchronisation"
+        "sync": "Synchronisation",
+        "deleting_please_wait": "Suppression en cours, veuillez patienter...",
+        "loading_please_wait": "Chargement en cours, veuillez patienter...",
+        "yes_delete": "OUI, SUPPRIMER",
+        "close_appointment_editor": "Modifications non enregistrées",
+        "keep_editing": "CONTINUER L'ÉDITION",
+        "save_and_close": "SAUVEGARDER ET FERMER",
+        "type": "Type"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -425,7 +434,10 @@
             "group_deleted": "Le groupe de calendriers a été supprimé définitivement",
             "new_calendar_added": "Le calendrier a été ajouté avec succès",
             "external_calendar_syncing": "La synchronisation de calendrier a été lancée",
-            "external_calendar_synced": "Le calendrier a été synchronisé avec succès"
+            "external_calendar_synced": "Le calendrier a été synchronisé avec succès",
+            "caldav_calendars_synced": "Calendriers synchronisés avec succès",
+            "caldav_calendars_syncing": "La synchronisation des calendriers a commencé",
+            "caldav_first_sync_started": "La première synchronisation a démarré et peut prendre un certain temps. Vous serez notifié une fois qu'elle sera terminée"
         },
         "somebody_is_organizer": "<strong>{{somebody}}</strong> est l'organisateur",
         "sure_to_delete_all_occurences_appointment": "Êtes-vous sûr de vouloir supprimer toutes les occurrences de ce rendez-vous ?",
@@ -475,7 +487,8 @@
         "you_accepted_as_tentative": "You avez accepté comme à confirmer",
         "you_accepted": "Vous avez accepté",
         "who_set_this": "{{whoSetThis}} a défini ce rendez-vous comme <strong>{{status}}</strong>",
-        "organizer_invited_you": "<text>{{organizer}} vous a invité à un évènement <bold>{{title}}</bold></text>"
+        "organizer_invited_you": "<text>{{organizer}} vous a invité à un évènement <bold>{{title}}</bold></text>",
+        "close_appointment_editor_confirmation": "Votre évènement contient des modifications non enregistrées. Si vous fermez l'éditeur, elles seront perdues."
     },
     "months": {
         "april": "Avril",
@@ -695,8 +708,9 @@
         "folder_sharing_status_other": "Partagé avec {{count}} utilisateurs",
         "copy_webcal_url": "Copier l'URL WebCAL",
         "copy_caldav_url": "Copier l'URL CalDAV",
-        "folder_external_status": "Ajouté à partir de l'URL",
-        "copy_url": "Copier l'URL"
+        "folder_external_status": "Calendrier ICS ajouté à partir d'une URL",
+        "copy_url": "Copier l'URL",
+        "readonly_action": "Ce calendrier est en lecture seule"
     },
     "type": "Type",
     "workflow": "Flux de travail",
@@ -938,7 +952,10 @@
     "reset_date": "Réinitialiser la date",
     "ordinal": {
         "suffix": {
-            "st": "er"
+            "st": "er",
+            "th": " ",
+            "nd": " ",
+            "rd": " "
         },
         "third": "troisième",
         "first": "premier",
@@ -948,5 +965,22 @@
     "add_ics_from_url": {
         "calendar_name": "Nom du calendrier*",
         "url": "URL du calendrier*"
-    }
+    },
+    "add_external_calendar": {
+        "caldav": {
+            "calendar_name": "Nom du calendrier",
+            "host": "Adresse de l'hôte (calendrier.exemple.com)",
+            "password": "Mot de passe",
+            "username": "Identifiant",
+            "no_credentials": "Cet hôte ne requiert pas d'identifiants",
+            "calendar_name_hint": "Choisissez un nom pour identifier tous les calendriers de cet hôte",
+            "host_name_hint": "Les calendriers ajoutés seront en lecture seule et se synchroniseront toutes les 12 heures"
+        },
+        "error": {
+            "caldav_server_unavailable": "Le serveur est actuellement indisponible, veuillez réessayer plus tard",
+            "caldav_auth_failed": "Échec de l'authentification. Veuillez vérifier votre identifiant et votre mot de passe",
+            "caldav_host_unreachable": "Cette adresse d'hôte est inaccessible"
+        }
+    },
+    "cannot_edit_caldav_readonly": "Vous ne pouvez pas modifier le nom de ce calendrier"
 }
