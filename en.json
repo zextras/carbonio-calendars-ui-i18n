@@ -497,7 +497,15 @@
         "you_accepted_as_tentative": "You accepted as tentative",
         "who_set_this": "{{whoSetThis}} set this appointment as <strong>{{status}}</strong>",
         "organizer_invited_you": "<text>{{organizer}} invited you to an event <bold>{{title}}</bold></text>",
-        "close_appointment_editor_confirmation": "Your appointment has unsaved changes. Closing the editor now will discard them."
+        "close_appointment_editor_confirmation": "Your appointment has unsaved changes. Closing the editor now will discard them.",
+        "subject_accepted": "Accepted",
+        "subject_tentative": "Tentative",
+        "subject_declined": "Declined",
+        "invite_tentative": "{{user}} has accepted the following invitation as tentative",
+        "invite_accepted": "{{user}} has accepted the following invitation",
+        "invite_declined": "{{user}} has declined the following invitation",
+        "event_instance_data": "\"{{title}}\" instance, {{date}}",
+        "event_series_data": "\"{{title}}\" series, {{date}}"
     },
     "messages": {
         "format_as_plain_text": "Format as Plain Text",
