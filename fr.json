@@ -954,8 +954,8 @@
         "suffix": {
             "st": "er",
             "th": " ",
-            "nd": " ",
-            "rd": " "
+            "nd": "  ",
+            "rd": "  "
         },
         "third": "troisième",
         "first": "premier",
