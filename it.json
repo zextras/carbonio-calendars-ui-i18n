@@ -185,7 +185,15 @@
         "the_organizer": "L'organizzatore",
         "who_set_this": "{{whoSetThis}} ha impostato questo appuntamento come <strong>{{status}}</strong>",
         "organizer_invited_you": "<text>{{organizer}} ti ha invitato a un evento <bold>{{title}}</bold></text>",
-        "close_appointment_editor_confirmation": "Il tuo appuntamento ha delle modifiche non salvate. Chiudere l'editor le annullerà."
+        "close_appointment_editor_confirmation": "Il tuo appuntamento ha delle modifiche non salvate. Chiudere l'editor le annullerà.",
+        "subject_accepted": "Accettato",
+        "subject_tentative": "Forse",
+        "subject_declined": "Declinato",
+        "invite_tentative": "{{user}} ha risposto in forse al seguente invito",
+        "invite_accepted": "{{user}} ha accettato il seguente invito",
+        "invite_declined": "{{user}} ha declinato il seguente invito",
+        "event_instance_data": "Istanza \"{{title}}\", {{date}}",
+        "event_series_data": "Serie \"{{title}}\", {{date}}"
     },
     "label": {
         "to": "A",
