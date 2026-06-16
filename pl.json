@@ -451,7 +451,15 @@
         "who_set_this": "{{whoSetThis}} ustawił(a) to spotkanie jako <strong>{{status}}</strong>",
         "you_accepted_as_tentative": "Zaakceptowałeś jako niepewne",
         "organizer_invited_you": "<text>{{organizer}} zaprosił(a) Cię na wydarzenie <bold>{{title}}</bold></text>",
-        "close_appointment_editor_confirmation": "Twoje spotkanie ma niezapisane zmiany. Zamknięcie edytora odrzuci te zmiany."
+        "close_appointment_editor_confirmation": "Twoje spotkanie ma niezapisane zmiany. Zamknięcie edytora odrzuci te zmiany.",
+        "subject_accepted": "Zaakceptowano",
+        "subject_tentative": "Niepewne",
+        "subject_declined": "Odrzucono",
+        "invite_tentative": "{{user}} zaakceptował(a) poniższe zaproszenie jako niepewne",
+        "invite_accepted": "{{user}} zaakceptował(a) poniższe zaproszenie",
+        "invite_declined": "{{user}} odrzucił(a) poniższe zaproszenie",
+        "event_instance_data": "\"{{title}}\", {{date}}",
+        "event_series_data": "seria \"{{title}}\", {{date}}"
     },
     "participants": {
         "Accepted": "Zaakceptowano",
