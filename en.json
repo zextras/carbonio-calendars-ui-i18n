@@ -402,7 +402,9 @@
         "close_appointment_editor": "Unsaved changes",
         "keep_editing": "Keep editing",
         "save_and_close": "Save and close",
-        "type": "Type"
+        "type": "Type",
+        "select_destination_calendar": "Select the destination calendar:",
+        "destination_calendar": "Destination calendar"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -505,7 +507,8 @@
         "invite_accepted": "{{user}} has accepted the following invitation",
         "invite_declined": "{{user}} has declined the following invitation",
         "event_instance_data": "\"{{title}}\" instance, {{date}}",
-        "event_series_data": "\"{{title}}\" series, {{date}}"
+        "event_series_data": "\"{{title}}\" series, {{date}}",
+        "import_appointment_from_email": "The appointments contained in \"{{fileName}}\" will be imported into the selected calendar."
     },
     "messages": {
         "format_as_plain_text": "Format as Plain Text",
@@ -967,5 +970,6 @@
             "caldav_host_unreachable": "This host address could not be reached"
         }
     },
-    "cannot_edit_caldav_readonly": "You cannot edit the name of this calendar"
+    "cannot_edit_caldav_readonly": "You cannot edit the name of this calendar",
+    "import_to_calendar": "Import to Calendars"
 }
