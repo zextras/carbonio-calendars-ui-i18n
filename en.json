@@ -404,7 +404,8 @@
         "save_and_close": "Save and close",
         "type": "Type",
         "select_destination_calendar": "Select the destination calendar:",
-        "destination_calendar": "Destination calendar"
+        "destination_calendar": "Destination calendar",
+        "open_appointment": "Go to appointment"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
