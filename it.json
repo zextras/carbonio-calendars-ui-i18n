@@ -474,7 +474,8 @@
         "save_and_close": "Salva e chiudi",
         "type": "Tipo",
         "select_destination_calendar": "Seleziona il calendario di destinazione:",
-        "destination_calendar": "Calendario di destinazione"
+        "destination_calendar": "Calendario di destinazione",
+        "open_appointment": "Vai all'appuntamento"
     },
     "action": {
         "send": "Invia",
