@@ -193,7 +193,8 @@
         "invite_accepted": "{{user}} ha accettato il seguente invito",
         "invite_declined": "{{user}} ha declinato il seguente invito",
         "event_instance_data": "Istanza \"{{title}}\", {{date}}",
-        "event_series_data": "Serie \"{{title}}\", {{date}}"
+        "event_series_data": "Serie \"{{title}}\", {{date}}",
+        "import_appointment_from_email": "Gli appuntamenti contenuti in \"{{fileName}}\" verranno importati nel calendario selezionato."
     },
     "label": {
         "to": "A",
@@ -471,7 +472,9 @@
         "close_appointment_editor": "Modifiche non salvate",
         "keep_editing": "Continua a modificare",
         "save_and_close": "Salva e chiudi",
-        "type": "Tipo"
+        "type": "Tipo",
+        "select_destination_calendar": "Seleziona il calendario di destinazione:",
+        "destination_calendar": "Calendario di destinazione"
     },
     "action": {
         "send": "Invia",
@@ -990,5 +993,6 @@
             "caldav_auth_failed": "Autenticazione fallita. Per favore controlla nome utente e password"
         }
     },
-    "cannot_edit_caldav_readonly": "Non puoi modificare il nome di questo calendario"
+    "cannot_edit_caldav_readonly": "Non puoi modificare il nome di questo calendario",
+    "import_to_calendar": "Importa in Calendars"
 }
