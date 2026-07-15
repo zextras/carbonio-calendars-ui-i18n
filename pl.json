@@ -356,7 +356,10 @@
         "type": "Typ",
         "close_appointment_editor": "Niezapisane zmiany",
         "keep_editing": "Edytuj dalej",
-        "save_and_close": "Zapisz i zamknij"
+        "save_and_close": "Zapisz i zamknij",
+        "select_destination_calendar": "Wybierz kalendarz docelowy:",
+        "destination_calendar": "Kalendarz docelowy",
+        "open_appointment": "Idź do spotkania"
     },
     "message": {
         "modal": {
@@ -459,7 +462,8 @@
         "invite_accepted": "{{user}} zaakceptował(a) poniższe zaproszenie",
         "invite_declined": "{{user}} odrzucił(a) poniższe zaproszenie",
         "event_instance_data": "\"{{title}}\", {{date}}",
-        "event_series_data": "seria \"{{title}}\", {{date}}"
+        "event_series_data": "seria \"{{title}}\", {{date}}",
+        "import_appointment_from_email": "Spotkania znajdujące się w \"{{fileName}}\" zostaną importowane do wybranego kalendarza."
     },
     "participants": {
         "Accepted": "Zaakceptowano",
@@ -990,5 +994,6 @@
             "caldav_host_unreachable": "Nie udało się osiągnąć tego adresu hosta"
         }
     },
-    "cannot_edit_caldav_readonly": "Nie możesz edytować nazwy tego kalendarza"
+    "cannot_edit_caldav_readonly": "Nie możesz edytować nazwy tego kalendarza",
+    "import_to_calendar": "Importuj do Kalendarzy"
 }
