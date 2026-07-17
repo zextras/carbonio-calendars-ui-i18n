@@ -185,7 +185,7 @@
         "the_organizer": "L'organizzatore",
         "who_set_this": "{{whoSetThis}} ha impostato questo appuntamento come <strong>{{status}}</strong>",
         "organizer_invited_you": "<text>{{organizer}} ti ha invitato a un evento <bold>{{title}}</bold></text>",
-        "close_appointment_editor_confirmation": "Il tuo appuntamento ha delle modifiche non salvate. Chiudere l'editor le annullerà.",
+        "close_appointment_editor_confirmation": "Il tuo appuntamento ha modifiche non salvate. Vuoi davvero chiudere l'editor e scartarle?",
         "subject_accepted": "Accettato",
         "subject_tentative": "Forse",
         "subject_declined": "Declinato",
@@ -194,7 +194,9 @@
         "invite_declined": "{{user}} ha declinato il seguente invito",
         "event_instance_data": "Istanza \"{{title}}\", {{date}}",
         "event_series_data": "Serie \"{{title}}\", {{date}}",
-        "import_appointment_from_email": "Gli appuntamenti contenuti in \"{{fileName}}\" verranno importati nel calendario selezionato."
+        "import_appointment_from_email": "Gli appuntamenti contenuti in \"{{fileName}}\" verranno importati nel calendario selezionato.",
+        "on_behalf_of": "per conto di <strong>{{owner}}</strong>",
+        "organizer_invited_you_on_behalf_of": "<text>{{organizer}} ti ha invitato all'evento <bold>{{title}}</bold> per conto di <bold>{{owner}}</bold></text>"
     },
     "label": {
         "to": "A",
