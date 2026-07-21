@@ -391,7 +391,10 @@
         "close_appointment_editor": "Modifications non enregistrées",
         "keep_editing": "CONTINUER L'ÉDITION",
         "save_and_close": "SAUVEGARDER ET FERMER",
-        "type": "Type"
+        "type": "Type",
+        "select_destination_calendar": "Sélectionner le calendrier de destination :",
+        "destination_calendar": "Calendrier de destination",
+        "open_appointment": "Aller au rendez-vous"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
@@ -488,7 +491,7 @@
         "you_accepted": "Vous avez accepté",
         "who_set_this": "{{whoSetThis}} a défini ce rendez-vous comme <strong>{{status}}</strong>",
         "organizer_invited_you": "<text>{{organizer}} vous a invité à un évènement <bold>{{title}}</bold></text>",
-        "close_appointment_editor_confirmation": "Votre évènement contient des modifications non enregistrées. Si vous fermez l'éditeur, elles seront perdues.",
+        "close_appointment_editor_confirmation": "Votre évènement contient des modifications non enregistrées. Êtes-vous sûr de vouloir fermer l'éditeur et de les ignorer ?",
         "subject_accepted": "Acceptée",
         "subject_tentative": "Tentative",
         "subject_declined": "Refusée",
@@ -496,7 +499,10 @@
         "invite_accepted": "{{user}} a accepté l'invitation suivante",
         "invite_declined": "{{user}} a refusé l'invitation suivante",
         "event_instance_data": "Instance \"{{title}}\", {{date}}",
-        "event_series_data": "Série \"{{title}}\", {{date}}"
+        "event_series_data": "Série \"{{title}}\", {{date}}",
+        "import_appointment_from_email": "Les rendez-vous contenus dans \"{{fileName}}\" seront importés dans le calendrier sélectionné.",
+        "on_behalf_of": "de la part de <strong>{{owner}}</strong>",
+        "organizer_invited_you_on_behalf_of": "<text>{{organizer}} vous a invité à un évènement <bold>{{title}}</bold> de la part de <bold>{{owner}}</bold></text>"
     },
     "months": {
         "april": "Avril",
@@ -962,8 +968,8 @@
         "suffix": {
             "st": "er",
             "th": " ",
-            "nd": "  ",
-            "rd": "  "
+            "nd": " ",
+            "rd": " "
         },
         "third": "troisième",
         "first": "premier",
@@ -990,5 +996,6 @@
             "caldav_host_unreachable": "Cette adresse d'hôte est inaccessible"
         }
     },
-    "cannot_edit_caldav_readonly": "Vous ne pouvez pas modifier le nom de ce calendrier"
+    "cannot_edit_caldav_readonly": "Vous ne pouvez pas modifier le nom de ce calendrier",
+    "import_to_calendar": "Importer dans Calendriers"
 }
