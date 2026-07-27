@@ -405,7 +405,8 @@
         "type": "Type",
         "select_destination_calendar": "Select the destination calendar:",
         "destination_calendar": "Destination calendar",
-        "open_appointment": "Go to appointment"
+        "open_appointment": "Go to appointment",
+        "discard_changes_confirmation'": "Appointment changes discarded"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
