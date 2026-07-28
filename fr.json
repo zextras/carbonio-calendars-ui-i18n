@@ -394,7 +394,8 @@
         "type": "Type",
         "select_destination_calendar": "Sélectionner le calendrier de destination :",
         "destination_calendar": "Calendrier de destination",
-        "open_appointment": "Aller au rendez-vous"
+        "open_appointment": "Aller au rendez-vous",
+        "discard_changes_confirmation'": "Modifications du rendez-vous annulées"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
