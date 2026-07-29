@@ -359,7 +359,8 @@
         "save_and_close": "Zapisz i zamknij",
         "select_destination_calendar": "Wybierz kalendarz docelowy:",
         "destination_calendar": "Kalendarz docelowy",
-        "open_appointment": "Idź do spotkania"
+        "open_appointment": "Idź do spotkania",
+        "discard_changes_confirmation'": "Zmiany w spotkaniu zostały odrzucone"
     },
     "message": {
         "modal": {
