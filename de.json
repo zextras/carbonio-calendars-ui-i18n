@@ -287,7 +287,18 @@
         "webcal_url": "WebCAL-URL",
         "duplicate_resource": "Diese Ressource wurde mehrmals ausgewählt",
         "email_attendees": "E-Mail an Teilnehmer senden",
-        "recurrent": "Wiederkehrende Veranstaltung"
+        "recurrent": "Wiederkehrende Veranstaltung",
+        "attendee_one": "",
+        "attendee_other": "Teilnehmer",
+        "delete": "Löschen",
+        "delete_attachment_one": "Löschen",
+        "delete_attachment_other": "Alle löschen",
+        "dismiss_one": "Ablehnen",
+        "dismiss_other": "Alle ablehnen",
+        "attendees": "Teilnehmer",
+        "forward": "Weiterleiten",
+        "hide_event_detail": "Details ausblenden",
+        "show_event_detail": "Details anzeigen"
     },
     "participants": {
         "Invited_Visitor": "wurden eingeladen",
