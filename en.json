@@ -406,7 +406,8 @@
         "select_destination_calendar": "Select the destination calendar:",
         "destination_calendar": "Destination calendar",
         "open_appointment": "Go to appointment",
-        "discard_changes_confirmation'": "Appointment changes discarded"
+        "discard_changes_confirmation'": "Appointment changes discarded",
+        "remove": "remove"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
