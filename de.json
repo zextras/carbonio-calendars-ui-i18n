@@ -237,7 +237,8 @@
         "no_rights": "Sie haben für diese Aktion keine Berechtigung",
         "action_performed": "Sie haben diese Aktion bereits durchgeführt",
         "optionals": "Optionen",
-        "time": "Zeit"
+        "time": "Zeit",
+        "calendar_groups": "Kalendergruppen"
     },
     "participants": {
         "Invited_Visitor": "wurden eingeladen",
@@ -268,7 +269,8 @@
         "Trash_already_empty": "Der Papierkorb ist bereits geleert",
         "calendar_upload": "ICS-Datei importieren",
         "download_ics": "ICS herunterladen",
-        "export_calendar_ics": "ICS-Datei exportieren"
+        "export_calendar_ics": "ICS-Datei exportieren",
+        "edit_group": "Gruppe bearbeiten"
     },
     "calendar": {
         "modal": {
@@ -322,6 +324,14 @@
             "new": {
                 "duplicate_warning": "Es existiert bereits ein Kalender mit demselben Namen",
                 "title2": "Neue Kalendererstellung"
+            },
+            "creategroup": {
+                "title": "Neue Kalendergruppe erstellen",
+                "default_group_name": "Neue Kalendergruppe"
+            },
+            "editgroup": {
+                "footer": "Änderungen speichern",
+                "title": "Bearbeiten Kalendergruppe"
             }
         },
         "share_info": "Info teilen"
@@ -616,5 +626,6 @@
     "mountpoint_success": "Die Freigabe wurde erfolgreich zum Abschnitt \"Gemeinsame Kalender\" hinzugefügt",
     "mountpoint_warning": "{{failed}} von {{total}} freigegebenen Kalendern konnten nicht zu den freigegebenen Kalendern hinzugefügt werden",
     "attendee_unavailable": "Der Teilnehmer ist zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
-    "attendees_unavailable": "Ein oder mehrere Teilnehmer sind zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar"
+    "attendees_unavailable": "Ein oder mehrere Teilnehmer sind zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
+    "creation_timezone_tooltip": "Datum und Uhrzeit in der Zeitzone bei der Erstellung:"
 }
