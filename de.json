@@ -195,7 +195,7 @@
         "exclude_free_busy": "Diesen Kalender bei der Meldung der Frei-/Gebucht-Zeiten ausschließen",
         "loading": "Lädt…",
         "maybe": "vielleicht",
-        "propose_new_time": "NEUE ZEIT VORSCHLAGEN",
+        "propose_new_time": "Neue Zeit vorschlagen",
         "share_with": "Teilen mit",
         "app_name": "Kalender",
         "new_appointment": "Neuer Termin",
@@ -216,7 +216,7 @@
         "new_tag": "Neuer Tag",
         "other_actions": "Andere Aktionen",
         "single_instance": "EINZELNE INSTANZ",
-        "scheduled_in": "Kalender",
+        "scheduled_in": "Geplant in",
         "no_title": "Kein Titel",
         "warning": "Warnung",
         "trash": "Papierkorb",
@@ -233,12 +233,39 @@
         "appointment_is_private": "Dieser Termin ist privat.",
         "create_copy": "Kopieren",
         "keywords": "Schlüsselwörter",
-        "single_advanced_filter": "Erweiterte Filter",
+        "single_advanced_filter": "erweiterte Filter",
         "no_rights": "Sie haben für diese Aktion keine Berechtigung",
         "action_performed": "Sie haben diese Aktion bereits durchgeführt",
         "optionals": "Optionen",
         "time": "Zeit",
-        "calendar_groups": "Kalendergruppen"
+        "calendar_groups": "Kalendergruppen",
+        "close": "Schließen",
+        "calendars": "Kalender",
+        "advanced_filters_one": "{{count}} erweiterter Filter",
+        "advanced_filters_other": "{{count}} erweiterte Filter",
+        "appt_reminder_one": "Terminerinnerung",
+        "appt_reminder_other": "Terminerinnerungen",
+        "attachment_one": "Anhang",
+        "attachment_other": "Anhänge",
+        "download_one": "Herunterladen",
+        "download_other": "Alle herunterladen",
+        "equipment": "Ausstattung",
+        "optional_one": "Optionaler Teilnehmer",
+        "optional_other": "Optionale Teilnehmer",
+        "show_one": "Anzeigen",
+        "show_other": "Alle anzeigen",
+        "show_event": "Doppelklicken, um weitere Details zu Kalendern zu sehen",
+        "invalid_group_name": "Geben Sie einen Gruppennamen ein, um die Änderungen zu speichern",
+        "invalid_query": "Sonderzeichen wie :, \", -, ! usw. werden bei der Suche ignoriert. Dies kann bei Folgendem zu unerwarteten Ergebnissen führen:",
+        "resources_load_error": "„Besprechungsraum\" und „Ausstattung\" konnten nicht geladen werden. Versuchen Sie, das Board zu schließen und erneut zu öffnen.",
+        "loading_resources": "„Besprechungsraum\" und „Ausstattung\" werden geladen, bitte warten ...",
+        "show_more": "+{{count}} weitere Elemente",
+        "show_all_events": "Alle Ereignisse anzeigen",
+        "splitLayoutDisabledTooltip": "Geteiltes Layout in der aktuellen Ansicht nicht verfügbar",
+        "disableSplitLayoutTooltip": "Geteiltes Layout deaktivieren",
+        "enableSplitLayoutTooltip": "Geteiltes Layout aktivieren",
+        "cannot_send": "Senden ist für diese Veranstaltung deaktiviert",
+        "no_recipients": "Fügen Sie mindestens einen Teilnehmer oder eine Ressource hinzu, um senden zu können"
     },
     "participants": {
         "Invited_Visitor": "wurden eingeladen",
@@ -262,7 +289,7 @@
         "send_cancellation": "Abbruch senden",
         "empty_trash_confirmation": "Diese Aktion wird alle Elemente in E-Mails, Kontakte, Kalender, Aufgaben und Aktentasche löschen. Sind Sie sicher, dass Sie alles in diesen Papierkörben endgültig löschen möchten?",
         "send_edit": "Bearbeiten senden",
-        "reset": "Wiederherstellen",
+        "reset": "Filter wiederherstellen",
         "search": "Suche",
         "show_original": "Original anzeigen",
         "answer": "Antworten",
@@ -270,7 +297,9 @@
         "calendar_upload": "ICS-Datei importieren",
         "download_ics": "ICS herunterladen",
         "export_calendar_ics": "ICS-Datei exportieren",
-        "edit_group": "Gruppe bearbeiten"
+        "edit_group": "Gruppe bearbeiten",
+        "delete": "Löschen",
+        "edit_and_share_calendar": "Kalender bearbeiten oder teilen"
     },
     "calendar": {
         "modal": {
@@ -332,10 +361,11 @@
             },
             "editgroup": {
                 "footer": "Änderungen speichern",
-                "title": "Bearbeiten Kalendergruppe"
+                "title": "Kalendergruppe bearbeiten"
             },
             "deletegroup": {
-                "confirm": "Permanent löschen"
+                "confirm": "Dauerhaft löschen",
+                "text": "Sind Sie sicher, dass Sie diese Gruppe dauerhaft löschen möchten? Diese Aktion ist nicht umkehrbar. Die einzelnen Kalender werden dabei nicht gelöscht."
             }
         },
         "share_info": "Info teilen"
@@ -356,7 +386,7 @@
     "cannot_edit_name": "Sie können den Namen eines Kalendersystems nicht bearbeiten",
     "edit_share_properties": "Eigenschaften für das Teilen bearbeiten",
     "find_calendar_shares": "Geteilte Kalender finden",
-    "find_shares": "Teile finden",
+    "find_shares": "Freigaben durchsuchen",
     "freebusy": "FreeBusy",
     "insert": "Eingeben",
     "search": {
@@ -631,5 +661,9 @@
     "mountpoint_warning": "{{failed}} von {{total}} freigegebenen Kalendern konnten nicht zu den freigegebenen Kalendern hinzugefügt werden",
     "attendee_unavailable": "Der Teilnehmer ist zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
     "attendees_unavailable": "Ein oder mehrere Teilnehmer sind zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
-    "creation_timezone_tooltip": "Datum und Uhrzeit in der Zeitzone bei der Erstellung:"
+    "creation_timezone_tooltip": "Datum und Uhrzeit in der Zeitzone bei der Erstellung:",
+    "attendee_equipment_unavailable": "Equipment zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
+    "attendee_room_unavailable": "Raum ist zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
+    "attendees_equipments_unavailable": "Ein oder mehrere Ausstattungselemente sind zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
+    "attendees_rooms_unavailable": "Ein oder mehrere Besprechungsräume sind zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar"
 }
