@@ -478,7 +478,8 @@
         "select_destination_calendar": "Seleziona il calendario di destinazione:",
         "destination_calendar": "Calendario di destinazione",
         "open_appointment": "Vai all'appuntamento",
-        "discard_changes_confirmation'": "Modifiche dell'appuntamento annullate"
+        "discard_changes_confirmation'": "Modifiche dell'appuntamento annullate",
+        "remove": "rimuovi"
     },
     "action": {
         "send": "Invia",
