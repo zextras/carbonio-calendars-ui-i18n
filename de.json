@@ -265,7 +265,29 @@
         "disableSplitLayoutTooltip": "Geteiltes Layout deaktivieren",
         "enableSplitLayoutTooltip": "Geteiltes Layout aktivieren",
         "cannot_send": "Senden ist für diese Veranstaltung deaktiviert",
-        "no_recipients": "Fügen Sie mindestens einen Teilnehmer oder eine Ressource hinzu, um senden zu können"
+        "no_recipients": "Fügen Sie mindestens einen Teilnehmer oder eine Ressource hinzu, um senden zu können",
+        "available": "Sie sind verfügbar",
+        "check_availability": "Überprüfen Sie Ihre Verfügbarkeit",
+        "checking_availability": "Überprüfe Ihre Verfügbarkeit",
+        "import_calendar_ongoing": "Import in den ausgewählten Kalender läuft.",
+        "import_calendar_success": "Import erfolgreich",
+        "meeting_room": "Besprechungsraum",
+        "type_group_name_here": "Gruppenname",
+        "create_group": "Neue Gruppe erstellen",
+        "newgroup": {
+            "note": "Diese Gruppe erscheint in Ihrem persönlichen Konto.",
+            "calendars": "Kalender in dieser Gruppe"
+        },
+        "group_not_found": "Gruppe nicht gefunden",
+        "editgroup": {
+            "calendars": "Kalender in dieser Gruppe"
+        },
+        "group_is_empty": "Diese Gruppe ist leer",
+        "caldav_url": "CalDAV-URL",
+        "webcal_url": "WebCAL-URL",
+        "duplicate_resource": "Diese Ressource wurde mehrmals ausgewählt",
+        "email_attendees": "E-Mail an Teilnehmer senden",
+        "recurrent": "Wiederkehrende Veranstaltung"
     },
     "participants": {
         "Invited_Visitor": "wurden eingeladen",
@@ -365,7 +387,8 @@
             },
             "deletegroup": {
                 "confirm": "Dauerhaft löschen",
-                "text": "Sind Sie sicher, dass Sie diese Gruppe dauerhaft löschen möchten? Diese Aktion ist nicht umkehrbar. Die einzelnen Kalender werden dabei nicht gelöscht."
+                "text": "Sind Sie sicher, dass Sie diese Gruppe dauerhaft löschen möchten? Diese Aktion ist nicht umkehrbar. Die einzelnen Kalender werden dabei nicht gelöscht.",
+                "title": "Gruppe dauerhaft löschen?"
             }
         },
         "share_info": "Info teilen"
@@ -665,5 +688,7 @@
     "attendee_equipment_unavailable": "Equipment zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
     "attendee_room_unavailable": "Raum ist zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
     "attendees_equipments_unavailable": "Ein oder mehrere Ausstattungselemente sind zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
-    "attendees_rooms_unavailable": "Ein oder mehrere Besprechungsräume sind zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar"
+    "attendees_rooms_unavailable": "Ein oder mehrere Besprechungsräume sind zum ausgewählten Zeitpunkt der Veranstaltung nicht verfügbar",
+    "import": "Importieren",
+    "import_appointments": "Termine importieren"
 }
