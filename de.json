@@ -327,11 +327,15 @@
             },
             "creategroup": {
                 "title": "Neue Kalendergruppe erstellen",
-                "default_group_name": "Neue Kalendergruppe"
+                "default_group_name": "Neue Kalendergruppe",
+                "footer": "Gruppe erstellen"
             },
             "editgroup": {
                 "footer": "Änderungen speichern",
                 "title": "Bearbeiten Kalendergruppe"
+            },
+            "deletegroup": {
+                "confirm": "Permanent löschen"
             }
         },
         "share_info": "Info teilen"
