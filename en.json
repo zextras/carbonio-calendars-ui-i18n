@@ -407,7 +407,9 @@
         "destination_calendar": "Destination calendar",
         "open_appointment": "Go to appointment",
         "discard_changes_confirmation'": "Appointment changes discarded",
-        "remove": "remove"
+        "remove": "remove",
+        "original": "Original",
+        "proposed": "Proposed"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
