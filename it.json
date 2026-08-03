@@ -479,7 +479,9 @@
         "destination_calendar": "Calendario di destinazione",
         "open_appointment": "Vai all'appuntamento",
         "discard_changes_confirmation'": "Modifiche dell'appuntamento annullate",
-        "remove": "rimuovi"
+        "remove": "rimuovi",
+        "original": "Originale",
+        "proposed": "Proposta"
     },
     "action": {
         "send": "Invia",
