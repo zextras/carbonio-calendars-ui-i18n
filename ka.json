@@ -1,1 +1,10 @@
-{}
+{
+    "label": {
+        "search_hint": " ",
+        "select_in": " "
+    },
+    "message": {
+        "search_hints": " "
+    },
+    "no_title": " "
+}
