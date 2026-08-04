@@ -2,7 +2,7 @@
     "label": {
         "add": "Προσθήκη",
         "attachment_one": "Συνημμένο",
-        "attachment_other": "προσαρτήσεις",
+        "attachment_other": "Συνημμένα",
         "calendar": "Ημερολόγιο",
         "close": "Κλείσιμο",
         "create": "Δημιουργία",
@@ -484,7 +484,7 @@
     "import_appointments": "Εισαγωγή ραντεβού",
     "insert": "Εισαγωγή",
     "is_private": "Είναι ιδιωτικό",
-    "is_recurrent": "Επανειλημμένο",
+    "is_recurrent": "Είναι επαναλαμβανόμενο",
     "items": {
         "first": "Πρώτο",
         "fourth": "Τέταρτο",
