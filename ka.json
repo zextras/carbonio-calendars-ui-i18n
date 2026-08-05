@@ -1,10 +1,262 @@
 {
     "label": {
         "search_hint": " ",
-        "select_in": " "
+        "select_in": " ",
+        "add": "დამატება",
+        "save": "შენახვა",
+        "calendar": "კალენდარი",
+        "close": "დახურვა",
+        "create": "შექმნა",
+        "days": "დღე",
+        "delete": "წაშლა",
+        "edit": "ჩასწორება",
+        "equipment": "აღჭურვილობა",
+        "invites": "მოწვევები",
+        "location": "მდებარეობა",
+        "of": "/",
+        "private": "პირადი",
+        "remove": "წაშლა",
+        "required": "აუცილებელია",
+        "subject": "თემა",
+        "type": "ტიპი",
+        "week_day": {
+            "friday": "პარასკევი",
+            "monday": "ორშაბათი",
+            "saturday": "შაბათი",
+            "sunday": "კვირა",
+            "thursday": "ხუთშაბათი",
+            "tuesday": "სამშაბათი",
+            "wednesday": "ოთხშაბათი"
+        },
+        "warning": "გაფრთხილება",
+        "app_name": "კალენდრები",
+        "attendee_one": "დამსწრე",
+        "attendee_other": "დამსწრე",
+        "busy": "დაკავებული",
+        "cancel": "გაუქმება",
+        "cancelled": "გაუქმებულია",
+        "continue": "გაგრძელება",
+        "create_copy": "კოპირება",
+        "custom": "მომხმარებლის",
+        "day": "დღე",
+        "display": "ჩვენება",
+        "empty": "დაცარიელება",
+        "end": "დასასრული",
+        "every": "ყოველ",
+        "free": "თავისუფალი",
+        "free_busy": "თავისუფალი/დაკავებული",
+        "from": "ვისგან",
+        "general": "ზოგადი",
+        "instance": "გაშვებული ასლი",
+        "keywords": "საკვანძო სიტყვები",
+        "loading": "იტვირთება…",
+        "maybe": "შეიძლება",
+        "month": "თვე",
+        "months": "თვე",
+        "move": "გადატანა",
+        "none": "არცერთი",
+        "now": "ახლავე",
+        "number": "რაოდენობა",
+        "occurrences": "გამეორებები",
+        "ok": "OK",
+        "ongoing": "მიმდინარეობს",
+        "optionals": "არასავალდებულოები",
+        "permissions": "წვდომები",
+        "preview": "მინიატურა",
+        "regular": "ჩვეულებრივი",
+        "reminder": "შეხსენება",
+        "repeat": "გამეორება",
+        "resend": "თავიდან გაგზავნა",
+        "restore": "აღდგენა",
+        "revoke": "გაბათილება",
+        "role": "როლი",
+        "root": "Root",
+        "select": "არჩევა",
+        "series": "სერიები",
+        "share": "გაზიარება",
+        "snooze": "გადადება",
+        "tag": "ჭდე",
+        "tags": "ჭდეები",
+        "tentative": "საცდელი",
+        "the": " ",
+        "time": "დრო",
+        "to": "ვის",
+        "today": "დღეს",
+        "trash": "ნაგვის ყუთი",
+        "undo": "ბრძანების გაუქმება",
+        "week": "კვირა",
+        "attendees": "დამსწრეები",
+        "forward": "გადაგზავნა",
+        "calendars": "კალენდრები",
+        "confirm": "დასტური",
+        "on": "დღე",
+        "end_after_events": "მოვლენები",
+        "end_after_date": "თარიღი",
+        "sync": "სინქრონიზაცია",
+        "original": "თავდაპირველი",
+        "proposed": "შეთავაზებული"
     },
     "message": {
-        "search_hints": " "
+        "search_hints": " ",
+        "copy": "კოპირება",
+        "more": "მეტი…",
+        "organizer": "ორგანიზატორი",
+        "you": "თქვენ",
+        "subject_accepted": "მიღებული",
+        "subject_tentative": "საცდელი",
+        "subject_declined": "უარყოფილია"
     },
-    "no_title": " "
+    "no_title": " ",
+    "action": {
+        "search": "ძებნა",
+        "send": "გაგზავნა",
+        "answer": "პასუხი",
+        "delete": "წაშლა"
+    },
+    "add": "დამატება",
+    "administer": "ადმინისტრირება",
+    "appointments": "შეხვედრები",
+    "event": {
+        "action": {
+            "accept": "მიღება",
+            "decline": "უარყოფა",
+            "expand": "გახსნა",
+            "no": "არა",
+            "yes": "დიახ"
+        },
+        "is_exception": "გამონაკლისი"
+    },
+    "freebusy": "თავისუფალიდაკავებული",
+    "import": "შემოტანა",
+    "insert": "ჩასმა",
+    "items": {
+        "first": "პირველი",
+        "fourth": "მეოთხე",
+        "last": "ბოლო",
+        "second": "მეორე",
+        "third": "მესამე"
+    },
+    "months": {
+        "april": "აპრილი",
+        "august": "აგვისტო",
+        "december": "დეკემბერი",
+        "february": "თებერვალი",
+        "january": "იანვარი",
+        "july": "ივლისი",
+        "june": "ივნისი",
+        "march": "მარტი",
+        "may": "მაისი",
+        "november": "ნოემბერი",
+        "october": "ოქტომბერი",
+        "september": "სექტემბერი"
+    },
+    "owner": "მფლობელი",
+    "participants": {
+        "Accepted": "მიღებული",
+        "Declined": "უარყოფილია"
+    },
+    "placeholder": {
+        "organizer": "ორგანიზატორი"
+    },
+    "public": "საჯარო",
+    "read": "კითხვა",
+    "reminder": {
+        "never": "არასოდეს"
+    },
+    "repeat": {
+        "customize": "მორგება",
+        "daily": "ყოველდღე",
+        "monthly": "ყოველთვე",
+        "weekly": "ყოველკვირა",
+        "yearly": "ყოველ წელს",
+        "days_plural": "დღეში",
+        "weeks_plural": "კვირაში",
+        "months_plural": "თვეში",
+        "years_plural": "წელიწადში"
+    },
+    "settings": {
+        "options": {
+            "dflt_vsblty_opt": {
+                "public": "საჯარო"
+            }
+        }
+    },
+    "share": {
+        "options": {
+            "share_calendar_role": {
+                "none": "არცერთი"
+            }
+        }
+    },
+    "snackbar": {
+        "invite": {
+            "error": "შეცდომა"
+        }
+    },
+    "success": "წარმატებულია",
+    "timezones": "დროის სარტყლები",
+    "tooltip": {
+        "chat": "აღჭურვილობა",
+        "equipment": "აღჭურვილობა",
+        "location": "მდებარეობა",
+        "meetingRooms": "შეხვედრის ოთახები"
+    },
+    "type": "ტიპი",
+    "workflow": "სამუშაო პროცესი",
+    "write": "ჩაწერა",
+    "modal": {
+        "initializeError": {
+            "buttonConfirm": "თავიდან ჩატვირთვა"
+        },
+        "buttonLabel": {
+            "forward": "გადაგზავნა"
+        }
+    },
+    "daily_planner": {
+        "free": "თავისუფალი",
+        "non-working": "არა-მუშა",
+        "busy": "დაკავებული",
+        "tentative": "საცდელი",
+        "unknown": "უცნობი",
+        "participant": {
+            "organizer": "ორგანიზატორი",
+            "attendee": "დამსწრე",
+            "equipment": "აღჭურვილობა",
+            "unknown": "უცნობი",
+            "optionalAttendee": "არასავალდებულო"
+        },
+        "status": "სტატუსი",
+        "from": "საიდან",
+        "to": "სადამდე"
+    },
+    "colors": {
+        "blue": "ლურჯი",
+        "green": "მწვანე",
+        "cyan": "მომწვანო-მოცისფრო",
+        "purple": "იისფერი",
+        "grey": "ნაცრისფერი",
+        "yellow": "ყვითელი",
+        "red": "წითელი",
+        "pink": "ვარდისფერი",
+        "orange": "ნარინჯისფერი",
+        "black": "შავი"
+    },
+    "ordinal": {
+        "suffix": {
+            "th": "-ე",
+            "st": " ",
+            "nd": " ",
+            "rd": " "
+        },
+        "third": "მესამე",
+        "first": "პირველი",
+        "second": "მეორე",
+        "last": "ბოლო"
+    },
+    "add_external_calendar": {
+        "caldav": {
+            "password": "პაროლი",
+            "username": "მომხმარებლის სახელი"
+        }
+    }
 }
