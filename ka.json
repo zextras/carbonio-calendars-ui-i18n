@@ -94,7 +94,84 @@
         "end_after_date": "თარიღი",
         "sync": "სინქრონიზაცია",
         "original": "თავდაპირველი",
-        "proposed": "შეთავაზებული"
+        "proposed": "შეთავაზებული",
+        "attachment_one": "მიმაგრებული ფაილი",
+        "attachment_other": "მიმაგრებული ფაილი",
+        "discard_changes": "ცვლილებების გაუქმება",
+        "delete_permanently": "სამუდამოდ წაშლა",
+        "access_revoked": "წვდომა გაუქმდა",
+        "add_share": "გაზიარებულის დამატება",
+        "all_calendars": "ყველა კალენდარი",
+        "all_day": "მთელი დღე",
+        "apple_ical": "Apple iCal",
+        "calendar_color": "კალენდრის ფერი",
+        "calendar_setting": "კალენდრის მორგება",
+        "changes_saved": "ცვლილებები შენახულია",
+        "choose_file": "ფაილის არჩევა",
+        "create_appt_settings": "შეხვედრების შექმნა",
+        "create_tag": "ჭდის შექმნა",
+        "custom_repeat": "მორგებული გამეორება",
+        "default_view": "ნაგულისხმევი ხედი",
+        "delete_tag": "ჭდის წაშლა",
+        "edit_access": "წვდომის ჩასწორება",
+        "edit_share": "გაზიარების ჩასწორება",
+        "edit_tag": "ჭდის ჩასწორება",
+        "end_after": "დასრულება შემდეგ",
+        "end_date": "დასრულების თარიღი",
+        "entire_serires": "მთლიანი სერია",
+        "event_title": "მოვლენის სათაური",
+        "every_day": "ყოველდღე",
+        "every_weekday": "ყოველი სამუშაო დღე",
+        "filter_sharer_user": "საქაღალდის მფლობელი",
+        "ics_url": "ICS URL",
+        "import_calendar_success": "შემოტანა წარმატებულია",
+        "loading_results": "შედეგების ჩატვირთვა…",
+        "meeting_room": "შეხვედრების ოთახი",
+        "new_appointment": "ახალი შეხვედრა",
+        "new_calendar": "ახალი კალენდარი",
+        "new_tag": "ახალი ჭდე",
+        "no_subject": "თემის გარეშე",
+        "no_title": "სათაურის გარეშე",
+        "notify_organizer": "ორგანიზატორის გაფრთხილება",
+        "of_every": "ყოველი",
+        "optional_one": "არასავალდებულო",
+        "optional_other": "არასავალდებულოები",
+        "other_actions": "სხვა ქმედებები",
+        "outlook_url": "Outlook-ის URL",
+        "proposal_declined": "შეთავაზება უარყოფილია",
+        "restore_calendar": "კალენდრის აღდგენა",
+        "results_for": "შედეგები მოთხოვნისთვის:",
+        "scheduled_in": "დაგეგმილია სად",
+        "select_color": "ფერის არჩევა",
+        "settings_saved": "პარამეტრები შენახულია",
+        "share_with": "გაზიარება ვისთან",
+        "single_advanced_filter": "გაფართოებული ფილტრები",
+        "single_instance": "ერთი გაშვებული ასლი",
+        "start_date": "დაწყების თარიღი",
+        "tag_name": "ჭდის სახელი",
+        "time_zones": "დროის სარტყლები",
+        "type_name_here": "კალენდრის სახელი",
+        "view_url": "URL-ის ნახვა",
+        "weeks_on": "კვირები",
+        "work_hour": "სამუშაო საათი",
+        "work_week": "სამუშაო კვირა",
+        "type_group_name_here": "ჯგუფის სახელი",
+        "calendar_groups": "კალენდრის ჯგუფები",
+        "hide_event_detail": "დეტალების დამალვა",
+        "show_event_detail": "დეტალების ჩვენება",
+        "caldav_url": "CalDAV-ის URL",
+        "webcal_url": "WebCAL-ის URL",
+        "email_attendees": "ელფოსტის გაგზავნა დამსწრეებისთვის",
+        "recurrent": "გამეორებადი შეხვედრა",
+        "reschedule_appointment": "შეხვედრის გადადება",
+        "repeat_every": "გამეორება ყოველ",
+        "end_on": "დასრულების დრო",
+        "last_sync": "ბოლო სინქრონიზაცია",
+        "save_changes": "ცვლილებების შენახვა",
+        "yes_delete": "კი, წაიშალოს",
+        "close_appointment_editor": "შეუნახავი ცვლილებები",
+        "keep_editing": "ჩასწორების გაგრძელება",
+        "destination_calendar": "სამიზნე კალენდარი"
     },
     "message": {
         "search_hints": " ",
@@ -104,14 +181,33 @@
         "you": "თქვენ",
         "subject_accepted": "მიღებული",
         "subject_tentative": "საცდელი",
-        "subject_declined": "უარყოფილია"
+        "subject_declined": "უარყოფილია",
+        "snackbar": {
+            "group_edited": "ცვლილებები შენახულია"
+        },
+        "original_invite": "-----ორიგინალი მოსაწვევი-----",
+        "the_organizer": "ორგანიზატორი",
+        "you_accepted": "თქვენ მიიღეთ",
+        "you_declined": "თქვენ უარჰყავით"
     },
     "no_title": " ",
     "action": {
         "search": "ძებნა",
         "send": "გაგზავნა",
         "answer": "პასუხი",
-        "delete": "წაშლა"
+        "delete": "წაშლა",
+        "delete_calendar": "კალენდრის წაშლა",
+        "download_ics": "ICS-ის გადმოწერა",
+        "edit_message": "შეტყობინების ჩასწორება",
+        "empty_trash": "სანაგვე ყუთის გასუფთავება",
+        "reset": "ფილტრების ჩამოყრა",
+        "send_cancellation": "გაუქმების გაგზავნა",
+        "send_edit": "ჩასწორების გაგზავნა",
+        "share_calendar": "კალენდრის გაზიარება",
+        "show_original": "ორიგინალის ჩვენება",
+        "edit_group": "ჯგუფის ჩასწორება",
+        "edit_calendar": "კალენდრის ჩასწორება",
+        "edit_name": "სახელის ჩასწორება"
     },
     "add": "დამატება",
     "administer": "ადმინისტრირება",
@@ -122,7 +218,8 @@
             "decline": "უარყოფა",
             "expand": "გახსნა",
             "no": "არა",
-            "yes": "დიახ"
+            "yes": "დიახ",
+            "needs_action": "სჭირდება ქმედება"
         },
         "is_exception": "გამონაკლისი"
     },
@@ -134,7 +231,9 @@
         "fourth": "მეოთხე",
         "last": "ბოლო",
         "second": "მეორე",
-        "third": "მესამე"
+        "third": "მესამე",
+        "weekend_day": "შაბათკვირა",
+        "working_day": "სამუშაო დღე"
     },
     "months": {
         "april": "აპრილი",
@@ -153,7 +252,8 @@
     "owner": "მფლობელი",
     "participants": {
         "Accepted": "მიღებული",
-        "Declined": "უარყოფილია"
+        "Declined": "უარყოფილია",
+        "Not_answered": "არ უპასუხია"
     },
     "placeholder": {
         "organizer": "ორგანიზატორი"
@@ -172,13 +272,29 @@
         "days_plural": "დღეში",
         "weeks_plural": "კვირაში",
         "months_plural": "თვეში",
-        "years_plural": "წელიწადში"
+        "years_plural": "წელიწადში",
+        "everyMonth": "ყოველთვე",
+        "everyWeek": "ყოველკვირა",
+        "everyYear": "ყოველ წელს"
     },
     "settings": {
         "options": {
             "dflt_vsblty_opt": {
                 "public": "საჯარო"
+            },
+            "default_view": {
+                "day": "დღის ხედი",
+                "list": "სიის ხედი",
+                "month": "თვის ხედი",
+                "week": "კვირის ხედი"
             }
+        },
+        "label": {
+            "default_calendar": "ნაგულისხმევი კალენდარი",
+            "forward_invites": "მოწვევების გადაგზავნა",
+            "invitation_response": "მოსაწვევის პასუხი",
+            "show_reminders": "შეხსენებების ჩვენება",
+            "span_time": "დროის ინტერვალი"
         }
     },
     "share": {
@@ -186,11 +302,19 @@
             "share_calendar_role": {
                 "none": "არცერთი"
             }
+        },
+        "label": {
+            "internal_sharing": "შიდა გაზიარება",
+            "public_sharing": "საჯარო გაზიარება"
         }
     },
     "snackbar": {
         "invite": {
             "error": "შეცდომა"
+        },
+        "url_copied": "{{title}} დაკოპირდა",
+        "forwardAppointment": {
+            "success": "შეხვედრა გადაგზავნილია"
         }
     },
     "success": "წარმატებულია",
@@ -199,7 +323,14 @@
         "chat": "აღჭურვილობა",
         "equipment": "აღჭურვილობა",
         "location": "მდებარეობა",
-        "meetingRooms": "შეხვედრის ოთახები"
+        "meetingRooms": "შეხვედრის ოთახები",
+        "add_attachments": "მიმაგრებული ფაილების დამატება",
+        "revoke": "წვდომის გაბათილება",
+        "virtual_room": "ვირლუალური ოთახი",
+        "free_appointment": "თავისუფალია",
+        "tentative_appointment": "კითხვის ქვეშ",
+        "busy_appointment": "დაკავებულია",
+        "copy_url": "URL-ის კოპირება"
     },
     "type": "ტიპი",
     "workflow": "სამუშაო პროცესი",
@@ -210,6 +341,9 @@
         },
         "buttonLabel": {
             "forward": "გადაგზავნა"
+        },
+        "forwardAppointment": {
+            "title": "შეხვედრის გადაგზავნა"
         }
     },
     "daily_planner": {
@@ -223,11 +357,14 @@
             "attendee": "დამსწრე",
             "equipment": "აღჭურვილობა",
             "unknown": "უცნობი",
-            "optionalAttendee": "არასავალდებულო"
+            "optionalAttendee": "არასავალდებულო",
+            "meetingRoom": "შეხვედრების ოთახი"
         },
         "status": "სტატუსი",
         "from": "საიდან",
-        "to": "სადამდე"
+        "to": "სადამდე",
+        "end_time": "დასრულების დრო",
+        "start_time": "დაწყების დრო"
     },
     "colors": {
         "blue": "ლურჯი",
@@ -256,7 +393,125 @@
     "add_external_calendar": {
         "caldav": {
             "password": "პაროლი",
-            "username": "მომხმარებლის სახელი"
+            "username": "მომხმარებლის სახელი",
+            "calendar_name": "კალენდრის სახელი"
         }
+    },
+    "allowed_actions": "დაშვებული ქმედებები",
+    "composer": {
+        "attachment": {
+            "draganddrop": {
+                "title": "გადათრევა/დაგდების რეჟიმი"
+            }
+        }
+    },
+    "find_shares": "გაზიარებების პოვნა",
+    "folder": {
+        "modal": {
+            "footer": {
+                "go_back": "უკან გადასვლა"
+            },
+            "move": {
+                "input": {
+                    "filter": "კალენდრების გაფილტვრა"
+                }
+            },
+            "creategroup": {
+                "footer": "ჯგუფის შექმნა"
+            },
+            "editgroup": {
+                "footer": "ცვლილებების შენახვა"
+            },
+            "deletegroup": {
+                "confirm": "სამუდამოდ წაშლა"
+            }
+        },
+        "share_info": "გაზიარების ინფორმაცია"
+    },
+    "has_attachments": "აქვს მიმაგრებული ფაილები",
+    "import_appointments": "შეხვედრების შემოტანა",
+    "is_private": "პირადია",
+    "is_recurrent": "გამეორებადია",
+    "new_appointment": "ახალი შეხვედრა",
+    "next_day": "შემდეგი დღე",
+    "next_month": "შემდეგი თვე",
+    "next_week": "შემდეგი კვირა",
+    "timezone": {
+        "alaska": "{{value}} ალასკა",
+        "argentina": "{{value}} არგენტინა",
+        "arizona": "{{value}} არიზონა",
+        "asuncion": "{{value}} ასუნსიონი",
+        "azores": "{{value}} აზორის კუნძულები",
+        "baku": "{{value}} ბაქო",
+        "beirut": "{{value}} ბეირუთი",
+        "brasilia": "{{value}} ბრაზილია",
+        "caracas": "{{value}} კარაკასი",
+        "casablanca": "{{value}} კასაბლანკა",
+        "chita": "{{value}} ჩიტა",
+        "colombia": "{{value}} კოლომბია",
+        "cuiaba": "{{value}} კუიაბა",
+        "damascus": "{{value}} დამასკო",
+        "darwin": "{{value}} დარვინი",
+        "dateline": "{{value}} Dateline",
+        "dhaka": "{{value}} დაკა",
+        "egypt": "{{value}} ეგვიპტე",
+        "eucla": "{{value}} ეუკლა",
+        "gmt_02": "{{value}} GMT-02",
+        "gmt_11": "{{value}} GMT-11",
+        "greenland": "{{value}} გრენლანდია",
+        "hawaii": "{{value}} ჰავაი",
+        "iraq": "{{value}} ერაყი",
+        "istanbul": "{{value}} სტამბოლი",
+        "jerusalem": "{{value}} იერუსალიმი",
+        "jordan": "{{value}} იორდანია",
+        "kabul": "{{value}} ქაბული",
+        "kathmandu": "{{value}} კატმანდუ",
+        "korea": "{{value}} კორეა",
+        "magadan": "{{value}} მაგადანი",
+        "manaus": "{{value}} მანაუსი",
+        "mid_atlantic": "{{value}} შუა ატლანტიკის ოკეანე",
+        "minsk": "{{value}} მინსკი",
+        "monrovia": "{{value}} მონროვია",
+        "montevideo": "{{value}} მონტევიდეო",
+        "nairobi": "{{value}} ნაირობი",
+        "namibia": "{{value}} ნამიბია",
+        "newfoundland": "{{value}} ნიუფაუნდლენდი",
+        "nuku_alofa": "{{value}} ნუკუალოფა",
+        "pyongyang": "{{value}} ფხენიანი",
+        "samoa": "{{value}} სამოა",
+        "saskatchewan": "{{value}} სასკაჩევანი",
+        "tbilisi": "{{value}} თბილისი",
+        "tehran": "{{value}} თეირანი",
+        "vladivostok_magadan": "{{value}} ვლადივოსტოკი_მაგადანი_rtz_9",
+        "yangon": "{{value}} იანგონი",
+        "yerevan": "{{value}} ერევანი"
+    },
+    "preview": {
+        "close": "მინიატურის დახურვა"
+    },
+    "previous_day": "წინა დღე",
+    "previous_month": "წინა თვე",
+    "previous_week": "წინა კვირა",
+    "revoke_access": "წვდომის გაბათილება",
+    "search": {
+        "from_date": "თარიღიდან",
+        "organized_by": "ორგანიზატორია",
+        "to_date": "თარიღამდე"
+    },
+    "shared_folders": "გაზიარებული კალენდრები",
+    "shared_items": "გაზიარებული ელემენტები",
+    "shares_info": "გაზიარებულების ინფორმაცია",
+    "editor": {
+        "daily_planner": {
+            "button": {
+                "show": "ორგანიზატორის ჩვენება",
+                "hide": "ორგანიზატორის დამალვა"
+            }
+        }
+    },
+    "reset_date": "თარიღის ჩამოყრა",
+    "add_ics_from_url": {
+        "calendar_name": "კალენდრის სახელი *",
+        "url": "კალენდრის URL*"
     }
 }
