@@ -171,7 +171,50 @@
         "yes_delete": "კი, წაიშალოს",
         "close_appointment_editor": "შეუნახავი ცვლილებები",
         "keep_editing": "ჩასწორების გაგრძელება",
-        "destination_calendar": "სამიზნე კალენდარი"
+        "destination_calendar": "სამიზნე კალენდარი",
+        "available": "ხელმისაწვდომი ბრძანდებით",
+        "calendar_shared": "კალენდრის გაზიარება წარმატებულია",
+        "check_availability": "თქვენი ხელმისაწვდომობის შემოწმება",
+        "checking_availability": "მოწმდება თქვენი ხელმისაწვდომობა",
+        "default_appt_vsblty": "ნაგულისხმევი შეხვედრის ხილვადობა",
+        "delete_attachment_one": "წაშლა",
+        "delete_attachment_other": "ყველას წაშლა",
+        "delete_tag_name": "ჭდის {{name}} წაშლა",
+        "dismiss_one": "მოცილება",
+        "dismiss_other": "ყველას მოცილება",
+        "download_one": "გადმოწერა",
+        "download_other": "ყველას გადმოწერა",
+        "edit_tag_name": "ჭდის {{name}} ჩასწორება",
+        "edits_saved": "ჩასწორებები შენახულია",
+        "email_input_message": "შეიყვანეთ ელფოსტის მისამართები",
+        "every_year_on": "ყოველ წელს",
+        "new_time_proposed": "ახალი დროის შეთავაზება",
+        "no_end_date": "დასრულების თარიღის გარეშე",
+        "out_of_office": "ოფისში არ ვარ",
+        "propose_new_time": "ახალი დროის შეთავაზება",
+        "set_new_time": "ახალი დროის დაყენება",
+        "share_calendar_url": "{{title}} გაზიარებული წვდომა",
+        "share_public_link": "საჯარო ბმული გაზიარება",
+        "shares_items": "<bold>{{user}}</bold>-ის გაზიარებული კალენდრები",
+        "show_one": "ჩვენება",
+        "show_other": "ყველას ჩვენება",
+        "show_declined_meetings": "უარყოფილი შეხვედრების ჩვენება",
+        "start_week_on": "კვირის პირველი დღეა",
+        "trash_emptied": "ნაგავი წარმატებით გასუფთავდა",
+        "create_group": "ახალი ჯგუფის შექმნა",
+        "group_not_found": "ჯგუფი აღმოჩენილი არაა",
+        "show_more": "+ კიდევ {{count}}",
+        "show_all_events": "ყველა მოვლენის ჩვენება",
+        "disableSplitLayoutTooltip": "გაყოფილი განლაგების გათიშვა",
+        "enableSplitLayoutTooltip": "გაყოფილი განლაგების ჩართვა",
+        "calendars_group_selector": {
+            "placeholder": "აკრიფეთ კალენდრის სახელი"
+        },
+        "deleting_please_wait": "მიმდინარეობს წაშლა. მოითმინეთ...",
+        "loading_please_wait": "მიმდინარეობს ჩატვირთვა. მოითმინეთ...",
+        "save_and_close": "შენახვა და დახურვა",
+        "open_appointment": "შეხვედრაზე გადასვლა",
+        "discard_changes_confirmation'": "შეხვედრის ცვლილებები მოცილებულია"
     },
     "message": {
         "search_hints": " ",
@@ -183,12 +226,33 @@
         "subject_tentative": "საცდელი",
         "subject_declined": "უარყოფილია",
         "snackbar": {
-            "group_edited": "ცვლილებები შენახულია"
+            "group_edited": "ცვლილებები შენახულია",
+            "all_att_added": "მიმაგრებული ფაილები წარმატებით დაემატა",
+            "appointment_permanently_deleted": "შეხვედრა სამუდამოდ წაიშალა",
+            "calendar_deleted_successfully": "კალენდარი წარმატებით წაიშალა.",
+            "calendar_edits_saved": "ჩასწორებები შენახულია",
+            "calendar_permanently_deleted": "კალენდარი სამუდამოდ წაიშალა",
+            "calendar_restored": "კალენდრის აღდგენა წარმატებულია",
+            "new_calendar_created": "შეიქმნა ახალი კალენდარი",
+            "shared_calendar_removed": "კალენდარი წარმატებით წაიშალა",
+            "new_group_created": "ახალი ჯგუფი შეიქმნა",
+            "external_calendar_synced": "კალენდრის სინქრონიზაცია წარმატებულია",
+            "new_calendar_added": "კალენდრის დამატება წარმატებულია",
+            "caldav_calendars_synced": "კალენდრების სინქრონიზაცია წარმატებულია"
         },
         "original_invite": "-----ორიგინალი მოსაწვევი-----",
         "the_organizer": "ორგანიზატორი",
         "you_accepted": "თქვენ მიიღეთ",
-        "you_declined": "თქვენ უარჰყავით"
+        "you_declined": "თქვენ უარჰყავით",
+        "appointment_invitation_sent": "შეხვედრის მოსაწვევი გაგზავნილია",
+        "are_organizer": "ორგანიზატორია",
+        "delete_all_occurences": "ყველა გამეორების წაშლა",
+        "send_email": "ელფოსტის გაგზავნა",
+        "somebody_invited_you": "<strong>{{somebody}}</strong>-მა მოგიწვიათ",
+        "somebody_invited_owner": "<strong>{{somebody}}</strong>-მა მოიწვია {{owner}}",
+        "you_did_not_answer": "არ გიპასუხიათ",
+        "event_instance_data": "შემთხვევა \"{{title}}\", {{date}}",
+        "event_series_data": "\"{{title}}\"-ის სერიები, {{date}}"
     },
     "no_title": " ",
     "action": {
@@ -207,7 +271,15 @@
         "show_original": "ორიგინალის ჩვენება",
         "edit_group": "ჯგუფის ჩასწორება",
         "edit_calendar": "კალენდრის ჩასწორება",
-        "edit_name": "სახელის ჩასწორება"
+        "edit_name": "სახელის ჩასწორება",
+        "calendar_access_share": "კალენდრის წვდომის გაზიარება",
+        "calendar_upload": "ICS ფაილის შემოტანა",
+        "edit_calendar_properties": "კალენდრის თვისებების ჩასწორება",
+        "export_calendar_ics": "ICS ფაილის გატანა",
+        "move_to_root": "root-ში გადატანა",
+        "preview": "დააწკაპუნეთ მინიატურისთვის",
+        "save_to_preview": "მინიატურის სანახავად შეინახეთ",
+        "add_external_calendars": "გარე კალენდრების დამატება"
     },
     "add": "დამატება",
     "administer": "ადმინისტრირება",
@@ -253,7 +325,15 @@
     "participants": {
         "Accepted": "მიღებული",
         "Declined": "უარყოფილია",
-        "Not_answered": "არ უპასუხია"
+        "Not_answered": "არ უპასუხია",
+        "AC_with_count_one": "მიღებულია",
+        "AC_with_count_other": "{{count}} მიღებულია",
+        "DE_with_count_one": "უარყოფილია",
+        "DE_with_count_other": "{{count}} უარყოფილია",
+        "Invited_Visitor": "მოწვეულია",
+        "TE_with_count_one": "გადაწყვეტილი არაა",
+        "TE_with_count_other": "{{count}} გადაწყვეტილი არაა",
+        "Tentative": "დაეთანხმა, როგორც გადაუწყვეტელი"
     },
     "placeholder": {
         "organizer": "ორგანიზატორი"
@@ -286,7 +366,11 @@
                 "day": "დღის ხედი",
                 "list": "სიის ხედი",
                 "month": "თვის ხედი",
-                "week": "კვირის ხედი"
+                "week": "კვირის ხედი",
+                "work_week": "სამუშაო კვირის ხედი"
+            },
+            "timezones": {
+                "egypt": "GMT +02:00 ეგვიპტე"
             }
         },
         "label": {
@@ -294,18 +378,24 @@
             "forward_invites": "მოწვევების გადაგზავნა",
             "invitation_response": "მოსაწვევის პასუხი",
             "show_reminders": "შეხსენებების ჩვენება",
-            "span_time": "დროის ინტერვალი"
+            "span_time": "დროის ინტერვალი",
+            "default_appt_dur": "შეხვედრის ნაგულისხმევი ხანგრძლივობა",
+            "enter_email": "შეიყვანეთ ელფოსტის მისამართი"
         }
     },
     "share": {
         "options": {
             "share_calendar_role": {
-                "none": "არცერთი"
+                "none": "არცერთი",
+                "viewer": "დამთვალიერებელი (შეუძლია ნახვა)"
             }
         },
         "label": {
             "internal_sharing": "შიდა გაზიარება",
             "public_sharing": "საჯარო გაზიარება"
+        },
+        "placeholder": {
+            "recipients_address": "მიმღებთა ელფოსტის მისამართები"
         }
     },
     "snackbar": {
@@ -315,7 +405,10 @@
         "url_copied": "{{title}} დაკოპირდა",
         "forwardAppointment": {
             "success": "შეხვედრა გადაგზავნილია"
-        }
+        },
+        "share_folder_success": "კალენდრის გაზიარება წარმატებულია",
+        "tag_applied": "ჭდე {{tag}} დაედო",
+        "tag_removed": "ჭდე {{tag}} მოცილდა"
     },
     "success": "წარმატებულია",
     "timezones": "დროის სარტყლები",
@@ -330,20 +423,30 @@
         "free_appointment": "თავისუფალია",
         "tentative_appointment": "კითხვის ქვეშ",
         "busy_appointment": "დაკავებულია",
-        "copy_url": "URL-ის კოპირება"
+        "copy_url": "URL-ის კოპირება",
+        "chat_room": "ვირტუალური ოთახის ბმული",
+        "copy_ics_url": "ICS-ის ბმულის კოპირება",
+        "copy_outlook_url": "Outlook-ის ბმულის კოპირება",
+        "copy_vector_url": "ნახვის ბმულის კოპირება",
+        "edit": "გაზიარების თვისებების ჩასწორება",
+        "folder_linked_status": "გამიზიარეს",
+        "copy_webcal_url": "WebCAL-ის ბმულის კოპირება",
+        "copy_caldav_url": "CalDAV-ის ბმული კოპირება"
     },
     "type": "ტიპი",
     "workflow": "სამუშაო პროცესი",
     "write": "ჩაწერა",
     "modal": {
         "initializeError": {
-            "buttonConfirm": "თავიდან ჩატვირთვა"
+            "buttonConfirm": "თავიდან ჩატვირთვა",
+            "title": "რაღაც არასწორად წავიდა"
         },
         "buttonLabel": {
             "forward": "გადაგზავნა"
         },
         "forwardAppointment": {
-            "title": "შეხვედრის გადაგზავნა"
+            "title": "შეხვედრის გადაგზავნა",
+            "placeholder": "ახალი დამსწრის დამატება"
         }
     },
     "daily_planner": {
@@ -364,7 +467,8 @@
         "from": "საიდან",
         "to": "სადამდე",
         "end_time": "დასრულების დრო",
-        "start_time": "დაწყების დრო"
+        "start_time": "დაწყების დრო",
+        "out-of-office": "ოფისში არ ვარ"
     },
     "colors": {
         "blue": "ლურჯი",
@@ -402,7 +506,11 @@
         "attachment": {
             "draganddrop": {
                 "title": "გადათრევა/დაგდების რეჟიმი"
-            }
+            },
+            "contactsMod": "კონტაქტის ბარათის დამატება",
+            "drive": "დამატება Drive-დან",
+            "files": "დამატება Files-დან",
+            "local": "დამატება ლოკალურიდან"
         }
     },
     "find_shares": "გაზიარებების პოვნა",
@@ -417,13 +525,22 @@
                 }
             },
             "creategroup": {
-                "footer": "ჯგუფის შექმნა"
+                "footer": "ჯგუფის შექმნა",
+                "default_group_name": "ახალი კალენდრების ჯგუფი"
             },
             "editgroup": {
-                "footer": "ცვლილებების შენახვა"
+                "footer": "ცვლილებების შენახვა",
+                "title": "კალენდრების ჯგუფის ჩასწორება"
             },
             "deletegroup": {
-                "confirm": "სამუდამოდ წაშლა"
+                "confirm": "სამუდამოდ წაშლა",
+                "title": "წაიშალოს ჯგუფი სამუდამოდ?"
+            },
+            "new": {
+                "title2": "ახალი კალენდრის შექმნა"
+            },
+            "restore": {
+                "footer": "შექმნა და აღდგენა"
             }
         },
         "share_info": "გაზიარების ინფორმაცია"
@@ -484,7 +601,20 @@
         "tehran": "{{value}} თეირანი",
         "vladivostok_magadan": "{{value}} ვლადივოსტოკი_მაგადანი_rtz_9",
         "yangon": "{{value}} იანგონი",
-        "yerevan": "{{value}} ერევანი"
+        "yerevan": "{{value}} ერევანი",
+        "baja_california": "{{value}} ქვემო კალიფორნია (ჩრდილოეთი)",
+        "cayenne_fortaleza": "{{value}} კაიენა, ფორტალეზა",
+        "central_america": "{{value}} ცენტრალური ამერიკა",
+        "christmas_island": "{{value}} ქრისტეშობის კუნძული",
+        "harare_pretoria": "{{value}} ჰარარე, პრეტორია",
+        "indiana_east": "{{value}} ინდიანა (აღმოსავლეთი)",
+        "kuwait_riyadh": "{{value}} კუვეიტი, ერ-რიადი",
+        "la_paz": "{{value}} ლა-პასი",
+        "port_louis": "{{value}} პორტ ლუისი",
+        "us_canada_central": "{{value}} აშშ/ცენტრალური კანადა",
+        "us_canada_eastern": "{{value}} აშშ/აღმოსავლეთი კანადა",
+        "us_canada_mountain": "{{value}} აშშ/მთიანი კანადა",
+        "us_canada_pacific": "{{value}} აშშ/კანადის წყნარი ოკეანის მხარე"
     },
     "preview": {
         "close": "მინიატურის დახურვა"
@@ -507,11 +637,37 @@
                 "show": "ორგანიზატორის ჩვენება",
                 "hide": "ორგანიზატორის დამალვა"
             }
+        },
+        "repeat": {
+            "set-custom-repeat": "სასურველი გამეორების დაყენება"
         }
     },
     "reset_date": "თარიღის ჩამოყრა",
     "add_ics_from_url": {
         "calendar_name": "კალენდრის სახელი *",
         "url": "კალენდრის URL*"
+    },
+    "appt_restored_successfully": "შეხვედრის აღდგენა წარმატებულია",
+    "button": {
+        "customize_modal": "მორგების მოდალის გახსნა"
+    },
+    "calendar": {
+        "modal": {
+            "custom_schedule": {
+                "title": "სამუშაო საათების მორგება"
+            }
+        }
+    },
+    "edit_share_properties": "გაზიარების თვისებების ჩასწორება",
+    "find_calendar_shares": "კალენდრის გაზიარებების ძებნა",
+    "messages": {
+        "snackbar": {
+            "tag_updated": "ჭდე წარმატებით განახლდა"
+        }
+    },
+    "remove_from_this_list": "გაზიარებული კალენდრის წაშლა",
+    "share_invite_resent": "გაზიარების მოსაწვევი თავიდან გაიგზავნა",
+    "displayer": {
+        "search_title1": "კიდევ ერთი ძებნის დაწყება"
     }
 }
