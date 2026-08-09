@@ -419,7 +419,7 @@
         "meetingRooms": "შეხვედრის ოთახები",
         "add_attachments": "მიმაგრებული ფაილების დამატება",
         "revoke": "წვდომის გაბათილება",
-        "virtual_room": "ვირლუალური ოთახი",
+        "virtual_room": "ვირტუალური ოთახი",
         "free_appointment": "თავისუფალია",
         "tentative_appointment": "კითხვის ქვეშ",
         "busy_appointment": "დაკავებულია",
@@ -498,7 +498,8 @@
         "caldav": {
             "password": "პაროლი",
             "username": "მომხმარებლის სახელი",
-            "calendar_name": "კალენდრის სახელი"
+            "calendar_name": "კალენდრის სახელი",
+            "host": "ჰოსტის მისამართი (calendar.example.com)"
         }
     },
     "allowed_actions": "დაშვებული ქმედებები",
@@ -669,5 +670,6 @@
     "share_invite_resent": "გაზიარების მოსაწვევი თავიდან გაიგზავნა",
     "displayer": {
         "search_title1": "კიდევ ერთი ძებნის დაწყება"
-    }
+    },
+    "import_to_calendar": "შემოტანა კალენდრებში"
 }
