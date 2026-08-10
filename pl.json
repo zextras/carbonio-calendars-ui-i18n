@@ -360,7 +360,10 @@
         "select_destination_calendar": "Wybierz kalendarz docelowy:",
         "destination_calendar": "Kalendarz docelowy",
         "open_appointment": "Idź do spotkania",
-        "discard_changes_confirmation'": "Zmiany w spotkaniu zostały odrzucone"
+        "discard_changes_confirmation'": "Zmiany w spotkaniu zostały odrzucone",
+        "remove": "usuń",
+        "original": "Pierwotnie",
+        "proposed": "Proponowane"
     },
     "message": {
         "modal": {
