@@ -214,7 +214,25 @@
         "loading_please_wait": "მიმდინარეობს ჩატვირთვა. მოითმინეთ...",
         "save_and_close": "შენახვა და დახურვა",
         "open_appointment": "შეხვედრაზე გადასვლა",
-        "discard_changes_confirmation'": "შეხვედრის ცვლილებები მოცილებულია"
+        "discard_changes_confirmation'": "შეხვედრის ცვლილებები მოცილებულია",
+        "appointment_is_private": "შეხვედრა პირადია.",
+        "appt_reminder_one": "შეხვედრის შეხსენება",
+        "appt_reminder_other": "შეხვედრის შეხსენებები",
+        "create_new_calendar": "ახალი კალენდრის შექმნა",
+        "end_date_and_time": "დასრულების თარიღი და დრო",
+        "of_every_month": "თვის, ყოველ",
+        "revoke_share": "{{title}}-ის გაზიარების გაბათილება",
+        "sharing_of_this_folder": "ამ საქაღალდის გაზიარება",
+        "start_date_and_time": "დაწყების თარიღი და დრო",
+        "newgroup": {
+            "calendars": "კალენდრები ამ ჯგუფში"
+        },
+        "editgroup": {
+            "calendars": "კალენდრები ამ ჯგუფში"
+        },
+        "group_is_empty": "ამ ჯგუფი ცარიელია",
+        "day_of_month_recurrence": "თვის {{day}}-ე დღე",
+        "select_destination_calendar": "აირჩიეთ სამიზნე კალენდარი:"
     },
     "message": {
         "search_hints": " ",
@@ -238,7 +256,22 @@
             "new_group_created": "ახალი ჯგუფი შეიქმნა",
             "external_calendar_synced": "კალენდრის სინქრონიზაცია წარმატებულია",
             "new_calendar_added": "კალენდრის დამატება წარმატებულია",
-            "caldav_calendars_synced": "კალენდრების სინქრონიზაცია წარმატებულია"
+            "caldav_calendars_synced": "კალენდრების სინქრონიზაცია წარმატებულია",
+            "all_link_copied": "საჯარო ბმული წარმატებით დაკოპირდა",
+            "appointment_permanently_deleted_succesfully": "სამუდამო წაშლა წარმატებით დასრულდა",
+            "appt_moved": "შეხვედრა წარმატებით იქნა გადატანილი დროზე",
+            "appt_moved_to_trash": "შეხვედრა გადატანილია ნაგვის ყუთში",
+            "appt_restored": "შეხვედრა წარმატებით აღდგა დროზე",
+            "calendar_moved_to_trash": "კალენდარი გადატანილია ნაგვის ყუთში",
+            "invite": {
+                "accept": "თქვენ უპასუხეთ, რომ ეთანხმებით",
+                "decline": "უპასუხეთ, რომ უარს ამბობთ",
+                "tentative": "უპასუხეთ, რომ ყოყმანობთ"
+            },
+            "series_deleted_no_notification": "სერიები გადატანილია ნაგვის ყუთში.",
+            "group_deleted": "კალენდრების ჯგუფი სამუდამოდ წაიშალა",
+            "external_calendar_syncing": "კალენდრის სინქრონიზაცია დაიწყო",
+            "caldav_calendars_syncing": "კალენდრების სინქრონიზაცია დაიწყო"
         },
         "original_invite": "-----ორიგინალი მოსაწვევი-----",
         "the_organizer": "ორგანიზატორი",
@@ -252,7 +285,14 @@
         "somebody_invited_owner": "<strong>{{somebody}}</strong>-მა მოიწვია {{owner}}",
         "you_did_not_answer": "არ გიპასუხიათ",
         "event_instance_data": "შემთხვევა \"{{title}}\", {{date}}",
-        "event_series_data": "\"{{title}}\"-ის სერიები, {{date}}"
+        "event_series_data": "\"{{title}}\"-ის სერიები, {{date}}",
+        "optional_participant_one": "{{count}} არასავალდებილო",
+        "optional_participant_other": "{{count}} არასავალდებილო",
+        "required_participant_one": "{{count}} მონაწილე",
+        "required_participant_other": "{{count}} მონაწილე",
+        "somebody_is_organizer": "<strong>{{somebody}}</strong> ორგანიზატორია",
+        "you_accepted_as_tentative": "დაეთანხმეთ ყოყმანით",
+        "on_behalf_of": "<strong>{{owner}}</strong>-ის სახელით"
     },
     "no_title": " ",
     "action": {
@@ -279,7 +319,10 @@
         "move_to_root": "root-ში გადატანა",
         "preview": "დააწკაპუნეთ მინიატურისთვის",
         "save_to_preview": "მინიატურის სანახავად შეინახეთ",
-        "add_external_calendars": "გარე კალენდრების დამატება"
+        "add_external_calendars": "გარე კალენდრების დამატება",
+        "Trash_already_empty": "ნაგვის ყუთი უკვე ცარიელია",
+        "edit_and_share_calendar": "კალენდრის ჩასწორება და გაზიარება",
+        "add_ics_from_url": "ICS-ის დამატება URL-დან"
     },
     "add": "დამატება",
     "administer": "ადმინისტრირება",
@@ -333,7 +376,8 @@
         "Invited_Visitor": "მოწვეულია",
         "TE_with_count_one": "გადაწყვეტილი არაა",
         "TE_with_count_other": "{{count}} გადაწყვეტილი არაა",
-        "Tentative": "დაეთანხმა, როგორც გადაუწყვეტელი"
+        "Tentative": "დაეთანხმა, როგორც გადაუწყვეტელი",
+        "visitors": "და კიდევ {{others}} დამსწრე"
     },
     "placeholder": {
         "organizer": "ორგანიზატორი"
@@ -341,7 +385,11 @@
     "public": "საჯარო",
     "read": "კითხვა",
     "reminder": {
-        "never": "არასოდეს"
+        "never": "არასოდეს",
+        "hours_one": "{{count}} საათი",
+        "hours_other": "{{count}} საათი",
+        "minutes_one": "{{count}} წუთი",
+        "minutes_other": "{{count}} წუთი"
     },
     "repeat": {
         "customize": "მორგება",
@@ -380,14 +428,22 @@
             "show_reminders": "შეხსენებების ჩვენება",
             "span_time": "დროის ინტერვალი",
             "default_appt_dur": "შეხვედრის ნაგულისხმევი ხანგრძლივობა",
-            "enter_email": "შეიყვანეთ ელფოსტის მისამართი"
-        }
+            "enter_email": "შეიყვანეთ ელფოსტის მისამართი",
+            "delete_invt_on_rply": "მოწვევის წაშლა პასუხისას",
+            "flash_browser_title": "ბრაუზერის სათაურის ციმციმი",
+            "show_popup_notification": "მხტუნარა გაფრთხილების ჩვენება"
+        },
+        "invalid_email": "არასწორი ელფოსტა"
     },
     "share": {
         "options": {
             "share_calendar_role": {
                 "none": "არცერთი",
                 "viewer": "დამთვალიერებელი (შეუძლია ნახვა)"
+            },
+            "share_calendar_with": {
+                "external_guests": "გარე სტუმრები (მხოლოდ ნახვა)",
+                "internal_users_groups": "შიდა მომხმარებლები, ან ჯგუფები"
             }
         },
         "label": {
@@ -408,7 +464,8 @@
         },
         "share_folder_success": "კალენდრის გაზიარება წარმატებულია",
         "tag_applied": "ჭდე {{tag}} დაედო",
-        "tag_removed": "ჭდე {{tag}} მოცილდა"
+        "tag_removed": "ჭდე {{tag}} მოცილდა",
+        "email_copied_to_clipboard": "ელფოსტა დაკოპირდა ბუფერში."
     },
     "success": "წარმატებულია",
     "timezones": "დროის სარტყლები",
@@ -431,7 +488,10 @@
         "edit": "გაზიარების თვისებების ჩასწორება",
         "folder_linked_status": "გამიზიარეს",
         "copy_webcal_url": "WebCAL-ის ბმულის კოპირება",
-        "copy_caldav_url": "CalDAV-ის ბმული კოპირება"
+        "copy_caldav_url": "CalDAV-ის ბმული კოპირება",
+        "enable_disable_rich_text": "მდიდარი ტექსტის რედაქტორის ჩართვა/გამორთვა",
+        "out_of_office_appointment": "ოფისიდან გასვლის შეხვედრა",
+        "readonly_action": "ეს კალენდარი მხოლოდ-წაკითხვადია"
     },
     "type": "ტიპი",
     "workflow": "სამუშაო პროცესი",
@@ -527,7 +587,8 @@
             },
             "creategroup": {
                 "footer": "ჯგუფის შექმნა",
-                "default_group_name": "ახალი კალენდრების ჯგუფი"
+                "default_group_name": "ახალი კალენდრების ჯგუფი",
+                "title": "ახალი კალენდრების ჯგუფის შექმნა"
             },
             "editgroup": {
                 "footer": "ცვლილებების შენახვა",
@@ -615,7 +676,20 @@
         "us_canada_central": "{{value}} აშშ/ცენტრალური კანადა",
         "us_canada_eastern": "{{value}} აშშ/აღმოსავლეთი კანადა",
         "us_canada_mountain": "{{value}} აშშ/მთიანი კანადა",
-        "us_canada_pacific": "{{value}} აშშ/კანადის წყნარი ოკეანის მხარე"
+        "us_canada_pacific": "{{value}} აშშ/კანადის წყნარი ოკეანის მხარე",
+        "abu_dhabi_muscat": "{{value}} აბუ დაბი, მუსკატი",
+        "atlantic_time_canada": "{{value}} ატლანტიკური დრო (კანადა)",
+        "bangkok_hanoi_jakarta": "{{value}} ბანკოკი, ჰანოი, ჯაკარტა",
+        "britain_ireland_portugal": "{{value}} ბრიტანეთი, ირლანდია, პორტუგალია",
+        "cape_verde_is": "{{value}} კაბო-ვერდეს კუნძ.",
+        "coordinated_universal_time": "{{value}} კოორდინირებული უნივერსალური დრო",
+        "ekaterinburg_rtz_4": "{{value}} ეკატერინბურგი (RTZ 4)",
+        "irkutsk_rtz_7": "{{value}} ირკუტსკი (RTZ 7)",
+        "kaliningrad_rtz_1": "{{value}} კალინიგრადი (RTZ 1)",
+        "krasnoyarsk_rtz_6": "{{value}} კრასნოიარსკი (RTZ 6)",
+        "pacific_south_america": "{{value}} წყნარი ოკეანე სამხრეთი ამერიკა",
+        "sri_jayawardenepura_kotte": "{{value}} შრი-ჯაიავარდენეპურა-კოტე",
+        "west_central_africa": "{{value}} დასავლეთი ცენტრალური აფრიკა"
     },
     "preview": {
         "close": "მინიატურის დახურვა"
@@ -663,13 +737,21 @@
     "find_calendar_shares": "კალენდრის გაზიარებების ძებნა",
     "messages": {
         "snackbar": {
-            "tag_updated": "ჭდე წარმატებით განახლდა"
-        }
+            "tag_updated": "ჭდე წარმატებით განახლდა",
+            "tag_created": "ჭდე {{name}} წარმატებით შეიქმნა",
+            "tag_deleted": "ჭდე {{name}} წარმატებით წაიშალა"
+        },
+        "format_as_plain_text": "უბრალო ტექსტად დაფორმატება"
     },
     "remove_from_this_list": "გაზიარებული კალენდრის წაშლა",
     "share_invite_resent": "გაზიარების მოსაწვევი თავიდან გაიგზავნა",
     "displayer": {
         "search_title1": "კიდევ ერთი ძებნის დაწყება"
     },
-    "import_to_calendar": "შემოტანა კალენდრებში"
+    "import_to_calendar": "შემოტანა კალენდრებში",
+    "appointment": {
+        "virtualRoom": {
+            "displayerLink": "ვირტუალურ ოთახში შესვლა"
+        }
+    }
 }
