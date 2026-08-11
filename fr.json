@@ -266,7 +266,7 @@
         "delete_tag_name": "Supprimer l'étiquette {{name}}",
         "no_title": "Pas de titre",
         "scheduled_in": "Planifié dans",
-        "warning": "Avertissement",
+        "warning": "Attention",
         "trash": "Corbeille",
         "tag": "Étiquette",
         "share_public_link": "Partager lien public",
@@ -395,7 +395,10 @@
         "select_destination_calendar": "Sélectionner le calendrier de destination :",
         "destination_calendar": "Calendrier de destination",
         "open_appointment": "Aller au rendez-vous",
-        "discard_changes_confirmation'": "Modifications du rendez-vous annulées"
+        "discard_changes_confirmation'": "Modifications du rendez-vous annulées",
+        "remove": "RETIRER",
+        "original": "Original",
+        "proposed": "Proposé"
     },
     "edit_share_properties": "Éditer les propriétés de partage",
     "find_calendar_shares": "Chercher les partages de calendrier",
