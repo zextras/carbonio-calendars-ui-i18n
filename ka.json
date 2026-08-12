@@ -232,7 +232,14 @@
         },
         "group_is_empty": "ამ ჯგუფი ცარიელია",
         "day_of_month_recurrence": "თვის {{day}}-ე დღე",
-        "select_destination_calendar": "აირჩიეთ სამიზნე კალენდარი:"
+        "select_destination_calendar": "აირჩიეთ სამიზნე კალენდარი:",
+        "action_performed": "თქვენ უკვე შესრულეთ ეს ქმედება",
+        "public_link_description": "შეიქმნა {{title}}-დან {{date}}-ზე",
+        "tag_max_length": "დაშვებულია მაქს. 128 სიმბოლო",
+        "add_event_title_to_send": "გასაგზავნად დაამატეთ მოვლენის სახელი",
+        "add_event_title_to_save": "შენახვისთვის დაამატეთ მოვლენის სათაური",
+        "fix_input_errors_to_save": "შესანახად გაასწორეთ შეყვანის შეცდომები",
+        "fix_input_errors_to_send": "გასაგზავნად შეასწორეთ შეყვანის შეცდომები"
     },
     "message": {
         "search_hints": " ",
@@ -271,7 +278,8 @@
             "series_deleted_no_notification": "სერიები გადატანილია ნაგვის ყუთში.",
             "group_deleted": "კალენდრების ჯგუფი სამუდამოდ წაიშალა",
             "external_calendar_syncing": "კალენდრის სინქრონიზაცია დაიწყო",
-            "caldav_calendars_syncing": "კალენდრების სინქრონიზაცია დაიწყო"
+            "caldav_calendars_syncing": "კალენდრების სინქრონიზაცია დაიწყო",
+            "calendar_moved_to_root_folder": "კალენდარი გადატანილია საქაღალდეში root"
         },
         "original_invite": "-----ორიგინალი მოსაწვევი-----",
         "the_organizer": "ორგანიზატორი",
@@ -292,7 +300,8 @@
         "required_participant_other": "{{count}} მონაწილე",
         "somebody_is_organizer": "<strong>{{somebody}}</strong> ორგანიზატორია",
         "you_accepted_as_tentative": "დაეთანხმეთ ყოყმანით",
-        "on_behalf_of": "<strong>{{owner}}</strong>-ის სახელით"
+        "on_behalf_of": "<strong>{{owner}}</strong>-ის სახელით",
+        "invited_you": "მოგიწვიათ მოვლენაზე"
     },
     "no_title": " ",
     "action": {
@@ -377,7 +386,9 @@
         "TE_with_count_one": "გადაწყვეტილი არაა",
         "TE_with_count_other": "{{count}} გადაწყვეტილი არაა",
         "Tentative": "დაეთანხმა, როგორც გადაუწყვეტელი",
-        "visitors": "და კიდევ {{others}} დამსწრე"
+        "visitors": "და კიდევ {{others}} დამსწრე",
+        "NE_with_count_one": "არ უპასუხია",
+        "NE_with_count_other": "არ უპასუხია ({{count}})"
     },
     "placeholder": {
         "organizer": "ორგანიზატორი"
@@ -389,7 +400,8 @@
         "hours_one": "{{count}} საათი",
         "hours_other": "{{count}} საათი",
         "minutes_one": "{{count}} წუთი",
-        "minutes_other": "{{count}} წუთი"
+        "minutes_other": "{{count}} წუთი",
+        "all_time": "მოვლენის ყველა დრო"
     },
     "repeat": {
         "customize": "მორგება",
@@ -431,7 +443,8 @@
             "enter_email": "შეიყვანეთ ელფოსტის მისამართი",
             "delete_invt_on_rply": "მოწვევის წაშლა პასუხისას",
             "flash_browser_title": "ბრაუზერის სათაურის ციმციმი",
-            "show_popup_notification": "მხტუნარა გაფრთხილების ჩვენება"
+            "show_popup_notification": "მხტუნარა გაფრთხილების ჩვენება",
+            "show_rmndr_past_due_meetings": "შეხსენებების ჩვენება გამოტოვებული შეხვედრებისთვის"
         },
         "invalid_email": "არასწორი ელფოსტა"
     },
@@ -448,7 +461,8 @@
         },
         "label": {
             "internal_sharing": "შიდა გაზიარება",
-            "public_sharing": "საჯარო გაზიარება"
+            "public_sharing": "საჯარო გაზიარება",
+            "send_notification": "გაფრთხილების გაგზავნა ამ გაზიარების შესახებ"
         },
         "placeholder": {
             "recipients_address": "მიმღებთა ელფოსტის მისამართები"
@@ -465,7 +479,8 @@
         "share_folder_success": "კალენდრის გაზიარება წარმატებულია",
         "tag_applied": "ჭდე {{tag}} დაედო",
         "tag_removed": "ჭდე {{tag}} მოცილდა",
-        "email_copied_to_clipboard": "ელფოსტა დაკოპირდა ბუფერში."
+        "email_copied_to_clipboard": "ელფოსტა დაკოპირდა ბუფერში.",
+        "proposed_time_accepted": "თქვენ დაეთანხეთ შეთავაზებულ დროს"
     },
     "success": "წარმატებულია",
     "timezones": "დროის სარტყლები",
@@ -491,7 +506,8 @@
         "copy_caldav_url": "CalDAV-ის ბმული კოპირება",
         "enable_disable_rich_text": "მდიდარი ტექსტის რედაქტორის ჩართვა/გამორთვა",
         "out_of_office_appointment": "ოფისიდან გასვლის შეხვედრა",
-        "readonly_action": "ეს კალენდარი მხოლოდ-წაკითხვადია"
+        "readonly_action": "ეს კალენდარი მხოლოდ-წაკითხვადია",
+        "folder_external_status": "ICS კალენდარი დაემატა URL‑დან"
     },
     "type": "ტიპი",
     "workflow": "სამუშაო პროცესი",
@@ -571,7 +587,8 @@
             "contactsMod": "კონტაქტის ბარათის დამატება",
             "drive": "დამატება Drive-დან",
             "files": "დამატება Files-დან",
-            "local": "დამატება ლოკალურიდან"
+            "local": "დამატება ლოკალურიდან",
+            "url": "საჯარო ბმულის დამატება Files‑დან"
         }
     },
     "find_shares": "გაზიარებების პოვნა",
@@ -689,7 +706,13 @@
         "krasnoyarsk_rtz_6": "{{value}} კრასნოიარსკი (RTZ 6)",
         "pacific_south_america": "{{value}} წყნარი ოკეანე სამხრეთი ამერიკა",
         "sri_jayawardenepura_kotte": "{{value}} შრი-ჯაიავარდენეპურა-კოტე",
-        "west_central_africa": "{{value}} დასავლეთი ცენტრალური აფრიკა"
+        "west_central_africa": "{{value}} დასავლეთი ცენტრალური აფრიკა",
+        "anadyr_petropavlovsk_kamchatsky_rtz11": "{{value}} ანადირი, პეტროპავლოვსკ-კამჩატსკი (RTZ 11)",
+        "athens_beirut_bucharest_istanbul": "{{value}} ათენი, ბეირუთი, ბუქარესტი, სტამბოლი",
+        "chihuahua_la_paz_mazatlan": "{{value}} ჩიუაუა, ლა პასი, მაზატლანი",
+        "sarajevo_skopje_warsaw_zagreb": "{{value}} სარაევო, სკოპიე, ვარშავა, ზაგრები",
+        "brussels_copenhagen_madrid_paris ": "{{value}} ბრიუსელი, კოპენჰაგენი, მადრიდი, პარიზი",
+        "guadalajara_mexico_city_monterrey ": "{{value}} გვადალახარა, მეხიკო სიტი, მონტერეი"
     },
     "preview": {
         "close": "მინიატურის დახურვა"
