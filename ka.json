@@ -239,7 +239,24 @@
         "add_event_title_to_send": "გასაგზავნად დაამატეთ მოვლენის სახელი",
         "add_event_title_to_save": "შენახვისთვის დაამატეთ მოვლენის სათაური",
         "fix_input_errors_to_save": "შესანახად გაასწორეთ შეყვანის შეცდომები",
-        "fix_input_errors_to_send": "გასაგზავნად შეასწორეთ შეყვანის შეცდომები"
+        "fix_input_errors_to_send": "გასაგზავნად შეასწორეთ შეყვანის შეცდომები",
+        "advanced_filters_one": "{{count}} გაფართოებული ფილტრი",
+        "advanced_filters_other": "{{count}} გაფართოებული ფილტრი",
+        "auto_add_rcvd_app": "მიღებული შეხვედრების ავტომატური ჩამატება კალენდარში",
+        "error_try_again": "რაღაც არასწორად წავიდა. კიდევ სცადეთ",
+        "on_behalf_of": "{{accountName}} {{identity}}-ის სახელით <{{otherAccount}}>",
+        "timezone_pref_msg": "დრო მიჰყვება დროის სარტყლის თქვენს არჩევანს.",
+        "duplicate_resource": "ეს რესურსი ერთზე მეტჯერაა არჩეული",
+        "cannot_send": "გაგზავნა გათიშულია ამ მოვლენისთვის",
+        "no_changes": "თქვენ ჯერ ცვლილებები არ შეგიტანიათ",
+        "cannot_save": "ამ მოვლენისთვის შენახვა გამორთულია",
+        "generic_invitation_not_sent": "ჯერ მოსაწვევები არ გაგიგზავნიათ",
+        "ordinal_weekday_of_month": "ყოველ {{ordinal}} თვის {{weekday}}-ს",
+        "enable_dlgtn_for_ical": "დელეგაციის ჩართვა Apple iCal DalDAV კლიენტისთვის",
+        "import_calendar_ongoing": "მიმდინარეობს შემოტანა არჩეულ კალენდარში.",
+        "no_special_char_allowed": "სახელი სპეციალურ სიმბოლოს არ უნდა შეიცავდეს",
+        "invalid_group_name": "ცვლილებების შესანახად შეიყვანეთ ჯგუფის სახელი",
+        "loading_resources": "მიმდინარეობს \"შეხვედრების ოთახის\" და \"აპარატურის\" ჩატვირთვა. მოითმინეთ..."
     },
     "message": {
         "search_hints": " ",
@@ -301,7 +318,16 @@
         "somebody_is_organizer": "<strong>{{somebody}}</strong> ორგანიზატორია",
         "you_accepted_as_tentative": "დაეთანხმეთ ყოყმანით",
         "on_behalf_of": "<strong>{{owner}}</strong>-ის სახელით",
-        "invited_you": "მოგიწვიათ მოვლენაზე"
+        "invited_you": "მოგიწვიათ მოვლენაზე",
+        "invite_has_no_message": "ამ მოწვევას ტექსტური შეტყობინება არ აქვს",
+        "meeting_canceled": "შემდეგი შეხვედრა გაუქმდა",
+        "meeting_modified": "შემდეგი შეხვედრა შეიცვალა",
+        "who_set_this": "{{whoSetThis}}-მა დააყენა შეხვედრა დროზე <strong>{{status}}</strong>",
+        "invite_accepted": "{{user}}-მა მიიღო შემდეგი მოწვევა",
+        "invite_declined": "{{user}}-მა უარჰყო შემდეგი მოწვევა",
+        "delete_future_occurences": "ამ და მომავალი შემთხვევების წაშლა",
+        "delete_tag_message1": "მართლა გნებავთ, წაშალოთ ჭდე {{name}}?",
+        "organizer_invited_you": "<text>{{organizer}}-მა მოგიწვიათ მოვლენაზე <bold>{{title}}</bold></text>"
     },
     "no_title": " ",
     "action": {
@@ -343,7 +369,8 @@
             "expand": "გახსნა",
             "no": "არა",
             "yes": "დიახ",
-            "needs_action": "სჭირდება ქმედება"
+            "needs_action": "სჭირდება ქმედება",
+            "invitation_not_sent_yet": "მოსაწვევი ჯერ არ გაგზავნილა"
         },
         "is_exception": "გამონაკლისი"
     },
@@ -401,7 +428,18 @@
         "hours_other": "{{count}} საათი",
         "minutes_one": "{{count}} წუთი",
         "minutes_other": "{{count}} წუთი",
-        "all_time": "მოვლენის ყველა დრო"
+        "all_time": "მოვლენის ყველა დრო",
+        "at_time_of_event": "მოვლენის დროს",
+        "day_before_one": "{{count}} დღით ადრე",
+        "day_before_other": "{{count}} დღით ადრე",
+        "hour_before_one": "{{count}} საათით ადრე",
+        "hour_before_other": "{{count}} საათით ადრე",
+        "minute_before_one": "{{count}} წუთით ადრე",
+        "minute_before_other": "{{count}} წუთით ადრე",
+        "second_before_one": "{{count}} წამით ადრე",
+        "second_before_other": "{{count}} წამით ადრე",
+        "week_before_one": "{{count}} კვირით ადრე",
+        "week_before_other": "{{count}} კვირით ადრე"
     },
     "repeat": {
         "customize": "მორგება",
@@ -430,7 +468,11 @@
                 "work_week": "სამუშაო კვირის ხედი"
             },
             "timezones": {
-                "egypt": "GMT +02:00 ეგვიპტე"
+                "egypt": "GMT +02:00 ეგვიპტე",
+                "chennai": "GMT +05:30 ჩენაი, კოლკატა, მუმბაი, ნიუ დელი"
+            },
+            "free_busy_opts": {
+                "allow_none": "ჩემი თავისუფლების/დაკავებულობის სტატუსის არავისთვის გამჟღავნება"
             }
         },
         "label": {
@@ -444,7 +486,8 @@
             "delete_invt_on_rply": "მოწვევის წაშლა პასუხისას",
             "flash_browser_title": "ბრაუზერის სათაურის ციმციმი",
             "show_popup_notification": "მხტუნარა გაფრთხილების ჩვენება",
-            "show_rmndr_past_due_meetings": "შეხსენებების ჩვენება გამოტოვებული შეხვედრებისთვის"
+            "show_rmndr_past_due_meetings": "შეხსენებების ჩვენება გამოტოვებული შეხვედრებისთვის",
+            "show_timezones": "დროის სარტყლის ჩვენება ახალი შეხვედრის შექმნისას"
         },
         "invalid_email": "არასწორი ელფოსტა"
     },
@@ -462,10 +505,12 @@
         "label": {
             "internal_sharing": "შიდა გაზიარება",
             "public_sharing": "საჯარო გაზიარება",
-            "send_notification": "გაფრთხილების გაგზავნა ამ გაზიარების შესახებ"
+            "send_notification": "გაფრთხილების გაგზავნა ამ გაზიარების შესახებ",
+            "allow_to_see_private_appt": "მომხმარებლებისთვის პირადი შეხვედრის დეტალების ნახვის უფლების მიცემა"
         },
         "placeholder": {
-            "recipients_address": "მიმღებთა ელფოსტის მისამართები"
+            "recipients_address": "მიმღებთა ელფოსტის მისამართები",
+            "standard_message": "შენიშვნის მიწერა სტანდარტული შეტყობინებისთვის"
         }
     },
     "snackbar": {
@@ -507,7 +552,8 @@
         "enable_disable_rich_text": "მდიდარი ტექსტის რედაქტორის ჩართვა/გამორთვა",
         "out_of_office_appointment": "ოფისიდან გასვლის შეხვედრა",
         "readonly_action": "ეს კალენდარი მხოლოდ-წაკითხვადია",
-        "folder_external_status": "ICS კალენდარი დაემატა URL‑დან"
+        "folder_external_status": "ICS კალენდარი დაემატა URL‑დან",
+        "resend": "ელფოსტის გაფრთხილების გაგზავნა ამ გაზიარების შესახებ"
     },
     "type": "ტიპი",
     "workflow": "სამუშაო პროცესი",
@@ -575,7 +621,12 @@
             "password": "პაროლი",
             "username": "მომხმარებლის სახელი",
             "calendar_name": "კალენდრის სახელი",
-            "host": "ჰოსტის მისამართი (calendar.example.com)"
+            "host": "ჰოსტის მისამართი (calendar.example.com)",
+            "no_credentials": "ეს ჰოსტი ავტორიზაციის დეტალებს არ ითხოვს"
+        },
+        "error": {
+            "caldav_server_unavailable": "სერვერი ამჟამად ხელმისაწვდომი არაა. კიდევ სცადეთ",
+            "caldav_host_unreachable": "ამ ჰოსტის მისამართი ხელმისაწვდომი არაა"
         }
     },
     "allowed_actions": "დაშვებული ქმედებები",
@@ -616,7 +667,8 @@
                 "title": "წაიშალოს ჯგუფი სამუდამოდ?"
             },
             "new": {
-                "title2": "ახალი კალენდრის შექმნა"
+                "title2": "ახალი კალენდრის შექმნა",
+                "duplicate_warning": "კალენდარი ამ სახელით უკვე არსებობს"
             },
             "restore": {
                 "footer": "შექმნა და აღდგენა"
@@ -712,7 +764,14 @@
         "chihuahua_la_paz_mazatlan": "{{value}} ჩიუაუა, ლა პასი, მაზატლანი",
         "sarajevo_skopje_warsaw_zagreb": "{{value}} სარაევო, სკოპიე, ვარშავა, ზაგრები",
         "brussels_copenhagen_madrid_paris ": "{{value}} ბრიუსელი, კოპენჰაგენი, მადრიდი, პარიზი",
-        "guadalajara_mexico_city_monterrey ": "{{value}} გვადალახარა, მეხიკო სიტი, მონტერეი"
+        "guadalajara_mexico_city_monterrey ": "{{value}} გვადალახარა, მეხიკო სიტი, მონტერეი",
+        "beijing_chongqing_hong_kong_urumqi": "{{value}} პეკინი, ჩუნცინი, ჰონკონგი, ურუმჩი",
+        "belgrade_bratislava_budapest_ljubljana_prague": "{{value}} ბელგრადი, ბრატისლავა, ბუდაპეშტი, ლუბლიანა, პრაღა",
+        "chennai_kolkata_mumbai_new_delhi": "{{value}} ჩენაი, კოლკატა, მუმბაი, ახალი დელი",
+        "amsterdam_berlin_bern_rome_stockholm_vienna": "{{value}} ამსტერდამი, ბერლინი, ბერნი, რომი, სტოკჰოლმი, ვენა",
+        "georgetown_la_paz_manaus_san_juan": "{{value}} ჯორჯტაუნი, ლა პასი, მანუასი, სან ხუანი",
+        "helsinki_kyiv_riga_sofia_tallinn_vilnius": "{{value}} ჰელსინკი, კიევი, რიგა, სოფია, ტალინი, ვილნიუსი",
+        "moscow_st_petersburg_volgograd_rtz_2": "{{value}} მოსკოვი, სანკტ-პეტერბურგი, ვოლგოგრადი (RTZ2)"
     },
     "preview": {
         "close": "მინიატურის დახურვა"
@@ -776,5 +835,11 @@
         "virtualRoom": {
             "displayerLink": "ვირტუალურ ოთახში შესვლა"
         }
-    }
+    },
+    "creation_timezone_tooltip": "თარიღი და დრო შექმნის დროის სარტყელში:",
+    "local_timezone_tooltip": "თარიღი და დრო ლოკალურ დროის სარტყელში:",
+    "resend_mail_notification_about_this_share": "ელფოსტის გაფრთხილებების გაგზავნა ამ გაზიარებულის შესახებ",
+    "revoke_with_custom_message": "წვდომის გაბათილება მორგებული გაფრთხილების გაგზავნით",
+    "revoke_without_custom_message": "წვდომის გაბათილება სტანდარტული გაფრთხილების გაგზავნით",
+    "revoke_without_notification": "წვდომის გაბათილება გაფრთხილების გაგზავნის გარეშე"
 }
