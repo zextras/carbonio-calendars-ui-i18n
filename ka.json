@@ -225,7 +225,8 @@
         "sharing_of_this_folder": "ამ საქაღალდის გაზიარება",
         "start_date_and_time": "დაწყების თარიღი და დრო",
         "newgroup": {
-            "calendars": "კალენდრები ამ ჯგუფში"
+            "calendars": "კალენდრები ამ ჯგუფში",
+            "note": "ეს ჯგუფი თქვენს პირად ანგარიშში გამოჩნდება."
         },
         "editgroup": {
             "calendars": "კალენდრები ამ ჯგუფში"
@@ -256,7 +257,20 @@
         "import_calendar_ongoing": "მიმდინარეობს შემოტანა არჩეულ კალენდარში.",
         "no_special_char_allowed": "სახელი სპეციალურ სიმბოლოს არ უნდა შეიცავდეს",
         "invalid_group_name": "ცვლილებების შესანახად შეიყვანეთ ჯგუფის სახელი",
-        "loading_resources": "მიმდინარეობს \"შეხვედრების ოთახის\" და \"აპარატურის\" ჩატვირთვა. მოითმინეთ..."
+        "loading_resources": "მიმდინარეობს \"შეხვედრების ოთახის\" და \"აპარატურის\" ჩატვირთვა. მოითმინეთ...",
+        "exclude_free_busy": "ამ კალენდრის ამოღება თავისუფალი/დაკავებული დროის გამოთვლისას",
+        "show_event": "ორმაგი წკაპი კალენდრებზე მეტი დეტალების სანახავად",
+        "splitLayoutDisabledTooltip": "მიმდინარე ხედში გაყოფილი განლაგება ხელმისაწვდომი არაა",
+        "duplicate_share": "თქვენ უკვე გაუზიარეთ ეს კალენდარი ამ მომხმარებელს",
+        "empty_group_calendars_list": "ამ ჯგუფში ჯერ კალენდრები არაა.",
+        "external_calendar_event": "მოვლენა URL-დან დამატებული ICS კალენდრიდან",
+        "invitation_not_sent": "დამსწრეებისთვის მოსაწვევი ჯერ არ გაგიგზავნიათ",
+        "no_rights": "თქვენ არ გაქვთ უფლება, ეს ქმედება შეასრულოთ",
+        "results_for_error": "ძებნის დაწყება შეუძლებელია. გაასუფთავეთ ის და კიდევ სცადეთ: ",
+        "no_recipients": "გასაგზავნად დაამატეთ, სულ ცოტა, ერთი დამსწრე, ან რესურსი",
+        "room_request_not_sent": "თქვენ ჯერ არ გაგიგზავნიათ მოთხოვნა რესურსისთვის",
+        "find_shares": "აირჩიეთ, რომელი კალენდრები გნებავთ, კალენდრების ხეში დაინახოთ",
+        "duplicate_shares": "თქვენ უკვე გაუზიარეთ ეს კალენდარი ერთ, ან მეტ მომხმარებელს"
     },
     "message": {
         "search_hints": " ",
@@ -296,7 +310,8 @@
             "group_deleted": "კალენდრების ჯგუფი სამუდამოდ წაიშალა",
             "external_calendar_syncing": "კალენდრის სინქრონიზაცია დაიწყო",
             "caldav_calendars_syncing": "კალენდრების სინქრონიზაცია დაიწყო",
-            "calendar_moved_to_root_folder": "კალენდარი გადატანილია საქაღალდეში root"
+            "calendar_moved_to_root_folder": "კალენდარი გადატანილია საქაღალდეში root",
+            "series_deleted": "სერიები გადატანილია ნაგვის ყუთში. დამსწრეები გაუქმების გაფრთხილებას მიიღებენ."
         },
         "original_invite": "-----ორიგინალი მოსაწვევი-----",
         "the_organizer": "ორგანიზატორი",
@@ -327,7 +342,14 @@
         "invite_declined": "{{user}}-მა უარჰყო შემდეგი მოწვევა",
         "delete_future_occurences": "ამ და მომავალი შემთხვევების წაშლა",
         "delete_tag_message1": "მართლა გნებავთ, წაშალოთ ჭდე {{name}}?",
-        "organizer_invited_you": "<text>{{organizer}}-მა მოგიწვიათ მოვლენაზე <bold>{{title}}</bold></text>"
+        "organizer_invited_you": "<text>{{organizer}}-მა მოგიწვიათ მოვლენაზე <bold>{{title}}</bold></text>",
+        "you_are_organizer": "<Row><Text>ორგანიზატორი  <BoldText> თქვენ  </BoldText> ბრძანდებით </Text></Row>",
+        "invite_tentative": "{{user}}-მა შემდეგ მოსაწვევს ყოყმანით უპასუხა",
+        "sure_to_delete_appointment": "მართლა გნებავთ შეხვედრის წაშლა?",
+        "want_to_edit_cancellation_msg": "გნებავთ შეხვედრის გაუქმების შეტყობინების ჩასწორება?",
+        "share_calendar_url_note": "ამ URL-ებით თქვენს მონაცემთან წვდომა, მხოლოდ, თქვენს თანამშრომლებს ექნებათ.",
+        "sure_to_delete_appointment_permanently": "მართლა გნებავთ ამ შეხვედრის სამუდამოდ წაშლა?",
+        "you_sure_move_calendar_trash": "მართლა გნებავთ, წაშალოთ კალენდარი {{name}}?"
     },
     "no_title": " ",
     "action": {
@@ -415,7 +437,11 @@
         "Tentative": "დაეთანხმა, როგორც გადაუწყვეტელი",
         "visitors": "და კიდევ {{others}} დამსწრე",
         "NE_with_count_one": "არ უპასუხია",
-        "NE_with_count_other": "არ უპასუხია ({{count}})"
+        "NE_with_count_other": "არ უპასუხია ({{count}})",
+        "Attendees_accepted_count_one": "<strong>{{count}} დამსწრე</strong> დაეთანხმა",
+        "Attendees_accepted_count_other": "<strong>{{count}} დამსწრე</strong> დაეთანხმა",
+        "Attendees_declined_count_one": "<strong>{{count}} დამსწრემ</strong> უარი თქვა",
+        "Attendees_declined_count_other": "<strong>{{count}} დამსწრემ</strong> უარი თქვა"
     },
     "placeholder": {
         "organizer": "ორგანიზატორი"
@@ -469,10 +495,15 @@
             },
             "timezones": {
                 "egypt": "GMT +02:00 ეგვიპტე",
-                "chennai": "GMT +05:30 ჩენაი, კოლკატა, მუმბაი, ნიუ დელი"
+                "chennai": "GMT +05:30 ჩენაი, კოლკატა, მუმბაი, ნიუ დელი",
+                "amsterdam": "GMT +01:00 ამსტერდამი, ბერლინი, ბერნი, რომი, სტოკჰოლმი, ვენა"
             },
             "free_busy_opts": {
                 "allow_none": "ჩემი თავისუფლების/დაკავებულობის სტატუსის არავისთვის გამჟღავნება"
+            },
+            "invt_opts": {
+                "allow_none": "არავის ჰქონდეს უფლება, შეხვედრებზე მიმიწვიოს",
+                "allow_internal": "შეხვედრაზე ჩემი მოწვევის, მხოლოდ, შიდა მომხმარებლებისთვის დაშვება"
             }
         },
         "label": {
@@ -487,7 +518,8 @@
             "flash_browser_title": "ბრაუზერის სათაურის ციმციმი",
             "show_popup_notification": "მხტუნარა გაფრთხილების ჩვენება",
             "show_rmndr_past_due_meetings": "შეხსენებების ჩვენება გამოტოვებული შეხვედრებისთვის",
-            "show_timezones": "დროის სარტყლის ჩვენება ახალი შეხვედრის შექმნისას"
+            "show_timezones": "დროის სარტყლის ჩვენება ახალი შეხვედრის შექმნისას",
+            "enable_reminder_sound": "ხმის დაკვრა (სჭირდება QuickTime, ან Windows Media დამატება)"
         },
         "invalid_email": "არასწორი ელფოსტა"
     },
@@ -495,11 +527,13 @@
         "options": {
             "share_calendar_role": {
                 "none": "არცერთი",
-                "viewer": "დამთვალიერებელი (შეუძლია ნახვა)"
+                "viewer": "დამთვალიერებელი (შეუძლია ნახვა)",
+                "manager": "მმართველი (შეუძლია შეხვედრების ნახვა, ჩასწორება, დამატება, წაშლა, დათანხმება და თავიდან გაზიარება)"
             },
             "share_calendar_with": {
                 "external_guests": "გარე სტუმრები (მხოლოდ ნახვა)",
-                "internal_users_groups": "შიდა მომხმარებლები, ან ჯგუფები"
+                "internal_users_groups": "შიდა მომხმარებლები, ან ჯგუფები",
+                "public": "საჯაროდ გაზიარება (მხოლოდ ნახვა, პაროლი საჭირო არაა)"
             }
         },
         "label": {
@@ -553,7 +587,9 @@
         "out_of_office_appointment": "ოფისიდან გასვლის შეხვედრა",
         "readonly_action": "ეს კალენდარი მხოლოდ-წაკითხვადია",
         "folder_external_status": "ICS კალენდარი დაემატა URL‑დან",
-        "resend": "ელფოსტის გაფრთხილების გაგზავნა ამ გაზიარების შესახებ"
+        "resend": "ელფოსტის გაფრთხილების გაგზავნა ამ გაზიარების შესახებ",
+        "folder_sharing_status_one": "გაზიარებულია {{count}} პიროვნებასთან",
+        "folder_sharing_status_other": "გაზიარებულია {{count}} პიროვნებასთან"
     },
     "type": "ტიპი",
     "workflow": "სამუშაო პროცესი",
@@ -622,11 +658,13 @@
             "username": "მომხმარებლის სახელი",
             "calendar_name": "კალენდრის სახელი",
             "host": "ჰოსტის მისამართი (calendar.example.com)",
-            "no_credentials": "ეს ჰოსტი ავტორიზაციის დეტალებს არ ითხოვს"
+            "no_credentials": "ეს ჰოსტი ავტორიზაციის დეტალებს არ ითხოვს",
+            "calendar_name_hint": "აირჩიეთ სახელი, რომლითაც ამ ჰოსტის ყველა კალენდრის იდენტიფიკაცია მოხდება"
         },
         "error": {
             "caldav_server_unavailable": "სერვერი ამჟამად ხელმისაწვდომი არაა. კიდევ სცადეთ",
-            "caldav_host_unreachable": "ამ ჰოსტის მისამართი ხელმისაწვდომი არაა"
+            "caldav_host_unreachable": "ამ ჰოსტის მისამართი ხელმისაწვდომი არაა",
+            "caldav_auth_failed": "ავთენტიკაცია ჩავარდა. შეამოწმეთ თქვენი მომხმარებლის სახელი და პაროლი"
         }
     },
     "allowed_actions": "დაშვებული ქმედებები",
@@ -651,6 +689,9 @@
             "move": {
                 "input": {
                     "filter": "კალენდრების გაფილტვრა"
+                },
+                "body": {
+                    "message3": "აირჩიეთ კალენდარი, რომელშიც მონიშნული შეხვედრის გადატანა გნებავთ:"
                 }
             },
             "creategroup": {
@@ -821,14 +862,17 @@
         "snackbar": {
             "tag_updated": "ჭდე წარმატებით განახლდა",
             "tag_created": "ჭდე {{name}} წარმატებით შეიქმნა",
-            "tag_deleted": "ჭდე {{name}} წარმატებით წაიშალა"
+            "tag_deleted": "ჭდე {{name}} წარმატებით წაიშალა",
+            "tag_not_updated": "რაღაც არასწორად წავიდა. ჭდე არ განახლებულა. კიდევ სცადეთ."
         },
         "format_as_plain_text": "უბრალო ტექსტად დაფორმატება"
     },
     "remove_from_this_list": "გაზიარებული კალენდრის წაშლა",
     "share_invite_resent": "გაზიარების მოსაწვევი თავიდან გაიგზავნა",
     "displayer": {
-        "search_title1": "კიდევ ერთი ძებნის დაწყება"
+        "search_title1": "კიდევ ერთი ძებნის დაწყება",
+        "search_description1": "ან აირჩიეთ\" გაფართოებული ფილტრები\" ძებნის დასაზუსტებლად.",
+        "search_list_title1": "როგორც ჩანს, შედეგები არ არსებობს. ნუ შეწყვეტთ ძებას!"
     },
     "import_to_calendar": "შემოტანა კალენდრებში",
     "appointment": {
@@ -841,5 +885,21 @@
     "resend_mail_notification_about_this_share": "ელფოსტის გაფრთხილებების გაგზავნა ამ გაზიარებულის შესახებ",
     "revoke_with_custom_message": "წვდომის გაბათილება მორგებული გაფრთხილების გაგზავნით",
     "revoke_without_custom_message": "წვდომის გაბათილება სტანდარტული გაფრთხილების გაგზავნით",
-    "revoke_without_notification": "წვდომის გაბათილება გაფრთხილების გაგზავნის გარეშე"
+    "revoke_without_notification": "წვდომის გაბათილება გაფრთხილების გაგზავნის გარეშე",
+    "api": {
+        "error": {
+            "CreateCalendarGroup": {
+                "group_name_already_exists": "ჯგუფი ამ სახელით უკვე არსებობს"
+            },
+            "ModifyCalendarGroup": {
+                "group_name_already_exists": "ჯგუფი ამ სახელით უკვე არსებობს"
+            }
+        }
+    },
+    "cannot_edit_caldav_readonly": "თქვენ არ შეგიძლიათ ამ კალენდრის სახელის ჩასწორება",
+    "cannot_edit_name": "სისტემური კალენდრის სახელს ვერ ჩაასწორებთ",
+    "attendee_equipment_unavailable": "მოვლენის არჩეულ დროს აღჭურვილობა ხელმისაწვდომი არაა",
+    "attendee_room_unavailable": "მოვლენის არჩეულ დროს ოთახი ხელმისაწვდომი არაა",
+    "attendee_unavailable": "მოვლენის არჩეულ დროს დამსწრე ხელმისაწვდომი არაა",
+    "mountpoint_error": "გაზიარების დამატება შეუძლებელია გაზიარებული კალენდრების განყოფილებაში"
 }
