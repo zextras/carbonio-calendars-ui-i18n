@@ -409,7 +409,17 @@
         "discard_changes_confirmation'": "Appointment changes discarded",
         "remove": "remove",
         "original": "Original",
-        "proposed": "Proposed"
+        "proposed": "Proposed",
+        "hide_details": "Hide details",
+        "view_details": "View details",
+        "participants_added_removed": "{{added}} added, {{removed}} removed",
+        "updated": "updated",
+        "previous": "Previous",
+        "updated_value": "Updated",
+        "title": "Title",
+        "invitation_updated": "This invitation was updated",
+        "show_less_sections": "Show less",
+        "show_more_sections": "Show more"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -854,7 +864,10 @@
         "copy_caldav_url": "Copy CalDAV url",
         "copy_url": "Copy URL",
         "folder_external_status": "ICS calendar added from URL",
-        "readonly_action": "This calendar is read-only"
+        "readonly_action": "This calendar is read-only",
+        "participants": "Participants",
+        "date_time": "Date and time",
+        "message": "Message"
     },
     "type": "Type",
     "workflow": "WorkFlow",
