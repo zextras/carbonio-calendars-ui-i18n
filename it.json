@@ -29,7 +29,10 @@
         "copy_webcal_url": "Copia WebCAL url",
         "copy_url": "Copia URL",
         "folder_external_status": "Calendario ICS aggiunto tramite URL",
-        "readonly_action": "Questo calendario è in sola lettura"
+        "readonly_action": "Questo calendario è in sola lettura",
+        "participants": "Partecipanti",
+        "date_time": "Data e ora",
+        "message": "Messaggio"
     },
     "reminder": {
         "never": "Mai",
@@ -481,7 +484,17 @@
         "discard_changes_confirmation'": "Modifiche dell'appuntamento annullate",
         "remove": "rimuovi",
         "original": "Originale",
-        "proposed": "Proposta"
+        "proposed": "Proposta",
+        "hide_details": "Nascondi dettagli",
+        "view_details": "Visualizza dettagli",
+        "participants_added_removed": "{{added}} aggiunti, {{removed}} rimossi",
+        "updated": "aggiornato",
+        "previous": "Precedente",
+        "updated_value": "Aggiornato",
+        "title": "Titolo",
+        "invitation_updated": "Questo invito è stato aggiornato",
+        "show_less_sections": "Mostra meno",
+        "show_more_sections": "Mostra di più"
     },
     "action": {
         "send": "Invia",
