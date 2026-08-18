@@ -363,7 +363,17 @@
         "discard_changes_confirmation'": "Zmiany w spotkaniu zostały odrzucone",
         "remove": "usuń",
         "original": "Pierwotnie",
-        "proposed": "Proponowane"
+        "proposed": "Proponowane",
+        "hide_details": "Ukryj szczegóły",
+        "view_details": "Zobacz szczegóły",
+        "participants_added_removed": "Dodano: {{added}}. Usunięto: {{removed}}",
+        "updated": "zaktualizowano",
+        "previous": "Poprzedni",
+        "updated_value": "Zaktualizowano",
+        "title": "Tytuł",
+        "invitation_updated": "Zaproszenie zostało zaktualizowane",
+        "show_less_sections": "Pokaż mniej",
+        "show_more_sections": "Pokaż więcej"
     },
     "message": {
         "modal": {
@@ -850,7 +860,10 @@
         "copy_caldav_url": "Skopiuj URL CalDAV",
         "copy_url": "Skopiuj URL",
         "folder_external_status": "Kalendarz ICS dodany poprzez URL",
-        "readonly_action": "Ten kalendarz można tylko wyświetlać"
+        "readonly_action": "Ten kalendarz można tylko wyświetlać",
+        "participants": "Uczestnicy",
+        "date_time": "Data i czas",
+        "message": "Wiadomość"
     },
     "type": "Typ",
     "workflow": "Organizacja pracy",
