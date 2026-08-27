@@ -977,7 +977,6 @@
         "last": "last"
     },
     "add_ics_from_url": {
-        "calendar_name": "Calendar name*",
         "url": "Calendar URL*"
     },
     "add_external_calendar": {
