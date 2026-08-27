@@ -949,7 +949,6 @@
         "last": "τελευταία"
     },
     "add_ics_from_url": {
-        "calendar_name": "Όνομα ημερολογίου*",
         "url": "URL ημερολογίου*"
     },
     "add_external_calendar": {
