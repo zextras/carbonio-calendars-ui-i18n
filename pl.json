@@ -993,7 +993,6 @@
         "last": "ostatni"
     },
     "add_ics_from_url": {
-        "calendar_name": "Nazwa kalendarza*",
         "url": "URL kalendarza*"
     },
     "add_external_calendar": {
