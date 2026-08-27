@@ -937,7 +937,6 @@
     },
     "add_external_calendar": {
         "caldav": {
-            "calendar_name": "कैलेंडर का नाम",
             "host": "होस्ट पता (calendar.example.com)",
             "password": "पासवर्ड",
             "username": "उपयोगकर्ता नाम"
