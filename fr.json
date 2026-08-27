@@ -980,7 +980,6 @@
         "last": "dernier"
     },
     "add_ics_from_url": {
-        "calendar_name": "Nom du calendrier*",
         "url": "URL du calendrier*"
     },
     "add_external_calendar": {
