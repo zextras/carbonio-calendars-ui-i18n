@@ -494,7 +494,12 @@
         "title": "Titolo",
         "invitation_updated": "Questo invito è stato aggiornato",
         "show_less_sections": "Mostra meno",
-        "show_more_sections": "Mostra di più"
+        "show_more_sections": "Mostra di più",
+        "custom_color": "Colore personalizzato ({{hex}})",
+        "customize_color": "Personalizza colore",
+        "hex_color": "Colore hex",
+        "choose_color_caption": "Scegli un colore per riconoscere più facilmente questo calendario",
+        "choose_representative_name": "Scegli un nome rappresentativo"
     },
     "action": {
         "send": "Invia",
