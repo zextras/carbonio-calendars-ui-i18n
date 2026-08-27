@@ -419,7 +419,12 @@
         "title": "Title",
         "invitation_updated": "This invitation was updated",
         "show_less_sections": "Show less",
-        "show_more_sections": "Show more"
+        "show_more_sections": "Show more",
+        "custom_color": "Custom color ({{hex}})",
+        "customize_color": "Customize color",
+        "hex_color": "Hex color",
+        "choose_color_caption": "Choose a color to make this calendar easier to recognize",
+        "choose_representative_name": "Choose a representative name"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -581,7 +586,9 @@
         "TE_with_count_one": "Tentative",
         "TE_with_count_other": "Tentative ({{count}})",
         "Tentative": "accepted as tentative",
-        "visitors": "and other {{others}} attendees"
+        "visitors": "and other {{others}} attendees",
+        "Attendees_with_count_one": "Attendee",
+        "Attendees_with_count_other": "Attendees ({{count}})"
     },
     "placeholder": {
         "organizer": "Organizer"
