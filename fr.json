@@ -984,7 +984,6 @@
     },
     "add_external_calendar": {
         "caldav": {
-            "calendar_name": "Nom du calendrier",
             "host": "Adresse de l'hôte (calendrier.exemple.fr)",
             "password": "Mot de passe",
             "username": "Identifiant",
