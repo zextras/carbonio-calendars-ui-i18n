@@ -918,7 +918,6 @@
     },
     "reset_date": "თარიღის ჩამოყრა",
     "add_ics_from_url": {
-        "calendar_name": "კალენდრის სახელი *",
         "url": "კალენდრის URL*"
     },
     "appt_restored_successfully": "შეხვედრის აღდგენა წარმატებულია",
