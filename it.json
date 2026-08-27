@@ -1002,7 +1002,6 @@
     },
     "add_external_calendar": {
         "caldav": {
-            "calendar_name": "Nome dei calendari",
             "host": "Indirizzo host (calendar.example.com)",
             "password": "Password",
             "username": "Nome utente",
