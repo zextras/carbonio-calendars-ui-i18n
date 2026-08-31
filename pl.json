@@ -372,7 +372,12 @@
         "title": "Tytuł",
         "invitation_updated": "Zaproszenie zostało zaktualizowane",
         "show_less_sections": "Pokaż mniej",
-        "show_more_sections": "Pokaż więcej"
+        "show_more_sections": "Pokaż więcej",
+        "custom_color": "Niestandardowy kolor ({{hex}})",
+        "customize_color": "Dostosuj kolor",
+        "hex_color": "Kolor Hex",
+        "choose_color_caption": "Wybierz kolor, aby łatwiej rozpoznawać ten kalendarz",
+        "choose_representative_name": "Wymyśl reprezentatywną nazwę"
     },
     "message": {
         "modal": {
@@ -510,7 +515,10 @@
         "NE_with_count_many": "Nie odpowiedziano ({{count}})",
         "TE_with_count_one": "Niepewne",
         "TE_with_count_few": "Niepewne ({{count}})",
-        "TE_with_count_many": "Niepewne ({{count}})"
+        "TE_with_count_many": "Niepewne ({{count}})",
+        "Attendees_with_count_one": "Uczestnik",
+        "Attendees_with_count_few": "Uczestnicy ({{count}})",
+        "Attendees_with_count_many": "Uczestnicy ({{count}})"
     },
     "reminder": {
         "modal": {
