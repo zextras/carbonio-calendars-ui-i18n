@@ -284,7 +284,12 @@
         "updated_value": "განახლდა",
         "invitation_updated": "ეს მოწვევა განახლდა",
         "show_less_sections": "ნაკლების ჩვენება",
-        "show_more_sections": "მეტის ჩვენება"
+        "show_more_sections": "მეტის ჩვენება",
+        "custom_color": "მომხმარებლის ფერი ({{hex}})",
+        "customize_color": "ფერის მორგება",
+        "hex_color": "თექვსმ. ფერი",
+        "choose_color_caption": "აირჩიეთ ფერი ამ კალენდრის უფრო იოლად საცნობად",
+        "choose_representative_name": "აირჩიეთ წარმომადგენლობითი სახელი"
     },
     "message": {
         "search_hints": " ",
@@ -486,7 +491,9 @@
         "Attendees_not_answered_count_one": "<strong>{{count}} დამსწრეს </strong> არ უპასუხია",
         "Attendees_not_answered_count_other": "<strong>{{count}} დამსწრეს </strong> არ უპასუხია",
         "Attendees_tentative_count_one": "<strong>{{count}} დამსწრემ </strong> ყოყმანით მიიღო",
-        "Attendees_tentative_count_other": "<strong>{{count}} დამსწრემ </strong> ყოყმანით მიიღო"
+        "Attendees_tentative_count_other": "<strong>{{count}} დამსწრემ </strong> ყოყმანით მიიღო",
+        "Attendees_with_count_one": "დამსწრე",
+        "Attendees_with_count_other": "{{count}} დამსწრე"
     },
     "placeholder": {
         "organizer": "ორგანიზატორი"
