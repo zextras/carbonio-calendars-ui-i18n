@@ -745,7 +745,10 @@
         "copy_caldav_url": "Copier l'URL CalDAV",
         "folder_external_status": "Calendrier ICS ajouté à partir d'une URL",
         "copy_url": "Copier l'URL",
-        "readonly_action": "Ce calendrier est en lecture seule"
+        "readonly_action": "Ce calendrier est en lecture seule",
+        "participants": "Participants",
+        "date_time": "Date et heure",
+        "message": "Message"
     },
     "type": "Type",
     "workflow": "Flux de travail",
