@@ -32,7 +32,8 @@
         "readonly_action": "Questo calendario è in sola lettura",
         "participants": "Partecipanti",
         "date_time": "Data e ora",
-        "message": "Messaggio"
+        "message": "Messaggio",
+        "copy_hex_color": "Copia colore esadecimale"
     },
     "reminder": {
         "never": "Mai",
@@ -498,7 +499,8 @@
         "customize_color": "Personalizza colore",
         "hex_color": "Colore hex",
         "choose_color_caption": "Scegli un colore per riconoscere più facilmente questo calendario",
-        "choose_representative_name": "Scegli un nome rappresentativo"
+        "choose_representative_name": "Scegli un nome rappresentativo",
+        "choose": "Scegli"
     },
     "action": {
         "send": "Invia",
@@ -629,7 +631,8 @@
         "email_copied_to_clipboard": "Email copiata negli appunti.",
         "forwardAppointment": {
             "success": "Appuntamento inoltrato"
-        }
+        },
+        "hex_color_copied": "Colore esadecimale copiato"
     },
     "add": "Aggiungi",
     "allowed_actions": "Azioni consentite",
