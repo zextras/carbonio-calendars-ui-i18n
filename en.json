@@ -423,7 +423,8 @@
         "customize_color": "Customize color",
         "hex_color": "Hex color",
         "choose_color_caption": "Choose a color to make this calendar easier to recognize",
-        "choose_representative_name": "Choose a representative name"
+        "choose_representative_name": "Choose a representative name",
+        "choose": "Choose"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -748,7 +749,8 @@
         "url_copied": "{{title}} copied",
         "forwardAppointment": {
             "success": "Appointment forwarded"
-        }
+        },
+        "hex_color_copied": "Hex color copied"
     },
     "success": "Success",
     "timezone": {
@@ -873,7 +875,8 @@
         "readonly_action": "This calendar is read-only",
         "participants": "Participants",
         "date_time": "Date and time",
-        "message": "Message"
+        "message": "Message",
+        "copy_hex_color": "Copy hex color"
     },
     "type": "Type",
     "workflow": "WorkFlow",
