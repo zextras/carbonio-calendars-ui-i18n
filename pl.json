@@ -377,7 +377,8 @@
         "customize_color": "Dostosuj kolor",
         "hex_color": "Kolor Hex",
         "choose_color_caption": "Wybierz kolor, aby łatwiej rozpoznawać ten kalendarz",
-        "choose_representative_name": "Wymyśl reprezentatywną nazwę"
+        "choose_representative_name": "Wymyśl reprezentatywną nazwę",
+        "choose": "Wybierz"
     },
     "message": {
         "modal": {
@@ -615,7 +616,8 @@
         "email_copied_to_clipboard": "E-mail został skopiowany do schowka.",
         "forwardAppointment": {
             "success": "Spotkanie zostało przekazane dalej"
-        }
+        },
+        "hex_color_copied": "Kolor Hex został skopiowany"
     },
     "timezone": {
         "brussels_copenhagen_madrid_paris ": "{{value}} Bruksela, Kopenhaga, Madryt, Paryż",
@@ -870,7 +872,8 @@
         "readonly_action": "Ten kalendarz można tylko wyświetlać",
         "participants": "Uczestnicy",
         "date_time": "Data i czas",
-        "message": "Wiadomość"
+        "message": "Wiadomość",
+        "copy_hex_color": "Skopiuj kolor Hex"
     },
     "type": "Typ",
     "workflow": "Organizacja pracy",
