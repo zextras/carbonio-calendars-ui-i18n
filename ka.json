@@ -289,7 +289,8 @@
         "customize_color": "ფერის მორგება",
         "hex_color": "თექვსმ. ფერი",
         "choose_color_caption": "აირჩიეთ ფერი ამ კალენდრის უფრო იოლად საცნობად",
-        "choose_representative_name": "აირჩიეთ წარმომადგენლობითი სახელი"
+        "choose_representative_name": "აირჩიეთ წარმომადგენლობითი სახელი",
+        "choose": "არჩევა"
     },
     "message": {
         "search_hints": " ",
@@ -631,7 +632,8 @@
         "tag_applied": "ჭდე {{tag}} დაედო",
         "tag_removed": "ჭდე {{tag}} მოცილდა",
         "email_copied_to_clipboard": "ელფოსტა დაკოპირდა ბუფერში.",
-        "proposed_time_accepted": "თქვენ დაეთანხეთ შეთავაზებულ დროს"
+        "proposed_time_accepted": "თქვენ დაეთანხეთ შეთავაზებულ დროს",
+        "hex_color_copied": "თექვსმ. ფერი დაკოპირდა"
     },
     "success": "წარმატებულია",
     "timezones": "დროის სარტყლები",
@@ -667,7 +669,8 @@
         },
         "participants": "მონაწილეები",
         "date_time": "თარიღი და დრო",
-        "message": "შეტყობინება"
+        "message": "შეტყობინება",
+        "copy_hex_color": "თექვსმ. ფერის კოპირება"
     },
     "type": "ტიპი",
     "workflow": "სამუშაო პროცესი",
