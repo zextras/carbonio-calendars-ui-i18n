@@ -500,7 +500,9 @@
         "hex_color": "Colore hex",
         "choose_color_caption": "Scegli un colore per riconoscere più facilmente questo calendario",
         "choose_representative_name": "Scegli un nome rappresentativo",
-        "choose": "Scegli"
+        "choose": "Scegli",
+        "proposed_time_accepted": "Hai accettato il nuovo orario proposto.",
+        "proposed_time_declined": "Hai rifiutato il nuovo orario proposto."
     },
     "action": {
         "send": "Invia",
@@ -632,7 +634,8 @@
         "forwardAppointment": {
             "success": "Appuntamento inoltrato"
         },
-        "hex_color_copied": "Colore esadecimale copiato"
+        "hex_color_copied": "Colore esadecimale copiato",
+        "proposed_time_declined": "Hai rifiutato l'orario proposto"
     },
     "add": "Aggiungi",
     "allowed_actions": "Azioni consentite",
