@@ -424,7 +424,9 @@
         "hex_color": "Hex color",
         "choose_color_caption": "Choose a color to make this calendar easier to recognize",
         "choose_representative_name": "Choose a representative name",
-        "choose": "Choose"
+        "choose": "Choose",
+        "proposed_time_accepted": "You accepted the proposed new time.",
+        "proposed_time_declined": "You declined the proposed new time."
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -750,7 +752,8 @@
         "forwardAppointment": {
             "success": "Appointment forwarded"
         },
-        "hex_color_copied": "Hex color copied"
+        "hex_color_copied": "Hex color copied",
+        "proposed_time_declined": "You declined the proposed time"
     },
     "success": "Success",
     "timezone": {
