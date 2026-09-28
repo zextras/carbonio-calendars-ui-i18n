@@ -290,7 +290,9 @@
         "hex_color": "თექვსმ. ფერი",
         "choose_color_caption": "აირჩიეთ ფერი ამ კალენდრის უფრო იოლად საცნობად",
         "choose_representative_name": "აირჩიეთ წარმომადგენლობითი სახელი",
-        "choose": "არჩევა"
+        "choose": "არჩევა",
+        "proposed_time_accepted": "თქვენ დაეთანხმეთ შემოთავაზებულ ახალ დროს.",
+        "proposed_time_declined": "თქვენ უარჰყავით შემოთავაზებული ახალი დრო."
     },
     "message": {
         "search_hints": " ",
@@ -633,7 +635,8 @@
         "tag_removed": "ჭდე {{tag}} მოცილდა",
         "email_copied_to_clipboard": "ელფოსტა დაკოპირდა ბუფერში.",
         "proposed_time_accepted": "თქვენ დაეთანხეთ შეთავაზებულ დროს",
-        "hex_color_copied": "თექვსმ. ფერი დაკოპირდა"
+        "hex_color_copied": "თექვსმ. ფერი დაკოპირდა",
+        "proposed_time_declined": "თქვენ უარჰყავით შემოთავაზებული დრო"
     },
     "success": "წარმატებულია",
     "timezones": "დროის სარტყლები",
