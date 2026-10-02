@@ -716,8 +716,8 @@
         },
         "options": {
             "share_calendar_role": {
-                "admin": "Editor (can view, edit, add, and delete but cannot accept or reshare appointments)                ",
-                "manager": "Manager (can view, edit, add, delete, accept and reshare appointments)",
+                "admin": "Admin (can view, edit, add, delete and share)",
+                "manager": "Manager (can view, edit, add and delete)",
                 "none": "None",
                 "viewer": "Viewer (can view)"
             },
