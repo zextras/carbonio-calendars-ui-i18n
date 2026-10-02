@@ -497,7 +497,7 @@
         "show_more_sections": "Mostra di più",
         "custom_color": "Colore personalizzato ({{hex}})",
         "customize_color": "Personalizza colore",
-        "hex_color": "Colore hex",
+        "hex_color": "Colore esadecimale",
         "choose_color_caption": "Scegli un colore per riconoscere più facilmente questo calendario",
         "choose_representative_name": "Scegli un nome rappresentativo",
         "choose": "Scegli",
@@ -653,9 +653,9 @@
                 "internal_users_groups": "Utenti Interni o Gruppi"
             },
             "share_calendar_role": {
-                "manager": "Manager (visualizza, modifica, aggiungi, rimuovi, accetta e condividi appuntamenti)",
-                "admin": "Editor (visualizza, modifica, aggiungi, rimuovi e gestisci ma non può accettare o condividere appuntamenti)                ",
-                "viewer": "Visualizzatore (visualizza)",
+                "manager": "Gestore (può visualizzare, modificare, aggiungere ed eliminare)",
+                "admin": "Amministratore (può visualizzare, modificare, aggiungere, eliminare e condividere)",
+                "viewer": "Visualizzatore (può visualizzare)",
                 "none": "Nessuno"
             }
         },
