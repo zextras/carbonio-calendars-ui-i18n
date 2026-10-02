@@ -376,9 +376,11 @@
         "custom_color": "Niestandardowy kolor ({{hex}})",
         "customize_color": "Dostosuj kolor",
         "hex_color": "Kolor Hex",
-        "choose_color_caption": "Wybierz kolor, aby łatwiej rozpoznawać ten kalendarz",
-        "choose_representative_name": "Wymyśl reprezentatywną nazwę",
-        "choose": "Wybierz"
+        "choose_color_caption": "Wybierz kolor, żeby łatwiej rozpoznawać ten kalendarz",
+        "choose_representative_name": "Wybierz charakterystyczną nazwę",
+        "choose": "Wybierz",
+        "proposed_time_accepted": "Zaakceptowałeś proponowany, nowy czas.",
+        "proposed_time_declined": "Odrzuciłeś proponowany, nowy czas."
     },
     "message": {
         "modal": {
@@ -617,7 +619,8 @@
         "forwardAppointment": {
             "success": "Spotkanie zostało przekazane dalej"
         },
-        "hex_color_copied": "Kolor Hex został skopiowany"
+        "hex_color_copied": "Kolor Hex został skopiowany",
+        "proposed_time_declined": "Odrzuciłeś proponowany czas"
     },
     "timezone": {
         "brussels_copenhagen_madrid_paris ": "{{value}} Bruksela, Kopenhaga, Madryt, Paryż",
