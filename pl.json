@@ -717,9 +717,9 @@
         },
         "options": {
             "share_calendar_role": {
-                "admin": "Edytor (może wyświetlać, edytować, dodawać i usuwać, ale nie może akceptować ani ponownie udostępniać spotkań)                ",
+                "admin": "Administrator (może wyświetlać, edytować, dodawać, usuwać i udostępniać)",
                 "viewer": "Wyświetlający (może wyświetlać)",
-                "manager": "Manager (może wyświetlać, edytować, dodawać, usuwać, akceptować i ponownie udostępniać spotkań)",
+                "manager": "Manager (może wyświetlać, edytować, dodawać i usuwać)",
                 "none": "Brak uprawnień"
             },
             "share_calendar_with": {
