@@ -220,7 +220,8 @@
             "calendars": "Calendarios en este grupo"
         },
         "invalid_group_name": "Introduce el nombre de un grupo para guardar los cambios",
-        "group_is_empty": "El grupo está vació"
+        "group_is_empty": "El grupo está vació",
+        "invalid_query": "Los caracteres especiales como :, \", -, !, etc., se ignoran en la búsqueda. Esto puede dar lugar a resultados inesperados en casos como:"
     },
     "action": {
         "send": "Enviar",
