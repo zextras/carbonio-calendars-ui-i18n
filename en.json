@@ -426,7 +426,9 @@
         "choose_representative_name": "Choose a representative name",
         "choose": "Choose",
         "proposed_time_accepted": "You accepted the proposed new time.",
-        "proposed_time_declined": "You declined the proposed new time."
+        "proposed_time_declined": "You declined the proposed new time.",
+        "timezone_device_msg": "These times follow your device's timezone.",
+        "your_device_timezone_msg": "Your device's timezone: {{timezone}}"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
