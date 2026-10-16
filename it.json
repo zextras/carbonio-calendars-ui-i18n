@@ -502,7 +502,9 @@
         "choose_representative_name": "Scegli un nome rappresentativo",
         "choose": "Scegli",
         "proposed_time_accepted": "Hai accettato il nuovo orario proposto.",
-        "proposed_time_declined": "Hai rifiutato il nuovo orario proposto."
+        "proposed_time_declined": "Hai rifiutato il nuovo orario proposto.",
+        "timezone_device_msg": "Questi orari seguono il fuso orario del tuo dispositivo.",
+        "your_device_timezone_msg": "Fuso orario del tuo dispositivo: {{timezone}}"
     },
     "action": {
         "send": "Invia",
