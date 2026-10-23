@@ -292,7 +292,9 @@
         "choose_representative_name": "აირჩიეთ წარმომადგენლობითი სახელი",
         "choose": "არჩევა",
         "proposed_time_accepted": "თქვენ დაეთანხმეთ შემოთავაზებულ ახალ დროს.",
-        "proposed_time_declined": "თქვენ უარჰყავით შემოთავაზებული ახალი დრო."
+        "proposed_time_declined": "თქვენ უარჰყავით შემოთავაზებული ახალი დრო.",
+        "timezone_device_msg": "ეს დროები თქვენი მოწყობილობის დროის სარტყელს მიჰყვეიბიან.",
+        "your_device_timezone_msg": "თქვენი მოწყობილობის დროის სარტყელია: {{timezone}}"
     },
     "message": {
         "search_hints": " ",
