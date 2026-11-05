@@ -380,7 +380,9 @@
         "choose_representative_name": "Wybierz charakterystyczną nazwę",
         "choose": "Wybierz",
         "proposed_time_accepted": "Zaakceptowałeś proponowany, nowy czas.",
-        "proposed_time_declined": "Odrzuciłeś proponowany, nowy czas."
+        "proposed_time_declined": "Odrzuciłeś proponowany, nowy czas.",
+        "timezone_device_msg": "Te godziny są podawane zgodnie ze strefą czasową Twojego urządzenia.",
+        "your_device_timezone_msg": "Strefa czasowa Twojego urządzenia: {{timezone}}"
     },
     "message": {
         "modal": {
