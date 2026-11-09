@@ -27,7 +27,8 @@
         "add_ics_from_url": "Add ICS from URL",
         "edit_calendar": "Edit calendar",
         "add_external_calendars": "Add external calendars",
-        "edit_name": "Edit name"
+        "edit_name": "Edit name",
+        "print": "Print"
     },
     "add": "Add",
     "administer": "Administer",
@@ -428,7 +429,8 @@
         "proposed_time_accepted": "You accepted the proposed new time.",
         "proposed_time_declined": "You declined the proposed new time.",
         "timezone_device_msg": "These times follow your device's timezone.",
-        "your_device_timezone_msg": "Your device's timezone: {{timezone}}"
+        "your_device_timezone_msg": "Your device's timezone: {{timezone}}",
+        "when": "When"
     },
     "local_timezone_tooltip": "Date and time on local timezone:",
     "message": {
@@ -534,7 +536,8 @@
         "event_series_data": "\"{{title}}\" series, {{date}}",
         "import_appointment_from_email": "The appointments contained in \"{{fileName}}\" will be imported into the selected calendar.",
         "on_behalf_of": "on behalf of <strong>{{owner}}</strong>",
-        "organizer_invited_you_on_behalf_of": "<text>{{organizer}} invited you to an event <bold>{{title}}</bold> on behalf of <bold>{{owner}}</bold></text>"
+        "organizer_invited_you_on_behalf_of": "<text>{{organizer}} invited you to an event <bold>{{title}}</bold> on behalf of <bold>{{owner}}</bold></text>",
+        "print_popup_blocked": "Allow pop-ups for this site to print the appointment"
     },
     "messages": {
         "format_as_plain_text": "Format as Plain Text",
