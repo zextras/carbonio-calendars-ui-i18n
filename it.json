@@ -200,7 +200,8 @@
         "event_series_data": "Serie \"{{title}}\", {{date}}",
         "import_appointment_from_email": "Gli appuntamenti contenuti in \"{{fileName}}\" verranno importati nel calendario selezionato.",
         "on_behalf_of": "per conto di <strong>{{owner}}</strong>",
-        "organizer_invited_you_on_behalf_of": "<text>{{organizer}} ti ha invitato all'evento <bold>{{title}}</bold> per conto di <bold>{{owner}}</bold></text>"
+        "organizer_invited_you_on_behalf_of": "<text>{{organizer}} ti ha invitato all'evento <bold>{{title}}</bold> per conto di <bold>{{owner}}</bold></text>",
+        "print_popup_blocked": "Consenti i pop-up per questo sito per stampare l'appuntamento"
     },
     "label": {
         "to": "A",
@@ -504,7 +505,8 @@
         "proposed_time_accepted": "Hai accettato il nuovo orario proposto.",
         "proposed_time_declined": "Hai rifiutato il nuovo orario proposto.",
         "timezone_device_msg": "Questi orari seguono il fuso orario del tuo dispositivo.",
-        "your_device_timezone_msg": "Fuso orario del tuo dispositivo: {{timezone}}"
+        "your_device_timezone_msg": "Fuso orario del tuo dispositivo: {{timezone}}",
+        "when": "Quando"
     },
     "action": {
         "send": "Invia",
@@ -534,7 +536,8 @@
         "add_ics_from_url": "Aggiungi ICS tramite URL",
         "edit_calendar": "Modifica calendario",
         "add_external_calendars": "Aggiungi calendari esterni",
-        "edit_name": "Modifica nome"
+        "edit_name": "Modifica nome",
+        "print": "Stampa"
     },
     "button": {
         "customize_modal": "Personalizza"
