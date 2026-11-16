@@ -27,7 +27,8 @@
         "add_ics_from_url": "Dodaj ICS poprzez URL",
         "edit_calendar": "Edytuj kalendarz",
         "add_external_calendars": "Dodaj kalendarze zewnętrzne",
-        "edit_name": "Edytuj nazwę"
+        "edit_name": "Edytuj nazwę",
+        "print": "Wydrukuj"
     },
     "event": {
         "action": {
@@ -382,7 +383,8 @@
         "proposed_time_accepted": "Zaakceptowałeś proponowany, nowy czas.",
         "proposed_time_declined": "Odrzuciłeś proponowany, nowy czas.",
         "timezone_device_msg": "Te godziny są podawane zgodnie ze strefą czasową Twojego urządzenia.",
-        "your_device_timezone_msg": "Strefa czasowa Twojego urządzenia: {{timezone}}"
+        "your_device_timezone_msg": "Strefa czasowa Twojego urządzenia: {{timezone}}",
+        "when": "Kiedy"
     },
     "message": {
         "modal": {
@@ -488,7 +490,8 @@
         "event_series_data": "seria \"{{title}}\", {{date}}",
         "import_appointment_from_email": "Spotkania znajdujące się w \"{{fileName}}\" zostaną importowane do wybranego kalendarza.",
         "on_behalf_of": "w imieniu <strong>{{owner}}</strong>",
-        "organizer_invited_you_on_behalf_of": "<text>{{organizer}} zaprosił(a) Cię w imieniu <bold>{{owner}}</bold> na wydarzenie <bold>{{title}}</bold></text>"
+        "organizer_invited_you_on_behalf_of": "<text>{{organizer}} zaprosił(a) Cię w imieniu <bold>{{owner}}</bold> na wydarzenie <bold>{{title}}</bold></text>",
+        "print_popup_blocked": "Zezwól na wyskakujące okna dla tej strony, aby wydrukować spotkanie"
     },
     "participants": {
         "Accepted": "Zaakceptowano",
@@ -566,7 +569,7 @@
             "show_reminders": "Pokazywanie przypomnień",
             "show_rmndr_past_due_meetings": "Pokazuj przypomnienia dla przeszłych spotkań",
             "show_timezones": "Pokaż strefę czasową przy tworzeniu nowych spotkań",
-            "show_popup_notification": "Pokaż powiadomienie pop-up",
+            "show_popup_notification": "Pokaż powiadomienie w formie wyskakującego okna",
             "snd_autorply_users": "Wysyłaj automatyczną odpowiedź do użytkowników nie mających uprawnień do zapraszania mnie",
             "span_time": "Pokazuj przypomnienia",
             "default_appt_dur": "Domyślna długość trwania spotkania",
