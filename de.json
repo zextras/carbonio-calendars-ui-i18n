@@ -548,7 +548,6 @@
         "invite": {
             "error": "Fehler"
         },
-        "proposed_time_accepted": "Sie haben die vorgeschlagene Zeit zugesagt",
         "share_folder_success": "Kalender erfolgreich geteilt",
         "url_copied": "{{title}} kopiert",
         "tag_applied": "{{tag}} Tag angewendet",
