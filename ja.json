@@ -432,7 +432,6 @@
         "invite": {
             "error": "エラー"
         },
-        "proposed_time_accepted": "提案された時間を承認しました",
         "url_copied": "{{title}}がコピーされました",
         "share_folder_success": "カレンダーが共有されました",
         "tag_applied": "{{tag}} タグが適用されました",
