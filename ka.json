@@ -639,8 +639,7 @@
         "tag_applied": "ჭდე {{tag}} დაედო",
         "tag_removed": "ჭდე {{tag}} მოცილდა",
         "email_copied_to_clipboard": "ელფოსტა დაკოპირდა ბუფერში.",
-        "hex_color_copied": "თექვსმ. ფერი დაკოპირდა",
-        "proposed_time_declined": "თქვენ უარჰყავით შემოთავაზებული დრო"
+        "hex_color_copied": "თექვსმ. ფერი დაკოპირდა"
     },
     "success": "წარმატებულია",
     "timezones": "დროის სარტყლები",
