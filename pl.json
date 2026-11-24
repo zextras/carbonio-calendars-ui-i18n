@@ -623,8 +623,7 @@
         "forwardAppointment": {
             "success": "Spotkanie zostało przekazane dalej"
         },
-        "hex_color_copied": "Kolor Hex został skopiowany",
-        "proposed_time_declined": "Odrzuciłeś proponowany czas"
+        "hex_color_copied": "Kolor Hex został skopiowany"
     },
     "timezone": {
         "brussels_copenhagen_madrid_paris ": "{{value}} Bruksela, Kopenhaga, Madryt, Paryż",
