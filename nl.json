@@ -417,7 +417,6 @@
         "invite": {
             "error": "Fout"
         },
-        "proposed_time_accepted": "U aanvaardde de voorgestelde tijd",
         "url_copied": "{{title}} gekopieerd",
         "share_folder_success": "Kalender met succes gedeeld",
         "tag_removed": "{{tag}} tag verwijderd",
