@@ -710,7 +710,6 @@
         "forwardAppointment": {
             "success": "Sastanak proslijeđen"
         },
-        "proposed_time_accepted": "Prihvatili ste predloženo vrijeme",
         "email_copied_to_clipboard": "E-mail poruka kopirana u međuspremnik."
     },
     "success": "Uspjeh",
