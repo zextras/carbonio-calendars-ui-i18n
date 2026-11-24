@@ -461,7 +461,6 @@
         "forwardAppointment": {
             "success": "إعادة توجيه الموعد"
         },
-        "proposed_time_accepted": "لقد قبلت الوقت المقترح",
         "invite": {
             "error": "خطأ"
         },
