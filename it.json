@@ -639,7 +639,6 @@
             "success": "Appuntamento inoltrato"
         },
         "hex_color_copied": "Colore esadecimale copiato",
-        "proposed_time_declined": "Hai rifiutato l'orario proposto",
         "proposed_new_time_accepted": "Hai accettato il nuovo orario proposto",
         "proposed_new_time_declined": "Hai rifiutato il nuovo orario proposto"
     },
