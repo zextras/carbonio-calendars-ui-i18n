@@ -486,7 +486,6 @@
         "invite": {
             "error": "Error"
         },
-        "proposed_time_accepted": "Has aceptado la hora propuesta",
         "share_folder_success": "Se ha compartido el calendario",
         "url_copied": "{{title}} copiado",
         "tag_applied": "Etiqueta {{tag}} aplicada",
