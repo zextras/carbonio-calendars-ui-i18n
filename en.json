@@ -749,7 +749,6 @@
         "invite": {
             "error": "Error"
         },
-        "proposed_time_accepted": "You accepted the proposed time",
         "share_folder_success": "Calendar shared successfully",
         "tag_applied": "{{tag}} tag applied",
         "tag_removed": "{{tag}} tag removed",
