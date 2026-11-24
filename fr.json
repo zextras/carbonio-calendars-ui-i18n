@@ -672,7 +672,6 @@
         "invite": {
             "error": "Erreur"
         },
-        "proposed_time_accepted": "Vous avez accepté l'horaire proposé",
         "share_folder_success": "Ce calendrier a été partagé avec succès",
         "url_copied": "{{title}} copié",
         "tag_applied": "Étiquette {{tag}} appliquée",
