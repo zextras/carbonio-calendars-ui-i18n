@@ -693,7 +693,6 @@
         "invite": {
             "error": "Napaka"
         },
-        "proposed_time_accepted": "Sprejeli ste predlagani čas",
         "share_folder_success": "Koledar uspešno deljen",
         "tag_applied": "Oznaka {{tag}} uporabljena",
         "tag_removed": "Oznaka {{tag}} odstranjena",
