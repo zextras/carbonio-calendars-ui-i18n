@@ -454,7 +454,6 @@
         "invite": {
             "error": "ผิดพลาด"
         },
-        "proposed_time_accepted": "คุณยอมรับเวลาที่เสนอ",
         "share_folder_success": "แชร์ปฏิทินเรียบร้อยแล้ว",
         "url_copied": "{{title}} คัดลอกแล้ว",
         "tag_applied": "ใช้แท็ก {{tag}} แล้ว",
