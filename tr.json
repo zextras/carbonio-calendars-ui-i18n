@@ -211,7 +211,6 @@
         "invite": {
             "error": "Hata"
         },
-        "proposed_time_accepted": "Önerilen saati kabul ettiniz",
         "share_folder_success": "Takvim başarıyla paylaşıldı",
         "url_copied": "{{title}} kopyalandı",
         "tag_applied": "{{tag}} etiketi uygulandı",
