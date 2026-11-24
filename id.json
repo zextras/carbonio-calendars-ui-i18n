@@ -498,7 +498,6 @@
         "invite": {
             "error": "Terjadi kesalahan"
         },
-        "proposed_time_accepted": "Anda menerima waktu yang diusulkan",
         "url_copied": "{{title}} disalin",
         "share_folder_success": "Kalender berhasil dibagikan",
         "tag_removed": "Tag {{tag}}: dihapus",
