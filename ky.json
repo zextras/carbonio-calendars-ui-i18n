@@ -350,7 +350,6 @@
         "invite": {
             "error": "Ката"
         },
-        "proposed_time_accepted": "Сунушталган убакытты кабыл алдыңыз",
         "share_folder_success": "Календарга кирүү мүмкүнчүлүгү берилди",
         "tag_applied": "Тег {{tag}} колдонулду",
         "tag_removed": "Тег {{tag}} өчүрүлдү",
