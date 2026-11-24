@@ -616,7 +616,6 @@
         "invite": {
             "error": "Błąd"
         },
-        "proposed_time_accepted": "Zaakceptowano zaproponowany czas",
         "url_copied": "skopiowano {{title}}",
         "tag_applied": "Etykieta {{tag}} została zastosowana",
         "tag_removed": "Etykieta {{tag}} została zdjęta",
