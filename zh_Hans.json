@@ -427,7 +427,6 @@
         },
         "share_folder_success": "日历已共享成功",
         "url_copied": "{{title}}已复制",
-        "proposed_time_accepted": "您接受了提议的时间",
         "tag_applied": "{{tag}} 标签已应用",
         "tag_removed": "{{tag}} 标签已移除",
         "email_copied_to_clipboard": "邮件已复制到剪贴板。"
