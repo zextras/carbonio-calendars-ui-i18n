@@ -407,7 +407,6 @@
         "invite": {
             "error": "Hiba"
         },
-        "proposed_time_accepted": "Elfogadtad a javasolt időpontot",
         "tag_removed": "„{{tag}}” címke eltávolítva",
         "url_copied": "{{title}} másolva",
         "tag_applied": "„{{tag}}” címke alkalmazva"
