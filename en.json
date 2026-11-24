@@ -758,7 +758,9 @@
             "success": "Appointment forwarded"
         },
         "hex_color_copied": "Hex color copied",
-        "proposed_time_declined": "You declined the proposed time"
+        "proposed_time_declined": "You declined the proposed time",
+        "proposed_new_time_accepted": "You accepted the proposed new time",
+        "proposed_new_time_declined": "You declined the proposed new time"
     },
     "success": "Success",
     "timezone": {
