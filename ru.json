@@ -639,7 +639,6 @@
         "invite": {
             "error": "Ошибка"
         },
-        "proposed_time_accepted": "Вы приняли предлагаемое время",
         "url_copied": "{{title}} скопировано",
         "share_folder_success": "Доступ к календарю предоставлен",
         "tag_applied": "Тег {{tag}} применен",
